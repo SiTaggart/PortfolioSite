@@ -132,7 +132,7 @@ section { border-bottom:solid 1px #ccc; border-top:solid 1px #fff; height:1%; ov
 /*############################################################################################################################
 ################### OBJECTS
 ############################################################################################################################*/
-svg { display:block; margin:25px auto; }
+svg { display:block; margin:0 auto 25px; }
 
 .site-thumbs { list-style:none; margin:45px 0 0; overflow:hidden; padding:0; width:100%; }
 .site-thumbs li { margin-bottom:25px; margin-top:0; }

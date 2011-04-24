@@ -147,8 +147,8 @@ function portfolio() {
 		};
 		(function (raphael) {
 		    $(function () {
-		        raphael("skills", 380, 380).pieChart(190, 190, 170, $("#skills-table"), "#fff");
-				raphael("tools", 380, 380).pieChart(190, 190, 170, $("#tools-table"), "#fff");
+		        raphael("skills", 340, 340).pieChart(170, 170, 150, $("#skills-table"), "#fff");
+				raphael("tools", 340, 340).pieChart(170, 170, 150, $("#tools-table"), "#fff");
 		    });
 		})(Raphael.ninja());
 	}
