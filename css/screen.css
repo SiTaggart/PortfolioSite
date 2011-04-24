@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+html	{
+	font-size: 100%;
+}
+html, body	{
+	height: 100%;
+}
+body	{
+	background-color:#555;
+	color: #eee;
+	font: 62.5% Helvetica, Verdana, Sans-Serif;
+	text-shadow: 1px 1px 1px #222;
+}
+
+/***************************************** structural elements **********************************************************/
+.site-wrapper { 
+	width:980px;
+	margin:0 auto;
+	position: :relative;
+}
+.header {
+	padding:15px 0 25px;
+}
+
+.poor-excuse { 
+	border-bottom:solid 1px #666;
+	clear:both;
+	padding:53px 0 35px;
+	text-align: center;
+}
+#blog-link {
+	background: #888;
+	border: solid #444;
+	border-width: 0 1px 1px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	color: #fff;
+	display: block;
+	font-size: 2em;
+	font-family: Garamond, 'Times New Roman', Times, Georgia;
+	float: right;
+	padding: 3px 20px;
+}
+	#blog-link:hover {
+		background: #777;
+	}
+.example-sites {
+	padding:20px 0 0;
+	border-bottom:solid 1px #666;
+	min-height:1px;
+	overflow: hidden;
+	_zoom:1;
+}
+.example-sites:after { content:"."; clear:both; display:block; height:0; visibility:hidden; } /* :hack:float enclosing */
+
+.footer {
+	padding:10px 0 10px;
+	border-bottom:solid 1px #666;
+	min-height:1px;
+	_zoom:1;
+}
+.footer:after { content:"."; clear:both; display:block; height:0; visibility:hidden; } /* :hack:float enclosing */
+.footer-info {
+	float:left;
+	width:600px;
+}
+.footer-twitter {
+	float:right;
+	width:320px;
+}
+
+/************************************************************ page elements *************************************************/
+h1, h2, h3 {
+	font-family: Garamond, 'Times New Roman', Times, Georgia;
+	text-shadow: 1px 1px 1px #000;
+	color:#999;
+}
+h1 {
+	color: #111;
+	font-size:8em;
+	line-height:60px;
+	font-weight:normal;
+	text-shadow: 1px 1px 0px #999;
+	
+}
+h2 { 
+	font-size:5em;
+	line-height:40px;
+	font-weight:normal;
+}
+h3 {
+	font-size:5em;
+	line-height:40px;
+	font-weight:normal;
+}
+a {
+	color:#999;
+	text-decoration:none;
+	text-shadow:1px 1px 1px #000;
+	-moz-transition-property: background-color, color, text-shadow;
+	-moz-transition-duration: 1s, 1s, 1s;
+	-o-transition-property:color;
+	-o-transition-duration:1s;
+	-o-transition-timing-function:ease;
+	-webkit-transition:color 1s ease, background-color 1s ease, text-shadow 1s ease;
+	transition:color 1s ease, background-color 1s ease, text-shadow 1s ease;
+	text-shadow: 1px 1px 1px #000;
+}
+a:hover, a.hover { 
+	color:#eee;
+}
+p {
+	font-size:1.3em;
+	line-height:1.8em;
+}
+
+/******************************************************** container specific styles ********************************************/
+
+/* poor excuse styles */
+.poor-excuse h2 { 
+	padding:40px 0 30px 90px;
+	text-align:right;
+}
+
+/* example sites styles */
+.example-sites ul { 
+	padding: 6px 0 0;
+	overflow: hidden;
+}
+.example-sites li {
+	float:left;
+	width:230px;
+	padding:0 20px 30px 0;
+}
+.example-sites li.last {
+	padding-right:0;
+}
+.example-sites h3 {
+	font-size:2.6em;
+	#font-size:2.4em;
+	line-height:32px;
+	padding:0 0 10px;
+}
+.example-sites p a {
+	padding:8px;
+	display:block; 
+	background:#999;
+	-webkit-border-radius:5px; 
+	-moz-border-radius:5px; 
+	border-radius:5px;
+	border: solid 1px #555;
+}
+.example-sites p a:hover {
+	padding:8px; /* for ie6 as it goes a bit mental */
+	background: #777;
+}
+.example-sites p a:hover img, .example-sites p a.hover img {
+	border-color:#fff;
+}
+.example-sites img {
+	display:block;
+	border:solid 1px #777;
+	-moz-transition-property: border-color;
+	-moz-transition-duration: 1s;
+	-o-transition-property:border-color;
+	-o-transition-duration:1s;
+	-o-transition-timing-function:ease;
+	-webkit-transition:border-color, 1s;
+}
+.example-sites .show-more { 
+	background: #888;
+	border: 1px solid #666;
+	border-width: 1px 1px 0;
+	color: #fff;
+	font-size: 1.6em;
+	font-family: Times, Georgia, sans-serif;
+	float: right;
+	display: block;
+	padding:6px 10px;
+	text-shadow:1px 1px 1px #000;
+	-webkit-border-radius:4px 4px 0 0; 
+	-moz-border-radius:4px 4px 0 0; 
+	border-radius:4px 4px 0 0;
+}
+.example-sites .show-more:hover {
+	background:#777;
+	color: #fff;
+}
+
+/* footer styles */
+.footer h3 {
+	font-size: 3.2em;
+	line-height:60px;
+	padding:0 0 10px;
+}
+.footer p { 
+	padding:0 0 2em;
+}
+.footer li {
+	font-size:1.3em;
+	line-height:1.8em;
+	padding:0 0 2em;
+}
+
+#twitter-link {
+	float:right
+}
+
+.disclaimer {
+	padding:10px 0;
+}
+
+/******************** MEDIA QUERY GOODNESS ************************/
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+	.site-wrapper { 
+		width:730px;
+	}
+	.example-sites li.last {
+		padding-right:20px;
+	}
+	.example-sites li:nth-child(3n+3) {
+		padding-right:0;
+	}
+	.footer-info, .footer-twitter {
+		float: none; width:730px;
+	}
+	.footer li {
+		padding: 0.5em 0;;
+	}
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	h1 {
+		font-size: 7em;
+	}
+	.site-wrapper { 
+		width:470px;
+	}
+	.example-sites li, .example-sites li:nth-child(3n+3) {
+		padding-right:10px;
+	}
+	.example-sites li:nth-child(2n+2) {
+		padding-right:0;
+	}
+	.footer-info, .footer-twitter {
+		width:460px;
+	}
+}
