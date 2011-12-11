@@ -64,7 +64,7 @@ var skillsChart = window.skillsChart;
 
     Modernizr.load({
         test: "undefined" === window.Raphael,
-        load: ['common/js/mylibs/raphael-min.js','common/js/mylibs/g.raphael.js','common/js/mylibs/g.pie-min.js'],
+        yep: ['common/js/mylibs/raphael-min.js','common/js/mylibs/g.raphael.js','common/js/mylibs/g.pie-min.js'],
         complete: function() {
             skillsChart.drawSkills();
         }
