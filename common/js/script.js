@@ -13,7 +13,7 @@ Modernizr.load([
 	{
 		load: '//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js',
 		complete: function() {
-			if (!window.jQuer ) {
+			if (!window.jQuery) {
 	            Modernizr.load('common/js/libs/jquery-1.5.min.js');
 			}
 		}
@@ -39,6 +39,10 @@ st.portfolio = function() {
 					}
 				});
 			}
+		});
+		//load helper
+		Modernizr.load({
+			load: 'ie6!ie7!ie8!common/js/plugins.js'	
 		});
 		//load selectivizr
 		Modernizr.load({
