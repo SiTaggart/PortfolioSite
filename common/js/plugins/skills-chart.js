@@ -63,10 +63,16 @@ var skillsChart = window.skillsChart;
     }
 
     Modernizr.load({
-        test: "undefined" === window.Raphael,
-        yep: ['common/js/mylibs/raphael-min.js','common/js/mylibs/g.raphael.js','common/js/mylibs/g.pie-min.js'],
-        complete: function() {
-            skillsChart.drawSkills();
+        test: "undefined" == typeof window.Raphael,
+        yep: {
+            'r': 'common/js/mylibs/raphael-min.js',
+            'g': 'common/js/mylibs/g.raphael.js',
+            'p': 'common/js/mylibs/g.pie-min.js'
+        },
+        callback: {
+            'p': function (url, result, key) {
+                skillsChart.drawSkills();
+            }
         }
     });
 })(jQuery);

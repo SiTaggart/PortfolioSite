@@ -11,7 +11,7 @@ Modernizr.load({
 
 Modernizr.load([
 	{
-		load: '//ajax.googlesapis.com/ajax/libs/jquery/1.5/jquery.js',
+		load: '//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js',
 		callback: function() {
 			if (!window.jQuery) {
 	            Modernizr.load('common/js/libs/jquery-1.5.min.js');
