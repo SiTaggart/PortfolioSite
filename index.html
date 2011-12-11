@@ -13,7 +13,7 @@
 	<meta name="author" content="Simon Taggart">
 	<link rel="stylesheet" href="common/css/grid.css?v=2">
 	<link rel="stylesheet" href="common/css/style.css?v=2">
-	<script src="common/js/libs/modernizr-1.7.min.js"></script>
+	<script src="common/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -67,46 +67,6 @@
 					<div id="skills"  class="grid-6 omega"></div><!-- #skills -->
 				</section>
 				<section>
-					<h2>Tools:</h2>
-					<div id="tools"  class="grid-6 alpha"></div><!-- #tools -->
-					<div class="grid-6 omega">
-						<table id="tools-table" summary="Table containing tools I use and how much I use them">
-							<thead>
-								<tr>
-									<th scope="col">Tools</th>
-									<th scope="col">Useage</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">InType (PC)</th>
-									<td>55%</td>
-								</tr>
-								<tr>
-									<th scope="row">Photoshop</th>
-									<td>20%</td>
-								</tr>
-								<tr>
-									<th scope="row">TextMate (Mac)</th>
-									<td>10%</td>
-								</tr>
-								<tr>
-									<th scope="row">Visual Studio 2010</th>
-									<td>9%</td>
-								</tr>	
-								<tr>
-									<th scope="row">Fireworks</th>
-									<td>5%</td>
-								</tr>							
-								<tr>
-									<th scope="row">Dreamweaver</th>
-									<td>1%</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-				<section>
 					<h2>Stuff I&rsquo;ve done:</h2>
 					<p>I&rsquo;ve worked in a variety of industry sectors whilst creating things on the web. I&rsquo;ve done the public sector whilst at <a href="http://www.solent.ac.uk">Southampton Solent Uni</a>, and with <a href="http://www.abacusemedia.com">Abacus e-media</a> clients <a href="http://fsd.lincolnshire.gov.uk/">Lincolnshire County Council</a>. I&rsquo;ve worked in online publishing having worked on sites for the likes of <a href="http://www.designweek.co.uk">Design Week</a>, <a href="http://www.theengineer.co.uk">The Engineer</a> and <a href="http://www.meed.co.uk">Meed</a>. Finally producing work for clients in the consumer sector here in Australia and the UK including Scotthall BMW and Mini, Southampton Football Club, Derby County, <a href="http://www.qprhospitality.com/">Queens Park Rangers</a>, Electrolux, Nivea, <a href="http://www.videoezy.com.au">Video Ezy</a>, <a href="http://www.tvwinners.com.au/">TV Winners</a> and <a href="http://www.variety.org.au">Variety the Children's Charity</a>.</p>
 					<ul class="site-thumbs">
@@ -128,31 +88,39 @@
 			<section class="grid-12">
 				<h2>Where I can be found on the interwebs:</h2>
 				<ul class="feature-social">
-					<li class="album">
+					<li class="feature-social-item album">
 						<h3>Album of the week</h3>
+						<section class="widget-lastfm">
+							<p>You don&rsquo;t seem to have JavaScript and therefore you don&rsquo;t get to see my most popular album this week.</p>				
+						</section>
 					</li>
-					<li class="pic">
+					<li class="feature-social-item pic">
 						<h3>Latest Pics</h3>
-						<ul class="flickr-list"></ul>
+						<section class="widget-flickr" data-picture-limit="6" data-flickr-account="51539284@N00">
+							<p>You don&rsquo;t seem to have JavaScript and therefore you don&rsquo;t get to see our pretty pictures.</p>
+						</section>
 					</li>
-					<li class="tweet">
-						<h3>Latest Tweet</h3>
-						<p></p>
+					<li class="feature-social-item tweet">
+						<h3>Twitter</h3>
+						<section class="widget-twitter" data-number-tweets="1" data-twitter-account="sitaggart">					        
+					        <div id="tweet-list"></div>
+        					<p class="tweet-list-placeholder">You don&rsquo;t have JavaScript enabled or the Internet broke. Either way you won&rsquo;t see our bird language&hellip;</p>
+					    </section>
 					</li>
 				</ul>
 				<ul class="social-icons">
-					<li class="email"><a href="mailto:me@simontaggart.com">me (at) simontaggart dot com</a></li>
-					<li class="twitter"><a href="http://www.twitter.com/SiTaggart">@SiTaggart</a></li>
-					<li class="linkedin"><a href="http://au.linkedin.com/in/sitaggart">@SiTaggart</a></li>
-					<li class="tumblr"><a href="http://blog.simontaggart.com">blog.simontaggart.com</a></li>
-					<li class="flickr"><a href="http://www.flickr.com/photos/simontaggart/">simontaggart</a></li>
-					<li class="lastfm"><a href="http://www.last.fm/user/si_taggart">si_taggart</a></li>
-					<li class="zootool"><a href="http://zootool.com/user/sitaggart/">sitaggart</a></li>
+					<li class="email"><a rel="me" href="mailto:me@simontaggart.com">me (at) simontaggart dot com</a></li>
+					<li class="twitter"><a rel="me" href="http://www.twitter.com/SiTaggart">@SiTaggart</a></li>
+					<li class="linkedin"><a rel="me" href="http://au.linkedin.com/in/sitaggart">@SiTaggart</a></li>
+					<li class="tumblr"><a rel="me" href="http://blog.simontaggart.com">blog.simontaggart.com</a></li>
+					<li class="flickr"><a rel="me" href="http://www.flickr.com/photos/simontaggart/">simontaggart</a></li>
+					<li class="lastfm"><a rel="me" href="http://www.last.fm/user/si_taggart">si_taggart</a></li>
+					<li class="zootool"><a rel="me" href="http://zootool.com/user/sitaggart/">sitaggart</a></li>
 				</ul>
 			</section>
 		</div>		
 	</footer>
-
+	<!--
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js"></script>
   	<script>!window.jQuery && document.write(unescape('%3Cscript src="common/js/libs/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
@@ -160,22 +128,8 @@
 	<script src="common/js/mylibs/g.raphael.js"></script>
 	<script src="common/js/mylibs/g.pie-min.js"></script>
   	<script src="common/js/plugins.js"></script>
+    -->
   	<script src="common/js/script.js"></script>
-  	<!--[if lt IE 7 ]>
-	    <script src="common/js/libs/dd_belatedpng.js"></script>
-	    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
-	  <![endif]-->
-	  <!-- change the UA-XXXXX-X to be your site's ID -->
-	  <script>
-	   var _gaq = [['_setAccount', 'UA-10401619-1'], ['_trackPageview']];
-	   (function(d, t) {
-	    var g = d.createElement(t),
-	        s = d.getElementsByTagName(t)[0];
-	    g.async = true;
-	    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    s.parentNode.insertBefore(g, s);
-	   })(document, 'script');
-	  </script>
   
 </body>
 </html>

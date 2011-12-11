@@ -78,7 +78,7 @@ button {  width: auto; overflow: visible; }
 /*############################################################################################################################
 ################### TYPOGRAPHY
 ############################################################################################################################*/
-body { background:#fefefe url(../images/bg.body.grey.gif); color:#333; font:62.5%/17px Arial, sans-serif; text-shadow:1px 1px 1px rgba(255, 255, 255, 1) }
+body { background:#fefefe url(../images/bg.body.grey.gif); color:#333; font:62.5%/17px Arial, sans-serif; text-shadow:1px 1px 1px rgba(255, 255, 255, 1); -webkit-text-size-adjust }
 
 h1 { color:#3b205c; font:bold 15em/1.2533 "league-gothic-1","league-gothic-2",Arial,sans-serif; margin:0 0 0.2em; text-align:center; }
 h2 { color:#A9C2C9; font:bold 2.6em/1.269 "museo-1","museo-2", Garamond, serif; margin:25px 0; }
@@ -123,7 +123,7 @@ footer { background:#A9C2C9 url(../images/bg.footer.png); border-top:solid 1px #
 /*############################################################################################################################
 ################### FURNITURE
 ############################################################################################################################*/
-section { border-bottom:solid 1px #ccc; border-top:solid 1px #fff; height:1%; overflow:hidden; }
+section { border-bottom:solid 1px #ccc; border-top:solid 1px #fff; overflow:hidden; }
 	section:first-child { border-top:none }
 	section.first-child { border-top:none }
 	section:last-child { border-bottom:none; }
@@ -141,10 +141,18 @@ svg { display:block; margin:0 auto 25px; }
 	.site-thumbs li a:hover { border-color:#8E8CA3; }
 
 .feature-social { list-style:none;margin:45px 0; overflow:hidden; padding:0; width:100%; }
-.feature-social li { border-right:solid 1px #ccc; float:left; height:250px; margin:0; text-align:center; width:310px; }
-	.feature-social li:last-of-type { border:none; }
-.feature-social p { padding:0 25px; }
+  .feature-social-item { border-right:solid 1px #ccc; float:left; height:250px; margin:0; text-align:center; width:310px; }
+  .feature-social li:last-of-type { border:none; }
+.feature-social p { margin-top:0; padding:0 25px; }
 .feature-social img { text-align:center; }
+
+.widget-lastfm,
+.widget-twitter,
+.widget-flickr { border:none; }
+
+#tweet-list ul { list-style:none; margin:0; padding:0; }
+  #tweet-list li { font-size:1em; margin:0; }
+    .tweet-list-time { text-align:left; }
 
 .flickr-list { list-style:none; margin:0 auto; width:255px; }
 .flickr-list li { border:none; float:left; height:auto; margin:0 5px 10px; padding:0; width:auto; }
@@ -161,14 +169,6 @@ svg { display:block; margin:0 auto 25px; }
 	.flickr a	{ background-image:url(../images/icon.flickr.png); }
 	.lastfm a	{ background-image:url(../images/icon.lastfm.png); }
 	.zootool a	{ background-image:url(../images/icon.zootool.png); }
-
-
-
-
-
-
-
-
 
 
 @media all and (orientation:portrait) { 

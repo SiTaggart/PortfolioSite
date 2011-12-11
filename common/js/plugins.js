@@ -1,16 +1,6 @@
 
 (function($){
-
- 
-
-
-
-
-
- 
-
-
-
+  
 })(this.jQuery);
 
 /*# FIREBUG #*/
