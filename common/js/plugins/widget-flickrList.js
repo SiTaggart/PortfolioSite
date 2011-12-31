@@ -1,9 +1,8 @@
-if (!window.flickrList) window.flickrList = {};
-var flickrList = window.flickrList;
+if (!window.st) window.st = {};
+var st = window.st;
 
 (function($) {
-    if($('.widget-flickr').length === 0) return;
-    flickrList = {
+    st.flickrList = {
         init: function() {
             var $flickrWidget = $('.widget-flickr'),
                 $flickrList = $('<ul />', { 'class': 'flickr-list'}),
@@ -26,12 +25,4 @@ var flickrList = window.flickrList;
             });
         }
     }
-    
-    Modernizr.load({
-        load: 'common/js/plugins/jquery.jFlickrFeed.js',
-        complete: function() {
-            flickrList.init();
-        }
-    }); 
-
 })(jQuery);

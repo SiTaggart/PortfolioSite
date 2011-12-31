@@ -1,11 +1,8 @@
-if (!window.twitterList) window.twitterList = {};
-var twitterList = window.twitterList;
+if (!window.st) window.st = {};
+var st = window.st;
 
 (function($) {
-
-    if($('.widget-twitter').length === 0) return;
-
-    twitterList = {  
+    st.twitterList = {  
 
         username: "",
         numberOfTweets: 1,
@@ -49,7 +46,6 @@ var twitterList = window.twitterList;
         }    
 
     }
-    twitterList.init();
     
     //lifted from https://github.com/remy/twitterlib/blob/master/twitterlib.js Thanks Remy
     var getTime = function () {
