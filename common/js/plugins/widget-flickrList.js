@@ -2,7 +2,7 @@ if (!window.flickrList) window.flickrList = {};
 var flickrList = window.flickrList;
 
 (function($) {
-
+    if($('.widget-flickr').length === 0) return;
     flickrList = {
         init: function() {
             var $flickrWidget = $('.widget-flickr'),

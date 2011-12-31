@@ -2,7 +2,7 @@ if (!window.skillsChart) window.skillsChart = {};
 var skillsChart = window.skillsChart;
 
 (function($) {
-
+    if($('#skills-table').length === 0) return;
     skillsChart.drawSkills = function() {
         //Stolen and a bit hacked around with from here http://raphaeljs.com/pie.js
         Raphael.fn.pieChart = function (cx, cy, r, datatable, stroke) {

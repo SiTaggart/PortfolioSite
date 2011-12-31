@@ -3,6 +3,8 @@ var twitterList = window.twitterList;
 
 (function($) {
 
+    if($('.widget-twitter').length === 0) return;
+
     twitterList = {  
 
         username: "",

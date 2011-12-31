@@ -2,7 +2,7 @@ if (!window.lastFMAlbum) window.lastFMAlbum = {};
 var lastFMAlbum = window.lastFMAlbum;
 
 (function($) {
-
+	if($('.widget-lastfm').length === 0) return;
 	lastFMAlbum.getLastfmAlbum = function(){
 		var mbid,
 		$albumHolder = $('.feature-social .widget-lastfm'),
