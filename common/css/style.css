@@ -80,7 +80,7 @@ button {  width: auto; overflow: visible; }
 ############################################################################################################################*/
 body { background:#fefefe url(../images/bg.body.grey.gif); color:#333; font:62.5%/17px Arial, sans-serif; text-shadow:1px 1px 1px rgba(255, 255, 255, 1); -webkit-text-size-adjust }
 
-h1 { color:#3b205c; font:bold 15em/1.2533 "league-gothic-1","league-gothic-2",Arial,sans-serif; margin:0 0 0.2em; text-align:center; }
+h1 { color:#3b205c; font:500 15em/1.2533 "league-gothic-1","league-gothic-2",Arial,sans-serif; margin:0 0 0.2em; text-align:center; }
 h2 { color:#A9C2C9; font:bold 2.6em/1.269 "museo-1","museo-2", Garamond, serif; margin:25px 0; }
 h3 { color:#A9C2C9; font:bold 2.6em/1.269 "museo-1","museo-2", Garamond, serif;; margin:25px 0; }
 	li h3 { font-size:1.529em; }
