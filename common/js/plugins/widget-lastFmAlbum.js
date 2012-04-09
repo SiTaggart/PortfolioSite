@@ -5,7 +5,7 @@ var st = window.st;
 	st.lastFMAlbum = {
 		getLastfmAlbum: function(){
 			var mbid,
-			$albumHolder = $('.feature-social .widget-lastfm'),
+			$albumHolder = $('.widget-lastfm'),
 			$imgHolder = $('<img />')
 			$albumLink = $('<a />');
 
@@ -34,7 +34,7 @@ var st = window.st;
 						type: 'GET',
 						dataType: 'jsonp',
 						success: function(data, textStatus, xhr) {
-							$imgHolder.attr('src', data.query.results.lfm.album.image[2].content);
+							$imgHolder.attr('src', data.query.results.lfm.album.image[3].content);
 							$albumHolder.html($imgHolder);
 							$albumLink.attr('href', data.query.results.lfm.album.url);
 							$imgHolder.wrap($albumLink);
@@ -50,5 +50,5 @@ var st = window.st;
 			}); 
 		}  
 	} 
-
+	st.lastFMAlbum.getLastfmAlbum();
 })(jQuery);

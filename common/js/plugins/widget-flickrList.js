@@ -16,13 +16,11 @@ var st = window.st;
                 qstrings: {
                     id: accountID
                 },
-                itemTemplate: '<li><a href="{{link}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
+                itemTemplate: '<li><figure class="deco-image"><a href="{{link}}" target="_blank"><img src="{{image_m}}" alt="{{title}}" /></a><figure></li>'
             }, function(data) {
                 $flickrList.addClass('flickr-list-loaded');
-                if($('html').hasClass('ie6') || $('html').hasClass('ie7') || $('html').hasClass('ie8')) { 
-                    $flickrList.find('li:nth-child(3n)').addClass('end-of-row');
-                }
             });
         }
     }
+    st.flickrList.init();
 })(jQuery);

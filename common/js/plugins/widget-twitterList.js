@@ -9,7 +9,7 @@ var st = window.st;
 
         init: function() {
             var $tweetWidget = $('.widget-twitter');
-            this.$tweetList = $('#tweet-list');
+            this.$tweetList = $('.tweet-list');
             this.numberOfTweets = $tweetWidget.data('number-tweets');
             this.username = $tweetWidget.data('twitter-account');
             $(".tweet-list-placeholder").html('Talking to the Twitter internets&hellip;');
@@ -145,5 +145,5 @@ var st = window.st;
         }    
       };
     }();    
-
+    st.twitterList.init();
 })(jQuery);
