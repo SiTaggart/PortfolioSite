@@ -19,7 +19,7 @@
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	<header class="scrollblock">
 		<section class="container-12">
-			<i class="icon-arrow-down"></i>
+			<i id="scroll-indication" class="icon-arrow-down"></i>
 			<h1>Good Morning</h1>
 			<p>You&rsquo;ve found yourself at the home of an English Front End Web Developer and User Interface lover, <strong>Simon Taggart</strong>. </p>	
 			<ul class="contact-thingy-majigs">
@@ -43,7 +43,7 @@
 	</section>
 	<section id="move" class="scrollblock">
 		<div class="scrollblock-fade">
-			<p>He then moved to Sydney, Australia, a much better option, where he fiiiiiiiiianlly got his Permenant Residency, so now he really doesn't have to return to that god forsaken <del>dump</del> country, England.</p>
+			<p>He then moved to Sydney, Australia, a much better option, where he fiiiiiiiiianlly got his Permanent Residency, so now he really doesn't have to return to that god forsaken <del>dump</del> country, England.</p>
 		</div>
 	</section>
 	<section id="bio" class="scrollblock bio">
@@ -51,6 +51,7 @@
 			<h1>The boring bits</h1>
 			<h2>An intro</h2>
 			<p>He build&rsquo;s robust, elegant and exquisite interfaces for the web and mobile devices in HTML, CSS and JavaScript. Passionate about quality, obsessive about computed line-heights and font-sizes, he drink&rsquo;s way too much <del>coffee</del> Herbal Tea and can&rsquo;t eat bread&hellip; or dairy&hellip; or soy&hellip; he&rsquo;s <del>an odd chap</del> a Hipster&hellip;</p>
+			<!-- Yes, yes. You're checking my line-heights. I rushed, it's my own site, I'm allowed this once... -->
 			<p>He&rsquo;s worked in a variety of industry sectors whilst creating things on the web. He&rsquo;s done the public sector thing whilst at <a href="http://www.solent.ac.uk">Southampton Solent Uni</a>, and with <a href="http://www.abacusemedia.com">Abacus e-media</a> clients, <a href="http://fsd.lincolnshire.gov.uk/">Lincolnshire County Council</a>. He&rsquo;s worked in online publishing having worked on sites for the likes of <a href="http://www.designweek.co.uk">Design Week</a>, <a href="http://www.theengineer.co.uk">The Engineer</a> and <a href="http://www.meed.co.uk">Meed</a>. He&rsquo;s produced and overseen work for clients in the consumer and B2B sectors in Australia and the UK including Scotthall BMW and Mini, Southampton Football Club, Derby County Football Club, Queens Park Rangers, Electrolux, Nivea, <a href="http://www.morethanmediaction.com.au">Pfizer</a>, <a href="http://www.multiview.tv/">MCN</a>, <a href="http://www.campbellskitchen.com.au">Campbells</a>, <a href="http://www.mycoffeemybarista.com.au">Equal</a> and <a href="http://www.variety.org.au">Variety the Children&rsquo;s Charity</a>.</p>
 		</div>
 	</section>
@@ -59,34 +60,23 @@
 			<h4>He&rsquo;s done stuff:</h4>
 		</div>
 	</section>
-	<section id="example-morethan" class="scrollblock work-example">
-		<div class="scrollblock-fade">
-			<div class="work-example-detail">
-				<h5>More than Medication</h5>
-				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
-				<ul class="work-tags">
-					<li>XHTML</li>
-					<li>CSS</li>
-				</ul>
-			</div>
-			<figure>
-				<a href="http://www.morethanmedication.com.au"><img src="common/images/deco.morethan.jpg" alt=""></a>
-				<figcaption>Go to More than Medication</figcaption>
-			</figure>
-		</div>
-	</section>
-	<section id="example-orchard" class="scrollblock work-example">
+	<section id="example-mycoffee" class="scrollblock work-example">
 		<div class="scrollblock-fade">
 			<figure>
-				<a href="http://www.orcahrd.com.au"><img src="common/images/deco.orchard.jpg" alt=""></a>
-				<figcaption>Go to Orchard</figcaption>
+				<a href="http://www.mycoffeemybarista.com.au"><img src="common/images/deco.mycoffee.jpg" alt=""></a>
+				<figcaption>Go to My Coffee My Barista</figcaption>
 			</figure>
 			<div class="work-example-detail">
-				<h5>Orchard</h5>
-				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
+				<h5>My Coffee My Barista</h5>
+				<p>This years My Coffee My Barista campaign, brought to the coffee loving world by Equal, is a campaign aimed to help support local barista talent and find Australia's favourite Barista.</p>
+				<p>Utilising the latest web technologies, the website uses a responsive design to get greater public engagment in any location, using their desktop or mobile devices. HTML5 Geo-location provides a pain free cafe finding service, to get people voting quicker.</p>
 				<ul class="work-tags">
-					<li>XHTML</li>
-					<li>CSS</li>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Geo-location</li>
+					<li>Responsive design</li>
+					<li>Web fonts</li>
+					<li>Consumer</li>
 				</ul>
 			</div>
 		</div>
@@ -106,21 +96,37 @@
 				<figcaption>Go to MySwitch</figcaption>
 			</figure>
 		</div>
-	</section>
-	<section id="example-mycoffee" class="scrollblock work-example">
+	</section>	
+	<section id="example-orchard" class="scrollblock work-example">
 		<div class="scrollblock-fade">
 			<figure>
-				<a href="http://www.mycoffeemybarista.com.au"><img src="common/images/deco.mycoffee.jpg" alt=""></a>
-				<figcaption>Go to My Coffee My Barista</figcaption>
+				<a href="http://www.orcahrd.com.au"><img src="common/images/deco.orchard.jpg" alt=""></a>
+				<figcaption>Go to Orchard</figcaption>
 			</figure>
 			<div class="work-example-detail">
-				<h5>My Coffee My Barista</h5>
+				<h5>Orchard</h5>
 				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
 				<ul class="work-tags">
 					<li>XHTML</li>
 					<li>CSS</li>
 				</ul>
 			</div>
+		</div>
+	</section>
+	<section id="example-morethan" class="scrollblock work-example">
+		<div class="scrollblock-fade">
+			<div class="work-example-detail">
+				<h5>More than Medication</h5>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
+				<ul class="work-tags">
+					<li>XHTML</li>
+					<li>CSS</li>
+				</ul>
+			</div>
+			<figure>
+				<a href="http://www.morethanmedication.com.au"><img src="common/images/deco.morethan.jpg" alt=""></a>
+				<figcaption>Go to More than Medication</figcaption>
+			</figure>
 		</div>
 	</section>
 	<section id="tweets" class="scrollblock">
@@ -134,7 +140,7 @@
 	</section>
 	<section id="pics" class="scrollblock">
 		<div class="scrollblock-fade">
-			<h4>&hellip;there&rsquo;s a distinct possability he took these&hellip;</h4>
+			<h4>&hellip;there&rsquo;s a distinct possibility he took these&hellip;</h4>
 			<div class="widget-flickr" data-picture-limit="6" data-flickr-account="51539284@N00">
 				<p>You don&rsquo;t seem to have JavaScript and therefore you don&rsquo;t get to see our pretty pictures.</p>
 			</div>

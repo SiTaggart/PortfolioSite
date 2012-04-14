@@ -37,30 +37,25 @@ st.siteInit = function(){
 }
 $(function(){
 	st.siteInit();
+	
 	// initialize the plugin, pass in the class selector for the sections of content (blocks)
 	var scrollorama = $.scrollorama({ blocks:'.scrollblock', enablePin:false });
 	scrollorama.animate('#who .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 	scrollorama.animate('#who h4',{ delay: 1200, duration: 400, property:'opacity', start:0, end:1 });
-	scrollorama.animate('#move .scrollblock-fade',{ delay: 300, duration: 200, property:'opacity', start:0, end:1 });
+	scrollorama.animate('#move .scrollblock-fade',{ delay: 200, duration: 200, property:'opacity', start:0, end:1 });
 	scrollorama.animate('#bio .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 	scrollorama.animate('#stuff .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
-
 	scrollorama.animate('#example-morethan .scrollblock-fade',{ delay: 100, duration: 600, property:'opacity', start:0, end:1 });
-
 	scrollorama.animate('#example-orchard .scrollblock-fade',{ delay: 100, duration: 600, property:'opacity', start:0, end:1 });
-	
 	scrollorama.animate('#example-myswitch .scrollblock-fade',{ delay: 100, duration: 600, property:'opacity', start:0, end:1 });
-
 	scrollorama.animate('#example-mycoffee .scrollblock-fade',{ delay: 100, duration: 600, property:'opacity', start:0, end:1 });
-	
-
 	scrollorama.animate('#tweets .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 	scrollorama.animate('#pics .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 	scrollorama.animate('#albums .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 
-	scrollorama.onBlockChange(function() {
-	    console.log('You just scrolled to block#'+scrollorama.blockIndex);
-	});
+	var waitForIt = setTimeout(function(){
+		$('#scroll-indication').addClass('go');
+	}, 5000)
 })
 
 

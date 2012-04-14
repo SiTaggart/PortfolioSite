@@ -132,6 +132,28 @@ section { margin:0 auto; padding:25px 0; width:960px; }
 /*----------------------------------------------------------------------------------------------------------
 #############################################  OBJECTS 
 ----------------------------------------------------------------------------------------------------------*/
+#scroll-indication { color:#46413B; font-size:9em; position:absolute; top:-80px; }
+	#scroll-indication.go { top:20px; 
+							-webkit-animation: scroll-direction 1500ms infinite ease-in-out;
+							-moz-animation:    scroll-direction 1500ms infinite ease-in-out;
+							-ms-animation:     scroll-direction 1500ms infinite ease-in-out;}
+
+@-webkit-keyframes scroll-direction {
+	0%   { top: -80px; }
+	50% { top:-20px; }
+	100% { top: -80px; }
+}
+@-moz-keyframes scroll-direction {
+	0%   { top: -80px; }
+	50% { top:-20px; }
+	100% { top: -80px; }
+}
+@-ms-keyframes scroll-direction {
+	0%   { top: -80px; }
+	50% { top:-20px; }
+	100% { top: -80px; }
+}
+
 .contact-thingy-majigs { margin:80px 0; }
 .contact-thingy-majigs li { display:inline-block; margin:0 25px; vertical-align:middle; width:250px; }
 .contact-thingy-majigs a { color:#46413B; }
@@ -165,11 +187,11 @@ figure { overflow:hidden; position:relative; }
 		.work-example-detail p,
 		.work-example-detail li { font-size:1.4em; line-height:1.5; }
 		
-		.work-example:nth-of-type(even) figure { border-radius:10px 0 0 10px; }
-		.work-example:nth-child(even) .work-example-detail { border-radius:0 10px 10px 0; }
+		.work-example:nth-of-type(odd) figure { border-radius:10px 0 0 10px; }
+		.work-example:nth-child(odd) .work-example-detail { border-radius:0 10px 10px 0; }
 
 	.work-tags { list-style:none; margin:0; padding:0; }
-		.work-tags li { background:#835682; border:solid 1px #6c486b; border-radius:5px; color:#fff; display:inline-block; font-size:12px; line-height:1; padding:4px 8px 5px; text-shadow:1px 1px 0 rgba(0,0,0,0.5);}
+		.work-tags li { background:#835682; border:solid 1px #6c486b; border-radius:5px; color:#fff; display:inline-block; font-size:12px; line-height:1; padding:4px 8px 5px; margin:0 0 10px; text-shadow:1px 1px 0 rgba(0,0,0,0.5);}
 
 /*# TWEET #*/
 .tweet-list ul { list-style:none; }
