@@ -53,10 +53,37 @@ $(function(){
 	scrollorama.animate('#pics .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 	scrollorama.animate('#albums .scrollblock-fade',{ delay: 300, duration: 400, property:'opacity', start:0, end:1 });
 
+	scrollorama.onBlockChange(function(){
+		if(scrollorama.blockIndex > 0) st.stickyLinks.show();
+		else st.stickyLinks.hide();
+	});
+
 	var waitForIt = setTimeout(function(){
 		$('#scroll-indication').addClass('go');
-	}, 5000)
-})
+	}, 5000);
+
+	st.stickyLinks.init();
+});
+
+st.stickyLinks = {
+	$links: '',
+	$sticky: '',
+
+	init: function() {
+		this.$links = $('.contact-thingy-majigs').clone().addClass('contact-thingy-majigs-sticky');
+		this.$sticky = $('<div />', {'class':'sticky-links'});
+		this.$sticky.append(this.$links);
+		$('body').prepend(this.$sticky);
+	},
+
+	show: function() {
+		this.$sticky.addClass('on');
+	},
+
+	hide: function() {
+		this.$sticky.removeClass('on');
+	}
+};
 
 
 
