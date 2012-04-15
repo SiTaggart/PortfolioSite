@@ -63,6 +63,7 @@ $(function(){
 	}, 5000);
 
 	st.stickyLinks.init();
+	st.setGreeting();
 });
 
 st.stickyLinks = {
@@ -84,6 +85,21 @@ st.stickyLinks = {
 		this.$sticky.removeClass('on');
 	}
 };
+
+st.setGreeting = function() { 
+	var datetoday = new Date(),
+		timenow = datetoday.getTime(),
+		thehour,
+		greeting;
+	datetoday.setTime(timenow);
+	thehour = datetoday.getHours();
+	if (thehour > 17) greeting = 'Evening';
+	else if (thehour >12) greeting = 'Afternoon';
+	else greeting = 'Morning';
+	$('header h1').text('Good ' + greeting);
+}
+
+
 
 
 
