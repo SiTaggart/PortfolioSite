@@ -113,11 +113,11 @@ footer h3 { color:#72577C; font-size:20px; margin-top:10px; }
 ----------------------------------------------------------------------------------------------------------*/
 header { border-top:solid 10px #9771a5; height:700px; border-bottom:solid 1px #eee; text-align:center;
 		background: rgb(243,244,246); /* Old browsers */
-		background: -moz-linear-gradient(top, rgba(243,244,246,1) 0%, rgba(255,255,255,1) 30%); /* FF3.6+ */
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,244,246,1) 30%); /* FF3.6+ */
 		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,244,246,1) 30%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(243,244,246,1) 0%,rgba(255,255,255,1) 30%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, rgba(243,244,246,1) 0%,rgba(255,255,255,1) 30%); /* IE10+ */
-		background: linear-gradient(top, rgba(243,244,246,1) 0%,rgba(255,255,255,1) 30%); /* W3C */
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,244,246,1) 30%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,244,246,1) 30%); /* IE10+ */
+		background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,244,246,1) 30%); /* W3C */
 }
 #wrapper { border-bottom:solid 1px #ccc; }
 #container { overflow:hidden; }
