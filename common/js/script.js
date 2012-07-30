@@ -86,7 +86,7 @@ st.stickyLinks = {
 	}
 };
 
-st.setGreeting = function() { 
+st.setGreeting = function() {
 	var datetoday = new Date(),
 		timenow = datetoday.getTime(),
 		thehour,
