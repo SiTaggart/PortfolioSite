@@ -2,7 +2,7 @@ if (!window.st) window.st = {};
 var st = window.st;
 
 (function($) {
-    st.twitterList = {  
+    st.twitterList = {
 
         username: "",
         numberOfTweets: 1,
@@ -19,7 +19,7 @@ var st = window.st;
         pullTweets: function() {
 
             var self = this,
-                url = 'http://twitter.com/statuses/user_timeline/' + this.username + '.json?callback=?',
+                url = 'https://api.twitter.com/1/statuses/user_timeline/' + this.username + '.json?callback=?',
                 params = {
                     count: this.numberOfTweets
                 };
@@ -34,19 +34,19 @@ var st = window.st;
                         $('<li>', { 'html': '<p>' + tmp + '</p><p class="tweet-list-time">' + getTime.relative(tweet.created_at) + ' via ' + tweet.source + '</p>' })
                     );
                 });
-            }).error(function() { 
-                self.$tweetList.html('<p>Don&rsquo;t judge us, but something broke. <a href="http://twitter.com/intent/orchardonline">Follow us here in the meantime</a>.</p>'); 
-            }).complete(function() { 
-                $(".tweet-list-placeholder").fadeOut().remove(); 
+            }).error(function() {
+                self.$tweetList.html('<p>Don&rsquo;t judge us, but something broke. <a href="http://twitter.com/intent/orchardonline">Follow us here in the meantime</a>.</p>');
+            }).complete(function() {
+                $(".tweet-list-placeholder").fadeOut().remove();
             });
 
             this.tweetify = function (str) {
                 return str.replace(/(https?:\/\/\S+)/gi, '<a href="$1">$1</a>').replace(/(^|\s)@(\w+)/g, '$1<a href="http://twitter.com/$2">@$2</a>').replace(/(^|\s)#(\w+)/g, '$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
             };
-        }    
+        }
 
     }
-    
+
     //lifted from https://github.com/remy/twitterlib/blob/master/twitterlib.js Thanks Remy
     var getTime = function () {
       var monthDict = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -55,7 +55,7 @@ var st = window.st;
           var hour = date.getHours(),
               min = date.getMinutes() + "",
               ampm = 'AM';
-      
+
           if (hour == 0) {
             hour = 12;
           } else if (hour == 12) {
@@ -64,11 +64,11 @@ var st = window.st;
             hour -= 12;
             ampm = 'PM';
           }
-      
+
           if (min.length == 1) {
             min = '0' + min;
           }
-      
+
           return hour + ':' + min + ' ' + ampm;
         },
         date: function (date) {
@@ -142,8 +142,8 @@ var st = window.st;
           }
 
           return r;
-        }    
+        }
       };
-    }();    
+    }();
     st.twitterList.init();
 })(jQuery);

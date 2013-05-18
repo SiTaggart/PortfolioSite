@@ -41,3 +41,8 @@ publish
 # build script local files
 build/buildinfo.properties
 build/config/buildinfo.properties
+
+.__empty__
+node_modules/
+components/
+.sass-cache/
