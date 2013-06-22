@@ -3,10 +3,22 @@ module.exports = function( grunt ) {
   grunt.initConfig({
 
     watch: {
-      files: [
-        'public/common/css/style.css'
-      ],
-      tasks: ['cssmin']
+      cssmin: {
+        files: [
+          'public/common/css/style.css'
+        ],
+        tasks: ['cssmin']
+      },
+      uglify: {
+        files: [
+          'public/common/js/libs/*.js',
+          'public/common/js/mylibs/*.js',
+          'public/common/js/plugins/*.js',
+          'public/common/js/plugins.js',
+          'public/common/js/script.js'
+        ],
+        tasks: ['uglify']
+      }
     },
 
     cssmin: {
@@ -17,14 +29,28 @@ module.exports = function( grunt ) {
         dest: 'public/common/css/',
         ext: '.min.css'
       }
+    },
+
+    uglify: {
+      dist: {
+        options: {
+          mangle: false,
+          sourceMap: 'public/js/map/source-map.js'
+        },
+        files: {
+          'public/common/js/script.min.js': [
+            'public/common/js/plugins.js',
+            'public/common/js/plugins/*.js',
+            'public/common/js/script.js'
+          ]
+        }
+      }
     }
 
   });
 
-
-  //Load the npm tasks
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  // load all grunt tasks
+  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Default grunt task to be run by node when the app starts in dev
   grunt.registerTask('default', ['watch']);
