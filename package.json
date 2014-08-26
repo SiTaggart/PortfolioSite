@@ -5,7 +5,7 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "",
+    "express": "3.*",
     "jade": ""
   },
   "devDependencies": {
