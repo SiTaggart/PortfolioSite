@@ -1,22 +1,32 @@
 {
   "name": "Portfolio",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
-    "express": "3.*",
-    "jade": ""
+    "express": "^4.9.0",
+    "gzippo": "^0.2.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-cssmin": "~0.4.2",
-    "grunt-contrib-watch": "~0.1.4",
-    "grunt-contrib-uglify": "~0.2.2",
-    "matchdep": "~0.1.2"
+    "bower": "^1.3.12",
+    "browser-sync": "^1.3.6",
+    "del": "^0.1.3",
+    "gulp": "^3.6.2",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-changed": "~0.3.0",
+    "gulp-concat": "^2.4.0",
+    "gulp-connect": "^2.0.6",
+    "gulp-csso": "^0.2.9",
+    "gulp-imagemin": "^1.0.1",
+    "gulp-notify": "~1.2.4",
+    "gulp-open": "^0.2.8",
+    "gulp-sass": "^0.7.3",
+    "gulp-sourcemaps": "^1.1.4",
+    "gulp-uglifyjs": "^0.4.2"
   },
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.2.x"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SiTaggart/PortfolioSite.git"
   }
 }

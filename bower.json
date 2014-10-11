@@ -1,0 +1,25 @@
+{
+  "name": "PortfolioSite",
+  "version": "0.0.3",
+  "homepage": "https://github.com/SiTaggart/PortfolioSite",
+  "authors": [
+    "Si Taggart <me@simontaggart.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.8.3",
+    "normalize-scss": "~3.0.1"
+  },
+  "resolutions": {
+    "jquery": "1.8.3"
+  }
+}
