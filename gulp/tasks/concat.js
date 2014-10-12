@@ -5,8 +5,9 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 
-gulp.task('concat', function () {
-    gulp.src([
+gulp.task('concat', ['clean'], function () {
+
+    var stream = gulp.src([
             './app/assets/vendor/bower_components/jquery/jquery.js',
             './app/assets/scripts/plugins.js',
             './app/assets/scripts/plugins/**.js',
@@ -17,4 +18,6 @@ gulp.task('concat', function () {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest( config.js.dest ))
         .pipe(reload({stream:true}));
+
+    return stream;
 });
