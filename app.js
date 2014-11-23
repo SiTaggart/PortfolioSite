@@ -1,6 +1,7 @@
-var gzippo = require('gzippo');
+var compression = require('compression');
 var express = require('express');
 var app = express();
 
-app.use(gzippo.staticGzip("" + __dirname + "/public"));
+app.use(compression());
+app.use(express.static(__dirname + '/public'));
 app.listen(process.env.PORT || 5000);
