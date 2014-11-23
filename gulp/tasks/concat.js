@@ -5,7 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 
-gulp.task('concat', ['clean'], function () {
+gulp.task('concat', ['clean:js'], function () {
 
     var stream = gulp.src([
             './app/assets/vendor/bower_components/jquery/jquery.js',

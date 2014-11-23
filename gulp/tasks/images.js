@@ -3,7 +3,7 @@ var config     = require('../config');
 var changed    = require('gulp-changed');
 var imagemin   = require('gulp-imagemin');
 
-gulp.task('images', ['clean'], function() {
+gulp.task('images', ['clean:images'], function() {
     var dest = config.images.dest;
 
     var stream =  gulp.src( config.images.src )

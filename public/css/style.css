@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -33,10 +34,11 @@ body {
    ========================================================================== */
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 /**
@@ -70,7 +72,7 @@ audio:not([controls]) {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background: transparent; }
+  background-color: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -161,7 +163,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -256,8 +257,7 @@ input {
  *  Known issue: excess padding remains in IE 6.
  */
 input[type="checkbox"], input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -278,7 +278,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -339,27 +338,89 @@ td, th {
 #############################################  TYPOGRAPHY
 ----------------------------------------------------------------------------------------------------------*/
 html {
+  font-size: 10px;
   height: 100%; }
+  @media (min-width: 769px) {
+    html {
+      font-size: 12px; } }
+  @media (min-width: 1025px) {
+    html {
+      font-size: 14px; } }
+  @media (min-width: 1281px) {
+    html {
+      font-size: 16px; } }
 
 body {
-  background: #eee;
-  color: #666;
-  font: 400 62.5%/1 "Open Sans", "Gill Sans MT Pro", "Gill Sans MT", "Gill Sans", sans-serif;
+  background: #fefefe;
+  color: #444;
+  font-family: "Lato", "Gill Sans", Arial, sans-serif;
+  font-weight: 400;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   text-align: center; }
 
-header {
-  min-height: 61.728%; }
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+  margin-top: 0; }
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1.3; }
+  h1 small {
+    font-weight: 300; }
+
+.header {
+  background: url(/images/kyoto.jpg) 50% #f1f1f1;
+  background-size: cover;
+  color: #efefef;
+  min-height: 61.728%;
+  position: relative; }
+  .header:before {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    bottom: 0;
+    content: "";
+    display: block;
+    min-height: 40%;
+    position: absolute;
+    width: 100%; }
+
+.header-avatar {
+  border: solid 5px #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border-radius: 200px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  width: 12.5rem; }
+
+.header-title {
+  bottom: 3rem;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  .header-title small {
+    font-size: 2rem;
+    display: block; }
 
 main {
-  height: 38.272%;
-  width: 100%; }
+  margin: 0 auto;
+  max-width: 1200px; }
   main > section {
-    height: 100%; }
+    height: 100%;
+    min-height: 100px; }
   main > section:first-of-type {
-    float: left;
-    width: 61.728%; }
+    float: left; }
   main > section:last-of-type {
+    background: #e5e5e5;
     float: left;
     width: 38.272%; }
+
+.leader {
+  padding: 6rem 3rem; }
+  .leader p {
+    font-size: 2rem;
+    line-height: 1.4; }
