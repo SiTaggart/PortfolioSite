@@ -96,9 +96,11 @@ $ratio: 61.728%;
 
 .header-title {
     bottom: 3rem;
+    letter-spacing: - remCalc(1px);
     margin: 0;
     position: absolute;
     text-align: center;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, .4);
     width: 100%;
 
     small {
