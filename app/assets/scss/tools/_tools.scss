@@ -2,43 +2,6 @@
 // LIBRARY MIXINS & FUNCTIONS
 // =============================================================================
 
-// Responsive Breakpoints
-// -----------------------------------------------------------------------------
-//
-// Add to your object/theme file
-// Eg. @include breakpoint(medium) { styles }
-//
-// -----------------------------------------------------------------------------
-
-@mixin breakpoint($size) {
-
-    @if $size == xxxlarge {
-        @media (min-width: 1921px) { @content; }
-    }
-    @if $size == xxlarge {
-        @media (min-width: 1681px) { @content; }
-    }
-    @else if $size == xlarge {
-        @media (min-width: 1441px) { @content; }
-    }
-    @else if $size == large {
-        @media (min-width: 1281px) { @content; }
-    }
-    @else if $size == medium {
-        @media (min-width: 1025px) { @content; }
-    }
-    @else if $size == small {
-        @media (min-width: 769px) { @content; }
-    }
-    @else if $size == xsmall {
-        @media (min-width: 481px) { @content; }
-    }
-    @else if $size == xxsmall {
-        @media (min-width: 320px) { @content; }
-    }
-
-}
-
 
 // Rem Calculations
 // -----------------------------------------------------------------------------

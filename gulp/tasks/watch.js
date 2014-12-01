@@ -6,7 +6,7 @@ gulp.task('watch', function(){
     './app/assets/scripts/**'
   ], ['concat']);
 
-  gulp.watch('./app/assets/scss/*.scss', ['styles']);
+  gulp.watch('./app/assets/scss/**/*.scss', ['styles']);
 
   gulp.watch('./app/assets/images/**', ['images']);
 

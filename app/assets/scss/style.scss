@@ -1,10 +1,14 @@
+@import "tools/tools";
+
 @import "settings/settings";
 
-@import "tools/tools";
+@import "../vendor/bower_components/sassy-maps/sass/_sassy-maps.scss";
+
+@import "../vendor/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
-@import '../vendor/bower_components/normalize-scss/normalize';
+@import "../vendor/bower_components/normalize-scss/normalize";
 
  // Primary Styles
  // Author:Simon Taggart
@@ -16,20 +20,21 @@ $body-bg: #fefefe;
 #############################################  TYPOGRAPHY
 ----------------------------------------------------------------------------------------------------------*/
 html {
-    font-size: 10px;
+    font-size: 8px;
     height: 100%;
 
-    @include breakpoint(small) {
-        font-size: 12px;
+    @include breakpoint($breakpoint-xxsmall $breakpoint-portrait) {
+        font-size: 8px;
     }
 
-    @include breakpoint(medium) {
-        font-size: 14px;
+    @include breakpoint($breakpoint-xsmall) {
+        font-size: 10px;
     }
 
-    @include breakpoint(large) {
+    @include breakpoint($breakpoint-small) {
         font-size: 16px;
     }
+
 }
 
 body {
@@ -66,6 +71,10 @@ $ratio: 61.728%;
     color: #efefef;
     min-height: $ratio;
     position: relative;
+
+    @include breakpoint($breakpoint-landscape ($breakpoint-xxsmall $breakpoint-medium)) {
+        min-height: $ratio * 1.4;
+    }
 
     &:before {
         background-image:
