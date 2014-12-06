@@ -8,10 +8,9 @@ var reload      = browserSync.reload;
 gulp.task('concat', ['clean:js'], function () {
 
     var stream = gulp.src([
-            './app/assets/vendor/bower_components/jquery/jquery.js',
-            './app/assets/scripts/plugins.js',
-            './app/assets/scripts/plugins/**.js',
-            './app/assets/scripts/script.js'
+            './app/assets/vendor/bower_components/angular/angular.js',
+            './app/assets/scripts/app.js',
+            './app/assets/scripts/**/*.js'
         ])
         .pipe(sourcemaps.init())
             .pipe(concat('app.js'))
