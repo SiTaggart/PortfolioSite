@@ -1,22 +1,25 @@
-var gulp = require('gulp');
-var config = require('../config');
-var concat = require('gulp-concat');
-var sourcemaps = require('gulp-sourcemaps');
-var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
+var gulp = require('gulp'),
+    concat = require('gulp-concat'),
+    sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload,
+    config = require('../config');
 
-gulp.task('concat', ['clean:js'], function () {
-
+function concatPortfolio() {
     var stream = gulp.src([
             './app/assets/vendor/bower_components/angular/angular.js',
-            './app/assets/scripts/app.js',
-            './app/assets/scripts/**/*.js'
+            config.js.build + '/**/*.js',
+            config.js.src + '/**/*.js',
+            '!' + config.js.src + '/**/*.scenario.js',
+            '!' + config.js.src + '/**/*.spec.js'
         ])
         .pipe(sourcemaps.init())
-            .pipe(concat('app.js'))
+        .pipe(concat('app.js'))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest( config.js.dest ))
+        .pipe(gulp.dest(config.js.dest))
         .pipe(reload({stream:true}));
 
     return stream;
-});
+}
+
+gulp.task('concat', ['clean:js', 'html2js'], concatPortfolio);

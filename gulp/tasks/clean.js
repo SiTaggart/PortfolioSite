@@ -18,6 +18,7 @@ gulp.task('clean:styles', function(cb) {
 
 gulp.task('clean:js', function(cb) {
     del([
+        config.js.build,
         config.js.dest
     ], cb);
 });
