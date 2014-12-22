@@ -334,12 +334,21 @@ table {
 td, th {
   padding: 0; }
 
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background: #fefefe;
+  height: 100%; }
+
 /*----------------------------------------------------------------------------------------------------------
 #############################################  TYPOGRAPHY
 ----------------------------------------------------------------------------------------------------------*/
 html {
-  font-size: 8px;
-  height: 100%; }
+  font-size: 8px; }
   @media screen and (min-width: 320px) and (orientation: portrait) {
     html {
       font-size: 8px; } }
@@ -351,13 +360,10 @@ html {
       font-size: 16px; } }
 
 body {
-  background: #fefefe;
   color: #444;
   font-family: "Lato", "Gill Sans", Arial, sans-serif;
   font-weight: 400;
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
-  text-align: center; }
+  -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
   margin-top: 0; }
@@ -368,6 +374,33 @@ h1 {
   line-height: 1.3; }
   h1 small {
     font-weight: 300; }
+
+.leader {
+  padding: 6rem 3rem;
+  text-align: center; }
+  .leader p {
+    font-size: 2rem;
+    line-height: 1.4; }
+
+main {
+  margin: 0 auto;
+  max-width: 1200px; }
+  main > section {
+    height: 100%;
+    min-height: 100px;
+    width: 100%; }
+    @media screen and (min-width: 769px) {
+      main > section {
+        float: left;
+        width: 61.728%; } }
+  main > section:first-of-type {
+    width: 100%; }
+  main > section:last-of-type {
+    background: #e5e5e5;
+    float: left; }
+    @media screen and (min-width: 769px) {
+      main > section:last-of-type {
+        width: 38.272%; } }
 
 .header {
   background: url(/images/kyoto.jpg) 50% #f1f1f1;
@@ -411,21 +444,48 @@ h1 {
     font-size: 2rem;
     display: block; }
 
-main {
-  margin: 0 auto;
-  max-width: 1200px; }
-  main > section {
-    height: 100%;
-    min-height: 100px; }
-  main > section:first-of-type {
-    float: left; }
-  main > section:last-of-type {
-    background: #e5e5e5;
-    float: left;
-    width: 38.272%; }
+.flickrFeed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
-.leader {
-  padding: 6rem 3rem; }
-  .leader p {
-    font-size: 2rem;
-    line-height: 1.4; }
+.flickrFeed-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 240px;
+  padding: 0;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch; }
