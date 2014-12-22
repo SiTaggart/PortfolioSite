@@ -14,7 +14,6 @@ Thumbs.db
 
 .__empty__
 node_modules/
-components/
 .sass-cache/
 bower_components/
 build/
