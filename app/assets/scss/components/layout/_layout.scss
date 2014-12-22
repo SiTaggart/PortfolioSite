@@ -1,0 +1,39 @@
+// =============================================================================
+// LAYOUT
+// =============================================================================
+
+main {
+
+    margin: 0 auto;
+    max-width: 1200px;
+
+    > section {
+        height: 100%;
+        min-height: 100px;
+        width: 100%;
+
+        @include breakpoint($breakpoint-small) {
+            float:left;
+            width: $ratio;
+        }
+    }
+
+    > section:first-of-type {
+
+        width: 100%;
+
+        @include breakpoint($breakpoint-medium) {
+
+        }
+
+    }
+
+    > section:last-of-type {
+        background: darken($body-bg, 10%);
+        float:left;
+
+        @include breakpoint($breakpoint-small) {
+            width: 100 - $ratio;
+        }
+    }
+}
