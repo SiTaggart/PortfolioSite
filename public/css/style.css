@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather);
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -361,15 +361,18 @@ html {
 
 body {
   color: #444;
-  font-family: "Lato", "Gill Sans", Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
   margin-top: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Gill Sans", Arial, sans-serif; }
+
 h1 {
-  font-size: 5.5rem;
+  font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3; }
   h1 small {
@@ -379,8 +382,8 @@ h1 {
   padding: 6rem 3rem;
   text-align: center; }
   .leader p {
-    font-size: 2rem;
-    line-height: 1.4; }
+    font-size: 1.6rem;
+    line-height: 1.6; }
 
 main {
   margin: 0 auto;
@@ -425,6 +428,7 @@ main {
   border: solid 5px #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   border-radius: 200px;
+  height: 12.5rem;
   left: 0;
   margin: 0 auto;
   position: absolute;
@@ -441,51 +445,25 @@ main {
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
   width: 100%; }
   .header-title small {
-    font-size: 2rem;
+    font-size: 2.2rem;
     display: block; }
 
 .flickrFeed {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-align-content: stretch;
-      -ms-flex-line-pack: stretch;
-          align-content: stretch;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  padding: 0; }
 
 .flickrFeed-item {
   background-repeat: no-repeat;
   background-size: cover;
+  border: solid #fff;
+  border-radius: 15px;
+  border-width: 10px;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
+  float: left;
   margin: 0;
-  min-height: 240px;
-  padding: 0;
-  -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          order: 0;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 50%;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-          align-self: stretch; }
+  padding: 0 0 50%;
+  width: 50%; }
+
+.flickrFeed-item-title {
+  position: absolute; }

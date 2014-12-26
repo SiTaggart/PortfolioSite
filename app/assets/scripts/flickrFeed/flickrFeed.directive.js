@@ -3,9 +3,8 @@
 
     var flickrFeedDirective = function flickrFeedDirective($rootScope) {
         return {
-            restrict: 'E',
+            restrict: 'A',
             templateUrl: 'app/assets/scripts/flickrFeed/flickrFeed.tpl.html',
-            replace: true,
             controller: 'FlickrFeedCtrl as flickrFeedCtrl',
 
             link: function(scope, element, attr, ctrl) {

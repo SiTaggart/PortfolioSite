@@ -1,5 +1,3 @@
-<ul class="flickrFeed">
-    <li ng-repeat="item in flickrFeedCtrl.items" class="flickrFeed-item" style="background-image:url({{item.media.m}})">
-        {{item.title}}
-    </li>
-</ul>
+<li ng-repeat="item in flickrFeedCtrl.items" class="flickrFeed-item" style="background-image:url({{item.media.m}})">
+    <div class="flickrFeed-item-title">{{item.title}}</div>
+</li>
