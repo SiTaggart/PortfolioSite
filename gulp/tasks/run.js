@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('run', ['clean', 'concat', 'styles', 'images', 'watch', 'connect', 'browsersync']);
+gulp.task('run', ['clean', 'concat', 'styles', 'images', 'watch', 'dev', 'browsersync']);

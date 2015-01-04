@@ -3,7 +3,7 @@ var browserSync = require('browser-sync');
 
 gulp.task('browsersync', function() {
   browserSync({
-    proxy: "localhost:8000",
+    proxy: "localhost:5000",
     open: true,
     /* Hide the notification. It gets annoying */
     notify: {
