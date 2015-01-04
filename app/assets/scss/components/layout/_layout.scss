@@ -5,7 +5,7 @@
 main {
 
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
 
     > section {
         height: 100%;
@@ -14,18 +14,13 @@ main {
 
         @include breakpoint($breakpoint-small) {
             float:left;
+            padding: 0 remCalc(40);
             width: $ratio;
         }
     }
 
     > section:first-of-type {
-
         width: 100%;
-
-        @include breakpoint($breakpoint-medium) {
-
-        }
-
     }
 
     > section:last-of-type {
