@@ -416,7 +416,6 @@ main {
     .header {
       min-height: 86.4192%; } }
   .header:before {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     bottom: 0;
     content: "";

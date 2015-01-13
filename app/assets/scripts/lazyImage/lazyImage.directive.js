@@ -7,7 +7,7 @@
 
             link: function(scope, element, attr) {
                 element.bind('load', function imageLoad () {
-                    alert('image loaded');
+                    // alert('image loaded');
                 });
             }
         };
