@@ -465,3 +465,11 @@ main {
 
 .flickrFeed-item-title {
   position: absolute; }
+
+.lastfm-figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 300px;
+  padding: 0;
+  width: 300px; }
