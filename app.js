@@ -7,5 +7,6 @@ app.use(compression());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/tweets', routes.getTweets);
+app.get('/lastfm', routes.getTopAlbum);
 
 app.listen(process.env.PORT || 5000);

@@ -12,3 +12,28 @@ exports.getTweets = function(req, res) {
         res.json(data);
     });
 };
+
+
+
+
+var LastfmAPI = require('lastfmapi');
+
+// Create a new instance
+var lfm = new LastfmAPI({
+    'api_key' : 'c06b090ac6af314bfb71d7d005dfbb8d',
+    'secret' : '6efdf483a006566145406f8c0b1b5d9c'
+});
+
+exports.getTopAlbum = function(req, res) {
+    var params = {
+        user: 'si_taggart',
+        period: '7day',
+        limit: req.query.limit,
+        api_key: 'c06b090ac6af314bfb71d7d005dfbb8d'
+    };
+
+    lfm.user.getTopAlbums(params, function(err, topAlbums){
+        res.json(topAlbums);
+    });
+
+};
