@@ -1,7 +1,7 @@
 ;(function () {
     'use strict';
 
-    var tweetsCtrl = function tweetsCtrl ($scope, TweetsService) {
+    var tweetsCtrl = function tweetsCtrl ($scope, $sce, TweetsService) {
         var ctrl = this;
 
         TweetsService.getTweets()
@@ -9,7 +9,7 @@
             .finally(finallyTweets);
 
         function handleTweetData (data) {
-            ctrl.tweet = twitterLinks(data[0].text);
+            ctrl.tweets = $sce.trustAsHtml(twitterLinks(data[0].text));
         }
 
         function handleTweetError (response) {
