@@ -14,21 +14,26 @@ main {
 
         @include breakpoint($breakpoint-small) {
             float:left;
-            padding: 0 remCalc(40);
+            padding: 0 remCalc(20);
             width: $ratio;
         }
-    }
 
-    > section:first-of-type {
-        width: 100%;
-    }
-
-    > section:last-of-type {
-        background: darken($body-bg, 10%);
-        float:left;
-
-        @include breakpoint($breakpoint-small) {
-            width: 100 - $ratio;
+        @include breakpoint($breakpoint-large) {
+            padding: 0 remCalc(40);
         }
     }
+
+}
+
+.ego {
+    width: 100%;
+}
+
+.blabber,
+.tunez {
+
+    @include breakpoint($breakpoint-small) {
+        width: 100 - $ratio;
+    }
+
 }

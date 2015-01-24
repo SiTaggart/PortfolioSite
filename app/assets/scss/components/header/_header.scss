@@ -3,7 +3,7 @@
 // =============================================================================
 
 .header {
-    background: url(/images/kyoto.jpg) 50% darken($body-bg, 5%);
+    background: url(/images/kyoto.sm.jpg) 50%;
     background-size: cover;
     color: #efefef;
     min-height: $ratio;
@@ -11,6 +11,10 @@
 
     @include breakpoint($breakpoint-landscape ($breakpoint-xxsmall $breakpoint-medium)) {
         min-height: $ratio * 1.4;
+    }
+
+    @include breakpoint($breakpoint-small) {
+        background-image: url(/images/kyoto2.jpg);
     }
 
     &:before {

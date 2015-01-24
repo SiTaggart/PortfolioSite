@@ -4,9 +4,17 @@
 
 .lastfm-figure {
     background-repeat: no-repeat;
+    background-position: 50%;
     background-size: cover;
     display: block;
-    height: 300px;
-    padding: 0;
-    width: 300px
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 100%;
+    width: 100%
+}
+
+.lastfm-figcaption {
+    margin: 10px;
+    position: absolute;
+    width: 100%;
 }
