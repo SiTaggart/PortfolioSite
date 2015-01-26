@@ -11,14 +11,12 @@
 }
 
 @function convertToRem($value, $base-value: $fontSizeBase) {
-
     $value: stripUnit($value) / stripUnit($base-value) * 1rem;
     @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
     @return $value;
 }
 
 @function remCalc($values, $base-value: $fontSizeRoot) {
-
     $max: length($values);
 
     @if $max == 1 { @return convertToRem(nth($values, 1), $base-value); }
@@ -30,5 +28,18 @@
     }
 
     @return $remValues;
+}
+
+
+//
+// Clearfix
+// -----------------------------------------------------------------------------
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 

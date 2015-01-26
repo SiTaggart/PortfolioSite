@@ -8,19 +8,24 @@ main {
     max-width: 1400px;
 
     > section {
+
+        @include clearfix();
         height: 100%;
         min-height: 100px;
+        padding: 0 remCalc(40) remCalc(40);
         width: 100%;
 
-        @include breakpoint($breakpoint-small) {
+        @include breakpoint($breakpoint-medium) {
             float:left;
-            padding: 0 remCalc(20);
+            padding-left: remCalc(20);
+            padding-right: remCalc(20);
             width: $ratio;
         }
 
         @include breakpoint($breakpoint-large) {
-            padding: 0 remCalc(40);
+            padding: 0 remCalc(40) remCalc(40);
         }
+
     }
 
 }
@@ -32,7 +37,7 @@ main {
 .blabber,
 .tunez {
 
-    @include breakpoint($breakpoint-small) {
+    @include breakpoint($breakpoint-medium) {
         width: 100 - $ratio;
     }
 

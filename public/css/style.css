@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:400,700);
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -378,6 +378,11 @@ h1 {
   h1 small {
     font-weight: 300; }
 
+a {
+  color: #7796CB; }
+  a:hover {
+    color: #527abd; }
+
 .ego {
   padding: 6rem 3rem 4rem;
   text-align: center; }
@@ -391,20 +396,26 @@ main {
   main > section {
     height: 100%;
     min-height: 100px;
+    padding: 0 2.5rem 2.5rem;
     width: 100%; }
-    @media screen and (min-width: 769px) {
+    main > section:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 1025px) {
       main > section {
         float: left;
-        padding: 0 1.25rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         width: 61.728%; } }
     @media screen and (min-width: 1281px) {
       main > section {
-        padding: 0 2.5rem; } }
+        padding: 0 2.5rem 2.5rem; } }
 
 .ego {
   width: 100%; }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .blabber, .tunez {
     width: 38.272%; } }
 
@@ -412,7 +423,7 @@ main {
   background: url(/images/kyoto.sm.jpg) 50%;
   background-size: cover;
   color: #efefef;
-  min-height: 61.728%;
+  min-height: 40.625rem;
   position: relative; }
   @media screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1025px) {
     .header {
@@ -461,12 +472,12 @@ main {
 .flickrFeed-item {
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   float: left;
-  margin: 1%;
-  padding: 0 0 48%;
-  width: 48%; }
+  margin: 2%;
+  padding: 0 0 46%;
+  width: 46%; }
 
 .flickrFeed-item-title {
   position: absolute; }
@@ -479,9 +490,24 @@ main {
   margin: 0;
   overflow: hidden;
   padding: 0 0 100%;
+  position: relative;
   width: 100%; }
 
 .lastfm-figcaption {
-  margin: 10px;
+  padding: 10px;
   position: absolute;
   width: 100%; }
+
+tweets {
+  background-color: #f9f9f9;
+  display: block;
+  font-size: 2.1875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 2.5rem;
+  text-align: center; }
+  @media screen and (min-width: 769px) {
+    tweets {
+      font-size: 1.875rem; } }
+  tweets > p {
+    margin: 0; }

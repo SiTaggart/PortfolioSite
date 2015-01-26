@@ -1,0 +1,23 @@
+// =============================================================================
+// TWEETS
+// =============================================================================
+
+tweets {
+
+    background-color: #f9f9f9;
+    display: block;
+    font-size: remCalc(35);
+    font-weight: 700;
+    line-height: 1.4;
+    padding:remCalc(40);
+    text-align: center;
+
+    @include breakpoint($breakpoint-small) {
+        font-size: remCalc(30);
+    }
+
+    > p {
+        margin: 0;
+    }
+
+}

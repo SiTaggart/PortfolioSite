@@ -6,7 +6,7 @@
     background: url(/images/kyoto.sm.jpg) 50%;
     background-size: cover;
     color: #efefef;
-    min-height: $ratio;
+    min-height: remCalc(650);
     position: relative;
 
     @include breakpoint($breakpoint-landscape ($breakpoint-xxsmall $breakpoint-medium)) {
@@ -46,6 +46,7 @@
 }
 
 .header-title {
+
     bottom: 3rem;
     letter-spacing: - remCalc(1px);
     margin: 0;
