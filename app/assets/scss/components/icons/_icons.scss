@@ -1,0 +1,24 @@
+// =============================================================================
+// ICONS
+// =============================================================================
+
+$icon-color: $body-fontColor;
+
+.icon {
+    display: inline-block;
+    height: 24px;
+    margin-bottom: 3rem;
+    width: 24px;
+
+    @include breakpoint($breakpoint-xsmall) {
+        height: 48px;
+        margin-bottom: 1.5rem;
+        width: 48px;
+    }
+
+    > svg {
+        fill: $icon-color;
+        height: 100%;
+        width: 100%;
+    }
+}

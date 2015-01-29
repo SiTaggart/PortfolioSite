@@ -28,3 +28,9 @@ gulp.task('clean:images', function(cb) {
         config.images.dest
     ], cb);
 });
+
+gulp.task('clean:svg', function(cb) {
+    del([
+        config.svg.dest
+    ], cb);
+});

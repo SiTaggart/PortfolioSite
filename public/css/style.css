@@ -390,9 +390,28 @@ a {
     font-size: 1.6rem;
     line-height: 1.6; }
 
+.icon {
+  display: inline-block;
+  height: 24px;
+  margin-bottom: 3rem;
+  width: 24px; }
+  @media screen and (min-width: 481px) {
+    .icon {
+      height: 48px;
+      margin-bottom: 1.5rem;
+      width: 48px; } }
+  .icon > svg {
+    fill: #444;
+    height: 100%;
+    width: 100%; }
+
 main {
   margin: 0 auto;
   max-width: 1400px; }
+  main:after {
+    content: "";
+    display: table;
+    clear: both; }
   main > section {
     height: 100%;
     min-height: 100px;
@@ -418,6 +437,12 @@ main {
 @media screen and (min-width: 1025px) {
   .blabber, .tunez {
     width: 38.272%; } }
+
+footer {
+  border-top: solid 1px #efefef;
+  margin: 0 auto;
+  padding-top: 3rem;
+  width: 60%; }
 
 .header {
   background: url(/images/kyoto.sm.jpg) 50%;
@@ -464,6 +489,24 @@ main {
     font-size: 2.2rem;
     display: block; }
 
+.footerLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.footerLink {
+  display: inline-block;
+  padding: 0 3rem 2rem; }
+  .footerLink svg {
+    fill: #cdcdcd;
+    transition: fill 100ms ease-in; }
+  .footerLink a:hover svg {
+    fill: #444; }
+
+.pix {
+  text-align: center; }
+
 .flickrFeed {
   list-style: none;
   margin: 0;
@@ -475,12 +518,15 @@ main {
   border-radius: 2px;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   float: left;
-  margin: 2%;
+  margin: 0 2% 4%;
   padding: 0 0 46%;
   width: 46%; }
 
 .flickrFeed-item-title {
   position: absolute; }
+
+.tunez {
+  text-align: center; }
 
 .lastfm-figure {
   background-repeat: no-repeat;
@@ -498,14 +544,16 @@ main {
   position: absolute;
   width: 100%; }
 
+.blabber {
+  text-align: center; }
+
 tweets {
   background-color: #f9f9f9;
   display: block;
   font-size: 2.1875rem;
   font-weight: 700;
   line-height: 1.4;
-  padding: 2.5rem;
-  text-align: center; }
+  padding: 2.5rem; }
   @media screen and (min-width: 769px) {
     tweets {
       font-size: 1.875rem; } }

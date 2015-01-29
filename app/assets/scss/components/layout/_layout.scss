@@ -4,6 +4,7 @@
 
 main {
 
+    @include clearfix();
     margin: 0 auto;
     max-width: 1400px;
 
@@ -41,4 +42,11 @@ main {
         width: 100 - $ratio;
     }
 
+}
+
+footer {
+    border-top: solid 1px #efefef;
+    margin: 0 auto;
+    padding-top: 3rem;
+    width: 60%;
 }

@@ -2,6 +2,10 @@
 // TWEETS
 // =============================================================================
 
+.blabber {
+    text-align: center;
+}
+
 tweets {
 
     background-color: #f9f9f9;
@@ -10,7 +14,6 @@ tweets {
     font-weight: 700;
     line-height: 1.4;
     padding:remCalc(40);
-    text-align: center;
 
     @include breakpoint($breakpoint-small) {
         font-size: remCalc(30);

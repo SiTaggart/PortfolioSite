@@ -28,6 +28,7 @@ exports.getTopAlbum = function(req, res) {
     var params = {
         user: 'si_taggart',
         period: '7day',
+        // period: '1month',
         limit: req.query.limit,
         api_key: 'c06b090ac6af314bfb71d7d005dfbb8d'
     };
