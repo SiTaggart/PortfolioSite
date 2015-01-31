@@ -361,7 +361,7 @@ html {
 
 body {
   color: #444;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
@@ -379,59 +379,65 @@ h1 {
     font-weight: 300; }
 
 a {
-  color: #7796CB; }
+  color: #d63214; }
   a:hover {
-    color: #527abd; }
+    color: #ec4e31; }
 
-.ego {
-  padding: 6rem 3rem 4rem;
-  text-align: center; }
-  .ego p {
-    font-size: 1.6rem;
-    line-height: 1.6; }
+.ego p {
+  font-size: 1.6rem;
+  line-height: 1.6; }
 
 .icon {
   display: inline-block;
   height: 24px;
-  margin-bottom: 3rem;
+  vertical-align: middle;
   width: 24px; }
   @media screen and (min-width: 481px) {
     .icon {
       height: 48px;
-      margin-bottom: 1.5rem;
       width: 48px; } }
   .icon > svg {
     fill: #444;
     height: 100%;
     width: 100%; }
 
-main {
+.main {
   margin: 0 auto;
   max-width: 1400px; }
-  main:after {
+  .main:after {
     content: "";
     display: table;
     clear: both; }
-  main > section {
-    height: 100%;
-    min-height: 100px;
-    padding: 0 2.5rem 2.5rem;
-    width: 100%; }
-    main > section:after {
-      content: "";
-      display: table;
-      clear: both; }
-    @media screen and (min-width: 1025px) {
-      main > section {
-        float: left;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        width: 61.728%; } }
-    @media screen and (min-width: 1281px) {
-      main > section {
-        padding: 0 2.5rem 2.5rem; } }
+
+.section {
+  height: 100%;
+  min-height: 100px;
+  padding: 0 2.5rem 2.5rem;
+  width: 100%; }
+  .section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 1025px) {
+    .section {
+      float: left;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      width: 61.728%; } }
+  @media screen and (min-width: 1281px) {
+    .section {
+      padding: 0 2.5rem 2.5rem; } }
+
+.section-header {
+  margin-bottom: 2rem;
+  font-size: 1.5rem; }
+  @media screen and (min-width: 1025px) {
+    .section-header {
+      margin-bottom: 1.5rem; } }
 
 .ego {
+  padding: 6rem 3rem 4rem;
+  text-align: center;
   width: 100%; }
 
 @media screen and (min-width: 1025px) {
@@ -547,7 +553,28 @@ footer {
 .blabber {
   text-align: center; }
 
-tweets {
+.blabber-header a {
+  display: block;
+  text-decoration: none; }
+
+.icon--twitter svg {
+  transition: fill 100ms cubic-bezier(0.58, 0.33, 0.71, 0.87); }
+  .blabber-header a:hover .icon--twitter svg {
+    fill: #55acee; }
+
+.blabber-username {
+  display: inline-block;
+  font-family: "Lato", "Gill Sans", Arial, sans-serif;
+  transition: max-width 200ms cubic-bezier(0.58, 0.33, 0.71, 0.87);
+  vertical-align: middle; }
+  @media screen and (min-width: 769px) {
+    .blabber-username {
+      max-width: 0;
+      overflow: hidden; }
+      .blabber-header a:hover .blabber-username {
+        max-width: 200px; } }
+
+.blabber-tweets {
   background-color: #f9f9f9;
   display: block;
   font-size: 2.1875rem;
@@ -555,7 +582,7 @@ tweets {
   line-height: 1.4;
   padding: 2.5rem; }
   @media screen and (min-width: 769px) {
-    tweets {
+    .blabber-tweets {
       font-size: 1.875rem; } }
-  tweets > p {
+  .blabber-tweets > p {
     margin: 0; }

@@ -6,7 +6,44 @@
     text-align: center;
 }
 
-tweets {
+.blabber-header {
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+}
+
+.icon--twitter svg {
+
+    transition: fill 100ms cubic-bezier(.58,.33,.71,.87);
+
+    .blabber-header a:hover & {
+        fill: #55acee;
+    }
+}
+
+.blabber-username {
+
+    display: inline-block;
+    font-family: $fontFamily-sans;
+    transition: max-width 200ms cubic-bezier(.58,.33,.71,.87);
+    vertical-align: middle;
+
+    @include breakpoint($breakpoint-small) {
+        max-width: 0;
+        overflow: hidden;
+
+        .blabber-header a:hover & {
+            max-width: 200px;
+        }
+
+    }
+
+}
+
+.blabber-tweets {
 
     background-color: #f9f9f9;
     display: block;

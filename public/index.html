@@ -22,8 +22,8 @@
                 <small>User Interface Expert</small>
             </h1>
         </header>
-        <main>
-            <section class="ego">
+        <main class="main">
+            <section class="section ego">
                 <p>
                     A <strong>design led</strong> Front-End Engineer, currently working as a <strong>Senior
                     Front-End Engineer</strong> at <a href="http://www.bigcommerce.com">Bigcommerce</a>.
@@ -35,19 +35,35 @@
                     I lead and work with engineering and design teams which are <strong>research led</strong> and <strong>user focused</strong>.
                 </p>
                 <p>
-                    Previously <a href="https://www.flippa.com">Flippa</a>, <a href="https://www.sitepoint.com">Sitepoint</a>, <a href="http://www.orchard.com.au">Orchard</a> and <a href="http://www.abacusemedia.com/">Abacus e-media</a>.
+                    Previously <a href="https://www.flippa.com">Flippa</a>,
+                    <a href="https://www.sitepoint.com">Sitepoint</a>,
+                    <a href="http://www.orchard.com.au">Orchard</a> and
+                    <a href="http://www.abacusemedia.com/">Abacus e-media</a>.
                 </p>
             </section>
-            <section class="pix">
-                <icon glyph="ic-flickr"></icon>
+            <section class="section pix">
+                <header class="section-header">
+                    <a href="#">
+                        <icon class="icon--flickr" glyph="ic-flickr"></icon>
+                    </a>
+                </header>
                 <ul class="flickrFeed" flickrfeed></ul>
             </section>
-            <section class="blabber">
-                <icon glyph="ic-twitter"></icon>
-                <tweets></tweets>
+            <section class="section blabber">
+                <header class="section-header blabber-header">
+                    <a href="https://www.twitter.com/sitaggart">
+                        <icon class="icon--twitter" glyph="ic-twitter"></icon>
+                        <span class="blabber-username">@SiTaggart</span>
+                    </a>
+                </header>
+                <tweets class="blabber-tweets"></tweets>
             </section>
-            <section class="tunez">
-                <icon glyph="ic-lastfm1"></icon>
+            <section class="section tunez">
+                <header class="section-header">
+                    <a href="http://www.last.fm/user/si_taggart">
+                        <icon class="icon--lastfm" glyph="ic-lastfm1"></icon>
+                    </a>
+                </header>
                 <lastfm></lastfm>
             </section>
         </main>

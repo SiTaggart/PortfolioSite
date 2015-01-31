@@ -2,36 +2,48 @@
 // LAYOUT
 // =============================================================================
 
-main {
-
+.main {
     @include clearfix();
     margin: 0 auto;
     max-width: 1400px;
+}
 
-    > section {
+.section {
 
-        @include clearfix();
-        height: 100%;
-        min-height: 100px;
+    @include clearfix();
+    height: 100%;
+    min-height: 100px;
+    padding: 0 remCalc(40) remCalc(40);
+    width: 100%;
+
+    @include breakpoint($breakpoint-medium) {
+        float:left;
+        padding-left: remCalc(20);
+        padding-right: remCalc(20);
+        width: $ratio;
+    }
+
+    @include breakpoint($breakpoint-large) {
         padding: 0 remCalc(40) remCalc(40);
-        width: 100%;
-
-        @include breakpoint($breakpoint-medium) {
-            float:left;
-            padding-left: remCalc(20);
-            padding-right: remCalc(20);
-            width: $ratio;
-        }
-
-        @include breakpoint($breakpoint-large) {
-            padding: 0 remCalc(40) remCalc(40);
-        }
-
     }
 
 }
 
+.section-header {
+
+    margin-bottom: 2rem;
+    font-size: remCalc(24);
+
+    @include breakpoint($breakpoint-medium) {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+
 .ego {
+    padding: 6rem 3rem 4rem;
+    text-align:center;
     width: 100%;
 }
 
@@ -43,6 +55,7 @@ main {
     }
 
 }
+
 
 footer {
     border-top: solid 1px #efefef;
