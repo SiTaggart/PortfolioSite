@@ -1,3 +1,9 @@
-<li ng-repeat="item in flickrFeedCtrl.items" class="flickrFeed-item" style="background-image:url({{item.media.m}})">
-    <div class="flickrFeed-item-title">{{item.title}}</div>
+<li ng-repeat="item in flickrFeedCtrl.items" class="flickrFeed-item">
+    <figure class="flickr-fig" style="background-image:url({{item.media.m}})"></figure>
+    <figcaption class="flickrFeed-title">
+        <div class="flickrFeed-titleContent">
+            <p ng-if="item.title !=='Photo' && item.title !==''">{{item.title}}</p>
+            <a class="button" href="{{item.link}}">View on Flickr</a>
+        </div>
+    </figcaption>
 </li>

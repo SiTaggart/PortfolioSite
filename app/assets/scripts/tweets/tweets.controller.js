@@ -9,7 +9,20 @@
             .finally(finallyTweets);
 
         function handleTweetData (data) {
-            ctrl.tweets = $sce.trustAsHtml(twitterLinks(data[0].text));
+            var tweet = twitterLinks(data[0].text);
+            ctrl.tweets = $sce.trustAsHtml(tweet);
+            ctrl.tweetLength = tweet.length;
+            if (ctrl.tweetLength < 30) {
+                ctrl.tweetSize = "larger";
+            } else if (ctrl.tweetLength < 70) {
+                ctrl.tweetSize = "large";
+            } else if (ctrl.tweetLength < 90) {
+                ctrl.tweetSize = "medium";
+            } else if (ctrl.tweetLength < 120) {
+                ctrl.tweetSize = "small";
+            } else {
+                ctrl.tweetSize = "smaller";
+            }
         }
 
         function handleTweetError (response) {

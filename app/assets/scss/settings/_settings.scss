@@ -66,6 +66,9 @@ $link-color: #d63214;
 $fontFamily-serif: "Merriweather", serif;
 $fontFamily-sans: "Lato", "Gill Sans", Arial, sans-serif;
 
+$animation-curve: ease-in-out;
+$animation-transition: 300ms $animation-curve;
+
 // =============================================================================
 // LAYOUT SETTINGS
 // =============================================================================

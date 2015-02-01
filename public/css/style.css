@@ -401,6 +401,20 @@ a {
     height: 100%;
     width: 100%; }
 
+.button {
+  display: inline-block;
+  border: solid 1px #d63214;
+  border-radius: 2px;
+  color: #d63214;
+  font-family: "Lato", "Gill Sans", Arial, sans-serif;
+  font-size: 1.125rem;
+  padding: 0.9375rem 1.875rem;
+  text-decoration: none;
+  transition: all 300ms ease-in-out; }
+  .button:hover, .button:active, .button:focus {
+    background-color: #d63214;
+    color: #fff; }
+
 .main {
   margin: 0 auto;
   max-width: 1400px; }
@@ -430,9 +444,10 @@ a {
 
 .section-header {
   margin-bottom: 2rem;
-  font-size: 1.5rem; }
+  font-size: 2.375rem; }
   @media screen and (min-width: 1025px) {
     .section-header {
+      font-size: 1.5rem;
       margin-bottom: 1.5rem; } }
 
 .ego {
@@ -513,26 +528,170 @@ footer {
 .pix {
   text-align: center; }
 
+.pix-header-link {
+  display: block; }
+
+.icon--flickr {
+  display: block;
+  height: 48px;
+  margin: 0 auto;
+  position: relative;
+  width: 54px; }
+  .icon--flickr .dot {
+    background: #444;
+    border-radius: 24px;
+    display: inline-block;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    transition: fill 300ms ease-in-out;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    width: 24px; }
+    .pix-header-link:hover .icon--flickr .dot {
+      -webkit-animation: pink 900ms ease-in-out infinite;
+              animation: pink 900ms ease-in-out infinite; }
+  .icon--flickr .dot--blue {
+    left: 0; }
+    .pix-header-link:hover .icon--flickr .dot--blue {
+      -webkit-animation-name: blue;
+              animation-name: blue;
+      background-color: #0F66D9; }
+  .icon--flickr .dot--pink {
+    right: 0; }
+    .pix-header-link:hover .icon--flickr .dot--pink {
+      background-color: #FC1585; }
+
+@-webkit-keyframes blue {
+  0% {
+    z-index: 1; }
+
+  50% {
+    -webkit-transform: translateX(31px);
+            transform: translateX(31px); } }
+
+@keyframes blue {
+  0% {
+    z-index: 1; }
+
+  50% {
+    -webkit-transform: translateX(31px);
+            transform: translateX(31px); } }
+
+@-webkit-keyframes pink {
+  50% {
+    -webkit-transform: translateX(-31px);
+            transform: translateX(-31px); } }
+
+@keyframes pink {
+  50% {
+    -webkit-transform: translateX(-31px);
+            transform: translateX(-31px); } }
+
 .flickrFeed {
   list-style: none;
   margin: 0;
   padding: 0; }
 
 .flickrFeed-item {
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 2px;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   float: left;
   margin: 0 2% 4%;
+  overflow: hidden;
   padding: 0 0 46%;
+  position: relative;
   width: 46%; }
 
-.flickrFeed-item-title {
-  position: absolute; }
+.flickr-fig {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .flickrFeed-item:hover .flickr-fig {
+    -webkit-animation: flickItemHover 200ms ease-in;
+            animation: flickItemHover 200ms ease-in;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+
+@-webkit-keyframes flickItemHover {
+  0% {
+    background-size: 100%; }
+
+  100% {
+    background-size: 99%;
+    -webkit-filter: saturate(0.6) blur(7px);
+            filter: saturate(0.6) blur(7px); } }
+
+@keyframes flickItemHover {
+  0% {
+    background-size: 100%; }
+
+  100% {
+    background-size: 99%;
+    -webkit-filter: saturate(0.6) blur(7px);
+            filter: saturate(0.6) blur(7px); } }
+
+.flickrFeed-title {
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  display: table-cell;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 1.25rem;
+  position: absolute;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%; }
+  .flickrFeed-item:hover .flickrFeed-title {
+    -webkit-animation: flickTitleHover 200ms ease-in;
+            animation: flickTitleHover 200ms ease-in;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .flickrFeed-title p {
+    font-size: 1.25rem; }
+
+@-webkit-keyframes flickTitleHover {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes flickTitleHover {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.flickrFeed-titleContent {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .tunez {
   text-align: center; }
+
+.tunez-header-link:hover svg {
+  fill: #D51007; }
 
 .lastfm-figure {
   background-repeat: no-repeat;
@@ -554,18 +713,20 @@ footer {
   text-align: center; }
 
 .blabber-header a {
+  color: #55acee;
   display: block;
   text-decoration: none; }
 
 .icon--twitter svg {
-  transition: fill 100ms cubic-bezier(0.58, 0.33, 0.71, 0.87); }
+  transition: fill 300ms ease-in-out; }
   .blabber-header a:hover .icon--twitter svg {
     fill: #55acee; }
 
 .blabber-username {
   display: inline-block;
   font-family: "Lato", "Gill Sans", Arial, sans-serif;
-  transition: max-width 200ms cubic-bezier(0.58, 0.33, 0.71, 0.87);
+  font-weight: 300;
+  transition: max-width 300ms ease-in-out;
   vertical-align: middle; }
   @media screen and (min-width: 769px) {
     .blabber-username {
@@ -579,10 +740,26 @@ footer {
   display: block;
   font-size: 2.1875rem;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.6;
   padding: 2.5rem; }
   @media screen and (min-width: 769px) {
     .blabber-tweets {
       font-size: 1.875rem; } }
   .blabber-tweets > p {
     margin: 0; }
+  @media screen and (min-width: 1025px) {
+    .blabber-tweets .tweet--larger {
+      font-size: 2.6rem; }
+
+    .blabber-tweets .tweet--large {
+      font-size: 2rem; }
+
+    .blabber-tweets .tweet--medium {
+      font-size: 1.5rem; }
+
+    .blabber-tweets .tweet--small {
+      font-size: 1.3rem; }
+
+    .blabber-tweets .tweet--smaller {
+      font-size: 1rem; }
+ }

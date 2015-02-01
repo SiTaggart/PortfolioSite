@@ -2,6 +2,8 @@
 // TWEETS
 // =============================================================================
 
+$twitterBrand-color: #55acee;
+
 .blabber {
     text-align: center;
 }
@@ -9,6 +11,7 @@
 .blabber-header {
 
     a {
+        color: $twitterBrand-color;
         display: block;
         text-decoration: none;
     }
@@ -17,10 +20,10 @@
 
 .icon--twitter svg {
 
-    transition: fill 100ms cubic-bezier(.58,.33,.71,.87);
+    transition: fill $animation-transition;
 
     .blabber-header a:hover & {
-        fill: #55acee;
+        fill: $twitterBrand-color;
     }
 }
 
@@ -28,7 +31,8 @@
 
     display: inline-block;
     font-family: $fontFamily-sans;
-    transition: max-width 200ms cubic-bezier(.58,.33,.71,.87);
+    font-weight: 300;
+    transition: max-width $animation-transition;
     vertical-align: middle;
 
     @include breakpoint($breakpoint-small) {
@@ -49,7 +53,7 @@
     display: block;
     font-size: remCalc(35);
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.6;
     padding:remCalc(40);
 
     @include breakpoint($breakpoint-small) {
@@ -58,6 +62,30 @@
 
     > p {
         margin: 0;
+    }
+
+    @include breakpoint($breakpoint-medium) {
+
+        .tweet--larger {
+            font-size: 2.6rem;
+        }
+
+        .tweet--large {
+            font-size: 2rem;
+        }
+
+        .tweet--medium {
+            font-size: 1.5rem;
+        }
+
+        .tweet--small {
+            font-size: 1.3rem;
+        }
+
+        .tweet--smaller {
+            font-size: 1rem;
+        }
+
     }
 
 }

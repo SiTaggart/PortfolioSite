@@ -6,6 +6,12 @@
     text-align: center;
 }
 
+.tunez-header-link:hover {
+    svg {
+        fill: #D51007;
+    }
+}
+
 .lastfm-figure {
     background-repeat: no-repeat;
     background-position: 50%;
