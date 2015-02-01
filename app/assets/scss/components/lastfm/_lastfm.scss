@@ -1,0 +1,31 @@
+// =============================================================================
+// LASTFM
+// =============================================================================
+
+.tunez {
+    text-align: center;
+}
+
+.tunez-header-link:hover {
+    svg {
+        fill: #D51007;
+    }
+}
+
+.lastfm-figure {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 100%;
+    position: relative;
+    width: 100%
+}
+
+.lastfm-figcaption {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+}

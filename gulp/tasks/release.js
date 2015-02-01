@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('release', ['clean', 'concat', 'uglify', 'styles', 'css-min', 'images']);
+gulp.task('release', ['clean', 'build', 'uglify', 'css-min']);

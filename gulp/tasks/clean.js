@@ -9,3 +9,28 @@ gulp.task('clean', function(cb) {
         config.js.dest
     ], cb);
 });
+
+gulp.task('clean:styles', function(cb) {
+    del([
+        config.css.dest
+    ], cb);
+});
+
+gulp.task('clean:js', function(cb) {
+    del([
+        config.js.build,
+        config.js.dest
+    ], cb);
+});
+
+gulp.task('clean:images', function(cb) {
+    del([
+        config.images.dest
+    ], cb);
+});
+
+gulp.task('clean:svg', function(cb) {
+    del([
+        config.svg.dest
+    ], cb);
+});
