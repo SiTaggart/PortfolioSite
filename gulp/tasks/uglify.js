@@ -9,7 +9,7 @@ function uglifyPortfolio() {
 
     var stream = gulp.src(config.js.dest + '/app.js')
         .pipe(ngAnnotate())
-        .pipe(uglify('app.min.js'))
+        .pipe(uglify('app.js'))
         .on('error', handleErrors)
         .pipe(gulp.dest(config.js.dest));
 
