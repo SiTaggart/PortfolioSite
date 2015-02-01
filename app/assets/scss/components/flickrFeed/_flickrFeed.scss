@@ -27,21 +27,21 @@
 .icon--flickr {
 
     display: block;
-    height: 48px;
+    height: remCalc(48px);
     margin: 0 auto;
     position: relative;
-    width: 54px;
+    width: remCalc(54px);
 
     .dot {
         background: $body-fontColor;
-        border-radius: 24px;
+        border-radius: remCalc(24px);
         display: inline-block;
-        height: 24px;
+        height: remCalc(24px);
         position: absolute;
-        top: 12px;
+        top: remCalc(12px);
         transition: fill $animation-transition;
         transform: translateX(0);
-        width: 24px;
+        width: remCalc(24px);
 
         .pix-header-link:hover & {
             animation: pinkDot 900ms ease-in-out infinite;
@@ -53,7 +53,7 @@
 
         .pix-header-link:hover & {
             animation-name: blueDot;
-            background-color: #0F66D9;
+            background-color: #0f66d9;
         }
     }
 
@@ -61,7 +61,7 @@
         right: 0;
 
         .pix-header-link:hover & {
-            background-color: #FC1585;
+            background-color: #fc1585;
         }
     }
 
