@@ -550,20 +550,20 @@ footer {
             transform: translateX(0);
     width: 24px; }
     .pix-header-link:hover .icon--flickr .dot {
-      -webkit-animation: pink 900ms ease-in-out infinite;
-              animation: pink 900ms ease-in-out infinite; }
+      -webkit-animation: pinkDot 900ms ease-in-out infinite;
+              animation: pinkDot 900ms ease-in-out infinite; }
   .icon--flickr .dot--blue {
     left: 0; }
     .pix-header-link:hover .icon--flickr .dot--blue {
-      -webkit-animation-name: blue;
-              animation-name: blue;
+      -webkit-animation-name: blueDot;
+              animation-name: blueDot;
       background-color: #0F66D9; }
   .icon--flickr .dot--pink {
     right: 0; }
     .pix-header-link:hover .icon--flickr .dot--pink {
       background-color: #FC1585; }
 
-@-webkit-keyframes blue {
+@-webkit-keyframes blueDot {
   0% {
     z-index: 1; }
 
@@ -571,7 +571,7 @@ footer {
     -webkit-transform: translateX(31px);
             transform: translateX(31px); } }
 
-@keyframes blue {
+@keyframes blueDot {
   0% {
     z-index: 1; }
 
@@ -579,12 +579,12 @@ footer {
     -webkit-transform: translateX(31px);
             transform: translateX(31px); } }
 
-@-webkit-keyframes pink {
+@-webkit-keyframes pinkDot {
   50% {
     -webkit-transform: translateX(-31px);
             transform: translateX(-31px); } }
 
-@keyframes pink {
+@keyframes pinkDot {
   50% {
     -webkit-transform: translateX(-31px);
             transform: translateX(-31px); } }

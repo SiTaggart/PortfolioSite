@@ -44,7 +44,7 @@
         width: 24px;
 
         .pix-header-link:hover & {
-            animation: pink 900ms ease-in-out infinite;
+            animation: pinkDot 900ms ease-in-out infinite;
         }
     }
 
@@ -52,7 +52,7 @@
         left: 0;
 
         .pix-header-link:hover & {
-            animation-name: blue;
+            animation-name: blueDot;
             background-color: #0F66D9;
         }
     }
@@ -67,7 +67,7 @@
 
 }
 
-@keyframes blue {
+@keyframes blueDot {
     0% {
         z-index: 1;
     }
@@ -75,7 +75,7 @@
         transform: translateX(31px);
     }
 }
-@keyframes pink {
+@keyframes pinkDot {
     50% {
         transform: translateX(-31px);
     }
