@@ -14,7 +14,7 @@
     }
 
     @include breakpoint($breakpoint-small) {
-        background-image: url(/images/kyoto2.jpg);
+        background-image: url(/images/kyoto.jpg);
     }
 
     &:before {

@@ -476,7 +476,7 @@ footer {
       min-height: 86.4192%; } }
   @media screen and (min-width: 769px) {
     .header {
-      background-image: url(/images/kyoto2.jpg); } }
+      background-image: url(/images/kyoto.jpg); } }
   .header:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     bottom: 0;
