@@ -53,6 +53,7 @@ a {
 
     &:hover {
         color: lighten($link-color, 10%);
+        text-decoration: none;
     }
 }
 

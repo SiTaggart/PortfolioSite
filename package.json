@@ -26,7 +26,7 @@
     "gulp-nodemon": "^1.0.4",
     "gulp-notify": "^2.0.1",
     "gulp-open": "^0.2.8",
-    "gulp-sass": "^1.2.3",
+    "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.2.4",
     "gulp-uglifyjs": "^0.4.2",
     "nodemon": "^1.2.1"
