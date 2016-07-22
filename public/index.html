@@ -15,17 +15,17 @@
     <body>
 
         <header class="header">
-            <img class="header-avatar" src="https://s.gravatar.com/avatar/68624bd060d9644d2d84d98ce6aaab2d?s=400" alt="Me" lazy-image>
+            <img class="header-avatar" src="https://s.gravatar.com/avatar/68624bd060d9644d2d84d98ce6aaab2d?s=400" alt="" lazy-image>
             <h1 class="header-title">
                 Simon Taggart
-                <small>User Interface Expert</small>
+                <small>User Interface and Accessibility Expert</small>
             </h1>
         </header>
         <main class="main">
             <section class="section ego">
                 <p>
                     A <strong>design led</strong> Front-End Engineer, currently working as a <strong>Senior
-                    Front-End Engineer</strong> at <a href="http://www.bigcommerce.com">Bigcommerce</a>.
+                    Front-End Engineer, Accessibility Specialist</strong> at <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>.
                     I have over <strong>12 years experience</strong> in Web Development and Front-End Engineering,
                     specialising in building user interfaces for web sites and web applications.
                 </p>
@@ -34,7 +34,11 @@
                     I lead and work with engineering and design teams which are <strong>research led</strong> and <strong>user focused</strong>.
                 </p>
                 <p>
-                    Previously <a href="https://www.flippa.com">Flippa</a>,
+                    Maker of accessiblity colour contrast checker: <a href="http://www.aremycoloursaccessible.com">Are My Colours Accessible</a>
+                </p>
+                <p>
+                    Previously <a href="http://www.bigcommerce.com">BigCommerce</a>,
+                    <a href="https://www.flippa.com">Flippa</a>,
                     <a href="https://www.sitepoint.com">SitePoint</a>,
                     <a href="http://www.orchard.com.au">Orchard</a> and
                     <a href="http://www.abacusemedia.com/">Abacus e-media</a>.
@@ -47,6 +51,7 @@
                             <i class="dot dot--blue"></i>
                             <i class="dot dot--pink"></i>
                         </span>
+                        <span class="is-srOnly">Flickr Photos</span>
                     </a>
                 </header>
                 <ul class="flickrFeed" flickrfeed></ul>
@@ -60,20 +65,25 @@
                 </header>
                 <tweets class="blabber-tweets"></tweets>
             </section>
-            <section class="section tunez">
-                <header class="section-header tunez-header">
-                    <a class="tunez-header-link" href="http://www.last.fm/user/si_taggart">
-                        <icon class="icon--lastfm" glyph="ic-lastfm"></icon>
+            <section class="section posts">
+                <header class="section-header posts-header">
+                    <a class="posts-header-link" href="https://medium.com/@sitaggart">
+                        <icon class="icon--lastfm" glyph="ic-medium"></icon>
+                        <span class="is-srOnly">Medium Posts</span>
                     </a>
                 </header>
-                <lastfm></lastfm>
+                <ul class="posts-list">
+                    <li class="posts-listItem"><a href="https://medium.com/@sitaggart/how-we-css-at-bigcommerce-31c83f55723d">How we &ldquo;CSS&rdquo; at BigCommerce</a></li>
+                    <li class="posts-listItem"><a href="https://medium.com/@sitaggart/how-we-use-sass-maps-for-design-tokens-and-developer-happiness-8bae50393114">How we use Sass Maps for Design Tokens and Developer Happiness</a></li>
+                    <li class="posts-listItem"><a href="https://medium.com/@sitaggart/the-living-style-guide-pattern-lab-daa04035bd1">The &ldquo;Living&rdquo; Style Guide &mdash; Pattern-Lab</a></li>
+                </ul>
             </section>
         </main>
 
         <footer>
             <ul class="footerLinks">
-                <li class="footerLink"><a href="https://github.com/sitaggart"><icon glyph="ic-github"></icon></a></li>
-                <li class="footerLink"><a href="http://au.linkedin.com/in/sitaggart"><icon glyph="ic-linkedin"></icon></a></li>
+                <li class="footerLink"><a href="https://github.com/sitaggart"><icon glyph="ic-github"></icon><span class="is-srOnly">Github profile</span></a></li>
+                <li class="footerLink"><a href="http://au.linkedin.com/in/sitaggart"><icon glyph="ic-linkedin"></icon><span class="is-srOnly">LinkedIn profile</span></a></li>
             </ul>
         </footer>
 
