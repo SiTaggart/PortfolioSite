@@ -4,7 +4,9 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
-class Index extends React.Component {
+import Bio from '../components/Bio';
+
+class BlogIndex extends React.Component {
   static propTypes = {
     data: PropTypes.any
   };
@@ -16,6 +18,7 @@ class Index extends React.Component {
     return (
       <React.Fragment>
         <Helmet title={siteTitle} />
+        <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
@@ -35,19 +38,16 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default BlogIndex;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query PostsQuery {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
