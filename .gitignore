@@ -1,20 +1,7 @@
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.orig
-*.log
-*~
-*.sass-cache
-
-# OS or Editor folders
-.DS_Store
-Thumbs.db
-*.sublime-project
-*.sublime-workspace
-
-.__empty__
 node_modules/
-.sass-cache/
-bower_components/
-build/
-.env
+public
+.gatsby-context.js
+.DS_Store
+.intermediate-representation/
+.cache/
+yarn.lock
