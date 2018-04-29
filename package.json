@@ -42,13 +42,12 @@
   },
   "scripts": {
     "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "develop": "gatsby develop",
-    "precommit": "lint-staged",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js, *.json, *.scss": [
