@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
+import SiteHeader from '../components/site-header';
+
+import './index.scss';
 
 class Index extends React.Component {
   static propTypes = {
@@ -16,6 +19,7 @@ class Index extends React.Component {
     return (
       <React.Fragment>
         <Helmet title={siteTitle} />
+        <SiteHeader />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (

@@ -2,11 +2,14 @@
   "name": "portfolio",
   "version": "4.0.0",
   "dependencies": {
+    "autoprefixer": "8.5.0",
+    "breakpoint-sass": "2.7.1",
     "gatsby": "1.9.255",
     "gatsby-link": "1.6.41",
     "gatsby-plugin-google-analytics": "1.0.31",
     "gatsby-plugin-manifest": "1.0.21",
     "gatsby-plugin-offline": "1.0.15",
+    "gatsby-plugin-postcss-sass": "1.0.20",
     "gatsby-plugin-preact": "1.0.17",
     "gatsby-plugin-react-helmet": "1.0.8",
     "gatsby-plugin-sharp": "1.6.43",
@@ -19,15 +22,16 @@
     "gatsby-transformer-remark": "1.7.40",
     "gatsby-transformer-sharp": "1.6.23",
     "lodash": "4.17.10",
+    "normalize.css": "8.0.0",
     "prop-types": "15.6.1",
     "react": "16.3.2",
     "react-dom": "16.3.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "8.2.3",
     "eslint": "4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.7.0",
     "husky": "0.14.3",
     "lint-staged": "7.0.5",
@@ -54,5 +58,8 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

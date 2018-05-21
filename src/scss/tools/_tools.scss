@@ -2,34 +2,39 @@
 // LIBRARY MIXINS & FUNCTIONS
 // =============================================================================
 
-
 // Rem Calculations
 // -----------------------------------------------------------------------------
 
 @function stripUnit($num) {
-    @return $num / ($num * 0 + 1);
+  @return $num / ($num * 0 + 1);
 }
 
 @function convertToRem($value, $base-value: $fontSizeBase) {
-    $value: stripUnit($value) / stripUnit($base-value) * 1rem;
-    @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
-    @return $value;
+  $value: stripUnit($value) / stripUnit($base-value) * 1rem;
+  @if ($value == 0rem) {
+    $value: 0;
+  } // Turn 0rem into 0
+  @return $value;
 }
 
 @function remCalc($values, $base-value: $fontSizeRoot) {
-    $max: length($values);
+  $max: length($values);
 
-    @if $max == 1 { @return convertToRem(nth($values, 1), $base-value); }
+  @if $max == 1 {
+    @return convertToRem(nth($values, 1), $base-value);
+  }
 
-    $remValues: ();
+  $remValues: ();
 
-    @for $i from 1 through $max {
-        $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
-    }
+  @for $i from 1 through $max {
+    $remValues: append(
+      $remValues,
+      convert-to-rem(nth($values, $i), $base-value)
+    );
+  }
 
-    @return $remValues;
+  @return $remValues;
 }
-
 
 //
 // Clearfix
@@ -37,9 +42,8 @@
 
 @mixin clearfix {
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
 }
-

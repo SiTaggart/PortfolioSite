@@ -1,6 +1,8 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
+import './index.scss';
+
 class Template extends React.Component {
   render() {
     const { children } = this.props;

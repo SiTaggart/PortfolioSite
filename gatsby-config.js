@@ -1,11 +1,19 @@
 /*eslint-env node*/
 
+var autoprefixer = require('autoprefixer');
+
 module.exports = {
   siteMetadata: {
     title: 'Simon Taggart',
     author: 'Simon Taggart'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-postcss-sass',
+      options: {
+        postCssPlugins: [autoprefixer()]
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -40,7 +48,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        //trackingId: 'ADD YOUR TRACKING ID HERE',
+        trackingId: 'UA-10401619-1'
       }
     },
     'gatsby-plugin-offline',

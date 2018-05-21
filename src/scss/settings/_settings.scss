@@ -10,25 +10,24 @@
 // GLOBAL SETTINGS
 // =============================================================================
 
-$fontSizeRoot:                  16px;
-$fontSizeBase:                  1rem;
-$lineHeightBase:                1.5;
-
+$fontSizeRoot: 16px;
+$fontSizeBase: 1rem;
+$lineHeightBase: 1.5;
 
 // =============================================================================
 // BREAKPOINTS
 // =============================================================================
 
-$breakpoint-xxxlarge:           1921px;
-$breakpoint-xxlarge:            1681px;
-$breakpoint-xlarge:             1441px;
-$breakpoint-large:              1281px;
-$breakpoint-medium:             1025px;
-$breakpoint-small:              769px;
-$breakpoint-xsmall:             481px;
-$breakpoint-xxsmall:            320px;
-$breakpoint-portrait:           (portrait orientation);
-$breakpoint-landscape:          (landscape orientation);
+$breakpoint-xxxlarge: 1921px;
+$breakpoint-xxlarge: 1681px;
+$breakpoint-xlarge: 1441px;
+$breakpoint-large: 1281px;
+$breakpoint-medium: 1025px;
+$breakpoint-small: 769px;
+$breakpoint-xsmall: 481px;
+$breakpoint-xxsmall: 320px;
+$breakpoint-portrait: (portrait orientation);
+$breakpoint-landscape: (landscape orientation);
 
 // =============================================================================
 // BREAKPOINT SETTINGS
@@ -36,24 +35,24 @@ $breakpoint-landscape:          (landscape orientation);
 //
 
 // Default Features
-$breakpoint-default-media:      screen;
-$breakpoint-default-feature:    min-width;
-$breakpoint-default-pair:       width;
+$breakpoint-default-media: screen;
+$breakpoint-default-feature: min-width;
+$breakpoint-default-pair: width;
 
 // Default Transforms
-$breakpoint-force-media-all:    false;
-$breakpoint-to-ems:             false;
-$breakpoint-resolutions:        true;
+$breakpoint-force-media-all: false;
+$breakpoint-to-ems: false;
+$breakpoint-resolutions: true;
 
 // Default No Query Options
-$breakpoint-no-queries:         false;
+$breakpoint-no-queries: false;
 $breakpoint-no-query-fallbacks: false;
 
 // Deftault Base Font Size
-$breakpoint-base-font-size:     $fontSizeRoot;
+$breakpoint-base-font-size: $fontSizeRoot;
 
 // Legacy Syntax Support
-$breakpoint-legacy-syntax:      false;
+$breakpoint-legacy-syntax: false;
 
 // =============================================================================
 // SITE SETTINGS
@@ -63,8 +62,8 @@ $body-bg: #fefefe;
 $body-fontColor: #444;
 $link-color: #d63214;
 
-$fontFamily-serif: "Merriweather", serif;
-$fontFamily-sans: "Lato", "Gill Sans", Arial, sans-serif;
+$fontFamily-serif: 'Merriweather', serif;
+$fontFamily-sans: 'Lato', 'Gill Sans', Arial, sans-serif;
 
 $animation-curve: ease-in-out;
 $animation-transition: 300ms $animation-curve;
@@ -74,4 +73,3 @@ $animation-transition: 300ms $animation-curve;
 // =============================================================================
 
 $ratio: 61.728%;
-
