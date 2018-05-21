@@ -1,0 +1,24 @@
+// =============================================================================
+// FOOTER LINKS
+// =============================================================================
+
+.footerLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footerLink {
+  display: inline-block;
+  padding: 0 3rem 2rem;
+
+  svg {
+    fill: #cdcdcd;
+    transition: fill 100ms ease-in;
+  }
+
+  a:hover svg {
+    fill: #444;
+  }
+}

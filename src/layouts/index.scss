@@ -1,6 +1,5 @@
 @import '~normalize.css/normalize.css';
-@import '~breakpoint-sass/stylesheets/_breakpoint.scss';
+@import '../scss/settings/settings';
 
-html {
-  color: blue;
-}
+@import '../scss/base/base';
+@import '../scss/typography/typography';

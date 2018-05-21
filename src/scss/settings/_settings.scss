@@ -6,6 +6,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+@import '~breakpoint-sass/stylesheets/breakpoint';
+
 // =============================================================================
 // GLOBAL SETTINGS
 // =============================================================================
@@ -35,24 +37,24 @@ $breakpoint-landscape: (landscape orientation);
 //
 
 // Default Features
-$breakpoint-default-media: screen;
-$breakpoint-default-feature: min-width;
+@include breakpoint-set('default media', screen);
+@include breakpoint-set('default feature', min-width);
 $breakpoint-default-pair: width;
 
 // Default Transforms
-$breakpoint-force-media-all: false;
-$breakpoint-to-ems: false;
-$breakpoint-resolutions: true;
+@include breakpoint-set('force all media type', false);
+@include breakpoint-set('to ems', false);
+@include breakpoint-set('transform resolutions', true);
 
-// Default No Query Options
-$breakpoint-no-queries: false;
-$breakpoint-no-query-fallbacks: false;
+/* Default No Query Options*/
+@include breakpoint-set('no queries', false);
+@include breakpoint-set('no query fallbacks', false);
 
 // Deftault Base Font Size
-$breakpoint-base-font-size: $fontSizeRoot;
+@include breakpoint-set('base font size', $fontSizeRoot);
 
 // Legacy Syntax Support
-$breakpoint-legacy-syntax: false;
+@include breakpoint-set('legacy syntax', false);
 
 // =============================================================================
 // SITE SETTINGS

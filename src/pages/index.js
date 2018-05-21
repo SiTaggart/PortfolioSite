@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import SiteHeader from '../components/site-header';
+import SiteMain from '../components/site-main';
 
 import './index.scss';
 
@@ -20,6 +21,7 @@ class Index extends React.Component {
       <React.Fragment>
         <Helmet title={siteTitle} />
         <SiteHeader />
+        <SiteMain />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug;
           return (
