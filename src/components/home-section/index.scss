@@ -1,0 +1,38 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '../../scss/settings/settings';
+@import '../../scss/tools/tools';
+
+.homeSection {
+  @include clearfix();
+  height: 100%;
+  min-height: 100px;
+  padding: 0 remCalc(40) remCalc(60);
+  width: 100%;
+
+  @include breakpoint($breakpoint-medium) {
+    float: left;
+    padding: 0 remCalc(20) remCalc(40);
+    width: $ratio;
+  }
+
+  @include breakpoint($breakpoint-large) {
+    padding: 0 remCalc(40) remCalc(40);
+  }
+}
+
+.homeSection--ego {
+  padding: 15rem 3rem 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.homeSection--blabber,
+.homeSection--posts {
+  @include breakpoint($breakpoint-medium) {
+    width: 100 - $ratio;
+  }
+}
+
+.homeSection--posts {
+  text-align: center;
+}

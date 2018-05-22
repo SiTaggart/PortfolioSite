@@ -17,6 +17,9 @@ export default class FooterLinks extends Component {
             <span className="is-srOnly">LinkedIn profile</span>
           </a>
         </li>
+        <li className="footerLink">
+          <a href="/posts">Blog</a>
+        </li>
       </ul>
     );
   }

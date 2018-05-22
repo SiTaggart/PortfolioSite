@@ -29,16 +29,3 @@
     margin-bottom: 1.5rem;
   }
 }
-
-.ego {
-  padding: 15rem 3rem 4rem;
-  text-align: center;
-  width: 100%;
-}
-
-.blabber,
-.posts {
-  @include breakpoint($breakpoint-medium) {
-    width: 100 - $ratio;
-  }
-}
