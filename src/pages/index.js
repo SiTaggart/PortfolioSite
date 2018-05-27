@@ -2,13 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
+import fetchJsonp from 'fetch-jsonp';
 import Helmet from 'react-helmet';
 import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
 import HomeSection from '../components/home-section';
-import HomeSectionHeader from '../components/home-section-header';
+import {
+  HomeSectionHeader,
+  HomeSectionHeaderLink
+} from '../components/home-section-header';
+import FlickrLogo from '../components/flickr-logo';
 import Ego from '../components/ego';
-import { PostList } from '../components/post-list';
+import { PostList, PostListItem } from '../components/post-list';
 
 import './index.scss';
 
@@ -16,6 +21,39 @@ class Index extends React.Component {
   static propTypes = {
     data: PropTypes.any
   };
+
+  state = {
+    flickIsLoading: true,
+    flickrPosts: []
+  };
+
+  componentDidMount() {
+    this.getflickrFeed();
+  }
+
+  getflickrFeed() {
+    const handleData = data => {
+      const firstFour = data.items.slice(0, 4);
+      this.setFlickrFeed(firstFour);
+    };
+    fetchJsonp(
+      'https://api.flickr.com/services/feeds/photos_public.gne?lang=en-us&format=json&jsoncallback=JSON_CALLBACK&id=51539284@N00#',
+      { jsonpCallbackFunction: 'JSON_CALLBACK' }
+    )
+      .then(function(response) {
+        return response.json();
+      })
+      .then(handleData)
+      .catch(function(ex) {
+        console.log('parsing failed', ex);
+      });
+  }
+  setFlickrFeed(items) {
+    this.setState({
+      flickIsLoading: false,
+      flickrPosts: items
+    });
+  }
 
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -59,14 +97,39 @@ class Index extends React.Component {
             </p>
           </Ego>
           <HomeSection flavour="pix">
-            <HomeSectionHeader flavour="pix">Flickr</HomeSectionHeader>
+            <HomeSectionHeader flavour="pix">
+              <HomeSectionHeaderLink href="https://www.flickr.com/photos/simontaggart">
+                <FlickrLogo />
+              </HomeSectionHeaderLink>
+            </HomeSectionHeader>
+            {this.state.flickIsLoading ? (
+              'loading'
+            ) : (
+              <ul>
+                {this.state.flickrPosts.map((item, i) => (
+                  <li key={i}>{item.title}</li>
+                ))}
+              </ul>
+            )}
           </HomeSection>
           <HomeSection flavour="blabber">
             <HomeSectionHeader flavour="blabber">Twitter</HomeSectionHeader>
           </HomeSection>
           <HomeSection flavour="posts">
             <HomeSectionHeader flavour="posts">Posts</HomeSectionHeader>
-            <PostList posts={posts} />
+            <PostList>
+              {posts.map(({ node }) => {
+                const title =
+                  get(node, 'frontmatter.title') || node.fields.slug;
+                return (
+                  <PostListItem
+                    node={node}
+                    title={title}
+                    key={node.fields.slug}
+                  />
+                );
+              })}
+            </PostList>
           </HomeSection>
         </SiteMain>
       </React.Fragment>

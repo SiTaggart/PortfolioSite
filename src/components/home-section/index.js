@@ -5,7 +5,7 @@ import './index.scss';
 
 export default class HomeSection extends Component {
   static propTypes = {
-    children: PropTypes.array,
+    children: PropTypes.node,
     className: PropTypes.string,
     flavour: PropTypes.string
   };

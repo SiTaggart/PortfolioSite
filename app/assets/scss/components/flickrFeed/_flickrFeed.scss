@@ -3,172 +3,103 @@
 // =============================================================================
 
 .pix {
-    text-align: center;
 }
-
 
 // =============================================================================
 // HEADER
 // =============================================================================
 
 .pix-header {
-
 }
 
 .pix-header-link {
-    display: block;
 }
-
-
-// =============================================================================
-// FLICKR ICON
-// =============================================================================
-
-.icon--flickr {
-
-    display: block;
-    height: remCalc(48px);
-    margin: 0 auto;
-    position: relative;
-    width: remCalc(54px);
-
-    .dot {
-        background: $body-fontColor;
-        border-radius: remCalc(24px);
-        display: inline-block;
-        height: remCalc(24px);
-        position: absolute;
-        top: remCalc(12px);
-        transition: fill $animation-transition;
-        transform: translateX(0);
-        width: remCalc(24px);
-
-        .pix-header-link:hover & {
-            animation: pinkDot 900ms ease-in-out infinite;
-        }
-    }
-
-    .dot--blue {
-        left: 0;
-
-        .pix-header-link:hover & {
-            animation-name: blueDot;
-            background-color: #0f66d9;
-        }
-    }
-
-    .dot--pink {
-        right: 0;
-
-        .pix-header-link:hover & {
-            background-color: #fc1585;
-        }
-    }
-
-}
-
-@keyframes blueDot {
-    0% {
-        z-index: 1;
-    }
-    50% {
-        transform: translateX(31px);
-    }
-}
-@keyframes pinkDot {
-    50% {
-        transform: translateX(-31px);
-    }
-}
-
 
 // =============================================================================
 // FLICKRFEED
 // =============================================================================
 
 .flickrFeed {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .flickrFeed-item {
-    border-radius: 2px;
-    float: left;
-    margin: 0 2% 4%;
-    overflow: hidden;
-    padding: 0 0 46%;
-    position: relative;
-    width: 46%;
+  border-radius: 2px;
+  float: left;
+  margin: 0 2% 4%;
+  overflow: hidden;
+  padding: 0 0 46%;
+  position: relative;
+  width: 46%;
 }
 
 .flickr-fig {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
-    height: 100%;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-    .flickrFeed-item:hover & {
-        animation: flickItemHover 200ms ease-in;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
+  .flickrFeed-item:hover & {
+    animation: flickItemHover 200ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 }
 
 @keyframes flickItemHover {
-    0% {
-        background-size: 100%;
-    }
-    100% {
-        background-size: 99%;
-        filter: saturate(0.6) blur(7px);
-    }
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 99%;
+    filter: saturate(0.6) blur(7px);
+  }
 }
 
 .flickrFeed-title {
-    background: rgba(255, 255, 255, 0.8);
-    bottom: 0;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
-    display: table-cell;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    padding: remCalc(20px);
-    position: absolute;
-    transform: scale(0.9);
-    transform-style: preserve-3d;
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  display: table-cell;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: remCalc(20px);
+  position: absolute;
+  transform: scale(0.9);
+  transform-style: preserve-3d;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
 
-    .flickrFeed-item:hover & {
-        animation: flickTitleHover 200ms ease-in;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
+  .flickrFeed-item:hover & {
+    animation: flickTitleHover 200ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 
-    p {
-        font-size: remCalc(20px);
-    }
+  p {
+    font-size: remCalc(20px);
+  }
 }
 
 @keyframes flickTitleHover {
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .flickrFeed-titleContent {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }

@@ -4,9 +4,9 @@ import ClassNames from 'classnames';
 
 import './index.scss';
 
-export default class HomeSectionHeader extends Component {
+export class HomeSectionHeader extends Component {
   static propTypes = {
-    children: PropTypes.func,
+    children: PropTypes.node,
     flavour: PropTypes.string
   };
 
@@ -21,6 +21,21 @@ export default class HomeSectionHeader extends Component {
       >
         {this.props.children}
       </header>
+    );
+  }
+}
+
+export class HomeSectionHeaderLink extends Component {
+  static propTypes = {
+    children: PropTypes.node,
+    href: PropTypes.string
+  };
+
+  render() {
+    return (
+      <a className="homeSection-header-link" href={this.props.href}>
+        {this.props.children}
+      </a>
     );
   }
 }

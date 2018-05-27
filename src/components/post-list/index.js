@@ -23,20 +23,10 @@ export class PostListItem extends Component {
 
 export class PostList extends Component {
   static propTypes = {
-    posts: PropTypes.array
+    children: PropTypes.node
   };
 
   render() {
-    const { posts } = this.props;
-    return (
-      <ul className="posts-list">
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug;
-          return (
-            <PostListItem node={node} title={title} key={node.fields.slug} />
-          );
-        })}
-      </ul>
-    );
+    return <ul className="posts-list">{this.props.children}</ul>;
   }
 }
