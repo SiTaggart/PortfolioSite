@@ -14,6 +14,9 @@ import {
 import FlickrLogo from '../components/flickr-logo';
 import Ego from '../components/ego';
 import { PostList, PostListItem } from '../components/post-list';
+import FlickrList from '../components/flickr-list';
+import FlickrListItem from '../components/flickr-list-item';
+import FlickrFigure from '../components/flickr-figure';
 
 import './index.scss';
 
@@ -105,11 +108,13 @@ class Index extends React.Component {
             {this.state.flickIsLoading ? (
               'loading'
             ) : (
-              <ul>
+              <FlickrList>
                 {this.state.flickrPosts.map((item, i) => (
-                  <li key={i}>{item.title}</li>
+                  <FlickrListItem key={i}>
+                    <FlickrFigure image={item} />
+                  </FlickrListItem>
                 ))}
-              </ul>
+              </FlickrList>
             )}
           </HomeSection>
           <HomeSection flavour="blabber">
