@@ -12,13 +12,14 @@
 .footerLink {
   display: inline-block;
   padding: 0 3rem 2rem;
+  vertical-align: middle;
 
-  svg {
+  .icon {
     fill: #cdcdcd;
     transition: fill 100ms ease-in;
   }
 
-  a:hover svg {
+  a:hover .icon {
     fill: #444;
   }
 }

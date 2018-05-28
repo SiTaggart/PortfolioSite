@@ -28,12 +28,18 @@ export class HomeSectionHeader extends Component {
 export class HomeSectionHeaderLink extends Component {
   static propTypes = {
     children: PropTypes.node,
+    flavour: PropTypes.string,
     href: PropTypes.string
   };
 
   render() {
     return (
-      <a className="homeSection-header-link" href={this.props.href}>
+      <a
+        className={ClassNames('homeSection-header-link', {
+          'homeSection-header-link--blabber': this.props.flavour === 'blabber'
+        })}
+        href={this.props.href}
+      >
         {this.props.children}
       </a>
     );

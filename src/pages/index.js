@@ -17,6 +17,8 @@ import { PostList, PostListItem } from '../components/post-list';
 import FlickrList from '../components/flickr-list';
 import FlickrListItem from '../components/flickr-list-item';
 import FlickrFigure from '../components/flickr-figure';
+import TwitterHandle from '../components/twitter-handle';
+import LatestTweet from '../components/latest-tweet';
 
 import './index.scss';
 
@@ -37,7 +39,10 @@ class Index extends React.Component {
   getflickrFeed() {
     const handleData = data => {
       const firstFour = data.items.slice(0, 4);
-      this.setFlickrFeed(firstFour);
+      this.setState({
+        flickIsLoading: false,
+        flickrPosts: firstFour
+      });
     };
     fetchJsonp(
       'https://api.flickr.com/services/feeds/photos_public.gne?lang=en-us&format=json&jsoncallback=JSON_CALLBACK&id=51539284@N00#',
@@ -50,12 +55,6 @@ class Index extends React.Component {
       .catch(function(ex) {
         console.log('parsing failed', ex);
       });
-  }
-  setFlickrFeed(items) {
-    this.setState({
-      flickIsLoading: false,
-      flickrPosts: items
-    });
   }
 
   render() {
@@ -118,7 +117,15 @@ class Index extends React.Component {
             )}
           </HomeSection>
           <HomeSection flavour="blabber">
-            <HomeSectionHeader flavour="blabber">Twitter</HomeSectionHeader>
+            <HomeSectionHeader>
+              <HomeSectionHeaderLink
+                flavour="blabber"
+                href="https://www.twitter.com/sitaggart"
+              >
+                <TwitterHandle>@SiTaggart</TwitterHandle>
+              </HomeSectionHeaderLink>
+            </HomeSectionHeader>
+            <LatestTweet />
           </HomeSection>
           <HomeSection flavour="posts">
             <HomeSectionHeader flavour="posts">Posts</HomeSectionHeader>
