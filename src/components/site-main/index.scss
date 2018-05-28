@@ -1,7 +1,8 @@
-@import '../../scss/tools/tools';
+@import '../../scss/settings/settings';
 
 .siteMain {
-  @include clearfix();
+  display: grid;
+  grid-template-columns: $ratio (100-$ratio);
   margin: 0 auto;
   max-width: 1400px;
 }
