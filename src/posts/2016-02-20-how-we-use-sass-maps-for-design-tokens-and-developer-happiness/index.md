@@ -142,9 +142,9 @@ A typical implementation of a contained component might look something like:
 
 Obviously if every contained component were always that consistent, we could just abstract that into it's own re-useable container style, but in reality a lot of our containers might share similarities but have slightly different combinations and variations of those properties. Our panels for example only have an internal border, and the bottom drop shadow, but those styles are shared with our tables which also have borders all the way round (the same borders) and they both share a background colour.
 
-![](./panel.png)
+![image alt text](./panel.png)
 
-![](./table.png)
+![image alt text](./table.png)
 
 If we wanted to change how we visually treat containment, the chances are we'd change both panels and tables equally. They do a similar job, they're just treated slightly differently based on their use case or data type. We've found this is a really great way to deal with these kind of design tokens without engineers re-inventing the wheel in every project, and potentially having interface components becoming visually out of sync across the application.
 

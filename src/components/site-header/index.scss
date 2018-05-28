@@ -23,7 +23,7 @@
     background-image: url(./kyoto.jpg);
   }
 
-  &:before {
+  &::before {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     bottom: 0;
     content: '';
@@ -31,6 +31,19 @@
     min-height: 45%;
     position: absolute;
     width: 100%;
+  }
+
+  a {
+    color: #efefef;
+  }
+
+  &--post {
+    min-height: remCalc(200);
+
+    &::before {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+      height: 100%;
+    }
   }
 }
 
@@ -45,6 +58,12 @@
   position: absolute;
   right: 0;
   width: remCalc(230px);
+
+  &--post {
+    bottom: remCalc(-70px);
+    height: remCalc(100px);
+    width: remCalc(100px);
+  }
 }
 
 .header-title {
@@ -59,5 +78,14 @@
   small {
     font-size: 2.2rem;
     display: block;
+  }
+
+  &--post {
+    bottom: remCalc(40px);
+    font-size: remCalc(70px);
+
+    small {
+      font-size: remCalc(30px);
+    }
   }
 }

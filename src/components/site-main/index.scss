@@ -5,4 +5,8 @@
   grid-template-columns: $ratio (100-$ratio);
   margin: 0 auto;
   max-width: 1400px;
+
+  &--post {
+    max-width: 960px
+  }
 }

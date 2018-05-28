@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import get from 'lodash/get';
 import SiteMain from '../components/site-main';
+import SiteHeader from '../components/site-header';
+import PostArticle from '../components/post-article';
 
 import Bio from '../components/Bio';
 
@@ -21,33 +23,33 @@ class BlogPostTemplate extends React.Component {
     return (
       <React.Fragment>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <header className="header">
-          <Link to={'/'}>Simon Taggart</Link>
-        </header>
-        <SiteMain>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
-          <Bio />
+        <SiteHeader isPost />
+        <SiteMain isPost>
+          <PostArticle>
+            <h1>{post.frontmatter.title}</h1>
+            <p>{post.frontmatter.date}</p>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <hr />
+            <Bio />
 
-          <ul>
-            {previous && (
-              <li>
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              </li>
-            )}
+            <ul>
+              {previous && (
+                <li>
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </li>
+              )}
 
-            {next && (
-              <li>
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              </li>
-            )}
-          </ul>
+              {next && (
+                <li>
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </PostArticle>
         </SiteMain>
       </React.Fragment>
     );
