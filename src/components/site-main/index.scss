@@ -1,4 +1,5 @@
 @import '../../scss/settings/settings';
+@import '../../scss/tools/tools';
 
 .siteMain {
   display: grid;
@@ -7,6 +8,7 @@
   max-width: 1400px;
 
   &--post {
-    max-width: 960px
+    max-width: 960px;
+    padding: 0 remCalc(24px);
   }
 }

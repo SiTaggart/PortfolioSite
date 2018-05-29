@@ -37,7 +37,13 @@ Then you would create a function which takes a single argument of "key", that is
 Now `fontSize("large")` returns `20px` and `fontSize("small")` returns `14px`. This can be extended really easily to take a second argument, which is super useful if your design token, like a colour, is split further down into tones. Again start by creating a map:
 
 ```css
-$colorMap: (primary: (base: #00abc9, dark: #009cb7, light: #c7e8ee));
+$colorMap: (
+  primary: (
+    base: #00abc9,
+    dark: #009cb7,
+    light: #c7e8ee
+  )
+);
 ```
 
 With this added depth in the map, we can make a minor adjustment to the example function above, so it can take a second argument to return the tone of the color we specify:
@@ -112,19 +118,34 @@ So to make sure all our "containers" use the same background fills, border style
 
 ```css
 $containersMap: (
-  border:
-    (base: $container-border-global-base, dark: $container-border-global-dark),
-  borderColor:
-    (
-      base: $container-border-global-color-base,
-      dark: $container-border-global-color-dark
-    ),
-  borderSize: (base: $container-border-global-size),
-  borderStyle: (base: $container-border-global-style),
-  dropShadow: (base: $container-drop-shadow-base),
-  fill: (base: $container-fill-base, dark: $container-fill-dark),
-  margin: (base: $container-margin-base),
-  padding: (base: $container-padding-base, large: $container-padding-large)
+  border: (
+    base: $container-border-global-base,
+    dark: $container-border-global-dark
+  ),
+  borderColor: (
+    base: $container-border-global-color-base,
+    dark: $container-border-global-color-dark
+  ),
+  borderSize: (
+    base: $container-border-global-size
+  ),
+  borderStyle: (
+    base: $container-border-global-style
+  ),
+  dropShadow: (
+    base: $container-drop-shadow-base
+  ),
+  fill: (
+    base: $container-fill-base,
+    dark: $container-fill-dark
+  ),
+  margin: (
+    base: $container-margin-base
+  ),
+  padding: (
+    base: $container-padding-base,
+    large: $container-padding-large
+  )
 );
 ```
 

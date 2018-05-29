@@ -28,17 +28,13 @@ The phrase "Just because you can, doesn't mean you should" applies a lot to SASS
 ```css
 /* Try to avoid */
 .component {
-  &-parentSelectorSuffix {
-    ...;
-  } /* .component-parentSelectorSuffix {} */
 
-  .component-childSelector {
-    ...;
-  } /* .component .component-childSelector {} */
+  &-parentSelectorSuffix { ... } /* .component-parentSelectorSuffix {} */
 
-  .notSoObviousParentSelector & {
-    ...;
-  } /* .notSoObviousParentSelector .component {} */
+  .component-childSelector { ... } /* .component .component-childSelector {} */
+
+  .notSoObviousParentSelector & { ... } /* .notSoObviousParentSelector .component {} */
+
 }
 ```
 
@@ -79,7 +75,7 @@ Because you can opt out of the CSS that's generated, you are free to rename the 
 
 I'll highlight some key rules we think are important to a happy codebase, used on a large-ish product.
 
-#### Specificity [(Link)](https://github.com/bigcommerce/sass-style-guide#specificity)
+### Specificity [(Link)](https://github.com/bigcommerce/sass-style-guide#specificity)
 
 Aim for selectors that are as low in specificity as you can humanly make them. It'll help abstract components into smaller chunks, allow for greater re-use and re-mix of patterns, and it'll stop you having a lot of specificity clashes in the future.
 
@@ -97,7 +93,7 @@ div.component { … }
 ul.component li span a:hover { … }
 ```
 
-#### Declaring Values [(Link)](https://github.com/bigcommerce/sass-style-guide#when-declaring-values)
+### Declaring Values [(Link)](https://github.com/bigcommerce/sass-style-guide#when-declaring-values)
 
 When building a large codebase of patterns, try to only style the property you are explicitly concerned with to avoid overzealously resetting something you might want to inherit.
 
@@ -106,7 +102,7 @@ When building a large codebase of patterns, try to only style the property you a
 
 Declaring a shorthand property of background for example, resets `background-position`, `background-image`, `background-size` etc which you may not want to do. Play nice with others.
 
-#### Declaration Order [(Link)](https://github.com/bigcommerce/sass-style-guide#declaration-order)
+### Declaration Order [(Link)](https://github.com/bigcommerce/sass-style-guide#declaration-order)
 
 `@extend` first, then `@include`, then set your properties. Ideally the extend and include don't have to override or clash with your properties. Followed by my personal favourite rule, **alphabetical order**, always.
 
@@ -126,7 +122,7 @@ There's been a lot of think pieces by lots of different people about all the mag
 }
 ```
 
-#### Nesting [(Link)](https://github.com/bigcommerce/sass-style-guide#nesting)
+### Nesting [(Link)](https://github.com/bigcommerce/sass-style-guide#nesting)
 
 Don't. Or at least try your damned hardest not to.
 
@@ -154,13 +150,13 @@ The output of your compiled CSS is extremely easy to lose track of. You can easi
 }
 ```
 
-#### Variable Names [(Link)](https://github.com/bigcommerce/sass-style-guide#variables)
+### Variable Names [(Link)](https://github.com/bigcommerce/sass-style-guide#variables)
 
 Abstract the name of your variables. Don't name your variables, for example, the name of the colour you are setting. This is no longer a variable, and is no different to finding and replacing a hex colour code in your codebase, if you decide to change the value of `$background-color-blue`, to be red.
 
 * `$color-brandPrimary` over `$bigcommerceBlue`
 
-#### Maps, and Map Functions [(Link)](https://github.com/bigcommerce/sass-style-guide#component--micro-app-level-variables)
+### Maps, and Map Functions [(Link)](https://github.com/bigcommerce/sass-style-guide#component--micro-app-level-variables)
 
 As described by the excellent Erskine Design Article, [Friendlier colour names with SASS maps](http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/), we use SASS maps for a lot of global style properties, not just colours, that our developers are going to need frequent access to.
 
@@ -173,7 +169,7 @@ line-height: lineHeight('smaller');
 z-index: zIndex('highest');
 ```
 
-#### Component Naming Conventions [(Link)](https://github.com/bigcommerce/sass-style-guide#components)
+### Component Naming Conventions [(Link)](https://github.com/bigcommerce/sass-style-guide#components)
 
 We took pretty heavy influence from [SuitCSS](http://suitcss.github.io/) and slightly modified it to our tastes and needs. For example we opted for camel case instead of pascal case.
 
@@ -209,13 +205,13 @@ As I've mentioned our new CSS code base is in SASS and of course like all the ot
 
 I also mentioned about doing clever things with your code _**post**_ compilation. An example of this is vendor prefixes for CSS features that may not be fully adopted by certain browsers. Instead of littering our code with these vendor prefixes, proprietary implementations, or making Sass do a bunch of extra grunt work, we use Autoprefixer to do it for us after Sass has done it's job.
 
-#### Optimisation
+### Optimisation
 
 In terms of output optimisation, we use [CSSO](http://css.github.io/csso/) to optimise our code when we perform a deploy of our core CSS libraries. CSSO does the usual things you'd expect from minification like stripping out all the whitespace, but it also does some structural optimisations on the code for us. Grouping like selectors together from different components, shortening syntax where it can, shaving off small bites that we may introduce in our more "common sense", "clear over clever" approach to writing our code. Sounds risky, I know, but so far we haven't noticed anything breaking and it works really well.
 
 I'm sure some of you will have read along and through the guide and thrown your arms up in dismay at "the repetition of code" we'd introduce with some of our rules. Well CSSO helps us deal with that _after_ the fact, and we can rely heavily on Gzip to remove some of the other repetitive code snippets that might remain. This leaves our code base readable, clear and obvious. Let tools do the work for you.
 
-#### Linting
+### Linting
 
 Lastly, how do you check your fellow team members are adhering to the rules? A good Pull Request policy will help most of the time, but on large teams that's not exactly scalable from a small CSS team.
 

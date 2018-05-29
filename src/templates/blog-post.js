@@ -6,6 +6,12 @@ import get from 'lodash/get';
 import SiteMain from '../components/site-main';
 import SiteHeader from '../components/site-header';
 import PostArticle from '../components/post-article';
+import {
+  PostHeader,
+  PostHeaderHeading,
+  PostHeaderDate
+} from '../components/post-header';
+import PostFooter from '../components/post-footer';
 
 import Bio from '../components/Bio';
 
@@ -26,29 +32,32 @@ class BlogPostTemplate extends React.Component {
         <SiteHeader isPost />
         <SiteMain isPost>
           <PostArticle>
-            <h1>{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
+            <PostHeader>
+              <PostHeaderHeading>{post.frontmatter.title}</PostHeaderHeading>
+              <PostHeaderDate>{post.frontmatter.date}</PostHeaderDate>
+            </PostHeader>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <hr />
-            <Bio />
+            <PostFooter>
+              <hr />
+              <Bio />
+              <ul>
+                {previous && (
+                  <li>
+                    <Link to={previous.fields.slug} rel="prev">
+                      ← {previous.frontmatter.title}
+                    </Link>
+                  </li>
+                )}
 
-            <ul>
-              {previous && (
-                <li>
-                  <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
-                  </Link>
-                </li>
-              )}
-
-              {next && (
-                <li>
-                  <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
-                  </Link>
-                </li>
-              )}
-            </ul>
+                {next && (
+                  <li>
+                    <Link to={next.fields.slug} rel="next">
+                      {next.frontmatter.title} →
+                    </Link>
+                  </li>
+                )}
+              </ul>
+            </PostFooter>
           </PostArticle>
         </SiteMain>
       </React.Fragment>

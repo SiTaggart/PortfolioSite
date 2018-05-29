@@ -1,0 +1,18 @@
+@import '../../scss/settings/settings';
+@import '../../scss/tools/tools';
+
+.postHeader {
+  margin-bottom: remCalc(60px);
+  text-align: center;
+
+  .postHeader-heading {
+    font-size: remCalc(60px);
+    line-height: 1;
+    margin: 0 0 remCalc(10px);
+  }
+
+  .postHeader-date {
+    font-family: $fontFamily-sans;
+    margin: 0;
+  }
+}

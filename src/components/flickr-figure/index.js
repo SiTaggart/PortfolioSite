@@ -21,14 +21,16 @@ export default class FlickrFigure extends Component {
     console.log(image.link);
     return (
       <figure className="flickrFigure">
-        <div className="flickrFigure-image" style={imageStyle} />
-        <figcaption className="flickrFigure-title">
-          <div className="flickrFigure-title-content">
-            {image.title !== '' &&
-              image.title !== 'Photo' && <p>{image.title}</p>}
-            <Button url={image.link}>View on Flickr</Button>
-          </div>
-        </figcaption>
+        <a className="flickrFigure-link" href={image.link}>
+          <div className="flickrFigure-image" style={imageStyle} />
+          <figcaption className="flickrFigure-title">
+            <div className="flickrFigure-title-content">
+              {image.title !== '' &&
+                image.title !== 'Photo' && <p>{image.title}</p>}
+              <span className="button">View on Flickr</span>
+            </div>
+          </figcaption>
+        </a>
       </figure>
     );
   }

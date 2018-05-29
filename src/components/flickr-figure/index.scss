@@ -1,11 +1,27 @@
 @import '../../scss/settings/settings';
 @import '../../scss/tools/tools';
 
-.flickrFigure {
-  &:hover .flickrFigure-image {
+.flickrFigure-link {
+  bottom: 0;
+  display: block;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &:hover .flickrFigure-image,
+  &:focus .flickrFigure-image {
     animation: flickImageHover 200ms ease-in;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+  }
+}
+
+@keyframes flickImageHover {
+  100% {
+    filter: saturate(0.6);
+    filter: blur(7px);
   }
 }
 
@@ -20,13 +36,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-}
-
-@keyframes flickImageHover {
-  100% {
-    filter: saturate(0.6);
-    filter: blur(7px);
-  }
 }
 
 .flickrFigure-title {
@@ -45,7 +54,8 @@
   vertical-align: middle;
   width: 100%;
 
-  .flickrFigure:hover & {
+  .flickrFigure-link:hover &,
+  .flickrFigure-link:focus & {
     animation: flickTitleHover 200ms ease-in;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
