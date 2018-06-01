@@ -68,15 +68,15 @@ class Index extends React.Component {
         <SiteMain>
           <Ego>
             <p>
-              A <strong>design led</strong> Front-End Engineer, currently
-              working as a{' '}
-              <strong>
-                Senior Front-End Engineer, Accessibility Specialist
-              </strong>{' '}
-              at <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>. I
-              have over <strong>12 years experience</strong> in Web Development
-              and Front-End Engineering, specialising in building user
-              interfaces for web sites and web applications.
+              A <strong>design led</strong> Front-End Engineer currently working
+              as a <strong>Lead UX Engineer</strong> at{' '}
+              <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>, on
+              the{' '}
+              <a href="https://www.lightningdesignsystem.com">
+                Lightning Design System
+              </a>. I have over <strong>12 years experience</strong> in Web
+              Development and Front-End Engineering, specialising in building
+              user interfaces for web sites and web applications.
             </p>
             <p>
               Expert in <strong>Rapid Prototyping</strong> and{' '}

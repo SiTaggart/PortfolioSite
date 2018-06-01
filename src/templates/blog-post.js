@@ -12,8 +12,8 @@ import {
   PostHeaderDate
 } from '../components/post-header';
 import PostFooter from '../components/post-footer';
-
-import Bio from '../components/Bio';
+import PostFooterList from '../components/post-footer-list';
+import PostFooterListItem from '../components/post-footer-list-item';
 
 class BlogPostTemplate extends React.Component {
   static propTypes = {
@@ -38,25 +38,23 @@ class BlogPostTemplate extends React.Component {
             </PostHeader>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <PostFooter>
-              <hr />
-              <Bio />
-              <ul>
+              <PostFooterList>
                 {previous && (
-                  <li>
+                  <PostFooterListItem type="previous">
                     <Link to={previous.fields.slug} rel="prev">
                       ← {previous.frontmatter.title}
                     </Link>
-                  </li>
+                  </PostFooterListItem>
                 )}
 
                 {next && (
-                  <li>
+                  <PostFooterListItem type="next">
                     <Link to={next.fields.slug} rel="next">
                       {next.frontmatter.title} →
                     </Link>
-                  </li>
+                  </PostFooterListItem>
                 )}
-              </ul>
+              </PostFooterList>
             </PostFooter>
           </PostArticle>
         </SiteMain>
