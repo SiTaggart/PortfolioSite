@@ -3,7 +3,7 @@ title: How we "CSS" at BigCommerce
 date: "2016-02-01"
 ---
 
-TL;DR [Our SASS Style Guide is available on GitHub](https://github.com/bigcommerce/sass-style-guide)
+TL;DR [Our SASS Style Guide is available on GitHub](https://github.com/bigcommerce/sass-style-guide).
 
 CSS is hard. Writing good CSS is harder. Writing good CSS with a big team on a large codebase… wow, just wow.
 

@@ -5,7 +5,7 @@ import './index.scss';
 
 export default class PostFooter extends Component {
   static propTypes = {
-    children: PropTypes.number
+    children: PropTypes.node
   };
 
   render() {

@@ -28,7 +28,9 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <React.Fragment>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`}>
+          <meta name="description" content={post.excerpt} />
+        </Helmet>
         <SiteHeader isPost />
         <SiteMain isPost>
           <PostArticle>
@@ -75,6 +77,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt
       html
       frontmatter {
         title

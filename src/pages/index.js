@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import get from 'lodash/get';
 import fetchJsonp from 'fetch-jsonp';
 import Helmet from 'react-helmet';
@@ -58,20 +57,20 @@ class Index extends React.Component {
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const jobTitle = get(this, 'props.data.site.siteMetadata.jobTitle');
+    const companyName = get(this, 'props.data.site.siteMetadata.company');
+    const companyURL = get(this, 'props.data.site.siteMetadata.companyURL');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <React.Fragment>
-        <Helmet title={siteTitle} />
         <SiteHeader />
         <SiteMain>
           <Ego>
             <p>
               A <strong>design led</strong> Front-End Engineer currently working
-              as a <strong>Lead UX Engineer</strong> at{' '}
-              <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>, on
-              the{' '}
+              as a <strong>{jobTitle}</strong> at{' '}
+              <a href={companyURL}>{companyName}</a>, on the{' '}
               <a href="https://www.lightningdesignsystem.com">
                 Lightning Design System
               </a>. I have over <strong>12 years experience</strong> in Web
@@ -155,7 +154,9 @@ export const pageQuery = graphql`
   query IndexQuery {
     site {
       siteMetadata {
-        title
+        jobTitle
+        company
+        companyURL
       }
     }
     allMarkdownRemark(

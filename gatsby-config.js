@@ -4,8 +4,13 @@ var autoprefixer = require('autoprefixer');
 
 module.exports = {
   siteMetadata: {
-    title: 'Simon Taggart',
-    author: 'Simon Taggart'
+    title: 'Simon Taggart - Front-End Engineer and Designer',
+    author: 'Simon Taggart',
+    description:
+      'The home of the English Front End Engineer, Simon Taggart, where you can learn of his skills, musings, and loves.',
+    jobTitle: 'Lead UX Engineer',
+    company: 'Salesforce UX',
+    companyURL: 'https://twitter.com/SalesforceUX'
   },
   plugins: [
     {

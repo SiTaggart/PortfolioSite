@@ -4,7 +4,10 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
-import Bio from '../components/Bio';
+import { PostList, PostListItem } from '../components/post-list';
+import SiteHeader from '../components/site-header';
+import SiteMain from '../components/site-main';
+import SiteFooter from '../components/site-footer';
 
 class BlogIndex extends React.Component {
   static propTypes = {
@@ -18,21 +21,21 @@ class BlogIndex extends React.Component {
     return (
       <React.Fragment>
         <Helmet title={siteTitle} />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug;
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          );
-        })}
+        <SiteHeader isPost />
+        <SiteMain isPost>
+          <PostList isFullList>
+            {posts.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug;
+              return (
+                <PostListItem
+                  key={node.fields.slug}
+                  node={node}
+                  title={title}
+                />
+              );
+            })}
+          </PostList>
+        </SiteMain>
       </React.Fragment>
     );
   }

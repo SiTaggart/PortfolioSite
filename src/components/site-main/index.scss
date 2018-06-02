@@ -8,6 +8,7 @@
   max-width: 1400px;
 
   &--post {
+    grid-template-columns: 100%;
     max-width: 960px;
     padding: 0 remCalc(24px);
   }
