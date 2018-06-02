@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Button from '../button';
 
 import './index.scss';
 
@@ -18,7 +17,6 @@ export default class FlickrFigure extends Component {
     const imageStyle = {
       backgroundImage: `url(${this.getBetterImageURL(image.media.m)})`
     };
-    console.log(image.link);
     return (
       <figure className="flickrFigure">
         <a className="flickrFigure-link" href={image.link}>

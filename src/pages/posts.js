@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
 import { PostList, PostListItem } from '../components/post-list';
 import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
-import SiteFooter from '../components/site-footer';
 
 class BlogIndex extends React.Component {
   static propTypes = {

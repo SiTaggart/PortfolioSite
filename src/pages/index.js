@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
 import fetchJsonp from 'fetch-jsonp';
-import Helmet from 'react-helmet';
 import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
 import HomeSection from '../components/home-section';
@@ -52,7 +51,10 @@ class Index extends React.Component {
       })
       .then(handleData)
       .catch(function(ex) {
-        console.log('parsing failed', ex);
+        this.setState({
+          flickIsLoading: false,
+          error: ex
+        });
       });
   }
 

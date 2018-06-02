@@ -14,7 +14,8 @@ export default class LatestTweet extends Component {
   }
 
   getLatestTweet = () => {
-    const tweet = 'RT @MarcoInEnglish: JAWS users: Firefox #HashTags';
+    const tweet =
+      'RT @MarcoInEnglish: www.twiitter.com JAWS users: Firefox #HashTags';
     this.setState({
       formattedTweet: this.getFormattedTweet(tweet),
       size: this.getTweetSize(tweet)
