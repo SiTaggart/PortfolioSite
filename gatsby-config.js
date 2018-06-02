@@ -58,6 +58,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    '@jacobmischka/gatsby-plugin-react-svg'
+    '@jacobmischka/gatsby-plugin-react-svg',
+    'gatsby-plugin-netlify'
   ]
 };

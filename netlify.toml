@@ -1,0 +1,5 @@
+# netlify.toml
+
+[build]
+  command = "gatsby build --prefix-paths"
+  publish = "public"
