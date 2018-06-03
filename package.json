@@ -61,12 +61,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js, *.json, *.scss": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js, *.json, *.scss": ["prettier --write", "git add"]
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "browserslist": ["defaults"],
+  "prettier": {
+    "singleQuote": true
+  }
 }
