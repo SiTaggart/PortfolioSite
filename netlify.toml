@@ -1,5 +1,6 @@
 # netlify.toml
 
 [build]
-  command = "gatsby build --prefix-paths"
+  command = "npm run deploy"
   publish = "public"
+  functions = "/functions"

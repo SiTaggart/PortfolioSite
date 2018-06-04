@@ -1,6 +1,7 @@
 /*eslint-env node*/
 
 var autoprefixer = require('autoprefixer');
+var proxy = require('http-proxy-middleware');
 
 module.exports = {
   siteMetadata: {
@@ -11,6 +12,17 @@ module.exports = {
     jobTitle: 'Lead UX Engineer',
     company: 'Salesforce UX',
     companyURL: 'https://twitter.com/SalesforceUX'
+  },
+  developMiddleware: app => {
+    app.use(
+      '/.netlify/functions/',
+      proxy({
+        target: 'http://localhost:9000',
+        pathRewrite: {
+          '/.netlify/functions/': ''
+        }
+      })
+    );
   },
   plugins: [
     {

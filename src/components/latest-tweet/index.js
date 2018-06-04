@@ -14,12 +14,16 @@ export default class LatestTweet extends Component {
   }
 
   getLatestTweet = () => {
-    const tweet =
-      'RT @MarcoInEnglish: www.twiitter.com JAWS users: Firefox #HashTags';
-    this.setState({
-      formattedTweet: this.getFormattedTweet(tweet),
-      size: this.getTweetSize(tweet)
-    });
+    fetch('/.netlify/functions/tweets')
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('There was a problem getting my lastest tweet.');
+        }
+      })
+      .then(this.setLatestTweet)
+      .catch(this.setLatestTweetError);
   };
 
   getTweetSize = tweet => {
@@ -28,6 +32,20 @@ export default class LatestTweet extends Component {
 
   getFormattedTweet = tweet => {
     return TweetUtils.getFormattedTweet(tweet);
+  };
+
+  setLatestTweet = data => {
+    this.setState({
+      formattedTweet: this.getFormattedTweet(data[0].text),
+      size: this.getTweetSize(data[0].text)
+    });
+  };
+
+  setLatestTweetError = err => {
+    this.setState({
+      formattedTweet: err,
+      size: 'small'
+    });
   };
 
   render() {
