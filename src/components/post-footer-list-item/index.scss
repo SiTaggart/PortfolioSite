@@ -1,0 +1,10 @@
+@import '../../scss/settings/settings';
+@import '../../scss/tools/tools';
+
+.postFooter-list-item {
+  flex: 1;
+
+  &--next {
+    text-align: right;
+  }
+}

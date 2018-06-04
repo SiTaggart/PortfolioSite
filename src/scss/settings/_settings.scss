@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// SETTINGS FILE
+//
+// Purpose: Contains the settings for the entire site
+//
+////////////////////////////////////////////////////////////////////////////////
+
+@import '~breakpoint-sass/stylesheets/breakpoint';
+
+// =============================================================================
+// GLOBAL SETTINGS
+// =============================================================================
+
+$fontSizeRoot: 16px;
+$fontSizeBase: 1rem;
+$lineHeightBase: 1.5;
+
+// =============================================================================
+// BREAKPOINTS
+// =============================================================================
+
+$breakpoint-xxxlarge: 1921px;
+$breakpoint-xxlarge: 1681px;
+$breakpoint-xlarge: 1441px;
+$breakpoint-large: 1281px;
+$breakpoint-medium: 1025px;
+$breakpoint-small: 769px;
+$breakpoint-xsmall: 481px;
+$breakpoint-xxsmall: 320px;
+$breakpoint-portrait: (portrait orientation);
+$breakpoint-landscape: (landscape orientation);
+
+// =============================================================================
+// BREAKPOINT SETTINGS
+// =============================================================================
+//
+
+// Default Features
+@include breakpoint-set('default media', screen);
+@include breakpoint-set('default feature', min-width);
+$breakpoint-default-pair: width;
+
+// Default Transforms
+@include breakpoint-set('force all media type', false);
+@include breakpoint-set('to ems', false);
+@include breakpoint-set('transform resolutions', true);
+
+/* Default No Query Options*/
+@include breakpoint-set('no queries', false);
+@include breakpoint-set('no query fallbacks', false);
+
+// Deftault Base Font Size
+@include breakpoint-set('base font size', $fontSizeRoot);
+
+// Legacy Syntax Support
+@include breakpoint-set('legacy syntax', false);
+
+// =============================================================================
+// SITE SETTINGS
+// =============================================================================
+
+$body-bg: #fefefe;
+$body-fontColor: #444;
+$link-color: #d63214;
+
+$fontFamily-serif: 'Merriweather', serif;
+$fontFamily-sans: 'Lato', 'Gill Sans', Arial, sans-serif;
+
+$animation-curve: ease-in-out;
+$animation-transition: 300ms $animation-curve;
+
+// =============================================================================
+// LAYOUT SETTINGS
+// =============================================================================
+
+$ratio: 61.728%;

@@ -1,0 +1,33 @@
+@import '../../scss/settings/settings';
+
+$twitterBrand-color: #55acee;
+
+.twitterHandle {
+  color: $twitterBrand-color;
+  text-decoration: none;
+
+  .icon {
+    transition: fill $animation-transition;
+  }
+
+  &:hover .icon {
+    fill: $twitterBrand-color;
+  }
+}
+
+.twitterHandle-username {
+  display: inline-block;
+  font-family: $fontFamily-sans;
+  font-weight: 300;
+  transition: max-width $animation-transition;
+  vertical-align: middle;
+
+  @include breakpoint($breakpoint-small) {
+    max-width: 0;
+    overflow: hidden;
+
+    .twitterHandle:hover & {
+      max-width: 200px;
+    }
+  }
+}

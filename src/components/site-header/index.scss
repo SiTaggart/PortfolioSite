@@ -1,0 +1,92 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '../../scss/settings/settings';
+@import '../../scss/tools/tools';
+
+// =============================================================================
+// HEADER
+// =============================================================================
+
+.header {
+  background: url(./kyoto.sm.jpg) 50%;
+  background-size: cover;
+  color: #efefef;
+  min-height: remCalc(650);
+  position: relative;
+
+  @include breakpoint(
+    $breakpoint-landscape($breakpoint-xxsmall $breakpoint-medium)
+  ) {
+    min-height: $ratio * 1.4;
+  }
+
+  @include breakpoint($breakpoint-small) {
+    background-image: url(./kyoto.jpg);
+  }
+
+  &::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    bottom: 0;
+    content: '';
+    display: block;
+    min-height: 45%;
+    position: absolute;
+    width: 100%;
+  }
+
+  a {
+    color: #efefef;
+    text-decoration: none;
+  }
+
+  &--post {
+    min-height: remCalc(200);
+
+    &::before {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+      height: 100%;
+    }
+  }
+}
+
+.header-avatar {
+  border-radius: 200px;
+  border: solid 3px #fff;
+  bottom: -11.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  height: remCalc(230px);
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: remCalc(230px);
+
+  &--post {
+    bottom: remCalc(-70px);
+    height: remCalc(100px);
+    width: remCalc(100px);
+  }
+}
+
+.header-title {
+  bottom: 4.5rem;
+  letter-spacing: - remCalc(1px);
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  width: 100%;
+
+  small {
+    font-size: 2.2rem;
+    display: block;
+  }
+
+  &--post {
+    bottom: remCalc(40px);
+    font-size: remCalc(70px);
+
+    small {
+      font-size: remCalc(30px);
+    }
+  }
+}
