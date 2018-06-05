@@ -6,9 +6,13 @@
   text-align: center;
 
   .postHeader-heading {
-    font-size: remCalc(60px);
+    font-size: remCalc(50px);
     line-height: 1;
     margin: 0 0 remCalc(10px);
+
+    @include breakpoint($breakpoint-xsmall) {
+      font-size: remCalc(60px);
+    }
   }
 
   .postHeader-date {

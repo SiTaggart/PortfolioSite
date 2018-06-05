@@ -123,6 +123,7 @@ class Index extends React.Component {
                 flavour="blabber"
                 href="https://www.twitter.com/sitaggart"
               >
+                <span className="is-srOnly">Twitter handle:</span>
                 <TwitterHandle>@SiTaggart</TwitterHandle>
               </HomeSectionHeaderLink>
             </HomeSectionHeader>

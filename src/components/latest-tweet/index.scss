@@ -1,11 +1,10 @@
-@import '~breakpoint-sass/stylesheets/breakpoint';
 @import '../../scss/settings/settings';
 @import '../../scss/tools/tools';
 
 .latestTweet {
   background-color: #f9f9f9;
   display: block;
-  font-size: remCalc(35);
+  font-size: remCalc(30px);
   font-weight: 700;
   line-height: 1.6;
   padding: remCalc(40);

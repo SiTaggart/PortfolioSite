@@ -56,8 +56,18 @@
   ul,
   ol,
   dl,
-  table {
-    font-size: remCalc(18px);
+  table,
+  pre {
+    font-size: remCalc(22px);
+
+    @include breakpoint($breakpoint-xsmall) {
+      font-size: remCalc(18px);
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: remCalc(28px);
   }
 
   blockquote {

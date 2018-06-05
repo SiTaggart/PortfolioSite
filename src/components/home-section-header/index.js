@@ -19,7 +19,7 @@ export class HomeSectionHeader extends Component {
           'homeSection-header--pix': this.props.flavour === 'pix'
         })}
       >
-        {this.props.children}
+        <h2>{this.props.children}</h2>
       </header>
     );
   }
