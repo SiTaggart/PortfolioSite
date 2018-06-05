@@ -1,13 +1,18 @@
-@import '~breakpoint-sass/stylesheets/breakpoint';
 @import '../../scss/settings/settings';
 @import '../../scss/tools/tools';
 
 .homeSection-header {
   margin-bottom: 2rem;
-  font-size: remCalc(38);
+
+  h2 {
+    font-size: remCalc(38);
+  }
 
   @include breakpoint($breakpoint-medium) {
-    font-size: remCalc(24);
+    h2 {
+      font-size: remCalc(24);
+    }
+
     margin-bottom: 1.5rem;
   }
 }
