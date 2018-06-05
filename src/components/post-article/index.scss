@@ -65,6 +65,11 @@
     }
   }
 
+  ul,
+  ol {
+    padding-left: remCalc(28px);
+  }
+
   blockquote {
     border-left: solid 6px #efefef;
     font-style: italic;
