@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../button/index.scss';
 import './index.scss';
 
 export default class FlickrFigure extends Component {
