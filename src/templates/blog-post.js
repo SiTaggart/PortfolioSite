@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
+import { graphql, Link } from 'gatsby';
 import get from 'lodash/get';
 import SiteMain from '../components/site-main';
 import SiteHeader from '../components/site-header';
@@ -18,13 +18,13 @@ import PostFooterListItem from '../components/post-footer-list-item';
 class BlogPostTemplate extends React.Component {
   static propTypes = {
     data: PropTypes.any,
-    pathContext: PropTypes.any
+    pageContext: PropTypes.any
   };
 
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    const { previous, next } = this.props.pathContext;
+    const { previous, next } = this.props.pageContext;
 
     return (
       <React.Fragment>

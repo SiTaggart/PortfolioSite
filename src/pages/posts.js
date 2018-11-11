@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
 import { PostList, PostListItem } from '../components/post-list';
 import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
+import Layout from '../components/layout';
 
 class BlogIndex extends React.Component {
   static propTypes = {
@@ -17,7 +19,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
-      <React.Fragment>
+      <Layout>
         <Helmet title={siteTitle} />
         <SiteHeader isPost />
         <SiteMain isPost>
@@ -34,7 +36,7 @@ class BlogIndex extends React.Component {
             })}
           </PostList>
         </SiteMain>
-      </React.Fragment>
+      </Layout>
     );
   }
 }

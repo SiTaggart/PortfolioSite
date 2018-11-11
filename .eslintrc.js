@@ -28,5 +28,10 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'jsx-quotes': ['error', 'prefer-double']
+  },
+  settings: {
+    react: {
+      version: '16.6.1'
+    }
   }
 };

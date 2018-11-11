@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
 import fetchJsonp from 'fetch-jsonp';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
 import HomeSection from '../components/home-section';
@@ -65,7 +67,7 @@ class Index extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
-      <React.Fragment>
+      <Layout>
         <SiteHeader />
         <SiteMain>
           <Ego>
@@ -75,7 +77,8 @@ class Index extends React.Component {
               <a href={companyURL}>{companyName}</a>, on the{' '}
               <a href="https://www.lightningdesignsystem.com">
                 Lightning Design System
-              </a>. I have over <strong>12 years experience</strong> in Web
+              </a>
+              . I have over <strong>12 years experience</strong> in Web
               Development and Front-End Engineering, specialising in building
               user interfaces for web sites and web applications.
             </p>
@@ -146,7 +149,7 @@ class Index extends React.Component {
             </PostList>
           </HomeSection>
         </SiteMain>
-      </React.Fragment>
+      </Layout>
     );
   }
 }
