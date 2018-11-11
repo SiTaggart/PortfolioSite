@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-postcss-sass',
+      resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [autoprefixer()]
       }
