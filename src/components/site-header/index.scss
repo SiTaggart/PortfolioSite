@@ -68,7 +68,7 @@
 
 .header-title {
   bottom: 4.5rem;
-  letter-spacing: -remCalc(1px);
+  letter-spacing: remCalc(-1px);
   margin: 0;
   position: absolute;
   text-align: center;
