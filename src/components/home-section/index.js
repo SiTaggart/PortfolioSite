@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ClassNames from 'classnames';
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class HomeSection extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-    flavour: PropTypes.string
-  };
-
-  render() {
-    const { flavour } = this.props;
-    return (
-      <section
-        className={ClassNames('homeSection', {
-          'homeSection--ego': flavour === 'ego',
-          'homeSection--pix': flavour === 'pix',
-          'homeSection--blabber': flavour === 'blabber',
-          'homeSection--posts': flavour === 'posts'
-        })}
-      >
-        {this.props.children}
-      </section>
-    );
-  }
-}
+const HomeSection = props => (
+  <section
+    className={ClassNames(`${styles.homeSection}`, {
+      [`${styles.homeSectionEgo}`]: props.flavour === 'ego',
+      [`${styles.homeSectionPix}`]: props.flavour === 'pix',
+      [`${styles.homeSectionBlabber}`]: props.flavour === 'blabber',
+      [`${styles.homeSectionPosts}`]: props.flavour === 'posts'
+    })}
+  >
+    {props.children}
+  </section>
+);
+HomeSection.propTypes = {
+  children: PropTypes.node,
+  flavour: PropTypes.string
+};
+export default HomeSection;

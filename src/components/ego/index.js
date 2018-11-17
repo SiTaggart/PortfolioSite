@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import HomeSection from '../home-section';
 
-import './index.scss';
-
-export default class Ego extends Component {
-  static propTypes = {
-    children: PropTypes.array
-  };
-
-  render() {
-    return <HomeSection flavour="ego">{this.props.children}</HomeSection>;
-  }
-}
+const Ego = props => {
+  return <HomeSection flavour="ego">{props.children}</HomeSection>;
+};
+Ego.propTypes = {
+  children: PropTypes.node
+};
+export default Ego;

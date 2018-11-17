@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import './index.scss';
+import styles from './index.module.scss';
+import styleUtils from '../../scss/utils/_index.module.scss';
 
-export default class FlickLogo extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <span className="flickrLogo">
-          <i className="flickrLogo-dot flickrLogo-dot--blue" />
-          <i className="flickrLogo-dot flickrLogo-dot--pink" />
-        </span>
-        <span className="is-srOnly">Flickr Photos</span>
-      </React.Fragment>
-    );
-  }
-}
+const FlickLogo = () => {
+  return (
+    <>
+      <span className={styles.flickrLogo}>
+        <i className={`${styles.flickrLogoDot} ${styles.flickrLogoDotBlue}`} />
+        <i className={`${styles.flickrLogoDot} ${styles.flickrLogoDotPink}`} />
+      </span>
+      <span className={styleUtils.isSrOnly}>Flickr Photos</span>
+    </>
+  );
+};
+
+export default FlickLogo;

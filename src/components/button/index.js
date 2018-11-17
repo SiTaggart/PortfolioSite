@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class Button extends Component {
-  static propTypes = {
-    children: PropTypes.string,
-    url: PropTypes.string
-  };
-
-  render() {
-    return this.props.url ? (
-      <a className="button" href={this.props.url}>
-        {this.props.children}
-      </a>
-    ) : (
-      <button className="button">{this.props.children}</button>
-    );
-  }
-}
+const Button = props => {
+  return props.url ? (
+    <a className={styles.button} href={props.url}>
+      {props.children}
+    </a>
+  ) : (
+    <button className={styles.button}>{props.children}</button>
+  );
+};
+Button.propTypes = {
+  children: PropTypes.string,
+  url: PropTypes.string
+};
+export default Button;

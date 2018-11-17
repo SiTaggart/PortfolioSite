@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class FlickrList extends Component {
-  static propTypes = {
-    children: PropTypes.node
-  };
-
-  render() {
-    return <ul className="flickrList">{this.props.children}</ul>;
-  }
-}
+const FlickrList = props => {
+  return <ul className={styles.flickrList}>{props.children}</ul>;
+};
+FlickrList.propTypes = {
+  children: PropTypes.node
+};
+export default FlickrList;
