@@ -20,7 +20,7 @@ import FlickrFigure from '../components/flickr-figure';
 import TwitterHandle from '../components/twitter-handle';
 import LatestTweet from '../components/latest-tweet';
 
-import './index.scss';
+import styleUtils from '../scss/utils/_index.module.scss';
 
 class Index extends React.Component {
   static propTypes = {
@@ -126,7 +126,7 @@ class Index extends React.Component {
                 flavour="blabber"
                 href="https://www.twitter.com/sitaggart"
               >
-                <span className="is-srOnly">Twitter handle:</span>
+                <span className={styleUtils.isSrOnly}>Twitter handle:</span>
                 <TwitterHandle>@SiTaggart</TwitterHandle>
               </HomeSectionHeaderLink>
             </HomeSectionHeader>

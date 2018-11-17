@@ -29,7 +29,10 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         postCssPlugins: [autoprefixer()],
-        precision: 8
+        precision: 8,
+        cssLoaderOptions: {
+          localIdentName: '[local]--[hash:base64:5]'
+        }
       }
     },
     {

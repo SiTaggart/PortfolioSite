@@ -1,59 +1,66 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import ClassNames from 'classnames';
 
-import './index.scss';
+import styles from './index.module.scss';
 
-export class PostListItem extends Component {
-  static propTypes = {
-    node: PropTypes.object,
-    title: PropTypes.string
-  };
+const PostLink = ({ node, title }) => {
+  return <Link to={node.fields.slug}>{title}</Link>;
+};
+PostLink.propTypes = {
+  node: PropTypes.object,
+  title: PropTypes.string
+};
 
-  renderSimpleLink = (node, title) => {
-    return <Link to={node.fields.slug}>{title}</Link>;
-  };
+const PostExerpt = ({ node, title }) => {
+  return (
+    <article className={styles.postsListItemArticle}>
+      <h2 className={styles.postsListItemHeading}>
+        <PostLink node={node} title={title} />
+      </h2>
+      <small className={styles.postsListItemDate}>
+        {node.frontmatter.date}
+      </small>
+      <p className={styles.postsListItemExcerpt}>{node.excerpt}</p>
+    </article>
+  );
+};
+PostExerpt.propTypes = {
+  node: PropTypes.object,
+  title: PropTypes.string
+};
 
-  renderArticleExerpt = (node, title) => {
-    return (
-      <article className="posts-listItem-article">
-        <h2 className="posts-listItem-heading">
-          {this.renderSimpleLink(node, title)}
-        </h2>
-        <small className="posts-listItem-date">{node.frontmatter.date}</small>
-        <p className="posts-listItem-excerpt">{node.excerpt}</p>
-      </article>
-    );
-  };
+const PostListItem = ({ node, title }) => {
+  return (
+    <li className={styles.postsListItem}>
+      {node.excerpt ? (
+        <PostExerpt node={node} title={title} />
+      ) : (
+        <PostLink node={node} title={title} />
+      )}
+    </li>
+  );
+};
+PostListItem.propTypes = {
+  node: PropTypes.object,
+  title: PropTypes.string
+};
 
-  render() {
-    const { node, title } = this.props;
-    return (
-      <li className="posts-listItem">
-        {node.excerpt
-          ? this.renderArticleExerpt(node, title)
-          : this.renderSimpleLink(node, title)}
-      </li>
-    );
-  }
-}
+const PostList = props => {
+  return (
+    <ul
+      className={ClassNames(`${styles.postsList}`, {
+        [`${styles.postsListFullList}`]: props.isFullList
+      })}
+    >
+      {props.children}
+    </ul>
+  );
+};
+PostList.propTypes = {
+  children: PropTypes.node,
+  isFullList: PropTypes.bool
+};
 
-export class PostList extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-    isFullList: PropTypes.bool
-  };
-
-  render() {
-    return (
-      <ul
-        className={ClassNames('posts-list', {
-          'posts-list--fullList': this.props.isFullList
-        })}
-      >
-        {this.props.children}
-      </ul>
-    );
-  }
-}
+export { PostList, PostListItem };

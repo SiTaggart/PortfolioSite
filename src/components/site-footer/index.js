@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FooterLinks from '../footer-links';
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class SiteFooter extends Component {
-  render() {
-    return (
-      <footer className="siteFooter">
-        <FooterLinks />
-      </footer>
-    );
-  }
-}
+const SiteFooter = () => {
+  return (
+    <footer className={styles.siteFooter}>
+      <FooterLinks />
+    </footer>
+  );
+};
+
+export default SiteFooter;

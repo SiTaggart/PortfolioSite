@@ -4,8 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import SiteFooter from '../site-footer';
 
-import './index.scss';
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
