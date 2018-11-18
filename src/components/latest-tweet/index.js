@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import TweetUtils from '../../utils/tweets';
+import toSentenceCase from 'to-sentence-case';
 
-import './index.scss';
+import styles from './index.module.scss';
 
 export default class LatestTweet extends Component {
   state = {
@@ -34,6 +35,11 @@ export default class LatestTweet extends Component {
     return TweetUtils.getFormattedTweet(tweet);
   };
 
+  getSizeClassName = size => {
+    let sizeClass = `latestTweet${toSentenceCase(size)}`;
+    return styles[sizeClass];
+  };
+
   setLatestTweet = data => {
     this.setState({
       formattedTweet: this.getFormattedTweet(data[0].text),
@@ -55,7 +61,11 @@ export default class LatestTweet extends Component {
       };
     };
     return (
-      <div className={`latestTweet latestTweet--${this.state.size}`}>
+      <div
+        className={`${styles.latestTweet} ${this.getSizeClassName(
+          this.state.size
+        )}`}
+      >
         <p dangerouslySetInnerHTML={createFormattedTweet()} />
       </div>
     );

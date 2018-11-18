@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
 import fetchJsonp from 'fetch-jsonp';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
 import HomeSection from '../components/home-section';
@@ -18,7 +20,7 @@ import FlickrFigure from '../components/flickr-figure';
 import TwitterHandle from '../components/twitter-handle';
 import LatestTweet from '../components/latest-tweet';
 
-import './index.scss';
+import styleUtils from '../scss/utils/_index.module.scss';
 
 class Index extends React.Component {
   static propTypes = {
@@ -65,7 +67,7 @@ class Index extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
-      <React.Fragment>
+      <Layout>
         <SiteHeader />
         <SiteMain>
           <Ego>
@@ -75,7 +77,8 @@ class Index extends React.Component {
               <a href={companyURL}>{companyName}</a>, on the{' '}
               <a href="https://www.lightningdesignsystem.com">
                 Lightning Design System
-              </a>. I have over <strong>12 years experience</strong> in Web
+              </a>
+              . I have over <strong>12 years experience</strong> in Web
               Development and Front-End Engineering, specialising in building
               user interfaces for web sites and web applications.
             </p>
@@ -123,7 +126,7 @@ class Index extends React.Component {
                 flavour="blabber"
                 href="https://www.twitter.com/sitaggart"
               >
-                <span className="is-srOnly">Twitter handle:</span>
+                <span className={styleUtils.isSrOnly}>Twitter handle:</span>
                 <TwitterHandle>@SiTaggart</TwitterHandle>
               </HomeSectionHeaderLink>
             </HomeSectionHeader>
@@ -146,7 +149,7 @@ class Index extends React.Component {
             </PostList>
           </HomeSection>
         </SiteMain>
-      </React.Fragment>
+      </Layout>
     );
   }
 }

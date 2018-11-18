@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class PostArticle extends Component {
-  static propTypes = {
-    children: PropTypes.node
-  };
-
-  render() {
-    return <article className="postArticle">{this.props.children}</article>;
-  }
-}
+const PostArticle = props => {
+  return <article className={styles.postArticle}>{props.children}</article>;
+};
+PostArticle.propTypes = {
+  children: PropTypes.node
+};
+export default PostArticle;

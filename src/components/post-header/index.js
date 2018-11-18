@@ -1,34 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './index.scss';
+import styles from './index.module.scss';
 
-export class PostHeader extends Component {
-  static propTypes = {
-    children: PropTypes.node
-  };
+const PostHeader = props => {
+  return <header className={styles.postHeader}>{props.children}</header>;
+};
+PostHeader.propTypes = {
+  children: PropTypes.node
+};
 
-  render() {
-    return <header className="postHeader">{this.props.children}</header>;
-  }
-}
+const PostHeaderHeading = props => {
+  return <h1 className={styles.postHeaderHeading}>{props.children}</h1>;
+};
+PostHeaderHeading.propTypes = {
+  children: PropTypes.node
+};
 
-export class PostHeaderHeading extends Component {
-  static propTypes = {
-    children: PropTypes.node
-  };
+const PostHeaderDate = props => {
+  return <p className={styles.postHeaderDate}>{props.children}</p>;
+};
+PostHeaderDate.propTypes = {
+  children: PropTypes.node
+};
 
-  render() {
-    return <h1 className="postHeader-heading">{this.props.children}</h1>;
-  }
-}
-
-export class PostHeaderDate extends Component {
-  static propTypes = {
-    children: PropTypes.node
-  };
-
-  render() {
-    return <p className="postHeader-date">{this.props.children}</p>;
-  }
-}
+export { PostHeader, PostHeaderHeading, PostHeaderDate };

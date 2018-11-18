@@ -26,9 +26,13 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-postcss-sass',
+      resolve: 'gatsby-plugin-sass',
       options: {
-        postCssPlugins: [autoprefixer()]
+        postCssPlugins: [autoprefixer()],
+        precision: 8,
+        cssLoaderOptions: {
+          localIdentName: '[local]--[hash:base64:5]'
+        }
       }
     },
     {
@@ -70,7 +74,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    '@jacobmischka/gatsby-plugin-react-svg',
+    'gatsby-plugin-react-svg',
     'gatsby-plugin-netlify'
   ]
 };

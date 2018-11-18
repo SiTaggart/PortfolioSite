@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ClassNames from 'classnames';
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class SiteMain extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-    isPost: PropTypes.bool
-  };
-
-  render() {
-    return (
-      <main
-        className={ClassNames('siteMain', {
-          'siteMain--post': this.props.isPost
-        })}
-      >
-        {this.props.children}
-      </main>
-    );
-  }
-}
+const SiteMain = props => {
+  return (
+    <main
+      className={ClassNames(`${styles.siteMain}`, {
+        [`${styles.siteMainPost}`]: props.isPost
+      })}
+    >
+      {props.children}
+    </main>
+  );
+};
+SiteMain.propTypes = {
+  children: PropTypes.node,
+  isPost: PropTypes.bool
+};
+export default SiteMain;

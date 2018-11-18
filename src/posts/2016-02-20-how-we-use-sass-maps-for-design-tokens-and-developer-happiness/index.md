@@ -1,6 +1,6 @@
 ---
 title: How we use Sass Maps for Design Tokens and Developer Happiness
-date: "2016-02-20"
+date: '2016-02-20'
 ---
 
 When building a design system there is always a set of global, shared properties that become the basis of everything that gets built. This is part of the atom level of the "Atomic Design" principle – the font sizes, weights, line heights, colours, borders, background, spacing, sizing and z-indexes that are the very core of every single piece of Interface in your UI library.
@@ -64,16 +64,16 @@ This is starting to feel a bit more manageable, and if we couple this with a sim
 
 We first started by defining what types of design tokens we needed and settled on a camelCase naming convention, which essentially maps to the name of the CSS property it relates to (where ever possible). So we ended up with a list of design tokens that looks like:
 
-* `color()`
-* `fontSize()`
-* `fontWeight()`
-* `lineHeight()`
-* `letterSpacing()`
-* `fontFamily()`
-* `spacing()`
-* `zIndex()`
-* `container()`
-* `screenSize()`
+- `color()`
+- `fontSize()`
+- `fontWeight()`
+- `lineHeight()`
+- `letterSpacing()`
+- `fontFamily()`
+- `spacing()`
+- `zIndex()`
+- `container()`
+- `screenSize()`
 
 We then set out how we would define the variation in each property, based on a predictable scale of comparative adjectives that best relate to the type of property. Large or Small, Dark or Light, High or Low.
 
@@ -163,9 +163,9 @@ A typical implementation of a contained component might look something like:
 
 Obviously if every contained component were always that consistent, we could just abstract that into it's own re-useable container style, but in reality a lot of our containers might share similarities but have slightly different combinations and variations of those properties. Our panels for example only have an internal border, and the bottom drop shadow, but those styles are shared with our tables which also have borders all the way round (the same borders) and they both share a background colour.
 
-![image alt text](./panel.png)
+![example of a panel component](./panel.png)
 
-![image alt text](./table.png)
+![Example of a table component which shares a lot of common container styling with a panel, such as borders and background colors](./table.png)
 
 If we wanted to change how we visually treat containment, the chances are we'd change both panels and tables equally. They do a similar job, they're just treated slightly differently based on their use case or data type. We've found this is a really great way to deal with these kind of design tokens without engineers re-inventing the wheel in every project, and potentially having interface components becoming visually out of sync across the application.
 

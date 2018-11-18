@@ -1,6 +1,6 @@
 ---
 title: The Living Style Guide Pattern Lab
-date: "2016-03-04"
+date: '2016-03-04'
 ---
 
 Front End style guides have been well publicised recently, with [many](http://styleguide.cfapps.io/) [examples](http://ux.mailchimp.com/patterns) being [made](http://style.codeforamerica.org/) [available](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours) for all [to see](https://www.lightningdesignsystem.com/). They're a popular and effective way of creating usage guidelines for Interfaces that adhere to an agreed upon design ethic. They help you speed up, maintain, and keep UI consistency. At BigCommerce, we've started to think about the best way we could implement something similar that would help us achieve those goals.
@@ -33,7 +33,7 @@ The work by Lonely Planet on their "[living style guide](http://engineering.lone
 
 This allows us to define small chunks of our UI into standalone, dynamic pieces, that we can then stitch together. It offers a number of advantages, in that each piece is testable separately from other components. We get to abstract complex HTML patterns, semantics and accessibility attributes away from JavaScript engineers who just need implement custom tags or elements into their apps.
 
-![image alt text](./switch.png)
+![example of how a switch component renders complex UI and markup from a simple API component API](./switch.png)
 
 With that, we get full control of that HTML as it's compiled into JavaScript objects, meaning we can update a component and rollout it out without the dreaded "find and replace" across thousands of lines of slightly differently formatted HTML.
 

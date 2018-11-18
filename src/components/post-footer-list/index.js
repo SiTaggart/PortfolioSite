@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import './index.scss';
+import styles from './index.module.scss';
 
-export default class PostFooterList extends Component {
-  static propTypes = {
-    children: PropTypes.node
-  };
-
-  render() {
-    return <ul className="postFooter-list">{this.props.children}</ul>;
-  }
-}
+const PostFooterList = props => {
+  return <ul className={styles.postFooterList}>{props.children}</ul>;
+};
+PostFooterList.propTypes = {
+  children: PropTypes.node
+};
+export default PostFooterList;
