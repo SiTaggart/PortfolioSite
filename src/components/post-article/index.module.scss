@@ -71,14 +71,36 @@
   }
 
   blockquote {
+    background: #efefef;
     border-left: solid 6px #efefef;
     font-style: italic;
-    margin: remCalc(40px) remCalc(-20px);
-    padding: remCalc(15px) 0 remCalc(15px) remCalc(40px);
+    margin: remCalc(40px) 0;
+    padding: remCalc(30px) remCalc(40px);
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '“';
+      position: absolute;
+      font-size: remCalc(60px);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    &::before {
+      left: -25px;
+      top: -5px;
+    }
+
+    &::after {
+      content: '”';
+      bottom: -40px;
+      right: 0;
+    }
   }
 
   blockquote p {
-    font-size: remCalc(26px);
+    font-size: remCalc(20px);
     margin: 0;
   }
 
