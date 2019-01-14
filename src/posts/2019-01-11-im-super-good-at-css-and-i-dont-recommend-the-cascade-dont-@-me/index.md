@@ -7,11 +7,11 @@ I’ve been writing CSS for over 13 years. I’ve written CSS for very large new
 
 I’m part of the “old guard”. I’ve been around the block enough to know how good it was in the “old days”. To know it was simpler back then. I’ve wrangled IE5.5, I know “how good these kids have it these days”.
 
-In almost all but small, document-based website cases I can tell you from experience that the cascade is kind of a terrible idea for today’s teams, organisations, and products and it’s got _nothing_ to do with _“not knowing CSS”_.
+In almost all but small, document-based website cases, I can tell you from experience that the cascade is kind of a terrible idea for today’s teams, organisations, and products, and it’s got _nothing_ to do with _“not knowing CSS”_.
 
 ## What is “the cascade”
 
-Lets’ start by defining what the cascade is. According to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade):
+Let’s start by defining what the cascade is. According to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade):
 
 > The **cascade** is an algorithm that defines how to combine property values originating from different sources
 
@@ -54,7 +54,7 @@ As you can see the cascade algorithm has declared the `font-size` declaration fr
 
 ## What the cascade isn’t
 
-Now, lets’ understand what the cascade is _not_:
+Now, let’s understand what the cascade is _not_:
 
 ### Inheritance
 
@@ -70,17 +70,17 @@ Today we also often use the concept of componentisation, which is a means of abs
 
 Well, don’t take my word for it. Over the years, we’ve built a tonne of different CSS methodologies to help us write “maintainable CSS”.
 
-BEM, SMACSS, ITCSS, SUIT CSS, OO CSS and Atomic CSS all come from the same angle of promising more maintainable CSS architectures and codebases. How do they do this? They aim to reduce the impact that descendant, location specific and specificity of our selectors can have on the visual appearance of our document. These things all affect the cascade by using the cascade algorithm to influence which style declarations “win”. Who’s style rule overrides who’s. By reducing their usage and providing methodologies to avoid them, it greatly reduces some of the problems the cascade can cause.
+BEM, SMACSS, ITCSS, SUIT CSS, OO CSS and Atomic CSS all come from the same angle of promising more maintainable CSS architectures and codebases. How do they do this? They aim to inform the way we write our CSS selectors, by reducing their specificity and avoiding descendant and location specific selectors, all of which can have adverse effects on the visual appearance of the document.
 
-We do this because we know from experience that selectors from different locations, authors, teams, or applications that try to set style properties on the same node will often have inadvertent, adverse effects on the way our webpage or UI features can look.
+We do this because we know from experience that selectors from different locations, authors, teams, or applications that try to set style properties on the same node will often have unintended consequences or clashes. The adverse effects are due to the cascade as the browsers are using the cascade algorithm to calculate which style declarations “win”. If you don’t have 100% oversight into what CSS is being set on the document, the calculated result can be extremely unpredictable.
 
-This is how we found ourselves in the “specificity wars”. This is how we find ourselves battling with our neighbouring teams who are shipping features to the same document but occupying the same global styling namespace.
+This is how we find ourselves in the “specificity wars”. This is how we find ourselves battling with our neighbouring teams who are shipping features to the same document but occupying the same global styling namespace. Because the cascade means that even in a moderately complex CSS codebase, we can find our CSS fighting with each other, and great care has to be taken to prevent it.
 
-We follow these methodologies so that we don’t get style clashes, our colleagues' work isn’t affected by our own work, and the overall webpage appearance doesn’t break (as often, because none of them are anywhere near perfect).
+We follow these methodologies so that we _control the cascade_ and the effect it can have on the visual appearance of our documents. Don’t you see? That’s our own admission that the cascade kinda sucks.
 
 ## OK, cool. What’s your point, Simon?
 
-My point is simply this:
+Well, I’ve kind of lured you this far to prove a bit of a point.
 
 We, the ones who are super good at CSS, who can wrangle the cascade to our whims, who can architect extremely large CSS codebases with little problem, do so by navigating the pitfalls and gotchas of the design of CSS with countless methodologies and approaches to authoring that I sometimes think we forget is an admission of the inherent flaws in CSS.
 
@@ -88,6 +88,6 @@ We cover it up with bravado and one-up-manship, shunning new approaches that don
 
 So, I ask of you this. The next time you’re in a twitter sub-tweeting war about the virtues of how good CSS is, and there’s absolutely nothing wrong with it, and everyone else is at fault for not “learning CSS” properly, maybe pause for a second. Cast your mind back to all those things we advocate for as being best practices for authoring “good” and “maintainable” CSS, and consider that these best practices are designed specifically to mitigate some of the ways in which CSS is designed to work.
 
-Maybe there are some flaws in the old beast after all, and maybe these new fandangled tools are just a new iteration of those things we call methodologies, that were created over all these years of CSS mastery.
+Maybe there are some flaws in the old beast after all, and maybe these new fandangled tools, like CSS-in-JS, are just a new iteration of those things we call methodologies that were created over all these years of CSS mastery. They’re probably not perfect either, but maybe, just maybe, iteration isn’t so bad after all…
 
 🤔
