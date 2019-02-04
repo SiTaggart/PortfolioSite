@@ -74,13 +74,10 @@ class Index extends React.Component {
             <p>
               A <strong>design led</strong> Front-End Engineer currently working
               as a <strong>{jobTitle}</strong> at{' '}
-              <a href={companyURL}>{companyName}</a>, on the{' '}
-              <a href="https://www.lightningdesignsystem.com">
-                Lightning Design System
-              </a>
-              . I have over <strong>12 years experience</strong> in Web
-              Development and Front-End Engineering, specialising in building
-              user interfaces for web sites and web applications.
+              <a href={companyURL}>{companyName}</a>, on Design Systems. I have
+              over <strong>12 years experience</strong> in Web Development and
+              Front-End Engineering, specialising in building user interfaces
+              for web sites and web applications.
             </p>
             <p>
               Expert in <strong>Rapid Prototyping</strong> and{' '}
@@ -95,7 +92,9 @@ class Index extends React.Component {
               </a>
             </p>
             <p>
-              Previously <a href="http://www.bigcommerce.com">BigCommerce</a>,{' '}
+              Previously{' '}
+              <a href="https://www.lightningdesignsystem.com">Salesforce</a>,{' '}
+              <a href="http://www.bigcommerce.com">BigCommerce</a>,{' '}
               <a href="https://www.flippa.com">Flippa</a>,{' '}
               <a href="https://www.sitepoint.com">SitePoint</a>,{' '}
               <a href="http://www.orchard.com.au">Orchard</a> and{' '}
