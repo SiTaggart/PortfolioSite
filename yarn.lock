@@ -11171,9 +11171,10 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-to-sentence-case@^1.0.0:
+to-sentence-case@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/to-sentence-case/-/to-sentence-case-1.0.0.tgz#c483bf3647737e5c738ef7006fe360d5f99c572e"
+  integrity sha1-xIO/NkdzflxzjvcAb+Ng1fmcVy4=
   dependencies:
     to-no-case "^1.0.0"
 

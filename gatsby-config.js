@@ -9,9 +9,9 @@ module.exports = {
     author: 'Simon Taggart',
     description:
       'The home of the English Front End Engineer, Simon Taggart, where you can learn of his skills, musings, and loves.',
-    jobTitle: 'Lead UX Engineer',
-    company: 'Salesforce UX',
-    companyURL: 'https://twitter.com/SalesforceUX'
+    jobTitle: 'Principal Front End Engineer',
+    company: 'Twilio',
+    companyURL: 'https://www.twilio.com'
   },
   developMiddleware: app => {
     app.use(
