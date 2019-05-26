@@ -46,6 +46,7 @@ jobs:
       # run tests!
       - run: yarn build
       - run: yarn build:functions
+      - run: yarn bundlesize
 
 workflows:
   version: 2
