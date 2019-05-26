@@ -46,7 +46,7 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.13.0",
     "husky": "2.3.0",
-    "lint-staged": "8.1.7",
+    "precise-commits": "1.0.2",
     "prettier": "1.17.1"
   },
   "homepage": "https://www.simontaggart.com",
@@ -69,11 +69,10 @@
     "bundlesize": "bundlesize",
     "clean": "rm -rf public"
   },
-  "lint-staged": {
-    "*.{js,json,scss}": [
-      "prettier --write",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits"
+    }
   },
   "browserslist": [
     "defaults"
