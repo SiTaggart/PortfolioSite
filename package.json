@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
+    "bundlesize": "0.17.2",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.3.0",
     "eslint-plugin-jsx-a11y": "6.2.1",
@@ -60,11 +61,13 @@
     "start:functions": "netlify-lambda serve /src/functions",
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && netlify-lambda build /src/functions",
-    "build": "gatsby build",
+    "build": "yarn clean && gatsby build",
     "build:functions": "netlify-lambda build /src/functions",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "bundlesize": "bundlesize",
+    "clean": "rm -rf public"
   },
   "lint-staged": {
     "*.{js,json,scss}": [
@@ -77,5 +80,35 @@
   ],
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "bundlesize": [
+    {
+      "path": "./public/app-*.js",
+      "maxSize": "60 kB"
+    },
+    {
+      "path": "./public/1-*.js",
+      "maxSize": "10 kB"
+    },
+    {
+      "path": "./public/component-*.js",
+      "maxSize": "10 kB"
+    },
+    {
+      "path": "./public/pages-*.js",
+      "maxSize": "1 kB"
+    },
+    {
+      "path": "./public/styles-*.js",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./public/styles.*.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./public/webpack-*.js",
+      "maxSize": "5 kB"
+    }
+  ]
 }
