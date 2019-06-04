@@ -52,6 +52,10 @@
     font-size: remCalc(20px);
   }
 
+  hr {
+    margin: remCalc(44px) 0 remCalc(36px);
+  }
+
   p,
   ul,
   ol,
@@ -132,5 +136,9 @@
 
   tr:hover {
     background: lighten(#efefef, 1%);
+  }
+
+  :global .twitter-tweet-rendered {
+    margin: remCalc(40px) auto;
   }
 }

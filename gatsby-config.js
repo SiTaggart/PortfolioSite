@@ -75,6 +75,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-twitter'
   ]
 };
