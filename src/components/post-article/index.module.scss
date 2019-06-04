@@ -138,7 +138,7 @@
     background: lighten(#efefef, 1%);
   }
 
-  .twitter-tweet-rendered {
+  :global .twitter-tweet-rendered {
     margin: remCalc(40px) auto;
   }
 }
