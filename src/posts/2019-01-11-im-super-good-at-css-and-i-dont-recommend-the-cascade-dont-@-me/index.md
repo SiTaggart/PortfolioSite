@@ -40,7 +40,7 @@ If you were to inspect the `p` using your browser developer tools, you will like
 
 ![The chrome style inspector showing p, class-1 and class-2 font-size declarations struck through, and the id test-id selector overrides all three regardless of order](./cascade-css.png)
 
-As you can see the cascade algorithm has declared the `font-size` declaration from the `test-id` id selector, the "winner", regardless of the order in which the selectors are written. This also demostrates how easily styles written by independant teams, targeting the same DOM element, can clash and result in unpredicatable effects on styling.
+As you can see the cascade algorithm has declared the `font-size` declaration from the `test-id` id selector, the "winner", regardless of the order in which the selectors are written.
 
 ## What the cascade isn’t
 
