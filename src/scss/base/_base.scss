@@ -13,4 +13,10 @@ body {
   height: 100%;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: #949494;
+}
+
 @import '../utils/index.module';

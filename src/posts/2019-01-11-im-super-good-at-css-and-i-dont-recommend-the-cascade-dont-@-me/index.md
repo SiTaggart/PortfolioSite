@@ -3,6 +3,12 @@ title: I’m super good at CSS and I don’t recommend the cascade, don’t @ me
 date: '2019-01-11'
 ---
 
+_**Edit June 3rd 2019:** It was pointed out to me that the code example I was using was infact referencing inheritance and not the cascade, technically. Doh! So I've switched the example to actually show the cascade this time, but the article still holds the same conclustion and point. Just goes to show why CSS is so tricky to handle 😉_
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve been writing CSS for 20 years.<br>The example given in that article has nothing to do with the cascade.<br>&quot;The cascade takes an unordered list of declared values for a given property on a given element&quot;<br>*Given element* is key when we talk about the cascade <a href="https://t.co/v2K12JHxM3">https://t.co/v2K12JHxM3</a></p>&mdash; Verlan (@ztnelboKyrreihT) <a href="https://twitter.com/ztnelboKyrreihT/status/1135734895836196864?ref_src=twsrc%5Etfw">June 4, 2019</a></blockquote>
+
+---
+
 I’ve been writing CSS for over 13 years. I’ve written CSS for very large news websites, high traffic blogs, micro-sites, small software applications and massive enterprise software applications.
 
 I’m part of the “old guard”. I’ve been around the block enough to know how good it was in the “old days”. To know it was simpler back then. I’ve wrangled IE5.5, I know “how good these kids have it these days”.
@@ -25,32 +31,16 @@ So, the cascade takes a bunch of overlapping CSS declarations, from a bunch of d
 
 OK, consider this little code example:
 
-```html
-<html>
-  <head>
-    <style>
-      html {
-        font-size: 16px;
-      }
-      body {
-        font-size: 18px;
-      }
-      p {
-        font-size: 14px;
-      }
-    </style>
-  </head>
-  <body>
-    <p>I'm 14px in font-size</p>
-  </body>
-</html>
-```
+<iframe height="365" style="width: 100%;" scrolling="no" title="Cascade Example" src="//codepen.io/SiTaggart/embed/mYowoe/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/SiTaggart/pen/mYowoe/'>Cascade Example</a> by Simon Taggart
+  (<a href='https://codepen.io/SiTaggart'>@SiTaggart</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 If you were to inspect the `p` using your browser developer tools, you will likely see the style panel showing you something like the following:
 
-![The chrome style inspector showing html and body font-size declarations struck through, and the p tag declaration overrides both](./cascade-css.png)
+![The chrome style inspector showing p, class-1 and class-2 font-size declarations struck through, and the id test-id selector overrides all three regardless of order](./cascade-css.png)
 
-As you can see the cascade algorithm has declared the `font-size` declaration from the `p` selector, the "winner".
+As you can see the cascade algorithm has declared the `font-size` declaration from the `test-id` id selector, the "winner", regardless of the order in which the selectors are written. This also demostrates how easily styles written by independant teams, targeting the same DOM element, can clash and result in unpredicatable effects on styling.
 
 ## What the cascade isn’t
 
