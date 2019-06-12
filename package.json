@@ -84,7 +84,7 @@
   "bundlesize": [
     {
       "path": "./public/app-*.js",
-      "maxSize": "60 kB"
+      "maxSize": "65 kB"
     },
     {
       "path": "./public/1-*.js",
@@ -93,10 +93,6 @@
     {
       "path": "./public/component-*.js",
       "maxSize": "10 kB"
-    },
-    {
-      "path": "./public/pages-*.js",
-      "maxSize": "1 kB"
     },
     {
       "path": "./public/styles-*.js",
