@@ -66,7 +66,6 @@
     "build:functions": "netlify-lambda build /src/functions",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged",
     "bundlesize": "bundlesize",
     "clean": "rm -rf public"
   },
@@ -84,7 +83,7 @@
   "bundlesize": [
     {
       "path": "./public/app-*.js",
-      "maxSize": "65 kB"
+      "maxSize": "68 kB"
     },
     {
       "path": "./public/1-*.js",
