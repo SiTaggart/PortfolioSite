@@ -37,7 +37,7 @@
     "react-helmet": "5.2.1",
     "to-sentence-case": "1.0.0",
     "twit": "2.2.11",
-    "webpack": "4.36.1"
+    "webpack": "4.38.0"
   },
   "devDependencies": {
     "babel-eslint": "10.0.2",
