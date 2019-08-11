@@ -45,7 +45,6 @@ jobs:
             - ~/.cache/yarn
       # run tests!
       - run: yarn build
-      - run: yarn build:functions
       - run: yarn bundlesize
 
 workflows:
