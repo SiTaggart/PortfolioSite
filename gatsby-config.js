@@ -1,7 +1,6 @@
 /*eslint-env node*/
 
 var autoprefixer = require('autoprefixer');
-var proxy = require('http-proxy-middleware');
 
 module.exports = {
   siteMetadata: {
@@ -12,17 +11,6 @@ module.exports = {
     jobTitle: 'Principal Front End Engineer',
     company: 'Twilio',
     companyURL: 'https://www.twilio.com'
-  },
-  developMiddleware: app => {
-    app.use(
-      '/.netlify/functions/',
-      proxy({
-        target: 'http://localhost:9000',
-        pathRewrite: {
-          '/.netlify/functions/': ''
-        }
-      })
-    );
   },
   plugins: [
     {
@@ -69,13 +57,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-10401619-1'
+        trackingId: 'UA-10401619-1',
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true
       }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-netlify',
     'gatsby-plugin-twitter'
   ]
 };
