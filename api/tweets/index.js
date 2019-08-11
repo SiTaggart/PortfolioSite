@@ -11,7 +11,7 @@ export function handler(event, context, callback) {
   console.log('hello');
   console.log('key', process.env.TWITTER_KEY);
   t.get('statuses/user_timeline', { count: 1 }, function(err, data) {
-    console.log('I got somewhere');
+    console.log('I got somewheres');
     callback(null, {
       statusCode: err ? 500 : 200,
       body: JSON.stringify(data)
