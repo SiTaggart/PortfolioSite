@@ -15,7 +15,7 @@ export default class LatestTweet extends Component {
   }
 
   getLatestTweet = () => {
-    fetch('/.netlify/functions/tweets')
+    fetch('/api/tweets')
       .then(function(response) {
         if (response.ok) {
           return response.json();
