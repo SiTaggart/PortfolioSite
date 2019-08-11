@@ -64,7 +64,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundlesize": "bundlesize",
-    "clean": "rm -rf public && r, -rf .cache",
+    "clean": "rm -rf public && rm -rf .cache",
     "now-build": "yarn build",
     "now-dev": "yarn develop"
   },
