@@ -7,14 +7,8 @@ const t = new Twit({
   access_token_secret: process.env.TWITTER_TOKEN_SECRET
 });
 
-export function handler(event, context, callback) {
-  console.log('hello');
-  console.log('key', process.env.TWITTER_KEY);
+module.exports = (req, res) => {
   t.get('statuses/user_timeline', { count: 1 }, function(err, data) {
-    console.log('I got somewheres');
-    callback(null, {
-      statusCode: err ? 500 : 200,
-      body: JSON.stringify(data)
-    });
+    res.status(err ? 500 : 200).json(data);
   });
-}
+};

@@ -1,4 +1,7 @@
 {
+  "name": "PortfolioSite",
+  "scope": "sitaggart",
+  "version": 2,
   "env": {
     "TWITTER_KEY": "twitterKey",
     "TWITTER_SECRET": "twitterSecret",
