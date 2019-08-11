@@ -1,0 +1,8 @@
+{
+  "env": {
+    "TWITTER_KEY": "@twitterKey",
+    "TWITTER_SECRET": "@twitterSecret",
+    "TWITTER_TOKEN": "@twitterToken",
+    "TWITTER_TOKEN_SECRET": "@twitterTokenSecret"
+  }
+}
