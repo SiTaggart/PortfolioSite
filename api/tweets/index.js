@@ -9,6 +9,10 @@ const t = new Twit({
 
 module.exports = (req, res) => {
   t.get('statuses/user_timeline', { count: 1 }, function(err, data) {
-    res.status(err ? 500 : 200).json(data);
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      res.status(200).json(data);
+    }
   });
 };
