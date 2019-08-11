@@ -59,15 +59,15 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "start:functions": "netlify-lambda serve /src/functions",
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && netlify-lambda build /src/functions",
-    "build": "yarn clean && gatsby build",
-    "build:functions": "netlify-lambda build /src/functions",
+    "build": "yarn clean && gatsby build --prefix-paths",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundlesize": "bundlesize",
-    "clean": "rm -rf public"
+    "clean": "rm -rf public",
+    "now-build": "yarn build",
+    "now-dev": "yarn develop"
   },
   "husky": {
     "hooks": {
