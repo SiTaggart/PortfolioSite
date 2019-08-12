@@ -47,6 +47,7 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.14.3",
     "husky": "3.0.3",
+    "percy": "0.10.0",
     "precise-commits": "1.0.2",
     "prettier": "1.18.2"
   },
@@ -58,13 +59,14 @@
     "url": "git@github.com:SiTaggart/PortfolioSite.git"
   },
   "scripts": {
+    "clean": "rm -rf public && rm -rf .cache",
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "yarn clean && gatsby build --prefix-paths",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundlesize": "bundlesize",
-    "clean": "rm -rf public && rm -rf .cache",
+    "percy": "npx percy snapshot public/ --snapshot-files index.html,posts/index.html,2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.html",
     "now-build": "yarn build",
     "now-dev": "yarn develop"
   },
