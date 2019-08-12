@@ -40,19 +40,16 @@
     "webpack": "4.39.1"
   },
   "devDependencies": {
-    "@percy/cypress": "2.0.0",
     "babel-eslint": "10.0.2",
     "bundlesize": "0.18.0",
-    "cypress": "3.4.1",
     "eslint": "6.1.0",
     "eslint-config-prettier": "6.0.0",
-    "eslint-plugin-cypress": "2.6.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.14.3",
     "husky": "3.0.3",
+    "percy": "^0.10.0",
     "precise-commits": "1.0.2",
-    "prettier": "1.18.2",
-    "start-server-and-test": "1.10.0"
+    "prettier": "1.18.2"
   },
   "homepage": "https://www.simontaggart.com",
   "license": "MIT",
@@ -69,12 +66,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundlesize": "bundlesize",
-    "cypress": "start-server-and-test start http://localhost:8000 cypress:open",
-    "cypress:open": "cypress open",
-    "cypress:run": "yarn percy:exec cypress run",
-    "cypress:ci": "start-server-and-test start http://localhost:8000 cypress:run",
-    "percy": "percy",
-    "percy:exec": "percy exec --",
+    "percy": "npx percy snapshot public/ --snapshot-files index.html,posts/index.html,2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.html",
     "now-build": "yarn build",
     "now-dev": "yarn develop"
   },

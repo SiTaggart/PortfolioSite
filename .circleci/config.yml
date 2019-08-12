@@ -47,11 +47,9 @@ jobs:
       - run: yarn build
       - run: yarn bundlesize
 
-  cypress:
+  percy:
     docker:
-      - image: cypress/browsers:node12.6.0-chrome75
-        environment:
-          TERM: xterm
+      - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
@@ -63,8 +61,11 @@ jobs:
           name: Install Dependencies
           command: yarn install --frozen-lockfile
       - run:
-          name: Run Cypress
-          command: yarn cypress:ci
+          name: Run build
+          command: yarn build
+      - run:
+          name: Run percy
+          command: yarn percy
 
 workflows:
   version: 2
@@ -72,4 +73,4 @@ workflows:
     jobs:
       - lint
       - build
-      - cypress
+      - percy
