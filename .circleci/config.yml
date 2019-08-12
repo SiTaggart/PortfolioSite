@@ -4,7 +4,7 @@ version: 2
 jobs:
   lint:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:latest
     working_directory: ~/repo
     steps:
       - checkout
@@ -26,7 +26,7 @@ jobs:
 
   build:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:latest-browsers
     working_directory: ~/repo
     steps:
       - checkout
@@ -46,23 +46,6 @@ jobs:
       # run tests!
       - run: yarn build
       - run: yarn bundlesize
-
-  percy:
-    docker:
-      - image: circleci/node:latest-browsers
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - run:
-          name: Run build
-          command: yarn build
       - run:
           name: Run percy
           command: yarn percy
@@ -73,4 +56,3 @@ workflows:
     jobs:
       - lint
       - build
-      - percy
