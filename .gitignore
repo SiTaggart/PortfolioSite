@@ -6,3 +6,4 @@ node_modules/
 .cache/
 /functions
 .env
+cypress/videos

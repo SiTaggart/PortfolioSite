@@ -72,7 +72,7 @@
     "cypress": "start-server-and-test start http://localhost:8000 cypress:open",
     "cypress:open": "cypress open",
     "cypress:run": "yarn percy:exec cypress run",
-    "cypress:ci": "start-server-and-test start http://localhost:3000 cypress:run",
+    "cypress:ci": "start-server-and-test start http://localhost:8000 cypress:run",
     "percy": "percy",
     "percy:exec": "percy exec --",
     "now-build": "yarn build",
