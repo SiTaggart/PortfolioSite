@@ -87,8 +87,8 @@
       "maxSize": "68 kB"
     },
     {
-      "path": "./public/1-*.js",
-      "maxSize": "10 kB"
+      "path": "./public/commons-*.js",
+      "maxSize": "55 kB"
     },
     {
       "path": "./public/component-*.js",
