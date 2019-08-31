@@ -40,7 +40,7 @@
     "webpack": "4.39.3"
   },
   "devDependencies": {
-    "babel-eslint": "10.0.2",
+    "babel-eslint": "10.0.3",
     "bundlesize": "0.18.0",
     "eslint": "6.3.0",
     "eslint-config-prettier": "6.1.0",
