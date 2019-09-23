@@ -4,15 +4,13 @@ import PropTypes from 'prop-types';
 import buttonStyles from '../button/index.module.scss';
 import styles from './index.module.scss';
 
-const FlickrFigure = props => {
-  const getBetterImageURL = url => {
-    return url.replace('_m.jpg', '_z.jpg');
-  };
+const getBetterImageURL = url => url.replace('_m.jpg', '_z.jpg');
 
+const FlickrFigure = props => {
   const { image } = props;
 
   const imageStyle = {
-    backgroundImage: `url(${getBetterImageURL(image.media.m)})`
+    backgroundImage: `url(${getBetterImageURL(image.media.m)})`,
   };
 
   return (
@@ -21,9 +19,7 @@ const FlickrFigure = props => {
         <div className={styles.flickrFigureImage} style={imageStyle} />
         <figcaption className={styles.flickrFigureTitle}>
           <div className={styles.flickrFigureTitleContent}>
-            {image.title !== '' && image.title !== 'Photo' && (
-              <p>{image.title}</p>
-            )}
+            {image.title !== '' && image.title !== 'Photo' && <p>{image.title}</p>}
             <span className={buttonStyles.button}>View on Flickr</span>
           </div>
         </figcaption>
@@ -32,6 +28,12 @@ const FlickrFigure = props => {
   );
 };
 FlickrFigure.propTypes = {
-  image: PropTypes.object
+  image: PropTypes.shape({
+    link: PropTypes.string,
+    media: PropTypes.shape({
+      m: PropTypes.string,
+    }),
+    title: PropTypes.string,
+  }).isRequired,
 };
 export default FlickrFigure;

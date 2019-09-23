@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from './index.module.scss';
 
-const PostArticle = props => {
-  return <article className={styles.postArticle}>{props.children}</article>;
-};
+const PostArticle = ({ children }) => <article className={styles.postArticle}>{children}</article>;
 PostArticle.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired,
 };
 export default PostArticle;

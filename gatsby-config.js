@@ -1,6 +1,6 @@
-/*eslint-env node*/
+/* eslint-env node */
 
-var autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   siteMetadata: {
@@ -10,7 +10,7 @@ module.exports = {
       'The home of the English Front End Engineer, Simon Taggart, where you can learn of his skills, musings, and loves.',
     jobTitle: 'Principal Front End Engineer',
     company: 'Twilio',
-    companyURL: 'https://www.twilio.com'
+    companyURL: 'https://www.twilio.com',
   },
   plugins: [
     {
@@ -19,16 +19,16 @@ module.exports = {
         postCssPlugins: [autoprefixer()],
         precision: 8,
         cssLoaderOptions: {
-          localIdentName: '[local]--[hash:base64:5]'
-        }
-      }
+          localIdentName: '[local]--[hash:base64:5]',
+        },
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/posts`,
-        name: 'posts'
-      }
+        name: 'posts',
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -37,20 +37,20 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem'
-            }
+              wrapperStyle: 'margin-bottom: 1.0725rem',
+            },
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
-        ]
-      }
+          'gatsby-remark-smartypants',
+        ],
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -61,12 +61,12 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true
-      }
+        respectDNT: true,
+      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-twitter'
-  ]
+    'gatsby-plugin-twitter',
+  ],
 };
