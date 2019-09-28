@@ -12,7 +12,7 @@ import PostFooterList from '../components/post-footer-list';
 import PostFooterListItem from '../components/post-footer-list-item';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-  const { post } = data.markdownRemark;
+  const { markdownRemark: post } = data;
   const siteTitle = get(data, 'site.siteMetadata.title');
   const { previous, next } = pageContext;
 
