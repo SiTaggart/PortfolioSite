@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from './index.module.scss';
 
-const PostFooter = props => {
-  return <footer className={styles.postFooter}>{props.children}</footer>;
-};
+const PostFooter = ({ children }) => <footer className={styles.postFooter}>{children}</footer>;
 PostFooter.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired,
 };
 export default PostFooter;

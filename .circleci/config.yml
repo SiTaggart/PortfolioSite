@@ -23,6 +23,7 @@ jobs:
             - ~/.cache/yarn
       # run tests!
       - run: yarn lint
+      - run: yarn prettier
 
   build:
     docker:

@@ -25,15 +25,15 @@ const Layout = ({ children }) => (
             { name: 'author', content: data.site.siteMetadata.author },
             {
               name: 'description',
-              content: data.site.siteMetadata.description
+              content: data.site.siteMetadata.description,
             },
             {
               name: 'google-site-verification',
-              content: 'JjKsqhE3CE1w5tIV8287tRaRlwKnsIzNKJ0Ml7vt-Nk'
-            }
+              content: 'JjKsqhE3CE1w5tIV8287tRaRlwKnsIzNKJ0Ml7vt-Nk',
+            },
           ]}
         >
-          <html lang="en" amp />
+          <html amp lang="en" />
         </Helmet>
         {children}
         <SiteFooter />
@@ -43,7 +43,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

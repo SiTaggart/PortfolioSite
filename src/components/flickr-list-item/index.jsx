@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './index.module.scss';
 
-const FlickrListItem = props => {
-  return <li className={styles.flickrListItem}>{props.children}</li>;
-};
+const FlickrListItem = ({ children }) => <li className={styles.flickrListItem}>{children}</li>;
 FlickrListItem.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired,
 };
 export default FlickrListItem;

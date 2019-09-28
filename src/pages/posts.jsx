@@ -9,37 +9,28 @@ import SiteHeader from '../components/site-header';
 import SiteMain from '../components/site-main';
 import Layout from '../components/layout';
 
-class BlogIndex extends React.Component {
-  static propTypes = {
-    data: PropTypes.any
-  };
+const BlogIndex = ({ data }) => {
+  const siteTitle = get(data, 'site.siteMetadata.title');
+  const posts = get(data, 'allMarkdownRemark.edges');
 
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const posts = get(this, 'props.data.allMarkdownRemark.edges');
-
-    return (
-      <Layout>
-        <Helmet title={siteTitle} />
-        <SiteHeader isPost />
-        <SiteMain isPost>
-          <PostList isFullList>
-            {posts.map(({ node }) => {
-              const title = get(node, 'frontmatter.title') || node.fields.slug;
-              return (
-                <PostListItem
-                  key={node.fields.slug}
-                  node={node}
-                  title={title}
-                />
-              );
-            })}
-          </PostList>
-        </SiteMain>
-      </Layout>
-    );
-  }
-}
+  return (
+    <Layout>
+      <Helmet title={siteTitle} />
+      <SiteHeader isPost />
+      <SiteMain isPost>
+        <PostList isFullList>
+          {posts.map(({ node }) => {
+            const title = get(node, 'frontmatter.title') || node.fields.slug;
+            return <PostListItem key={node.fields.slug} node={node} title={title} />;
+          })}
+        </PostList>
+      </SiteMain>
+    </Layout>
+  );
+};
+BlogIndex.propTypes = {
+  data: PropTypes.shape({}).isRequired,
+};
 
 export default BlogIndex;
 
