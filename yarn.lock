@@ -10309,14 +10309,15 @@ pend@~1.2.0:
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
 
-percy-client@^3.0.3:
-  version "3.0.13"
-  resolved "https://registry.yarnpkg.com/percy-client/-/percy-client-3.0.13.tgz#86f48ac39bca8474a02917cea1756978d0214b83"
-  integrity sha512-XJllub665ccrxK2qLnrweBma1aMSu0Qkj4EYepw6dxsMp1kcE41HMpL3vpjwSnMO7wOvhVYdv7Jx3o5EcMAxLw==
+percy-client@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/percy-client/-/percy-client-3.1.0.tgz#f072e3c3e9c978a1666f77bb950ab804b9d1efa1"
+  integrity sha512-OzKg+o0dtt/LxcCNHNpe7B+oZ196fMiPFzySvFz1ouXNoEBITiborIGN49e8dN5puwIEILoePlX91q6C834XGg==
   dependencies:
     base64-js "^1.2.3"
     bluebird "^3.5.1"
     bluebird-retry "^0.11.0"
+    dotenv "^8.1.0"
     es6-promise-pool "^2.5.0"
     jssha "^2.1.0"
     regenerator-runtime "^0.13.1"
@@ -10324,10 +10325,10 @@ percy-client@^3.0.3:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@0.16.2:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/percy/-/percy-0.16.2.tgz#7ed60d318306344d3c0979ccc438f79afebea03c"
-  integrity sha512-Wp7KAkKgBSs+EdsSyAbdlR9KA13VJwRi9y8ALnUabbKVKGC66hxGD8d69mxkriJ88U43qMk0QiWs5eTDbr8X0A==
+percy@0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/percy/-/percy-0.17.0.tgz#0d8cfa082169632b4b9ff75bd1c3b78b504a594c"
+  integrity sha512-Ag+eGfEF60Ik92XgzLjARH8/U+bObX1FubJ6CZ1gP1aAlrWaSxsNt0AZTiMMQ/XoUY7D/O1iMaXZTOWSe0uv0w==
   dependencies:
     "@oclif/command" "1.5.16"
     "@oclif/config" "^1"
@@ -10337,6 +10338,7 @@ percy@0.16.2:
     body-parser "^1.18.3"
     colors "^1.3.2"
     cors "^2.8.4"
+    cosmiconfig "^5.2.1"
     cross-spawn "^6.0.5"
     deepmerge "^4.0.0"
     express "^4.16.3"
@@ -10345,7 +10347,7 @@ percy@0.16.2:
     globby "^10.0.1"
     image-size "^0.8.2"
     js-yaml "^3.13.1"
-    percy-client "^3.0.3"
+    percy-client "^3.1.0"
     puppeteer "^1.13.0"
     retry-axios "^1.0.1"
     winston "^3.0.0"
