@@ -46,7 +46,7 @@
     "@sitaggart/eslint-config-react": "0.2.2",
     "@sitaggart/prettier-config": "0.2.0",
     "bundlesize": "0.18.0",
-    "eslint": "6.5.0",
+    "eslint": "6.5.1",
     "husky": "3.0.7",
     "percy": "0.16.1",
     "precise-commits": "1.0.2",
