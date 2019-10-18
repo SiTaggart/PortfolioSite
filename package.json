@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@sitaggart/eslint-config": "0.2.7",
-    "@sitaggart/eslint-config-react": "0.2.2",
+    "@sitaggart/eslint-config-react": "0.2.7",
     "@sitaggart/prettier-config": "0.2.0",
     "bundlesize": "0.18.0",
     "eslint": "6.5.1",
