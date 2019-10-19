@@ -1339,10 +1339,10 @@
     eslint-plugin-react "7.16.0"
     eslint-plugin-react-hooks "2.1.2"
 
-"@sitaggart/eslint-config@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.2.7.tgz#eeea408e22fb470bb08f4988ef4329434754c30e"
-  integrity sha512-2kBaf1XgcDO1+VGCVp6an+Ec7Dc0up635fvZamm5k/pWraYZxL1FZxY/u/Ofqwo/DeceMjqR/S0JeGh4eAryTA==
+"@sitaggart/eslint-config@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.2.9.tgz#8c40853d31e20b04ebe2e317a1e98236ef907213"
+  integrity sha512-ppSgxDoYZ0ll1vYfniJFRXjHuA7fG6FPbqfaMKvETYfgN5QK5g5VkiBU/ngTqvSRjJsp6+0rFmP7W5YqJlYoew==
   dependencies:
     babel-eslint "10.0.3"
     eslint-config-airbnb-base "14.0.0"
@@ -1352,9 +1352,11 @@
     eslint-plugin-eslint-comments "3.1.2"
     eslint-plugin-import "2.18.2"
     eslint-plugin-jest "22.19.0"
+    eslint-plugin-jsx-a11y "6.2.3"
     eslint-plugin-node "10.0.0"
     eslint-plugin-prettier "3.1.1"
     eslint-plugin-promise "4.2.1"
+    eslint-plugin-react "7.16.0"
     eslint-plugin-standard "4.0.1"
     eslint-plugin-unicorn "12.1.0"
 
