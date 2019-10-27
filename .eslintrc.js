@@ -1,11 +1,11 @@
 module.exports = {
-  extends: ['@sitaggart/eslint-config', '@sitaggart/eslint-config-react'],
+  extends: ['@sitaggart/eslint-config'],
   globals: {
     graphql: true,
   },
   settings: {
     react: {
-      version: '16.6.1',
+      version: '16.11.0',
     },
   },
 };
