@@ -7,4 +7,4 @@ const PostArticle = ({ children }) => <article className={styles.postArticle}>{c
 PostArticle.propTypes = {
   children: PropTypes.node.isRequired,
 };
-export default PostArticle;
+export { PostArticle };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../icon';
+import { Icon } from '../icon';
 
 import GithubIcon from '../../svg/icons/ic-github.svg';
 import LinkedInIcon from '../../svg/icons/ic-linkedin.svg';
@@ -30,4 +30,4 @@ const FooterLinks = () => (
   </ul>
 );
 
-export default FooterLinks;
+export { FooterLinks };

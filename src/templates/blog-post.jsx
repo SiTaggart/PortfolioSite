@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import get from 'lodash/get';
-import SiteMain from '../components/site-main';
-import SiteHeader from '../components/site-header';
-import PostArticle from '../components/post-article';
+import { SiteMain } from '../components/site-main';
+import { SiteHeader } from '../components/site-header';
+import { PostArticle } from '../components/post-article';
 import { PostHeader, PostHeaderHeading, PostHeaderDate } from '../components/post-header';
-import PostFooter from '../components/post-footer';
-import PostFooterList from '../components/post-footer-list';
-import PostFooterListItem from '../components/post-footer-list-item';
+import { PostFooter } from '../components/post-footer';
+import { PostFooterList } from '../components/post-footer-list';
+import { PostFooterListItem } from '../components/post-footer-list-item';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const { markdownRemark: post } = data;

@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterLinks from '../footer-links';
+import { FooterLinks } from '../footer-links';
 import styles from './index.module.scss';
 
 const SiteFooter = () => (
@@ -8,4 +8,4 @@ const SiteFooter = () => (
   </footer>
 );
 
-export default SiteFooter;
+export { SiteFooter };

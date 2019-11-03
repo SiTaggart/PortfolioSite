@@ -11,4 +11,4 @@ const Icon = props => {
 Icon.propTypes = {
   children: PropTypes.node.isRequired,
 };
-export default Icon;
+export { Icon };

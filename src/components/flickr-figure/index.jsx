@@ -36,4 +36,4 @@ FlickrFigure.propTypes = {
     title: PropTypes.string,
   }).isRequired,
 };
-export default FlickrFigure;
+export { FlickrFigure };

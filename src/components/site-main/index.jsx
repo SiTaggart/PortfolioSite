@@ -19,4 +19,4 @@ SiteMain.propTypes = {
 SiteMain.defaultProps = {
   isPost: null,
 };
-export default SiteMain;
+export { SiteMain };

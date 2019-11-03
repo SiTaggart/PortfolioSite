@@ -7,4 +7,4 @@ const PostFooter = ({ children }) => <footer className={styles.postFooter}>{chil
 PostFooter.propTypes = {
   children: PropTypes.node.isRequired,
 };
-export default PostFooter;
+export { PostFooter };

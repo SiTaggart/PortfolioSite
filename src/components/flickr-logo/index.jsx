@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import styleUtils from '../../scss/utils/_index.module.scss';
 
-const FlickLogo = () => (
+export const FlickrLogo = () => (
   <>
     <span className={styles.flickrLogo}>
       <i className={`${styles.flickrLogoDot} ${styles.flickrLogoDotBlue}`} />
@@ -12,5 +12,3 @@ const FlickLogo = () => (
     <span className={styleUtils.isSrOnly}>Flickr Photos</span>
   </>
 );
-
-export default FlickLogo;

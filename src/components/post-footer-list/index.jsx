@@ -7,4 +7,4 @@ const PostFooterList = ({ children }) => <ul className={styles.postFooterList}>{
 PostFooterList.propTypes = {
   children: PropTypes.node.isRequired,
 };
-export default PostFooterList;
+export { PostFooterList };

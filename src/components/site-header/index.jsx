@@ -34,4 +34,4 @@ SiteHeader.propTypes = {
 SiteHeader.defaultProps = {
   isPost: null,
 };
-export default SiteHeader;
+export { SiteHeader };
