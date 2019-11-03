@@ -86,6 +86,7 @@ BlogPostTemplate.propTypes = {
   }).isRequired,
 };
 
+// eslint-disable-next-line import/no-default-export
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`

@@ -144,6 +144,7 @@ class Index extends React.Component {
   }
 }
 
+// eslint-disable-next-line import/no-default-export
 export default Index;
 
 export const pageQuery = graphql`

@@ -32,6 +32,7 @@ BlogIndex.propTypes = {
   data: PropTypes.shape({}).isRequired,
 };
 
+// eslint-disable-next-line import/no-default-export
 export default BlogIndex;
 
 export const pageQuery = graphql`
