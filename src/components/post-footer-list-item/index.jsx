@@ -17,4 +17,4 @@ PostFooterListItem.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.string.isRequired,
 };
-export default PostFooterListItem;
+export { PostFooterListItem };

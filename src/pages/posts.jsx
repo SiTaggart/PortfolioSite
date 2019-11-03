@@ -5,9 +5,9 @@ import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
 import { PostList, PostListItem } from '../components/post-list';
-import SiteHeader from '../components/site-header';
-import SiteMain from '../components/site-main';
-import Layout from '../components/layout';
+import { SiteHeader } from '../components/site-header';
+import { SiteMain } from '../components/site-main';
+import { Layout } from '../components/layout';
 
 const BlogIndex = ({ data }) => {
   const siteTitle = get(data, 'site.siteMetadata.title');
@@ -32,6 +32,7 @@ BlogIndex.propTypes = {
   data: PropTypes.shape({}).isRequired,
 };
 
+// eslint-disable-next-line import/no-default-export
 export default BlogIndex;
 
 export const pageQuery = graphql`

@@ -19,4 +19,4 @@ HomeSection.propTypes = {
   children: PropTypes.node.isRequired,
   flavour: PropTypes.string.isRequired,
 };
-export default HomeSection;
+export { HomeSection };

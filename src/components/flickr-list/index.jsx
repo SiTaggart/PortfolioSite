@@ -6,4 +6,4 @@ const FlickrList = ({ children }) => <ul className={styles.flickrList}>{children
 FlickrList.propTypes = {
   children: PropTypes.node.isRequired,
 };
-export default FlickrList;
+export { FlickrList };

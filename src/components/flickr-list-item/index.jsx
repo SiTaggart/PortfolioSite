@@ -6,4 +6,4 @@ const FlickrListItem = ({ children }) => <li className={styles.flickrListItem}>{
 FlickrListItem.propTypes = {
   children: PropTypes.node.isRequired,
 };
-export default FlickrListItem;
+export { FlickrListItem };

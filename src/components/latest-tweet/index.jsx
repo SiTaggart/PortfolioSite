@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import toSentenceCase from 'to-sentence-case';
-import TweetUtils from '../../utils/tweets';
+import { getFormattedTweet, getSizeBasedOnLength } from '../../utils/tweets';
 
 import styles from './index.module.scss';
 
-export default class LatestTweet extends Component {
+export class LatestTweet extends Component {
   constructor() {
     super();
     this.state = {
@@ -37,9 +37,9 @@ export default class LatestTweet extends Component {
       .catch(this.setLatestTweetError);
   };
 
-  getTweetSize = tweet => TweetUtils.getSizeBasedOnLength(tweet);
+  getTweetSize = tweet => getSizeBasedOnLength(tweet);
 
-  getFormattedTweet = tweet => TweetUtils.getFormattedTweet(tweet);
+  getFormattedTweet = tweet => getFormattedTweet(tweet);
 
   getSizeClassName = size => {
     const sizeClass = `latestTweet${toSentenceCase(size)}`;

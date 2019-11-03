@@ -3,19 +3,19 @@ import { uid } from 'react-uid';
 import get from 'lodash/get';
 import fetchJsonp from 'fetch-jsonp';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import SiteHeader from '../components/site-header';
-import SiteMain from '../components/site-main';
-import HomeSection from '../components/home-section';
+import { Layout } from '../components/layout';
+import { SiteHeader } from '../components/site-header';
+import { SiteMain } from '../components/site-main';
+import { HomeSection } from '../components/home-section';
 import { HomeSectionHeader, HomeSectionHeaderLink } from '../components/home-section-header';
-import FlickrLogo from '../components/flickr-logo';
-import Ego from '../components/ego';
+import { FlickrLogo } from '../components/flickr-logo';
+import { Ego } from '../components/ego';
 import { PostList, PostListItem } from '../components/post-list';
-import FlickrList from '../components/flickr-list';
-import FlickrListItem from '../components/flickr-list-item';
-import FlickrFigure from '../components/flickr-figure';
-import TwitterHandle from '../components/twitter-handle';
-import LatestTweet from '../components/latest-tweet';
+import { FlickrList } from '../components/flickr-list';
+import { FlickrListItem } from '../components/flickr-list-item';
+import { FlickrFigure } from '../components/flickr-figure';
+import { TwitterHandle } from '../components/twitter-handle';
+import { LatestTweet } from '../components/latest-tweet';
 
 import styleUtils from '../scss/utils/_index.module.scss';
 
@@ -144,6 +144,7 @@ class Index extends React.Component {
   }
 }
 
+// eslint-disable-next-line import/no-default-export
 export default Index;
 
 export const pageQuery = graphql`

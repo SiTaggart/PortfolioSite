@@ -45,7 +45,4 @@ const getSizeBasedOnLength = tweet => {
   }
 };
 
-export default {
-  getFormattedTweet,
-  getSizeBasedOnLength,
-};
+export { getFormattedTweet, getSizeBasedOnLength };
