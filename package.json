@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "dependencies": {
     "@babel/core": "7.7.2",
-    "autoprefixer": "9.7.1",
+    "autoprefixer": "9.7.2",
     "babel-loader": "8.0.6",
     "bluebird": "3.7.1",
     "breakpoint-sass": "2.7.1",
