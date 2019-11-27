@@ -1287,10 +1287,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sitaggart/eslint-config@0.5.5":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.5.tgz#b8dbc8436c539b99dda986517876279b3ee027ab"
-  integrity sha512-zXMFtu1h/mXbVYKIrOBjFuODymFFlBjT1Fu/wM0h3MypsFgFFBdlz08gH6P0m1DALiMkfWoMVhfJdVIeuCVIQA==
+"@sitaggart/eslint-config@0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.6.tgz#14ba760eb013208866b871e7ff1994eea86a2b41"
+  integrity sha512-scbNQKHJq5msUCR/DRl4x6rmnLyNPKZWIoAgKh68selgvVVVTwy8it/7TWXZ7Zzkf5waP3Pj68kQrDqoSfuuxg==
   dependencies:
     babel-eslint "10.0.3"
     eslint-config-airbnb "18.0.1"
@@ -1300,7 +1300,7 @@
     eslint-plugin-cypress "2.7.0"
     eslint-plugin-eslint-comments "3.1.2"
     eslint-plugin-import "2.18.2"
-    eslint-plugin-jest "23.0.4"
+    eslint-plugin-jest "23.0.5"
     eslint-plugin-jsx-a11y "6.2.3"
     eslint-plugin-node "10.0.0"
     eslint-plugin-prettier "3.1.1"
@@ -4894,10 +4894,10 @@ eslint-plugin-import@2.18.2, eslint-plugin-import@^2.18.2:
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
 
-eslint-plugin-jest@23.0.4:
-  version "23.0.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.0.4.tgz#1ab81ffe3b16c5168efa72cbd4db14d335092aa0"
-  integrity sha512-OaP8hhT8chJNodUPvLJ6vl8gnalcsU/Ww1t9oR3HnGdEWjm/DdCCUXLOral+IPGAeWu/EwgVQCK/QtxALpH1Yw==
+eslint-plugin-jest@23.0.5:
+  version "23.0.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.0.5.tgz#3c7c5e636c5a21677d2dfc8ba5424233ee2b9f27"
+  integrity sha512-etxXrWsFWzxsrxKwJnFC38uppH/vlJ3oF7Wmp/cxedqxRIxVhXup8e5y5MmtVXelevgxrgA1QS1vo8j889iK5Q==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.5.0"
 
