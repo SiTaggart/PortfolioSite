@@ -4,23 +4,23 @@ const getFormattedTweet = tweet => {
   let text = tweet;
   // convert URLs into links
   text = text.replace(
-    /(>|<a[^<>]+href=['"])?(https?:\/\/([-a-z0-9]+\.)+[a-z]{2,5}(\/[-a-z0-9!#()/?&.,]*[^ !#?().,])?)/gi,
+    /(>|<a[^<>]+href=["'])?(https?:\/\/([\d-a-z]+\.)+[a-z]{2,5}(\/[\d!#&(),-./?a-z]*[^ !#(),.?])?)/gi,
     ($0, $1, $2) => ($1 ? $0 : `<a href="${$2}" target="_blank">${$2}</a>`)
   );
   // convert protocol-less URLs into links
   text = text.replace(
-    /(:\/\/|>)?\b(([-a-z0-9]+\.)+[a-z]{2,5}(\/[-a-z0-9!#()/?&.]*[^ !#?().,])?)/gi,
+    /(:\/\/|>)?\b(([\d-a-z]+\.)+[a-z]{2,5}(\/[\d!#&()-./?a-z]*[^ !#(),.?])?)/gi,
     ($0, $1, $2) => ($1 ? $0 : `<a href="http://${$2}">${$2}</a>`)
   );
   // convert @mentions into follow links
-  text = text.replace(/(:\/\/|>)?(@([_a-z0-9-]+))/gi, ($0, $1, $2, $3) => {
+  text = text.replace(/(:\/\/|>)?(@([\w-]+))/gi, ($0, $1, $2, $3) => {
     if ($1) {
       return $0;
     }
     return `<a href="${baseUrl}${$3}" title="Follow ${$3}" target="_blank">@${$3}</a>`;
   });
   // convert #hashtags into tag search links
-  text = text.replace(/(:\/\/[^ <]*|>)?(#([_a-z0-9-]+))/gi, ($0, $1, $2, $3) => {
+  text = text.replace(/(:\/\/[^ <]*|>)?(#([\w-]+))/gi, ($0, $1, $2, $3) => {
     if ($1) {
       return $0;
     }
