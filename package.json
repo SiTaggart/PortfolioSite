@@ -51,6 +51,9 @@
     "precise-commits": "1.0.2",
     "prettier": "1.19.1"
   },
+  "engines": {
+    "node": "12.13.1"
+  },
   "homepage": "https://www.simontaggart.com",
   "license": "MIT",
   "main": "n/a",
