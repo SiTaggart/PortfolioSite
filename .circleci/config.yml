@@ -1,11 +1,16 @@
 # Javascript Node CircleCI 2.0 configuration file
 #
-version: 2
-jobs:
-  lint:
+version: 2.1
+
+executors:
+  job-executor:
     docker:
       - image: circleci/node:12.13-browsers
     working_directory: ~/repo
+
+jobs:
+  lint:
+    executor: job-executor
     steps:
       - checkout
       # Download and cache dependencies
@@ -26,9 +31,7 @@ jobs:
       - run: yarn prettier
 
   build:
-    docker:
-      - image: circleci/node:latest-browsers
-    working_directory: ~/repo
+    executor: job-executor
     steps:
       - checkout
       # Download and cache dependencies
