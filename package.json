@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "4.0.0",
   "dependencies": {
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.7.7",
     "autoprefixer": "9.7.3",
     "babel-loader": "8.0.6",
     "bluebird": "3.7.2",
