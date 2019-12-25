@@ -1376,14 +1376,14 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sitaggart/eslint-config@0.5.17":
-  version "0.5.17"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.17.tgz#526489de00f05d0fa4fa4f6342de60d8f2663935"
-  integrity sha512-A0CprWVu8saCBriBQ7Jz8Ivo+qWgqJ6ti1x/AIlIvKuJUlIQOXm2bej/LVIp5c1L8hwkVQn+0mpS0qPN76WG7A==
+"@sitaggart/eslint-config@0.5.18":
+  version "0.5.18"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.18.tgz#653a327523171ca60f6f8d8158bc5c728d79c5d8"
+  integrity sha512-2y+GiMJe4iCzxw+HuRCuRyaQcU4xSNFpTEKVU/a5MaGknqkrx0V2Ixo35unkSJY3wPJp2VHKYE2S4SiW3IGBcA==
   dependencies:
     babel-eslint "10.0.3"
     eslint-config-airbnb "18.0.1"
-    eslint-config-prettier "6.7.0"
+    eslint-config-prettier "6.8.0"
     eslint-config-standard "14.1.0"
     eslint-config-standard-jsx "8.1.0"
     eslint-plugin-cypress "2.8.1"
@@ -4970,10 +4970,10 @@ eslint-config-airbnb@18.0.1:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-prettier@6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.7.0.tgz#9a876952e12df2b284adbd3440994bf1f39dfbb9"
-  integrity sha512-FamQVKM3jjUVwhG4hEMnbtsq7xOIDm+SY5iBPfR8gKsJoAB2IQnNF+bk1+8Fy44Nq7PPJaLvkRxILYdJWoguKQ==
+eslint-config-prettier@6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.8.0.tgz#36bd7559dcef9f97d7596779b38e6a879abb89d3"
+  integrity sha512-aq4M7mjjVregZ2l45O9qz6Mv6f5zVMl/IqfmUL8hNOoDAzVKYMhYPJytbqE/lPIVO1iMDXIFqjiEE59BfJZpZw==
   dependencies:
     get-stdin "^6.0.0"
 
