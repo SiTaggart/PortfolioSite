@@ -1376,10 +1376,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sitaggart/eslint-config@0.5.22":
-  version "0.5.22"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.22.tgz#a8204433a01357b4825126cb11237b3a85567694"
-  integrity sha512-rWdQ6qeMBUb99hy59stjfWo5UYGrLZkKmzqI4jFdNmPL8bdZTUoZ9El0Kj9mAdjGLbmKUcStPSo0nICE8FBvbA==
+"@sitaggart/eslint-config@0.5.23":
+  version "0.5.23"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.23.tgz#30e8f38b87102197c99ca51293fee6e7b93e0020"
+  integrity sha512-4vDIDqRC0YwEqbXic5zWxNudQf8j1popZ3xuuoPs8AWnM5eZz+EQnTtnFuBtReiprhCM5GQSh6rR4UDWAvzxrQ==
   dependencies:
     babel-eslint "10.0.3"
     eslint-config-airbnb "18.0.1"
@@ -1388,7 +1388,7 @@
     eslint-config-standard-jsx "8.1.0"
     eslint-plugin-cypress "2.8.1"
     eslint-plugin-eslint-comments "3.1.2"
-    eslint-plugin-import "2.19.1"
+    eslint-plugin-import "2.20.0"
     eslint-plugin-jest "23.4.0"
     eslint-plugin-jsx-a11y "6.2.3"
     eslint-plugin-node "10.0.0"
@@ -5064,7 +5064,25 @@ eslint-plugin-graphql@^3.1.0:
     graphql-config "^2.0.1"
     lodash "^4.11.1"
 
-eslint-plugin-import@2.19.1, eslint-plugin-import@^2.19.1:
+eslint-plugin-import@2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.0.tgz#d749a7263fb6c29980def8e960d380a6aa6aecaa"
+  integrity sha512-NK42oA0mUc8Ngn4kONOPsPB1XhbUvNHqF+g307dPV28aknPoiNnKLFd9em4nkswwepdF5ouieqv5Th/63U7YJQ==
+  dependencies:
+    array-includes "^3.0.3"
+    array.prototype.flat "^1.2.1"
+    contains-path "^0.1.0"
+    debug "^2.6.9"
+    doctrine "1.5.0"
+    eslint-import-resolver-node "^0.3.2"
+    eslint-module-utils "^2.4.1"
+    has "^1.0.3"
+    minimatch "^3.0.4"
+    object.values "^1.1.0"
+    read-pkg-up "^2.0.0"
+    resolve "^1.12.0"
+
+eslint-plugin-import@^2.19.1:
   version "2.19.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.19.1.tgz#5654e10b7839d064dd0d46cd1b88ec2133a11448"
   integrity sha512-x68131aKoCZlCae7rDXKSAQmbT5DQuManyXo2sK6fJJ0aK5CWAkv6A6HJZGgqC8IhjQxYPgo6/IY4Oz8AFsbBw==
