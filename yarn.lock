@@ -1453,10 +1453,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sitaggart/eslint-config@0.5.30":
-  version "0.5.30"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.30.tgz#6b0c5d23e1dfdd3a07b766da124a4afcfcbe2a62"
-  integrity sha512-ob6KCC3LSnOGncNEvOalP2XJFe/M0pLvgKy/MRyBNIQsg3mBMDkgquLEe0eSqdw5+VlXL+3YdghMC82EHxV0uQ==
+"@sitaggart/eslint-config@0.5.31":
+  version "0.5.31"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.31.tgz#e2b90768f26b3894c1b2d4eef087873ec36faf22"
+  integrity sha512-+EHyF6VPdLATWsjeJIH3dVV6v16OG6BkxgfBt39Z+JGU1/7pzFJCWByBm8SWyPxb1WT3dIuZvAsqfnmj3h/dbA==
   dependencies:
     babel-eslint "10.0.3"
     eslint-config-airbnb "18.0.1"
@@ -1465,7 +1465,7 @@
     eslint-config-standard-jsx "8.1.0"
     eslint-plugin-cypress "2.8.1"
     eslint-plugin-eslint-comments "3.1.2"
-    eslint-plugin-import "2.20.0"
+    eslint-plugin-import "2.20.1"
     eslint-plugin-jest "23.6.0"
     eslint-plugin-jsx-a11y "6.2.3"
     eslint-plugin-node "11.0.0"
@@ -5199,10 +5199,10 @@ eslint-plugin-graphql@^3.1.0:
     graphql-config "^2.0.1"
     lodash "^4.11.1"
 
-eslint-plugin-import@2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.0.tgz#d749a7263fb6c29980def8e960d380a6aa6aecaa"
-  integrity sha512-NK42oA0mUc8Ngn4kONOPsPB1XhbUvNHqF+g307dPV28aknPoiNnKLFd9em4nkswwepdF5ouieqv5Th/63U7YJQ==
+eslint-plugin-import@2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.1.tgz#802423196dcb11d9ce8435a5fc02a6d3b46939b3"
+  integrity sha512-qQHgFOTjguR+LnYRoToeZWT62XM55MBVXObHM6SKFd1VzDcX/vqT1kAz8ssqigh5eMj8qXcRoXXGZpPP6RfdCw==
   dependencies:
     array-includes "^3.0.3"
     array.prototype.flat "^1.2.1"
