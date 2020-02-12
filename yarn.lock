@@ -1452,10 +1452,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sitaggart/eslint-config@0.5.35":
-  version "0.5.35"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.35.tgz#7bc52057c372f5a0a1508fd03940b83598cc971a"
-  integrity sha512-dBY5JMBtlRcSDrycMobsioFmO+AVxlRLIRkrR0o//Lf9mZHLJBNNTls316DHviO0Ay1+lhLU7pKe+Z9L59ODPA==
+"@sitaggart/eslint-config@0.5.36":
+  version "0.5.36"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.36.tgz#58c6d1180796b881c77979c109ae9355385c4e2d"
+  integrity sha512-CsH2j/XrA0doGSjnMbLGGQR8c5egGbT6eTGxOw2/FoiogUa+7DPxz6EtXMIdzMDw+366NIf2Ognnu1asrLRx6A==
   dependencies:
     babel-eslint "10.0.3"
     eslint-config-airbnb "18.0.1"
@@ -1473,7 +1473,7 @@
     eslint-plugin-react "7.18.3"
     eslint-plugin-react-hooks "2.3.0"
     eslint-plugin-standard "4.0.1"
-    eslint-plugin-unicorn "16.1.0"
+    eslint-plugin-unicorn "16.1.1"
 
 "@sitaggart/prettier-config@0.2.0":
   version "0.2.0"
@@ -5311,10 +5311,10 @@ eslint-plugin-standard@4.0.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-4.0.1.tgz#ff0519f7ffaff114f76d1bd7c3996eef0f6e20b4"
   integrity sha512-v/KBnfyaOMPmZc/dmc6ozOdWqekGp7bBGq4jLAecEfPGmfKiWS4sA8sC0LqiV9w5qmXAtXVn4M3p1jSyhY85SQ==
 
-eslint-plugin-unicorn@16.1.0:
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-16.1.0.tgz#7af9f2d056c0997776a112c66c6c4f02792bdc56"
-  integrity sha512-aZbnl0TGXpQngzY5Ou0sj7YxTZYxfdWKhyLV/MWBeNQ2gGWMiq7CoJApZQJq5al2zKkep3CIWI7RFmUWnKSBxg==
+eslint-plugin-unicorn@16.1.1:
+  version "16.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-16.1.1.tgz#012c598d71914ef30f5d386dd85110e59f2ef999"
+  integrity sha512-IMxCsntb0T8s660Irc40gtzXtxuXHcOn36G9G8OYKfiseBD/kNrA1cNJhsJ0xQteDASGrFwqdzBsYEkUvczhOA==
   dependencies:
     ci-info "^2.0.0"
     clean-regexp "^1.0.0"
