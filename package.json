@@ -52,7 +52,7 @@
     "prettier": "1.19.1"
   },
   "engines": {
-    "node": "12.13.1"
+    "node": "12.16.1"
   },
   "homepage": "https://www.simontaggart.com",
   "license": "MIT",

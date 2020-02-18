@@ -5,7 +5,7 @@ version: 2.1
 executors:
   job-executor:
     docker:
-      - image: circleci/node:12.13-browsers
+      - image: circleci/node:12.16-browsers
     working_directory: ~/repo
 
 jobs:
