@@ -30,7 +30,7 @@
     "lodash": "4.17.15",
     "node-sass": "4.13.1",
     "normalize.css": "8.0.1",
-    "preact": "10.3.2",
+    "preact": "10.3.3",
     "prismjs": "1.19.0",
     "prop-types": "15.7.2",
     "react": "16.12.0",
