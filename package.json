@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "4.0.0",
   "dependencies": {
-    "@babel/core": "7.8.7",
+    "@babel/core": "7.9.0",
     "autoprefixer": "9.7.4",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.1.0",
     "bluebird": "3.7.2",
     "breakpoint-sass": "2.7.1",
     "classnames": "2.2.6",
