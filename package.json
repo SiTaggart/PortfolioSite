@@ -80,30 +80,32 @@
   "browserslist": [
     "defaults"
   ],
-  "bundlesize": [
-    {
-      "path": "./public/app-*.js",
-      "maxSize": "68 kB"
-    },
-    {
-      "path": "./public/framework-*.js",
-      "maxSize": "55 kB"
-    },
-    {
-      "path": "./public/component-*.js",
-      "maxSize": "10 kB"
-    },
-    {
-      "path": "./public/styles-*.js",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./public/styles.*.css",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./public/webpack-*.js",
-      "maxSize": "5 kB"
-    }
-  ]
+  "bundlewatch": {
+    "files": [
+      {
+        "path": "./public/app-*.js",
+        "maxSize": "68 kB"
+      },
+      {
+        "path": "./public/framework-*.js",
+        "maxSize": "55 kB"
+      },
+      {
+        "path": "./public/component-*.js",
+        "maxSize": "10 kB"
+      },
+      {
+        "path": "./public/styles-*.js",
+        "maxSize": "5 kB"
+      },
+      {
+        "path": "./public/styles.*.css",
+        "maxSize": "5 kB"
+      },
+      {
+        "path": "./public/webpack-*.js",
+        "maxSize": "5 kB"
+      }
+    ]
+  }
 }
