@@ -86,7 +86,7 @@
       "maxSize": "68 kB"
     },
     {
-      "path": "./public/commons-*.js",
+      "path": "./public/framework-*.js",
       "maxSize": "55 kB"
     },
     {
