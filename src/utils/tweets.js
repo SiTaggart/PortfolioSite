@@ -4,12 +4,12 @@ const getFormattedTweet = tweet => {
   let text = tweet;
   // convert URLs into links
   text = text.replace(
-    /(>|<a[^<>]+href=["'])?(https?:\/\/([\d-a-z]+\.)+[a-z]{2,5}(\/[\d!#&(),-./?a-z]*[^ !#(),.?])?)/gi,
+    /(>|<a[^<>]+href=["'])?(https?:\/\/([\d-az-]+\.)+[a-z]{2,5}(\/[\d!#&(),-./?a-z]*[^ !#(),.?])?)/gi,
     ($0, $1, $2) => ($1 ? $0 : `<a href="${$2}" target="_blank">${$2}</a>`)
   );
   // convert protocol-less URLs into links
   text = text.replace(
-    /(:\/\/|>)?\b(([\d-a-z]+\.)+[a-z]{2,5}(\/[\d!#&()-./?a-z]*[^ !#(),.?])?)/gi,
+    /(:\/\/|>)?\b(([\d-az-]+\.)+[a-z]{2,5}(\/[\d!#&()-./?a-z]*[^ !#(),.?])?)/gi,
     ($0, $1, $2) => ($1 ? $0 : `<a href="http://${$2}">${$2}</a>`)
   );
   // convert @mentions into follow links
