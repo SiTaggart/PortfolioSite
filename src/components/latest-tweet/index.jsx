@@ -26,7 +26,7 @@ export class LatestTweet extends Component {
 
   getLatestTweet = () => {
     fetch('/api/tweets')
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error('There was a problem getting my lastest tweet.');
         } else {
@@ -37,23 +37,23 @@ export class LatestTweet extends Component {
       .catch(this.setLatestTweetError);
   };
 
-  getTweetSize = tweet => getSizeBasedOnLength(tweet);
+  getTweetSize = (tweet) => getSizeBasedOnLength(tweet);
 
-  getFormattedTweet = tweet => getFormattedTweet(tweet);
+  getFormattedTweet = (tweet) => getFormattedTweet(tweet);
 
-  getSizeClassName = size => {
+  getSizeClassName = (size) => {
     const sizeClass = `latestTweet${toSentenceCase(size)}`;
     return styles[sizeClass];
   };
 
-  setLatestTweet = data => {
+  setLatestTweet = (data) => {
     this.setState({
       formattedTweet: this.getFormattedTweet(data[0].text),
       size: this.getTweetSize(data[0].text),
     });
   };
 
-  setLatestTweetError = err => {
+  setLatestTweetError = (err) => {
     this.setState({
       formattedTweet: err,
       size: 'small',

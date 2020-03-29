@@ -37,9 +37,9 @@ class Index extends React.Component {
       'https://api.flickr.com/services/feeds/photos_public.gne?lang=en-us&format=json&jsoncallback=JSON_CALLBACK&id=51539284@N00#',
       { jsonpCallbackFunction: 'JSON_CALLBACK' }
     )
-      .then(response => response.json())
+      .then((response) => response.json())
       .then(this.handleData)
-      .catch(error => {
+      .catch((error) => {
         this.setState({
           flickIsLoading: false,
           error,
@@ -47,7 +47,7 @@ class Index extends React.Component {
       });
   }
 
-  handleData = data => {
+  handleData = (data) => {
     const firstFour = data.items.slice(0, 4);
     this.setState({
       flickIsLoading: false,
@@ -66,7 +66,7 @@ class Index extends React.Component {
     }
     return (
       <FlickrList>
-        {flickrPosts.map(item => (
+        {flickrPosts.map((item) => (
           <FlickrListItem key={`flickrListItem${uid(item)}`}>
             <FlickrFigure image={item} />
           </FlickrListItem>

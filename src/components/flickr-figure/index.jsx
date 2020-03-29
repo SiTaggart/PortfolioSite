@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import buttonStyles from '../button/index.module.scss';
 import styles from './index.module.scss';
 
-const getBetterImageURL = url => url.replace('_m.jpg', '_z.jpg');
+const getBetterImageURL = (url) => url.replace('_m.jpg', '_z.jpg');
 
-const FlickrFigure = props => {
+const FlickrFigure = (props) => {
   const { image } = props;
 
   const imageStyle = {
