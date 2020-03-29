@@ -42,7 +42,7 @@
     "webpack": "4.42.1"
   },
   "devDependencies": {
-    "@sitaggart/eslint-config": "0.5.45",
+    "@sitaggart/eslint-config": "0.5.56",
     "@sitaggart/prettier-config": "0.2.0",
     "bundlesize": "0.18.0",
     "eslint": "6.8.0",
