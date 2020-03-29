@@ -1,4 +1,4 @@
-const getFormattedTweet = tweet => {
+const getFormattedTweet = (tweet) => {
   const baseUrl = 'http://twitter.com/'; // identica: 'http://identi.ca/'
   const hashtagPart = 'search?q=#'; // identica: 'tag/'
   let text = tweet;
@@ -29,7 +29,7 @@ const getFormattedTweet = tweet => {
   return text;
 };
 
-const getSizeBasedOnLength = tweet => {
+const getSizeBasedOnLength = (tweet) => {
   const tweetLength = tweet.length;
   switch (tweetLength) {
     case tweetLength < 30:

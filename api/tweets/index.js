@@ -8,7 +8,7 @@ const t = new Twit({
 });
 
 module.exports = (req, res) => {
-  t.get('statuses/user_timeline', { count: 1 }, function(err, data) {
+  t.get('statuses/user_timeline', { count: 1 }, function (err, data) {
     if (err) {
       res.status(500).json(err);
     } else {
