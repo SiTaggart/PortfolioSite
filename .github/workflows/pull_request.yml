@@ -3,16 +3,6 @@ name: PR Checks
 on: push
 
 jobs:
-  bundlewatch:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: Borales/actions-yarn@v2.1.0
-      - run: yarn install
-      - uses: jackyef/bundlewatch-gh-action@master
-        with:
-          build-script: yarn build
-          bundlewatch-github-token: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}
   pr-checks:
     runs-on: ubuntu-latest
     strategy:
@@ -38,6 +28,14 @@ jobs:
         run: yarn lint
       - name: Run prettier
         run: yarn prettier
+      - name: Run bundlewatch
+        run: yarn run bundlewatch
+        env:
+          BUNDLEWATCH_GITHUB_TOKEN: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}
+          CI_REPO_OWNER: SiTaggart
+          CI_REPO_NAME: PortfolioSite
+          CI_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+          CI_BRANCH: ${{ github.ref }}
       - name: Run percy
         run: yarn percy
         env:
