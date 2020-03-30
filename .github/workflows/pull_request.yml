@@ -1,0 +1,42 @@
+name: Checks
+
+on: push
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.16.x]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
+      - name: Run eslint
+        run: yarn lint
+      - name: Run prettier
+        run: yarn prettier
+      - name: Run bundlewatch
+        run: yarn run bundlewatch
+        env:
+          BUNDLEWATCH_GITHUB_TOKEN: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}
+          CI_REPO_OWNER: SiTaggart
+          CI_REPO_NAME: PortfolioSite
+          CI_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+          CI_BRANCH: ${{ github.ref }}
+      - name: Run percy
+        run: yarn percy
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}

@@ -45,6 +45,7 @@
     "@sitaggart/eslint-config": "0.5.57",
     "@sitaggart/prettier-config": "0.2.0",
     "bundlesize": "0.18.0",
+    "bundlewatch": "^0.2.6",
     "eslint": "6.8.0",
     "husky": "4.2.3",
     "percy": "0.26.0",
@@ -80,30 +81,32 @@
   "browserslist": [
     "defaults"
   ],
-  "bundlesize": [
-    {
-      "path": "./public/app-*.js",
-      "maxSize": "68 kB"
-    },
-    {
-      "path": "./public/framework-*.js",
-      "maxSize": "55 kB"
-    },
-    {
-      "path": "./public/component-*.js",
-      "maxSize": "10 kB"
-    },
-    {
-      "path": "./public/styles-*.js",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./public/styles.*.css",
-      "maxSize": "5 kB"
-    },
-    {
-      "path": "./public/webpack-*.js",
-      "maxSize": "5 kB"
-    }
-  ]
+  "bundlewatch": {
+    "files": [
+      {
+        "path": "./public/app-*.js",
+        "maxSize": "68 kB"
+      },
+      {
+        "path": "./public/framework-*.js",
+        "maxSize": "55 kB"
+      },
+      {
+        "path": "./public/component-*.js",
+        "maxSize": "10 kB"
+      },
+      {
+        "path": "./public/styles-*.js",
+        "maxSize": "5 kB"
+      },
+      {
+        "path": "./public/styles.*.css",
+        "maxSize": "5 kB"
+      },
+      {
+        "path": "./public/webpack-*.js",
+        "maxSize": "5 kB"
+      }
+    ]
+  }
 }
