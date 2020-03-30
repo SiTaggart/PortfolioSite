@@ -1,4 +1,4 @@
-name: PR Checks
+name: Checks
 
 on: push
 
@@ -22,7 +22,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Build packages
+      - name: Build
         run: yarn build
       - name: Run eslint
         run: yarn lint
