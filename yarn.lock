@@ -3186,7 +3186,7 @@ bundlesize@0.18.0:
     gzip-size "^4.0.0"
     prettycli "^1.4.3"
 
-bundlewatch@^0.2.6:
+bundlewatch@0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/bundlewatch/-/bundlewatch-0.2.6.tgz#b9f9a3e04e6b0b0823cc8b5af9e24b3f931582ab"
   integrity sha512-J/j1f8Wqro1AdY4oFvFvIsQTM+fEkV0p7RPv9l0xgevUxETnjF7sFSW32mIEeF245RvdczETUu7bInDsO5uaLg==
