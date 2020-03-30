@@ -3,7 +3,7 @@ name: Checks
 on: push
 
 jobs:
-  pr-checks:
+  checks:
     runs-on: ubuntu-latest
     strategy:
       matrix:
