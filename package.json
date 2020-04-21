@@ -39,7 +39,7 @@
     "react-uid": "2.2.0",
     "to-sentence-case": "1.0.0",
     "twit": "2.2.11",
-    "webpack": "4.42.1"
+    "webpack": "4.43.0"
   },
   "devDependencies": {
     "@sitaggart/eslint-config": "0.5.58",
