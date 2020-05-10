@@ -18,7 +18,7 @@ HomeSectionHeader.propTypes = {
   flavour: PropTypes.string,
 };
 HomeSectionHeader.defaultProps = {
-  flavour: null,
+  flavour: undefined,
 };
 
 const HomeSectionHeaderLink = ({ children, href }) => (
