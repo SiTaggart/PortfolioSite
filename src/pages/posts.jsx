@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import { PostList, PostListItem } from '../components/post-list';
 import { SiteHeader } from '../components/site-header';
