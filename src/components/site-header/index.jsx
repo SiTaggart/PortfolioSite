@@ -32,6 +32,6 @@ SiteHeader.propTypes = {
   isPost: PropTypes.bool,
 };
 SiteHeader.defaultProps = {
-  isPost: null,
+  isPost: undefined,
 };
 export { SiteHeader };

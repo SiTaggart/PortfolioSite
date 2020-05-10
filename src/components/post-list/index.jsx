@@ -64,7 +64,7 @@ PostList.propTypes = {
   isFullList: PropTypes.bool,
 };
 PostList.defaultProps = {
-  isFullList: null,
+  isFullList: undefined,
 };
 
 export { PostList, PostListItem };

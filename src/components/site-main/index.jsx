@@ -17,6 +17,6 @@ SiteMain.propTypes = {
   isPost: PropTypes.bool,
 };
 SiteMain.defaultProps = {
-  isPost: null,
+  isPost: undefined,
 };
 export { SiteMain };
