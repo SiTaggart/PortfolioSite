@@ -1716,10 +1716,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sitaggart/eslint-config@0.5.70":
-  version "0.5.70"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.70.tgz#eedeb250a6e42e43241c9a1813c7e4aaec0fd045"
-  integrity sha512-0tE6lVxHoJhEOu5QeuC6qFGQ7XZESEqG8ykaiL1DKX7VR4KK1UpjjQ5rE8vCjK4YZA6DmqiOUqTqgp4l/05V4A==
+"@sitaggart/eslint-config@0.5.71":
+  version "0.5.71"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config/-/eslint-config-0.5.71.tgz#5718f5d688a247a2130e16627ff43ee58ec5caf1"
+  integrity sha512-FpvaQGolmbsdSkeovR10tA0Pg5GrqdhfwvMuZcx+GTMUdITIcR6a+oKsaGIzC4XIKdOIsklDoE49O8ObgIaKng==
   dependencies:
     babel-eslint "10.1.0"
     eslint-config-airbnb "18.1.0"
@@ -1727,7 +1727,7 @@
     eslint-config-standard "14.1.1"
     eslint-config-standard-jsx "8.1.0"
     eslint-plugin-cypress "2.10.3"
-    eslint-plugin-eslint-comments "3.1.2"
+    eslint-plugin-eslint-comments "3.2.0"
     eslint-plugin-import "2.20.2"
     eslint-plugin-jest "23.13.1"
     eslint-plugin-jsx-a11y "6.2.3"
@@ -5663,10 +5663,10 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-eslint-comments@3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-3.1.2.tgz#4ef6c488dbe06aa1627fea107b3e5d059fc8a395"
-  integrity sha512-QexaqrNeteFfRTad96W+Vi4Zj1KFbkHHNMMaHZEYcovKav6gdomyGzaxSDSL3GoIyUOo078wRAdYlu1caiauIQ==
+eslint-plugin-eslint-comments@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-3.2.0.tgz#9e1cd7b4413526abb313933071d7aba05ca12ffa"
+  integrity sha512-0jkOl0hfojIHHmEHgmNdqv4fmh7300NdpA9FFpF7zaoLvB/QeXOGNLIo86oAveJFrfB1p05kC8hpEMHM8DwWVQ==
   dependencies:
     escape-string-regexp "^1.0.5"
     ignore "^5.0.5"
