@@ -8,7 +8,7 @@ import { Anchor, Text, UnorderedList, ListItem, Heading } from '@twilio-paste/co
 import sortBy from 'lodash.sortby';
 import reverse from 'lodash.reverse';
 // @ts-ignore
-import { frontMatter as allPosts } from './posts/**/*.md';
+import { frontMatter as allPosts } from './posts/**/*.mdx';
 
 type Tweet = {
   text: string;
@@ -54,13 +54,15 @@ const Index: React.FC = () => {
         </>
       )}
       <Heading as="h2" variant="heading20">
-        Posts
+        <Link href="/posts/" passHref>
+          <Anchor href="/posts/">Posts</Anchor>
+        </Link>
       </Heading>
       <UnorderedList>
         {sortedPosts.map((post) => (
           <ListItem key={useUID()}>
-            <Link href={post.__resourcePath.replace('index.md', '')} passHref>
-              <Anchor href={post.__resourcePath.replace('index.md', '')}>{post.title}</Anchor>
+            <Link href={post.__resourcePath.replace('index.mdx', '')} passHref>
+              <Anchor href={post.__resourcePath.replace('index.mdx', '')}>{post.title}</Anchor>
             </Link>
           </ListItem>
         ))}
