@@ -7,6 +7,7 @@ const withMdxEnhanced = require('next-mdx-enhanced')({
   remarkPlugins: [],
   rehypePlugins: [mdxPrism],
 });
+
 module.exports = withMdxEnhanced({
   pageExtensions: ['js', 'jsx', 'tsx', 'ts', 'mdx', 'md'],
 });

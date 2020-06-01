@@ -73,13 +73,13 @@
     "build": "next build",
     "start": "next start",
     "clean": "rm -rf public && rm -rf .cache",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx src/ *.js",
+    "lint": "eslint './**/*.{js,jsx,ts,tsx}' --format codeframe",
     "test": "echo \"Error: no test specified\" && exit 1",
     "percy": "npx percy snapshot public/ --snapshot-files index.html,posts/index.html,2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.html",
     "now": "now",
     "now-build": "yarn build",
-    "prettier": "prettier -l '**/*.{js,jsx}'",
-    "prettier:fix": "prettier --write '**/*.{js,jsx}'"
+    "prettier": "prettier -l '**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "husky": {
     "hooks": {
