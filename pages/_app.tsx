@@ -8,7 +8,8 @@ import { css, CSSObject } from '@styled-system/css';
 import { pasteBaseStyles } from '@twilio-paste/theme';
 import { Box } from '@twilio-paste/core';
 import { PortfolioTheme } from '../theme';
-import { ComponentProvider } from '../components/component-provider';
+import { getPrismStyles } from '../theme/prism';
+import { ComponentProvider } from '../components/ComponentProvider';
 
 const StyledBase = styled(Box)(pasteBaseStyles);
 
@@ -35,21 +36,23 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
         rel="icon"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Mono&display=swap"
         rel="stylesheet"
       />
     </Head>
     <ComponentProvider>
       <ThemeProvider theme={PortfolioTheme}>
         <Global styles={globalStyles({ theme: PortfolioTheme })} />
+        <Global styles={getPrismStyles({ theme: PortfolioTheme })} />
         <StyledBase
           as="main"
+          marginBottom="space200"
           // @ts-ignore
           marginLeft={['space50', 'space50', 'auto']}
           // @ts-ignore
           marginRight={['space50', 'space50', 'auto']}
           marginTop={['space30', 'space30', 'space170']}
-          maxWidth="size80"
+          maxWidth="size100"
         >
           <Component {...pageProps} />
         </StyledBase>

@@ -1,7 +1,7 @@
 import { DefaultTheme } from '@twilio-paste/theme';
+import merge from 'lodash.merge';
 
-export const PortfolioTheme = {
-  ...DefaultTheme,
+export const PortfolioTheme = merge(DefaultTheme, {
   fonts: { fontFamilyText: '"Poppins", sans-serif' },
   fontSizes: {
     fontSize10: '14px',
@@ -53,4 +53,4 @@ export const PortfolioTheme = {
     space190: '5rem',
     space200: '5.25rem',
   },
-};
+});

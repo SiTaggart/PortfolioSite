@@ -16,6 +16,8 @@ import {
   Separator,
   SeparatorProps,
 } from '@twilio-paste/core';
+import { CodeBlock, InlineCode } from './CodeBlocks';
+import { Table, Thead, Tbody, Tfoot, Tr, Th, Td } from './Table';
 
 export const ComponentProvider: React.FC<{}> = ({ children }) => (
   <MDXProvider
@@ -45,16 +47,18 @@ export const ComponentProvider: React.FC<{}> = ({ children }) => (
       blockquote: (props: React.ComponentProps<'blockquote'>): React.ReactElement => (
         <blockquote {...props} />
       ),
-      table: (props: React.ComponentProps<'table'>): React.ReactElement => <table {...props} />,
-      thead: (props: React.ComponentProps<'thead'>): React.ReactElement => <thead {...props} />,
-      tbody: (props: React.ComponentProps<'tbody'>): React.ReactElement => <tbody {...props} />,
-      tfoot: (props: React.ComponentProps<'tfoot'>): React.ReactElement => <tfoot {...props} />,
-      tr: (props: React.ComponentProps<'tr'>): React.ReactElement => <tr {...props} />,
-      th: (props: React.ComponentProps<'th'>): React.ReactElement => <th {...props} />,
-      td: (props: React.ComponentProps<'td'>): React.ReactElement => <td {...props} />,
-      pre: (props: React.ComponentProps<'pre'>): React.ReactElement => <pre {...props} />,
+      table: (props: React.ComponentProps<'table'>): React.ReactElement => <Table {...props} />,
+      thead: (props: React.ComponentProps<'thead'>): React.ReactElement => <Thead {...props} />,
+      tbody: (props: React.ComponentProps<'tbody'>): React.ReactElement => <Tbody {...props} />,
+      tfoot: (props: React.ComponentProps<'tfoot'>): React.ReactElement => <Tfoot {...props} />,
+      tr: (props: React.ComponentProps<'tr'>): React.ReactElement => <Tr {...props} />,
+      th: (props: React.ComponentProps<'th'>): React.ReactElement => <Th {...props} />,
+      td: (props: React.ComponentProps<'td'>): React.ReactElement => <Td {...props} />,
+      pre: (props: React.ComponentProps<'pre'>): React.ReactElement => <CodeBlock {...props} />,
       code: (props: React.ComponentProps<'code'>): React.ReactElement => <code {...props} />,
-      inlineCode: (props: React.ComponentProps<'code'>): React.ReactElement => <code {...props} />,
+      inlineCode: (props: React.ComponentProps<'code'>): React.ReactElement => (
+        <InlineCode {...props} />
+      ),
       em: (props: React.ComponentProps<'em'>): React.ReactElement => <em {...props} />,
       strong: (props: React.ComponentProps<'strong'>): React.ReactElement => <strong {...props} />,
       del: (props: React.ComponentProps<'del'>): React.ReactElement => <del {...props} />,
