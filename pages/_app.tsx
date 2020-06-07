@@ -54,8 +54,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
           marginLeft={['space50', 'space50', 'auto']}
           // @ts-ignore
           marginRight={['space50', 'space50', 'auto']}
-          paddingTop={['space30', 'space30', 'space170']}
           maxWidth="size100"
+          paddingTop={['space30', 'space30', 'space170']}
         >
           <Component {...pageProps} />
         </StyledBase>
