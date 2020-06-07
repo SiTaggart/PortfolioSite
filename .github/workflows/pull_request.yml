@@ -22,6 +22,8 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
       - name: Run eslint
         run: yarn lint
       - name: Run prettier
