@@ -2,6 +2,28 @@ import { DefaultTheme } from '@twilio-paste/theme';
 import merge from 'lodash.merge';
 
 export const PortfolioTheme = merge(DefaultTheme, {
+  colors: {
+    colorBackground: '#011627',
+    colorBackgroundBody: '#232946',
+    colorBorderLight: '#ff5470',
+    colorText: '#b8c1ec',
+    colorTextWeak: '#fffffe',
+    colorTextLink: '#fffffe',
+    colorTextLinkDarker: '#eebbc3',
+  },
+  backgroundColors: {
+    colorBackground: '#011627',
+    colorBackgroundBody: '#232946',
+  },
+  borderColors: {
+    colorBorderLight: '#ff5470',
+  },
+  textColors: {
+    colorText: '#b8c1ec',
+    colorTextWeak: '#fffffe',
+    colorTextLink: '#fffffe',
+    colorTextLinkDarker: '#eebbc3',
+  },
   fonts: { fontFamilyText: '"Poppins", sans-serif' },
   fontSizes: {
     fontSize10: '14px',

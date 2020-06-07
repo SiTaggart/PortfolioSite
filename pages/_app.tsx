@@ -20,10 +20,13 @@ const globalStyles = (props: GlobalStylesProps): CSSObject =>
   css({
     html: {
       fontSize: '100%',
+      height: '100vh',
     },
     body: {
+      backgroundColor: '#232946',
       margin: 0,
       fontSize: 'fontSize30',
+      height: '100vh',
     },
   })(props);
 
@@ -51,7 +54,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
           marginLeft={['space50', 'space50', 'auto']}
           // @ts-ignore
           marginRight={['space50', 'space50', 'auto']}
-          marginTop={['space30', 'space30', 'space170']}
+          paddingTop={['space30', 'space30', 'space170']}
           maxWidth="size100"
         >
           <Component {...pageProps} />

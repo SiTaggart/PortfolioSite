@@ -4,7 +4,16 @@ import Link from 'next/link';
 import useSWR from 'swr';
 import fetch from 'isomorphic-unfetch';
 import twitter from 'twitter-text';
-import { Anchor, Text, Paragraph, UnorderedList, ListItem, Heading } from '@twilio-paste/core';
+import {
+  Anchor,
+  Text,
+  Paragraph,
+  UnorderedList,
+  ListItem,
+  Heading,
+  Card,
+  Box,
+} from '@twilio-paste/core';
 import sortBy from 'lodash.sortby';
 import reverse from 'lodash.reverse';
 // @ts-ignore
@@ -18,40 +27,49 @@ type Tweets = Tweet[];
 const fetcher = (url: string): Promise<Tweets> => fetch(url).then((r) => r.json());
 
 const Index: React.FC = () => {
-  const { data } = useSWR('api/tweets', fetcher);
+  const { data: twitterData } = useSWR('api/tweets', fetcher);
+  const employmentStartDate = new Date(2004, 9, 1);
+  const yoe = new Date(Date.now()).getFullYear() - employmentStartDate.getFullYear();
   const sortedPosts = reverse(sortBy(allPosts, ['date']));
   return (
     <>
       <Text
         as="h1"
-        fontSize="fontSize110"
-        fontWeight="fontWeightSemibold"
-        letterSpacing="-2px"
-        lineHeight="lineHeight110"
-        marginBottom="space70"
+        css={{
+          color: '#fffffe',
+        }}
+        fontSize={['fontSize80', 'fontSize110']}
+        fontWeight="fontWeightBold"
+        letterSpacing="-1px"
+        lineHeight={['lineHeight80', 'lineHeight100']}
+        marginBottom="space30"
       >
         Simon <br /> Taggart
       </Text>
       <Text
         as="p"
-        color="colorTextWeak"
-        fontSize="fontSize90"
-        lineHeight="lineHeight90"
-        marginBottom="space70"
+        css={{
+          color: '#ff5470',
+        }}
+        fontSize={['fontSize50', 'fontSize90']}
+        fontWeight="fontWeightSemibold"
+        lineHeight={['lineHeight60', 'lineHeight90']}
+        marginBottom={['space70', 'space140']}
       >
-        UX Engineering &amp; Accessibility
+        Design Systems &amp; Accessibility
       </Text>
 
       <Paragraph>
-        A design led Front-End Engineer currently working as a Principal Front End Engineer at{' '}
-        <Anchor href="https://www.twilio.com">Twilio</Anchor>, on Design Systems. I have over 12
-        years experience in Web Development and Front-End Engineering, specialising in building user
+        A UX Engineer currently working as a Principal UX Engineer at{' '}
+        <Anchor href="https://www.twilio.com">Twilio</Anchor>, on{' '}
+        <Anchor href="https://paste.twilio.design">Design Systems</Anchor>. I have over {yoe} years
+        experience in Web Development and Front-End Engineering, specialising in building user
         interfaces for web sites and web applications.
       </Paragraph>
 
       <Paragraph>
         Expert in Rapid Prototyping and Semantic and Accessible interfaces, I lead and work with
-        engineering and design teams which are research led and user focused.
+        engineering and design teams.
       </Paragraph>
 
       <Paragraph>
@@ -68,21 +86,35 @@ const Index: React.FC = () => {
         <Anchor href="https://www.abacusemedia.com/">Abacus e-media</Anchor>.
       </Paragraph>
 
-      {data && (
-        <>
-          <Heading as="h2" variant="heading20">
-            Tweet
-          </Heading>
-          <Text
-            as="p"
-            dangerouslySetInnerHTML={{ __html: twitter.autoLink(twitter.htmlEscape(data[0].text)) }}
-            marginBottom="space70"
-          />
-        </>
+      {twitterData && (
+        <Box marginBottom="space140" marginTop="space140">
+          <Card>
+            <Text
+              as="p"
+              css={{
+                color: '#fffffe',
+              }}
+              fontSize="fontSize60"
+              fontWeight="fontWeightSemibold"
+              lineHeight="lineHeight60"
+              marginBottom="space20"
+            >
+              I Tweeted:
+            </Text>
+            <Text
+              as="p"
+              dangerouslySetInnerHTML={{
+                __html: twitter.autoLink(twitter.htmlEscape(twitterData[0].text)),
+              }}
+              margin="space0"
+            />
+          </Card>
+        </Box>
       )}
+
       <Heading as="h2" variant="heading20">
         <Link href="/posts/" passHref>
-          <Anchor href="/posts/">Posts</Anchor>
+          <Anchor href="/posts/">Long form</Anchor>
         </Link>
       </Heading>
       <UnorderedList>

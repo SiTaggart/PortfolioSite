@@ -1,11 +1,20 @@
 import * as React from 'react';
-import { Heading } from '@twilio-paste/core';
+import { Text } from '@twilio-paste/core';
 
 const Post = (frontMatter: any) => ({ children: content }: any) => (
   <>
-    <Heading as="h1" variant="heading10">
-      {frontMatter.title} - thing
-    </Heading>
+    <Text
+      as="h1"
+      css={{
+        color: '#fffffe',
+      }}
+      fontSize={['fontSize80', 'fontSize100']}
+      letterSpacing="-1px"
+      lineHeight={['lineHeight80', 'lineHeight100']}
+      marginBottom="space100"
+    >
+      {frontMatter.title}
+    </Text>
     {content}
   </>
 );

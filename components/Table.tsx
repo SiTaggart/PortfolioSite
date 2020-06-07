@@ -35,7 +35,7 @@ export const Tr: React.FC<{}> = (props) => (
 export const Th: React.FC<{}> = (props) => (
   <Box
     as="th"
-    css={css({ fontWeight: 'fontWeightSemibold', textAlign: 'left' })}
+    css={css({ color: 'colorTextWeak', fontWeight: 'fontWeightSemibold', textAlign: 'left' })}
     padding="space10"
     paddingLeft="space20"
     paddingRight="space20"
