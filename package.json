@@ -104,10 +104,6 @@
       {
         "path": "./.next/static/runtime/*.js",
         "maxSize": "26 kB"
-      },
-      {
-        "path": "./.next/serverless/pages/*.js",
-        "maxSize": "500 kB"
       }
     ]
   }
