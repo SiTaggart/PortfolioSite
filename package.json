@@ -71,14 +71,14 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build ; next build",
     "start": "next start",
     "clean": "rm -rf public && rm -rf .cache",
     "lint": "eslint './**/*.{js,jsx,ts,tsx}' --format codeframe",
     "test": "echo \"Error: no test specified\" && exit 1",
     "percy": "npx percy snapshot public/ --snapshot-files index.html,posts/index.html,2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.html",
     "now": "now",
-    "now-build": "yarn build && yarn build",
+    "now-build": "yarn build",
     "prettier": "prettier -l '**/*.{js,jsx,ts,tsx}'",
     "prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "svg-to-react": "svg-to-react"

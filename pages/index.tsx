@@ -21,7 +21,7 @@ import sortBy from 'lodash.sortby';
 import reverse from 'lodash.reverse';
 // @ts-ignore
 import { frontMatter as allPosts } from './posts/**/*.mdx';
-import * as TwitterSVG from '../svg/icons/ic-twitter.svg';
+import TwitterSVG from '../svg/icons/ic-twitter.svg';
 
 type Tweet = {
   text: string;
