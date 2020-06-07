@@ -6,8 +6,10 @@ export const PortfolioTheme = merge(DefaultTheme, {
     colorBackground: '#011627',
     colorBackgroundBody: '#232946',
     colorBorderLight: '#ff5470',
+    colorBorderPrimary: '#ff5470',
     colorText: '#b8c1ec',
     colorTextWeak: '#fffffe',
+    colorTextBrandHighlight: '#ff5470',
     colorTextLink: '#fffffe',
     colorTextLinkDarker: '#eebbc3',
   },
@@ -17,10 +19,12 @@ export const PortfolioTheme = merge(DefaultTheme, {
   },
   borderColors: {
     colorBorderLight: '#ff5470',
+    colorBorderPrimary: '#ff5470',
   },
   textColors: {
     colorText: '#b8c1ec',
     colorTextWeak: '#fffffe',
+    colorTextBrandHighlight: '#ff5470',
     colorTextLink: '#fffffe',
     colorTextLinkDarker: '#eebbc3',
   },

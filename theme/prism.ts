@@ -1,7 +1,7 @@
 import { css, CSSObject } from '@styled-system/css';
 
 interface PrismStylesProps {
-  theme: unknown;
+  theme: {};
 }
 
 // inspiratiopn from https://github.com/SaraVieira/prism-theme-night-owl

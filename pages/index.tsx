@@ -13,11 +13,15 @@ import {
   Heading,
   Card,
   Box,
+  MediaObject,
+  MediaFigure,
+  MediaBody,
 } from '@twilio-paste/core';
 import sortBy from 'lodash.sortby';
 import reverse from 'lodash.reverse';
 // @ts-ignore
 import { frontMatter as allPosts } from './posts/**/*.mdx';
+import * as TwitterSVG from '../svg/icons/ic-twitter.svg';
 
 type Tweet = {
   text: string;
@@ -90,7 +94,7 @@ const Index: React.FC = () => {
         <Box marginBottom="space140" marginTop="space140">
           <Card>
             <Text
-              as="p"
+              as="h2"
               css={{
                 color: '#fffffe',
               }}
@@ -99,7 +103,22 @@ const Index: React.FC = () => {
               lineHeight="lineHeight60"
               marginBottom="space20"
             >
-              I Tweeted:
+              <MediaObject verticalAlign="center">
+                <MediaFigure spacing="space20">
+                  <Text as="span" color="colorTextBrandHighlight">
+                    <TwitterSVG
+                      css={{
+                        path: {
+                          fill: 'currentColor',
+                        },
+                      }}
+                    />
+                  </Text>
+                </MediaFigure>
+                <MediaBody>
+                  <Anchor href="https://www.twitter.com/SiTaggart">SiTaggart</Anchor>
+                </MediaBody>
+              </MediaObject>
             </Text>
             <Text
               as="p"

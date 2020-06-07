@@ -18,6 +18,7 @@ import {
 } from '@twilio-paste/core';
 import { CodeBlock, InlineCode } from './CodeBlocks';
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td } from './Table';
+import { Blockquote } from './Blockquote';
 
 export const ComponentProvider: React.FC<{}> = ({ children }) => (
   <MDXProvider
@@ -45,7 +46,7 @@ export const ComponentProvider: React.FC<{}> = ({ children }) => (
       ol: (props: OrderedListProps): React.ReactElement => <OrderedList {...props} />,
       li: (props: ListItemProps): React.ReactElement => <ListItem {...props} />,
       blockquote: (props: React.ComponentProps<'blockquote'>): React.ReactElement => (
-        <blockquote {...props} />
+        <Blockquote {...props} />
       ),
       table: (props: React.ComponentProps<'table'>): React.ReactElement => <Table {...props} />,
       thead: (props: React.ComponentProps<'thead'>): React.ReactElement => <Thead {...props} />,
