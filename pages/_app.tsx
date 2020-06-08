@@ -10,6 +10,7 @@ import { Box } from '@twilio-paste/core';
 import { PortfolioTheme } from '../theme';
 import { getPrismStyles } from '../theme/prism';
 import { ComponentProvider } from '../components/ComponentProvider';
+import { SiteFooter } from '../components/SiteFooter';
 
 const StyledBase = styled(Box)(pasteBaseStyles);
 
@@ -49,15 +50,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
         <Global styles={getPrismStyles({ theme: PortfolioTheme })} />
         <StyledBase
           as="main"
-          marginBottom="space200"
           // @ts-ignore
-          marginLeft={['space50', 'space50', 'auto']}
+          marginLeft={['space50', 'space70', 'auto']}
           // @ts-ignore
-          marginRight={['space50', 'space50', 'auto']}
-          maxWidth="size100"
-          paddingTop={['space30', 'space30', 'space170']}
+          marginRight={['space50', 'space70', 'auto']}
+          maxWidth="size90"
+          paddingTop={['space50', 'space70', 'space170']}
         >
           <Component {...pageProps} />
+          <SiteFooter />
         </StyledBase>
       </ThemeProvider>
     </ComponentProvider>

@@ -18,6 +18,7 @@ export const PortfolioTheme = merge(DefaultTheme, {
     colorBackgroundBody: '#232946',
   },
   borderColors: {
+    colorBorder: 'rgba(184, 193, 236, 0.27)',
     colorBorderLight: '#ff5470',
     colorBorderPrimary: '#ff5470',
   },

@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { MDXProvider } from '@mdx-js/react';
+import Link from 'next/link';
 import {
   Anchor,
   AnchorProps,
+  Box,
   Heading,
   HeadingProps,
   Paragraph,
@@ -19,6 +21,17 @@ import {
 import { CodeBlock, InlineCode } from './CodeBlocks';
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td } from './Table';
 import { Blockquote } from './Blockquote';
+
+export const Image: React.FC<{}> = (props) => (
+  <Box
+    as="img"
+    css={{ maxWidth: '100%' }}
+    display="block"
+    marginLeft="auto"
+    marginRight="auto"
+    {...props}
+  />
+);
 
 export const ComponentProvider: React.FC<{}> = ({ children }) => (
   <MDXProvider
@@ -66,8 +79,12 @@ export const ComponentProvider: React.FC<{}> = ({ children }) => (
       hr: (props: SeparatorProps): React.ReactElement => (
         <Separator verticalSpacing="space70" {...props} />
       ),
-      a: (props: AnchorProps): React.ReactElement => <Anchor {...props} />, // eslint-disable-line jsx-a11y/anchor-has-content
-      img: (props: React.ComponentProps<'img'>): React.ReactElement => <img {...props} />, // eslint-disable-line jsx-a11y/alt-text
+      a: (props: AnchorProps): React.ReactElement => (
+        <Link {...props} passHref>
+          <Anchor {...props} />
+        </Link>
+      ), // eslint-disable-line jsx-a11y/anchor-has-content
+      img: (props: React.ComponentProps<'img'>): React.ReactElement => <Image {...props} />, // eslint-disable-line jsx-a11y/alt-text
       sup: (props: React.ComponentProps<'sup'>): React.ReactElement => <sup {...props} />,
       content: (props: React.ComponentProps<'div'>): React.ReactElement => <div {...props} />,
       contentwrapper: (props: React.ComponentProps<'div'>): React.ReactElement => (

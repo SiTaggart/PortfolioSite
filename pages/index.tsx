@@ -4,12 +4,11 @@ import Link from 'next/link';
 import useSWR from 'swr';
 import fetch from 'isomorphic-unfetch';
 import twitter from 'twitter-text';
+import { css } from '@styled-system/css';
 import {
   Anchor,
   Text,
   Paragraph,
-  UnorderedList,
-  ListItem,
   Heading,
   Card,
   Box,
@@ -20,8 +19,11 @@ import {
 import sortBy from 'lodash.sortby';
 import reverse from 'lodash.reverse';
 // @ts-ignore
-import { frontMatter as allPosts } from './posts/**/*.mdx';
+import { frontMatter as lastestPost } from './posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.mdx';
 import TwitterSVG from '../svg/icons/ic-twitter.svg';
+import { SiteMainHeading } from '../components/SiteMainHeading';
+import { SiteSubHeading } from '../components/SiteSubHeading';
+import { FeaturePost } from '../components/FeaturedPost';
 
 type Tweet = {
   text: string;
@@ -34,34 +36,13 @@ const Index: React.FC = () => {
   const { data: twitterData } = useSWR('api/tweets', fetcher);
   const employmentStartDate = new Date(2004, 9, 1);
   const yoe = new Date(Date.now()).getFullYear() - employmentStartDate.getFullYear();
-  const sortedPosts = reverse(sortBy(allPosts, ['date']));
   return (
     <>
-      <Text
-        as="h1"
-        css={{
-          color: '#fffffe',
-        }}
-        fontSize={['fontSize80', 'fontSize110']}
-        fontWeight="fontWeightBold"
-        letterSpacing="-1px"
-        lineHeight={['lineHeight80', 'lineHeight100']}
-        marginBottom="space30"
-      >
+      <SiteMainHeading>
         Simon <br /> Taggart
-      </Text>
-      <Text
-        as="p"
-        css={{
-          color: '#ff5470',
-        }}
-        fontSize={['fontSize50', 'fontSize90']}
-        fontWeight="fontWeightSemibold"
-        lineHeight={['lineHeight60', 'lineHeight90']}
-        marginBottom={['space70', 'space140']}
-      >
-        Design Systems &amp; Accessibility
-      </Text>
+      </SiteMainHeading>
+
+      <SiteSubHeading>Design Systems &amp; Accessibility</SiteSubHeading>
 
       <Paragraph>
         A UX Engineer currently working as a Principal UX Engineer at{' '}
@@ -90,6 +71,19 @@ const Index: React.FC = () => {
         <Anchor href="https://www.abacusemedia.com/">Abacus e-media</Anchor>.
       </Paragraph>
 
+      <Box marginBottom="space140" marginTop="space140">
+        <Heading as="h2" variant="heading30">
+          Latest post
+        </Heading>
+        <FeaturePost post={lastestPost} />
+
+        <Text as="div" marginTop="space30" textAlign="center">
+          <Link href="/posts/" passHref>
+            <Anchor href="/posts/">All posts</Anchor>
+          </Link>
+        </Text>
+      </Box>
+
       {twitterData && (
         <Box marginBottom="space140" marginTop="space140">
           <Card>
@@ -105,13 +99,16 @@ const Index: React.FC = () => {
             >
               <MediaObject verticalAlign="center">
                 <MediaFigure spacing="space20">
-                  <Text as="span" color="colorTextBrandHighlight">
+                  <Text as="span" color="colorTextBrandHighlight" display="flex">
                     <TwitterSVG
-                      css={{
+                      aria-hidden="true"
+                      css={css({
+                        height: 'sizeIcon90',
+                        width: 'sizeIcon90',
                         path: {
                           fill: 'currentColor',
                         },
-                      }}
+                      })}
                     />
                   </Text>
                 </MediaFigure>
@@ -130,21 +127,6 @@ const Index: React.FC = () => {
           </Card>
         </Box>
       )}
-
-      <Heading as="h2" variant="heading20">
-        <Link href="/posts/" passHref>
-          <Anchor href="/posts/">Long form</Anchor>
-        </Link>
-      </Heading>
-      <UnorderedList>
-        {sortedPosts.map((post) => (
-          <ListItem key={useUID()}>
-            <Link href={post.__resourcePath.replace('index.mdx', '')} passHref>
-              <Anchor href={post.__resourcePath.replace('index.mdx', '')}>{post.title}</Anchor>
-            </Link>
-          </ListItem>
-        ))}
-      </UnorderedList>
     </>
   );
 };
