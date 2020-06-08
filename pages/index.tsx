@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useUID } from 'react-uid';
 import Link from 'next/link';
 import useSWR from 'swr';
 import fetch from 'isomorphic-unfetch';
@@ -16,8 +15,6 @@ import {
   MediaFigure,
   MediaBody,
 } from '@twilio-paste/core';
-import sortBy from 'lodash.sortby';
-import reverse from 'lodash.reverse';
 // @ts-ignore
 import { frontMatter as lastestPost } from './posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.mdx';
 import TwitterSVG from '../svg/icons/ic-twitter.svg';

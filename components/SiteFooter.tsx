@@ -30,9 +30,9 @@ export const SiteFooterList: React.FC<{}> = (props) => (
   />
 );
 
-export const SiteFooterListItem: React.FC<{}> = (props) => {
-  return <Box as="li" listStyleType="none" {...props} />;
-};
+export const SiteFooterListItem: React.FC<{}> = (props) => (
+  <Box as="li" listStyleType="none" {...props} />
+);
 
 export const SiteFooterIconWrapper: React.FC<{}> = (props) => (
   <Text
@@ -46,55 +46,53 @@ export const SiteFooterIconWrapper: React.FC<{}> = (props) => (
   />
 );
 
-export const SiteFooter: React.FC<{}> = () => {
-  return (
-    <StyledSiteFooter>
-      <SiteFooterList>
-        <SiteFooterListItem>
-          <Link href="/">
-            <Anchor href="/">Home</Anchor>
-          </Link>
-        </SiteFooterListItem>
-        <SiteFooterListItem>
-          <Anchor href="https://www.twitter.com/SiTaggart">
-            <SiteFooterIconWrapper>
-              <TwitterSVG
-                css={css({
-                  height: 'sizeIcon90',
-                  width: 'sizeIcon90',
-                  path: { fill: 'currentColor' },
-                })}
-              />
-            </SiteFooterIconWrapper>
-          </Anchor>
-        </SiteFooterListItem>
-        <SiteFooterListItem>
-          <Anchor href="https://www.github.com/SiTaggart">
-            <SiteFooterIconWrapper>
-              <GithubSVG
-                css={css({
-                  height: 'sizeIcon90',
-                  width: 'sizeIcon90',
-                  path: { fill: 'currentColor' },
-                })}
-              />
-            </SiteFooterIconWrapper>
-          </Anchor>
-        </SiteFooterListItem>
-        <SiteFooterListItem>
-          <Anchor href="https://www.linkedin.com/in/SiTaggart">
-            <SiteFooterIconWrapper>
-              <LinkedinSVG
-                css={css({
-                  height: 'sizeIcon90',
-                  width: 'sizeIcon90',
-                  path: { fill: 'currentColor' },
-                })}
-              />
-            </SiteFooterIconWrapper>
-          </Anchor>
-        </SiteFooterListItem>
-      </SiteFooterList>
-    </StyledSiteFooter>
-  );
-};
+export const SiteFooter: React.FC<{}> = () => (
+  <StyledSiteFooter>
+    <SiteFooterList>
+      <SiteFooterListItem>
+        <Link href="/">
+          <Anchor href="/">Home</Anchor>
+        </Link>
+      </SiteFooterListItem>
+      <SiteFooterListItem>
+        <Anchor href="https://www.twitter.com/SiTaggart">
+          <SiteFooterIconWrapper>
+            <TwitterSVG
+              css={css({
+                height: 'sizeIcon90',
+                width: 'sizeIcon90',
+                path: { fill: 'currentColor' },
+              })}
+            />
+          </SiteFooterIconWrapper>
+        </Anchor>
+      </SiteFooterListItem>
+      <SiteFooterListItem>
+        <Anchor href="https://www.github.com/SiTaggart">
+          <SiteFooterIconWrapper>
+            <GithubSVG
+              css={css({
+                height: 'sizeIcon90',
+                width: 'sizeIcon90',
+                path: { fill: 'currentColor' },
+              })}
+            />
+          </SiteFooterIconWrapper>
+        </Anchor>
+      </SiteFooterListItem>
+      <SiteFooterListItem>
+        <Anchor href="https://www.linkedin.com/in/SiTaggart">
+          <SiteFooterIconWrapper>
+            <LinkedinSVG
+              css={css({
+                height: 'sizeIcon90',
+                width: 'sizeIcon90',
+                path: { fill: 'currentColor' },
+              })}
+            />
+          </SiteFooterIconWrapper>
+        </Anchor>
+      </SiteFooterListItem>
+    </SiteFooterList>
+  </StyledSiteFooter>
+);
