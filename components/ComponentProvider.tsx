@@ -77,7 +77,7 @@ export const ComponentProvider: React.FC<{}> = ({ children }) => (
       strong: (props: React.ComponentProps<'strong'>): React.ReactElement => <strong {...props} />,
       del: (props: React.ComponentProps<'del'>): React.ReactElement => <del {...props} />,
       hr: (props: SeparatorProps): React.ReactElement => (
-        <Separator verticalSpacing="space70" {...props} />
+        <Separator {...props} orientation="horizontal" verticalSpacing="space70" />
       ),
       a: (props: AnchorProps): React.ReactElement => (
         <Link {...props} passHref>

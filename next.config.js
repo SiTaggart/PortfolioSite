@@ -1,3 +1,4 @@
+const nodePath = require('path');
 const mdxPrism = require('mdx-prism');
 
 const withMdxEnhanced = require('next-mdx-enhanced')({
@@ -6,6 +7,22 @@ const withMdxEnhanced = require('next-mdx-enhanced')({
   fileExtensions: ['md', 'mdx'],
   remarkPlugins: [],
   rehypePlugins: [mdxPrism],
+  extendFrontMatter: {
+    process: (mdxContent, frontMatter) => {
+      const pagesDir = nodePath.resolve(__dirname, './pages');
+      const path = `/${frontMatter.__resourcePath}`
+        .replace(pagesDir, '')
+        .replace('.mdx', '')
+        .replace('.md', '')
+        .replace('.tsx', '')
+        .replace(/^\/index$/, '/')
+        .replace(/\/index$/, '');
+      return {
+        path,
+        url: `http://www.simontaggart.com${path}`,
+      };
+    },
+  },
 });
 
 module.exports = withMdxEnhanced({

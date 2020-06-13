@@ -5,12 +5,14 @@ import { ThemeProvider } from 'emotion-theming';
 import { Global } from '@emotion/core';
 import styled from '@emotion/styled';
 import { css, CSSObject } from '@styled-system/css';
+import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
 import { pasteBaseStyles } from '@twilio-paste/theme';
 import { Box } from '@twilio-paste/core';
 import { PortfolioTheme } from '../theme';
 import { getPrismStyles } from '../theme/prism';
 import { ComponentProvider } from '../components/ComponentProvider';
 import { SiteFooter } from '../components/SiteFooter';
+import defaultSeoConfig from '../next-seo.json';
 
 const StyledBase = styled(Box)(pasteBaseStyles);
 
@@ -44,6 +46,19 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
         rel="stylesheet"
       />
     </Head>
+    <DefaultSeo {...defaultSeoConfig} />
+    <SocialProfileJsonLd
+      name="Simon Taggart"
+      sameAs={[
+        'https://twitter.com/sitaggart',
+        'https://github.com/SiTaggart',
+        'https://www.facebook.com/sitaggart',
+        'https://www.instagram.com/sitaggart/',
+        'https://www.linkedin.com/in/SiTaggart/',
+      ]}
+      type="Person"
+      url="https://www.simontaggart.com"
+    />
     <ComponentProvider>
       <ThemeProvider theme={PortfolioTheme}>
         <Global styles={globalStyles({ theme: PortfolioTheme })} />

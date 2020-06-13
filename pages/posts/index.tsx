@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useUID } from 'react-uid';
 import reverse from 'lodash.reverse';
 import sortBy from 'lodash.sortby';
+import { NextSeo } from 'next-seo';
 import { Box } from '@twilio-paste/core';
 import { SiteMainHeading } from '../../components/SiteMainHeading';
 import { SiteSubHeading } from '../../components/SiteSubHeading';
@@ -13,6 +14,7 @@ const Posts: React.FC = () => {
   const sortedPosts = reverse(sortBy(allPosts, ['date']));
   return (
     <>
+      <NextSeo title="Posts" />
       <SiteMainHeading>
         Simon <br /> Taggart
       </SiteMainHeading>
