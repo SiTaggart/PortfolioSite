@@ -46,7 +46,7 @@
     "@sitaggart/prettier-config": "0.2.0",
     "bundlesize": "0.18.0",
     "bundlewatch": "0.2.7",
-    "eslint": "7.1.0",
+    "eslint": "7.2.0",
     "husky": "4.2.5",
     "now": "19.1.0",
     "percy": "0.26.9",
