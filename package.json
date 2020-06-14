@@ -33,7 +33,7 @@
     "react-dom": "16.13.1",
     "react-uid": "2.3.0",
     "styled-system": "5.1.5",
-    "swr": "0.2.2",
+    "swr": "0.2.3",
     "twit": "2.2.11",
     "twitter-text": "3.1.0"
   },
