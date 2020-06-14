@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { Box, Text, Anchor } from '@twilio-paste/core';
+import { Box, Text, Anchor, ScreenReaderOnly } from '@twilio-paste/core';
 import css from '@styled-system/css';
 import TwitterSVG from '../svg/icons/ic-twitter.svg';
 import GithubSVG from '../svg/icons/ic-github.svg';
@@ -64,6 +64,7 @@ export const SiteFooter: React.FC<{}> = () => (
                 path: { fill: 'currentColor' },
               })}
             />
+            <ScreenReaderOnly>Find me on Twitter</ScreenReaderOnly>
           </SiteFooterIconWrapper>
         </Anchor>
       </SiteFooterListItem>
@@ -77,6 +78,7 @@ export const SiteFooter: React.FC<{}> = () => (
                 path: { fill: 'currentColor' },
               })}
             />
+            <ScreenReaderOnly>Find me on GitHub</ScreenReaderOnly>
           </SiteFooterIconWrapper>
         </Anchor>
       </SiteFooterListItem>
@@ -90,6 +92,7 @@ export const SiteFooter: React.FC<{}> = () => (
                 path: { fill: 'currentColor' },
               })}
             />
+            <ScreenReaderOnly>Find me on LinkedIn</ScreenReaderOnly>
           </SiteFooterIconWrapper>
         </Anchor>
       </SiteFooterListItem>
