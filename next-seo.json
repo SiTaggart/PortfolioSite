@@ -1,0 +1,20 @@
+{
+  "title": "Simon Taggart",
+  "titleTemplate": "%s | Simon Taggart",
+  "description": "UX Engineer, Design Systems Builder, Accessibility Specialist.",
+  "additionalMetaTags": [{ "property": "author", "content": "Simon Taggart" }],
+  "twitter": {
+    "cardType": "summary_large_image",
+    "handle": "SiTaggart",
+    "site": "SiTaggart"
+  },
+  "openGraph": {
+    "type": "website",
+    "locale": "en_US",
+    "site_name": "Simon Taggart",
+    "profile": {
+      "firstName": "Simon",
+      "lastName": "Taggart"
+    }
+  }
+}
