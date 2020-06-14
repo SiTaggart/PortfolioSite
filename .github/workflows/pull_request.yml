@@ -37,6 +37,6 @@ jobs:
           CI_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
           CI_BRANCH: ${{ github.ref }}
       - name: Run percy
-        run: yarn percy
+        run: yarn cypress:ci
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
