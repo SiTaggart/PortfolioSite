@@ -16,7 +16,7 @@
     "@twilio-paste/icons": "2.2.5",
     "@twilio-paste/reakit-library": "0.4.1",
     "@twilio-paste/style-props": "1.2.2",
-    "@twilio-paste/theme": "3.2.1",
+    "@twilio-paste/theme": "3.2.2",
     "@twilio-paste/types": "3.0.9",
     "emotion-theming": "10.0.27",
     "isomorphic-unfetch": "3.0.0",
