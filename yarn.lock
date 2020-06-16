@@ -1865,12 +1865,14 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/paragraph/-/paragraph-1.1.11.tgz#a0580a989053d6935782f031480621291324b9de"
   integrity sha512-21ng4KtsWIEJ+0d4NXfR6szI/52J+mMBTnbCbJOU2mbQ+Tlf6gAIZhZQVCnBdwVgzJFn0kpZQEPIc3fxJ5ABfQ==
 
-"@twilio-paste/reakit-library@0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/reakit-library/-/reakit-library-0.4.1.tgz#60b03675459e23a2ac0071aabdf81bf2f9b29392"
-  integrity sha512-+e3sxQ1sSqUlKkWACUMVjIQbMye9xjGKqv8RYtevdrMRKk5QOXsuOjfWxM7EOCB+Pp/yVj9ElQPSgNw3mcsb0w==
+"@twilio-paste/reakit-library@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/reakit-library/-/reakit-library-0.5.0.tgz#40ac75a95be0a5b6d3310acdf465f16f35156c1e"
+  integrity sha512-ByCy7/oZBKkpzoyRbgsnaAg1yBgkmcax8gphWtrFpb//eyc+4B4ak4XFMO5FJnPKAUBebeMIheEb+QNn6oTRXQ==
   dependencies:
     reakit "1.0.4"
+    reakit-system "0.12.2"
+    reakit-utils "0.12.1"
 
 "@twilio-paste/screen-reader-only@^1.1.9":
   version "1.1.9"
@@ -8945,14 +8947,14 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-reakit-system@^0.12.2:
+reakit-system@0.12.2, reakit-system@^0.12.2:
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.12.2.tgz#f1a8c3341f75f3e52eb75ef4ff10663c70bbe6de"
   integrity sha512-+/tZ/atDbHhDOapcIxniNZd7z0cze1L9MJBEnvykqM/bdqUE59Eb/OQ6odPZwK35gcN1lNyZtw7DgnFrmsDi4w==
   dependencies:
     reakit-utils "^0.12.1"
 
-reakit-utils@^0.12.1:
+reakit-utils@0.12.1, reakit-utils@^0.12.1:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.12.1.tgz#716edd0a468ed4472c7b780450125478d6dce898"
   integrity sha512-P66TYzmQFD5CqNWcRvbPb6B5nXRLfiWqwTJhVGDUeOJTSdlnjfsBuOIauojfuS+p4yeyFVsUFsFwuBM6uZ8F3A==
