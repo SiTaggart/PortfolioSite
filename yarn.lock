@@ -1911,10 +1911,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/text/-/text-2.1.10.tgz#ad75098112f92df000085c189d3481f01cb13605"
   integrity sha512-pyR7bxMAQy6zjxLmtkzrWk4FNHRNa3+eP+GovsNvH38egVodHlq9OMexCJuGQ5DXXRbwyLGmQ7PbTlxaO1UtjQ==
 
-"@twilio-paste/theme@3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.2.tgz#be3a5fc50b784ba58aac8bcf005bc7a87035dc00"
-  integrity sha512-ogGRv0t5LG669ngAPq8wRJ+LqwsoVEwkobJMVFvyhoDbjhktP5COMkxL9KZSmQ3hx2oL3JB0Zi/g7Z3WCjFA6g==
+"@twilio-paste/theme@3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.3.tgz#8aad5c8bc97955d2edcdc6ba90d3d866b4adc9db"
+  integrity sha512-umcyjRHqjYkJ6O0aArHUR8+vQcE7u5vGC+/iz+fVCufbjkefIHTHgohgRJGws1XVAPf+6MGdtbsT8n4WUp7muQ==
   dependencies:
     emotion-theming "^10.0.10"
 
