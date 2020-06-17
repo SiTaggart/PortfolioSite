@@ -1894,10 +1894,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/stack/-/stack-0.1.9.tgz#9b6047142842ff6044077e7fc756bed27f0fc5af"
   integrity sha512-FBROI3+8wvBeSTFsqD7z+C58dVmD//R+1n3yQhnevgfIJf05Aic6Oh3ePgPRjR8KX6MOq2mfsedoxAWIjwK3+A==
 
-"@twilio-paste/style-props@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/style-props/-/style-props-1.2.2.tgz#03eb7421a7032addf65c38cede766b94551f483b"
-  integrity sha512-i//w2sY1IOZy21sRpbrzlK+P00oUm1TqkfcAH/MgCLic2pvym/uM3r5W4NmEDkfTmjKSx14YUFnrWs0YzPikRg==
+"@twilio-paste/style-props@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/style-props/-/style-props-1.2.3.tgz#8b4fd9cdb69867c39d254063d9c6712c6621ea88"
+  integrity sha512-8WldarUp53APFDr6Z6eKv0ihKQeeEYBkE/gr+yo/LZih7HFlicxWfl120P0aVzY4txN/GH6dsyquoJDBm3Vn8w==
   dependencies:
     "@types/styled-system" "^5.1.3"
 
