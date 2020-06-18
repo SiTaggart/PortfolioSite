@@ -1938,12 +1938,12 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/stack/-/stack-0.1.9.tgz#9b6047142842ff6044077e7fc756bed27f0fc5af"
   integrity sha512-FBROI3+8wvBeSTFsqD7z+C58dVmD//R+1n3yQhnevgfIJf05Aic6Oh3ePgPRjR8KX6MOq2mfsedoxAWIjwK3+A==
 
-"@twilio-paste/style-props@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/style-props/-/style-props-1.2.3.tgz#8b4fd9cdb69867c39d254063d9c6712c6621ea88"
-  integrity sha512-8WldarUp53APFDr6Z6eKv0ihKQeeEYBkE/gr+yo/LZih7HFlicxWfl120P0aVzY4txN/GH6dsyquoJDBm3Vn8w==
+"@twilio-paste/style-props@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/style-props/-/style-props-1.2.4.tgz#68672be7b038a6e5ac4eba4d776f80cee50f27f1"
+  integrity sha512-BhmV/iW8CRN6Vn05ngcEus/w9Q6E4C9oD8A0EjIu/LWsHNv26CoXWPq59ibZtdyKqF9h9UT+C8J7tpe+pw1rFQ==
   dependencies:
-    "@types/styled-system" "^5.1.3"
+    csstype "^2.6.10"
 
 "@twilio-paste/tabs-primitive@^0.1.0":
   version "0.1.0"
@@ -2111,13 +2111,6 @@
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
   integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
-
-"@types/styled-system@^5.1.3":
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.9.tgz#8baac8f6eca9e0bd5768c175ca5ce1f2d6f61ade"
-  integrity sha512-QlWv6tmQV8dqk8s+LSLb9QAtmuQEnfv4f8lKKZkMgDqRFVmxJDBwEw0u4zhpxp56u0hdR+TCIk9dGfOw3TkCoQ==
-  dependencies:
-    csstype "^2.6.9"
 
 "@types/styled-system__css@5.0.11":
   version "5.0.11"
@@ -4101,7 +4094,7 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
-csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.6, csstype@^2.6.9:
+csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.10, csstype@^2.6.6:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
