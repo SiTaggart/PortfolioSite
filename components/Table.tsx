@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { css } from '@styled-system/css';
-import { Box } from '@twilio-paste/core';
+import { Box, Text } from '@twilio-paste/core';
 
 export const Table: React.FC<{}> = (props) => (
   <Box
     as="table"
-    css={css({ borderCollapse: 'collapse', tableLayout: 'fixed' })}
+    css={{ borderCollapse: 'collapse', tableLayout: 'fixed' }}
     marginBottom="space120"
     marginTop="space120"
     width="100%"
@@ -32,10 +31,14 @@ export const Tr: React.FC<{}> = (props) => (
     {...props}
   />
 );
+export const ThTextStyles: React.FC = ({ children, ...props }) => (
+  <Text as="th" color="colorTextWeak" fontWeight="fontWeightSemibold" textAlign="left" {...props}>
+    {children}
+  </Text>
+);
 export const Th: React.FC<{}> = (props) => (
   <Box
-    as="th"
-    css={css({ color: 'colorTextWeak', fontWeight: 'fontWeightSemibold', textAlign: 'left' })}
+    as={ThTextStyles as any}
     padding="space10"
     paddingLeft="space20"
     paddingRight="space20"

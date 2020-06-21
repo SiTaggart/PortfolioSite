@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { AppProps } from 'next/app';
-import { ThemeProvider } from 'emotion-theming';
-import { Global } from '@emotion/core';
-import styled from '@emotion/styled';
-import { css, CSSObject } from '@styled-system/css';
+import { StylingGlobals, styled, ThemeProvider, css } from '@twilio-paste/styling-library';
+import { CSSObject } from '@styled-system/css';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
 import { pasteBaseStyles } from '@twilio-paste/theme';
 import { Box } from '@twilio-paste/core';
@@ -49,8 +47,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
     />
     <ComponentProvider>
       <ThemeProvider theme={PortfolioTheme}>
-        <Global styles={globalStyles({ theme: PortfolioTheme })} />
-        <Global styles={getPrismStyles({ theme: PortfolioTheme })} />
+        <StylingGlobals styles={globalStyles({ theme: PortfolioTheme })} />
+        <StylingGlobals styles={getPrismStyles({ theme: PortfolioTheme })} />
         <StyledBase
           as="main"
           // @ts-ignore
