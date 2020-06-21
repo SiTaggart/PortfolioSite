@@ -1,4 +1,5 @@
-import { css, CSSObject } from '@styled-system/css';
+import { css } from '@twilio-paste/styling-library';
+import { CSSObject } from '@styled-system/css';
 
 interface PrismStylesProps {
   theme: {};

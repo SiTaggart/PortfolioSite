@@ -23,14 +23,7 @@ import { Table, Thead, Tbody, Tfoot, Tr, Th, Td } from './Table';
 import { Blockquote } from './Blockquote';
 
 export const Image: React.FC<{}> = (props) => (
-  <Box
-    as="img"
-    css={{ maxWidth: '100%' }}
-    display="block"
-    marginLeft="auto"
-    marginRight="auto"
-    {...props}
-  />
+  <Box as="img" display="block" marginLeft="auto" marginRight="auto" maxWidth="100%" {...props} />
 );
 
 export const ComponentProvider: React.FC<{}> = ({ children }) => (

@@ -23,9 +23,7 @@ const Post = ({ title, url, date, description }: FrontMatterShape) => ({
     />
     <Text
       as="h1"
-      css={{
-        color: '#fffffe',
-      }}
+      color="colorTextWeak"
       fontSize={['fontSize80', 'fontSize100']}
       letterSpacing="-1px"
       lineHeight={['lineHeight80', 'lineHeight100']}

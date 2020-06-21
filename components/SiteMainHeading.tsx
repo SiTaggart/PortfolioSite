@@ -4,9 +4,7 @@ import { Text } from '@twilio-paste/core';
 export const SiteMainHeading: React.FC<{}> = (props) => (
   <Text
     as="h1"
-    css={{
-      color: '#fffffe',
-    }}
+    color="colorTextWeak"
     fontSize={['fontSize80', 'fontSize110']}
     fontWeight="fontWeightBold"
     letterSpacing="-1px"

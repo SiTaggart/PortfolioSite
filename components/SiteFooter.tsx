@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { Box, Text, Anchor, ScreenReaderOnly } from '@twilio-paste/core';
-import css from '@styled-system/css';
 import TwitterSVG from '../svg/icons/ic-twitter.svg';
 import GithubSVG from '../svg/icons/ic-github.svg';
 import LinkedinSVG from '../svg/icons/ic-linkedin.svg';
@@ -57,12 +56,16 @@ export const SiteFooter: React.FC<{}> = () => (
       <SiteFooterListItem>
         <Anchor href="https://www.twitter.com/SiTaggart">
           <SiteFooterIconWrapper>
-            <TwitterSVG
-              css={css({
-                height: 'sizeIcon90',
-                width: 'sizeIcon90',
-                path: { fill: 'currentColor' },
-              })}
+            <Box
+              aria-hidden="true"
+              as={TwitterSVG as any}
+              css={{
+                path: {
+                  fill: 'currentColor',
+                },
+              }}
+              height="sizeIcon90"
+              width="sizeIcon90"
             />
             <ScreenReaderOnly>Find me on Twitter</ScreenReaderOnly>
           </SiteFooterIconWrapper>
@@ -71,12 +74,16 @@ export const SiteFooter: React.FC<{}> = () => (
       <SiteFooterListItem>
         <Anchor href="https://www.github.com/SiTaggart">
           <SiteFooterIconWrapper>
-            <GithubSVG
-              css={css({
-                height: 'sizeIcon90',
-                width: 'sizeIcon90',
-                path: { fill: 'currentColor' },
-              })}
+            <Box
+              aria-hidden="true"
+              as={GithubSVG as any}
+              css={{
+                path: {
+                  fill: 'currentColor',
+                },
+              }}
+              height="sizeIcon90"
+              width="sizeIcon90"
             />
             <ScreenReaderOnly>Find me on GitHub</ScreenReaderOnly>
           </SiteFooterIconWrapper>
@@ -85,12 +92,16 @@ export const SiteFooter: React.FC<{}> = () => (
       <SiteFooterListItem>
         <Anchor href="https://www.linkedin.com/in/SiTaggart">
           <SiteFooterIconWrapper>
-            <LinkedinSVG
-              css={css({
-                height: 'sizeIcon90',
-                width: 'sizeIcon90',
-                path: { fill: 'currentColor' },
-              })}
+            <Box
+              aria-hidden="true"
+              as={LinkedinSVG as any}
+              css={{
+                path: {
+                  fill: 'currentColor',
+                },
+              }}
+              height="sizeIcon90"
+              width="sizeIcon90"
             />
             <ScreenReaderOnly>Find me on LinkedIn</ScreenReaderOnly>
           </SiteFooterIconWrapper>
