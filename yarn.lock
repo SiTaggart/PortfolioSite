@@ -1973,7 +1973,7 @@
   dependencies:
     csstype "^2.6.10"
 
-"@twilio-paste/styling-library@^0.1.0":
+"@twilio-paste/styling-library@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@twilio-paste/styling-library/-/styling-library-0.1.0.tgz#172f239d633af4ceb603f19b3ea27a5f3df67432"
   integrity sha512-NrhZhKIDkOyOp65WTQWvuZ/ZcN7wj5v2BO2pm4XoQDRtHxWyqt8DiNUUim2z9BwctFl/PhOOSsZpqAeOv5Ir2A==
