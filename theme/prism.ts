@@ -1,8 +1,9 @@
 import { css } from '@twilio-paste/styling-library';
 import { CSSObject } from '@styled-system/css';
+import { ThemeShape } from '@twilio-paste/theme';
 
 interface PrismStylesProps {
-  theme: {};
+  theme: ThemeShape;
 }
 
 // inspiratiopn from https://github.com/SaraVieira/prism-theme-night-owl

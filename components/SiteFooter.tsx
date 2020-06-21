@@ -5,7 +5,7 @@ import TwitterSVG from '../svg/icons/ic-twitter.svg';
 import GithubSVG from '../svg/icons/ic-github.svg';
 import LinkedinSVG from '../svg/icons/ic-linkedin.svg';
 
-export const StyledSiteFooter: React.FC<{}> = (props) => (
+export const StyledSiteFooter: React.FC = (props) => (
   <Box
     as="footer"
     marginLeft={['space0', 'space50', 'space100']}
@@ -17,7 +17,7 @@ export const StyledSiteFooter: React.FC<{}> = (props) => (
   />
 );
 
-export const SiteFooterList: React.FC<{}> = (props) => (
+export const SiteFooterList: React.FC = (props) => (
   <Box
     alignItems="center"
     as="ul"
@@ -29,11 +29,11 @@ export const SiteFooterList: React.FC<{}> = (props) => (
   />
 );
 
-export const SiteFooterListItem: React.FC<{}> = (props) => (
+export const SiteFooterListItem: React.FC = (props) => (
   <Box as="li" listStyleType="none" {...props} />
 );
 
-export const SiteFooterIconWrapper: React.FC<{}> = (props) => (
+export const SiteFooterIconWrapper: React.FC = (props) => (
   <Text
     _hover={{
       color: 'colorTextLink',
@@ -45,7 +45,7 @@ export const SiteFooterIconWrapper: React.FC<{}> = (props) => (
   />
 );
 
-export const SiteFooter: React.FC<{}> = () => (
+export const SiteFooter: React.FC = () => (
   <StyledSiteFooter>
     <SiteFooterList>
       <SiteFooterListItem>

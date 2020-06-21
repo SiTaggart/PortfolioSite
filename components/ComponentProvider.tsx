@@ -22,11 +22,11 @@ import { CodeBlock, InlineCode } from './CodeBlocks';
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td } from './Table';
 import { Blockquote } from './Blockquote';
 
-export const Image: React.FC<{}> = (props) => (
+export const Image: React.FC = (props) => (
   <Box as="img" display="block" marginLeft="auto" marginRight="auto" maxWidth="100%" {...props} />
 );
 
-export const ComponentProvider: React.FC<{}> = ({ children }) => (
+export const ComponentProvider: React.FC = ({ children }) => (
   <MDXProvider
     components={{
       h1: (props: HeadingProps): React.ReactElement => (
