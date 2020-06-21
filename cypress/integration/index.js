@@ -10,8 +10,14 @@ describe('Homepage', () => {
       cy.visit('http://localhost:3000/posts');
       cy.document().should('have.property', 'title').and('eq', 'Posts | Simon Taggart');
       cy.percySnapshot('Posts snapshot');
-      cy.get('h2').eq(0).click();
+      cy.get('li:nth-child(1) h2 > a').click();
       cy.percySnapshot('Post snapshot');
+    });
+    it('should load a post', () => {
+      cy.visit('http://localhost:3000/');
+      cy.get('a[href="/posts/"]').click();
+      cy.get('li:nth-child(3) h2 > a').click();
+      cy.percySnapshot('Post detailed snapshot');
     });
   });
 });
