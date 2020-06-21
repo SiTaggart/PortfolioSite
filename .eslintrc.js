@@ -10,7 +10,7 @@ module.exports = {
     'react/display-name': 0,
     'react/prop-types': 0,
     'unicorn/filename-case': 0,
-    '@typescript-eslint/ban-ts-ignore': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
     'no-underscore-dangle': 0,
   },
 };

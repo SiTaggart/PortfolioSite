@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text } from '@twilio-paste/core';
 
-export const SiteSubHeading: React.FC<{}> = (props) => (
+export const SiteSubHeading: React.FC = (props) => (
   <Text
     as="p"
     color="colorTextBrandHighlight"

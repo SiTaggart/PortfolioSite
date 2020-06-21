@@ -3,7 +3,7 @@ import { AppProps } from 'next/app';
 import { StylingGlobals, styled, ThemeProvider, css } from '@twilio-paste/styling-library';
 import { CSSObject } from '@styled-system/css';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
-import { pasteBaseStyles } from '@twilio-paste/theme';
+import { pasteBaseStyles, ThemeShape } from '@twilio-paste/theme';
 import { Box } from '@twilio-paste/core';
 import { PortfolioTheme } from '../theme';
 import { getPrismStyles } from '../theme/prism';
@@ -14,7 +14,7 @@ import defaultSeoConfig from '../next-seo.json';
 const StyledBase = styled(Box)(pasteBaseStyles);
 
 interface GlobalStylesProps {
-  theme: {};
+  theme: ThemeShape;
 }
 const globalStyles = (props: GlobalStylesProps): CSSObject =>
   css({
