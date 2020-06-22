@@ -1771,10 +1771,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/anchor/-/anchor-1.1.24.tgz#b2f36f8f04940568e33faba4a790aebb114a01c2"
   integrity sha512-9ew6xUWEPSiip+21C8iJ8ygCZJOJ3WuMPyc/3kW5P5M+mHo8S2CezaWgN0C/2ZUUxqSv+BeOoGpeTb8mn0AvYQ==
 
-"@twilio-paste/animation-library@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/animation-library/-/animation-library-0.2.0.tgz#0bd9a2dd2f62f99dc99a58e4a38b42622e0ce5ac"
-  integrity sha512-28TaLjIyMTBsWEaydb2mDHrKXqyh91oT2ZAdRH7nyuBOVUqsVCbwvW1vJCINzoV6iUdH872tTIteBuhPkJMUIQ==
+"@twilio-paste/animation-library@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/animation-library/-/animation-library-0.2.1.tgz#a66fd0ed1ea696b76de747a9070e4bcad0fa81c5"
+  integrity sha512-ia1MosvDLUZkj1VHeRLx2IbEKDlZ07uMCJxlBh7H9QCaBj823hNTnANK3M/iKtWl6sV8pLkarGJUaUxj2PJqXQ==
   dependencies:
     "@react-spring/shared" "9.0.0-rc.3"
     "@react-spring/web" "9.0.0-rc.3"
