@@ -51,7 +51,7 @@
     "babel-plugin-import-glob-array": "0.2.0",
     "babel-plugin-inline-react-svg": "1.1.1",
     "bundlewatch": "0.2.7",
-    "cypress": "4.8.0",
+    "cypress": "4.9.0",
     "eslint": "7.2.0",
     "husky": "4.2.5",
     "now": "19.1.1",
