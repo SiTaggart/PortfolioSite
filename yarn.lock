@@ -1622,10 +1622,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sitaggart/eslint-config-ts@0.5.142":
-  version "0.5.142"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.142.tgz#f0117797fb2c5767b3bc804b690d9a4bdce62ee2"
-  integrity sha512-V9wYunb5/PZaL7elwGVAIBvmQJ+tOeDLGs4cgQmpaMOcEJ0iRUMGV4TlQhDizTSOsDKMHwVyZYzrxBFstWtKxQ==
+"@sitaggart/eslint-config-ts@0.5.143":
+  version "0.5.143"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.143.tgz#b4ecf5723d376c7b8680e3b42a515ade2dec3d10"
+  integrity sha512-UsXEe5/F0+l3kYIv2prLQCVJTvLRoyOm9hkYQkwg/2/zw+FxzlHfGJqMQ/N1TuLJyXy3jgMijfuXrr9YrzANSw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "3.5.0"
     "@typescript-eslint/parser" "3.5.0"
@@ -1641,7 +1641,7 @@
     eslint-plugin-node "11.1.0"
     eslint-plugin-prettier "3.1.4"
     eslint-plugin-promise "4.2.1"
-    eslint-plugin-react "7.20.1"
+    eslint-plugin-react "7.20.2"
     eslint-plugin-react-hooks "4.0.4"
     eslint-plugin-standard "4.0.1"
     eslint-plugin-unicorn "20.1.0"
@@ -4925,10 +4925,10 @@ eslint-plugin-react-hooks@4.0.4:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.4.tgz#aed33b4254a41b045818cacb047b81e6df27fa58"
   integrity sha512-equAdEIsUETLFNCmmCkiCGq6rkSK5MoJhXFPFYeUebcjKgBmWWcgVOqZyQC8Bv1BwVCnTq9tBxgJFgAJTWoJtA==
 
-eslint-plugin-react@7.20.1:
-  version "7.20.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.1.tgz#87fcf8d0de225817ba0b2d8f38740733d61ff4ba"
-  integrity sha512-HitovDhscMmu3uOod3aqZRdKURdXgmlkptEue958gJBmIJO9hvgO4uZyqsJ4+22WqJVP3CsTKfqWSuTlJL6b8w==
+eslint-plugin-react@7.20.2:
+  version "7.20.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.2.tgz#b0d72abcd94c59c842338aa09c800808219ea77d"
+  integrity sha512-J3BdtsPNbcF/CG9HdyLx7jEtC7tuODODGldkS9P1zU2WMoHPdcsN2enUopgIaec5f9eYhSFI5zQAaWA/dgv2zw==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flatmap "^1.2.3"
