@@ -1993,10 +1993,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/text/-/text-2.1.14.tgz#2c1960287ceafe9e43b8824cbfd6bdaaf36d1439"
   integrity sha512-2by2mMRwbiGiZwZsxHU/D5Ouoof3lQ9AQvH6RCWUApqeBPCc8sVUxVFlrj6XiCZMBfNos/wexBuq4ZCFoo35qA==
 
-"@twilio-paste/theme@3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.4.tgz#85b713f5fcb853ab54d4e5e69dd508d023bee24c"
-  integrity sha512-OscsEE4gEYTx5gCSBHlYWnIlNXiLq6O0rmOk7BpjEOUePwsEy5T2+6pY2PLHOs0Z8OWNC72eHaXkdxCwjF+lSw==
+"@twilio-paste/theme@3.2.7":
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.7.tgz#f12cd7c7fe80cc8733b8a01db7f14ef43ac30877"
+  integrity sha512-NIbXmwA9C10X3L8VFK8zgq2Zy7HUIJDGhu6RpLvXLZoPY4/gIeHlShnxX1H65cOarV79b6F3m+RmTPfzcyeGew==
 
 "@twilio-paste/truncate@^1.0.9":
   version "1.0.9"
