@@ -1622,10 +1622,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sitaggart/eslint-config-ts@0.5.145":
-  version "0.5.145"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.145.tgz#5312d7a54ead719b83abc00372b08f20cf915ac0"
-  integrity sha512-gWIbC9qp6tWhhlZv+Dd0ikZzbs82OKIuK8gdbEx6wPPEiInf8/KpLMrRpMTsnZomsRj/HQJ4FKdF3TRhy2ZW0Q==
+"@sitaggart/eslint-config-ts@0.5.146":
+  version "0.5.146"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.146.tgz#2bb3b96ad60881b4edfa41e40fde354654c65e5e"
+  integrity sha512-7PZAtV4PvZIgpOazlUBubTlVMNay/025wkFSk1AZcvMf4RTUQ9yquLJXXMW2e9hj7Eo1c21kj3XqSbx3RWmc7w==
   dependencies:
     "@typescript-eslint/eslint-plugin" "3.5.0"
     "@typescript-eslint/parser" "3.5.0"
