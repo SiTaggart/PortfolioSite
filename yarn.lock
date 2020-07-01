@@ -1838,10 +1838,10 @@
     "@twilio-paste/text" "^2.1.14"
     "@twilio-paste/truncate" "^1.0.9"
 
-"@twilio-paste/design-tokens@5.2.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/design-tokens/-/design-tokens-5.2.2.tgz#1b8c8717c1939c2b43110fc68353b1d28d8eca7a"
-  integrity sha512-Fjy04xG+KGfOOdS7YnXTyailfHh4xfMluWBJ3sHjKZPktmKXNYfNFQ02vLyf+q47IbWNaboq4YU41VSzYEL+/w==
+"@twilio-paste/design-tokens@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/design-tokens/-/design-tokens-5.3.1.tgz#d331a803dd18e213f0cb04c40078fdbe777704f9"
+  integrity sha512-wZaa6xxT0F9/T8d1Nghm/gIdFYJoOJXDVls3jP1cZJ5vmA+Cc6xVjnsz6uez7su7CPOd0Va58bCXZ3CFrBDr3w==
 
 "@twilio-paste/disclosure-primitive@^0.1.6":
   version "0.1.6"
