@@ -11,7 +11,7 @@
     "@twilio-paste/design-tokens": "5.3.1",
     "@twilio-paste/dropdown-library": "0.1.2",
     "@twilio-paste/icons": "2.4.0",
-    "@twilio-paste/reakit-library": "0.5.0",
+    "@twilio-paste/reakit-library": "0.6.2",
     "@twilio-paste/style-props": "1.2.7",
     "@twilio-paste/styling-library": "0.1.0",
     "@twilio-paste/theme": "3.2.4",
