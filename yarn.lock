@@ -1848,10 +1848,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure-primitive/-/disclosure-primitive-0.1.6.tgz#d462f2462b9470a71ccaa9b9fe3b521426e58c6d"
   integrity sha512-Tx0JLIfEtTWx7FYHc6mOVMu44TicRFfekWuOdG/TkWJvdYMTUb4L7HyBffk87XMEn1RxVtxlLVfDNwjTjdQT9w==
 
-"@twilio-paste/dropdown-library@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/dropdown-library/-/dropdown-library-0.1.1.tgz#b1b6e05ad086ea23e0f96bb7f9e93827befec43c"
-  integrity sha512-vE7d22QOm1vJJPJ5Yl6yjZqCSWbe7LNFjAR14O0rCcSiXkfWhcDqZMsFXp+BnsE9EjUYoYox6DJYwU7o6jUlcA==
+"@twilio-paste/dropdown-library@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/dropdown-library/-/dropdown-library-0.1.2.tgz#763e82ef7d9911ee344ba602c2994d5b6db67d23"
+  integrity sha512-CytSiJd4LTkYcMaj+jjsk4DGsq0Hgm3UJiK4r0efxT0trD1ZtKUy4lDRcUqr1IclGM/WGxs+7Qna7BCN/GYKAA==
   dependencies:
     downshift "5.2.6"
 
