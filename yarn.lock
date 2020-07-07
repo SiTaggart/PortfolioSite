@@ -1622,10 +1622,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sitaggart/eslint-config-ts@0.5.148":
-  version "0.5.148"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.148.tgz#f196ddba82ca169729a8959796d06b78089b0733"
-  integrity sha512-SktfRzwjfn7w/YcEZ4h3bjpK/Gp5smY9s/WPG/zVXljW1uhOB+VvbxmeXPisfoyXz4E9Au5//yauEHA3TPW6Ow==
+"@sitaggart/eslint-config-ts@0.5.149":
+  version "0.5.149"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.149.tgz#13ee6e068040c8f63659ded5a9c6872228c1dfed"
+  integrity sha512-J3m7t1zSict52Ihp4ZjeaA7Cy7Olt8nFYcGCrwMf+rniJ/d7uk673peck0MUahTtyhaTLD3NVKGQ6tQUqwLDGw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "3.6.0"
     "@typescript-eslint/parser" "3.6.0"
@@ -1642,7 +1642,7 @@
     eslint-plugin-prettier "3.1.4"
     eslint-plugin-promise "4.2.1"
     eslint-plugin-react "7.20.3"
-    eslint-plugin-react-hooks "4.0.5"
+    eslint-plugin-react-hooks "4.0.6"
     eslint-plugin-standard "4.0.1"
     eslint-plugin-unicorn "20.1.0"
 
@@ -4921,10 +4921,10 @@ eslint-plugin-promise@4.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
-eslint-plugin-react-hooks@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.5.tgz#4879003aa38e5d05d0312175beb6e4a1f617bfcf"
-  integrity sha512-3YLSjoArsE2rUwL8li4Yxx1SUg3DQWp+78N3bcJQGWVZckcp+yeQGsap/MSq05+thJk57o+Ww4PtZukXGL02TQ==
+eslint-plugin-react-hooks@4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.6.tgz#4027ae451b5cd219928edd0ff9eab54a8ea82901"
+  integrity sha512-RDrsUR/BjwCECcWS+5bc7mWiU/M1IOizKt40Zuei5mn0Eydubiooh87aSCiZ/BGMSUF7P8AqyMEqQL0RsAihmw==
 
 eslint-plugin-react@7.20.3:
   version "7.20.3"
