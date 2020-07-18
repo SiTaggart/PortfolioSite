@@ -2395,10 +2395,10 @@
   resolved "https://registry.yarnpkg.com/@types/styled-system__theme-get/-/styled-system__theme-get-5.0.0.tgz#639edd3d39aad91b47746db1cbc4f5a0c6e640a7"
   integrity sha512-Q8B2vdj78SpPjvresEZbEgnPb7TBTFD0S8sz2HJCd1mn1xjnXzJZhXJFdfZb2KrybfjuJ0Suu3jg4hZz3SyVtg==
 
-"@types/twit@2.2.24":
-  version "2.2.24"
-  resolved "https://registry.yarnpkg.com/@types/twit/-/twit-2.2.24.tgz#20ec1cf1f6ab362393dd18b8271538d2456fd717"
-  integrity sha512-VUAPyx3tDlQjzJCLqClNjI9yWha7UCCdwGMnO2LeH5W9CA48PdsmNAKxGwbVVc7aMB5Wv3nZQ2WUaSAVAS/49Q==
+"@types/twit@2.2.25":
+  version "2.2.25"
+  resolved "https://registry.yarnpkg.com/@types/twit/-/twit-2.2.25.tgz#f06106e4f987371914f5022167aa56fc9186051f"
+  integrity sha512-D0qUDosknm3yhY/9oNb2Bky84Dvkgrsaj8nMXvNfW6smiWn2z58f3YGQdWQ2jWS33E/LnSxsG6jkOGPeG+2sXg==
   dependencies:
     "@types/geojson" "*"
     "@types/node" "*"
