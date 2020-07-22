@@ -2218,10 +2218,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/text/-/text-2.2.1.tgz#b3bcd4452be0556da50feba1633d2e114b635198"
   integrity sha512-wWYh3dTKDgyhji4958luFcYmYUQmYMtEnEz6a4aBsCWigcaVulP/Qgg48zv7I4SbrNA09uqOyEmEAuDk/XbP1Q==
 
-"@twilio-paste/theme@3.2.9":
-  version "3.2.9"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.9.tgz#c902007f6ebe2c0900900e87fb5ca26639315bd1"
-  integrity sha512-oHwi41MIGVJEThjsKx9ySrsuhHQTZse3tXvk/izT60gdXt5vaDc/839TZ/SV17L/OzA2/27ACYX17YVd4212VA==
+"@twilio-paste/theme@3.2.10":
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.10.tgz#60f6926f0993fbad523ddf237eb6affd87b6b2b8"
+  integrity sha512-s4W0Y77l9nQjuHe1ENC/A8px5r+9tll6SP+PcvTASxdHcoyuOctwWXlt+N0USuno1VUg4CFlcU6mPSdROxA7ZA==
 
 "@twilio-paste/tooltip-primitive@^0.1.2":
   version "0.1.2"
