@@ -1832,10 +1832,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@sitaggart/eslint-config-ts@0.5.160":
-  version "0.5.160"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.160.tgz#10207e2a3b560576fbba7c15b664e647eb975814"
-  integrity sha512-yI5NIcGHFrVBHffQ3dUyyEB4DEKXJSUby9lALtU8bL+f15dXrU+6tABqANLgOM3SHnGk1/WbA2gI5VNe/NA7zw==
+"@sitaggart/eslint-config-ts@0.5.161":
+  version "0.5.161"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.161.tgz#da58dfaff9e21dea534d3cee01c7d2989b20f1a7"
+  integrity sha512-sIY7Lw47kAq3uNyI2WwCgzbqpPpoN1qjerpmUE2KA1nh07B1U9Zco25Ilv+Sob5SbR8Cwj2h3F9KVuVRKTKydQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "3.7.1"
     "@typescript-eslint/parser" "3.7.1"
@@ -1846,7 +1846,7 @@
     eslint-plugin-cypress "2.11.1"
     eslint-plugin-eslint-comments "3.2.0"
     eslint-plugin-import "2.22.0"
-    eslint-plugin-jest "23.19.0"
+    eslint-plugin-jest "23.20.0"
     eslint-plugin-jsx-a11y "6.3.1"
     eslint-plugin-node "11.1.0"
     eslint-plugin-prettier "3.1.4"
@@ -5192,10 +5192,10 @@ eslint-plugin-import@2.22.0:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-jest@23.19.0:
-  version "23.19.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.19.0.tgz#da9c45a629bf3180269c7d5033afd7f8b910bde5"
-  integrity sha512-l5PLflALqnODl8Yy0H5hDs18aKJS1KTf66VZGXRpIhmbLbPLaTuMB2P+65fBpkdseSpnTVcIlBYvTvJSBi/itg==
+eslint-plugin-jest@23.20.0:
+  version "23.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.20.0.tgz#e1d69c75f639e99d836642453c4e75ed22da4099"
+  integrity sha512-+6BGQt85OREevBDWCvhqj1yYA4+BFK4XnRZSGJionuEYmcglMZYLNNBBemwzbqUAckURaHdJSBcjHPyrtypZOw==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.5.0"
 
