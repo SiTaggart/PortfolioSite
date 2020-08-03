@@ -52,7 +52,7 @@
     "babel-plugin-inline-react-svg": "1.1.1",
     "bundlewatch": "0.2.7",
     "cypress": "4.12.0",
-    "eslint": "7.5.0",
+    "eslint": "7.6.0",
     "husky": "4.2.5",
     "now": "19.2.0",
     "percy": "0.27.2",
