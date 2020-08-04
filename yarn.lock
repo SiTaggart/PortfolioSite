@@ -2102,10 +2102,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/heading/-/heading-2.0.18.tgz#75e9161ac0bfd276fdcb0b3e0e7094e3843e5e9e"
   integrity sha512-Za8GB9/HP0AcNKLF9uomYH1M5o9FI/X73LRv1ZxDxc4tPd7skzmOe8X+9nSGewZiZI7C5KRD7W2fZLpqCCh/Mg==
 
-"@twilio-paste/icons@2.6.3":
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/icons/-/icons-2.6.3.tgz#8fcb71a2007659ac48d4cf189451ccce4bb84795"
-  integrity sha512-6tnokzwczR/3sRO+TnMaXsGoH3odmdgbGcJA8AxG2adHYks6s+ah4QakqPiDs/giAsAyME1ok1UCaqByMPNv/w==
+"@twilio-paste/icons@2.6.4":
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/icons/-/icons-2.6.4.tgz#f7beba65d8f5cc0810192baa5c0d044a31a8dd2e"
+  integrity sha512-sWfKDJRAcUhmyWHVlHrAW/CfDoER7/FxvSkb0MP8gF8tbX6up4WWK+meo1T87mjczn8dsWE6USoQpVQXnesn2A==
 
 "@twilio-paste/list@^0.2.18":
   version "0.2.18"
