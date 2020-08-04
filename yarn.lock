@@ -2238,10 +2238,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/truncate/-/truncate-1.0.10.tgz#86ad9b20349ad613f63f44b88c61fb095fcec527"
   integrity sha512-JHZhX2GerJoLqK1XpEiaFSMuwmXGlCIh7OQSLz4kAtart0FkVm9g05xx5GGezMWbAaoH2SoH/93afjjFosG9Ig==
 
-"@twilio-paste/types@3.0.14":
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/types/-/types-3.0.14.tgz#a943fefac3705bd3b03dd91b5a3806e14f6d88a0"
-  integrity sha512-TN8GU+Q/Taj6TLYPmCPFRfepWPMwSlX3ykut1e7hVvBsI3HQLFihcMtYpI86WaBtNBWwpgxnTvANbbYrZf82eA==
+"@twilio-paste/types@3.0.15":
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/types/-/types-3.0.15.tgz#39a9ddae82c0e08601d0bec9ec3c000b67a01098"
+  integrity sha512-5yuxTn9IC96r9DCozqcT74NY13v5R2c7gY6NLZ9Nkwylipn7dWX9VvAkDdG3pHOsVRU0EeQasru5hwB1MaDi9Q==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
