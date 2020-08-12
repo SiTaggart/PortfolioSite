@@ -1821,10 +1821,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@sitaggart/eslint-config-ts@0.5.163":
-  version "0.5.163"
-  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.163.tgz#9b4dca5329f2fe4ac51253c0e645a1f72c65d3b4"
-  integrity sha512-bQydezw1YQkFfZRb7cyO1MpkPpvjDCLAuvRb46V1Yr2VPvvbLOSkFH/QE3Eh4xCmIQWFrF19F1trRZPOGXkBDw==
+"@sitaggart/eslint-config-ts@0.5.164":
+  version "0.5.164"
+  resolved "https://registry.yarnpkg.com/@sitaggart/eslint-config-ts/-/eslint-config-ts-0.5.164.tgz#2d04f79bf70753265f91fa488b38eb41580f1d21"
+  integrity sha512-bAEKH/1CCCaSLZf1ozOAiaZPreUgQwGIxEkvE+tKEuQdJNE7O6MqcfY/T2nIVC2jJ3Cz5l9kdkoCfwuuvHDSzw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "3.9.0"
     "@typescript-eslint/parser" "3.9.0"
@@ -1840,7 +1840,7 @@
     eslint-plugin-node "11.1.0"
     eslint-plugin-prettier "3.1.4"
     eslint-plugin-promise "4.2.1"
-    eslint-plugin-react "7.20.5"
+    eslint-plugin-react "7.20.6"
     eslint-plugin-react-hooks "4.0.8"
     eslint-plugin-standard "4.0.1"
     eslint-plugin-unicorn "20.1.0"
@@ -5239,10 +5239,10 @@ eslint-plugin-react-hooks@4.0.8:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.8.tgz#a9b1e3d57475ccd18276882eff3d6cba00da7a56"
   integrity sha512-6SSb5AiMCPd8FDJrzah+Z4F44P2CdOaK026cXFV+o/xSRzfOiV1FNFeLl2z6xm3yqWOQEZ5OfVgiec90qV2xrQ==
 
-eslint-plugin-react@7.20.5:
-  version "7.20.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.5.tgz#29480f3071f64a04b2c3d99d9b460ce0f76fb857"
-  integrity sha512-ajbJfHuFnpVNJjhyrfq+pH1C0gLc2y94OiCbAXT5O0J0YCKaFEHDV8+3+mDOr+w8WguRX+vSs1bM2BDG0VLvCw==
+eslint-plugin-react@7.20.6:
+  version "7.20.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.6.tgz#4d7845311a93c463493ccfa0a19c9c5d0fd69f60"
+  integrity sha512-kidMTE5HAEBSLu23CUDvj8dc3LdBU0ri1scwHBZjI41oDv4tjsWZKU7MQccFzH1QYPYhsnTF2ovh7JlcIcmxgg==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flatmap "^1.2.3"
