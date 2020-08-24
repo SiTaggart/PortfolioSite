@@ -57,7 +57,7 @@
     "now": "19.2.0",
     "percy": "0.28.0",
     "precise-commits": "1.0.2",
-    "prettier": "2.0.5",
+    "prettier": "2.1.0",
     "rehype": "11.0.0",
     "start-server-and-test": "1.11.3",
     "typescript": "3.9.7"
