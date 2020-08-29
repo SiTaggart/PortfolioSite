@@ -3,9 +3,15 @@ import { Text } from '@twilio-paste/core';
 import { NextSeo } from 'next-seo';
 import { FrontMatterShape } from '../types';
 
-const Post = ({ title, url, date, description }: FrontMatterShape) => ({
+interface PostLayoutProps {
+  children: React.ReactNode;
+  frontMatter: FrontMatterShape;
+}
+
+const Post: React.FC<PostLayoutProps> = ({
   children: content,
-}: any) => (
+  frontMatter: { title, url, date, description },
+}) => (
   <>
     <NextSeo
       canonical={url}
