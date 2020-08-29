@@ -44,15 +44,17 @@ export const TweetCard: React.FC<TweetCardProps> = ({ twitterData }) => {
         </Text>
         <Text
           as="p"
-          css={css({
-            '.tweet-url': {
-              color: 'colorTextLink',
-              ':hover': {
-                color: 'colorTextLinkDarker',
-                textDecoration: 'none',
+          css={
+            css({
+              a: {
+                color: 'colorTextLink',
+                ':hover': {
+                  color: 'colorTextLinkDarker',
+                  textDecoration: 'none',
+                },
               },
-            },
-          })(theme)}
+            })(theme) as any
+          }
           dangerouslySetInnerHTML={{
             __html: twitter.autoLink(twitter.htmlEscape(twitterData[0]!.text)),
           }}

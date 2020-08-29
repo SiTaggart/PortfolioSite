@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { AppProps } from 'next/app';
 import { StylingGlobals, styled, ThemeProvider, css } from '@twilio-paste/styling-library';
-import { CSSObject } from '@styled-system/css';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
 import { pasteBaseStyles, ThemeShape } from '@twilio-paste/theme';
 import { Box } from '@twilio-paste/core';
@@ -11,12 +10,12 @@ import { ComponentProvider } from '../components/ComponentProvider';
 import { SiteFooter } from '../components/SiteFooter';
 import defaultSeoConfig from '../next-seo.json';
 
-const StyledBase = styled(Box)(pasteBaseStyles);
+const StyledBase = styled(Box)(pasteBaseStyles as any);
 
 interface GlobalStylesProps {
   theme: ThemeShape;
 }
-const globalStyles = (props: GlobalStylesProps): CSSObject =>
+const globalStyles = (props: GlobalStylesProps): any =>
   css({
     html: {
       fontSize: '100%',
