@@ -2191,15 +2191,17 @@
   dependencies:
     csstype "^2.6.10"
 
-"@twilio-paste/styling-library@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/styling-library/-/styling-library-0.1.1.tgz#3f117303266ef06f9c12f532933b326ef8bef3b7"
-  integrity sha512-p0wUIJRqsIm4/a+rfpeNEAS0YY9Z+ukuBAPtcqOoCiuEgRNnZETsN74ds7WGRRrNspoD/kxDgHJo4dve/VczMg==
+"@twilio-paste/styling-library@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/styling-library/-/styling-library-0.1.2.tgz#22b1e71b6d58435829700289c430dd38b74f83d9"
+  integrity sha512-2ozOpEAY/gp8hFYhdRPlLM0LxadHIOmUJnf/h1PHMMC6VLFBnRLNWtxioq3No4N+sJnnv6CGZ4fhUSR4OPfHxA==
   dependencies:
     "@emotion/core" "10.0.28"
     "@emotion/styled" "10.0.27"
     "@styled-system/css" "5.1.5"
     "@styled-system/theme-get" "5.1.2"
+    "@types/styled-system" "^5.1.9"
+    "@types/styled-system__css" "^5.0.5"
     emotion "10.0.27"
     emotion-theming "^10.0.27"
     styled-system "5.1.5"
@@ -2396,17 +2398,19 @@
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
   integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
 
-"@types/styled-system__css@5.0.12":
-  version "5.0.12"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.12.tgz#1de408f0db86b46018cf67bce2c50444237c523c"
-  integrity sha512-OgLd7p7z87K9oGoGrLpTbcGxlCHkLYVW7mrpzIHvcOZgFtE0WWogLfQmINtgWYvgScuYF1o2w6I/IhFtVlrGqQ==
+"@types/styled-system@^5.1.9":
+  version "5.1.10"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.10.tgz#dcf5690dd837ca49b8de1f23cb99d510c7f4ecb3"
+  integrity sha512-OmVjC9OzyUckAgdavJBc+t5oCJrNXTlzWl9vo2x47leqpX1REq2qJC49SEtzbu1OnWSzcD68Uq3Aj8TeX+Kvtg==
   dependencies:
-    csstype "^2.6.6"
+    csstype "^3.0.2"
 
-"@types/styled-system__theme-get@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__theme-get/-/styled-system__theme-get-5.0.0.tgz#639edd3d39aad91b47746db1cbc4f5a0c6e640a7"
-  integrity sha512-Q8B2vdj78SpPjvresEZbEgnPb7TBTFD0S8sz2HJCd1mn1xjnXzJZhXJFdfZb2KrybfjuJ0Suu3jg4hZz3SyVtg==
+"@types/styled-system__css@^5.0.5":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.13.tgz#37ccff101739ed4c67b2f13142f67fb656f5dd0f"
+  integrity sha512-weoDj0SVCGB8/BmFVbQKaOCygGoMWiPGt+CVtgWHC/pcWtiWioCplMxTpza2cpYQs/Cf72+A4mAY24a3RbXllQ==
+  dependencies:
+    csstype "^3.0.2"
 
 "@types/twit@2.2.27":
   version "2.2.27"
@@ -4469,7 +4473,7 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
-csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.10, csstype@^2.6.6:
+csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==

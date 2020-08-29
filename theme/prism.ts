@@ -1,5 +1,4 @@
 import { css } from '@twilio-paste/styling-library';
-import { CSSObject } from '@styled-system/css';
 import { ThemeShape } from '@twilio-paste/theme';
 
 interface PrismStylesProps {
@@ -7,7 +6,7 @@ interface PrismStylesProps {
 }
 
 // inspiratiopn from https://github.com/SaraVieira/prism-theme-night-owl
-export const getPrismStyles = (props: PrismStylesProps): CSSObject =>
+export const getPrismStyles = (props: PrismStylesProps): any =>
   css({
     'code[class*="language-"], pre[class*="language-"]': {
       color: '#d6deeb',
