@@ -2059,10 +2059,10 @@
     "@twilio-paste/tooltip-primitive" "^0.1.2"
     "@twilio-paste/truncate" "^1.0.11"
 
-"@twilio-paste/design-tokens@6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/design-tokens/-/design-tokens-6.2.0.tgz#b469c2243c020918e2b184cdcef15b6ee903d227"
-  integrity sha512-XVYYM8Z2wugMcgoxgljlqi4C8A4mii4DrSSE1ijJlONrerwDhyVEYihNL2d0OFNo0eu7ILQRCsc2dIFc/LLFpQ==
+"@twilio-paste/design-tokens@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/design-tokens/-/design-tokens-6.2.1.tgz#ae9ab97a7151eca1702d03ddc6c3aa532e06f987"
+  integrity sha512-IAeQFfqVT1kGD/SvIW00NH4b28kqegkmQx/43AuHQbQnUleUIC/7vYB35l0SRzY3eX3MNfsfE+NabCwY8bywTA==
 
 "@twilio-paste/disclosure-primitive@^0.2.1":
   version "0.2.1"
