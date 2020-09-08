@@ -2428,10 +2428,10 @@
   dependencies:
     csstype "^3.0.2"
 
-"@types/twit@2.2.27":
-  version "2.2.27"
-  resolved "https://registry.yarnpkg.com/@types/twit/-/twit-2.2.27.tgz#bfa861f360052433e61a1f41f2fb23a88e93c6e0"
-  integrity sha512-6VYY3YMAvURGepwW2g1tGLfpY91zaD/nA01++pFUorYgXwblYAxHsfadTX3d9yhZAmBf6uAO7AqyLr4NeTgv+w==
+"@types/twit@2.2.28":
+  version "2.2.28"
+  resolved "https://registry.yarnpkg.com/@types/twit/-/twit-2.2.28.tgz#e92d873e4e4817bd700107a6317c16f7dfd84006"
+  integrity sha512-TPA6z6ccishqrIn5IynZmkUsew0VAtRJjTSMz03ivgtRGpTWcPtUgSQueQpVoTC2h/8kEEDPDultg2c3uIgjrw==
   dependencies:
     "@types/geojson" "*"
     "@types/node" "*"
