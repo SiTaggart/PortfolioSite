@@ -2251,10 +2251,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/popover/-/popover-1.0.10.tgz#b3e64f58fdeed0d158f683b1be5f542e9d622aa0"
   integrity sha512-CkQfbTXIBjAiwPxnRkDdpNpz9aG59SEqOiW2Zw21Xsa/3jtx4l5Ep/taZ8PCVz1KeTjNmbQjtksV76/9QcNaCg==
 
-"@twilio-paste/reakit-library@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/reakit-library/-/reakit-library-0.7.0.tgz#9ca6a6ed0350a04824fbcfe75d20ccc494b06a73"
-  integrity sha512-dDOH53Rv3DTWGnyMOJu9Q7+wMOPQu3Wwj2Nz3GtfbroptPu+BLMLY1Qea2y98kimX6qxxJFGo5jF92jSbUWuWQ==
+"@twilio-paste/reakit-library@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/reakit-library/-/reakit-library-0.7.1.tgz#a25dd4ea434df8655ffb8892516a8ac50a2ccfed"
+  integrity sha512-VEuAAWNy2AXk7TZ0XzKxXYLJYBBPgnSipSIPmU8WVcN/KdZsqkGiLbjAP96LqWtvgzEgpV63Ou9XolH86aCybQ==
   dependencies:
     reakit "1.2.3"
     reakit-system "0.14.3"
