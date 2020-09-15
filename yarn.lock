@@ -2155,10 +2155,10 @@
     "@twilio-paste/tooltip-primitive" "^0.1.2"
     "@twilio-paste/truncate" "^1.0.11"
 
-"@twilio-paste/design-tokens@6.3.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/design-tokens/-/design-tokens-6.3.0.tgz#ac51b1aa1ec0d0f66c2e6edfe66cf2b2ca691983"
-  integrity sha512-Mgpm9Pb9aatH1Dj62HGgjDvoniqei3Ukgh4unVGWC3mxCLNwz64Fu86XrJg3SyWt8UH0zRMdOcbllRBc9vQ23w==
+"@twilio-paste/design-tokens@6.3.2":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/design-tokens/-/design-tokens-6.3.2.tgz#c09f3b05517e065eb8f80558ddb7ffec56774e65"
+  integrity sha512-9r1YAugq1nTPyGDYmg9NQS4UsEWYJhxXGJqHQII8/76YHAFxmBWxuqpmnw0pLALOkH4Ke6Xi+cX9tdjKCr9H6A==
 
 "@twilio-paste/disclosure-primitive@^0.2.1":
   version "0.2.1"
