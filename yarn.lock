@@ -2337,10 +2337,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/truncate/-/truncate-1.0.11.tgz#f968d328b462ae0b98482ebb209a53ed10528152"
   integrity sha512-JQQAS0dHQtG3HhvjeWIpctQIHBKxkag8hJaFre9VPtTp+VEsme8WfEa9t3kK4HYq3fqRrTRKNhAiwjLaMBkz0A==
 
-"@twilio-paste/types@3.0.22":
-  version "3.0.22"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/types/-/types-3.0.22.tgz#9d0947b96e85f5d7268169f8208e5809afd5587d"
-  integrity sha512-/91bbtDUI4QIOAqdRDqMMUtoKvg/xeDsi8ar1nFsQRB7n/TnuZGm4KW1yMk3vo8pTRJemUjJO8aS0VOUzQifQQ==
+"@twilio-paste/types@3.0.24":
+  version "3.0.24"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/types/-/types-3.0.24.tgz#4e9193d8c93814215e302d6d52e7c7497475b570"
+  integrity sha512-lT8BUlYcrCiW5kw6/tfsvWkeexsVvJMWTTCxrEug0cQsMJqufMQZ0Y4puQCdt3LT2WNjOb1rO1Qs4/7GcgSPfg==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
