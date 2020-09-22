@@ -47,7 +47,7 @@
     "@types/twitter-text": "2.0.0",
     "babel-plugin-import-glob-array": "0.2.0",
     "babel-plugin-inline-react-svg": "1.1.1",
-    "bundlewatch": "0.3.0",
+    "bundlewatch": "0.3.1",
     "cypress": "5.2.0",
     "eslint": "7.9.0",
     "husky": "4.3.0",
