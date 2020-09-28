@@ -2098,10 +2098,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/absolute/-/absolute-2.0.72.tgz#78431bbe61ba46e430eb9c0dcd10da7fec7d1896"
   integrity sha512-kwt5wm7Jsq2hQhr3Lir4JEHqDkSTHCPD/TA95zZBk61jaedrbCZA9fr6DJezL/ozKUAbGvOO/Eh01tEPTGZZCg==
 
-"@twilio-paste/alert@^1.0.23":
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/alert/-/alert-1.0.23.tgz#542f1cf0dfa53ca4a766cc3cb3c97c677872d51f"
-  integrity sha512-6gw0e4JrHiTW/2YqYvp046xfhslzVuPD26I98yDAl4bTKeOtF7cX7swklYtq8U8HUJdXCXJZ372Q6UDcghy/Rg==
+"@twilio-paste/alert@^1.0.24":
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/alert/-/alert-1.0.24.tgz#9bc8e54bc2270b56cd53f919bbb88d7bb9c7231d"
+  integrity sha512-m7/VtcJ00HZW6Xmn2hF3o3cz42OOdqd+HVxD88r6JApwjSCYhDuRyTIk5jdMkl3VHZ0tH/prFnISdWoJw462Dw==
 
 "@twilio-paste/anchor@^1.3.2":
   version "1.3.2"
@@ -2131,10 +2131,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/box/-/box-2.10.6.tgz#34e8afc7b37b709ea3ec23f9f291e26655cfb283"
   integrity sha512-jeKYIOKLhx6964wYOKadUJLDVblJuSVNiYyWrHUnR1tWON7hvmqvrXAh4ERTTX/Y2zFnHppkFVvPCW9HaDzc+Q==
 
-"@twilio-paste/button@^2.3.11":
-  version "2.3.11"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/button/-/button-2.3.11.tgz#f1cee5e67e74bc7654d2b79cc7fdb383d17f709c"
-  integrity sha512-KceJrpw488cBaejg+CWvyQh2tEpgcZjIMIwRIJq1OrdCKrT3Cts4RftsBbRFWiBVOvhjSI04v/yNz5QwFRiVsw==
+"@twilio-paste/button@^2.3.12":
+  version "2.3.12"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/button/-/button-2.3.12.tgz#e78f90fb368cfd7ba23cf8c963025011e75165d7"
+  integrity sha512-9kheTY2gjp8y7r5uvA4FjVh6VXnBieehTmjMjymk08QOxGAsn+kUDqY5+6tYod4BK0ia9ZlFVDhtGflFx/MnVg==
   dependencies:
     lodash.merge "^4.6.2"
 
@@ -2148,27 +2148,27 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/combobox-primitive/-/combobox-primitive-0.1.6.tgz#1440a1088953b7a5d1bf6a5b1c6c7ca2660193af"
   integrity sha512-3ULjVNVGLs/OZGk49TIwZCGGb0eq5FD+WhXGKpqVjOqWo96y3MOIc/CV9MgGZitw6hh3A4ZObyQtwQHo/ySgEQ==
 
-"@twilio-paste/combobox@^1.3.23":
-  version "1.3.23"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/combobox/-/combobox-1.3.23.tgz#ccc2e90ce17702368803c639a5ac79c2a31fd730"
-  integrity sha512-YSIM/EXjsgkOnHCwp1vNtdO/Tf6yxrGsfHIwk60xXoini8h3fJWqGK0CdW8WX0HBai80rf2DebHVYYP+5N3c6w==
+"@twilio-paste/combobox@^1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/combobox/-/combobox-1.3.24.tgz#375df0b66ac260fdf502ba5193b1e62745046a53"
+  integrity sha512-3EUKEakCw8TczWUjWyzGEDWigmiky8CcNIgVtvNEOEMvgGZxtJC4uCDkC3WtjxYgRlmHY4k/8HCwRVRUm53MuQ==
   dependencies:
     lodash.groupby "^4.6.0"
 
-"@twilio-paste/core@2.16.60":
-  version "2.16.60"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-2.16.60.tgz#6a721023887bd082595ea0aea9964b34686f06db"
-  integrity sha512-Kk3cibCq7mCenCUTeiOb6K2tXKERuqzNSOqaSzTaeChliIblrsy+6VtwhA9u6/srWqPOEdtiFHEcgJlh1+Tdyg==
+"@twilio-paste/core@2.16.61":
+  version "2.16.61"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-2.16.61.tgz#4441b2de82e9c0cba0112fd241d5177af0ceee8a"
+  integrity sha512-Ex977iaiSlMQ5cvuLfP5XfUo8VwEy0XNKuBNhiea5o11vo6/8E0DeLCafqrxt+7FvRWH972ZfwPCRrb0tOrU6g==
   dependencies:
     "@twilio-paste/absolute" "^2.0.72"
-    "@twilio-paste/alert" "^1.0.23"
+    "@twilio-paste/alert" "^1.0.24"
     "@twilio-paste/anchor" "^1.3.2"
     "@twilio-paste/aspect-ratio" "^1.0.72"
     "@twilio-paste/avatar" "^0.2.14"
     "@twilio-paste/box" "^2.10.6"
-    "@twilio-paste/button" "^2.3.11"
+    "@twilio-paste/button" "^2.3.12"
     "@twilio-paste/card" "^1.3.66"
-    "@twilio-paste/combobox" "^1.3.23"
+    "@twilio-paste/combobox" "^1.3.24"
     "@twilio-paste/combobox-primitive" "^0.1.6"
     "@twilio-paste/disclosure" "^0.2.25"
     "@twilio-paste/disclosure-primitive" "^0.2.4"
@@ -2178,13 +2178,13 @@
     "@twilio-paste/heading" "^2.0.41"
     "@twilio-paste/list" "^0.2.41"
     "@twilio-paste/media-object" "^1.2.60"
-    "@twilio-paste/menu" "^1.1.26"
+    "@twilio-paste/menu" "^1.1.27"
     "@twilio-paste/menu-primitive" "^0.1.10"
-    "@twilio-paste/modal" "^1.0.24"
+    "@twilio-paste/modal" "^1.0.25"
     "@twilio-paste/modal-dialog-primitive" "^0.1.6"
     "@twilio-paste/non-modal-dialog-primitive" "^0.2.7"
     "@twilio-paste/paragraph" "^1.1.42"
-    "@twilio-paste/popover" "^1.0.23"
+    "@twilio-paste/popover" "^1.0.24"
     "@twilio-paste/screen-reader-only" "^1.1.12"
     "@twilio-paste/separator" "^0.2.9"
     "@twilio-paste/spinner" "^2.0.18"
@@ -2192,7 +2192,7 @@
     "@twilio-paste/tabs" "^0.3.16"
     "@twilio-paste/tabs-primitive" "^0.1.9"
     "@twilio-paste/text" "^2.3.6"
-    "@twilio-paste/toast" "^0.1.1"
+    "@twilio-paste/toast" "^0.1.2"
     "@twilio-paste/tooltip" "^0.3.5"
     "@twilio-paste/tooltip-primitive" "^0.1.5"
     "@twilio-paste/truncate" "^1.0.12"
@@ -2261,10 +2261,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/menu-primitive/-/menu-primitive-0.1.10.tgz#68420a2965ae68ed21faf71bd41132a7dec21a75"
   integrity sha512-VfK92HbMzlzwWUQJDzBnP80EPgdS+zr/QMNBaab9BadPac8ZnYxB6+0IHNwIKkyzuMtPJKm0ojb8zetfmK/FfQ==
 
-"@twilio-paste/menu@^1.1.26":
-  version "1.1.26"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/menu/-/menu-1.1.26.tgz#367f6e33a7e5e4f7aa5b6ce26fed200e5a237143"
-  integrity sha512-NFR+Yo8sRplWcl+JJAcvjTt3YaqRCkgy4qLMmy1U/hWF5nM4BJWj+OsugEdYUnSHgwpHLmKUJxTS9S6f/WYOMA==
+"@twilio-paste/menu@^1.1.27":
+  version "1.1.27"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/menu/-/menu-1.1.27.tgz#10aa05ecf83464691c0789660c51db1855aa5768"
+  integrity sha512-1zl3Y3aequKvUcMXU8jY+XUiL3kAv2P/CoLRV4RJ5AedqsRQ1ktlF9sJLkFSWTop7hov6Wl4dz889hlgWwRolA==
 
 "@twilio-paste/modal-dialog-primitive@^0.1.6":
   version "0.1.6"
@@ -2273,10 +2273,10 @@
   dependencies:
     "@reach/dialog" "0.11.2"
 
-"@twilio-paste/modal@^1.0.24":
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/modal/-/modal-1.0.24.tgz#52bbabfd5a2a76eaf18abbd2a0c798254cd43cc9"
-  integrity sha512-s2aWKc2+eZKZWuSYvqLEGFQyj5lWs7dpf7x1HCCaO6Ljgg44UDZptRkOGTAPwiqsaIbvd2+ZNCvsiU3NHg9o0g==
+"@twilio-paste/modal@^1.0.25":
+  version "1.0.25"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/modal/-/modal-1.0.25.tgz#2e9df76e496e68396a5d19850f3c43d68e9e9d0f"
+  integrity sha512-N6kIOFPH+Ryva0ar++9JIw+ErOqljJCsVYhuSRYdJoQbhGjyv8exec7ECzl4NUTQThEwqhn8FXeCUoHHxW16mw==
 
 "@twilio-paste/non-modal-dialog-primitive@^0.2.7":
   version "0.2.7"
@@ -2288,10 +2288,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/paragraph/-/paragraph-1.1.42.tgz#9d9bc067c44897b75b44cac9ff01222b3fe12a76"
   integrity sha512-gfxr62kKeldYM7NW67XVYpjbNebpjM/2aicyv9pzfjac++kxC/Vta3zRc89Tk8nO2xfoQ7LwHTBUuqinfR88mw==
 
-"@twilio-paste/popover@^1.0.23":
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/popover/-/popover-1.0.23.tgz#bee67ddf1bd638a8c34c719a9c8609efad5926e1"
-  integrity sha512-z0qYJzrKDFVpJ3uVhJ91drIKsLowOFQIjpXGItK/+MF3LQqmhywc3Le8z2MahBbkeeEeg6iqqzm5aFkB8gAbIw==
+"@twilio-paste/popover@^1.0.24":
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/popover/-/popover-1.0.24.tgz#0396ca5de91b82709f9b3ba9aab0c14f46e7241e"
+  integrity sha512-u1eN9soZnun0K6di5Gg2mMsnKv1hemqhmNakcr0jDl+C/E775SDTgLtUDaqlzRQCbtB6Djwz4ShvmmutWnTikg==
 
 "@twilio-paste/reakit-library@0.7.2":
   version "0.7.2"
@@ -2364,10 +2364,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.22.tgz#b9c9ebc7e12de5f8e511377dcfda1204ead7dda1"
   integrity sha512-QYTiy3q2daYVGVR7DhMWsgDIAY8XOMOVvHW6gLV8cz6N+QCccLmdeV0mntYsyN1ok/W9msiYVoGuBV1SQXIe3A==
 
-"@twilio-paste/toast@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/toast/-/toast-0.1.1.tgz#cfdd0e4ddaf3eb5a6cc51b6a5168b49bce2017f8"
-  integrity sha512-gskgVF2MKTv5KFeZ/yYVbSCdLg7ssC9qo/LwoO2jDEPjR8haD19hCqD7i5m0C9+eKjvbcwcB81TKoVV5OQxd2w==
+"@twilio-paste/toast@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/toast/-/toast-0.1.2.tgz#bb37d1d94338fc3cfb2d46c1be993b8cbdbac09a"
+  integrity sha512-p/q2+T5wQc8laqAB5zA7PiJV/Xm9lpfYMRA0BUovcsd4apNswEufxZwX+sHcoUlctISI1WpCPjD+2bEi6yn4Vw==
 
 "@twilio-paste/tooltip-primitive@^0.1.5":
   version "0.1.5"
