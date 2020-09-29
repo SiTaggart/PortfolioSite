@@ -15,7 +15,7 @@ describe('Homepage', () => {
     });
     it('should load a post', () => {
       cy.visit('http://localhost:3000/');
-      cy.get('a[href="/posts/"]').click();
+      cy.get('a[href="/posts"]').click();
       cy.get('li:nth-child(3) h2 > a').click();
       cy.percySnapshot('Post detailed snapshot');
     });
