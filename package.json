@@ -4,7 +4,7 @@
   "dependencies": {
     "@mdx-js/loader": "1.6.18",
     "@mdx-js/react": "1.6.18",
-    "@next/mdx": "9.5.3",
+    "@next/mdx": "9.5.4",
     "@twilio-paste/animation-library": "0.2.1",
     "@twilio-paste/core": "2.18.2",
     "@twilio-paste/design-tokens": "6.3.3",
