@@ -2099,10 +2099,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/heading/-/heading-2.0.41.tgz#2407663a19fefa90b052c4e46c2629f113bb5d49"
   integrity sha512-E001i/YwNDuWdxsNqmNrHJYGFNM80ms5XiKgQJVHb9J5SLyfGIB7l+EubiUf+emac+975SES/wx7ZDegYura+g==
 
-"@twilio-paste/icons@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/icons/-/icons-3.5.4.tgz#515f443c80a49637e85ce58a823bd5300f5db127"
-  integrity sha512-j34KAMSJcPHeAdk17ZVb7riRJNQVIUnpZySgpUi4LN8xfwaJ1TKXfzIe4pUPVrqRDdG8w43UDn60GU8HBHaPSQ==
+"@twilio-paste/icons@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/icons/-/icons-3.5.5.tgz#3ec2d5a42f03d6e3506a4b5a6839644e2126ee78"
+  integrity sha512-nS9DyB0AnL5ozUfZ7X85WAV4mpyuOLwEc9M7fw8W6wUEjtTsb/q5oPM0s5xDrpzPc7vu6Z/2wJ3w6CUGeKUPSQ==
 
 "@twilio-paste/list@^0.2.41":
   version "0.2.41"
