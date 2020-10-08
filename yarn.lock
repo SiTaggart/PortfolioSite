@@ -2314,10 +2314,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/truncate/-/truncate-1.0.12.tgz#a34b51c3b18c0383fda5ae0074487bb114087ca0"
   integrity sha512-kba64cnC0MQWZyVoxuIJvGjph0Mi08TWGNjghZBjPJ2JvHaIsSGE0snFOZqgVvAJX3MqEvQth7UyTw5VAJhAnA==
 
-"@twilio-paste/types@3.0.25":
-  version "3.0.25"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/types/-/types-3.0.25.tgz#e54081842e55b72bd3c958d06f6052e05486c872"
-  integrity sha512-8jNZeykt242EuumJ4X6n+IxcTYMnilhTN35iroTKCbcebFeNaD545hM4AftjzS292Nb1NqfyTbPw8S4YT4s/7g==
+"@twilio-paste/types@3.0.26":
+  version "3.0.26"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/types/-/types-3.0.26.tgz#50981acf74e2200bbc84060e4fc8b90e952dafc3"
+  integrity sha512-4m6oFIJL8bxF/lkHIi2LSP2tfshGslk53TBo2fDJXN9b9kr1bu4Mi1pDXjI2rii+MqVTQQbcylJHRR15+9u9cQ==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.10"
