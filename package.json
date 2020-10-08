@@ -52,7 +52,7 @@
     "eslint": "7.10.0",
     "husky": "4.3.0",
     "jest": "26.5.2",
-    "now": "20.1.1",
+    "now": "20.1.2",
     "percy": "0.28.3",
     "precise-commits": "1.0.2",
     "prettier": "2.1.2",
