@@ -2289,10 +2289,10 @@
   dependencies:
     react-autosize-textarea "7.0.0"
 
-"@twilio-paste/theme@3.2.24":
-  version "3.2.24"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.24.tgz#98530b5d9b15e12fa9814371acbf8b43b5fdc70c"
-  integrity sha512-DBkrrDpT9YEtkB0Xmj7L/dZTZIXXtqoNQxVy/HGLsH4Bkc+ZaR4tpNmhCxxH9HOg3tKwIcZgZ2Q9NVBj+vWgvw==
+"@twilio-paste/theme@3.2.25":
+  version "3.2.25"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/theme/-/theme-3.2.25.tgz#bbcd22ad67195d4c19193a3859299adf96a98503"
+  integrity sha512-U3ylR+GYStv2KKCg5rtp+/GP1u+VIDzexfZ2Sf+nZ8SGZ357BbZhYfemucrYY8+s/K4KQzYg7QG7i9CXctJcJQ==
 
 "@twilio-paste/toast@^0.1.7":
   version "0.1.7"
