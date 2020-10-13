@@ -2124,10 +2124,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/help-text/-/help-text-1.1.4.tgz#17cb79de77bab36a34c67b59579b14a32bcf7e01"
   integrity sha512-RUprwMKjJHkBgAJJbWCI9f87W4Jt552s2yC6W4Yc7mE+xxhzS8sD/Z+Dw5bQ8qlGq5bbaILann5iAhp8w/vM7Q==
 
-"@twilio-paste/icons@3.6.0":
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/icons/-/icons-3.6.0.tgz#b804ced57c2c91a7dbe43f35e672fef08af43083"
-  integrity sha512-KRZcLBOIRThtFSGRen5A2O9jHg41SQIoVoicqLaLavos4FbjWYoHr+3T8uI2ezyfI2OBhHUMo74nJcj1gDkl5Q==
+"@twilio-paste/icons@3.6.1":
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/icons/-/icons-3.6.1.tgz#b5b35d5490772967c91a335486a27b98f15a8eaa"
+  integrity sha512-geIHVvu3VzolO6ZxAjv78fZKo/HvEAC/SpFiWskPH6NiH3C+HiOIUsjQCs/bT4Z/yIONHtt3ScV2rkrlQYeywA==
 
 "@twilio-paste/inline-control-group@^1.1.4":
   version "1.1.4"
