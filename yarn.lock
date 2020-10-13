@@ -2092,10 +2092,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure/-/disclosure-0.2.30.tgz#5e14a36155336eaeef93c22fee4920d28d02ddfe"
   integrity sha512-LUU6B93k0OK1B5xuQvLkfjTibqMfZrgVmXfXgv7Tp2L3b0jYpL6x/c9eaZBQf2LAjtJRG7WzOy9ynirvCsbiTw==
 
-"@twilio-paste/dropdown-library@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/dropdown-library/-/dropdown-library-1.0.1.tgz#1a01747a576f2e694d9a229f796bd19a30319af5"
-  integrity sha512-vdjZPaTZBpZD26xLQHcsHT5ALJ6cJrzmLcxKhnyzqUp80yOqmnjk0g9+tnMYQfcD47t/AQvjQJ2AGIR8BlMXxA==
+"@twilio-paste/dropdown-library@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/dropdown-library/-/dropdown-library-1.0.2.tgz#e13ee2802c35e9ab53d2f44d16408e0980e5e8c2"
+  integrity sha512-CjrLKDB8CdS9p40l1u5FtBcdYDgm8NddgwrZ19iUweYegPb5NtDkkaZ5RAWKvBaJPVdc9AX3BV1NMxnjwXG2hg==
   dependencies:
     downshift "6.0.6"
 
