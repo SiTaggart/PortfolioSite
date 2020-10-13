@@ -2247,10 +2247,10 @@
   dependencies:
     csstype "^2.6.10"
 
-"@twilio-paste/styling-library@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/styling-library/-/styling-library-0.1.2.tgz#22b1e71b6d58435829700289c430dd38b74f83d9"
-  integrity sha512-2ozOpEAY/gp8hFYhdRPlLM0LxadHIOmUJnf/h1PHMMC6VLFBnRLNWtxioq3No4N+sJnnv6CGZ4fhUSR4OPfHxA==
+"@twilio-paste/styling-library@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/styling-library/-/styling-library-0.1.3.tgz#cb1566f0c79e1be77a5ddb5c76baed0df6afd864"
+  integrity sha512-uzRtxxPtThVh76WFW3oyh8xWgUk5Z02HcDvuPnMJNICDmChh0xh5C8y6FyiTawtdNT+/Lvxcdt71cVRgtXzo9g==
   dependencies:
     "@emotion/core" "10.0.28"
     "@emotion/styled" "10.0.27"
