@@ -5,7 +5,7 @@
     "@mdx-js/loader": "1.6.18",
     "@mdx-js/react": "1.6.18",
     "@next/mdx": "9.5.5",
-    "@twilio-paste/animation-library": "0.2.2",
+    "@twilio-paste/animation-library": "0.2.3",
     "@twilio-paste/core": "2.18.6",
     "@twilio-paste/design-tokens": "6.3.4",
     "@twilio-paste/dropdown-library": "1.0.2",
