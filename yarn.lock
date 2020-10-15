@@ -2240,10 +2240,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/stack/-/stack-0.1.44.tgz#54a1e96cc090803d5ce4f514e26a4fc7a884d0c7"
   integrity sha512-aXt5uquRj5+A5pelqHVN4Qy8XI8uoMMxRbeBEcISdRGlq5dP6oddJmCGdE/neHuwOmR2Az8+uJ20oPcpWPXPJQ==
 
-"@twilio-paste/style-props@1.8.4":
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/style-props/-/style-props-1.8.4.tgz#6073c317c7cbbe16c7122f332d650c4de3d35a61"
-  integrity sha512-Nn40JRQ3KxRC7EsOARDZy8WVXiSq36+z0DBxtGZ5rs0XRbXOQ3v0/uMCH9km6xIhsoNv15JE79FUW7FvHxmsBg==
+"@twilio-paste/style-props@1.8.5":
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/style-props/-/style-props-1.8.5.tgz#728a1175efeb11faca050779f42e63c9c2d6e154"
+  integrity sha512-P89i/ellbCu+aE0rGf6WpVAtjMHAnxB0s5HUbQDUAW7FBMv5d1+L12wQN/wd15i+s03uEGmyEzkKU7aY/2qMqA==
   dependencies:
     csstype "^2.6.10"
 
