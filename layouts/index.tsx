@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Heading } from '@twilio-paste/core';
+import { Heading } from '@twilio-paste/core/heading';
 
 const Layout: React.FC = ({ children: content, frontMatter }: any) => (
   <div>

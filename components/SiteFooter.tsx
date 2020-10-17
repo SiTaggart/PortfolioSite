@@ -1,6 +1,9 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { Box, Text, Anchor, ScreenReaderOnly } from '@twilio-paste/core';
+import { Box } from '@twilio-paste/core/box';
+import { Text } from '@twilio-paste/core/text';
+import { Anchor } from '@twilio-paste/core/anchor';
+import { ScreenReaderOnly } from '@twilio-paste/core/screen-reader-only';
 import TwitterSVG from '../svg/icons/ic-twitter.svg';
 import GithubSVG from '../svg/icons/ic-github.svg';
 import LinkedinSVG from '../svg/icons/ic-linkedin.svg';

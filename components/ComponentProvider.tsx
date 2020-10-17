@@ -1,23 +1,19 @@
 import * as React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import Link from 'next/link';
+import { Anchor, AnchorProps } from '@twilio-paste/core/anchor';
+import { Box } from '@twilio-paste/core/box';
+import { Heading, HeadingProps } from '@twilio-paste/core/heading';
+import { Paragraph, ParagraphProps } from '@twilio-paste/core/paragraph';
 import {
-  Anchor,
-  AnchorProps,
-  Box,
-  Heading,
-  HeadingProps,
-  Paragraph,
-  ParagraphProps,
   OrderedList,
   OrderedListProps,
   UnorderedList,
   UnorderedListProps,
   ListItem,
   ListItemProps,
-  Separator,
-  SeparatorProps,
-} from '@twilio-paste/core';
+} from '@twilio-paste/core/list';
+import { Separator, SeparatorProps } from '@twilio-paste/core/separator';
 import { CodeBlock, InlineCode } from './CodeBlocks';
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td } from './Table';
 import { Blockquote } from './Blockquote';

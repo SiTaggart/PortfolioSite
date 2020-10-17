@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Box, Text } from '@twilio-paste/core';
+import { Box } from '@twilio-paste/core/box';
+import { Text } from '@twilio-paste/core/text';
 
 export const Table: React.FC = (props) => (
   <Box
