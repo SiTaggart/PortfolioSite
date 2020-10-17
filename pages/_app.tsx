@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { AppProps } from 'next/app';
-import { StylingGlobals, styled, ThemeProvider, css } from '@twilio-paste/styling-library';
+import { StylingGlobals, styled, ThemeProvider, css } from '@twilio-paste/core/styling-library';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
-import { pasteBaseStyles, ThemeShape } from '@twilio-paste/theme';
-import { Box } from '@twilio-paste/core';
+import { pasteBaseStyles, ThemeShape } from '@twilio-paste/core/theme';
+import { Box } from '@twilio-paste/core/box';
 import { PortfolioTheme } from '../theme';
 import { getPrismStyles } from '../theme/prism';
 import { ComponentProvider } from '../components/ComponentProvider';

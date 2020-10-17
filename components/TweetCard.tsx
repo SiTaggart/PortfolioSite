@@ -1,8 +1,12 @@
 import * as React from 'react';
 import twitter from 'twitter-text';
-import { css } from '@twilio-paste/styling-library';
-import { Box, Text, Card, MediaObject, MediaFigure, MediaBody, Anchor } from '@twilio-paste/core';
-import { useTheme } from '@twilio-paste/theme';
+import { css } from '@twilio-paste/core/styling-library';
+import { useTheme } from '@twilio-paste/core/theme';
+import { Box } from '@twilio-paste/core/box';
+import { Text } from '@twilio-paste/core/text';
+import { Card } from '@twilio-paste/core/card';
+import { MediaObject, MediaFigure, MediaBody } from '@twilio-paste/core/media-object';
+import { Anchor } from '@twilio-paste/core/anchor';
 import TwitterSVG from '../svg/icons/ic-twitter.svg';
 import { Tweets } from '../types';
 

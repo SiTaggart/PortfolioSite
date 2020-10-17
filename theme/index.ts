@@ -1,4 +1,4 @@
-import { DefaultTheme } from '@twilio-paste/theme';
+import { DefaultTheme } from '@twilio-paste/core/theme';
 import merge from 'lodash.merge';
 
 export const PortfolioTheme = merge(DefaultTheme, {

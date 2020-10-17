@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Box, Text, Anchor } from '@twilio-paste/core';
+import { Box } from '@twilio-paste/core/box';
+import { Text } from '@twilio-paste/core/text';
+import { Anchor } from '@twilio-paste/core/anchor';
 import Link from 'next/link';
 
 interface FeaturedPostProps {

@@ -1,5 +1,5 @@
-import { css } from '@twilio-paste/styling-library';
-import { ThemeShape } from '@twilio-paste/theme';
+import { css } from '@twilio-paste/core/styling-library';
+import { ThemeShape } from '@twilio-paste/core/theme';
 
 interface PrismStylesProps {
   theme: ThemeShape;
