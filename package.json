@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "5.0.0",
   "dependencies": {
-    "@mdx-js/loader": "1.6.18",
-    "@mdx-js/react": "1.6.18",
+    "@mdx-js/loader": "1.6.19",
+    "@mdx-js/react": "1.6.19",
     "@next/mdx": "9.5.5",
     "@twilio-paste/core": "3.0.4",
     "@twilio-paste/icons": "3.7.0",
