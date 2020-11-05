@@ -4,7 +4,7 @@
   "dependencies": {
     "@mdx-js/loader": "1.6.19",
     "@mdx-js/react": "1.6.19",
-    "@next/mdx": "9.5.5",
+    "@next/mdx": "10.0.1",
     "@twilio-paste/core": "3.0.7",
     "@twilio-paste/icons": "3.8.1",
     "isomorphic-unfetch": "3.1.0",
