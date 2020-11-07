@@ -5,7 +5,7 @@
     "@mdx-js/loader": "1.6.19",
     "@mdx-js/react": "1.6.19",
     "@next/mdx": "10.0.1",
-    "@twilio-paste/core": "3.0.13",
+    "@twilio-paste/core": "4.1.2",
     "@twilio-paste/icons": "3.8.2",
     "isomorphic-unfetch": "3.1.0",
     "lodash.merge": "4.6.2",
