@@ -2158,10 +2158,10 @@
   dependencies:
     lodash.groupby "^4.6.0"
 
-"@twilio-paste/core@4.1.5":
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.1.5.tgz#c81631167557b9a423c501d1c39898ed840f0a22"
-  integrity sha512-MC4dN4siOnIlCjGtwDvUdYwaU0EvchUUIK8VLczeI8bFB0BwIdLjrYLJOMp8sDB1SWQM/99aVu1Ovnp9FNoA/g==
+"@twilio-paste/core@4.1.6":
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.1.6.tgz#fae16e337a477f1df9761f74f33e53a9dbb89faa"
+  integrity sha512-ura703m6/TCO+BR9ilLRNUGXZP47GLIOYrljvW9JqD7sZnBcnGJWpvo/2Mia/4RZ1rdkxqEPsfc6G9JZ85zP3A==
   dependencies:
     "@twilio-paste/alert" "^1.0.42"
     "@twilio-paste/anchor" "^1.3.17"
