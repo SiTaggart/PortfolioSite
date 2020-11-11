@@ -2158,10 +2158,10 @@
   dependencies:
     lodash.groupby "^4.6.0"
 
-"@twilio-paste/core@4.1.6":
-  version "4.1.6"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.1.6.tgz#fae16e337a477f1df9761f74f33e53a9dbb89faa"
-  integrity sha512-ura703m6/TCO+BR9ilLRNUGXZP47GLIOYrljvW9JqD7sZnBcnGJWpvo/2Mia/4RZ1rdkxqEPsfc6G9JZ85zP3A==
+"@twilio-paste/core@4.1.7":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.1.7.tgz#ac9b2c5cd5b53acaa24dbaca2886af344e0f083a"
+  integrity sha512-1RtpK5Ie3ZOyPvknXEiQrnBi/zUyspCyviS1G09r5oD+Pzlt4ewAYY6p+buVytliNXl+KkO75RgfrR7dKoD2Cw==
   dependencies:
     "@twilio-paste/alert" "^1.0.42"
     "@twilio-paste/anchor" "^1.3.17"
@@ -2177,12 +2177,12 @@
     "@twilio-paste/combobox" "^1.4.21"
     "@twilio-paste/combobox-primitive" "^0.1.9"
     "@twilio-paste/design-tokens" "^6.3.6"
-    "@twilio-paste/disclosure" "^0.2.40"
+    "@twilio-paste/disclosure" "^0.2.41"
     "@twilio-paste/disclosure-primitive" "^0.2.6"
     "@twilio-paste/dropdown-library" "^1.0.3"
     "@twilio-paste/flex" "^0.3.68"
     "@twilio-paste/grid" "^0.2.70"
-    "@twilio-paste/heading" "^2.0.50"
+    "@twilio-paste/heading" "^2.1.0"
     "@twilio-paste/help-text" "^1.1.14"
     "@twilio-paste/inline-control-group" "^1.1.14"
     "@twilio-paste/input" "^1.1.9"
@@ -2192,7 +2192,7 @@
     "@twilio-paste/media-object" "^1.2.69"
     "@twilio-paste/menu" "^1.1.45"
     "@twilio-paste/menu-primitive" "^0.1.12"
-    "@twilio-paste/modal" "^1.0.45"
+    "@twilio-paste/modal" "^1.0.46"
     "@twilio-paste/modal-dialog-primitive" "^0.1.8"
     "@twilio-paste/non-modal-dialog-primitive" "^0.2.9"
     "@twilio-paste/paragraph" "^1.1.51"
@@ -2230,10 +2230,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure-primitive/-/disclosure-primitive-0.2.6.tgz#58ca55bbd9951bdbfa70d2af1d981839c36da191"
   integrity sha512-96DWoDmap+qdgnaUdPIthpXySeO/VnoJ+jERF+0S3TfZ4OR/xdZydBNTI6IB6XEe3L1vC1rDGBzf4RElGtkZlw==
 
-"@twilio-paste/disclosure@^0.2.40":
-  version "0.2.40"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure/-/disclosure-0.2.40.tgz#dae84c12d2c30399f091217e0e37bd1ed2c7b0ba"
-  integrity sha512-V3BmsGUJu3Gl6fbvER5Fs/XMqywLmw9AMxs3geNnL7IvdvDKteoyAoWeWQQgvNGLHkDunrRhRAS5LL7+4wl/Ig==
+"@twilio-paste/disclosure@^0.2.41":
+  version "0.2.41"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure/-/disclosure-0.2.41.tgz#cf3bac113a58e01e0d66fa417722f467150c6c25"
+  integrity sha512-15gWXcFvtMgCNZhUOAG+wgknoPr/w6ZkDS/INcJig+C/V0nUJO3Z3WETc0hVQja1Ig18PGZroo+2Yg8DzuQ6vQ==
 
 "@twilio-paste/dropdown-library@^1.0.3":
   version "1.0.3"
@@ -2252,10 +2252,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/grid/-/grid-0.2.70.tgz#393405d0e3df2a57dffa3ac2db197898b65dc760"
   integrity sha512-CbZBxwfaDoGwc8vML9AnUSgrqy/DUs7JFfpIWY544d0CIeXFnKUDLqv+mMwOIB7eaLj9xMrfZFYKHXWZyP0YhA==
 
-"@twilio-paste/heading@^2.0.50":
-  version "2.0.50"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/heading/-/heading-2.0.50.tgz#98279f462ccb10e80ea973afcdd0bffe450df6ea"
-  integrity sha512-vd8Amhr1Um3vkKcM95JDN6K/+T6kBlA1/xfRibpT+/Qgx/uxpS27gRxlzxcYKdrB+7+8bCdd35+epBV6k92aKQ==
+"@twilio-paste/heading@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/heading/-/heading-2.1.0.tgz#140a59d588533e36e84784b2149054e4a7361611"
+  integrity sha512-4VKpQZUtnCKlmALKQWeUU0EYP+ns5x6YNTmzrESQwvf0LH985fNaY1UEYiuP/9ksPjts294c4xQRY42+tZOgkw==
 
 "@twilio-paste/help-text@^1.1.14":
   version "1.1.14"
@@ -2314,10 +2314,10 @@
   dependencies:
     "@reach/dialog" "0.11.2"
 
-"@twilio-paste/modal@^1.0.45":
-  version "1.0.45"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/modal/-/modal-1.0.45.tgz#8fb5c512fcae5dcfe9f9a08e82d8931ae668ef13"
-  integrity sha512-HX9NvnNBALj0lYPhVYIHMyxvUWIfv1WDVG3U87/w2eN+pIzOtBVlz8NG9N5vK7wbmRgmifWJW590EDimy5ymTA==
+"@twilio-paste/modal@^1.0.46":
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/modal/-/modal-1.0.46.tgz#8b0ce617e5ae8f5588d9e3b346106107df51c682"
+  integrity sha512-GdyIr2AAusfz+uqV463je2IQkzWtu4QxUTN+epx/+NHF4h2vahGMuxjed4Gq1VGHG/S4Jhn77Emoqn6t9TRGtg==
 
 "@twilio-paste/non-modal-dialog-primitive@^0.2.9":
   version "0.2.9"
