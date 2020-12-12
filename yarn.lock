@@ -1431,10 +1431,10 @@
     eslint-plugin-standard "4.1.0"
     eslint-plugin-unicorn "23.0.0"
 
-"@sitaggart/prettier-config@0.2.31":
-  version "0.2.31"
-  resolved "https://registry.yarnpkg.com/@sitaggart/prettier-config/-/prettier-config-0.2.31.tgz#1b9fe2355a9d747dc4f93ad77b1d40c9d5295bc4"
-  integrity sha512-C8vQdSOWBUP6xCFtkj7GV8Te3h9FzdUvSPihIT8eo32PfhoyAAb2U41pd/xVqvfzrdo9BkrHbalwvDFJw60/Tw==
+"@sitaggart/prettier-config@0.2.32":
+  version "0.2.32"
+  resolved "https://registry.yarnpkg.com/@sitaggart/prettier-config/-/prettier-config-0.2.32.tgz#5b9398ef73099c0bde4fbbd5cd82601dd0aa0e59"
+  integrity sha512-jhLLQ7p151lClbcgo5NzkYPurBtJsWVLLVB326osiHRv0NuE4C8iljjD8Tj35fXzlCCkxCQwGnJXgOiAvd9XHQ==
 
 "@styled-system/background@^5.1.2":
   version "5.1.2"
@@ -2029,13 +2029,6 @@
   version "4.6.6"
   resolved "https://registry.yarnpkg.com/@types/lodash.groupby/-/lodash.groupby-4.6.6.tgz#4d9b61a4d8b0d83d384975cabfed4c1769d6792e"
   integrity sha512-kwg3T7Ia63KtDNoQQR8hKrLHCAgrH4I44l5uEMuA6JCbj7DiSccaV4tNV1vbjtAOpX990SolVthJCmBVtRVRgw==
-  dependencies:
-    "@types/lodash" "*"
-
-"@types/lodash.merge@4.6.6":
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/@types/lodash.merge/-/lodash.merge-4.6.6.tgz#b84b403c1d31bc42d51772d1cd5557fa008cd3d6"
-  integrity sha512-IB90krzMf7YpfgP3u/EvZEdXVvm4e3gJbUvh5ieuI+o+XqiNEt6fCzqNRaiLlPVScLI59RxIGZMQ3+Ko/DJ8vQ==
   dependencies:
     "@types/lodash" "*"
 
@@ -7994,7 +7987,7 @@ lodash.isplainobject@^4.0.6:
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
   integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
 
-lodash.merge@4.6.2, lodash.merge@^4.6.1, lodash.merge@^4.6.2:
+lodash.merge@^4.6.1, lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
