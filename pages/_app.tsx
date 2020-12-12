@@ -1,31 +1,23 @@
 import * as React from 'react';
 import { AppProps } from 'next/app';
-import { StylingGlobals, styled, ThemeProvider, css } from '@twilio-paste/core/styling-library';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
-import { pasteBaseStyles, ThemeShape } from '@twilio-paste/core/theme';
+import { StylingGlobals, css } from '@twilio-paste/core/styling-library';
+import { GenericThemeShape } from '@twilio-paste/core/theme';
+import { CustomizationProvider } from '@twilio-paste/core/customization';
 import { Box } from '@twilio-paste/core/box';
-import { PortfolioTheme } from '../theme';
+import PortfolioTheme from '../theme/theme.json';
 import { getPrismStyles } from '../theme/prism';
 import { ComponentProvider } from '../components/ComponentProvider';
 import { SiteFooter } from '../components/SiteFooter';
 import defaultSeoConfig from '../next-seo.json';
 
-const StyledBase = styled(Box)(pasteBaseStyles as any);
-
 interface GlobalStylesProps {
-  theme: ThemeShape;
+  theme: GenericThemeShape;
 }
 const globalStyles = (props: GlobalStylesProps): any =>
   css({
-    html: {
-      fontSize: '100%',
-      height: '100vh',
-    },
     body: {
       backgroundColor: '#232946',
-      margin: 0,
-      fontSize: 'fontSize30',
-      height: '100vh',
     },
   })(props);
 
@@ -45,10 +37,10 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
       url="https://www.simontaggart.com"
     />
     <ComponentProvider>
-      <ThemeProvider theme={PortfolioTheme}>
-        <StylingGlobals styles={globalStyles({ theme: PortfolioTheme })} />
+      <CustomizationProvider theme={PortfolioTheme}>
         <StylingGlobals styles={getPrismStyles({ theme: PortfolioTheme })} />
-        <StyledBase
+        <StylingGlobals styles={globalStyles({ theme: PortfolioTheme })} />
+        <Box
           as="main"
           // @ts-ignore
           marginLeft={['space50', 'space70', 'auto']}
@@ -59,8 +51,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
         >
           <Component {...pageProps} />
           <SiteFooter />
-        </StyledBase>
-      </ThemeProvider>
+        </Box>
+      </CustomizationProvider>
     </ComponentProvider>
   </>
 );
