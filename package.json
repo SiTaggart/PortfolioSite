@@ -94,7 +94,8 @@
     "ci": {
       "trackBranches": [
         "main"
-      ]
+      ],
+      "repoBranchBase": "main"
     }
   }
 }
