@@ -90,6 +90,12 @@
         "path": "./.next/static/chunks/**/*.js",
         "maxSize": "85 kB"
       }
-    ]
+    ],
+    "ci": {
+      "trackBranches": [
+        "main"
+      ],
+      "repoBranchBase": "main"
+    }
   }
 }

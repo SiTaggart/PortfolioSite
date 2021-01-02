@@ -36,6 +36,7 @@ jobs:
           CI_REPO_NAME: PortfolioSite
           CI_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
           CI_BRANCH: ${{ github.ref }}
+          CI_BRANCH_BASE: main
       - name: Run percy
         run: yarn cypress:ci
         env:

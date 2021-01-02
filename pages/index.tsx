@@ -12,7 +12,7 @@ import { SiteMainHeading } from '../components/SiteMainHeading';
 import { SiteSubHeading } from '../components/SiteSubHeading';
 import { FeaturePost } from '../components/FeaturedPost';
 // @ts-ignore
-import { frontMatter as lastestPost } from './posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me/index.mdx';
+import { frontMatter as lastestPost } from './posts/2021-01-01-2020-year-in-review/index.mdx';
 import { TweetCard } from '../components/TweetCard';
 import { Tweets } from '../types';
 
