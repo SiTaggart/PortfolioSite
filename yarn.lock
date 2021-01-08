@@ -1625,17 +1625,17 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/combobox-primitive/-/combobox-primitive-0.1.10.tgz#cacd102f532a6a71a433516392262105f4298dfd"
   integrity sha512-Q1eqXg1NORhfOyYn2BzsQP7URgaFqeX77i7h1az9n8P/n2etN8z7btA5jXgeAY1mecidgzpjMwOUtgmuoBws6Q==
 
-"@twilio-paste/combobox@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/combobox/-/combobox-2.0.3.tgz#6101c67f0217337133b3357e07ae05be8fbbdf5d"
-  integrity sha512-fStSljTp/ovonp23+aFKKJWRSnJMWamozXRGkyjBcqeY2pDxzp3pGCYkDXa/bkzx7BupFMoxIub2a3+9fePi3w==
+"@twilio-paste/combobox@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/combobox/-/combobox-2.0.4.tgz#ef020ce06381693eb13e7db485a94cd2f5225600"
+  integrity sha512-b9AlArmq49T1o27jHwNwEQOn1wfLskZmw+tqwQXwhm3gWDszCBKDAqrxV6h3p2+MR0HL5qTtg+K9TAFL5jPTiA==
   dependencies:
     lodash.groupby "^4.6.0"
 
-"@twilio-paste/core@4.2.7":
-  version "4.2.7"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.2.7.tgz#2debfd35792ac5dfcc224678c9f3e1bae9e2b638"
-  integrity sha512-MbbMb9zJ3wBvGliOs4vuunJJN1kZ2o1bpz/eUpt0B6sn0fC8/nJ5cjWH2ilWsP9G+IR/tEMWKDMnqEADSyYMtw==
+"@twilio-paste/core@4.2.8":
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.2.8.tgz#5c6a91fd0e8c8e1e2b65cb330e9d55042d7b9e1a"
+  integrity sha512-N7lLC7kY9EDruguvSOdjbiGPDjd33jyww/9KawggXPmY5Qt9EWOIQY8ROYWJt1gNwK0h1+K8EMWC7TUYtfDeUA==
   dependencies:
     "@twilio-paste/alert" "^2.0.2"
     "@twilio-paste/anchor" "^1.3.28"
@@ -1648,7 +1648,7 @@
     "@twilio-paste/button" "^2.4.12"
     "@twilio-paste/card" "^1.4.6"
     "@twilio-paste/checkbox" "^2.0.3"
-    "@twilio-paste/combobox" "^2.0.3"
+    "@twilio-paste/combobox" "^2.0.4"
     "@twilio-paste/combobox-primitive" "^0.1.10"
     "@twilio-paste/customization" "^0.1.3"
     "@twilio-paste/design-tokens" "^6.4.1"
