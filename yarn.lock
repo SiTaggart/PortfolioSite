@@ -1632,10 +1632,10 @@
   dependencies:
     lodash.groupby "^4.6.0"
 
-"@twilio-paste/core@4.2.8":
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.2.8.tgz#5c6a91fd0e8c8e1e2b65cb330e9d55042d7b9e1a"
-  integrity sha512-N7lLC7kY9EDruguvSOdjbiGPDjd33jyww/9KawggXPmY5Qt9EWOIQY8ROYWJt1gNwK0h1+K8EMWC7TUYtfDeUA==
+"@twilio-paste/core@4.2.9":
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.2.9.tgz#4c9c9c36061632d9f855531190921e5d9315f820"
+  integrity sha512-w+a/bN0xAxhvFzvlz10AQx9/N2xfpzxE2IdvLeoW/qe+GxF6UOC6ryn4cjVAx/3vrVImZ+VeQ+bpkZzlfJXWbQ==
   dependencies:
     "@twilio-paste/alert" "^2.0.2"
     "@twilio-paste/anchor" "^1.3.28"
@@ -1682,7 +1682,7 @@
     "@twilio-paste/stack" "^0.2.2"
     "@twilio-paste/style-props" "^1.8.15"
     "@twilio-paste/styling-library" "^0.2.1"
-    "@twilio-paste/table" "^0.1.15"
+    "@twilio-paste/table" "^0.1.16"
     "@twilio-paste/tabs" "^0.4.2"
     "@twilio-paste/tabs-primitive" "^0.1.12"
     "@twilio-paste/text" "^2.4.2"
@@ -1882,10 +1882,10 @@
     emotion-theming "^10.0.27"
     styled-system "5.1.5"
 
-"@twilio-paste/table@^0.1.15":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/table/-/table-0.1.15.tgz#68328e8a2606702e6555558df36ce3f7ebbaa372"
-  integrity sha512-pSHJLmemP1WznHomtcutN7rYteVK/LjNkLelSp3Bs3aRBCYytfd2QbU7clitEibqeYXVmZrx09BXz6KW7wxTjw==
+"@twilio-paste/table@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/table/-/table-0.1.16.tgz#ee8f342a7af0b18bf7b7eea86ea0c10c17a5e5f7"
+  integrity sha512-GDOouLs63Sw+QFQKkjsa0LdtyaMmLU0Gup41TXJuUU3DIfgz1sw3ZOQ9LlSaqHJI4jSuFYo6lfCO/qJPNUE1wQ==
 
 "@twilio-paste/tabs-primitive@^0.1.12":
   version "0.1.12"
