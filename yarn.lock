@@ -1632,10 +1632,10 @@
   dependencies:
     lodash.groupby "^4.6.0"
 
-"@twilio-paste/core@4.3.1":
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.3.1.tgz#40fbc319bb98054579ff6f77ea31004c866abc23"
-  integrity sha512-daF/72hp99gbsn2Oynr+eyv7UPXcDQb/zR0m1w63dKlgMG7NQRO2fxxnbv0o+pnyk8jbVUxnjxeeY3UO98kEzA==
+"@twilio-paste/core@4.3.2":
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/core/-/core-4.3.2.tgz#bc0f8e3b516d998dbd2f9d50be3068e0392a6428"
+  integrity sha512-cCRHpJe5/S8eSIInta23FJgHD2vLXauaVHLz2ZzAuGrHpFEMRFZT3+D1VEfinzFjDcFYBZepQ8+ufwQXimx/pQ==
   dependencies:
     "@twilio-paste/alert" "^2.1.1"
     "@twilio-paste/anchor" "^1.4.1"
@@ -1652,7 +1652,7 @@
     "@twilio-paste/combobox-primitive" "^0.2.1"
     "@twilio-paste/customization" "^0.2.1"
     "@twilio-paste/design-tokens" "^6.5.1"
-    "@twilio-paste/disclosure" "^0.4.1"
+    "@twilio-paste/disclosure" "^1.0.0"
     "@twilio-paste/disclosure-primitive" "^0.3.1"
     "@twilio-paste/dropdown-library" "^1.1.1"
     "@twilio-paste/flex" "^0.5.1"
@@ -1712,10 +1712,10 @@
   resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure-primitive/-/disclosure-primitive-0.3.1.tgz#396afdd2788cd6bfff286d2486ad91aa06b36788"
   integrity sha512-PahW25laHAUMtEFqbgf7chNjDOEG+XashygyH8ZtSoFU5HhgpL3MqPMqwmVs9pq1l7PaXM0PMGxNXhGWcOFz3A==
 
-"@twilio-paste/disclosure@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure/-/disclosure-0.4.1.tgz#a7834a361ed928167fed997c8566e2819272fab4"
-  integrity sha512-auWkMmaRhVehHwZ9iak6W8HK8KlJ7lFEocomQOXKCVE8TO2pDhS7Xz2fRrWJm9PZIPKYxhRpCCuzu3poYAZkPA==
+"@twilio-paste/disclosure@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@twilio-paste/disclosure/-/disclosure-1.0.0.tgz#9853e950098b2cc81781bc0cbae18c2efe82f0be"
+  integrity sha512-jqjlXRsnlP3TeXeMRJwYIaubcKeRKBkxFamC818F4wui+IP2PXYX0OBj4IlfOIwUBi4ZPRwZkvIcMt6g6yo6Pg==
 
 "@twilio-paste/dropdown-library@^1.1.1":
   version "1.1.1"
