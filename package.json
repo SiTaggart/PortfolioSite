@@ -26,7 +26,7 @@
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "10.2.1",
     "@percy/cypress": "2.3.4",
-    "@sitaggart/eslint-config-ts": "0.5.262",
+    "@sitaggart/eslint-config-ts": "0.5.263",
     "@sitaggart/prettier-config": "0.2.57",
     "@types/lodash.reverse": "4.0.6",
     "@types/lodash.sortby": "4.7.6",
