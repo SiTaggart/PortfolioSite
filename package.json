@@ -27,7 +27,7 @@
     "@emotion/babel-preset-css-prop": "10.2.1",
     "@percy/cypress": "2.3.4",
     "@sitaggart/eslint-config-ts": "0.5.265",
-    "@sitaggart/prettier-config": "0.2.59",
+    "@sitaggart/prettier-config": "0.2.60",
     "@types/lodash.reverse": "4.0.6",
     "@types/lodash.sortby": "4.7.6",
     "@types/mdx-js__react": "1.5.3",
