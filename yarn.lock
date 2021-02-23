@@ -1400,10 +1400,10 @@
     eslint-plugin-standard "4.1.0"
     eslint-plugin-unicorn "23.0.0"
 
-"@sitaggart/prettier-config@0.2.74":
-  version "0.2.74"
-  resolved "https://registry.yarnpkg.com/@sitaggart/prettier-config/-/prettier-config-0.2.74.tgz#b62d9d0b87f8c811815499777765214d87cca753"
-  integrity sha512-t+4QFCPPWHQgfPqU+r+oN73BJmavFQHTjp+BYCtMYTbya4DbbEtVLUtQI5ReDiD1HZehXyJuVew9DjYAfxXrAA==
+"@sitaggart/prettier-config@0.2.76":
+  version "0.2.76"
+  resolved "https://registry.yarnpkg.com/@sitaggart/prettier-config/-/prettier-config-0.2.76.tgz#97d0df4ae4c6dca8ba1733fecce02233b3ac5a64"
+  integrity sha512-tkTU1oDvfQEPM0puJ+1CfWm4cdnzL/2Cl3ulwW89hZXhkJerYAUJugoZVbHYqY2b/VztczsSNzbV2sH8LbovvA==
 
 "@styled-system/background@^5.1.2":
   version "5.1.2"
