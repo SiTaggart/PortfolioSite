@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "source": ".",
+    "predeploy": ["yarn --cwd \"$PROJECT_DIR\" install", "yarn --cwd \"$PROJECT_DIR\" build"],
+    "runtime": "nodejs12"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextjsFunc"
+      }
+    ]
+  }
+}
