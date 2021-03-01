@@ -25,6 +25,9 @@ const withMdxEnhanced = require('next-mdx-enhanced')({
   },
 });
 
-module.exports = withMdxEnhanced({
-  pageExtensions: ['js', 'jsx', 'tsx', 'ts', 'mdx', 'md'],
-});
+module.exports = {
+  ...withMdxEnhanced({
+    pageExtensions: ['js', 'jsx', 'tsx', 'ts', 'mdx', 'md'],
+  }),
+  target: 'serverless',
+};
