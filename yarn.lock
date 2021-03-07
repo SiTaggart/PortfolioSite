@@ -1997,7 +1997,7 @@
     path-exists "^4.0.0"
     readdirp "^3.4.0"
 
-"@netlify/plugin-lighthouse@^1.4.2":
+"@netlify/plugin-lighthouse@1.4.2":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@netlify/plugin-lighthouse/-/plugin-lighthouse-1.4.2.tgz#d337af6a0d977658d9ac67a6b5de279c6900c3b9"
   integrity sha512-kW+cpo4jAdu+j4jofbmNNOYVhLBzhLOZqMCiIIeKKu4lqriXt4iGLtXPurIa5Zwp2xDH6XRlXqt8ZVpJyJtdWg==
@@ -2009,7 +2009,7 @@
     lighthouse "^6.0.0"
     puppeteer "^5.0.0"
 
-"@netlify/plugin-nextjs@^2.0.1":
+"@netlify/plugin-nextjs@2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-2.0.1.tgz#7c1db68f85f56fbe912dda2d655bdc6237a6e166"
   integrity sha512-bGo5QMXsoNmaz40rkxU2VxeEjG9/6WVfqijrzuXnD1ogsHKCrW/jY65s6gZ33pk3T/f8nxWFcjlQDwyKtaqGsw==
@@ -9684,7 +9684,7 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-plugin-cache-nextjs@^1.5.2:
+netlify-plugin-cache-nextjs@1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/netlify-plugin-cache-nextjs/-/netlify-plugin-cache-nextjs-1.5.2.tgz#3c206debc76b8cf19536ea8bde855f5d8a52ee5b"
   integrity sha512-pOtc+ZsZmXFSz3db8OfaOr+5HTQNIxPUTDEC4mI2g0ikTv3pXMjYrd0J1GJ0fU6KfJlbZqSXbqi4bbA6QArp0A==
