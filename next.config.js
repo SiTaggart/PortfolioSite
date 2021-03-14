@@ -19,7 +19,7 @@ const withMdxEnhanced = require('next-mdx-enhanced')({
         .replace(/\/index$/, '');
       return {
         path,
-        url: `http://www.simontaggart.com${path}`,
+        url: `https://www.simontaggart.com${path}`,
       };
     },
   },
