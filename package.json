@@ -29,7 +29,7 @@
     "@netlify/plugin-nextjs": "2.0.1",
     "@percy/cypress": "2.3.4",
     "@sitaggart/eslint-config-ts": "0.5.301",
-    "@sitaggart/prettier-config": "0.2.95",
+    "@sitaggart/prettier-config": "0.2.96",
     "@types/lodash.reverse": "4.0.6",
     "@types/lodash.sortby": "4.7.6",
     "@types/mdx-js__react": "1.5.3",
