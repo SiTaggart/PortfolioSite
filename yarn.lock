@@ -3112,10 +3112,10 @@
     "@types/geojson" "*"
     "@types/node" "*"
 
-"@types/twitter-text@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@types/twitter-text/-/twitter-text-3.1.0.tgz#32abbbc71bfa4838798e3a12e5554e6b7288e776"
-  integrity sha512-AOMDM8MTYygW9net4TPFtgpbMowCkKETAzCC3jYhrolDdHd1yBgIYAao+L455lqg2aWRGEI0v5lHTw/aNBJuhg==
+"@types/twitter-text@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@types/twitter-text/-/twitter-text-3.1.1.tgz#c23334522ca252659e432635eec2f439706737d0"
+  integrity sha512-TqUdwZOdCi3pB4kmCyOS6sjLfzRjbqcwFuVKGQ9Gq9J37GBnF7mf6cIw/zN2GgDbvXYEEfoiuPGFw+TK5ZU0EA==
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
   version "2.0.3"
