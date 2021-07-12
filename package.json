@@ -34,7 +34,7 @@
     "@types/lodash.sortby": "4.7.6",
     "@types/mdx-js__react": "1.5.4",
     "@types/node": "14.17.5",
-    "@types/react": "17.0.13",
+    "@types/react": "17.0.14",
     "@types/twit": "2.2.30",
     "@types/twitter-text": "3.1.1",
     "babel-plugin-import-glob-array": "0.2.0",
