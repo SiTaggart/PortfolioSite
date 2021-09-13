@@ -523,19 +523,6 @@
     "sizeSquare80": "1.75rem",
     "sizeSquare90": "2rem"
   },
-  "iconSizes": {
-    "sizeIcon10": "1rem",
-    "sizeIcon20": "1.25rem",
-    "sizeIcon30": "1.25rem",
-    "sizeIcon40": "1.5rem",
-    "sizeIcon50": "1.75rem",
-    "sizeIcon60": "1.75rem",
-    "sizeIcon70": "2rem",
-    "sizeIcon80": "2.5rem",
-    "sizeIcon90": "2.75rem",
-    "sizeIcon100": "3.25rem",
-    "sizeIcon110": "4rem"
-  },
   "space": {
     "space0": "0",
     "space10": "0.5rem",

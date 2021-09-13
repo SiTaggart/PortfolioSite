@@ -21,7 +21,7 @@ export const FeaturePost: React.FC<FeaturedPostProps> = ({ post }) => (
     padding="space40"
   >
     <Text as="h2" fontSize="fontSize50" fontWeight="fontWeightNormal" lineHeight="lineHeight50">
-      <Link href={`/${post.__resourcePath.replace('index.mdx', '')}`}>
+      <Link href={`/${post.__resourcePath.replace('index.mdx', '')}`} passHref>
         <Anchor href={`/${post.__resourcePath.replace('index.mdx', '')}`}>{post.title}</Anchor>
       </Link>
     </Text>

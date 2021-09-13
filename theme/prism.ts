@@ -1,8 +1,8 @@
 import { css } from '@twilio-paste/core/styling-library';
-import { ThemeShape } from '@twilio-paste/core/theme';
+import { GenericThemeShape } from '@twilio-paste/core/theme';
 
 interface PrismStylesProps {
-  theme: ThemeShape;
+  theme: Partial<GenericThemeShape>;
 }
 
 // inspiratiopn from https://github.com/SaraVieira/prism-theme-night-owl
@@ -20,14 +20,16 @@ export const getPrismStyles = (props: PrismStylesProps): any =>
       tabSize: '4',
       hyphens: 'none',
     },
-    'pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection': {
-      textShadow: 'none',
-      background: 'rgba(29, 59, 83, 0.99)',
-    },
-    'pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection': {
-      textShadow: 'none',
-      background: 'rgba(29, 59, 83, 0.99)',
-    },
+    'pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection':
+      {
+        textShadow: 'none',
+        background: 'rgba(29, 59, 83, 0.99)',
+      },
+    'pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection':
+      {
+        textShadow: 'none',
+        background: 'rgba(29, 59, 83, 0.99)',
+      },
     '@media print': {
       'code[class*="language-"], pre[class*="language-"]': {
         textShadow: 'none',
