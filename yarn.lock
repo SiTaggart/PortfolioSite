@@ -4167,12 +4167,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sitaggart/prettier-config@npm:0.2.112":
-  version: 0.2.112
-  resolution: "@sitaggart/prettier-config@npm:0.2.112"
+"@sitaggart/prettier-config@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@sitaggart/prettier-config@npm:0.3.1"
   peerDependencies:
     prettier: "*"
-  checksum: 4e9c74c4e74ac7836da521856a251f3beb05f8120e68832bf4e5a2f233a3b8e877d2b78f4d2011295c58cf36342d87768be5ab2306a07d2b0fa510739a3bda53
+  checksum: 46adf3417b794f3a4192a72c7db5eceb259724b362fd6092690c09e04c2160660780af6e31e08dc854ff6325e9ef60a78736d788e68521632f44a2d18fc70011
   languageName: node
   linkType: hard
 
@@ -18263,7 +18263,7 @@ fsevents@~2.3.2:
     "@next/mdx": 10.2.3
     "@percy/cypress": 2.3.4
     "@sitaggart/eslint-config-ts": 0.5.311
-    "@sitaggart/prettier-config": 0.2.112
+    "@sitaggart/prettier-config": 0.3.1
     "@twilio-paste/core": 7.0.2
     "@twilio-paste/icons": 5.3.2
     "@types/lodash.reverse": 4.0.6
