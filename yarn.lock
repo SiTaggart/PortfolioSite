@@ -5841,10 +5841,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.14":
-  version: 14.17.14
-  resolution: "@types/node@npm:14.17.14"
-  checksum: 66ed675a324fdddc4f693f1b240c0d81a9f53e1c68f7de8b84d02d65c0b447f9fa30d318481d04e1502f68dd37091b5cadc59633b57246582ad25e3fa835cd7d
+"@types/node@npm:14.17.21":
+  version: 14.17.21
+  resolution: "@types/node@npm:14.17.21"
+  checksum: f5fc54b1a857f6a3a266c25521cddda28c711979ec6e443187076b0c99df08b8578c5c0bef64af35f13fc1475f8fd8a71619dd708219b855a8f28629f7880bbb
   languageName: node
   linkType: hard
 
@@ -18387,7 +18387,7 @@ fsevents@~2.3.2:
     "@types/lodash.reverse": 4.0.6
     "@types/lodash.sortby": 4.7.6
     "@types/mdx-js__react": 1.5.4
-    "@types/node": 14.17.14
+    "@types/node": 14.17.21
     "@types/react": 17.0.27
     "@types/twit": 2.2.30
     "@types/twitter-text": 3.1.1
