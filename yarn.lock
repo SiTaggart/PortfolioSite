@@ -5909,14 +5909,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.27":
-  version: 17.0.27
-  resolution: "@types/react@npm:17.0.27"
+"@types/react@npm:17.0.32":
+  version: 17.0.32
+  resolution: "@types/react@npm:17.0.32"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3a1147d963c16dc9bbea5afb20c4be94f2389cf4eca4c5fbe9b02f3406bd9957602c0459ea017c95f8c3d523221f572e8bd842f94654835776d4c2923357f9dc
+  checksum: 952d33bf948b6f4ce52fbf4118d9c99c97427aa3270a6bcde9f1156bb3898f1662d8f6ca128d095b4677acaff3971b3f761940dbb437366f656ad584eb69b108
   languageName: node
   linkType: hard
 
@@ -18388,7 +18388,7 @@ fsevents@~2.3.2:
     "@types/lodash.sortby": 4.7.6
     "@types/mdx-js__react": 1.5.4
     "@types/node": 14.17.21
-    "@types/react": 17.0.27
+    "@types/react": 17.0.32
     "@types/twit": 2.2.30
     "@types/twitter-text": 3.1.1
     babel-plugin-import-glob-array: 0.2.0
