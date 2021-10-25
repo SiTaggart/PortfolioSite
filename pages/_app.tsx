@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { AppProps } from 'next/app';
+import Script from 'next/script';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
 import { StylingGlobals, css } from '@twilio-paste/core/styling-library';
 import { GenericThemeShape } from '@twilio-paste/core/theme';
@@ -12,7 +13,7 @@ import { SiteFooter } from '../components/SiteFooter';
 import defaultSeoConfig from '../next-seo.json';
 
 interface GlobalStylesProps {
-  theme: GenericThemeShape;
+  theme: Partial<GenericThemeShape>;
 }
 const globalStyles = (props: GlobalStylesProps): any =>
   css({
@@ -23,6 +24,17 @@ const globalStyles = (props: GlobalStylesProps): any =>
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <>
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-10401619-1" />
+    <Script id="google-analytics">
+      {`
+        if (!window.Cypress) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-10401619-1');
+        }
+      `}
+    </Script>
     <DefaultSeo {...defaultSeoConfig} />
     <SocialProfileJsonLd
       name="Simon Taggart"
@@ -37,7 +49,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
       url="https://www.simontaggart.com"
     />
     <ComponentProvider>
-      <CustomizationProvider theme={PortfolioTheme}>
+      <CustomizationProvider baseTheme="default" theme={PortfolioTheme}>
         <StylingGlobals styles={getPrismStyles({ theme: PortfolioTheme })} />
         <StylingGlobals styles={globalStyles({ theme: PortfolioTheme })} />
         <Box

@@ -19,19 +19,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link crossOrigin="" href="https://www.google-analytics.com" rel="preconnect" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10401619-1" />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                if (!window.Cypress) {
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'UA-10401619-1');
-                }
-              `,
-            }}
-          />
         </Head>
         <body>
           <Main />

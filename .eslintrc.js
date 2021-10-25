@@ -1,8 +1,8 @@
 module.exports = {
-  extends: ['@sitaggart/eslint-config-ts'],
+  extends: ['@sitaggart/eslint-config-ts', 'plugin:@next/next/recommended'],
   settings: {
     react: {
-      version: '16.13.1',
+      version: '17.0.2',
     },
   },
   rules: {
@@ -12,5 +12,6 @@ module.exports = {
     'unicorn/filename-case': 0,
     '@typescript-eslint/ban-ts-comment': 0,
     'no-underscore-dangle': 0,
+    'unicorn/prefer-module': 0,
   },
 };

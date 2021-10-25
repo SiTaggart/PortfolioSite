@@ -52,7 +52,7 @@ export const SiteFooter: React.FC = () => (
   <StyledSiteFooter>
     <SiteFooterList>
       <SiteFooterListItem>
-        <Link href="/">
+        <Link href="/" passHref>
           <Anchor href="/">Home</Anchor>
         </Link>
       </SiteFooterListItem>

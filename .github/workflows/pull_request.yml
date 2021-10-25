@@ -30,7 +30,7 @@ jobs:
       - name: Run prettier
         run: yarn prettier
       - name: Run bundlewatch
-        run: yarn run bundlewatch
+        run: yarn bundlewatch
         env:
           BUNDLEWATCH_GITHUB_TOKEN: ${{ secrets.BUNDLEWATCH_GITHUB_TOKEN }}
           CI_REPO_OWNER: SiTaggart

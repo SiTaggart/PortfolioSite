@@ -30,4 +30,5 @@ module.exports = {
     pageExtensions: ['js', 'jsx', 'tsx', 'ts', 'mdx', 'md'],
   }),
   target: 'serverless',
+  webpack5: false,
 };
