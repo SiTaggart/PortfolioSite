@@ -159,7 +159,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.8, @babel/core@npm:^7.15.8":
+"@babel/core@npm:7.15.8":
   version: 7.15.8
   resolution: "@babel/core@npm:7.15.8"
   dependencies:
@@ -3460,7 +3460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:11.1.2, @next/eslint-plugin-next@npm:^11.1.2":
+"@next/eslint-plugin-next@npm:11.1.2":
   version: 11.1.2
   resolution: "@next/eslint-plugin-next@npm:11.1.2"
   dependencies:
@@ -10928,7 +10928,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^11.1.2":
+"eslint-config-next@npm:11.1.2":
   version: 11.1.2
   resolution: "eslint-config-next@npm:11.1.2"
   dependencies:
@@ -18593,11 +18593,11 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
-    "@babel/core": ^7.15.8
+    "@babel/core": 7.15.8
     "@emotion/babel-preset-css-prop": 10.2.1
     "@mdx-js/loader": 1.6.22
     "@mdx-js/react": 1.6.22
-    "@next/eslint-plugin-next": ^11.1.2
+    "@next/eslint-plugin-next": 11.1.2
     "@next/mdx": 11.1.2
     "@percy/cypress": 2.3.4
     "@sitaggart/eslint-config-ts": 0.6.2
@@ -18616,7 +18616,7 @@ fsevents@~2.3.1:
     bundlewatch: 0.3.2
     cypress: 8.6.0
     eslint: 7.32.0
-    eslint-config-next: ^11.1.2
+    eslint-config-next: 11.1.2
     husky: 7.0.4
     isomorphic-unfetch: 3.1.0
     jest: 27.3.1
