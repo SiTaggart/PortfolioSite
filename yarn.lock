@@ -3563,9 +3563,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/zip-it-and-ship-it@npm:4.29.3":
-  version: 4.29.3
-  resolution: "@netlify/zip-it-and-ship-it@npm:4.29.3"
+"@netlify/zip-it-and-ship-it@npm:4.30.0":
+  version: 4.30.0
+  resolution: "@netlify/zip-it-and-ship-it@npm:4.30.0"
   dependencies:
     "@babel/parser": ^7.15.7
     "@netlify/esbuild": ^0.13.6
@@ -3603,7 +3603,7 @@ __metadata:
     yargs: ^16.0.0
   bin:
     zip-it-and-ship-it: dist/bin.js
-  checksum: a277a9e2deab8d242c15369f94880d2b27f611b1f77d545f7906e0802a2a394fadd93890757792ba2cf3f3e3cc2ac8cd42ca847de310cec333570100ed7d6b5a
+  checksum: 950302772bee65017fbea619f9faf58f9772de74f6e10ab938a088985c24665cc982d9cc94595084a74e0c5169461f3165d830d85dc74fcbe09228cdd5fb4ab2
   languageName: node
   linkType: hard
 
@@ -6471,10 +6471,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.33":
-  version: 14.17.33
-  resolution: "@types/node@npm:14.17.33"
-  checksum: 47ee8d5a398f84b376023f03b83e43a71f1bf617d1014d34c0af24b0332b42e7b392c967c20bfb907fb37971993035e3b25c47a1678c745c5d122d8205ba5a19
+"@types/node@npm:14.17.34":
+  version: 14.17.34
+  resolution: "@types/node@npm:14.17.34"
+  checksum: 803a7532b6998aca6aa1b3e6239f280e82612d4f641d38fbf08962c905ea9d1b278b2f09d396beac5120a4e68f33d7467298b197f2f00150ec1dcd546de02a89
   languageName: node
   linkType: hard
 
@@ -6546,7 +6546,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.34, @types/react@npm:^17.0.31":
+"@types/react@npm:17.0.36":
+  version: 17.0.36
+  resolution: "@types/react@npm:17.0.36"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: feeaa484d5d7e354ba6830b06342dec6fd1a2ac87f73d21d3d4f2a3d311459de4090330a1e8af7275c8d1e7737b655a7550c8dd3dbc74ccf34ffd3fc824bbd12
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.31":
   version: 17.0.34
   resolution: "@types/react@npm:17.0.34"
   dependencies:
@@ -17265,9 +17276,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"netlify-cli@npm:6.14.23":
-  version: 6.14.23
-  resolution: "netlify-cli@npm:6.14.23"
+"netlify-cli@npm:6.15.0":
+  version: 6.15.0
+  resolution: "netlify-cli@npm:6.15.0"
   dependencies:
     "@netlify/build": ^18.22.0
     "@netlify/config": ^15.8.2
@@ -17276,7 +17287,7 @@ fsevents@~2.3.1:
     "@netlify/plugin-edge-handlers": ^1.11.22
     "@netlify/plugins-list": ^4.2.0
     "@netlify/routing-local-proxy": ^0.34.1
-    "@netlify/zip-it-and-ship-it": 4.29.3
+    "@netlify/zip-it-and-ship-it": 4.30.0
     "@oclif/command": ^1.6.1
     "@oclif/config": ^1.15.1
     "@oclif/errors": ^1.3.4
@@ -17385,7 +17396,7 @@ fsevents@~2.3.1:
   bin:
     netlify: bin/run
     ntl: bin/run
-  checksum: 906dc8a5e46b96ff772348347efa048c7abff1f7f8088a00866ef17185d2ec94a3d740c3639da98ad4fd8829dbfa4eae373703beef9b960df95c533a44c7f41e
+  checksum: a046c5fef2827c96bda53fa2a9751eb873f45640923fe501908bdb132e02b46c0c8ee0c0652b800c6f0ee4652c32198fcde558f8364d2b56df3c3d4723b68e3e
   languageName: node
   linkType: hard
 
@@ -18946,8 +18957,8 @@ fsevents@~2.3.1:
     "@types/lodash.reverse": 4.0.6
     "@types/lodash.sortby": 4.7.6
     "@types/mdx-js__react": 1.5.5
-    "@types/node": 14.17.33
-    "@types/react": 17.0.34
+    "@types/node": 14.17.34
+    "@types/react": 17.0.36
     "@types/twit": 2.2.30
     "@types/twitter-text": 3.1.1
     babel-plugin-import-glob-array: 0.2.0
@@ -18962,7 +18973,7 @@ fsevents@~2.3.1:
     lodash.reverse: 4.0.1
     lodash.sortby: 4.7.0
     mdx-prism: 0.3.4
-    netlify-cli: 6.14.23
+    netlify-cli: 6.15.0
     next: 11.1.2
     next-mdx-enhanced: 5.0.0
     next-seo: 4.28.1
@@ -18979,7 +18990,7 @@ fsevents@~2.3.1:
     swr: 1.0.1
     twit: 2.2.11
     twitter-text: 3.1.0
-    typescript: 4.4.4
+    typescript: 4.5.2
   languageName: unknown
   linkType: soft
 
@@ -22819,13 +22830,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-typescript@4.4.4:
-  version: 4.4.4
-  resolution: "typescript@npm:4.4.4"
+typescript@4.5.2:
+  version: 4.5.2
+  resolution: "typescript@npm:4.5.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 89ecb8436bb48ef5594d49289f5f89103071716b6e4844278f4fb3362856e31203e187a9c76d205c3f0b674d221a058fd28310dbcbcf5d95e9a57229bb5203f1
+  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
   languageName: node
   linkType: hard
 
@@ -22849,13 +22860,13 @@ typescript@^3.9.7:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.4#~builtin<compat/typescript>":
-  version: 4.4.4
-  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"
+"typescript@patch:typescript@4.5.2#~builtin<compat/typescript>":
+  version: 4.5.2
+  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=32657b"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c97c33903f1eb4f9e178649befdfc859d93157db1eccd1e521e84976ec6861db53412d8018e5e4c5d09268771c65498d42caa64bd881878346c3644f6b7cd202
+  checksum: 02cf0f190f0cb6d216558d8db9c3a968feeab4965c340a351e5e6e84a42a3946e5e200a9538b6e427af9d17e4f713254dd0707d5fd6f238ce93f0aee1986ab57
   languageName: node
   linkType: hard
 
