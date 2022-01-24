@@ -68,6 +68,8 @@ export const SiteFooter: React.FC = () => (
                 },
               }}
               height="sizeIcon90"
+              // @ts-ignore
+              viewBox="0 0 56.693 56.693"
               width="sizeIcon90"
             />
             <ScreenReaderOnly>Find me on Twitter</ScreenReaderOnly>
@@ -86,6 +88,8 @@ export const SiteFooter: React.FC = () => (
                 },
               }}
               height="sizeIcon90"
+              // @ts-ignore
+              viewBox="0 0 121 119"
               width="sizeIcon90"
             />
             <ScreenReaderOnly>Find me on GitHub</ScreenReaderOnly>
@@ -104,6 +108,8 @@ export const SiteFooter: React.FC = () => (
                 },
               }}
               height="sizeIcon90"
+              // @ts-ignore
+              viewBox="0 0 56.693 56.693"
               width="sizeIcon90"
             />
             <ScreenReaderOnly>Find me on LinkedIn</ScreenReaderOnly>

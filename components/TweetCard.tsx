@@ -37,6 +37,8 @@ export const TweetCard: React.FC<TweetCardProps> = ({ twitterData }) => {
                     },
                   }}
                   height="sizeIcon90"
+                  // @ts-ignore
+                  viewBox="0 0 56.693 56.693"
                   width="sizeIcon90"
                 />
               </Text>
