@@ -9,7 +9,7 @@ interface FeaturedPostProps {
     title: string;
     description: string;
     date: string;
-    __resourcePath: string;
+    slug: string;
   };
 }
 export const FeaturePost: React.FC<FeaturedPostProps> = ({ post }) => (
@@ -21,8 +21,8 @@ export const FeaturePost: React.FC<FeaturedPostProps> = ({ post }) => (
     padding="space40"
   >
     <Text as="h2" fontSize="fontSize50" fontWeight="fontWeightNormal" lineHeight="lineHeight50">
-      <Link href={`/${post.__resourcePath.replace('index.mdx', '')}`} passHref>
-        <Anchor href={`/${post.__resourcePath.replace('index.mdx', '')}`}>{post.title}</Anchor>
+      <Link href={post.slug} passHref>
+        <Anchor href={post.slug}>{post.title}</Anchor>
       </Link>
     </Text>
     <Text

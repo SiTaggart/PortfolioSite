@@ -8,12 +8,13 @@ const t = new Twit({
   access_token_secret: process.env.TWITTER_TOKEN_SECRET,
 });
 
-module.exports = (req: NextApiRequest, res: NextApiResponse) => {
-  t.get('statuses/user_timeline', { count: 1 }, (err, data) => {
+// eslint-disable-next-line import/no-default-export
+export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
+  await t.get('statuses/user_timeline', { count: 1 }, (err, data) => {
     if (err) {
       res.status(500).json(err);
     } else {
       res.status(200).json(data);
     }
   });
-};
+}

@@ -3,7 +3,7 @@ type Tweet = {
 };
 export type Tweets = Tweet[];
 
-export interface FrontMatterShape {
+export interface MetaDataShape {
   title: string;
   url: string;
   date: Date;

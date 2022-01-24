@@ -1,17 +1,14 @@
 import * as React from 'react';
 import { Text } from '@twilio-paste/core/text';
 import { NextSeo } from 'next-seo';
-import { FrontMatterShape } from '../types';
+import { MetaDataShape } from '../types';
 
 interface PostLayoutProps {
   children: React.ReactNode;
-  frontMatter: FrontMatterShape;
+  meta: MetaDataShape;
 }
 
-const Post: React.FC<PostLayoutProps> = ({
-  children: content,
-  frontMatter: { title, url, date, description },
-}) => (
+const Post: React.FC<PostLayoutProps> = ({ children, meta: { title, url, date, description } }) => (
   <>
     <NextSeo
       canonical={url}
@@ -37,9 +34,9 @@ const Post: React.FC<PostLayoutProps> = ({
       {title}
     </Text>
     <Text as="p" color="colorTextWeak" marginBottom="space100">
-      {date.toDateString()}
+      {new Date(date).toDateString()}
     </Text>
-    {content}
+    {children}
   </>
 );
 
