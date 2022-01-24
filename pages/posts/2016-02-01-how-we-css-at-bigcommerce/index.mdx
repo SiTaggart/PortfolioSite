@@ -1,9 +1,14 @@
----
-title: How we "CSS" at BigCommerce
-layout: post
-date: 2016-02-01
-description: CSS is hard. Writing good CSS is harder. Writing good CSS with a big team on a large codebase... wow, just wow.
----
+import Post from '../../../layouts/post';
+
+export const meta = {
+  title: 'How we "CSS" at BigCommerce',
+  date: '2016-02-01',
+  description:
+    'CSS is hard. Writing good CSS is harder. Writing good CSS with a big team on a large codebase... wow, just wow.',
+  slug: '/posts/2016-02-01-how-we-css-at-bigcommerce',
+};
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;
 
 TL;DR [Our SASS Style Guide is available on GitHub](https://github.com/SiTaggart/sass-style-guide).
 
@@ -187,9 +192,7 @@ As I mentioned earlier, correctly naming your descendant children is pretty impo
     <img class="tweet-avatar" src="{$src}" alt="{$alt}" />
     ...
   </header>
-  <div class="tweet-body">
-    ...
-  </div>
+  <div class="tweet-body">...</div>
 </article>
 ```
 

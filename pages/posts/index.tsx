@@ -7,7 +7,7 @@ import { Box } from '@twilio-paste/core/box';
 import { SiteMainHeading } from '../../components/SiteMainHeading';
 import { SiteSubHeading } from '../../components/SiteSubHeading';
 // @ts-ignore
-import { frontMatter as allPosts } from './**/*.mdx';
+import { meta as allPosts } from './**/*.mdx';
 import { FeaturePost } from '../../components/FeaturedPost';
 
 const Posts: React.FC = () => {

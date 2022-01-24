@@ -14,7 +14,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "typeRoots": ["types", "node_modules/@types"],
-    "types": ["cypress", "@percy/cypress"]
+    "types": ["cypress", "@percy/cypress"],
+    "incremental": true
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", ".eslintrc.js", "**/*.svg"]

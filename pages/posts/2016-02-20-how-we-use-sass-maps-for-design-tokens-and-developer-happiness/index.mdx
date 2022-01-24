@@ -1,9 +1,14 @@
----
-title: How we use Sass Maps for Design Tokens and Developer Happiness
-layout: post
-date: 2016-02-20
-description: When building a design system there is always a set of global, shared properties that become the basis of everything that gets built. This is part of the atom level of the "Atomic Design" principle – the font sizes, weights, line heights, colours, borders, background, spacing, sizing and z-indexes that are the very core of every single piece of Interface in your UI library.
----
+import Post from '../../../layouts/post';
+
+export const meta = {
+  title: 'How we use Sass Maps for Design Tokens and Developer Happiness',
+  date: '2016-02-20',
+  description:
+    'When building a design system there is always a set of global, shared properties that become the basis of everything that gets built. This is part of the atom level of the "Atomic Design" principle – the font sizes, weights, line heights, colours, borders, background, spacing, sizing and z-indexes that are the very core of every single piece of Interface in your UI library.',
+  slug: '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
+};
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;
 
 When building a design system there is always a set of global, shared properties that become the basis of everything that gets built. This is part of the atom level of the "Atomic Design" principle – the font sizes, weights, line heights, colours, borders, background, spacing, sizing and z-indexes that are the very core of every single piece of Interface in your UI library.
 

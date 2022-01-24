@@ -12,7 +12,7 @@ import { SiteMainHeading } from '../components/SiteMainHeading';
 import { SiteSubHeading } from '../components/SiteSubHeading';
 import { FeaturePost } from '../components/FeaturedPost';
 // @ts-ignore
-import { frontMatter as lastestPost } from './posts/2021-01-01-2020-year-in-review/index.mdx';
+import { meta as lastestPost } from './posts/2021-01-01-2020-year-in-review/index.mdx';
 import { TweetCard } from '../components/TweetCard';
 import { Tweets } from '../types';
 
