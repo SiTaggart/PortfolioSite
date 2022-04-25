@@ -1839,9 +1839,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@eslint/eslintrc@npm:1.2.1"
+"@eslint/eslintrc@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@eslint/eslintrc@npm:1.2.2"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
@@ -1852,7 +1852,7 @@ __metadata:
     js-yaml: ^4.1.0
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: 1f797b9f94d71b965992cf6c44e3bcb574643014fd1e3d4862d25056bd5568f59c488461a7e9a1c1758ca7f0def5d3cb69c3d8b38581bcf4a53af74371243797
+  checksum: d891036bbffb0efec1462aa4a603ed6e349d546b1632dde7d474ddd15c2a8b6895671b25293f1d3ba10ff629c24a3649ad049373fe695a0e44b612537088563c
   languageName: node
   linkType: hard
 
@@ -5511,21 +5511,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.reverse@npm:4.0.6":
-  version: 4.0.6
-  resolution: "@types/lodash.reverse@npm:4.0.6"
+"@types/lodash.reverse@npm:4.0.7":
+  version: 4.0.7
+  resolution: "@types/lodash.reverse@npm:4.0.7"
   dependencies:
     "@types/lodash": "*"
-  checksum: 5a7630834f4adef6e55ef6d592ce1e6df2382c93c47c12aa05fec121f3be8fb3bc3c26e5e0a311091b4e7c55b9ce3288123b131d8285f0aba697a7e4e8621ff2
+  checksum: 0c056ba1d8af53b815f6e74e67f364717cf01af589fe8368b71ae087c9fdc52969a0a2e2e713f90a9040e39b92f4d7096a2ea806a1270204f52b71abd0b4c595
   languageName: node
   linkType: hard
 
-"@types/lodash.sortby@npm:4.7.6":
-  version: 4.7.6
-  resolution: "@types/lodash.sortby@npm:4.7.6"
+"@types/lodash.sortby@npm:4.7.7":
+  version: 4.7.7
+  resolution: "@types/lodash.sortby@npm:4.7.7"
   dependencies:
     "@types/lodash": "*"
-  checksum: d7ec1aad2de3cf839c2572f331859e229b6aae25da198bf8452c544aae4c8756e1aa5af293e878e6ff4d7504a336b0ccf208cab7ff0ef6fd6fc236a101370b09
+  checksum: 94164b49810e37cc3795c133a6375245cdfc0e6804680e34d7039889954e7201c820d658fff89fcda0a1ce68774286f49ce95f83004d8188c4434cdfc2ca55c4
   languageName: node
   linkType: hard
 
@@ -10257,11 +10257,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.13.0":
-  version: 8.13.0
-  resolution: "eslint@npm:8.13.0"
+"eslint@npm:8.14.0":
+  version: 8.14.0
+  resolution: "eslint@npm:8.14.0"
   dependencies:
-    "@eslint/eslintrc": ^1.2.1
+    "@eslint/eslintrc": ^1.2.2
     "@humanwhocodes/config-array": ^0.9.2
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -10298,7 +10298,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: bc7d2fc9a046d42cb2c8987573ecaf534c1fae14747c4695e32388e179c5f21b83eefdb3e4f35924bf76152e226d7cc9dfb21f12348baf12c803109005b17439
+  checksum: 87d2e3e5eb93216d4ab36006e7b8c0bfad02f40b0a0f193f1d42754512cd3a9d8244152f1c69df5db2e135b3c4f1c10d0ed2f0881fe8a8c01af55465968174c1
   languageName: node
   linkType: hard
 
@@ -15593,9 +15593,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"netlify-cli@npm:9.16.6":
-  version: 9.16.6
-  resolution: "netlify-cli@npm:9.16.6"
+"netlify-cli@npm:9.16.7":
+  version: 9.16.7
+  resolution: "netlify-cli@npm:9.16.7"
   dependencies:
     "@netlify/build": ^26.5.3
     "@netlify/config": ^17.0.20
@@ -15709,7 +15709,7 @@ __metadata:
   bin:
     netlify: bin/run
     ntl: bin/run
-  checksum: 7aaaa8bd274214f622a7b66c4c5b5ec883ca8ca3c5c97f474dd52b60d86098873e3c284d0fd1c5ab8ca5c1ad244ab3c68ef281c91341972e6b82f67a7702fd14
+  checksum: c641344d3df3b1de192fc89bf497bc0282b863b2909e6e6ab6cf2dd0d57c402478a8f7ccf48c213bf3c0372042aafc5d648577cd34a7169a7d4d7fd356e39ecc
   languageName: node
   linkType: hard
 
@@ -17207,8 +17207,8 @@ __metadata:
     "@sitaggart/prettier-config": 0.3.9
     "@twilio-paste/core": 11.5.0
     "@twilio-paste/icons": 6.2.1
-    "@types/lodash.reverse": 4.0.6
-    "@types/lodash.sortby": 4.7.6
+    "@types/lodash.reverse": 4.0.7
+    "@types/lodash.sortby": 4.7.7
     "@types/mdx-js__react": 1.5.5
     "@types/node": 17.0.10
     "@types/react": 17.0.44
@@ -17218,7 +17218,7 @@ __metadata:
     babel-plugin-inline-react-svg: 2.0.1
     bundlewatch: 0.3.3
     cypress: 9.5.4
-    eslint: 8.13.0
+    eslint: 8.14.0
     eslint-config-next: 12.1.5
     eslint-formatter-codeframe: 7.32.1
     husky: 7.0.4
@@ -17227,7 +17227,7 @@ __metadata:
     lodash.reverse: 4.0.1
     lodash.sortby: 4.7.0
     mdx-prism: 0.3.4
-    netlify-cli: 9.16.6
+    netlify-cli: 9.16.7
     next: 12.1.5
     next-seo: 5.4.0
     percy: 0.28.7
