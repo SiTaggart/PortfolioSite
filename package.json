@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.18.5",
-    "@emotion/babel-preset-css-prop": "10.2.1",
+    "@emotion/babel-preset-css-prop": "11.10.0",
     "@next/eslint-plugin-next": "12.1.6",
     "@percy/cli": "1.9.0",
     "@percy/cypress": "3.1.2",
