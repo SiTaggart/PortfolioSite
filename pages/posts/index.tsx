@@ -1,4 +1,4 @@
-import * as React from 'react';
+import type React from 'react';
 import { useUID } from 'react-uid';
 import reverse from 'lodash.reverse';
 import sortBy from 'lodash.sortby';

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import type React from 'react';
 import { Heading } from '@twilio-paste/core/heading';
 
 const Layout: React.FC = ({ children, meta }: any) => (

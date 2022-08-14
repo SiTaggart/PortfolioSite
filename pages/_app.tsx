@@ -1,4 +1,5 @@
-import * as React from 'react';
+import type React from 'react';
+import Head from 'next/head';
 import { AppProps } from 'next/app';
 import Script from 'next/script';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
@@ -24,6 +25,9 @@ const globalStyles = (props: GlobalStylesProps): any =>
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <>
+    <Head>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </Head>
     <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-10401619-1" />
     <Script id="google-analytics">
       {`

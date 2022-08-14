@@ -1,4 +1,4 @@
-import * as React from 'react';
+import type React from 'react';
 import { Text } from '@twilio-paste/core/text';
 import { NextSeo } from 'next-seo';
 import { MetaDataShape } from '../types';

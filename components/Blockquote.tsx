@@ -1,4 +1,4 @@
-import * as React from 'react';
+import type React from 'react';
 import { Box } from '@twilio-paste/core/box';
 import { Text } from '@twilio-paste/core/text';
 

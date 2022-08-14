@@ -1,4 +1,4 @@
-import * as React from 'react';
+import type React from 'react';
 import twitter from 'twitter-text';
 import { css } from '@twilio-paste/core/styling-library';
 import { useTheme } from '@twilio-paste/core/theme';
