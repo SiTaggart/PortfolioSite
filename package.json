@@ -88,7 +88,7 @@
     "files": [
       {
         "path": "./.next/static/chunks/**/*.js",
-        "maxSize": "85 kB"
+        "maxSize": "90 kB"
       }
     ],
     "ci": {
