@@ -13,7 +13,7 @@
     "@percy/cypress": "3.1.2",
     "@sitaggart/eslint-config-ts": "0.6.24",
     "@sitaggart/prettier-config": "0.3.23",
-    "@twilio-paste/core": "15.3.0",
+    "@twilio-paste/core": "16.0.1",
     "@twilio-paste/icons": "9.3.0",
     "@types/lodash.reverse": "4.0.7",
     "@types/lodash.sortby": "4.7.7",
