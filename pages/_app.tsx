@@ -28,14 +28,14 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
     <Head>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
     </Head>
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-10401619-1" />
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWX4K3TJLS" />
     <Script id="google-analytics">
       {`
         if (!window.Cypress) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'UA-10401619-1');
+          gtag('config', 'G-ZWX4K3TJLS');
         }
       `}
     </Script>
