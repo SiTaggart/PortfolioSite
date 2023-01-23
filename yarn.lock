@@ -16768,9 +16768,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"netlify-cli@npm:12.8.0":
-  version: 12.8.0
-  resolution: "netlify-cli@npm:12.8.0"
+"netlify-cli@npm:12.9.1":
+  version: 12.9.1
+  resolution: "netlify-cli@npm:12.9.1"
   dependencies:
     "@fastify/static": ^6.6.0
     "@netlify/build": ^29.5.1
@@ -16844,7 +16844,7 @@ __metadata:
     netlify-headers-parser: ^7.1.1
     netlify-onegraph-internal: 0.10.1
     netlify-redirect-parser: ^14.1.1
-    netlify-redirector: ^0.3.1
+    netlify-redirector: ^0.4.0
     node-fetch: ^2.6.0
     node-version-alias: ^1.0.1
     ora: ^5.0.0
@@ -16879,7 +16879,7 @@ __metadata:
   bin:
     netlify: bin/run.mjs
     ntl: bin/run.mjs
-  checksum: e0557dfdae23a8231c918c97bfa9b845ac433624bb11e066e296abac7deb69e6ceddf616df1f72ef93e49a6da9b8f7831fd6c49840208ba0d17eca1a8c9577f5
+  checksum: d62fd88d17f056a8a418346b426e852f048fa4079f2f90f9dc42097f0ab640d6271abcab4b387d7d9fcb75f87e451615d50dcfbded9b756103da1a0020503b78
   languageName: node
   linkType: hard
 
@@ -16922,10 +16922,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"netlify-redirector@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "netlify-redirector@npm:0.3.1"
-  checksum: 057322f8ab369f6e4a579da40ce741f0e434f1db155c75aaf5a9314265e1886c51f2fcfee12719c170e2c86c13eab2edfd3d8ffa6e1132199240c9ea7e689c89
+"netlify-redirector@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "netlify-redirector@npm:0.4.0"
+  checksum: d249bad5e2a5bf1825a131ae7b1179b89968830f711112b7da7f86270c30789fd9221d20acc34b79a966148d37489a6168e6d38099429fb60b01100e22ce6d66
   languageName: node
   linkType: hard
 
@@ -18363,7 +18363,7 @@ __metadata:
     lodash.reverse: 4.0.1
     lodash.sortby: 4.7.0
     mdx-prism: 0.3.4
-    netlify-cli: 12.8.0
+    netlify-cli: 12.9.1
     next: 12.3.4
     next-seo: 5.15.0
     precise-commits: 1.0.2
