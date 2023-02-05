@@ -24,7 +24,6 @@
     "@types/twitter-text": "3.1.5",
     "babel-plugin-import-glob-array": "0.2.0",
     "babel-plugin-inline-react-svg": "2.0.1",
-    "bundlewatch": "0.3.3",
     "cypress": "12.3.0",
     "eslint": "8.32.0",
     "eslint-config-next": "12.3.4",
@@ -67,7 +66,7 @@
     "clean": "rm -rf public && rm -rf .cache",
     "lint": "eslint './**/*.{js,jsx,ts,tsx}' --format codeframe",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ci:checks": "yarn build && yarn lint && yarn prettier && yarn bundlewatch && yarn cypress:ci",
+    "ci:checks": "yarn build && yarn lint && yarn prettier && yarn cypress:ci",
     "cypress": "start-server-and-test 'yarn dev' http://localhost:3000 'yarn cypress:open'",
     "cypress:open": "cypress open",
     "cypress:run": "yarn percy:exec cypress run",
@@ -82,19 +81,10 @@
   "browserslist": [
     "defaults"
   ],
-  "bundlewatch": {
-    "files": [
-      {
-        "path": "./.next/static/chunks/**/*.js",
-        "maxSize": "90 kB"
-      }
-    ],
-    "ci": {
-      "trackBranches": [
-        "main"
-      ],
-      "repoBranchBase": "main"
-    }
-  },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.4.1",
+  "nextBundleAnalysis": {
+    "budget": 358400,
+    "budgetPercentIncreaseRed": 20,
+    "showDetails": true
+  }
 }
