@@ -28,17 +28,12 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
     <Head>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
     </Head>
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWX4K3TJLS" />
-    <Script id="google-analytics">
-      {`
-        if (!window.Cypress) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-ZWX4K3TJLS');
-        }
-      `}
-    </Script>
+
+    <Script
+      data-cf-beacon='{"token": "511d2ddb672f42599f188f248a7bc403"}'
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+    />
     <DefaultSeo {...defaultSeoConfig} />
     <SocialProfileJsonLd
       name="Simon Taggart"
