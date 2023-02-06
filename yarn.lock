@@ -10272,7 +10272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:13.1.6":
+"eslint-config-next@npm:latest":
   version: 13.1.6
   resolution: "eslint-config-next@npm:13.1.6"
   dependencies:
@@ -17047,7 +17047,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:13.1.6":
+"next@npm:latest":
   version: 13.1.6
   resolution: "next@npm:13.1.6"
   dependencies:
@@ -18456,7 +18456,7 @@ __metadata:
     babel-plugin-inline-react-svg: 2.0.1
     cypress: 12.5.1
     eslint: 8.33.0
-    eslint-config-next: 13.1.6
+    eslint-config-next: latest
     eslint-formatter-codeframe: 7.32.1
     husky: 8.0.3
     isomorphic-unfetch: 4.0.2
@@ -18465,14 +18465,14 @@ __metadata:
     lodash.sortby: 4.7.0
     mdx-prism: 0.3.4
     netlify-cli: 12.10.0
-    next: 13.1.6
+    next: latest
     next-seo: 5.15.0
     precise-commits: 1.0.2
     prettier: 2.8.3
     prismjs: 1.29.0
     prop-types: 15.8.1
-    react: 18.2.0
-    react-dom: 18.2.0
+    react: latest
+    react-dom: latest
     react-uid: 2.3.2
     rehype: 12.0.1
     remark-gfm: 3.0.1
@@ -19018,7 +19018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:latest":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -19193,7 +19193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:latest":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:

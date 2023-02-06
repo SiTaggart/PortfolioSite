@@ -40,7 +40,7 @@ interface AProps
   ref: AnchorProps['ref'];
 }
 const A: React.FC<AProps> = (props) => (
-  <Link {...props} passHref>
+  <Link {...props} legacyBehavior passHref>
     <Anchor {...props} />
   </Link>
 );

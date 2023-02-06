@@ -1,7 +1,5 @@
 import type React from 'react';
 import Link from 'next/link';
-import useSWR from 'swr';
-import fetch from 'isomorphic-unfetch';
 import { NextSeo } from 'next-seo';
 import { Anchor } from '@twilio-paste/core/anchor';
 import { Text } from '@twilio-paste/core/text';
@@ -13,13 +11,8 @@ import { SiteSubHeading } from '../components/SiteSubHeading';
 import { FeaturePost } from '../components/FeaturedPost';
 // @ts-ignore
 import { meta as lastestPost } from './posts/2021-01-01-2020-year-in-review/index.mdx';
-import { TweetCard } from '../components/TweetCard';
-import { Tweets } from '../types';
-
-const fetcher = (url: string): Promise<Tweets> => fetch(url).then((r) => r.json());
 
 const Index: React.FC = () => {
-  const { data: twitterData } = useSWR('api/tweets', fetcher);
   const employmentStartDate = new Date(2004, 9, 1);
   const yoe = new Date(Date.now()).getFullYear() - employmentStartDate.getFullYear();
   return (
@@ -32,7 +25,7 @@ const Index: React.FC = () => {
       <SiteSubHeading>Design Systems &amp; Accessibility</SiteSubHeading>
 
       <Paragraph>
-        A UX Engineer currently working as a Principal UX Engineer at{' '}
+        A UX Engineer currently working as an Architect / Director at{' '}
         <Anchor href="https://www.twilio.com">Twilio</Anchor>, on{' '}
         <Anchor href="https://paste.twilio.design">Design Systems</Anchor>. I have over {yoe} years
         experience in Web Development and Front-End Engineering, specialising in building user
@@ -65,13 +58,11 @@ const Index: React.FC = () => {
         <FeaturePost post={lastestPost} />
 
         <Text as="div" marginTop="space30" textAlign="center">
-          <Link href="/posts/" passHref>
+          <Link href="/posts/" legacyBehavior passHref>
             <Anchor href="/posts/">All posts</Anchor>
           </Link>
         </Text>
       </Box>
-
-      {twitterData && <TweetCard twitterData={twitterData} />}
     </>
   );
 };
