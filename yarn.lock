@@ -4776,21 +4776,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/icons@npm:9.4.3":
-  version: 9.4.3
-  resolution: "@twilio-paste/icons@npm:9.4.3"
+"@twilio-paste/icons@npm:10.0.0":
+  version: 10.0.0
+  resolution: "@twilio-paste/icons@npm:10.0.0"
   peerDependencies:
-    "@twilio-paste/box": ^7.0.0
-    "@twilio-paste/design-tokens": ^8.0.0
-    "@twilio-paste/style-props": ^6.0.0
-    "@twilio-paste/styling-library": ^1.0.0
-    "@twilio-paste/theme": ^8.0.0
-    "@twilio-paste/types": ^3.1.1
-    "@twilio-paste/uid-library": ^0.2.1
+    "@twilio-paste/animation-library": ^1.0.0
+    "@twilio-paste/box": ^8.0.0
+    "@twilio-paste/color-contrast-utils": ^4.0.0
+    "@twilio-paste/customization": ^6.0.0
+    "@twilio-paste/design-tokens": ^9.0.0
+    "@twilio-paste/style-props": ^7.0.0
+    "@twilio-paste/styling-library": ^2.0.0
+    "@twilio-paste/theme": ^9.0.0
+    "@twilio-paste/types": ^4.0.0
+    "@twilio-paste/uid-library": ^1.0.0
     prop-types: ^15.7.2
-    react: ^16.8.6 || ^17.0.2
-    react-dom: ^16.8.6 || ^17.0.2
-  checksum: d7da189544edfd91913665e50d0541feb4b612c03da2be636d6bfa56d328211d002c2c6d4fe3346648769d3ddd2d37977f91df92dbc7954874ff106a8762b4ca
+    react: ^16.8.6 || ^17.0.2 || ^18.0.0
+    react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
+  checksum: 377f72385ae44dcee6eac984a4d0de691bff1388fd66698b4d8bd717875dc5c4d2b4f2480b436eca42bd39b79554c8b44df2d54da4f1d27d4cfc28506aac658c
   languageName: node
   linkType: hard
 
@@ -18444,7 +18447,7 @@ __metadata:
     "@sitaggart/eslint-config-ts": 0.6.25
     "@sitaggart/prettier-config": 0.3.24
     "@twilio-paste/core": 17.7.0
-    "@twilio-paste/icons": 9.4.3
+    "@twilio-paste/icons": 10.0.0
     "@types/lodash.reverse": 4.0.7
     "@types/lodash.sortby": 4.7.7
     "@types/mdx-js__react": 1.5.5
