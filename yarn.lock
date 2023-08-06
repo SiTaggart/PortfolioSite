@@ -7158,13 +7158,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/geojson@npm:*":
-  version: 7946.0.8
-  resolution: "@types/geojson@npm:7946.0.8"
-  checksum: 6049a39b025cfe323d5cf87333d87c133ec963cdbd349c49295bee779827ee4b46a3041fd8bd2e7a4b02d6d1e26f3002968875928941bbed08477bfd5f6f9284
-  languageName: node
-  linkType: hard
-
 "@types/graceful-fs@npm:^4.1.3":
   version: 4.1.5
   resolution: "@types/graceful-fs@npm:4.1.5"
@@ -7245,28 +7238,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.reverse@npm:4.0.7":
-  version: 4.0.7
-  resolution: "@types/lodash.reverse@npm:4.0.7"
-  dependencies:
-    "@types/lodash": "*"
-  checksum: 0c056ba1d8af53b815f6e74e67f364717cf01af589fe8368b71ae087c9fdc52969a0a2e2e713f90a9040e39b92f4d7096a2ea806a1270204f52b71abd0b4c595
-  languageName: node
-  linkType: hard
-
-"@types/lodash.sortby@npm:4.7.7":
-  version: 4.7.7
-  resolution: "@types/lodash.sortby@npm:4.7.7"
-  dependencies:
-    "@types/lodash": "*"
-  checksum: 94164b49810e37cc3795c133a6375245cdfc0e6804680e34d7039889954e7201c820d658fff89fcda0a1ce68774286f49ce95f83004d8188c4434cdfc2ca55c4
-  languageName: node
-  linkType: hard
-
-"@types/lodash@npm:*":
-  version: 4.14.178
-  resolution: "@types/lodash@npm:4.14.178"
-  checksum: a69a04a60bfc5257c3130a554b4efa0c383f0141b7b3db8ab7cf07ad2a46ea085fce66d0242da41da7e5647b133d5dfb2c15add9cbed8d7fef955e4a1e5b3128
+"@types/lodash@npm:^4.14.196":
+  version: 4.14.196
+  resolution: "@types/lodash@npm:4.14.196"
+  checksum: 201d17c3e62ae02a93c99ec78e024b2be9bd75564dd8fd8c26f6ac51a985ab280d28ce2688c3bcdfe785b0991cd9814edff19ee000234c7b45d9a697f09feb6a
   languageName: node
   linkType: hard
 
@@ -7290,15 +7265,6 @@ __metadata:
   version: 1.0.2
   resolution: "@types/mdurl@npm:1.0.2"
   checksum: 79c7e523b377f53cf1f5a240fe23d0c6cae856667692bd21bf1d064eafe5ccc40ae39a2aa0a9a51e8c94d1307228c8f6b121e847124591a9a828c3baf65e86e2
-  languageName: node
-  linkType: hard
-
-"@types/mdx-js__react@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@types/mdx-js__react@npm:1.5.5"
-  dependencies:
-    "@types/react": "*"
-  checksum: 91229e9e4d129bed0cd457459970daf8e505de9932791915cb91ad82f033b85c921c773ad16b7de629a7fa3ba97c8301784aad3b9ab6e431c3e5fc521a16a0f2
   languageName: node
   linkType: hard
 
@@ -7379,6 +7345,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-dom@npm:18.2.7":
+  version: 18.2.7
+  resolution: "@types/react-dom@npm:18.2.7"
+  dependencies:
+    "@types/react": "*"
+  checksum: e02ea908289a7ad26053308248d2b87f6aeafd73d0e2de2a3d435947bcea0422599016ffd1c3e38ff36c42f5e1c87c7417f05b0a157e48649e4a02f21727d54f
+  languageName: node
+  linkType: hard
+
 "@types/react-is@npm:17.0.3":
   version: 17.0.3
   resolution: "@types/react-is@npm:17.0.3"
@@ -7397,17 +7372,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 17.0.38
-  resolution: "@types/react@npm:17.0.38"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 4079f4f959cd4a4bfaeda8b89fe8a1b1f8bdc9d87acfdc5f74a0b39cec9ec6a470724357c62778c0f063180b360c250e920c5a142f1dbcda67d9cc25a6d43a85
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:18.2.18":
   version: 18.2.18
   resolution: "@types/react@npm:18.2.18"
@@ -7416,17 +7380,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 2e0d75de2b618e76780019e52478b1bec2b015a9187aea30f84518c0c3ddc639055bdfea50864aece937bad0cb0544d0100b80d30f5461e72fbc1c3c0be8b140
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:>=16":
-  version: 18.0.17
-  resolution: "@types/react@npm:18.0.17"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 18cae64f5bfd6bb58fbd8ee2ba52ec82de844f114254e26de7b513e4b86621f643f9b71d7066958cd571b0d78cb86cbceda449c5289f9349ca573df29ab69252
   languageName: node
   linkType: hard
 
@@ -7501,23 +7454,6 @@ __metadata:
   version: 5.0.2
   resolution: "@types/styled-system__theme-get@npm:5.0.2"
   checksum: 73bfca8d75c3e9985fd8ee63602e9c7b00dda7ff1af563f74c5db84af50a3cd5155c2fdcaa1afd60762f5bcaabdc7bc69cdfa53e94ee64ee875536c575e9088c
-  languageName: node
-  linkType: hard
-
-"@types/twit@npm:2.2.31":
-  version: 2.2.31
-  resolution: "@types/twit@npm:2.2.31"
-  dependencies:
-    "@types/geojson": "*"
-    "@types/node": "*"
-  checksum: 793cad5ba9edcfdc5bdaa56053a8ce2000b78f97504adf10ea013e556f799307fec2e25e344ac448029e1df25698d5a1dd0022531ae73ea472ada16869e83fa2
-  languageName: node
-  linkType: hard
-
-"@types/twitter-text@npm:3.1.5":
-  version: 3.1.5
-  resolution: "@types/twitter-text@npm:3.1.5"
-  checksum: d6ecd7d45984ddbdfd5ede5106e52e0b729d1ed77b55edbcd7e8eee0a5e3e10b4ec4dad51de496048a34b7e881388b968b9d983715332be2a8b4e9f802c35245
   languageName: node
   linkType: hard
 
@@ -8091,7 +8027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.12.3, ajv@npm:^6.12.4":
+"ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -9088,7 +9024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bluebird@npm:3.7.2, bluebird@npm:^3.1.5, bluebird@npm:^3.7.2":
+"bluebird@npm:3.7.2, bluebird@npm:^3.7.2":
   version: 3.7.2
   resolution: "bluebird@npm:3.7.2"
   checksum: 869417503c722e7dc54ca46715f70e15f4d9c602a423a02c825570862d12935be59ed9c7ba34a9b31f186c017c23cac6b54e35446f8353059c101da73eac22ef
@@ -10368,13 +10304,6 @@ __metadata:
   version: 3.20.3
   resolution: "core-js-pure@npm:3.20.3"
   checksum: a8ec44390849bcf0502f20e6349fa087944bb88ac83d796d7fd5ace837d242308aae54b247a6a56bec463e5ab9be08dfad48d389673c34e8e31cc0a661a17a95
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^2.5.0":
-  version: 2.6.12
-  resolution: "core-js@npm:2.6.12"
-  checksum: 44fa9934a85f8c78d61e0c8b7b22436330471ffe59ec5076fe7f324d6e8cf7f824b14b1c81ca73608b13bdb0fef035bd820989bf059767ad6fa13123bb8bd016
   languageName: node
   linkType: hard
 
@@ -13892,23 +13821,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"har-schema@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "har-schema@npm:2.0.0"
-  checksum: d8946348f333fb09e2bf24cc4c67eabb47c8e1d1aa1c14184c7ffec1140a49ec8aa78aa93677ae452d71d5fc0fdeec20f0c8c1237291fc2bcb3f502a5d204f9b
-  languageName: node
-  linkType: hard
-
-"har-validator@npm:~5.1.3":
-  version: 5.1.5
-  resolution: "har-validator@npm:5.1.5"
-  dependencies:
-    ajv: ^6.12.3
-    har-schema: ^2.0.0
-  checksum: b998a7269ca560d7f219eedc53e2c664cd87d487e428ae854a6af4573fc94f182fe9d2e3b92ab968249baec7ebaf9ead69cf975c931dc2ab282ec182ee988280
-  languageName: node
-  linkType: hard
-
 "has-ansi@npm:^2.0.0":
   version: 2.0.0
   resolution: "has-ansi@npm:2.0.0"
@@ -14398,17 +14310,6 @@ __metadata:
     follow-redirects: ^1.0.0
     requires-port: ^1.0.0
   checksum: f5bd96bf83e0b1e4226633dbb51f8b056c3e6321917df402deacec31dd7fe433914fc7a2c1831cf7ae21e69c90b3a669b8f434723e9e8b71fd68afe30737b6a5
-  languageName: node
-  linkType: hard
-
-"http-signature@npm:~1.2.0":
-  version: 1.2.0
-  resolution: "http-signature@npm:1.2.0"
-  dependencies:
-    assert-plus: ^1.0.0
-    jsprim: ^1.2.2
-    sshpk: ^1.7.0
-  checksum: 3324598712266a9683585bb84a75dec4fd550567d5e0dd4a0fff6ff3f74348793404d3eeac4918fa0902c810eeee1a86419e4a2e92a164132dfe6b26743fb47c
   languageName: node
   linkType: hard
 
@@ -16220,18 +16121,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsprim@npm:^1.2.2":
-  version: 1.4.2
-  resolution: "jsprim@npm:1.4.2"
-  dependencies:
-    assert-plus: 1.0.0
-    extsprintf: 1.3.0
-    json-schema: 0.4.0
-    verror: 1.10.0
-  checksum: 2ad1b9fdcccae8b3d580fa6ced25de930eaa1ad154db21bbf8478a4d30bbbec7925b5f5ff29b933fba9412b16a17bd484a8da4fdb3663b5e27af95dd693bab2a
-  languageName: node
-  linkType: hard
-
 "jsprim@npm:^2.0.2":
   version: 2.0.2
   resolution: "jsprim@npm:2.0.2"
@@ -16675,20 +16564,6 @@ __metadata:
   version: 4.1.1
   resolution: "lodash.once@npm:4.1.1"
   checksum: d768fa9f9b4e1dc6453be99b753906f58990e0c45e7b2ca5a3b40a33111e5d17f6edf2f768786e2716af90a8e78f8f91431ab8435f761fef00f9b0c256f6d245
-  languageName: node
-  linkType: hard
-
-"lodash.reverse@npm:4.0.1":
-  version: 4.0.1
-  resolution: "lodash.reverse@npm:4.0.1"
-  checksum: 17dab71d2dedcf281178d34ec2aca33ee7b443db705134752895a2219dd91ebb6dd9e0183a3f70a6649a02b7888331165d11112fca034d7819f0195104cf0302
-  languageName: node
-  linkType: hard
-
-"lodash.sortby@npm:4.7.0":
-  version: 4.7.0
-  resolution: "lodash.sortby@npm:4.7.0"
-  checksum: db170c9396d29d11fe9a9f25668c4993e0c1331bcb941ddbd48fb76f492e732add7f2a47cfdf8e9d740fa59ac41bbfaf931d268bc72aab3ab49e9f89354d718c
   languageName: node
   linkType: hard
 
@@ -17876,7 +17751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:1.6.0, mime@npm:^1.3.4":
+"mime@npm:1.6.0":
   version: 1.6.0
   resolution: "mime@npm:1.6.0"
   bin:
@@ -18838,13 +18713,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"oauth-sign@npm:~0.9.0":
-  version: 0.9.0
-  resolution: "oauth-sign@npm:0.9.0"
-  checksum: 8f5497a127967866a3c67094c21efd295e46013a94e6e828573c62220e9af568cc1d2d04b16865ba583e430510fa168baf821ea78f355146d8ed7e350fc44c64
-  languageName: node
-  linkType: hard
-
 "object-assign@npm:^4.1.0, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -19790,13 +19658,10 @@ __metadata:
     "@sitaggart/prettier-config": 0.3.25
     "@twilio-paste/core": 19.6.0
     "@twilio-paste/icons": 11.2.2
-    "@types/lodash.reverse": 4.0.7
-    "@types/lodash.sortby": 4.7.7
-    "@types/mdx-js__react": 1.5.5
+    "@types/lodash": ^4.14.196
     "@types/node": 18.17.3
     "@types/react": 18.2.18
-    "@types/twit": 2.2.31
-    "@types/twitter-text": 3.1.5
+    "@types/react-dom": 18.2.7
     babel-plugin-import-glob-array: 0.2.0
     babel-plugin-inline-react-svg: 2.0.2
     cypress: 12.17.3
@@ -19806,8 +19671,7 @@ __metadata:
     husky: 8.0.3
     isomorphic-unfetch: 4.0.2
     jest: 29.6.2
-    lodash.reverse: 4.0.1
-    lodash.sortby: 4.7.0
+    lodash: 4.17.21
     mdx-prism: 0.3.4
     netlify-cli: 15.10.0
     next: 13.4.12
@@ -19823,8 +19687,6 @@ __metadata:
     remark-gfm: 3.0.1
     start-server-and-test: 2.0.0
     swr: 2.2.0
-    twit: 2.2.11
-    twitter-text: 3.1.0
     typescript: 5.1.6
   languageName: unknown
   linkType: soft
@@ -20194,13 +20056,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"psl@npm:^1.1.28":
-  version: 1.8.0
-  resolution: "psl@npm:1.8.0"
-  checksum: 6150048ed2da3f919478bee8a82f3828303bc0fc730fb015a48f83c9977682c7b28c60ab01425a72d82a2891a1681627aa530a991d50c086b48a3be27744bde7
-  languageName: node
-  linkType: hard
-
 "psl@npm:^1.1.33":
   version: 1.9.0
   resolution: "psl@npm:1.9.0"
@@ -20225,13 +20080,6 @@ __metadata:
     end-of-stream: ^1.1.0
     once: ^1.3.1
   checksum: 61fe58694f9900020a5cf5bc765d74396891c201afecf06659df2f5874fd832be4e19e2f95cc72d8b9eb98ace0a4db3cebf7343f9fc893a930577be29e3ad8b5
-  languageName: node
-  linkType: hard
-
-"punycode@npm:1.4.1":
-  version: 1.4.1
-  resolution: "punycode@npm:1.4.1"
-  checksum: fa6e698cb53db45e4628559e557ddaf554103d2a96a1d62892c8f4032cd3bc8871796cae9eabc1bc700e2b6677611521ce5bb1d9a27700086039965d0cf34518
   languageName: node
   linkType: hard
 
@@ -20282,13 +20130,6 @@ __metadata:
   dependencies:
     side-channel: ^1.0.4
   checksum: 31e4fedd759d01eae52dde6692abab175f9af3e639993c5caaa513a2a3607b34d8058d3ae52ceeccf37c3025f22ed5e90e9ddd6c2537e19c0562ddd10dc5b1eb
-  languageName: node
-  linkType: hard
-
-"qs@npm:~6.5.2":
-  version: 6.5.3
-  resolution: "qs@npm:6.5.3"
-  checksum: 6f20bf08cabd90c458e50855559539a28d00b2f2e7dddcb66082b16a43188418cb3cb77cbd09268bcef6022935650f0534357b8af9eeb29bf0f27ccb17655692
   languageName: node
   linkType: hard
 
@@ -21011,34 +20852,6 @@ __metadata:
   dependencies:
     throttleit: ^1.0.0
   checksum: 6ea1761dcc8a8b7b5894afd478c0286aa31bd69438d7050294bd4fd0d0b3e09b5cde417d38deef9c49809039c337d8744e4bb49d8632b0c3e4ffa5e8a687e0fd
-  languageName: node
-  linkType: hard
-
-"request@npm:^2.68.0":
-  version: 2.88.2
-  resolution: "request@npm:2.88.2"
-  dependencies:
-    aws-sign2: ~0.7.0
-    aws4: ^1.8.0
-    caseless: ~0.12.0
-    combined-stream: ~1.0.6
-    extend: ~3.0.2
-    forever-agent: ~0.6.1
-    form-data: ~2.3.2
-    har-validator: ~5.1.3
-    http-signature: ~1.2.0
-    is-typedarray: ~1.0.0
-    isstream: ~0.1.2
-    json-stringify-safe: ~5.0.1
-    mime-types: ~2.1.19
-    oauth-sign: ~0.9.0
-    performance-now: ^2.1.0
-    qs: ~6.5.2
-    safe-buffer: ^5.1.2
-    tough-cookie: ~2.5.0
-    tunnel-agent: ^0.6.0
-    uuid: ^3.3.2
-  checksum: 4e112c087f6eabe7327869da2417e9d28fcd0910419edd2eb17b6acfc4bfa1dad61954525949c228705805882d8a98a86a0ea12d7f739c01ee92af7062996983
   languageName: node
   linkType: hard
 
@@ -22045,7 +21858,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sshpk@npm:^1.14.1, sshpk@npm:^1.7.0":
+"sshpk@npm:^1.14.1":
   version: 1.17.0
   resolution: "sshpk@npm:1.17.0"
   dependencies:
@@ -23075,16 +22888,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tough-cookie@npm:~2.5.0":
-  version: 2.5.0
-  resolution: "tough-cookie@npm:2.5.0"
-  dependencies:
-    psl: ^1.1.28
-    punycode: ^2.1.1
-  checksum: 16a8cd090224dd176eee23837cbe7573ca0fa297d7e468ab5e1c02d49a4e9a97bb05fef11320605eac516f91d54c57838a25864e8680e27b069a5231d8264977
-  languageName: node
-  linkType: hard
-
 "tr46@npm:~0.0.3":
   version: 0.0.3
   resolution: "tr46@npm:0.0.3"
@@ -23252,36 +23055,6 @@ __metadata:
   version: 0.14.5
   resolution: "tweetnacl@npm:0.14.5"
   checksum: 6061daba1724f59473d99a7bb82e13f211cdf6e31315510ae9656fefd4779851cb927adad90f3b488c8ed77c106adc0421ea8055f6f976ff21b27c5c4e918487
-  languageName: node
-  linkType: hard
-
-"twemoji-parser@npm:^11.0.2":
-  version: 11.0.2
-  resolution: "twemoji-parser@npm:11.0.2"
-  checksum: 79075c6512253f17713f236c4853dccdcc9c5a6c2d15b0109c02d684402a21ccdd80352e490cdf76072fe2c09c7c288e501ed41185ebef69df69fe355f9b7c37
-  languageName: node
-  linkType: hard
-
-"twit@npm:2.2.11":
-  version: 2.2.11
-  resolution: "twit@npm:2.2.11"
-  dependencies:
-    bluebird: ^3.1.5
-    mime: ^1.3.4
-    request: ^2.68.0
-  checksum: 32639bf8b315ebb03e8e6fb3983ed6528be719e42ee9370a437b6950a03f9a887c81c83d52fd089435907efe32e2ab9bd75147821b945b05044ad17acd772e0a
-  languageName: node
-  linkType: hard
-
-"twitter-text@npm:3.1.0":
-  version: 3.1.0
-  resolution: "twitter-text@npm:3.1.0"
-  dependencies:
-    "@babel/runtime": ^7.3.1
-    core-js: ^2.5.0
-    punycode: 1.4.1
-    twemoji-parser: ^11.0.2
-  checksum: 1ba9481f292bd34f7b73fbec60f7705061c1054a899f26e060d74dd473c9dbcad81247a1e25174c43c4a6c4f2957d1b46d55353bdcfc5e9c195ac07ee0e8631f
   languageName: node
   linkType: hard
 
@@ -23949,15 +23722,6 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 8dd2c83c43ddc7e1c71e36b60aea40030a6505139af6bee0f382ebcd1a56f6cd3028f7f06ffb07f8cf6ced320b76aea275284b224b002b289f89fe89c389b028
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^3.3.2":
-  version: 3.4.0
-  resolution: "uuid@npm:3.4.0"
-  bin:
-    uuid: ./bin/uuid
-  checksum: 58de2feed61c59060b40f8203c0e4ed7fd6f99d42534a499f1741218a1dd0c129f4aa1de797bcf822c8ea5da7e4137aa3673431a96dae729047f7aca7b27866f
   languageName: node
   linkType: hard
 

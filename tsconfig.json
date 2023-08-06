@@ -13,10 +13,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "typeRoots": ["types", "node_modules/@types"],
-    "types": ["cypress", "@percy/cypress"],
     "incremental": true,
-    "jsx": "preserve",
-    "jsxImportSource": "@emotion/react"
+    "jsx": "preserve"
   },
   "exclude": ["node_modules"],
   "include": [

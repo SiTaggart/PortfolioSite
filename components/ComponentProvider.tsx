@@ -1,7 +1,7 @@
 import type React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import Link from 'next/link';
-import { Anchor, AnchorProps, AnchorTargets } from '@twilio-paste/core/anchor';
+import { Anchor, type AnchorProps } from '@twilio-paste/core/anchor';
 import { Box } from '@twilio-paste/core/box';
 import { Heading } from '@twilio-paste/core/heading';
 import { Paragraph } from '@twilio-paste/core/paragraph';
@@ -28,18 +28,7 @@ const Del: React.FC = (props) => <del {...props} />;
 const Hr: React.FC = (props) => (
   <Separator {...props} orientation="horizontal" verticalSpacing="space70" />
 );
-interface AProps
-  extends Pick<AnchorProps, 'tabIndex'>,
-    Omit<
-      React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>,
-      'tabIndex' | 'href'
-    > {
-  href: string;
-  children: React.ReactElement;
-  target: AnchorTargets;
-  ref: AnchorProps['ref'];
-}
-const A: React.FC<AProps> = (props) => (
+const A: React.FC<React.PropsWithChildren<AnchorProps>> = (props) => (
   <Link {...props} legacyBehavior passHref>
     <Anchor {...props} />
   </Link>
@@ -53,39 +42,39 @@ const Table: React.FC<{ children: NonNullable<React.ReactNode> }> = ({ children,
 const Content: React.FC = (props) => <div {...props} />;
 const ContentWrapper: React.FC = (props) => <div {...props} />;
 
-export const ComponentProvider: React.FC = ({ children }) => (
+export const ComponentProvider: React.FC<React.PropsWithChildren> = ({ children }) => (
   <MDXProvider
     components={{
-      h1: H1,
-      h2: H2,
-      h3: H3,
-      h4: H4,
-      h5: H5,
-      h6: H6,
-      p: Paragraph as React.FC,
-      ul: UnorderedList as React.FC,
-      ol: OrderedList as React.FC,
-      li: ListItem as React.FC,
-      blockquote: Blockquote as React.FC,
-      table: Table as React.FC,
-      thead: THead as React.FC,
-      tbody: TBody as React.FC,
-      tfoot: TFoot as React.FC,
-      tr: Tr as React.FC,
-      th: Th as React.FC,
-      td: Td as React.FC,
-      pre: CodeBlock,
-      code: InlineCode,
-      inlineCode: InlineCode,
-      em: Em,
-      strong: Strong,
-      del: Del,
-      hr: Hr,
-      a: A as React.FC,
-      img: Image as React.FC,
-      sup: Sup,
-      content: Content,
-      contentwrapper: ContentWrapper,
+      h1: H1 as any,
+      h2: H2 as any,
+      h3: H3 as any,
+      h4: H4 as any,
+      h5: H5 as any,
+      h6: H6 as any,
+      p: Paragraph as any,
+      ul: UnorderedList as any,
+      ol: OrderedList as any,
+      li: ListItem as any,
+      blockquote: Blockquote as any,
+      table: Table as any,
+      thead: THead as any,
+      tbody: TBody as any,
+      tfoot: TFoot as any,
+      tr: Tr as any,
+      th: Th as any,
+      td: Td as any,
+      pre: CodeBlock as any,
+      code: InlineCode as any,
+      inlineCode: InlineCode as any,
+      em: Em as any,
+      strong: Strong as any,
+      del: Del as any,
+      hr: Hr as any,
+      a: A as any,
+      img: Image as any,
+      sup: Sup as any,
+      content: Content as any,
+      contentwrapper: ContentWrapper as any,
     }}
   >
     {children}

@@ -8,7 +8,7 @@ import TwitterSVG from '../svg/icons/ic-twitter.svg';
 import GithubSVG from '../svg/icons/ic-github.svg';
 import LinkedinSVG from '../svg/icons/ic-linkedin.svg';
 
-export const StyledSiteFooter: React.FC = (props) => (
+export const StyledSiteFooter: React.FC<React.PropsWithChildren> = (props) => (
   <Box
     as="footer"
     marginLeft={['space0', 'space50', 'space100']}
@@ -20,7 +20,7 @@ export const StyledSiteFooter: React.FC = (props) => (
   />
 );
 
-export const SiteFooterList: React.FC = (props) => (
+export const SiteFooterList: React.FC<React.PropsWithChildren> = (props) => (
   <Box
     alignItems="center"
     as="ul"
@@ -32,11 +32,11 @@ export const SiteFooterList: React.FC = (props) => (
   />
 );
 
-export const SiteFooterListItem: React.FC = (props) => (
+export const SiteFooterListItem: React.FC<React.PropsWithChildren> = (props) => (
   <Box as="li" listStyleType="none" {...props} />
 );
 
-export const SiteFooterIconWrapper: React.FC = (props) => (
+export const SiteFooterIconWrapper: React.FC<React.PropsWithChildren> = (props) => (
   <Text
     _hover={{
       color: 'colorTextLink',
@@ -62,6 +62,7 @@ export const SiteFooter: React.FC = () => (
             <Box
               aria-hidden="true"
               as={TwitterSVG as any}
+              // @ts-ignore
               css={{
                 path: {
                   fill: 'currentColor',
@@ -82,6 +83,7 @@ export const SiteFooter: React.FC = () => (
             <Box
               aria-hidden="true"
               as={GithubSVG as any}
+              // @ts-ignore
               css={{
                 path: {
                   fill: 'currentColor',
@@ -102,6 +104,7 @@ export const SiteFooter: React.FC = () => (
             <Box
               aria-hidden="true"
               as={LinkedinSVG as any}
+              // @ts-ignore
               css={{
                 path: {
                   fill: 'currentColor',

@@ -1,7 +1,7 @@
 import type React from 'react';
 import { useUID } from 'react-uid';
-import reverse from 'lodash.reverse';
-import sortBy from 'lodash.sortby';
+import reverse from 'lodash/reverse';
+import sortBy from 'lodash/sortby';
 import { NextSeo } from 'next-seo';
 import { Box } from '@twilio-paste/core/box';
 import { SiteMainHeading } from '../../components/SiteMainHeading';
