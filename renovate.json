@@ -5,6 +5,5 @@
     ":pinVersions",
     "group:allNonMajor",
     "schedule:earlyMondays"
-  ],
-  "ignoreDeps": ["@types/react"]
+  ]
 }

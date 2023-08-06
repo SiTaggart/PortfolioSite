@@ -19,7 +19,7 @@ jobs:
       - name: Set up node
         uses: actions/setup-node@v3
         with:
-          node-version: "16.13.x"
+          node-version: "18.16.x"
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
