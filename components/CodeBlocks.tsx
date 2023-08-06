@@ -14,7 +14,7 @@ export const CodeBlock: React.FC = (props) => (
   />
 );
 
-export const InlineCode: React.FC = ({ children, ...props }) => (
+export const InlineCode: React.FC<React.PropsWithChildren> = ({ children, ...props }) => (
   <Box as="code" backgroundColor="colorBackground" display="inline" padding="space10" {...props}>
     <Text as="span" color="colorTextWeak" fontFamily="fontFamilyCode">
       {children}

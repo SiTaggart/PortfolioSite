@@ -2,7 +2,7 @@ import type React from 'react';
 import { Box } from '@twilio-paste/core/box';
 import { Text } from '@twilio-paste/core/text';
 
-export const Blockquote: React.FC = ({ children }) => (
+export const Blockquote: React.FC<React.PropsWithChildren> = ({ children }) => (
   <Box
     as="blockquote"
     borderLeftColor="colorBorderPrimary"

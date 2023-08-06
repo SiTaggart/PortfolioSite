@@ -11,6 +11,7 @@ module.exports = {
     'react/prop-types': 0,
     'unicorn/filename-case': 0,
     '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/no-explicit-any': 'warn',
     'no-underscore-dangle': 0,
     'unicorn/prefer-module': 0,
     'react/function-component-definition': [

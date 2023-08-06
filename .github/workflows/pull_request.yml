@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.13.x]
+        node-version: [18.16.x]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.13.x]
+        node-version: [18.16.x]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
