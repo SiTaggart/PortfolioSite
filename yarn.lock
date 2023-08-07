@@ -6562,7 +6562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.reverse@npm:^4.0.7":
+"@types/lodash.reverse@npm:4.0.7":
   version: 4.0.7
   resolution: "@types/lodash.reverse@npm:4.0.7"
   dependencies:
@@ -6571,7 +6571,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.sortby@npm:^4.7.7":
+"@types/lodash.sortby@npm:4.7.7":
   version: 4.7.7
   resolution: "@types/lodash.sortby@npm:4.7.7"
   dependencies:
@@ -18069,8 +18069,8 @@ __metadata:
     "@sitaggart/prettier-config": 0.3.25
     "@twilio-paste/core": 19.6.0
     "@twilio-paste/icons": 11.2.2
-    "@types/lodash.reverse": ^4.0.7
-    "@types/lodash.sortby": ^4.7.7
+    "@types/lodash.reverse": 4.0.7
+    "@types/lodash.sortby": 4.7.7
     "@types/node": 18.17.3
     "@types/react": 18.2.18
     "@types/react-dom": 18.2.7
