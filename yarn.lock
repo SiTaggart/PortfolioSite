@@ -1050,10 +1050,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@eslint/js@npm:8.50.0"
-  checksum: 302478f2acaaa7228729ec6a04f56641590185e1d8cd1c836a6db8a6b8009f80a57349341be9fbb9aa1721a7a569d1be3ffc598a33300d22816f11832095386c
+"@eslint/js@npm:8.51.0":
+  version: 8.51.0
+  resolution: "@eslint/js@npm:8.51.0"
+  checksum: 0228bf1e1e0414843e56d9ff362a2a72d579c078f93174666f29315690e9e30a8633ad72c923297f7fd7182381b5a476805ff04dac8debe638953eb1ded3ac73
   languageName: node
   linkType: hard
 
@@ -2677,25 +2677,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/env@npm:13.5.3"
-  checksum: ebea3bfca114ca66616557a534fbb37d580f1ab91143eb46ba3bdb5803864dc0e72c08814110809f207d625846f0053871adb75b51b68686ec3a9ed76d9d26bf
+"@next/env@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/env@npm:13.5.4"
+  checksum: 95ec7108bc88a01fed5389fb33e4b9eb34937908859d9f0aa87930c660f4395d90dafe10e54830faae5bc0a1b799be544c6455a2c8054499569d1e9296369076
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/eslint-plugin-next@npm:13.5.3"
+"@next/eslint-plugin-next@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/eslint-plugin-next@npm:13.5.4"
   dependencies:
     glob: 7.1.7
-  checksum: a496a194154b84c7178832ed5ecd51f7727cc9967bab91c8898310e422c27ec1774a21cc60399f72a1e7a23241b4eb5f0fe4b6357071d91c9c820790188504ba
+  checksum: 17a502cec987768bfa99ee42d9072a9a3bdd32b32bde04bd97a04868b56252352a5c38b571ee5ee8f86ff4c27844984a3c737461ebd91d6ca32a2ce2bd5b8af2
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/mdx@npm:13.5.3"
+"@next/mdx@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/mdx@npm:13.5.4"
   dependencies:
     source-map: ^0.7.0
   peerDependencies:
@@ -2706,69 +2706,69 @@ __metadata:
       optional: true
     "@mdx-js/react":
       optional: true
-  checksum: cbe6e6a536cc084a2d1f6ee079451647a50bb3a70531e17270b48e20e2df79763acd5263e3d8075004dc246634d4135e924608010acad2aa9d5d5777fba87fbf
+  checksum: 6df2d9f4552ab2c0710d4706928d4f652d3924b430adda34c0ab8705d6f8f2647b277fd3a9a4fcc92a7e9feb8ec6162e037c0b41271a31a02057909a2bc8f0b2
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-darwin-arm64@npm:13.5.3"
+"@next/swc-darwin-arm64@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-darwin-arm64@npm:13.5.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-darwin-x64@npm:13.5.3"
+"@next/swc-darwin-x64@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-darwin-x64@npm:13.5.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-linux-arm64-gnu@npm:13.5.3"
+"@next/swc-linux-arm64-gnu@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-linux-arm64-gnu@npm:13.5.4"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-linux-arm64-musl@npm:13.5.3"
+"@next/swc-linux-arm64-musl@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-linux-arm64-musl@npm:13.5.4"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-linux-x64-gnu@npm:13.5.3"
+"@next/swc-linux-x64-gnu@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-linux-x64-gnu@npm:13.5.4"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-linux-x64-musl@npm:13.5.3"
+"@next/swc-linux-x64-musl@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-linux-x64-musl@npm:13.5.4"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-win32-arm64-msvc@npm:13.5.3"
+"@next/swc-win32-arm64-msvc@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-win32-arm64-msvc@npm:13.5.4"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-ia32-msvc@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-win32-ia32-msvc@npm:13.5.3"
+"@next/swc-win32-ia32-msvc@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-win32-ia32-msvc@npm:13.5.4"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:13.5.3":
-  version: 13.5.3
-  resolution: "@next/swc-win32-x64-msvc@npm:13.5.3"
+"@next/swc-win32-x64-msvc@npm:13.5.4":
+  version: 13.5.4
+  resolution: "@next/swc-win32-x64-msvc@npm:13.5.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -3331,129 +3331,129 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@percy/cli-app@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-app@npm:1.27.2"
+"@percy/cli-app@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-app@npm:1.27.3"
   dependencies:
-    "@percy/cli-command": 1.27.2
-    "@percy/cli-exec": 1.27.2
-  checksum: 2feb5b1a035b671091c3e9a4cad208d8981b9a081d2b092bf7c04a33d237add50d93517a8af105350a8bbd23f825ae53544f48dd8c83da7ed3251b1f1526ef6a
+    "@percy/cli-command": 1.27.3
+    "@percy/cli-exec": 1.27.3
+  checksum: 6698c5a9feeb23a18bdddf5e36fa70f3ab0a97bff53567280cdeefd788a081f61df550335dfc992cc8428a15f462dfc02cf86235f499e1fa94c556a0a2c39e9c
   languageName: node
   linkType: hard
 
-"@percy/cli-build@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-build@npm:1.27.2"
+"@percy/cli-build@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-build@npm:1.27.3"
   dependencies:
-    "@percy/cli-command": 1.27.2
-  checksum: 378bb72419425c61a55a6c3029d57e998ab2dd2ee666d7471b593f1210c67317a88338ff0c6538a323f95b07f33e3b80343290ae5cb88666c505e950daab5a8c
+    "@percy/cli-command": 1.27.3
+  checksum: 53bc852ea5fdba7c5f721639b6c0ee3d56036272d437411ee683b63cb933b15201fa70b759572324ae2354201804e6b00239767ddfa68e9d05ba56bd140c6724
   languageName: node
   linkType: hard
 
-"@percy/cli-command@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-command@npm:1.27.2"
+"@percy/cli-command@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-command@npm:1.27.3"
   dependencies:
-    "@percy/config": 1.27.2
-    "@percy/core": 1.27.2
-    "@percy/logger": 1.27.2
+    "@percy/config": 1.27.3
+    "@percy/core": 1.27.3
+    "@percy/logger": 1.27.3
   bin:
     percy-cli-readme: bin/readme.js
-  checksum: f1ccb0c48fd3c73cb34b0203f145c43fbf3a85d7ff340f7749bd038bcfa4e020f8c2457b805d92949623ec593df7321985a636176bb47868b82b3a29d064eece
+  checksum: 95184847d9e7928287532814950e48094cd4cceaac95394754c608439c86307752bdc7b4f990284bf35bd550b6e96c004def1f0f70ebf6e480b523e9bd7ea142
   languageName: node
   linkType: hard
 
-"@percy/cli-config@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-config@npm:1.27.2"
+"@percy/cli-config@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-config@npm:1.27.3"
   dependencies:
-    "@percy/cli-command": 1.27.2
-  checksum: 950f0756d050906f7d7094057e1c6b0a5193e1a4e693170826447a12d30e54310a310ac1d8ba2aad0e1a04759266f0ebd01f7d4457e4d20fc41ede5bf817b62f
+    "@percy/cli-command": 1.27.3
+  checksum: 2b8abe494f84482fbc5d2d97ddb4d34e7afafaf02b4a5a7faac896b3617edb198fb97c472163316b29438953410d047c1077c2a024971dfdc808f15e4d7ddd7d
   languageName: node
   linkType: hard
 
-"@percy/cli-exec@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-exec@npm:1.27.2"
+"@percy/cli-exec@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-exec@npm:1.27.3"
   dependencies:
-    "@percy/cli-command": 1.27.2
+    "@percy/cli-command": 1.27.3
     cross-spawn: ^7.0.3
     which: ^2.0.2
-  checksum: e0055a04fafc3c5759172bd08757a115e5b4526a8c1da13a6d251d925089627aec6bb7684570145edc04625f7388691fd6a0da98f308a4fe5878f343d8f96c94
+  checksum: dada0ab377ff7cffefd515ce6a7ef722509b04ffa25f62e69aefcc8cb1b9b8aa231ee5d60ea22540ac215c2b58c1805ab051b040edc2cd2944d91d27f234966f
   languageName: node
   linkType: hard
 
-"@percy/cli-snapshot@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-snapshot@npm:1.27.2"
+"@percy/cli-snapshot@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-snapshot@npm:1.27.3"
   dependencies:
-    "@percy/cli-command": 1.27.2
+    "@percy/cli-command": 1.27.3
     yaml: ^2.0.0
-  checksum: b50d2bd06b2587fd1778c12eb2a039ab5be5360e9c08ac38224bd4de760e314f5b609eb8f5c9b28889b90a7afa5b05243ef2e7ed66733909b3476c812ac0123a
+  checksum: e35d634da83627ce21d8c31ba60ff16fe88df453797e6fa612bdebd7ea23d30f7f647f78682b916dbbe7abeb5852ae162738c7d707a16eb49ba5e68f137bb070
   languageName: node
   linkType: hard
 
-"@percy/cli-upload@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli-upload@npm:1.27.2"
+"@percy/cli-upload@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli-upload@npm:1.27.3"
   dependencies:
-    "@percy/cli-command": 1.27.2
+    "@percy/cli-command": 1.27.3
     fast-glob: ^3.2.11
     image-size: ^1.0.0
-  checksum: c3ac178451a937abc46ca8d925e01a253ce19207458b5bda8e4bb65007e8c3fdaea3a0d767e2e26990fd7e78b8f9f7bd291718ce36b0304a7b581dcb080fe695
+  checksum: 1bfc1989097ddd2f740c55d1e73480ac5f4e326475c90f0b1bead3efce813f6851750ccd1bdc1dfcb75d60f8d26adbde8fddd458796ed9d3f01eb39101322e9f
   languageName: node
   linkType: hard
 
-"@percy/cli@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/cli@npm:1.27.2"
+"@percy/cli@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/cli@npm:1.27.3"
   dependencies:
-    "@percy/cli-app": 1.27.2
-    "@percy/cli-build": 1.27.2
-    "@percy/cli-command": 1.27.2
-    "@percy/cli-config": 1.27.2
-    "@percy/cli-exec": 1.27.2
-    "@percy/cli-snapshot": 1.27.2
-    "@percy/cli-upload": 1.27.2
-    "@percy/client": 1.27.2
-    "@percy/logger": 1.27.2
+    "@percy/cli-app": 1.27.3
+    "@percy/cli-build": 1.27.3
+    "@percy/cli-command": 1.27.3
+    "@percy/cli-config": 1.27.3
+    "@percy/cli-exec": 1.27.3
+    "@percy/cli-snapshot": 1.27.3
+    "@percy/cli-upload": 1.27.3
+    "@percy/client": 1.27.3
+    "@percy/logger": 1.27.3
   bin:
     percy: bin/run.cjs
-  checksum: 1d91d97fe2371001b2cf48d647a5dfa761cf23e24bdd47fadb6e55cd3e0718a32cf7b43f07a95c014416b70a07ab20cd36ded45565f64902811ede66f0e512b8
+  checksum: 59df41f32d98c11d2ea3f10206a246a551fd9ea656913970fe9e9dbdf6aec6514781b3e4d4a3fcc75c05ff46409bcc7b1625dd6b5111e98dae107516a906b7a4
   languageName: node
   linkType: hard
 
-"@percy/client@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/client@npm:1.27.2"
+"@percy/client@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/client@npm:1.27.3"
   dependencies:
-    "@percy/env": 1.27.2
-    "@percy/logger": 1.27.2
-  checksum: efbc2cd3cf5aa7c0455b3e43a6fe3043dac0e4e346b1b2414dccc57d86b2b8af06c33d92944527ebb9f0ac9c7b473839fc54dad3f9941f48149a6699637e533d
+    "@percy/env": 1.27.3
+    "@percy/logger": 1.27.3
+  checksum: 7e9048aafb6b5c7f62f51c4233474d00684afd97ebac6bdf6fe3c918ab0acbc66d5fc76cc47e7c6b8bc98573b8897ac16e9a2fab709b09f732e0b4964799c2b0
   languageName: node
   linkType: hard
 
-"@percy/config@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/config@npm:1.27.2"
+"@percy/config@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/config@npm:1.27.3"
   dependencies:
-    "@percy/logger": 1.27.2
+    "@percy/logger": 1.27.3
     ajv: ^8.6.2
     cosmiconfig: ^8.0.0
     yaml: ^2.0.0
-  checksum: 77d6f7ed07e2a42a295ce56cf54f05644eb3e66a76ee98895dc8597e4174667f228b8a3b5243158ca43c59a15423044b8a8aa5b740ee86350c0c13859c79a0da
+  checksum: 8650609e6e4ff56be9c259c15d3b78ea003a6ea68324c1a83494231c7e462500e5ce6656dd3fbd623533ac0c6655643d9cea6d721ffc7f705232e953328a3fc0
   languageName: node
   linkType: hard
 
-"@percy/core@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/core@npm:1.27.2"
+"@percy/core@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/core@npm:1.27.3"
   dependencies:
-    "@percy/client": 1.27.2
-    "@percy/config": 1.27.2
-    "@percy/dom": 1.27.2
-    "@percy/logger": 1.27.2
-    "@percy/webdriver-utils": 1.27.2
+    "@percy/client": 1.27.3
+    "@percy/config": 1.27.3
+    "@percy/dom": 1.27.3
+    "@percy/logger": 1.27.3
+    "@percy/webdriver-utils": 1.27.3
     content-disposition: ^0.5.4
     cross-spawn: ^7.0.3
     extract-zip: ^2.0.1
@@ -3463,7 +3463,7 @@ __metadata:
     path-to-regexp: ^6.2.0
     rimraf: ^3.0.2
     ws: ^8.0.0
-  checksum: bc69b41166bcfbfeaf1085964a2935e6cfb36e51272e5fddcaa101f63afc6fbb70b29320c8191e8261be0005c19da951d59a6fa66884b790d4b8fd73dc206df8
+  checksum: 234bf505a955c7475cf1101faa17d2f37b2d2e32fb581739ad9813eda3e0dc71a2c2bbbfbfa3da59f9493a4a1eb74ec1624b8b121645123fede8114b463bb7c2
   languageName: node
   linkType: hard
 
@@ -3478,33 +3478,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@percy/dom@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/dom@npm:1.27.2"
-  checksum: eca51463675ba9dc3008e0fbea44dad7e1e0273bcc0758dddf2e39f187ee4b957d3060a38ddeecdc4d909c00b3b12817d20a58830e6aeb004a9c875f48565d2d
+"@percy/dom@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/dom@npm:1.27.3"
+  checksum: 1146cc4a98a37afc23af78d8b09ccb9e23b8b4b932e32819f8b23153e15255263fecd8b9cdf3b1067dd0e9ebc8389638374d9bb6fad988469a6075ae0904b43e
   languageName: node
   linkType: hard
 
-"@percy/env@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/env@npm:1.27.2"
+"@percy/env@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/env@npm:1.27.3"
   dependencies:
-    "@percy/logger": 1.27.2
-  checksum: 09dfe46f36441a361da33a71ea8404cc23955a9ac3b11fc2601da636dd7db7fb63d006aeea3c0b8277a16c88bcdd78e9b775c15f64e970db83ca262509f33e93
+    "@percy/logger": 1.27.3
+  checksum: 7f13f6307762fcfdf49f95f03625f6efd8cf6669d939728b22b7da6c358d8a89deca15bae5adb2f964659ea39444f8728f9a2d1f3a8020af8b667eacaff85ae6
   languageName: node
   linkType: hard
 
-"@percy/logger@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/logger@npm:1.27.2"
-  checksum: d0f56a235b83762e913c4eb9d0561178bd5eade03cb09e48952fc4066f6214c827725bbb5eb5f5ce431f1592da26bdba3feaaf3d24f3b45edb087feb9d194e7b
+"@percy/logger@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/logger@npm:1.27.3"
+  checksum: 371f43dc5a7bceebfd62c725e4f3ff142e6068745e07515d1179ca87017b7b649941786024380d4963dc2ee8ca0a163eb957005b4e8c1fd778a548372a6fb931
   languageName: node
   linkType: hard
 
-"@percy/sdk-utils@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/sdk-utils@npm:1.27.2"
-  checksum: 5fbab3bf7b5accedc334393ade379dfa19aa9ae1e3b865ab488504c42439ac06e471bec50883a6a021762d74f33deb86fe1060640b19e790017589d8c060efd3
+"@percy/sdk-utils@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/sdk-utils@npm:1.27.3"
+  checksum: 69ee5e3aefbb52f8d7f45854adaccb60e6013454d609967e0afb3749cdba41400dcf2a027b4d0be1324a3272b2a08f5575bfe653aebaf46c510980dcb9fc69d9
   languageName: node
   linkType: hard
 
@@ -3515,13 +3515,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@percy/webdriver-utils@npm:1.27.2":
-  version: 1.27.2
-  resolution: "@percy/webdriver-utils@npm:1.27.2"
+"@percy/webdriver-utils@npm:1.27.3":
+  version: 1.27.3
+  resolution: "@percy/webdriver-utils@npm:1.27.3"
   dependencies:
-    "@percy/config": 1.27.2
-    "@percy/sdk-utils": 1.27.2
-  checksum: 24aee9e4519c641d84836bc58c8057273189556b0a34e66453d001a12bd0aa11aec5d7dbdfbb043b7b175993cac2a4a59cb68b10d0b5181af5a0b85268806d3c
+    "@percy/config": 1.27.3
+    "@percy/sdk-utils": 1.27.3
+  checksum: 5a2ff340a467ecae7f090b55469636775ccb4f27d3bd551223f28a41804953251f5c57df79888707da9bb4ddb0c8907d1af8027cf5d4f9562b4d6d28631c3eb3
   languageName: node
   linkType: hard
 
@@ -5554,9 +5554,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/account-switcher@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@twilio-paste/account-switcher@npm:2.0.1"
+"@twilio-paste/account-switcher@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@twilio-paste/account-switcher@npm:3.0.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -5571,28 +5571,27 @@ __metadata:
     "@twilio-paste/menu": ^14.0.0
     "@twilio-paste/menu-primitive": ^2.0.0
     "@twilio-paste/reakit-library": ^2.0.0
-    "@twilio-paste/screen-reader-only": 13.0.0
+    "@twilio-paste/screen-reader-only": 13.1.0
     "@twilio-paste/separator": ^8.0.0
     "@twilio-paste/spinner": ^14.0.0
     "@twilio-paste/stack": ^8.0.0
     "@twilio-paste/style-props": ^9.0.0
     "@twilio-paste/styling-library": ^3.0.0
-    "@twilio-paste/text": 10.0.0
+    "@twilio-paste/text": 10.1.0
     "@twilio-paste/theme": ^11.0.0
     "@twilio-paste/types": ^6.0.0
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 975210b65286a7e1346b9564344b323512f353afb9108f66a92da91c487787828c27330ad248f94dcff833fff2e9e51a6942719b180a7313d130fe8b5f240661
+  checksum: 4a8d0ce2f23ce21d16195a633ec5aca1754a1d18aaabcf4772043daa0187e9193a7da72b91a412987a889d7bb5ccffb7f448f60d3e08913a4019b3e1ec600f43
   languageName: node
   linkType: hard
 
-"@twilio-paste/alert-dialog@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "@twilio-paste/alert-dialog@npm:9.1.0"
+"@twilio-paste/alert-dialog@npm:^9.2.0":
+  version: 9.2.0
+  resolution: "@twilio-paste/alert-dialog@npm:9.2.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -5617,16 +5616,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: a5d493340a9c08163f459314d874edbe6652e2927a6811e24deef78d03712cfbca41b9e64c040208a1bd8a8b0ca4cdedc8f0d74f4f48174cdf16fddbf5ef674f
+  checksum: 35e7163cef797bfe0e9fa4aaef0f78c86db47b48a34a316beeb6a3901c141a684084d8921c5525ff86ad0b50f7a8e2751523d3cb0131f863c9dfbbd2823d11e4
   languageName: node
   linkType: hard
 
-"@twilio-paste/alert@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@twilio-paste/alert@npm:14.0.0"
+"@twilio-paste/alert@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@twilio-paste/alert@npm:14.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -5647,16 +5645,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 2c05db93cd571b5e6b487d89d8e62cc80df901d4e863415fb88931e4756cc2c6b0a4878d9ad1992f47fea2d0173113777776c3a26948efbc9165c1446653eec5
+  checksum: 5c0c87f162b89012de7c6805cb9affafb76444717c44102cf3db361e8a905731ae77f9c1dd2a0df00e914956be8f4b5f7bd591d32f1a185c601735743f42223e
   languageName: node
   linkType: hard
 
-"@twilio-paste/anchor@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@twilio-paste/anchor@npm:12.0.0"
+"@twilio-paste/anchor@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "@twilio-paste/anchor@npm:12.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -5671,10 +5668,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 2d429cbecd0f9fdcf5d77af3a6da8a519fda186c7f4d5e16846b3e48f81c0536bdf0bdb11023f8f438355e5bdf53ad1f54f6063043eebf4ad3ea49a15d6f22f8
+  checksum: 837c4bea39be374fa98dc08037d471f147826c6712602b69558c324bdeba345c3b90400b462fd15eb497c5a057a696c5f35c675d4318a46e979ff3165dcc2b8a
   languageName: node
   linkType: hard
 
@@ -5691,9 +5687,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/aspect-ratio@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@twilio-paste/aspect-ratio@npm:10.0.0"
+"@twilio-paste/aspect-ratio@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/aspect-ratio@npm:10.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -5706,16 +5702,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 49c116889088f741666372b7e7aaa565b3128e54ddb33c1a931bbd21529d753eb5e31a8d206d8d6aeb4118a7861e57af4a7c8b1daf23192826c1c9f2b4b57c9e
+  checksum: c71a7f2a539bd9a3d45430d2c3880c5bc7436868d65a04bc6ef4ef44afa89eab0d151c7c0f5187af73baf6b47912588f176234688a1b86ed1b43fbd853439b02
   languageName: node
   linkType: hard
 
-"@twilio-paste/avatar@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@twilio-paste/avatar@npm:9.0.0"
+"@twilio-paste/avatar@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@twilio-paste/avatar@npm:9.1.0"
   dependencies:
     "@types/react-is": 17.0.3
     react-is: 18.0.0
@@ -5735,16 +5730,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 50f51e55f16ef836697c31840004ee32ba68fdce0cda18c24e691adbf7113f5c0720de50cc82b721b1220eb2751b3616d2242fc72c5eaefccfe17b21abd4c6ad
+  checksum: 0a94faf08535b308cb9bdae867396d1f9082c325dad6b75dd848aa63878b9e54d84e2ad7b643665fdf44eec0b1d7cfdca51bfc897b4b200bd321c24cb04131d8
   languageName: node
   linkType: hard
 
-"@twilio-paste/badge@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/badge@npm:8.0.0"
+"@twilio-paste/badge@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/badge@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -5762,16 +5756,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 3006072545665b1cf1ace253766f588d19c76c51b35c84f673b958699d7a7ff1e758d6628ec234e25cb5b58ae090720e163a9c8d079201b80736e8fd27b14173
+  checksum: d6ec196fb11c41e69ee8994c457a7bb15169c7d73f3f9f117249abfe186eb6f25e8fc4189979b2bd3547669abd0d71afe159164aea1cbe1a54ac2679c9645337
   languageName: node
   linkType: hard
 
-"@twilio-paste/base-radio-checkbox@npm:^13.0.1":
-  version: 13.0.1
-  resolution: "@twilio-paste/base-radio-checkbox@npm:13.0.1"
+"@twilio-paste/base-radio-checkbox@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/base-radio-checkbox@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -5793,16 +5786,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 052858b3d353f704b810e6dbf778419e1d85ec676c3c984ae74659099cc6142c4cd2d2af04ecd1b3939fa0049c81fa095c6e43fd11751bad515c54fa754fe6e7
+  checksum: 127f2fce167d88e0eebca0796402c058fc5b2446a463bb6ea7158c051de2ed48947c10aaa1acac28ef5934b6fe6aed4931195098e9f5a5a7ae73429eae26b7ed
   languageName: node
   linkType: hard
 
-"@twilio-paste/box@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@twilio-paste/box@npm:10.0.0"
+"@twilio-paste/box@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/box@npm:10.1.0"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -5816,16 +5808,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 98e7d2615b01b2f764338e1f2bc7e67e2298cc5a11fe313bbbfbcf8a185400cd4aeddc15aaaf66bcb291091a8748d6c430811d483baea36cbb252305549eaf39
+  checksum: 576a9469603d9b37d1529184d23f7298e75f6b91e3e1f368e2df0259de7c5c4e584fdcbf8f44ddb0121b9eb108e1be4603223bb335e36e86b8d11e070814ac61
   languageName: node
   linkType: hard
 
-"@twilio-paste/breadcrumb@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@twilio-paste/breadcrumb@npm:11.0.0"
+"@twilio-paste/breadcrumb@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@twilio-paste/breadcrumb@npm:11.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -5842,16 +5833,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 98cf0dbb47734f832afb0166b1231acd313f223083bfd9d48f5ab77ac38282272bcb7c47b83f6d3af2e95013980c5a00497204da549493303d12ebbbbd7abc20
+  checksum: acef9f38bea857b46e1ef1ad3be84825e32df5e2c25b30b89bd3ea899519a388a68e1c9c6926b38d9513c3cd9891c67c7ffb5408cf060621d8c6c7873b7c7f46
   languageName: node
   linkType: hard
 
-"@twilio-paste/button-group@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/button-group@npm:4.0.0"
+"@twilio-paste/button-group@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/button-group@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -5864,16 +5854,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: a2fe4fb82653809a191d807eb156d221e51961e02afe658c48cbe5ff0c23d83ac12991fbc97790e55e2e3ef2e97a74b710d7a4731363462863c413e8c3752bf8
+  checksum: 1f6a1533455b35ada5d3e45e7e4e3874ade26e725fc59634dd539c3f9ee5d54966ad8180d79acf1be118b4d8d4047bb9eb33407abbb3845de565504c4d41beb9
   languageName: node
   linkType: hard
 
-"@twilio-paste/button@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "@twilio-paste/button@npm:14.0.2"
+"@twilio-paste/button@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@twilio-paste/button@npm:14.1.0"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -5893,16 +5882,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: c75f16fa029e60c222eba34dcbd5759a24480de472119b006db72812235738425e44e68b9d5806f854ac8e91dbb8eef1a06b8923e4e2b6dc78fdcdefd139f00b
+  checksum: 8c141f634fa2ff67dc8e35577738942720d9dc0e08b226307807b6b22f8a10da0a5b285a9dab2ade1ce1a666692d74234c25e097e9cfa50e3f4357a40de7a796
   languageName: node
   linkType: hard
 
-"@twilio-paste/callout@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/callout@npm:4.0.0"
+"@twilio-paste/callout@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/callout@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -5919,16 +5907,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 76827dae72acbf4ed2ab31f466fd8129ac140d336f959d3ceaf14b3deda592a8c9b37e3ec85fda388c44851479773139ca19c132ff8c616af4fd0d3e0e16bbe4
+  checksum: ec8f96806410fd67ea55cc3a2b94ea5d99d3e7d08677f395cbe640c012f6da50063f65368ef9e05f94543864b78abf7257a295271367006ae6b1d72a7af2c7ba
   languageName: node
   linkType: hard
 
-"@twilio-paste/card@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@twilio-paste/card@npm:9.0.0"
+"@twilio-paste/card@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@twilio-paste/card@npm:9.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -5941,16 +5928,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 76ec4baca4199fb9d2c9768707f650226eef9d2d7085cfdc53d4b69dab6ecf71c034c8b5dfcd33638ca7603e2250618712414e8270f07ac7e6e1a9bc06d2d08d
+  checksum: 592b2773db4946182f6a10b7c89d06b31ca96619b62d8dd0657951962ef59d4bf7e0742a38f7c0be55748f3eaf01e22b054f015e8c285f29b30bbac305f36179
   languageName: node
   linkType: hard
 
-"@twilio-paste/chat-composer@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "@twilio-paste/chat-composer@npm:5.0.0"
+"@twilio-paste/chat-composer@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@twilio-paste/chat-composer@npm:5.1.0"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -5966,16 +5952,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^17.0.2 || ^18.0.0
     react-dom: ^17.0.2 || ^18.0.0
-  checksum: 20e5f9fd4fd86b21a5a20666294a78837df83738ba354d42cac1d6cfcc4dbcd087d0f1383e2c5ee2f835f4caeb50e6af1be54de811de2b1b6659193c5c3f669d
+  checksum: a750edbff89310892a8686ef6ab294654023c139e9c28599eeefa558bc78d8283a1c406323e5b6fd55f6e9e0a7797e7b6b0f3ca56b6a8e99fcb441c623496bc0
   languageName: node
   linkType: hard
 
-"@twilio-paste/chat-log@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "@twilio-paste/chat-log@npm:5.1.0"
+"@twilio-paste/chat-log@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@twilio-paste/chat-log@npm:5.2.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -5998,16 +5983,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 6d2a5f9b08a39777f9ebfc90df3b59340c4c081a8b5d65d3fc4efba3ee8f73a694a7fe1be27ec8ebaba8249fe0ea489c29c835ec658b444ad10b9020521bd8dc
+  checksum: 1ab807a3d751bc885c19d75c318452a3b89efc764c0ee08142d3f8a7f5d6a989dc685db3c6e74b3ba34aa25115f4ab1b74b5a5e7766fed096e1b64cc45f698a6
   languageName: node
   linkType: hard
 
-"@twilio-paste/checkbox@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "@twilio-paste/checkbox@npm:13.0.0"
+"@twilio-paste/checkbox@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/checkbox@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/base-radio-checkbox": ^13.0.0
@@ -6031,10 +6015,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 217c9130ca29465c2ead7c61326777faa31bdd8e57f208424b35f29c727e72717ebe393fc1c89669098ffe9edcec1e59aed9771921d9eef51ccf0c8046a3a509
+  checksum: 7a660e0277ad8ec3154c004d017ef3e0fd12061ce1c74e7d50e14b580eeb5dc0061554821957dba2a61dbf4847ab1ca50a5ac166a1eb7f0978febee207fb24af
   languageName: node
   linkType: hard
 
@@ -6050,9 +6033,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/code-block@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/code-block@npm:4.0.0"
+"@twilio-paste/code-block@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/code-block@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": 2.0.0
@@ -6082,10 +6065,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: b3f527d4e65176ba33692db07f1e61e8a8f22d40debdde5afa62a749052a2055ed2033201ec537c24c5c2e85cfba39bc12d38c5cf75e7dd348c9ec4bbb0675e8
+  checksum: 4793331e1417a01c8579a25866c96a879e23f3afdd99e333ed1b7c3f0ec7b6a945326d5652e5b0af50d2775c279d1a853312899fa377aecc0d957f872bb597c2
   languageName: node
   linkType: hard
 
@@ -6114,21 +6096,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/combobox-primitive@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/combobox-primitive@npm:2.0.0"
+"@twilio-paste/combobox-primitive@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/combobox-primitive@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/dropdown-library": ^3.0.0
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: df6dbce2c0965d6997392bf5cc5e35f77cb0829e5b08d7d0952be7fb83b8c689bbee50b6cdbee28cd2b6f8486d3d446d39b747a28d042d92c3377f08f8d13e2e
+  checksum: 77814f57919578107ff4805be646f6411b7bae8d9c127ee6861392390164f255872649a850441d0595c0687dd038ffef97605071ff17c98689297278239f51f4
   languageName: node
   linkType: hard
 
-"@twilio-paste/combobox@npm:^16.1.0":
-  version: 16.1.0
-  resolution: "@twilio-paste/combobox@npm:16.1.0"
+"@twilio-paste/combobox@npm:^16.2.0":
+  version: 16.2.0
+  resolution: "@twilio-paste/combobox@npm:16.2.0"
   dependencies:
     "@radix-ui/react-use-rect": 1.0.0
     lodash: 4.17.21
@@ -6164,136 +6145,134 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 9031a3133e81c56162e85e9aed43e84b542107d98bb093458b450241714b5f2d5499717bde3f493e0f786bb7d1410af552fbb8aaee5e1ef382ad8e86373f83dc
+  checksum: 191807ea752df07f70a4d5e5fc459887943bc20a076d15e146632c2870d3f7992f643f6fcb56ec8d5c82d97a4bb0603e736e1d62f0b2083376d170d465aa7a3c
   languageName: node
   linkType: hard
 
-"@twilio-paste/core@npm:20.3.0":
-  version: 20.3.0
-  resolution: "@twilio-paste/core@npm:20.3.0"
+"@twilio-paste/core@npm:20.4.0":
+  version: 20.4.0
+  resolution: "@twilio-paste/core@npm:20.4.0"
   dependencies:
-    "@twilio-paste/account-switcher": ^2.0.1
-    "@twilio-paste/alert": ^14.0.0
-    "@twilio-paste/alert-dialog": ^9.1.0
-    "@twilio-paste/anchor": ^12.0.0
+    "@twilio-paste/account-switcher": ^3.0.0
+    "@twilio-paste/alert": ^14.1.0
+    "@twilio-paste/alert-dialog": ^9.2.0
+    "@twilio-paste/anchor": ^12.1.0
     "@twilio-paste/animation-library": ^2.0.0
-    "@twilio-paste/aspect-ratio": ^10.0.0
-    "@twilio-paste/avatar": ^9.0.0
-    "@twilio-paste/badge": ^8.0.0
-    "@twilio-paste/base-radio-checkbox": ^13.0.1
-    "@twilio-paste/box": ^10.0.0
-    "@twilio-paste/breadcrumb": ^11.0.0
-    "@twilio-paste/button": ^14.0.2
-    "@twilio-paste/button-group": ^4.0.0
-    "@twilio-paste/callout": ^4.0.0
-    "@twilio-paste/card": ^9.0.0
-    "@twilio-paste/chat-composer": ^5.0.0
-    "@twilio-paste/chat-log": ^5.1.0
-    "@twilio-paste/checkbox": ^13.0.0
+    "@twilio-paste/aspect-ratio": ^10.1.0
+    "@twilio-paste/avatar": ^9.1.0
+    "@twilio-paste/badge": ^8.1.0
+    "@twilio-paste/base-radio-checkbox": ^13.1.0
+    "@twilio-paste/box": ^10.1.0
+    "@twilio-paste/breadcrumb": ^11.1.0
+    "@twilio-paste/button": ^14.1.0
+    "@twilio-paste/button-group": ^4.1.0
+    "@twilio-paste/callout": ^4.1.0
+    "@twilio-paste/card": ^9.1.0
+    "@twilio-paste/chat-composer": ^5.1.0
+    "@twilio-paste/chat-log": ^5.2.0
+    "@twilio-paste/checkbox": ^13.1.0
     "@twilio-paste/clipboard-copy-library": ^3.0.0
-    "@twilio-paste/code-block": ^4.0.0
+    "@twilio-paste/code-block": ^4.1.0
     "@twilio-paste/code-editor-library": ^2.0.0
     "@twilio-paste/color-contrast-utils": ^5.0.0
-    "@twilio-paste/combobox": ^16.1.0
-    "@twilio-paste/combobox-primitive": ^2.0.0
-    "@twilio-paste/customization": ^8.0.0
-    "@twilio-paste/data-grid": ^8.0.0
+    "@twilio-paste/combobox": ^16.2.0
+    "@twilio-paste/combobox-primitive": ^2.1.0
+    "@twilio-paste/customization": ^8.1.0
+    "@twilio-paste/data-grid": ^8.1.0
     "@twilio-paste/data-visualization-library": ^5.0.0
-    "@twilio-paste/date-picker": ^6.0.0
-    "@twilio-paste/description-list": ^4.0.0
-    "@twilio-paste/design-tokens": ^10.1.0
-    "@twilio-paste/detail-text": ^3.0.0
-    "@twilio-paste/disclosure": ^12.0.0
-    "@twilio-paste/disclosure-primitive": ^2.0.0
-    "@twilio-paste/display-heading": ^4.0.0
-    "@twilio-paste/display-pill-group": ^8.0.0
+    "@twilio-paste/date-picker": ^6.1.0
+    "@twilio-paste/description-list": ^4.1.0
+    "@twilio-paste/design-tokens": ^10.2.0
+    "@twilio-paste/detail-text": ^3.1.0
+    "@twilio-paste/disclosure": ^12.1.0
+    "@twilio-paste/disclosure-primitive": ^2.1.0
+    "@twilio-paste/display-heading": ^4.1.0
+    "@twilio-paste/display-pill-group": ^8.0.1
     "@twilio-paste/dropdown-library": ^3.0.0
-    "@twilio-paste/editable-code-block": ^2.0.0
-    "@twilio-paste/file-picker": ^4.0.0
-    "@twilio-paste/file-uploader": ^4.0.1
-    "@twilio-paste/flex": ^8.0.0
-    "@twilio-paste/form": ^11.0.0
-    "@twilio-paste/form-pill-group": ^8.0.0
-    "@twilio-paste/grid": ^8.0.0
-    "@twilio-paste/heading": ^11.0.0
-    "@twilio-paste/help-text": ^13.0.0
-    "@twilio-paste/in-page-navigation": ^4.0.0
-    "@twilio-paste/inline-code": ^4.0.0
+    "@twilio-paste/editable-code-block": ^2.1.0
+    "@twilio-paste/file-picker": ^4.1.0
+    "@twilio-paste/file-uploader": ^4.1.0
+    "@twilio-paste/flex": ^8.1.0
+    "@twilio-paste/form": ^11.1.0
+    "@twilio-paste/form-pill-group": ^8.0.1
+    "@twilio-paste/grid": ^8.1.0
+    "@twilio-paste/heading": ^11.1.0
+    "@twilio-paste/help-text": ^13.1.0
+    "@twilio-paste/in-page-navigation": ^4.1.0
+    "@twilio-paste/inline-code": ^4.1.0
     "@twilio-paste/inline-control-group": ^13.0.0
-    "@twilio-paste/input": ^9.0.2
-    "@twilio-paste/input-box": ^10.0.1
-    "@twilio-paste/label": ^13.0.1
-    "@twilio-paste/lexical-library": ^4.0.0
-    "@twilio-paste/list": ^8.0.0
+    "@twilio-paste/input": ^9.1.0
+    "@twilio-paste/input-box": ^10.1.0
+    "@twilio-paste/label": ^13.1.0
+    "@twilio-paste/lexical-library": ^4.1.0
+    "@twilio-paste/list": ^8.1.0
     "@twilio-paste/listbox-primitive": ^3.0.0
-    "@twilio-paste/media-object": ^10.0.0
-    "@twilio-paste/menu": ^14.0.1
-    "@twilio-paste/menu-primitive": ^2.0.0
-    "@twilio-paste/meter": ^1.0.1
-    "@twilio-paste/minimizable-dialog": ^4.0.0
-    "@twilio-paste/modal": ^16.0.0
+    "@twilio-paste/media-object": ^10.1.0
+    "@twilio-paste/menu": ^14.1.0
+    "@twilio-paste/menu-primitive": ^2.1.0
+    "@twilio-paste/meter": ^1.0.2
+    "@twilio-paste/minimizable-dialog": ^4.1.0
+    "@twilio-paste/modal": ^16.1.0
     "@twilio-paste/modal-dialog-primitive": ^2.0.0
-    "@twilio-paste/non-modal-dialog-primitive": ^2.0.0
-    "@twilio-paste/pagination": ^7.0.0
-    "@twilio-paste/paragraph": ^10.0.0
-    "@twilio-paste/popover": ^13.0.0
-    "@twilio-paste/product-switcher": ^2.0.1
+    "@twilio-paste/non-modal-dialog-primitive": ^2.0.1
+    "@twilio-paste/pagination": ^7.1.0
+    "@twilio-paste/paragraph": ^10.1.0
+    "@twilio-paste/popover": ^13.1.0
+    "@twilio-paste/product-switcher": ^3.0.0
     "@twilio-paste/progress-bar": ^1.0.0
-    "@twilio-paste/progress-steps": ^2.0.1
-    "@twilio-paste/radio-button-group": ^4.0.0
-    "@twilio-paste/radio-group": ^13.0.0
-    "@twilio-paste/react-spectrum-library": ^2.1.0
+    "@twilio-paste/progress-steps": ^2.1.0
+    "@twilio-paste/radio-button-group": ^4.1.0
+    "@twilio-paste/radio-group": ^13.1.0
+    "@twilio-paste/react-spectrum-library": ^2.2.0
     "@twilio-paste/react-textarea-autosize-library": ^3.0.0
-    "@twilio-paste/reakit-library": ^2.0.0
-    "@twilio-paste/screen-reader-only": ^13.0.0
-    "@twilio-paste/select": ^12.0.0
-    "@twilio-paste/separator": ^8.0.0
-    "@twilio-paste/sibling-box": ^9.0.0
-    "@twilio-paste/side-modal": ^4.0.0
-    "@twilio-paste/sidebar": ^1.0.0
-    "@twilio-paste/skeleton-loader": ^6.0.0
-    "@twilio-paste/slider": ^2.0.2
-    "@twilio-paste/spinner": ^14.0.0
-    "@twilio-paste/stack": ^8.0.0
-    "@twilio-paste/status": ^2.0.0
-    "@twilio-paste/style-props": ^9.0.0
+    "@twilio-paste/reakit-library": ^2.1.0
+    "@twilio-paste/screen-reader-only": ^13.1.0
+    "@twilio-paste/select": ^12.1.0
+    "@twilio-paste/separator": ^8.1.0
+    "@twilio-paste/sibling-box": ^9.1.0
+    "@twilio-paste/side-modal": ^4.1.0
+    "@twilio-paste/sidebar": ^1.1.0
+    "@twilio-paste/skeleton-loader": ^6.1.0
+    "@twilio-paste/slider": ^3.0.0
+    "@twilio-paste/spinner": ^14.1.0
+    "@twilio-paste/stack": ^8.1.0
+    "@twilio-paste/status": ^2.1.0
+    "@twilio-paste/style-props": ^9.1.0
     "@twilio-paste/styling-library": ^3.0.0
-    "@twilio-paste/switch": ^5.0.0
+    "@twilio-paste/switch": ^5.1.0
     "@twilio-paste/syntax-highlighter-library": ^3.0.0
-    "@twilio-paste/table": ^8.0.0
-    "@twilio-paste/tabs": ^8.0.0
+    "@twilio-paste/table": ^8.1.0
+    "@twilio-paste/tabs": ^8.1.0
     "@twilio-paste/tabs-primitive": ^2.0.0
-    "@twilio-paste/text": ^10.0.0
-    "@twilio-paste/textarea": ^10.0.0
+    "@twilio-paste/text": ^10.1.0
+    "@twilio-paste/textarea": ^10.1.0
     "@twilio-paste/theme": ^11.0.1
-    "@twilio-paste/time-picker": ^6.0.0
-    "@twilio-paste/toast": ^12.0.0
-    "@twilio-paste/tooltip": ^11.0.0
+    "@twilio-paste/time-picker": ^6.1.0
+    "@twilio-paste/toast": ^12.1.0
+    "@twilio-paste/tooltip": ^11.1.0
     "@twilio-paste/tooltip-primitive": ^2.0.0
-    "@twilio-paste/topbar": ^1.0.0
-    "@twilio-paste/truncate": ^14.0.0
+    "@twilio-paste/topbar": ^1.1.0
+    "@twilio-paste/truncate": ^14.1.0
     "@twilio-paste/types": ^6.0.0
     "@twilio-paste/uid-library": ^2.0.0
-    "@twilio-paste/user-dialog": ^2.0.1
+    "@twilio-paste/user-dialog": ^2.1.0
     "@twilio-paste/utils": ^5.0.0
     "@twilio-paste/visual-picker": ^2.0.1
   peerDependencies:
     "@twilio-paste/icons": ^12.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: afa686175c22610699cd4ab0c06fb5e6c404ef76ad68f969ffb21a4b327532366bf11f86ebbdce4ef4d06703e2316cc6e8877adc036c3cbf5846baecb0dc1468
+  checksum: f6948fac32acdeff020d56f618e1acb9d41e841b5644baf44ef2051fa4e466c03b21aa30f803e18a9ebed10a58c5f89cebadddb682a27e6150352e02fc8fe129
   languageName: node
   linkType: hard
 
-"@twilio-paste/customization@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/customization@npm:8.0.0"
+"@twilio-paste/customization@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/customization@npm:8.1.0"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -6306,16 +6285,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: c4fc77e4c1b247e6a0319e20e1a1729bc675a36403e7ab7cc6bbd9a6dac8b3189acdb9df25734aedffb805bc921afeae8c857dc40c0d674fcf2096ef764ab6e4
+  checksum: 7047f20bc9bbc74b7745b1985e6ed816d52c48770defd628436240dc12707b05c432441940d051fe1d25b35ec9ee86ec3b467ba05a129fb3735690da32638ccb
   languageName: node
   linkType: hard
 
-"@twilio-paste/data-grid@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/data-grid@npm:8.0.0"
+"@twilio-paste/data-grid@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/data-grid@npm:8.1.0"
   dependencies:
     lodash: 4.17.21
   peerDependencies:
@@ -6340,10 +6318,9 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: a865a1ad1e74882c6e82e1a35348af8ce2a9024d660baaf370d0735f62103ceae2396c4232477f237a5c150814162a62914342d6fa923c375091bebbdc761ddb
+  checksum: 0673f8bb664e3a3a2bb7c0b9d8dab647fccaae418b7586bd2439640865677e950577efa8aae7331805c3e1e9e2351c3fd00722be96945d7b14932c007b9ea444
   languageName: node
   linkType: hard
 
@@ -6368,9 +6345,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/date-picker@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@twilio-paste/date-picker@npm:6.0.0"
+"@twilio-paste/date-picker@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@twilio-paste/date-picker@npm:6.1.0"
   dependencies:
     date-fns: 2.21.3
   peerDependencies:
@@ -6394,16 +6371,15 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 64f91158003eca0b9eb3794dc7bc88d3f4e6c4c56ac9c30cdb7ae3c85d4a8d9bd45dfa6380ec0407f245b9c5ded8041c00d920e7ee6b885a609158cccff6138b
+  checksum: 8443d94d4ef84368aa7b7366a4d57046b4ad2f044a5afb40e17bf0942d486fd225d1e2b6819fd68b2e5997bbc301fb94f8254bc8890f48f9ed4c08c7a846f871
   languageName: node
   linkType: hard
 
-"@twilio-paste/description-list@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/description-list@npm:4.0.0"
+"@twilio-paste/description-list@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/description-list@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6416,23 +6392,22 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: dfcebdffbdd6f6b884ad51125e9188f2979cc4e33b17a1025ad03b14fe434213631ce15cd2b0d0da771e0c8de15bdfce93d90290cfc875c3cd0c60e922309218
+  checksum: 7b1d92836536a8ab47e2fb85c1e51c05281baccb4b9ea568c332a3c5ac7ba8c597a24af0c81c2f53fd55058f920ff7639ce14c89b8abfdded9cd7da34e535e49
   languageName: node
   linkType: hard
 
-"@twilio-paste/design-tokens@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "@twilio-paste/design-tokens@npm:10.1.0"
-  checksum: 9e0aef39da29e2372c9f80207e7f853aa6ef4ba40c59079a0112ebaa48725832e2d680c2ddae3d7785e3cc8f5650b11ca51639bbbc40295ee79d47f90655f6c9
+"@twilio-paste/design-tokens@npm:^10.2.0":
+  version: 10.2.0
+  resolution: "@twilio-paste/design-tokens@npm:10.2.0"
+  checksum: 7029c441d7c0c709f41745524ccd38b5f14b45b60bb86df30625b72a3eb1eda18b810068fc1cc41e4e7c4eac1e25a69a8d863ee914290068ece985c7c6773079
   languageName: node
   linkType: hard
 
-"@twilio-paste/detail-text@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@twilio-paste/detail-text@npm:3.0.0"
+"@twilio-paste/detail-text@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@twilio-paste/detail-text@npm:3.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6445,28 +6420,26 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 5306b3f800cb8991ed830d2f736cacbc0cfe3543d9a8277dd432778c458e3601d9dd79b9b32f101213234932cf3f29311426bccb06a05736ba66a90b1be793ec
+  checksum: b5e141733b50255b2b20c27d2d7edf2ee84b1f31dcec4875c56f6e93f5ca068af849e51040057259d678a82516f38e33057f1b6181b53f8f28da6ff611b08b49
   languageName: node
   linkType: hard
 
-"@twilio-paste/disclosure-primitive@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/disclosure-primitive@npm:2.0.0"
+"@twilio-paste/disclosure-primitive@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/disclosure-primitive@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/reakit-library": ^2.0.0
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 17031adf7f25fe1deee23739e8f423e6bce3b2dfbdd077a4296cebf222a8599555091e52f9d265fe62874009412dd5c0194141f4fdad7cc7228667763bf5adaa
+  checksum: 3388ee9c74829fad90a3103dda8741098db798bc8a2857355c2df34ea2ba163c54c40569e37b82e26fa7c2204b74f64fa3e2e14749c8e606922acf5138d13a0c
   languageName: node
   linkType: hard
 
-"@twilio-paste/disclosure@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@twilio-paste/disclosure@npm:12.0.0"
+"@twilio-paste/disclosure@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "@twilio-paste/disclosure@npm:12.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6486,16 +6459,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 9450b98d8a6fcc2c6df86a6651df34134e348e6ae52eefe0bd0aca51df408f635b30ac7db992847083a36cc768f3c4ee49afdf269fa1b812d5ad83ea38e8726c
+  checksum: baffbba54758c523a6aaa469f55fde0cb99e41ee1b75ccb13e493dc30664cfe93aa274d4791625ab36412e363d18fdab477862cf424ab2b55929b170be030a97
   languageName: node
   linkType: hard
 
-"@twilio-paste/display-heading@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/display-heading@npm:4.0.0"
+"@twilio-paste/display-heading@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/display-heading@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6509,16 +6481,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 9a3578a98c33a59e1fa05e406148d2616cb141f0988687c43929997b3c4ddbf9083fa9c9556d55614092f62f51b63e4d4cc178729e11de817bd2da3023078d15
+  checksum: 055e8e8eca255ef3e963a42ea2289edf0459399e67b89886d5bd2bb55cd0df3d5847facd09d50754d025e89972ccab97c0936b7b4c012e03fe46a1c2e7c227f9
   languageName: node
   linkType: hard
 
-"@twilio-paste/display-pill-group@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/display-pill-group@npm:8.0.0"
+"@twilio-paste/display-pill-group@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@twilio-paste/display-pill-group@npm:8.0.1"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -6534,10 +6505,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 0012123d93715f0b5e508e00658c4737ba7f3d590133c9686901147ffa8352ed1e04de7a1203e3795fd7d4f9dd24adc6a056e16cbc7078eb0cf5a9f8d650f882
+  checksum: 7a678917a9201044d0bd41b21fc23f519af9a8aafed0ac88b9f6a76fbc21f7b54dd3a4903ef88ed8a63f5c6ed7f4f304faf391287a53a58ac6882428bb37b10a
   languageName: node
   linkType: hard
 
@@ -6553,9 +6523,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/editable-code-block@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/editable-code-block@npm:2.0.0"
+"@twilio-paste/editable-code-block@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/editable-code-block@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -6583,16 +6553,15 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 34ee108c1e9e6ded468d2e420ff001fb324dcf84b95a04de0323b312e36d0bcdc7ae3c853b3d3668522ec7f4c4194c2db92586ba6692e7c0971940e8e96d80be
+  checksum: 0eabd75c90643c0579cd4f0d5b3fe72978e16f623aa3496a3c4f3adbd9406dc39127974a6a0a7a7078576d7a1cac18d74d9ff46720de19e06a2c4cac5de423e7
   languageName: node
   linkType: hard
 
-"@twilio-paste/file-picker@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/file-picker@npm:4.0.0"
+"@twilio-paste/file-picker@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/file-picker@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -6613,16 +6582,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 33d8162e137b9ac579b63a36ed2b424c7ffced2024dd510f9e8435fcf35cc520d14953f7298fdd7cd996d46769b46d88716593c6b33760c271765138da047643
+  checksum: 490bdf2eb38bd9fa53443ceff508f9c3044d91bc695761b214df369893bd7bae909080161c145e21fa2d241e8b58b31c1fffb149f7a8b00fc0045103f1b329ab
   languageName: node
   linkType: hard
 
-"@twilio-paste/file-uploader@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@twilio-paste/file-uploader@npm:4.0.1"
+"@twilio-paste/file-uploader@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/file-uploader@npm:4.1.0"
   dependencies:
     lodash: 4.17.21
   peerDependencies:
@@ -6648,16 +6616,15 @@ __metadata:
     "@twilio-paste/uid-library": 2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 8e85ef0fbcc3716ab834abbba38c8d1ab592361b419452611b7f757e77bf4dddd86473be1d6e11f988ba67d50eb84c34e2bfe2640cb1c4d272807f70b46cc7c0
+  checksum: 00e0dd51996064803ae20da0afdd538a896971e10c8e7d577be6e96297353f7f6f58eb76dfe0aea93158953c9c3caebd1f4276002d23c5775c77ad5460510688
   languageName: node
   linkType: hard
 
-"@twilio-paste/flex@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/flex@npm:8.0.0"
+"@twilio-paste/flex@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/flex@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6670,16 +6637,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: dd7a861f9cfa0669d9e9184ae97f75cd297d731d6848bb3a66eeffc08920689b12d9c859f2156fe40939b7e776087861f052a7125f88e5f2b1674be40cc86b61
+  checksum: 7bbdb8f9b687bf0d7061c907b4eb886dac72d3fbdbbf0192cb19721c797cb4cf7b818c93f605d97f6273d6ca758e66509913c912f6c013f4c350814cd15a43e4
   languageName: node
   linkType: hard
 
-"@twilio-paste/form-pill-group@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/form-pill-group@npm:8.0.0"
+"@twilio-paste/form-pill-group@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "@twilio-paste/form-pill-group@npm:8.0.1"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -6698,16 +6664,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 7cefc09ba42b7c7eb2a3b3782b9569aa8ed64c4ba5f25e1dbd92d55b2d1ce38a26934c94f49a66b3565652c9be4a5fcafe2ee844a6819f2a1ddd390efeb5e344
+  checksum: 03603ec5c802e622ca582afee47d7c2aa97104abdc757844df796db84eb108d22c029278cfea7bc4b9f21dc50dbff683df8f871d1fb81a3f82817594bbfedb6e
   languageName: node
   linkType: hard
 
-"@twilio-paste/form@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@twilio-paste/form@npm:11.0.0"
+"@twilio-paste/form@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@twilio-paste/form@npm:11.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6723,16 +6688,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 28cbe64c449a78a4e4367042f2c76f2c5c152ca9229ad305d96390942b3c1196d3a3dc2d90c17d1627ca411d855df9b62353cabcaf23d4a349418a4b3fc04344
+  checksum: 29803f957f69163004e260cf6fac28f164019acd4dd79588dbd406914c4ecd4a96b93a1ba6890839ddef665f2003f8f1198c2f2923a5f2144607a1ced80c396c
   languageName: node
   linkType: hard
 
-"@twilio-paste/grid@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/grid@npm:8.0.0"
+"@twilio-paste/grid@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/grid@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6745,16 +6709,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 28c99847c95e3ee316ecc407c902d66d30b4424be4f532bcc72c6c055d2c954c0508145d769b7cd7f86749efedf41bd03678a65e4c3a648127ecd7ac55a8841c
+  checksum: 9b5d0315386cf566d4076e12c0e28a2dde6acc42ce168fcee85487083206dab9db06710ce42ee3a9d4dbbd885205c59d343367f309ac9cb8d7a0ddb647f48b4a
   languageName: node
   linkType: hard
 
-"@twilio-paste/heading@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@twilio-paste/heading@npm:11.0.0"
+"@twilio-paste/heading@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@twilio-paste/heading@npm:11.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/color-contrast-utils": ^5.0.0
@@ -6767,16 +6730,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: ba68207aa7c74a7f98451821adc2fcc9d130db4f31d022721b06f1809948f89cf05148163d9102594ed3128e3ddbe3214b6f7095dde9db770416f23dde296b7e
+  checksum: 8ec9769a8180bf1098fb1681164d23d1fab9d26225af457ac7761756b75173de1369c2896e79baa396e07c8d0d8460fc1a786f3948b21885a285c7862cec4dde
   languageName: node
   linkType: hard
 
-"@twilio-paste/help-text@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "@twilio-paste/help-text@npm:13.0.0"
+"@twilio-paste/help-text@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/help-text@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6791,10 +6753,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 23e7a617b26b915f021211689e0578f43a25423367d976688ed527a72c4423da79c192f592783b0e59db13bfffc1f727e9e27031457c514501735c26f6b954d8
+  checksum: 80bc0bbba424708907bdc409f93a59c10c82468505439b362bf4d893f58dac2f8a5da877fc5c414352bec83a811ff8a927eb6213b4726e48569785e8a09c1e86
   languageName: node
   linkType: hard
 
@@ -6821,9 +6782,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/in-page-navigation@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/in-page-navigation@npm:4.0.0"
+"@twilio-paste/in-page-navigation@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/in-page-navigation@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -6839,16 +6800,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: fc9071772808b1b957c3286788bd7fb313c0878c7bc7daa3eaa87d68518ed865997bb622763c54a48e4d72c52fceef18109c274687142f1d07d8a6c0a507bfde
+  checksum: 352103292f7f2ebe34a0afbf575784c04977f3b48e270c0daefefa9204751d00ee064f5f48a70153aa92501b01521e4076c7e48acbb219e2d012b02ee9e3b3be
   languageName: node
   linkType: hard
 
-"@twilio-paste/inline-code@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/inline-code@npm:4.0.0"
+"@twilio-paste/inline-code@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/inline-code@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6861,10 +6821,9 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 0b4b428ae881586f0f983e6b9096b7d8d56fc7d84e20cdec4ee0df3985a82e062896045f2d432f8bb0b6feef5ecda6995561eba8ac1b6e02ceb036ba2a38f573
+  checksum: 49e43573f931c26130f2d18c00b53a3297f2a7df971dbc3bed57600bea5ff081348bad3ced1c2acd2ad5872f44aa2b3eaed08ad80268e57fa7600aa6a0751e5c
   languageName: node
   linkType: hard
 
@@ -6898,9 +6857,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/input-box@npm:^10.0.1":
-  version: 10.0.1
-  resolution: "@twilio-paste/input-box@npm:10.0.1"
+"@twilio-paste/input-box@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/input-box@npm:10.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6914,16 +6873,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 5a65f7cd19c9d23428a3ed3a581975e0ab286e01ff9bfa1f9758edc0407e0e8d16a780d4d1003dbf9e1780cd1a6f21a6b6f909829a109d4a3cde464bfe824221
+  checksum: 2008701ffd97ba6d4f762fc9c55b64919a12ff75ac6bdce3c35ab7a2e2f35d5bf8c678d8c444eefddd0535675ac17f43f4a2604ca86774673b52a2b4f8672534
   languageName: node
   linkType: hard
 
-"@twilio-paste/input@npm:^9.0.2":
-  version: 9.0.2
-  resolution: "@twilio-paste/input@npm:9.0.2"
+"@twilio-paste/input@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@twilio-paste/input@npm:9.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -6944,16 +6902,15 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 5f519d8145caba6b97ee695da2d9cb18ec6e519f4af5ed8e091247062395f629757555777f6f3dedb508417349fc0e28af536c4cb19b03bfc5c9a8c3c46523b0
+  checksum: bbf960f8fc64196a3e8f138f07c207777d6dfcdb8702672eb78a9e900a417c7d6284ae3b704ca42e4905fb98a798c86aae1ddc9f1aed5b953cd5bab8233ab4de
   languageName: node
   linkType: hard
 
-"@twilio-paste/label@npm:^13.0.1":
-  version: 13.0.1
-  resolution: "@twilio-paste/label@npm:13.0.1"
+"@twilio-paste/label@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/label@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6970,16 +6927,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: ce24412a72a0f4857ae39a56dd6a412288b3f2f5a7d27f0018c2ae724aa681bb9b402f20bdf91efac442bb3f925ea2a692a687454c0e0a9baeed4dbe5a741e3b
+  checksum: 80800ea99a13be7911a6a47e320c6a5f91056b3cb6e731b88ffae9d650b1e71c5980638655e33c5d714379a6e47b7dec923f681c34735b62f7e24196b0464f5b
   languageName: node
   linkType: hard
 
-"@twilio-paste/lexical-library@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/lexical-library@npm:4.0.0"
+"@twilio-paste/lexical-library@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/lexical-library@npm:4.1.0"
   dependencies:
     "@lexical/link": 0.12.0
     "@lexical/react": 0.12.0
@@ -6987,13 +6943,13 @@ __metadata:
   peerDependencies:
     react: ^17.0.2 || ^18.0.0
     react-dom: ^17.0.2 || ^18.0.0
-  checksum: 4321a0da51d2d1f239fcbd5ab939aec016ef5dc2459d45555699ba0a7745708e8e4fa06bbfc84113183547e90e49738d9964a9d58594019e921eb11352dcde55
+  checksum: 9d3cbc7ec743e084241a7165318bc4dce725d5ccf2df3433a52b6794034a1eaf7afba0bad733f48abe6a716d03c6b6400f25fce801db86e664a0b65c9524c401
   languageName: node
   linkType: hard
 
-"@twilio-paste/list@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/list@npm:8.0.0"
+"@twilio-paste/list@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/list@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/color-contrast-utils": ^5.0.0
@@ -7006,10 +6962,9 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 1aabd3e906270e4e5266f6ceb9919ce787837084e0779a8d3e4971ad6f5c378aa70fb62e10afebe6a6db742a6f60a9a1b82f7ca896a3774b1d34e07af5dfb4b9
+  checksum: dbc77021e0f33dca678935a44175d0bf869a3b0d272b90a5037035fdb03193ffe7cf3b5c269ea6dd1dd8c9a19c27bc8c120e99093a7017a3645ed78f1600699d
   languageName: node
   linkType: hard
 
@@ -7024,9 +6979,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/media-object@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@twilio-paste/media-object@npm:10.0.0"
+"@twilio-paste/media-object@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/media-object@npm:10.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7039,27 +6994,26 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: f9be09576089782c4e3173f457b1a464cce1422f2e0c05b64a75d38a793515f9fcaf609544e481796e6551ae0750151a035abc94a95f1906b70989f30e0947c5
+  checksum: 86f13d939c8bf7e252de824de32975a378d4b965d36afb1412ff17ad156b89bfb238aca38298072852ce02dd008eff973a1cff8717103b98046706d7c6e68251
   languageName: node
   linkType: hard
 
-"@twilio-paste/menu-primitive@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/menu-primitive@npm:2.0.0"
+"@twilio-paste/menu-primitive@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/menu-primitive@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/reakit-library": ^2.0.0
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 4821b5844142b82cd5a1e9e5794ab19ac949ac1c95323506839a32adc8793828da0d16b293ada3645e56f97645fff93afe35df94a7dc6f28c5d8db58ce130e66
+  checksum: e9f030dbbaeafb71ab3be11f76d5fda39a13e465bc1caf86585722d6c770fab8193d060034aa47891128b34a784744942e9cfe48f99d1a76d34f3265614c0878
   languageName: node
   linkType: hard
 
-"@twilio-paste/menu@npm:^14.0.1":
-  version: 14.0.1
-  resolution: "@twilio-paste/menu@npm:14.0.1"
+"@twilio-paste/menu@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@twilio-paste/menu@npm:14.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7085,16 +7039,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 1debdac5310a2b3b0c664313d756f014eebc008d2a0474f2f7c648ea260da5967c4c8ca47985f1ff6683c84b49517dd2503c84c84051122fd3e17f10092f0721
+  checksum: a61ace58e00c2d574e6cc28971db5daf35d33ed2ea6a6c2557819efee92f25a873c2302d569c1bffae964354def1a3d2d8e964e6a7a05ce6c255c6f96c0e0bef
   languageName: node
   linkType: hard
 
-"@twilio-paste/meter@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@twilio-paste/meter@npm:1.0.1"
+"@twilio-paste/meter@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@twilio-paste/meter@npm:1.0.2"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7114,16 +7067,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: e23d799b264b8d5fde2b1d066d19f573650ab5080fa1cd692e1941e9230511436114104e777b5904793ca92ee79a2519d01b9416871daa7d8773f130dc23b436
+  checksum: 2744807642951f9134740bb57fc74221adbe035b4e3799c85f4ec9e7d42d25cafbc4c23c460d2787642a514b044a3e184f9aaf61d31204b3f7259beab87ac36b
   languageName: node
   linkType: hard
 
-"@twilio-paste/minimizable-dialog@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/minimizable-dialog@npm:4.0.0"
+"@twilio-paste/minimizable-dialog@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/minimizable-dialog@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7145,10 +7097,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: d3e0b73486fd6b2ebdbacb1d88eb94f24632965d549f948aed9b8755cd29a83003a3f4114f779b25ccc13de54570184fb5d38070b409bab301bf6c9ad16a159d
+  checksum: 2b846147a5d3d82e4b6a301b171d7e7ffddeba040f9f686655f77c3c7f1d4e1e772be91a2d4aae1e713d32ed26eabaaa707b114c3b815326e53217dd38747f56
   languageName: node
   linkType: hard
 
@@ -7164,9 +7115,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/modal@npm:^16.0.0":
-  version: 16.0.0
-  resolution: "@twilio-paste/modal@npm:16.0.0"
+"@twilio-paste/modal@npm:^16.1.0":
+  version: 16.1.0
+  resolution: "@twilio-paste/modal@npm:16.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7190,27 +7141,26 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 2733f22a9b4f1519667482aafaa702bc543b46c5755939dce1b368ae8111c2f582a4f255e22fc24065d2449418b17eb4e29dd15c771b4b17cf4cfa14b4400fd7
+  checksum: 42a8bb9311c57f81f50af4918192e466f579b3477b5ff62f6556537d921206750f3e64fb6e255bca65eff050770c75ced6a84b1f9b95f551ecf9e934b0076afb
   languageName: node
   linkType: hard
 
-"@twilio-paste/non-modal-dialog-primitive@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/non-modal-dialog-primitive@npm:2.0.0"
+"@twilio-paste/non-modal-dialog-primitive@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@twilio-paste/non-modal-dialog-primitive@npm:2.0.1"
   peerDependencies:
     "@twilio-paste/reakit-library": ^2.0.0
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: bfa0e34a293ea02e91179bd06d4e0641a8026c99b0d63f8f494baaa0aeeb43ec07c47d62acbe1d81d01d90108cbe5309bd9aa6650bbfea71f269ab5df50d989a
+  checksum: b0d599bc0637bb8ac3d5a294e4dcb0354360c22ed733bb1e91206ed942001dac568b948b731cfa40b3da9e6f56025b36b92952883f455c88d24fe96dee647ba2
   languageName: node
   linkType: hard
 
-"@twilio-paste/pagination@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@twilio-paste/pagination@npm:7.0.0"
+"@twilio-paste/pagination@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@twilio-paste/pagination@npm:7.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7226,16 +7176,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 90728355642c49ee8cffe8ba06e00582eca6325107a401f87b7b7ba6aacd6f8e32528416096b1cf54d748c02ecaeee59ec40807c6ae4478dd761e8cd215f8abe
+  checksum: dcc71e91e35ff6dddf6656be74f21fdb6eeecaafd7e5c2c6762faa951e8391e69888d18ad4abad37a144df37e20e4ceb7b4fcd171f84f69c2b366b0f4bc0ee33
   languageName: node
   linkType: hard
 
-"@twilio-paste/paragraph@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@twilio-paste/paragraph@npm:10.0.0"
+"@twilio-paste/paragraph@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/paragraph@npm:10.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/color-contrast-utils": ^5.0.0
@@ -7248,10 +7197,9 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 5124e64c70067ad8d27949600bfd6fa650758f21c188de737c49e1b2c8e7ca2646255eba45e66887a13a98b2f7a601084c44301e6e7af45874cd6db64c0c066b
+  checksum: 9a10ec8c5e5d62f23cd645f0e3553a0cf242ef54e004996d88e695e5116ad5b447a5191ae90058635eee115c0e14e72e83337b8059da9dc79727acde22c3a137
   languageName: node
   linkType: hard
 
@@ -7271,9 +7219,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/popover@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "@twilio-paste/popover@npm:13.0.0"
+"@twilio-paste/popover@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/popover@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7297,16 +7245,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 05d8dc72021017a3fd149f03867a4be97c24a333e0e0696e53337479d2c675230958445695ac493e2ce392440570ca7cde4c01cdb1e346f634d429eb86599ca5
+  checksum: a5d2cf77dcd6b64cfbca89721f7ca02a5b0ac95659c7581f3d62d6566bbc4a7a4e9633899cd8d9d3045f1e7f3a067e1b749209b51557d65014543ab6d5a967d6
   languageName: node
   linkType: hard
 
-"@twilio-paste/product-switcher@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@twilio-paste/product-switcher@npm:2.0.1"
+"@twilio-paste/product-switcher@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@twilio-paste/product-switcher@npm:3.0.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7321,22 +7268,21 @@ __metadata:
     "@twilio-paste/menu": ^14.0.0
     "@twilio-paste/menu-primitive": ^2.0.0
     "@twilio-paste/reakit-library": ^2.0.0
-    "@twilio-paste/screen-reader-only": 13.0.0
+    "@twilio-paste/screen-reader-only": 13.1.0
     "@twilio-paste/separator": ^8.0.0
     "@twilio-paste/spinner": ^14.0.0
     "@twilio-paste/stack": ^8.0.0
     "@twilio-paste/style-props": ^9.0.0
     "@twilio-paste/styling-library": ^3.0.0
-    "@twilio-paste/text": 10.0.0
+    "@twilio-paste/text": 10.1.0
     "@twilio-paste/theme": ^11.0.0
     "@twilio-paste/types": ^6.0.0
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 154cf998abdf0b010c056a81e88f8aea7bd5b2349d54dfb532276e9d7dbb410c1118cd36e70fdb623d9d5a6d29133d53e8ccab22834d74944117608434e84218
+  checksum: 46efcb5d991f238b154d6fb3d76a41d6362c87147ac9266ff88246c7d38cf34f192d45e32f4c4bc186e4eff027847a0fb599a79732457a4d92fb727db3dd9f60
   languageName: node
   linkType: hard
 
@@ -7369,9 +7315,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/progress-steps@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@twilio-paste/progress-steps@npm:2.0.1"
+"@twilio-paste/progress-steps@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/progress-steps@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7386,16 +7332,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: ac506bdf1c2fe52100553f4a391f5dade547a4eebeaf4f962b64f22b14d2fed99dcac2577036322b19db8b193a704db56b9a5640deb3034010459484606af010
+  checksum: e8d51f197a5e9d2429ebe7ffb9c980144cfbf44952b4f335aacd031fd6b14a75d4827deda24b3c073ae1607c1fbaf42726471ed27de8974831c9dcad993813ea
   languageName: node
   linkType: hard
 
-"@twilio-paste/radio-button-group@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/radio-button-group@npm:4.0.0"
+"@twilio-paste/radio-button-group@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/radio-button-group@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7422,16 +7367,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 134381cb9a6550e102bf383bef6d42380a8e94c2f368d61511270c4163607629fff7781494b26c16bc073dc11431cf328912b2111c72baf197aefa037a26d5cf
+  checksum: 0bf71c7b03e7c1547d7e7e00d06c9d438accfba521580c7443535c361d341d54b4ece93e1cfcae53f1b5628b031ec16f1d722008c7a61038161af7a6adf4b5f7
   languageName: node
   linkType: hard
 
-"@twilio-paste/radio-group@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "@twilio-paste/radio-group@npm:13.0.0"
+"@twilio-paste/radio-group@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/radio-group@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/base-radio-checkbox": ^13.0.0
@@ -7455,16 +7399,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 47c5e7e3836b493101d7771100082f660d0f144d71f11a413f1b62af4c451bf9fe97a2832c2b0cedb0293b2b2d52c4f1c3a3b3acc05617e6c852bdcd0e1b6a9a
+  checksum: 9784bd4e3a7021b0e08012f6c616b6e348b026f06c5f916194fc5498577e0b853687d1e0f8988f5a25dcf159bcd9194f14ac86ba728ae9c8e5bd7908593b6266
   languageName: node
   linkType: hard
 
-"@twilio-paste/react-spectrum-library@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@twilio-paste/react-spectrum-library@npm:2.1.0"
+"@twilio-paste/react-spectrum-library@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@twilio-paste/react-spectrum-library@npm:2.2.0"
   dependencies:
     react-aria: 3.26.0
     react-stately: 3.24.0
@@ -7473,7 +7416,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: e6b85c103aa52b8537e0babe9679f839d1acffa090ec4d34eece5c2afb30b8a99f2d128bbb4dd1e2351ece85d3d607759383893ccdb5219bf2394d8b4a6e6fba
+  checksum: 816965a54bd20fa44327a9405434cf315c57d4fff7c96092c2808cd19747bca9f4b5c2859e9ada7db8dbe1d08dc715624eae3915a3485417e996a0292cec3855
   languageName: node
   linkType: hard
 
@@ -7491,9 +7434,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/reakit-library@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/reakit-library@npm:2.0.0"
+"@twilio-paste/reakit-library@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/reakit-library@npm:2.1.0"
   dependencies:
     "@twilio-paste/paste-reakit-fork": 1.4.1
     reakit-system: 0.15.2
@@ -7501,13 +7444,13 @@ __metadata:
   peerDependencies:
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 5f3987221a87f3c102b392525d8c0d7d74e9e07ef5c3629c204359b9b2f62314692c3ea39fa3d4c277c947a14650cb4a5cea3f1b2553179ba3fb6c89936148b5
+  checksum: 5cfa6431f0855e5efcc6c976f02150afcbe866a282ce02c3041fec9175511a1937240c683b622824e8d1d7de1e7a54c8960ad243c217eb99fe04f44c542398ce
   languageName: node
   linkType: hard
 
-"@twilio-paste/screen-reader-only@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "@twilio-paste/screen-reader-only@npm:13.0.0"
+"@twilio-paste/screen-reader-only@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@twilio-paste/screen-reader-only@npm:13.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7522,16 +7465,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: f6e375b21b4c06fb2e4c147f0915398d00c81f82e594c2acead7c75f35a2d35f5cd32fade18bf55b5ea8d8003ecd52ae6f3eab3ed3dfd615e4669836b08fb4f0
+  checksum: d166e2c94498d2877c33eaf85f9e99074d7465acfad7cf2059cb4fd8b0985ae0294f950e34ed81fccff21fb0319e167783ac1171a26600ca030dfac5b3f8ad98
   languageName: node
   linkType: hard
 
-"@twilio-paste/select@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@twilio-paste/select@npm:12.0.0"
+"@twilio-paste/select@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "@twilio-paste/select@npm:12.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7547,16 +7489,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 2467945cbd1dfecafbed436e8026aea9df4ee6ec3b5ca034e76f70fabd7494d7cc281074765f3b0bb79a3a120b351551a73bf1d8f7d9c8c2d5287150f2718453
+  checksum: 0f060a0403e15b449a3f8c8b152568efa5e81f2c1e3bacab489927a369f2efec5b8b9d956a5d9c81cb37331d08369f513f3fa7b797de7de9b4c2baf633bd0868
   languageName: node
   linkType: hard
 
-"@twilio-paste/separator@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/separator@npm:8.0.0"
+"@twilio-paste/separator@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/separator@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7569,16 +7510,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: ea008ddbded6e95d9be5389cdf6737e0a0386e7496255e54595fb4fbf919afe5832702bb0ec783af10de53c9b0c145bbc59fb6e1c651f6a82898fde2bb3eb9f8
+  checksum: d7d60253813adf558e3ae35ae2ed914ee38a3fdc365995f848ace25b41f9c2fabc0fa931e8fa1540f50ff232154f18b4186f9a0257b0f44bf42eb049075e65e3
   languageName: node
   linkType: hard
 
-"@twilio-paste/sibling-box@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@twilio-paste/sibling-box@npm:9.0.0"
+"@twilio-paste/sibling-box@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@twilio-paste/sibling-box@npm:9.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7592,16 +7532,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 9fd7253f75a46ffeaaacb87cb8cb1d6c49f0288c5a5b78c932815c26367f46b159ade4fad870789b8bbe7b6cffcdc4dea49a00bc3c7860bf0e5d708901a00feb
+  checksum: c67f38281fa0fe9f79dcc64f66c27b9903552e014ba2bfb24db10524340b797a3cd64eaa71defd42464d714ed50611dca55be9d9cd675fe57589846e1618fb31
   languageName: node
   linkType: hard
 
-"@twilio-paste/side-modal@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@twilio-paste/side-modal@npm:4.0.0"
+"@twilio-paste/side-modal@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@twilio-paste/side-modal@npm:4.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7625,16 +7564,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: b3fbdfbb2c328c53ad64f4c3b39aa841a619f3ea4e0b4b7c702744bd3f0f3bc4dfd87681e0b26f1c32a393d07bac179da0ffdcdca4f7674a0a9965cc7e2f5c1e
+  checksum: 3fe0ee8a420846fa5f43af52d67ecaec542a858b419f98c21a92f07d6ae213b63b17afa3bb6174b9df295a1beef1868ecb948b60e236c5a4f7b0b3e7027828a0
   languageName: node
   linkType: hard
 
-"@twilio-paste/sidebar@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@twilio-paste/sidebar@npm:1.0.0"
+"@twilio-paste/sidebar@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@twilio-paste/sidebar@npm:1.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7660,16 +7598,15 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: d10ad642fae167031846eb9e52269f8af61f0c0fca7fa11225ef4861bd5fb465408fbfb73fb6227268ad0010117e42d9bb13af75439546a0217e3ce521323ca3
+  checksum: 3417e35e428a56cada17375cfa0631d3dba21b50e762c44931b4f8da97fcf137b880d5d0bf3fad33860ce259a7fb4e3c7556569180a85c47ab8ac31169acacd5
   languageName: node
   linkType: hard
 
-"@twilio-paste/skeleton-loader@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@twilio-paste/skeleton-loader@npm:6.0.0"
+"@twilio-paste/skeleton-loader@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@twilio-paste/skeleton-loader@npm:6.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7682,16 +7619,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: c720bc2a28f12b2cdd37fc191052233185c14584993c07a8b67aa88a93404750e01c6f2dc9b05009f9235627438d2218d6296972c1cad9e4848c867ce4bba387
+  checksum: 2bc76994f7b9d8559aaef4e378d2be85570e2a852e8c68eb8d53a46614231b23827f1f0b7cdf4e69fd099a8f11228ec00b0f28f1dfe4f20447513bc13b01c5a0
   languageName: node
   linkType: hard
 
-"@twilio-paste/slider@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@twilio-paste/slider@npm:2.0.2"
+"@twilio-paste/slider@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@twilio-paste/slider@npm:3.0.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7700,7 +7636,7 @@ __metadata:
     "@twilio-paste/design-tokens": ^10.0.0
     "@twilio-paste/icons": ^12.0.0
     "@twilio-paste/react-spectrum-library": ^2.0.0
-    "@twilio-paste/screen-reader-only": 13.0.0
+    "@twilio-paste/screen-reader-only": 13.1.0
     "@twilio-paste/style-props": ^9.0.0
     "@twilio-paste/styling-library": ^3.0.0
     "@twilio-paste/theme": ^11.0.0
@@ -7709,16 +7645,15 @@ __metadata:
     "@twilio-paste/utils": 5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 9157eb35e5c3ebb29c190f6825832b9f7f3c48c23a25d3001ece3c0fddd5a6526e4586199d21fc556d759189c2a2542e3f9f1f0007ab94d2a0c9351f08191094
+  checksum: e21c4e5e20100e22a3453c642e6b27c1b7cee09e71633dc73a9b2919d7f497812612245ccfd639c6650c687a500dc3b7f917faf43a17517f9902184798b6c5ff
   languageName: node
   linkType: hard
 
-"@twilio-paste/spinner@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@twilio-paste/spinner@npm:14.0.0"
+"@twilio-paste/spinner@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@twilio-paste/spinner@npm:14.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7733,16 +7668,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 03d898077a15087bc20bde7caa9ff128712c4d60111b835e10c7912e4324610dc92e1a54787e5fc6934f64bc3b825bb2ae405e1f8cba8edf5a89c26427be036e
+  checksum: bdb4f6af70448c7b239981a7f4bc86c8cab49b1ceaa5a75185728972ddafae1d760186a1fc90bc0476cf2efa2a371af2204d40a774154d21a06db8259e0a96d2
   languageName: node
   linkType: hard
 
-"@twilio-paste/stack@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/stack@npm:8.0.0"
+"@twilio-paste/stack@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/stack@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7756,16 +7690,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: fea698b04f19a2565e64f16c09a0b84efe228e11aa1581250be1d0f8ebbd4058a9a3dc1f149ff6b45237b460853930ffe3d6be8968f12757e1f7d1bc6c51862d
+  checksum: 97a90c333ac31a68f51f9d440f23c466429a58f9a6aaf292b5e18af0497f851313fff1959874a81d340c3b6c2e5d431a0d570eed6e2f1c33bbc8a5466aa13c8b
   languageName: node
   linkType: hard
 
-"@twilio-paste/status@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@twilio-paste/status@npm:2.0.0"
+"@twilio-paste/status@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/status@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7792,16 +7725,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 14cb02fc1553609757fb44a0d47c0d2a3ef4cedb4813e387dd53043e09e6d7166bdf6ddac295a4e5c937ce66aba1d333054ef0c2331958404a542c30f1fda282
+  checksum: f6ee907f60b9b57352de74c304687dd86540016ab3fa29c0d3006756efe682996028082bb3047499126f7bef668146fce3f708ee9be738701f288dda20e719b2
   languageName: node
   linkType: hard
 
-"@twilio-paste/style-props@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@twilio-paste/style-props@npm:9.0.0"
+"@twilio-paste/style-props@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "@twilio-paste/style-props@npm:9.1.0"
   dependencies:
     csstype: 3.0.11
     lodash: 4.17.21
@@ -7814,10 +7746,9 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 2a463289954843b36f453ee41bd03f87e237ec9b8e4666db7daa10574ef432fabeafc25941c0d65e3763f05581527a189d458c81afee501499e698afbdf83525
+  checksum: 16d68d8617bed2b6fc239b20796bab24ef48877cf194aacfda1ccf7410ba82cd57e1e6412322a051f9a48a1d3253a8e6d8b466d199f85ccb79f3e2b63ca4dbe3
   languageName: node
   linkType: hard
 
@@ -7843,9 +7774,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/switch@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "@twilio-paste/switch@npm:5.0.0"
+"@twilio-paste/switch@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@twilio-paste/switch@npm:5.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7868,10 +7799,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 0c8b96dda5b6b986570b8b597775cf215cdc37d5a02b98173b728dd5d9a6059fe5da82e65757c5b1e002c114b3dc33b5010de5a4599f806204d2c40241763411
+  checksum: 331b19e3817172bd402c543a6e7adb10bbdae4e8641a2508b52580fbd459a4ea9bc2d0dfdbfa720311f0f39a629a51836a6bdedc867f41c9d44ea4a455f25b09
   languageName: node
   linkType: hard
 
@@ -7888,9 +7818,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/table@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/table@npm:8.0.0"
+"@twilio-paste/table@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/table@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7903,10 +7833,9 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 0499cb15637b4ba06ebce365a444ef557cb1b0e1766bd6c436a1c0ea6648274621f29a42fa1a96d9f29a4bfabea69c1e0f6234e68a920a248ac07cef58e151e4
+  checksum: 12497726f55750880b5efb7fc4e823ea6409155ba9719838f455a80f166ae1b98a277cdaa58504a18792890c309ec8faf74c9cb2e8af974be8a3037c3b407363
   languageName: node
   linkType: hard
 
@@ -7921,9 +7850,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/tabs@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@twilio-paste/tabs@npm:8.0.0"
+"@twilio-paste/tabs@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@twilio-paste/tabs@npm:8.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7939,16 +7868,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 3b86ae6a090c445e40b239e8cde790dad0d6ef48dddfcfde951e58d49b1341a79b8786ea7a76e5ce2d029d42848f05c9a2ecc1cf83bceb1ad64243f4078adc95
+  checksum: 4cb7c00ed0719ce076c281266c76ebd8d2db4b623b7d2340b3b7da601595ae082727f1eaa4f5f1e10ca86571a9602ec7bd57e5c3575bd6782e54ff0f42300f01
   languageName: node
   linkType: hard
 
-"@twilio-paste/text@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@twilio-paste/text@npm:10.0.0"
+"@twilio-paste/text@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/text@npm:10.1.0"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -7962,16 +7890,15 @@ __metadata:
     "@twilio-paste/types": ^6.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: a349f436f2ca10f2aa3299bcbcf1a8db88a496fe117257ac5bd3255655b58c04b0d122e66e658dba7c34890b4667e7513d70a678d16f16dcd13e401e748806f8
+  checksum: 8583e3dec79be36489427f11933da69622b6679d012ba89f2b66aa2bddd6b2f8c97a16b1be67460828e641741c289f9ce34f3c6cf66ddc48e030fcbf1868bc54
   languageName: node
   linkType: hard
 
-"@twilio-paste/textarea@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@twilio-paste/textarea@npm:10.0.0"
+"@twilio-paste/textarea@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "@twilio-paste/textarea@npm:10.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7987,10 +7914,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: ceca0fdfbfadf63970febbbac20960e38c348ee3fbc1f864e7c347531e250acf851e278968ad2b1280968e25021f76b3ec3cacd5d6602f6814554d6d72206423
+  checksum: 6714aab8692120d0842a35c78ce0ab139fc37feefb0888f446db830bb2cacebe0c6557c6b516881e6687784f4b303dc9ccd26c338d072d05a83ff90abd19523c
   languageName: node
   linkType: hard
 
@@ -8011,9 +7937,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/time-picker@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@twilio-paste/time-picker@npm:6.0.0"
+"@twilio-paste/time-picker@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@twilio-paste/time-picker@npm:6.1.0"
   dependencies:
     date-fns: 2.21.3
   peerDependencies:
@@ -8037,16 +7963,15 @@ __metadata:
     "@twilio-paste/utils": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: c7b872c4a1553c0c7f40e65de13e4f4eb3377033bb7ebc08daaeb070133c9c5f9de14c713e3222adc5f64cad221a7857535c4801cc8cf5743ab2a403edf2bb51
+  checksum: 32b0921d1ad907bd3f1b801b6999fe16523e277eaf7aa5c75740faf1feb8a9b59deae35f326ec1ee5fa0aaf9b40ab728e0ab26a57365060dfb5056efec5f3ee0
   languageName: node
   linkType: hard
 
-"@twilio-paste/toast@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@twilio-paste/toast@npm:12.0.0"
+"@twilio-paste/toast@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "@twilio-paste/toast@npm:12.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -8068,10 +7993,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 7cad8c7ef962c453ffea86e1ee220684ce6cdb78a863f79d495683c82155d2dfbd167c8275a497eeb1fff1735e527e65247d8885b7c2fcadd4b0039f524e56cf
+  checksum: 966bba468f5d8667b25adf544ef127afd1609274885cd7c9841b4212b36d90429c2a9ecd1663a59c794fdd7c77f7b6081f6c1fb5f3738ef6d372ea5e8d149b8d
   languageName: node
   linkType: hard
 
@@ -8086,9 +8010,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/tooltip@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@twilio-paste/tooltip@npm:11.0.0"
+"@twilio-paste/tooltip@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@twilio-paste/tooltip@npm:11.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -8107,16 +8031,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 1d92d146753f36a6bc59283a98ee61c8fe4c08311b420d6b69707c761b221ef7c626bbfc1596e09f2a534ec7be4a26a50ef842277af78d37bccb40e49b0f2531
+  checksum: f87ce00561ff1845a2293ba02183401bc1587769eb6b1d35feaccf94124386da3b5893c9e46b533a54c598dd4988e223094e0e51c305fa204c2e92d4e702ebea
   languageName: node
   linkType: hard
 
-"@twilio-paste/topbar@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@twilio-paste/topbar@npm:1.0.0"
+"@twilio-paste/topbar@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@twilio-paste/topbar@npm:1.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -8142,16 +8065,15 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: b46457372ec070e558edee4a5c9e22122bc4b1d37ee4aeeff4d134d35997cb478392716b50b6bc2af8a23111b4e2c18cc822e32a5e0728793d6b1105d23f23f1
+  checksum: a15388d20422f9cf07e7a5929a7d8e417d67805caef04048bd6da1b19c00e74bf45b24a032d15b5516dac8a8589982f63c527eaf62a86df8ccbd4d07b5523b7e
   languageName: node
   linkType: hard
 
-"@twilio-paste/truncate@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@twilio-paste/truncate@npm:14.0.0"
+"@twilio-paste/truncate@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@twilio-paste/truncate@npm:14.1.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -8166,10 +8088,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 5c9139e80c76db450cfc08a327e77d1d4f9bfcdd61f1054d5890c5da71dbf2012e0e9bd93f93329fdef207a2c162415f6370059f4900917111b5c51755dcf5c2
+  checksum: 1fddfb256ecc53242e35530beddb3ec33f5bd50985121b8370851a3263eabc583d357582f1a2f26f1e607332e6b3928da2f1de6d19bf6215fffcbeb2bbb887a7
   languageName: node
   linkType: hard
 
@@ -8196,9 +8117,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/user-dialog@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@twilio-paste/user-dialog@npm:2.0.1"
+"@twilio-paste/user-dialog@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@twilio-paste/user-dialog@npm:2.1.0"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -8224,10 +8145,9 @@ __metadata:
     "@twilio-paste/uid-library": ^2.0.0
     "@types/react": ^16.8.6 || ^17.0.2 || ^18.0.27
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
-    prop-types: ^15.7.2
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: e8603232086044c0489508b3b62026b63100c5483376565497fa90ed50f45eae7a7d9c4fa41660a7e9ef46a7ce3d44d2c83f4e92e2fffe6b9464f51a6aabf975
+  checksum: 23657e453fa7f819787752caf97e2f832c86bf00d17289593db6ae42fea92d2f4f2ce86c4562e8dbc102d1cb1c49bd5bb23f27fe4d5253e813d6d18a9555cde0
   languageName: node
   linkType: hard
 
@@ -8497,10 +8417,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.18.3":
-  version: 18.18.3
-  resolution: "@types/node@npm:18.18.3"
-  checksum: ed97a832179e0cfbb93738021fe16d0bc5c0f34bea35269c23c9dd5f0ecc8be93dbe5efd51630189a099b31786a47c1bde115508831a7245613a55c3ad1a7d6b
+"@types/node@npm:18.18.4":
+  version: 18.18.4
+  resolution: "@types/node@npm:18.18.4"
+  checksum: 4901e91c4cc479bb58acbcd79236a97a0ad6db4a53cb1f4ba4cf32af15324c61b16faa6e31c1b09bf538a20feb5f5274239157ce5237f5741db0b9ab71e69c52
   languageName: node
   linkType: hard
 
@@ -8546,12 +8466,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.8":
-  version: 18.2.8
-  resolution: "@types/react-dom@npm:18.2.8"
+"@types/react-dom@npm:18.2.12":
+  version: 18.2.12
+  resolution: "@types/react-dom@npm:18.2.12"
   dependencies:
     "@types/react": "*"
-  checksum: d36264631028d021b73cd9e015f10b95c4959ae1ce8f7a7419f318d1f05b1d063e6afffcd2a349a6bccd64ccc9ee9d2d976e1f0437643f0e7db621fa035bca65
+  checksum: 64eaf808e91c1d58270ea92dda0e0cbb671f7289be4a5a4e0ccbd85857dd69394970eaa403d958dfbca739735c0af9cde4cf8fe135ff34434838360beae8d306
   languageName: node
   linkType: hard
 
@@ -8573,14 +8493,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.24":
-  version: 18.2.24
-  resolution: "@types/react@npm:18.2.24"
+"@types/react@npm:18.2.27":
+  version: 18.2.27
+  resolution: "@types/react@npm:18.2.27"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: ea5d8204e71b1c9c6631f429a93f8e7be0614cdbdb464e92b3181bdccd8a7c45e30ded8b13da726684b6393f651317c36d54832e3d3cdea0da480a3f26268909
+  checksum: bb29779d4e83e30886a4a939b02812a7ae2d49a26e19eb4be48a6d4e73e8b09ca1a639c97c0ba12a7fe46711355059db7f958cbc1754fe697690656cdb9eca07
   languageName: node
   linkType: hard
 
@@ -12508,11 +12428,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:13.5.3":
-  version: 13.5.3
-  resolution: "eslint-config-next@npm:13.5.3"
+"eslint-config-next@npm:13.5.4":
+  version: 13.5.4
+  resolution: "eslint-config-next@npm:13.5.4"
   dependencies:
-    "@next/eslint-plugin-next": 13.5.3
+    "@next/eslint-plugin-next": 13.5.4
     "@rushstack/eslint-patch": ^1.3.3
     "@typescript-eslint/parser": ^5.4.2 || ^6.0.0
     eslint-import-resolver-node: ^0.3.6
@@ -12527,7 +12447,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 0990e262bc93060fba7dd77296ae4c775ac10cede2c78b50183810b08da917010d7e6d5283afc3fb0d026336121818ccf96629b94eb919981161496bf39d57c6
+  checksum: 6eba03fed5e460981ed3fc59cf40aa210ea1d69852e0facfc02ba2cf950ab4adf09a76f162ee142eb68a4322bb8c1f128d75018f00d0e959401a6441b45f96c0
   languageName: node
   linkType: hard
 
@@ -12968,14 +12888,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.50.0":
-  version: 8.50.0
-  resolution: "eslint@npm:8.50.0"
+"eslint@npm:8.51.0":
+  version: 8.51.0
+  resolution: "eslint@npm:8.51.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": 8.50.0
+    "@eslint/js": 8.51.0
     "@humanwhocodes/config-array": ^0.11.11
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -13011,7 +12931,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 9ebfe5615dc84700000d218e32ddfdcfc227ca600f65f18e5541ec34f8902a00356a9a8804d9468fd6c8637a5ef6a3897291dad91ba6579d5b32ffeae5e31768
+  checksum: 214fa5d1fcb67af1b8992ce9584ccd85e1aa7a482f8b8ea5b96edc28fa838a18a3b69456db45fc1ed3ef95f1e9efa9714f737292dc681e572d471d02fda9649c
   languageName: node
   linkType: hard
 
@@ -18800,7 +18720,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.4, nanoid@npm:^3.3.6":
+"nanoid@npm:^3.3.6":
   version: 3.3.6
   resolution: "nanoid@npm:3.3.6"
   bin:
@@ -19035,27 +18955,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:13.5.3":
-  version: 13.5.3
-  resolution: "next@npm:13.5.3"
+"next@npm:13.5.4":
+  version: 13.5.4
+  resolution: "next@npm:13.5.4"
   dependencies:
-    "@next/env": 13.5.3
-    "@next/swc-darwin-arm64": 13.5.3
-    "@next/swc-darwin-x64": 13.5.3
-    "@next/swc-linux-arm64-gnu": 13.5.3
-    "@next/swc-linux-arm64-musl": 13.5.3
-    "@next/swc-linux-x64-gnu": 13.5.3
-    "@next/swc-linux-x64-musl": 13.5.3
-    "@next/swc-win32-arm64-msvc": 13.5.3
-    "@next/swc-win32-ia32-msvc": 13.5.3
-    "@next/swc-win32-x64-msvc": 13.5.3
+    "@next/env": 13.5.4
+    "@next/swc-darwin-arm64": 13.5.4
+    "@next/swc-darwin-x64": 13.5.4
+    "@next/swc-linux-arm64-gnu": 13.5.4
+    "@next/swc-linux-arm64-musl": 13.5.4
+    "@next/swc-linux-x64-gnu": 13.5.4
+    "@next/swc-linux-x64-musl": 13.5.4
+    "@next/swc-win32-arm64-msvc": 13.5.4
+    "@next/swc-win32-ia32-msvc": 13.5.4
+    "@next/swc-win32-x64-msvc": 13.5.4
     "@swc/helpers": 0.5.2
     busboy: 1.6.0
     caniuse-lite: ^1.0.30001406
-    postcss: 8.4.14
+    postcss: 8.4.31
     styled-jsx: 5.1.1
     watchpack: 2.4.0
-    zod: 3.21.4
   peerDependencies:
     "@opentelemetry/api": ^1.1.0
     react: ^18.2.0
@@ -19087,7 +19006,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: bdf97002aee33e03859bc00c6b4115956c449e33ad5a8060ff6a6bcd1f32405fc3f0d0464c293ac94a45753f3d6da513af2cb7fe730e37163f7b0dda0567ac12
+  checksum: f8e964ee9bbabd0303f9d807c9193833fcc47960be029c3721db9a5a35cc4ff690313e30fc6ee497f959a9141048957dddf6eb038b4a23c78c8762b0cd9d0ae0
   languageName: node
   linkType: hard
 
@@ -20221,24 +20140,24 @@ __metadata:
     "@emotion/babel-preset-css-prop": 11.11.0
     "@mdx-js/loader": 2.3.0
     "@mdx-js/react": 2.3.0
-    "@next/eslint-plugin-next": 13.5.3
-    "@next/mdx": 13.5.3
-    "@percy/cli": 1.27.2
+    "@next/eslint-plugin-next": 13.5.4
+    "@next/mdx": 13.5.4
+    "@percy/cli": 1.27.3
     "@percy/cypress": 3.1.2
     "@sitaggart/eslint-config-ts": 0.7.0
     "@sitaggart/prettier-config": 0.3.25
-    "@twilio-paste/core": 20.3.0
+    "@twilio-paste/core": 20.4.0
     "@twilio-paste/icons": 11.2.2
     "@types/lodash.reverse": 4.0.7
     "@types/lodash.sortby": 4.7.7
-    "@types/node": 18.18.3
-    "@types/react": 18.2.24
-    "@types/react-dom": 18.2.8
+    "@types/node": 18.18.4
+    "@types/react": 18.2.27
+    "@types/react-dom": 18.2.12
     babel-plugin-import-glob-array: 0.2.0
     babel-plugin-inline-react-svg: 2.0.2
     cypress: 12.17.4
-    eslint: 8.50.0
-    eslint-config-next: 13.5.3
+    eslint: 8.51.0
+    eslint-config-next: 13.5.4
     eslint-formatter-codeframe: 7.32.1
     husky: 8.0.3
     isomorphic-unfetch: 4.0.2
@@ -20247,7 +20166,7 @@ __metadata:
     lodash.sortby: 4.7.0
     mdx-prism: 0.3.4
     netlify-cli: 15.11.0
-    next: 13.5.3
+    next: 13.5.4
     next-seo: 6.1.0
     precise-commits: 1.0.2
     prettier: 3.0.3
@@ -20284,14 +20203,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.14":
-  version: 8.4.14
-  resolution: "postcss@npm:8.4.14"
+"postcss@npm:8.4.31":
+  version: 8.4.31
+  resolution: "postcss@npm:8.4.31"
   dependencies:
-    nanoid: ^3.3.4
+    nanoid: ^3.3.6
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
+  checksum: 1d8611341b073143ad90486fcdfeab49edd243377b1f51834dc4f6d028e82ce5190e4f11bb2633276864503654fb7cab28e67abdc0fbf9d1f88cad4a0ff0beea
   languageName: node
   linkType: hard
 
@@ -24778,13 +24697,6 @@ __metadata:
     compress-commons: ^4.1.0
     readable-stream: ^3.6.0
   checksum: 4a73da856738b0634700b52f4ab3fe0bf0a532bea6820ad962d0bda0163d2d5525df4859f89a7238e204a378384e12551985049790c1894c3ac191866e85887f
-  languageName: node
-  linkType: hard
-
-"zod@npm:3.21.4":
-  version: 3.21.4
-  resolution: "zod@npm:3.21.4"
-  checksum: f185ba87342ff16f7a06686767c2b2a7af41110c7edf7c1974095d8db7a73792696bcb4a00853de0d2edeb34a5b2ea6a55871bc864227dace682a0a28de33e1f
   languageName: node
   linkType: hard
 
