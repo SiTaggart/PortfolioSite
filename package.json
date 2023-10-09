@@ -14,7 +14,7 @@
     "@sitaggart/eslint-config-ts": "0.7.0",
     "@sitaggart/prettier-config": "0.3.25",
     "@twilio-paste/core": "20.4.0",
-    "@twilio-paste/icons": "11.2.2",
+    "@twilio-paste/icons": "12.2.0",
     "@types/lodash.reverse": "4.0.7",
     "@types/lodash.sortby": "4.7.7",
     "@types/node": "18.18.4",
