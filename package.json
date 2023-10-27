@@ -32,7 +32,7 @@
     "lodash.reverse": "4.0.1",
     "lodash.sortby": "4.7.0",
     "mdx-prism": "0.3.4",
-    "netlify-cli": "15.11.0",
+    "netlify-cli": "16.9.3",
     "next": "13.5.6",
     "next-seo": "6.1.0",
     "precise-commits": "1.0.2",
