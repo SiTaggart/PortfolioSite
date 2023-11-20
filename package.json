@@ -17,7 +17,7 @@
     "@twilio-paste/icons": "12.2.1",
     "@types/lodash.reverse": "4.0.9",
     "@types/lodash.sortby": "4.7.9",
-    "@types/node": "18.18.10",
+    "@types/node": "20.9.2",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "babel-plugin-import-glob-array": "0.2.0",
