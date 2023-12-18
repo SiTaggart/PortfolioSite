@@ -1261,10 +1261,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.55.0":
-  version: 8.55.0
-  resolution: "@eslint/js@npm:8.55.0"
-  checksum: fa33ef619f0646ed15649b0c2e313e4d9ccee8425884bdbfc78020d6b6b64c0c42fa9d83061d0e6158e1d4274f03f0f9008786540e2efab8fcdc48082259908c
+"@eslint/js@npm:8.56.0":
+  version: 8.56.0
+  resolution: "@eslint/js@npm:8.56.0"
+  checksum: 5804130574ef810207bdf321c265437814e7a26f4e6fac9b496de3206afd52f533e09ec002a3be06cd9adcc9da63e727f1883938e663c4e4751c007d5b58e539
   languageName: node
   linkType: hard
 
@@ -6138,9 +6138,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/box@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "@twilio-paste/box@npm:10.2.0"
+"@twilio-paste/box@npm:^10.3.0":
+  version: 10.3.0
+  resolution: "@twilio-paste/box@npm:10.3.0"
   dependencies:
     deepmerge: 4.2.2
   peerDependencies:
@@ -6156,7 +6156,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 891cbd090e86d8dedc68d457d268b5e06fb471c590f22f88f6e93140f88efce69f7104bcb0cb63296c9a6f5da14bac71dea80f4bee792adad16ee7ef29cd6662
+  checksum: 5dd11baa31323eab455c961e1b5801cb891e00b4897c4ee26f6ab27faaa53e8b84dea1428d0fe86e892dd0dac8419189072b3f2e8ed8ee397f8ba4db36fa2901
   languageName: node
   linkType: hard
 
@@ -6497,9 +6497,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/core@npm:20.6.0":
-  version: 20.6.0
-  resolution: "@twilio-paste/core@npm:20.6.0"
+"@twilio-paste/core@npm:20.7.0":
+  version: 20.7.0
+  resolution: "@twilio-paste/core@npm:20.7.0"
   dependencies:
     "@twilio-paste/account-switcher": ^3.0.1
     "@twilio-paste/alert": ^14.1.0
@@ -6510,7 +6510,7 @@ __metadata:
     "@twilio-paste/avatar": ^9.1.0
     "@twilio-paste/badge": ^8.1.0
     "@twilio-paste/base-radio-checkbox": ^13.1.0
-    "@twilio-paste/box": ^10.2.0
+    "@twilio-paste/box": ^10.3.0
     "@twilio-paste/breadcrumb": ^11.1.1
     "@twilio-paste/button": ^14.1.0
     "@twilio-paste/button-group": ^4.1.0
@@ -6530,7 +6530,7 @@ __metadata:
     "@twilio-paste/data-visualization-library": ^5.0.0
     "@twilio-paste/date-picker": ^6.1.0
     "@twilio-paste/description-list": ^4.2.0
-    "@twilio-paste/design-tokens": ^10.3.0
+    "@twilio-paste/design-tokens": ^10.4.0
     "@twilio-paste/detail-text": ^3.1.0
     "@twilio-paste/disclosure": ^12.1.0
     "@twilio-paste/disclosure-primitive": ^2.1.1
@@ -6546,7 +6546,7 @@ __metadata:
     "@twilio-paste/grid": ^8.1.1
     "@twilio-paste/heading": ^11.1.1
     "@twilio-paste/help-text": ^13.1.0
-    "@twilio-paste/in-page-navigation": ^4.3.0
+    "@twilio-paste/in-page-navigation": ^4.3.1
     "@twilio-paste/inline-code": ^4.1.1
     "@twilio-paste/inline-control-group": ^13.0.2
     "@twilio-paste/input": ^9.1.1
@@ -6590,7 +6590,7 @@ __metadata:
     "@twilio-paste/switch": ^5.1.1
     "@twilio-paste/syntax-highlighter-library": ^3.0.0
     "@twilio-paste/table": ^8.1.0
-    "@twilio-paste/tabs": ^8.2.0
+    "@twilio-paste/tabs": ^8.2.1
     "@twilio-paste/tabs-primitive": ^2.0.1
     "@twilio-paste/text": ^10.1.1
     "@twilio-paste/textarea": ^10.1.1
@@ -6612,7 +6612,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 68f4e532968bd82f5454b5cb68e0c475b6500d3c44d657faae76f573a5b195e8935b69a8120c7da96a41b2db5b3100468a1e69172cf3c08faeb801604fba5480
+  checksum: 4d7f0bbdd37c4eb6870966ffc5e747db6b559542c9a6e3f93acfd2c3bd92cb6bd2c8728a1067cf3ad6cdb48a0fd041f6b4d87990bbc154f21ce1568b53bf0d8f
   languageName: node
   linkType: hard
 
@@ -6744,10 +6744,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/design-tokens@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "@twilio-paste/design-tokens@npm:10.3.0"
-  checksum: dd4a07cef58ac91e3fc9c2e4379737a903585721ecbac9f70c7fe0e393c87baafaffd5b9249b8da78974e99535ea6307c77d914abeb9f2ef10f2e5f72aafa075
+"@twilio-paste/design-tokens@npm:^10.4.0":
+  version: 10.4.0
+  resolution: "@twilio-paste/design-tokens@npm:10.4.0"
+  checksum: 63c8b0f773cf85c9852fa62d1f24ecdff2309c15659e8b43755a9d269bf24287d9548ed25467a691b8f36d77fc455b7aadbb138699ad98092c6f294f04cd3b52
   languageName: node
   linkType: hard
 
@@ -7105,9 +7105,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/icons@npm:12.2.1":
-  version: 12.2.1
-  resolution: "@twilio-paste/icons@npm:12.2.1"
+"@twilio-paste/icons@npm:12.2.2":
+  version: 12.2.2
+  resolution: "@twilio-paste/icons@npm:12.2.2"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -7123,13 +7123,13 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 813eda9894edc4c46f592ade870f2d1d991cbed4755901ebb85e3fe47e07246807cb52b020d6d884741f30acc6650cc3bb9809eaaa3b971631d997be01005821
+  checksum: 6b79997ded3878caec17aafe9c739297349cd0fd84231da0c31e1aca258cbffb6c3f7622ff07a0f3e7b85a97d16292ae185e19090927bac600c61ea59bcc27ce
   languageName: node
   linkType: hard
 
-"@twilio-paste/in-page-navigation@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "@twilio-paste/in-page-navigation@npm:4.3.0"
+"@twilio-paste/in-page-navigation@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "@twilio-paste/in-page-navigation@npm:4.3.1"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -7147,7 +7147,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: f3cc2a88a74bd7b952ab7f09df70aca0e0c5f45f7cc1601d29ff24ac63c69ee36cf3cea363652ab6921b9cecb5da283094cbd3e588e7cc1143d2dd52d97ea51f
+  checksum: 00debaccb8d444d9571d643b4adbff9c42611bca6bad2ed1b1aaf7101714438d3111c9e93bce614fc26fb58d366fe31f55234622edb6499adae20dd8e23a05dd
   languageName: node
   linkType: hard
 
@@ -8194,9 +8194,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/tabs@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "@twilio-paste/tabs@npm:8.2.0"
+"@twilio-paste/tabs@npm:^8.2.1":
+  version: 8.2.1
+  resolution: "@twilio-paste/tabs@npm:8.2.1"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -8214,7 +8214,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: c9ee310797b493e9e0f9a1ca48bc86089e34ca100f86775c50cae85017ecad67fcd66d685b89bb9447a8c43d1258af6f3f98c37fa402c85ea8bbec3f643f2e86
+  checksum: f6b84f49dd0ce740be2845b69270726ace5a5dd7f2d6042923380cd2faffc560599ffe368b597e2b7abe15fdc3ef55931c672b5882efae559e271c65b0a85db7
   languageName: node
   linkType: hard
 
@@ -8778,12 +8778,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.10.4":
-  version: 20.10.4
-  resolution: "@types/node@npm:20.10.4"
+"@types/node@npm:20.10.5":
+  version: 20.10.5
+  resolution: "@types/node@npm:20.10.5"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 054b296417e771ab524bea63cf3289559c6bdf290d45428f7cc68e9b00030ff7a0ece47b8c99a26b4f47a443919813bcf42beadff2f0bea7d8125fa541d92eb0
+  checksum: e216b679f545a8356960ce985a0e53c3a58fff0eacd855e180b9e223b8db2b5bd07b744a002b8c1f0c37f9194648ab4578533b5c12df2ec10cc02f61d20948d2
   languageName: node
   linkType: hard
 
@@ -8824,12 +8824,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.17":
-  version: 18.2.17
-  resolution: "@types/react-dom@npm:18.2.17"
+"@types/react-dom@npm:18.2.18":
+  version: 18.2.18
+  resolution: "@types/react-dom@npm:18.2.18"
   dependencies:
     "@types/react": "*"
-  checksum: 7a4e704ed4be6e0c3ccd8a22ff69386fe548304bf4db090513f42e059ff4c65f7a427790320051524d6578a2e4c9667bb7a80a4c989b72361c019fbe851d9385
+  checksum: 8e3da404c980e2b2a76da3852f812ea6d8b9d0e7f5923fbaf3bfbbbfa1d59116ff91c129de8f68e9b7668a67ae34484fe9df74d5a7518cf8591ec07a0c4dad57
   languageName: node
   linkType: hard
 
@@ -8851,14 +8851,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.43":
-  version: 18.2.43
-  resolution: "@types/react@npm:18.2.43"
+"@types/react@npm:18.2.45":
+  version: 18.2.45
+  resolution: "@types/react@npm:18.2.45"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: e7e4da18c7b14e4b8b1ea630d1d8224835698f2bb2485766455bfb9dea93b8ee6cc549a9fe1cb10c984e62685db44fcfb61e8fac913b008cd30a92087f25b9df
+  checksum: 40b256bdce67b026348022b4f8616a693afdad88cf493b77f7b4e6c5f4b0e4ba13a6068e690b9b94572920840ff30d501ea3d8518e1f21cc8fb8204d4b140c8a
   languageName: node
   linkType: hard
 
@@ -13528,14 +13528,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.55.0":
-  version: 8.55.0
-  resolution: "eslint@npm:8.55.0"
+"eslint@npm:8.56.0":
+  version: 8.56.0
+  resolution: "eslint@npm:8.56.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.4
-    "@eslint/js": 8.55.0
+    "@eslint/js": 8.56.0
     "@humanwhocodes/config-array": ^0.11.13
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -13572,7 +13572,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 83f82a604559dc1faae79d28fdf3dfc9e592ca221052e2ea516e1b379b37e77e4597705a16880e2f5ece4f79087c1dd13fd7f6e9746f794a401175519db18b41
+  checksum: 883436d1e809b4a25d9eb03d42f584b84c408dbac28b0019f6ea07b5177940bf3cca86208f749a6a1e0039b63e085ee47aca1236c30721e91f0deef5cc5a5136
   languageName: node
   linkType: hard
 
@@ -21058,17 +21058,17 @@ __metadata:
     "@percy/cypress": 3.1.2
     "@sitaggart/eslint-config-ts": 0.7.0
     "@sitaggart/prettier-config": 0.3.25
-    "@twilio-paste/core": 20.6.0
-    "@twilio-paste/icons": 12.2.1
+    "@twilio-paste/core": 20.7.0
+    "@twilio-paste/icons": 12.2.2
     "@types/lodash.reverse": 4.0.9
     "@types/lodash.sortby": 4.7.9
-    "@types/node": 20.10.4
-    "@types/react": 18.2.43
-    "@types/react-dom": 18.2.17
+    "@types/node": 20.10.5
+    "@types/react": 18.2.45
+    "@types/react-dom": 18.2.18
     babel-plugin-import-glob-array: 0.2.0
     babel-plugin-inline-react-svg: 2.0.2
     cypress: 13.6.1
-    eslint: 8.55.0
+    eslint: 8.56.0
     eslint-config-next: 13.5.6
     eslint-formatter-codeframe: 7.32.1
     husky: 8.0.3
