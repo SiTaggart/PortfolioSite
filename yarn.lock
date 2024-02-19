@@ -8162,12 +8162,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.17":
-  version: 20.11.17
-  resolution: "@types/node@npm:20.11.17"
+"@types/node@npm:20.11.19":
+  version: 20.11.19
+  resolution: "@types/node@npm:20.11.19"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 59c0dde187120adc97da30063c86511664b24b50fe777abfe1f557c217d0a0b84a68aaab5ef8ac44f5c2986b3f9cd605a15fa6e4f31195e594da96bbe9617c20
+  checksum: 259d16643ba611ade617a8212e594a3ac014727457507389bbf7213971346ab052d870f1e6e2df0afd0876ecd7874f578bccb130be01e069263cfc7136ddc0c1
   languageName: node
   linkType: hard
 
@@ -8226,14 +8226,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.55":
-  version: 18.2.55
-  resolution: "@types/react@npm:18.2.55"
+"@types/react@npm:18.2.56":
+  version: 18.2.56
+  resolution: "@types/react@npm:18.2.56"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: a8eb4fa77f73831b9112d4f11a7006217dc0740361649b9b0da3fd441d151a9cd415d5d68b91c0af4e430e063424d301c77489e5edaddc9f711c4e46cf9818a5
+  checksum: 8f6d754e4add007667002bd3f4c3a3a577c4a75afcd5cdc93bd3c584750f25c41a024a9f7de802204156483bc2fcce417ff9d7063ac1713e2b8ccb7c8a08c0ff
   languageName: node
   linkType: hard
 
@@ -19045,14 +19045,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-seo@npm:6.4.0":
-  version: 6.4.0
-  resolution: "next-seo@npm:6.4.0"
+"next-seo@npm:6.5.0":
+  version: 6.5.0
+  resolution: "next-seo@npm:6.5.0"
   peerDependencies:
     next: ^8.1.1-canary.54 || >=9.0.0
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 94183bf0c75359bad52d9e6463fb433bdcf94f42b33e88a60897a8957b41bc3d6ebb5ead3084a43cf287c42f7b95ba4e9f3a6cd21af532e1a8eb285f2cf8ac3b
+  checksum: 744e49cae31debc5117f35132b6929edd68b3469eed238fbd8d4888cd22a32a67e780688265311d27311936d4d9dab5c1408536ad87c73e4c293701e5213130c
   languageName: node
   linkType: hard
 
@@ -20330,8 +20330,8 @@ __metadata:
     "@twilio-paste/icons": 12.2.3
     "@types/lodash.reverse": 4.0.9
     "@types/lodash.sortby": 4.7.9
-    "@types/node": 20.11.17
-    "@types/react": 18.2.55
+    "@types/node": 20.11.19
+    "@types/react": 18.2.56
     "@types/react-dom": 18.2.19
     babel-plugin-import-glob-array: 0.2.0
     babel-plugin-inline-react-svg: 2.0.2
@@ -20347,7 +20347,7 @@ __metadata:
     mdx-prism: 0.3.4
     netlify-cli: 17.16.2
     next: 13.5.6
-    next-seo: 6.4.0
+    next-seo: 6.5.0
     precise-commits: 1.0.2
     prettier: 3.2.5
     prismjs: 1.29.0
@@ -20358,7 +20358,7 @@ __metadata:
     rehype: 13.0.1
     remark-gfm: 3.0.1
     start-server-and-test: 2.0.3
-    swr: 2.2.4
+    swr: 2.2.5
     typescript: 5.3.3
   languageName: unknown
   linkType: soft
@@ -23107,15 +23107,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swr@npm:2.2.4":
-  version: 2.2.4
-  resolution: "swr@npm:2.2.4"
+"swr@npm:2.2.5":
+  version: 2.2.5
+  resolution: "swr@npm:2.2.5"
   dependencies:
     client-only: ^0.0.1
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0
-  checksum: d1398f89fd68af0e0cb6100a5769b1e17c0dbe8a778898643ad28456acda64add43344754c7d919e3f2ca82854adf86ff7d465aba25a2d555bcb669e457138f8
+  checksum: c6e6a5bd254951b22e5fd0930a95c7f79b5d0657f803c41ba1542cd6376623fb70b1895049d54ddde26da63b91951ae9d62a06772f82be28c1014d421e5b7aa9
   languageName: node
   linkType: hard
 
