@@ -1279,10 +1279,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.56.0":
-  version: 8.56.0
-  resolution: "@eslint/js@npm:8.56.0"
-  checksum: 5804130574ef810207bdf321c265437814e7a26f4e6fac9b496de3206afd52f533e09ec002a3be06cd9adcc9da63e727f1883938e663c4e4751c007d5b58e539
+"@eslint/js@npm:8.57.0":
+  version: 8.57.0
+  resolution: "@eslint/js@npm:8.57.0"
+  checksum: 315dc65b0e9893e2bff139bddace7ea601ad77ed47b4550e73da8c9c2d2766c7a575c3cddf17ef85b8fd6a36ff34f91729d0dcca56e73ca887c10df91a41b0bb
   languageName: node
   linkType: hard
 
@@ -1420,14 +1420,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/config-array@npm:^0.11.13":
-  version: 0.11.13
-  resolution: "@humanwhocodes/config-array@npm:0.11.13"
+"@humanwhocodes/config-array@npm:^0.11.14":
+  version: 0.11.14
+  resolution: "@humanwhocodes/config-array@npm:0.11.14"
   dependencies:
-    "@humanwhocodes/object-schema": ^2.0.1
-    debug: ^4.1.1
+    "@humanwhocodes/object-schema": ^2.0.2
+    debug: ^4.3.1
     minimatch: ^3.0.5
-  checksum: f8ea57b0d7ed7f2d64cd3944654976829d9da91c04d9c860e18804729a33f7681f78166ef4c761850b8c324d362f7d53f14c5c44907a6b38b32c703ff85e4805
+  checksum: 861ccce9eaea5de19546653bccf75bf09fe878bc39c3aab00aeee2d2a0e654516adad38dd1098aab5e3af0145bbcbf3f309bdf4d964f8dab9dcd5834ae4c02f2
   languageName: node
   linkType: hard
 
@@ -1445,10 +1445,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/object-schema@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@humanwhocodes/object-schema@npm:2.0.1"
-  checksum: 24929487b1ed48795d2f08346a0116cc5ee4634848bce64161fb947109352c562310fd159fc64dda0e8b853307f5794605191a9547f7341158559ca3c8262a45
+"@humanwhocodes/object-schema@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@humanwhocodes/object-schema@npm:2.0.2"
+  checksum: 2fc11503361b5fb4f14714c700c02a3f4c7c93e9acd6b87a29f62c522d90470f364d6161b03d1cc618b979f2ae02aed1106fd29d302695d8927e2fc8165ba8ee
   languageName: node
   linkType: hard
 
@@ -2209,9 +2209,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/build-info@npm:7.12.1":
-  version: 7.12.1
-  resolution: "@netlify/build-info@npm:7.12.1"
+"@netlify/build-info@npm:7.13.0":
+  version: 7.13.0
+  resolution: "@netlify/build-info@npm:7.13.0"
   dependencies:
     "@bugsnag/js": ^7.20.0
     "@iarna/toml": ^2.2.5
@@ -2224,27 +2224,27 @@ __metadata:
     yargs: ^17.6.0
   bin:
     build-info: bin.js
-  checksum: 3597fc58b9f455b3e9e692ec18a51ac5163302aac26314ffe9d7248dffd84e453076981046ddb199187aa51aa5b449f69dcd07a41c814a738a8205d724f3378b
+  checksum: 2db2138146438b290ee06af27681944de16661e8b5f03c2301f1feda8e21bd0af3cdfe199ce350eb797c581d8aac82c01f7f08051e2b571823c713a50035a1af
   languageName: node
   linkType: hard
 
-"@netlify/build@npm:29.33.7":
-  version: 29.33.7
-  resolution: "@netlify/build@npm:29.33.7"
+"@netlify/build@npm:29.36.1":
+  version: 29.36.1
+  resolution: "@netlify/build@npm:29.36.1"
   dependencies:
     "@bugsnag/js": ^7.0.0
     "@netlify/blobs": ^6.5.0
     "@netlify/cache-utils": ^5.1.5
-    "@netlify/config": ^20.11.1
+    "@netlify/config": ^20.12.1
     "@netlify/edge-bundler": 11.2.2
     "@netlify/framework-info": ^9.8.10
-    "@netlify/functions-utils": ^5.2.50
+    "@netlify/functions-utils": ^5.2.51
     "@netlify/git-utils": ^5.1.1
-    "@netlify/opentelemetry-utils": ^1.0.1
-    "@netlify/plugins-list": ^6.73.0
+    "@netlify/opentelemetry-utils": ^1.0.2
+    "@netlify/plugins-list": ^6.75.0
     "@netlify/run-utils": ^5.1.1
-    "@netlify/zip-it-and-ship-it": 9.29.1
-    "@opentelemetry/api": ~1.6.0
+    "@netlify/zip-it-and-ship-it": 9.29.2
+    "@opentelemetry/api": ~1.7.0
     "@sindresorhus/slugify": ^2.0.0
     ansi-escapes: ^6.0.0
     chalk: ^5.0.0
@@ -2291,13 +2291,13 @@ __metadata:
     uuid: ^9.0.0
     yargs: ^17.6.0
   peerDependencies:
-    "@netlify/opentelemetry-sdk-setup": ^1.0.2
+    "@netlify/opentelemetry-sdk-setup": ^1.0.3
   peerDependenciesMeta:
     "@netlify/opentelemetry-sdk-setup":
       optional: true
   bin:
     netlify-build: bin.js
-  checksum: 9150839774511d6242ddcf678e1a456ca3a469bb9f52f24695e744c1906794262ac58515fbb8e573563f57f861937dacaea98adf963527e07be72faf79d206eb
+  checksum: 37f9d005922dc716443e1a1008233d3422c599bf9ec06afe7a869ab90065e9fef741f2b69c732e11db431c8ad6be4a87411d24ba59426e4cfed24fb7cb492690
   languageName: node
   linkType: hard
 
@@ -2317,9 +2317,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/config@npm:20.11.1, @netlify/config@npm:^20.11.1":
-  version: 20.11.1
-  resolution: "@netlify/config@npm:20.11.1"
+"@netlify/config@npm:20.12.1, @netlify/config@npm:^20.12.1":
+  version: 20.12.1
+  resolution: "@netlify/config@npm:20.12.1"
   dependencies:
     "@iarna/toml": ^2.2.5
     chalk: ^5.0.0
@@ -2347,7 +2347,7 @@ __metadata:
     yargs: ^17.6.0
   bin:
     netlify-config: bin.js
-  checksum: 0cbf2f701aba6dcff2656135f49bd7f56f889862945265a6fa597ecc5b2b64a3bb95682fd15d751aa23f5fd19248e521987e36afb5de371089700f5889b772c7
+  checksum: 4bfd388ea07926c7c600c365a16e99dd6da331f0ac843b868ca09060c639813e77752b8aa168b8b8c88ddff32e9af14ff56acb2b4794dfa307080d30cc6d41a6
   languageName: node
   linkType: hard
 
@@ -2401,14 +2401,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/functions-utils@npm:^5.2.50":
-  version: 5.2.50
-  resolution: "@netlify/functions-utils@npm:5.2.50"
+"@netlify/functions-utils@npm:^5.2.51":
+  version: 5.2.51
+  resolution: "@netlify/functions-utils@npm:5.2.51"
   dependencies:
-    "@netlify/zip-it-and-ship-it": 9.29.1
+    "@netlify/zip-it-and-ship-it": 9.29.2
     cpy: ^9.0.0
     path-exists: ^5.0.0
-  checksum: e39d2ac5add651664323c5fb00f011f9bcb3271753b827ee0d7a10f2eafb445a7e2d95d2ac708bb78e3cccf4cb82efabbcf4d91a46cd7093538d2ad07d09cc49
+  checksum: a8cd72523bb74b2120ddeb4450a5c5c2b3a7886feedc0b2a45c3344887e4f9e5aa305fb11c79b997da76dead942fffa073fe30332df0ce04f75cff691d260cf5
   languageName: node
   linkType: hard
 
@@ -2592,16 +2592,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/opentelemetry-utils@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@netlify/opentelemetry-utils@npm:1.0.1"
+"@netlify/opentelemetry-utils@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@netlify/opentelemetry-utils@npm:1.0.2"
   dependencies:
-    "@opentelemetry/api": ~1.6.0
-  checksum: 5763af5bf612aac6453dccdd827707cb1b5f52657f746d6932d4804063d8c915834ace3b1df3c299e3e2d5b5940fa3ffe53474e01659d83b302531a95c66acc6
+    "@opentelemetry/api": ~1.7.0
+  checksum: 88f1a7424f4ed81e29713d85d10d6e2fdf81029d824904c485835c35c0845e26dc13d34969065d685638fae242dac4e960de18bce667c8f8d0824659c0fe447c
   languageName: node
   linkType: hard
 
-"@netlify/plugins-list@npm:^6.73.0":
+"@netlify/plugins-list@npm:^6.75.0":
   version: 6.75.0
   resolution: "@netlify/plugins-list@npm:6.75.0"
   checksum: 68fe58074977a5a2ab1e8d5f5ef8caf3e18593664340147b2fe60b7ba47c688f28757f23c3229fae4065888ac8c3b69a4c2eb203de76aa0ffea29eb7149105d2
@@ -2627,9 +2627,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@netlify/zip-it-and-ship-it@npm:9.29.1":
-  version: 9.29.1
-  resolution: "@netlify/zip-it-and-ship-it@npm:9.29.1"
+"@netlify/zip-it-and-ship-it@npm:9.29.2":
+  version: 9.29.2
+  resolution: "@netlify/zip-it-and-ship-it@npm:9.29.2"
   dependencies:
     "@babel/parser": ^7.22.5
     "@babel/types": 7.23.6
@@ -2666,7 +2666,7 @@ __metadata:
     yargs: ^17.0.0
   bin:
     zip-it-and-ship-it: dist/bin.js
-  checksum: 996ce00c6aa2543b152d6c476443a0e4c8ceb1fe429d13a5a1e7705618e38919322a103111e1f88cb7d7f6ed4223b7442c25d38577e17814c0a0459796b7d73d
+  checksum: 1ef6954b219d6d787301e7f86c3a1b37bab4d547ce3c2cf406c8403cb72bd947a57bd0f5f8515393a49a69672022c9a9d91cb91dc0c2561be48115375ca29ea0
   languageName: node
   linkType: hard
 
@@ -2947,10 +2947,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/api@npm:~1.6.0":
-  version: 1.6.0
-  resolution: "@opentelemetry/api@npm:1.6.0"
-  checksum: 3283b78b62a39f6568eaa050ac7045fcca747679e255874f6d2107cb8e1a3b2e10bfbf553c3e82a72500fb5fdca49dc07a5fe27fd6980debac24506cca638859
+"@opentelemetry/api@npm:~1.7.0":
+  version: 1.7.0
+  resolution: "@opentelemetry/api@npm:1.7.0"
+  checksum: 2398cbe65f199c3a7050125b3ad9c835f789bb0a616665e9c7f4475a29ac8334b6a3c15f38db48d345b522180c41c00b04cc174cd0eeffba98eb4874a565fa7e
   languageName: node
   linkType: hard
 
@@ -5832,9 +5832,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/core@npm:20.9.0":
-  version: 20.9.0
-  resolution: "@twilio-paste/core@npm:20.9.0"
+"@twilio-paste/core@npm:20.10.0":
+  version: 20.10.0
+  resolution: "@twilio-paste/core@npm:20.10.0"
   dependencies:
     "@twilio-paste/account-switcher": ^3.0.1
     "@twilio-paste/alert": ^14.1.0
@@ -5865,7 +5865,7 @@ __metadata:
     "@twilio-paste/data-visualization-library": ^5.0.0
     "@twilio-paste/date-picker": ^6.1.1
     "@twilio-paste/description-list": ^4.2.0
-    "@twilio-paste/design-tokens": ^10.4.1
+    "@twilio-paste/design-tokens": ^10.5.0
     "@twilio-paste/detail-text": ^3.1.0
     "@twilio-paste/disclosure": ^12.1.0
     "@twilio-paste/disclosure-primitive": ^2.1.1
@@ -5879,7 +5879,7 @@ __metadata:
     "@twilio-paste/form": ^11.1.1
     "@twilio-paste/form-pill-group": ^8.0.1
     "@twilio-paste/grid": ^8.1.1
-    "@twilio-paste/heading": ^11.1.1
+    "@twilio-paste/heading": ^11.1.2
     "@twilio-paste/help-text": ^13.1.0
     "@twilio-paste/in-page-navigation": ^4.3.1
     "@twilio-paste/inline-code": ^4.1.1
@@ -5891,7 +5891,7 @@ __metadata:
     "@twilio-paste/list": ^8.1.2
     "@twilio-paste/listbox-primitive": ^3.0.1
     "@twilio-paste/media-object": ^10.1.0
-    "@twilio-paste/menu": ^14.1.2
+    "@twilio-paste/menu": ^14.1.3
     "@twilio-paste/menu-primitive": ^2.1.1
     "@twilio-paste/meter": ^1.0.3
     "@twilio-paste/minimizable-dialog": ^4.1.1
@@ -5949,7 +5949,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: e86baf01239b590a3e425475d4bd0a77d554f53e03ec5421431087d94975c672b1a5ebf2f3050834c588ab4a6446eafa93c8befb248abffb620651c1619f1c8f
+  checksum: 54d251caa1815727328c00c6373c6ade2122ec621e222f3dbb9f25734eca5922c01b939cad5b312f0cf3661886b1a048c113edc1e6b3804d64eb24ca27378926
   languageName: node
   linkType: hard
 
@@ -6081,10 +6081,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/design-tokens@npm:^10.4.1":
-  version: 10.4.1
-  resolution: "@twilio-paste/design-tokens@npm:10.4.1"
-  checksum: 034e9e27dce82d0cf2b7853ed2d3746f54c3315edc77425e523a7b61ec3bc4b546df1448be6e932c12d29063206d01f2cb43e71f90fb15a02417f51df27a24d1
+"@twilio-paste/design-tokens@npm:^10.5.0":
+  version: 10.5.0
+  resolution: "@twilio-paste/design-tokens@npm:10.5.0"
+  checksum: 955229b544d86c5de693a064e07e2f506902df9c364c3e7c32bdd69e01c1dcecc2206c52f9806c9b5bf077813fc5ed7193d02d862671046ea9fe4d965a76dfd7
   languageName: node
   linkType: hard
 
@@ -6398,9 +6398,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/heading@npm:^11.1.1":
-  version: 11.1.1
-  resolution: "@twilio-paste/heading@npm:11.1.1"
+"@twilio-paste/heading@npm:^11.1.2":
+  version: 11.1.2
+  resolution: "@twilio-paste/heading@npm:11.1.2"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/color-contrast-utils": ^5.0.0
@@ -6415,7 +6415,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 863fe0addab1e0d7c6a6108c73b99efc2aa556f8ca392bc228ea10dfb1ed8a6d44b87ec0f24a4d33b2b4b77680ecd0598c9bb8ed2347250c4ddb9d7461100923
+  checksum: b85b8f268f9da951f18fbb53cf19e2dcc66c10d2d3d7135104bd7855f81ff9b47c1dccd403581b67856ccf8c5ef8f2efda9496a8671d554f3282ad918ec33beb
   languageName: node
   linkType: hard
 
@@ -6442,9 +6442,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/icons@npm:12.2.3":
-  version: 12.2.3
-  resolution: "@twilio-paste/icons@npm:12.2.3"
+"@twilio-paste/icons@npm:12.3.0":
+  version: 12.3.0
+  resolution: "@twilio-paste/icons@npm:12.3.0"
   peerDependencies:
     "@twilio-paste/animation-library": ^2.0.0
     "@twilio-paste/box": ^10.0.0
@@ -6460,7 +6460,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: 29fc8c6304a4b0ae4d0a9155b458536815dc16ef5dee8d3ec4c3f3ed4c8e2b61c090d22bfe7ef13dd4611a6ccbc3134a8393c31101213171ded309e786161517
+  checksum: 6c19a0576579dcc206d26f47ce8e39efe29da09927efe3a11d5def8d19b4a77b717af1dfa725dad0c83587e6b7f2c48a5d21afebe83688cadc113d8b4cfe5cd4
   languageName: node
   linkType: hard
 
@@ -6692,9 +6692,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@twilio-paste/menu@npm:^14.1.2":
-  version: 14.1.2
-  resolution: "@twilio-paste/menu@npm:14.1.2"
+"@twilio-paste/menu@npm:^14.1.3":
+  version: 14.1.3
+  resolution: "@twilio-paste/menu@npm:14.1.3"
   peerDependencies:
     "@twilio-paste/anchor": ^12.0.0
     "@twilio-paste/animation-library": ^2.0.0
@@ -6722,7 +6722,7 @@ __metadata:
     "@types/react-dom": ^16.8.6 || ^17.0.2 || ^18.0.10
     react: ^16.8.6 || ^17.0.2 || ^18.0.0
     react-dom: ^16.8.6 || ^17.0.2 || ^18.0.0
-  checksum: c6ad924863046f5f44bddbe63d7a980405ac0bc85ae219e1ce3c8cd218b539cfc154cc96ad452d0cbb39fc10349d25b27140355504121f7d34a0ba6e4009e369
+  checksum: 8d35a97b7482661edc3c4fc8c83f29145814c818c45e02fed6b1475dc16c4aceea6e619dbf9d15ec275c27f182eb5371e1a64692fcbd2b5c7d63cced3dd4e161
   languageName: node
   linkType: hard
 
@@ -8162,12 +8162,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.19":
-  version: 20.11.19
-  resolution: "@types/node@npm:20.11.19"
+"@types/node@npm:20.11.20":
+  version: 20.11.20
+  resolution: "@types/node@npm:20.11.20"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 259d16643ba611ade617a8212e594a3ac014727457507389bbf7213971346ab052d870f1e6e2df0afd0876ecd7874f578bccb130be01e069263cfc7136ddc0c1
+  checksum: 79d339622fed1c0e64297c8b9f558815a91edb9fea3acb69c1201b919d450e12915cf98b1a96b2d2c121bf86f30b62b6de3708f8894c5319f8dfb3a991e3ccdd
   languageName: node
   linkType: hard
 
@@ -8226,14 +8226,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.56":
-  version: 18.2.56
-  resolution: "@types/react@npm:18.2.56"
+"@types/react@npm:18.2.58":
+  version: 18.2.58
+  resolution: "@types/react@npm:18.2.58"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 8f6d754e4add007667002bd3f4c3a3a577c4a75afcd5cdc93bd3c584750f25c41a024a9f7de802204156483bc2fcce417ff9d7063ac1713e2b8ccb7c8a08c0ff
+  checksum: 42551e30c8a54161a11b2ecd11406782ddba4472a4471d45034c551295263d56f06234f283526d0c0420352ce9ce9675b2a6c65db7a287d9613643d3ceaaf1f0
   languageName: node
   linkType: hard
 
@@ -9893,7 +9893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^5.2.1, buffer@npm:^5.5.0, buffer@npm:^5.6.0":
+"buffer@npm:^5.2.1, buffer@npm:^5.5.0, buffer@npm:^5.7.1":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
   dependencies:
@@ -11179,9 +11179,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:13.6.4":
-  version: 13.6.4
-  resolution: "cypress@npm:13.6.4"
+"cypress@npm:13.6.6":
+  version: 13.6.6
+  resolution: "cypress@npm:13.6.6"
   dependencies:
     "@cypress/request": ^3.0.0
     "@cypress/xvfb": ^1.2.4
@@ -11190,7 +11190,7 @@ __metadata:
     arch: ^2.2.0
     blob-util: ^2.0.2
     bluebird: ^3.7.2
-    buffer: ^5.6.0
+    buffer: ^5.7.1
     cachedir: ^2.3.0
     chalk: ^4.1.0
     check-more-types: ^2.24.0
@@ -11208,7 +11208,7 @@ __metadata:
     figures: ^3.2.0
     fs-extra: ^9.1.0
     getos: ^3.2.1
-    is-ci: ^3.0.0
+    is-ci: ^3.0.1
     is-installed-globally: ~0.4.0
     lazy-ass: ^1.6.0
     listr2: ^3.8.3
@@ -11227,7 +11227,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 39daef291ccd18d7d724d7f8c1f5a2ed2b3d24c5c1eab1e00642c5db232fcc4dbd3fd30db3a2dce4e8b737d510355d135eb43034d800198d2867ecde4cdd696a
+  checksum: 8a7db7d2941ea9fd698b9311b4f23fb6491038fe57e4c19b29a1ee58a25f9d98646674f876c1068a97428c2e81548bb0dd8701cd08e84c6b17ed75f9c2266908
   languageName: node
   linkType: hard
 
@@ -12866,15 +12866,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.56.0":
-  version: 8.56.0
-  resolution: "eslint@npm:8.56.0"
+"eslint@npm:8.57.0":
+  version: 8.57.0
+  resolution: "eslint@npm:8.57.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.4
-    "@eslint/js": 8.56.0
-    "@humanwhocodes/config-array": ^0.11.13
+    "@eslint/js": 8.57.0
+    "@humanwhocodes/config-array": ^0.11.14
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
     "@ungap/structured-clone": ^1.2.0
@@ -12910,7 +12910,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 883436d1e809b4a25d9eb03d42f584b84c408dbac28b0019f6ea07b5177940bf3cca86208f749a6a1e0039b63e085ee47aca1236c30721e91f0deef5cc5a5136
+  checksum: 3a48d7ff85ab420a8447e9810d8087aea5b1df9ef68c9151732b478de698389ee656fd895635b5f2871c89ee5a2652b3f343d11e9db6f8486880374ebc74a2d9
   languageName: node
   linkType: hard
 
@@ -15578,7 +15578,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-ci@npm:^3.0.0, is-ci@npm:^3.0.1":
+"is-ci@npm:^3.0.1":
   version: 3.0.1
   resolution: "is-ci@npm:3.0.1"
   dependencies:
@@ -18875,19 +18875,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"netlify-cli@npm:17.16.2":
-  version: 17.16.2
-  resolution: "netlify-cli@npm:17.16.2"
+"netlify-cli@npm:17.17.0":
+  version: 17.17.0
+  resolution: "netlify-cli@npm:17.17.0"
   dependencies:
     "@bugsnag/js": 7.20.2
     "@fastify/static": 6.10.2
     "@netlify/blobs": 6.5.0
-    "@netlify/build": 29.33.7
-    "@netlify/build-info": 7.12.1
-    "@netlify/config": 20.11.1
+    "@netlify/build": 29.36.1
+    "@netlify/build-info": 7.13.0
+    "@netlify/config": 20.12.1
     "@netlify/edge-bundler": 11.2.2
     "@netlify/local-functions-proxy": 1.1.1
-    "@netlify/zip-it-and-ship-it": 9.29.1
+    "@netlify/zip-it-and-ship-it": 9.29.2
     "@octokit/rest": 19.0.13
     ansi-escapes: 6.2.0
     ansi-styles: 6.2.1
@@ -18992,7 +18992,7 @@ __metadata:
   bin:
     netlify: bin/run.js
     ntl: bin/run.js
-  checksum: f129b725af025234c7d53b88e2720038a026932e66845b039f85448039c51ea9113b24aff5d196048521f7bfb8b8ff8f121ad953e7fd16ca428f4ef27f2a140f
+  checksum: 22cd2a2ddbcadf6f00cf92ad493dc25b3ba3a8d35f73e7243ce48a5bece26f60c80b692227de13cce7b27602b596507a299b12039f1adc97c62e1549ebe51ee7
   languageName: node
   linkType: hard
 
@@ -20326,17 +20326,17 @@ __metadata:
     "@percy/cypress": 3.1.2
     "@sitaggart/eslint-config-ts": 0.7.0
     "@sitaggart/prettier-config": 0.3.25
-    "@twilio-paste/core": 20.9.0
-    "@twilio-paste/icons": 12.2.3
+    "@twilio-paste/core": 20.10.0
+    "@twilio-paste/icons": 12.3.0
     "@types/lodash.reverse": 4.0.9
     "@types/lodash.sortby": 4.7.9
-    "@types/node": 20.11.19
-    "@types/react": 18.2.56
+    "@types/node": 20.11.20
+    "@types/react": 18.2.58
     "@types/react-dom": 18.2.19
     babel-plugin-import-glob-array: 0.2.0
     babel-plugin-inline-react-svg: 2.0.2
-    cypress: 13.6.4
-    eslint: 8.56.0
+    cypress: 13.6.6
+    eslint: 8.57.0
     eslint-config-next: 13.5.6
     eslint-formatter-codeframe: 7.32.1
     husky: 8.0.3
@@ -20345,7 +20345,7 @@ __metadata:
     lodash.reverse: 4.0.1
     lodash.sortby: 4.7.0
     mdx-prism: 0.3.4
-    netlify-cli: 17.16.2
+    netlify-cli: 17.17.0
     next: 13.5.6
     next-seo: 6.5.0
     precise-commits: 1.0.2
