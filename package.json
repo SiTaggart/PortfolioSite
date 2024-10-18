@@ -80,7 +80,7 @@
   "browserslist": [
     "defaults"
   ],
-  "packageManager": "yarn@3.8.1",
+  "packageManager": "yarn@4.5.1",
   "nextBundleAnalysis": {
     "budget": 358400,
     "budgetPercentIncreaseRed": 20,
