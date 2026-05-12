@@ -1,23 +1,31 @@
-import type React from 'react';
-import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { createFileRoute } from '@tanstack/react-router';
 import { Anchor } from '@twilio-paste/core/anchor';
-import { Text } from '@twilio-paste/core/text';
-import { Paragraph } from '@twilio-paste/core/paragraph';
-import { Heading } from '@twilio-paste/core/heading';
 import { Box } from '@twilio-paste/core/box';
-import { SiteMainHeading } from '../components/SiteMainHeading';
-import { SiteSubHeading } from '../components/SiteSubHeading';
-import { FeaturePost } from '../components/FeaturedPost';
-// @ts-ignore
-import { meta as lastestPost } from './posts/2021-01-01-2020-year-in-review/index.mdx';
+import { Heading } from '@twilio-paste/core/heading';
+import { Paragraph } from '@twilio-paste/core/paragraph';
+import { Text } from '@twilio-paste/core/text';
+import type React from 'react';
+import { AppLink } from '../../components/AppLink';
+import { FeaturePost } from '../../components/FeaturedPost';
+import { SiteMainHeading } from '../../components/SiteMainHeading';
+import { SiteSubHeading } from '../../components/SiteSubHeading';
+import { posts } from '../content/posts';
+import { defaultMeta } from '../seo';
 
-const Index: React.FC = () => {
+export const Route = createFileRoute('/')({
+  head: () => ({
+    meta: defaultMeta('Hi'),
+  }),
+  component: Index,
+});
+
+function Index(): React.ReactElement {
   const employmentStartDate = new Date(2004, 9, 1);
   const yoe = new Date(Date.now()).getFullYear() - employmentStartDate.getFullYear();
+  const latestPost = posts[0].meta;
+
   return (
     <>
-      <NextSeo title="Hi" />
       <SiteMainHeading>
         Simon <br /> Taggart
       </SiteMainHeading>
@@ -55,17 +63,12 @@ const Index: React.FC = () => {
         <Heading as="h2" variant="heading30">
           Latest post
         </Heading>
-        <FeaturePost post={lastestPost} />
+        <FeaturePost post={latestPost} />
 
         <Text as="div" marginTop="space30" textAlign="center">
-          <Link href="/posts/" legacyBehavior passHref>
-            <Anchor href="/posts/">All posts</Anchor>
-          </Link>
+          <AppLink to="/posts">All posts</AppLink>
         </Text>
       </Box>
     </>
   );
-};
-
-// eslint-disable-next-line import/no-default-export
-export default Index;
+}

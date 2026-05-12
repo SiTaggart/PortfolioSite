@@ -1,2 +1,5 @@
 .cache/
-.next/
+dist/
+.vinxi/
+.wrangler/
+src/routeTree.gen.ts

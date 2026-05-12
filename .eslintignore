@@ -1,2 +1,6 @@
 node_modules
 coverage/
+dist/
+.vinxi/
+.wrangler/
+src/routeTree.gen.ts

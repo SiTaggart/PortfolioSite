@@ -1,124 +1,112 @@
 import type React from 'react';
-import Link from 'next/link';
 import { Box } from '@twilio-paste/core/box';
 import { Text } from '@twilio-paste/core/text';
 import { Anchor } from '@twilio-paste/core/anchor';
 import { ScreenReaderOnly } from '@twilio-paste/core/screen-reader-only';
-import TwitterSVG from '../svg/icons/ic-twitter.svg';
-import GithubSVG from '../svg/icons/ic-github.svg';
-import LinkedinSVG from '../svg/icons/ic-linkedin.svg';
+import twitterSvg from '../svg/icons/ic-twitter.svg';
+import githubSvg from '../svg/icons/ic-github.svg';
+import linkedinSvg from '../svg/icons/ic-linkedin.svg';
+import { AppLink } from './AppLink';
 
-export const StyledSiteFooter: React.FC<React.PropsWithChildren> = (props) => (
-  <Box
-    as="footer"
-    marginLeft={['space0', 'space50', 'space100']}
-    marginRight={['space0', 'space50', 'space100']}
-    marginTop="space180"
-    paddingBottom="space140"
-    paddingTop="space70"
-    {...props}
-  />
-);
+export function StyledSiteFooter(props: React.PropsWithChildren): React.ReactElement {
+  return (
+    <Box
+      as="footer"
+      marginLeft={['space0', 'space50', 'space100']}
+      marginRight={['space0', 'space50', 'space100']}
+      marginTop="space180"
+      paddingBottom="space140"
+      paddingTop="space70"
+      {...props}
+    />
+  );
+}
 
-export const SiteFooterList: React.FC<React.PropsWithChildren> = (props) => (
-  <Box
-    alignItems="center"
-    as="ul"
-    display="flex"
-    justifyContent="space-between"
-    margin="space0"
-    padding="space0"
-    {...props}
-  />
-);
+export function SiteFooterList(props: React.PropsWithChildren): React.ReactElement {
+  return (
+    <Box
+      alignItems="center"
+      as="ul"
+      display="flex"
+      justifyContent="space-between"
+      margin="space0"
+      padding="space0"
+      {...props}
+    />
+  );
+}
 
-export const SiteFooterListItem: React.FC<React.PropsWithChildren> = (props) => (
-  <Box as="li" listStyleType="none" {...props} />
-);
+export function SiteFooterListItem(props: React.PropsWithChildren): React.ReactElement {
+  return <Box as="li" listStyleType="none" {...props} />;
+}
 
-export const SiteFooterIconWrapper: React.FC<React.PropsWithChildren> = (props) => (
-  <Text
-    _hover={{
-      color: 'colorTextLink',
-    }}
-    as="span"
-    color="colorTextBrandHighlight"
-    display="flex"
-    {...props}
-  />
-);
+export function SiteFooterIconWrapper(props: React.PropsWithChildren): React.ReactElement {
+  return (
+    <Text
+      _hover={{
+        color: 'colorTextLink',
+      }}
+      as="span"
+      color="colorTextBrandHighlight"
+      display="flex"
+      {...props}
+    />
+  );
+}
 
-export const SiteFooter: React.FC = () => (
-  <StyledSiteFooter>
-    <SiteFooterList>
-      <SiteFooterListItem>
-        <Link href="/" legacyBehavior passHref>
-          <Anchor href="/">Home</Anchor>
-        </Link>
-      </SiteFooterListItem>
-      <SiteFooterListItem>
-        <Anchor href="https://www.twitter.com/SiTaggart">
-          <SiteFooterIconWrapper>
-            <Box
-              aria-hidden="true"
-              as={TwitterSVG as any}
-              // @ts-ignore
-              css={{
-                path: {
-                  fill: 'currentColor',
-                },
-              }}
-              height="sizeIcon90"
-              // @ts-ignore
-              viewBox="0 0 56.693 56.693"
-              width="sizeIcon90"
-            />
-            <ScreenReaderOnly>Find me on Twitter</ScreenReaderOnly>
-          </SiteFooterIconWrapper>
-        </Anchor>
-      </SiteFooterListItem>
-      <SiteFooterListItem>
-        <Anchor href="https://www.github.com/SiTaggart">
-          <SiteFooterIconWrapper>
-            <Box
-              aria-hidden="true"
-              as={GithubSVG as any}
-              // @ts-ignore
-              css={{
-                path: {
-                  fill: 'currentColor',
-                },
-              }}
-              height="sizeIcon90"
-              // @ts-ignore
-              viewBox="0 0 121 119"
-              width="sizeIcon90"
-            />
-            <ScreenReaderOnly>Find me on GitHub</ScreenReaderOnly>
-          </SiteFooterIconWrapper>
-        </Anchor>
-      </SiteFooterListItem>
-      <SiteFooterListItem>
-        <Anchor href="https://www.linkedin.com/in/SiTaggart">
-          <SiteFooterIconWrapper>
-            <Box
-              aria-hidden="true"
-              as={LinkedinSVG as any}
-              // @ts-ignore
-              css={{
-                path: {
-                  fill: 'currentColor',
-                },
-              }}
-              height="sizeIcon90"
-              // @ts-ignore
-              viewBox="0 0 56.693 56.693"
-              width="sizeIcon90"
-            />
-            <ScreenReaderOnly>Find me on LinkedIn</ScreenReaderOnly>
-          </SiteFooterIconWrapper>
-        </Anchor>
-      </SiteFooterListItem>
-    </SiteFooterList>
-  </StyledSiteFooter>
-);
+interface SiteFooterIconProps {
+  src: string;
+}
+
+function SiteFooterIcon({ src }: SiteFooterIconProps): React.ReactElement {
+  return (
+    <Box
+      aria-hidden="true"
+      as="span"
+      display="block"
+      height="sizeIcon90"
+      style={{
+        backgroundColor: 'currentColor',
+        mask: `url(${src}) center / contain no-repeat`,
+        WebkitMask: `url(${src}) center / contain no-repeat`,
+      }}
+      width="sizeIcon90"
+    />
+  );
+}
+
+export function SiteFooter(): React.ReactElement {
+  return (
+    <StyledSiteFooter>
+      <SiteFooterList>
+        <SiteFooterListItem>
+          <AppLink to="/">Home</AppLink>
+        </SiteFooterListItem>
+        <SiteFooterListItem>
+          <Anchor href="https://www.twitter.com/SiTaggart">
+            <SiteFooterIconWrapper>
+              <SiteFooterIcon src={twitterSvg} />
+              <ScreenReaderOnly>Find me on Twitter</ScreenReaderOnly>
+            </SiteFooterIconWrapper>
+          </Anchor>
+        </SiteFooterListItem>
+        <SiteFooterListItem>
+          <Anchor href="https://www.github.com/SiTaggart">
+            <SiteFooterIconWrapper>
+              <SiteFooterIcon src={githubSvg} />
+              <ScreenReaderOnly>Find me on GitHub</ScreenReaderOnly>
+            </SiteFooterIconWrapper>
+          </Anchor>
+        </SiteFooterListItem>
+        <SiteFooterListItem>
+          <Anchor href="https://www.linkedin.com/in/SiTaggart">
+            <SiteFooterIconWrapper>
+              <SiteFooterIcon src={linkedinSvg} />
+              <ScreenReaderOnly>Find me on LinkedIn</ScreenReaderOnly>
+            </SiteFooterIconWrapper>
+          </Anchor>
+        </SiteFooterListItem>
+      </SiteFooterList>
+    </StyledSiteFooter>
+  );
+}
