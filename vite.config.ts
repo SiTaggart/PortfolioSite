@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 import rehypePrism from 'rehype-prism-plus';
 import remarkGfm from 'remark-gfm';
 import { defineConfig } from 'vite';
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [
@@ -15,6 +16,7 @@ export default defineConfig({
       rehypePlugins: [rehypePrism],
       remarkPlugins: [remarkGfm],
     }),
+    svgr(),
     react(),
   ],
 });
