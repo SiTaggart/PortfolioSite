@@ -12,16 +12,17 @@ import { SiteSubHeading } from '../../components/SiteSubHeading';
 import { posts } from '../content/posts';
 import { defaultMeta } from '../seo';
 
+const employmentStartYear = 2004;
+const yearsOfExperience = new Date().getFullYear() - employmentStartYear;
+
 export const Route = createFileRoute('/')({
+  component: Index,
   head: () => ({
     meta: defaultMeta('Hi'),
   }),
-  component: Index,
 });
 
 function Index(): React.ReactElement {
-  const employmentStartDate = new Date(2004, 9, 1);
-  const yoe = new Date(Date.now()).getFullYear() - employmentStartDate.getFullYear();
   const latestPost = posts[0].meta;
 
   return (
@@ -35,9 +36,9 @@ function Index(): React.ReactElement {
       <Paragraph>
         A UX Engineer currently working as an Architect / Director at{' '}
         <Anchor href="https://www.twilio.com">Twilio</Anchor>, on{' '}
-        <Anchor href="https://paste.twilio.design">Design Systems</Anchor>. I have over {yoe} years
-        experience in Web Development and Front-End Engineering, specialising in building user
-        interfaces for web sites and web applications.
+        <Anchor href="https://paste.twilio.design">Design Systems</Anchor>. I have over{' '}
+        {yearsOfExperience} years experience in Web Development and Front-End Engineering,
+        specialising in building user interfaces for web sites and web applications.
       </Paragraph>
 
       <Paragraph>

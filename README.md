@@ -19,7 +19,7 @@ bun run dev
 ```sh
 bun run build
 bun run lint
-bun run prettier
+bun run format:check
 bun run smoke
 bunx wrangler deploy --dry-run
 ```

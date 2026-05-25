@@ -22,6 +22,11 @@ icon = "run"
 command = "bun run ci:checks"
 
 [[actions]]
+name = "Fast check"
+icon = "run"
+command = "bun run check"
+
+[[actions]]
 name = "Cypress CI"
 icon = "run"
 command = "bun run cypress:ci"

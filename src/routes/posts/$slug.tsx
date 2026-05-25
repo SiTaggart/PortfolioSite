@@ -4,6 +4,24 @@ import { getPostBySlug, postSlugs } from '../../content/posts';
 import { postMeta } from '../../seo';
 
 export const Route = createFileRoute('/posts/$slug')({
+  component: PostRoute,
+  head: ({ params }) => {
+    const post = getPostBySlug(params.slug);
+
+    if (!post) {
+      return {};
+    }
+
+    return {
+      links: [
+        {
+          href: `https://www.simontaggart.com${post.meta.slug}`,
+          rel: 'canonical',
+        },
+      ],
+      meta: postMeta(post.meta),
+    };
+  },
   loader: ({ params }) => {
     const post = getPostBySlug(params.slug);
 
@@ -13,24 +31,6 @@ export const Route = createFileRoute('/posts/$slug')({
 
     return post.meta;
   },
-  head: ({ params }) => {
-    const post = getPostBySlug(params.slug);
-
-    if (!post) {
-      return {};
-    }
-
-    return {
-      meta: postMeta(post.meta),
-      links: [
-        {
-          href: `https://www.simontaggart.com${post.meta.slug}`,
-          rel: 'canonical',
-        },
-      ],
-    };
-  },
-  component: PostRoute,
 });
 
 function PostRoute(): React.ReactElement {
@@ -46,6 +46,6 @@ function PostRoute(): React.ReactElement {
   return <Component />;
 }
 
-export function getStaticPaths(): string[] {
+export function getStaticPaths(): Array<string> {
   return postSlugs;
 }

@@ -10,7 +10,7 @@ interface PostLayoutProps {
 
 export default function Post({
   children,
-  meta: { title, date },
+  meta: { date, title },
 }: PostLayoutProps): React.ReactElement {
   return (
     <>

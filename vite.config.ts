@@ -12,8 +12,8 @@ export default defineConfig({
     tanstackStart(),
     mdx({
       providerImportSource: '@mdx-js/react',
-      remarkPlugins: [remarkGfm],
       rehypePlugins: [rehypePrism],
+      remarkPlugins: [remarkGfm],
     }),
     react(),
   ],

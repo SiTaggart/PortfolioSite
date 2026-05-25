@@ -8,10 +8,10 @@ import { posts } from '../../content/posts';
 import { defaultMeta } from '../../seo';
 
 export const Route = createFileRoute('/posts/')({
+  component: Posts,
   head: () => ({
     meta: defaultMeta('Posts'),
   }),
-  component: Posts,
 });
 
 function Posts(): React.ReactElement {
@@ -24,7 +24,7 @@ function Posts(): React.ReactElement {
       <SiteSubHeading>Design Systems &amp; Accessibility</SiteSubHeading>
       <Box as="ul" margin="space0" padding="space0">
         {posts.map(({ meta }) => (
-          <Box key={meta.slug} as="li" listStyleType="none" marginBottom="space40">
+          <Box as="li" key={meta.slug} listStyleType="none" marginBottom="space40">
             <FeaturePost post={meta} />
           </Box>
         ))}

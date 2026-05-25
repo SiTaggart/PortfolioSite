@@ -63,7 +63,7 @@ function Hr(): React.ReactElement {
   return <Separator orientation="horizontal" verticalSpacing="space70" />;
 }
 
-function A({ href, children, ...props }: React.PropsWithChildren<AnchorProps>): React.ReactElement {
+function A({ children, href, ...props }: React.PropsWithChildren<AnchorProps>): React.ReactElement {
   return (
     <Anchor href={href} {...props}>
       {children}
@@ -92,36 +92,36 @@ function ContentWrapper(props: MDXElementProps): React.ReactElement {
 }
 
 const components: MDXComponents = {
+  a: A,
+  blockquote: Blockquote,
+  code: InlineCode,
+  content: Content,
+  contentwrapper: ContentWrapper,
+  del: Del,
+  em: Em,
   h1: H1,
   h2: H2,
   h3: H3,
   h4: H4,
   h5: H5,
   h6: H6,
-  p: Paragraph,
-  ul: UnorderedList,
-  ol: OrderedList,
-  li: ListItem,
-  blockquote: Blockquote,
-  table: Table,
-  thead: THead,
-  tbody: TBody,
-  tfoot: TFoot,
-  tr: Tr,
-  th: Th,
-  td: Td,
-  pre: CodeBlock,
-  code: InlineCode,
-  inlineCode: InlineCode,
-  em: Em,
-  strong: Strong,
-  del: Del,
   hr: Hr,
-  a: A,
   img: Image,
+  inlineCode: InlineCode,
+  li: ListItem,
+  ol: OrderedList,
+  p: Paragraph,
+  pre: CodeBlock,
+  strong: Strong,
   sup: Sup,
-  content: Content,
-  contentwrapper: ContentWrapper,
+  table: Table,
+  tbody: TBody,
+  td: Td,
+  tfoot: TFoot,
+  th: Th,
+  thead: THead,
+  tr: Tr,
+  ul: UnorderedList,
 };
 
 export function ComponentProvider({ children }: React.PropsWithChildren): React.ReactElement {

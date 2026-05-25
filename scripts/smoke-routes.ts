@@ -30,9 +30,9 @@ const baseUrl = `http://127.0.0.1:${port}`;
 const server = Bun.spawn(
   ['bun', 'run', 'preview', '--', '--host', '127.0.0.1', '--port', String(port)],
   {
-    stdout: 'pipe',
     stderr: 'pipe',
-  }
+    stdout: 'pipe',
+  },
 );
 
 async function waitForServer(): Promise<void> {

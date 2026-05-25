@@ -3,7 +3,7 @@ import { Box } from '@twilio-paste/core/box';
 import { Text } from '@twilio-paste/core/text';
 
 export function CodeBlock(
-  props: React.PropsWithChildren<Record<string, unknown>>
+  props: React.PropsWithChildren<Record<string, unknown>>,
 ): React.ReactElement {
   return (
     <Box

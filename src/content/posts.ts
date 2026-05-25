@@ -17,14 +17,14 @@ const postModules = import.meta.glob<PostModule>('../../pages/posts/*/index.mdx'
   eager: true,
 });
 
-export const posts: BlogPost[] = reverse(
+export const posts: Array<BlogPost> = reverse(
   sortBy(
     Object.values(postModules).map((module) => ({
       Component: module.default,
       meta: module.meta,
     })),
-    ['meta.date']
-  )
+    ['meta.date'],
+  ),
 );
 
 export const postSlugs = posts.map(({ meta }) => meta.slug);

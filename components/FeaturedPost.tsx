@@ -6,10 +6,10 @@ import { AppLink } from './AppLink';
 
 interface FeaturedPostProps {
   post: {
-    title: string;
-    description: string;
     date: string;
+    description: string;
     slug: string;
+    title: string;
   };
 }
 

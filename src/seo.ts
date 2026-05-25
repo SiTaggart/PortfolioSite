@@ -21,33 +21,33 @@ export function pageTitle(title?: string): string {
 
 export function defaultMeta(
   title?: string,
-  description = defaultSeoConfig.description
-): MetaDescriptor[] {
+  description = defaultSeoConfig.description,
+): Array<MetaDescriptor> {
   const resolvedTitle = pageTitle(title);
 
   return [
     { title: resolvedTitle },
-    { name: 'description', content: description },
-    { property: 'author', content: 'Simon Taggart' },
-    { property: 'og:type', content: defaultSeoConfig.openGraph.type },
-    { property: 'og:locale', content: defaultSeoConfig.openGraph.locale },
-    { property: 'og:site_name', content: defaultSeoConfig.openGraph.site_name },
-    { property: 'og:title', content: resolvedTitle },
-    { property: 'og:description', content: description },
-    { name: 'twitter:card', content: defaultSeoConfig.twitter.cardType },
-    { name: 'twitter:site', content: defaultSeoConfig.twitter.site },
-    { name: 'twitter:creator', content: defaultSeoConfig.twitter.handle },
+    { content: description, name: 'description' },
+    { content: 'Simon Taggart', property: 'author' },
+    { content: defaultSeoConfig.openGraph.type, property: 'og:type' },
+    { content: defaultSeoConfig.openGraph.locale, property: 'og:locale' },
+    { content: defaultSeoConfig.openGraph.site_name, property: 'og:site_name' },
+    { content: resolvedTitle, property: 'og:title' },
+    { content: description, property: 'og:description' },
+    { content: defaultSeoConfig.twitter.cardType, name: 'twitter:card' },
+    { content: defaultSeoConfig.twitter.site, name: 'twitter:site' },
+    { content: defaultSeoConfig.twitter.handle, name: 'twitter:creator' },
   ];
 }
 
-export function postMeta(post: MetaDataShape): MetaDescriptor[] {
+export function postMeta(post: MetaDataShape): Array<MetaDescriptor> {
   const url = `${siteUrl}${post.slug}`;
 
   return [
     ...defaultMeta(post.title, post.description),
-    { property: 'og:type', content: 'article' },
-    { property: 'og:url', content: url },
-    { property: 'article:published_time', content: new Date(post.date).toISOString().slice(0, 10) },
+    { content: 'article', property: 'og:type' },
+    { content: url, property: 'og:url' },
+    { content: new Date(post.date).toISOString().slice(0, 10), property: 'article:published_time' },
   ];
 }
 
@@ -55,7 +55,6 @@ export const socialProfileJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Simon Taggart',
-  url: siteUrl,
   sameAs: [
     'https://twitter.com/sitaggart',
     'https://github.com/SiTaggart',
@@ -63,4 +62,5 @@ export const socialProfileJsonLd = {
     'https://www.instagram.com/sitaggart/',
     'https://www.linkedin.com/in/SiTaggart/',
   ],
+  url: siteUrl,
 };

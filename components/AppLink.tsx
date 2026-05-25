@@ -1,10 +1,16 @@
-import * as React from 'react';
+import {
+  createElement,
+  type AnchorHTMLAttributes,
+  type MouseEvent,
+  type ReactElement,
+  type ReactNode,
+} from 'react';
 
 type AppLinkTarget = '/' | '/posts' | '/posts/$slug';
 
 type AppLinkProps = {
-  children: React.ReactNode;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  children: ReactNode;
+} & AnchorHTMLAttributes<HTMLAnchorElement> &
   (
     | {
         params?: never;
@@ -26,7 +32,7 @@ function hrefForRoute(to: AppLinkTarget, params?: { slug: string }): string {
   return to;
 }
 
-export function AppLink({ params, to, ...props }: AppLinkProps): React.ReactElement {
+export function AppLink({ params, to, ...props }: AppLinkProps): ReactElement {
   const href = hrefForRoute(to, params);
   const style = {
     color: '#fffffe',
@@ -37,7 +43,7 @@ export function AppLink({ params, to, ...props }: AppLinkProps): React.ReactElem
     ...props.style,
   };
 
-  function handleClick(event: React.MouseEvent<HTMLAnchorElement>): void {
+  function handleClick(event: MouseEvent<HTMLAnchorElement>): void {
     props.onClick?.(event);
 
     if (
@@ -55,7 +61,7 @@ export function AppLink({ params, to, ...props }: AppLinkProps): React.ReactElem
     window.location.assign(href);
   }
 
-  return React.createElement('a', {
+  return createElement('a', {
     ...props,
     href,
     onClick: handleClick,

@@ -5,8 +5,8 @@ type AppRouter = ReturnType<typeof createTanStackRouter<typeof routeTree>>;
 
 export function createRouter(): AppRouter {
   return createTanStackRouter({
-    routeTree,
     defaultPreload: 'intent',
+    routeTree,
     scrollRestoration: true,
   });
 }
