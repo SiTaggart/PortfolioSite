@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - replatform/tanstack-start-bun
 
 jobs:
   checks:
@@ -28,5 +27,7 @@ jobs:
         run: bun run format:check
       - name: Route smoke
         run: bun run smoke
+      - name: Cypress
+        run: bun run cypress:ci
       - name: Wrangler config validation
         run: bunx wrangler deploy --dry-run
