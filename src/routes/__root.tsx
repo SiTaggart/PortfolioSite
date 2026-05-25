@@ -10,7 +10,7 @@ import { ComponentProvider } from '../../components/ComponentProvider';
 import { SiteFooter } from '../../components/SiteFooter';
 import { getPrismStyles } from '../../theme/prism';
 import PortfolioTheme from '../../theme/theme.json';
-import { defaultMeta } from '../seo';
+import { defaultMeta, socialProfileJsonLd } from '../seo';
 
 interface GlobalStylesProps {
   theme: Partial<GenericThemeShape>;
@@ -22,6 +22,10 @@ const globalStyles = (props: GlobalStylesProps): ReturnType<ReturnType<typeof cs
       backgroundColor: '#232946',
     },
   })(props);
+
+const cloudflareBeaconToken = '511d2ddb672f42599f188f248a7bc403';
+const cloudflareBeaconConfig = JSON.stringify({ token: cloudflareBeaconToken });
+const socialProfileJsonLdScript = JSON.stringify(socialProfileJsonLd);
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -51,7 +55,20 @@ export const Route = createRootRoute({
       },
       ...defaultMeta(),
     ],
+    scripts: [
+      {
+        children: socialProfileJsonLdScript,
+        type: 'application/ld+json',
+      },
+    ],
   }),
+  scripts: () => [
+    {
+      'data-cf-beacon': cloudflareBeaconConfig,
+      defer: true,
+      src: 'https://static.cloudflareinsights.com/beacon.min.js',
+    },
+  ],
   shellComponent: RootDocument,
 });
 

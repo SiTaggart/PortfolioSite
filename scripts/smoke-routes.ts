@@ -24,6 +24,14 @@ const expectedContentByRoute = new Map<string, string>([
   ['/posts/2021-01-01-2020-year-in-review', '2020 - Year in review'],
 ]);
 
+const expectedSiteWideHeadContent = [
+  'type="application/ld+json"',
+  'https://schema.org',
+  'https://static.cloudflareinsights.com/beacon.min.js',
+  'data-cf-beacon',
+  '511d2ddb672f42599f188f248a7bc403',
+];
+
 const port = 4173;
 const baseUrl = `http://127.0.0.1:${port}`;
 
@@ -67,6 +75,12 @@ try {
 
     if (!expectedContent || !body.includes(expectedContent)) {
       throw new Error(`${route} did not include expected content: ${expectedContent}`);
+    }
+
+    for (const expectedHeadContent of expectedSiteWideHeadContent) {
+      if (!body.includes(expectedHeadContent)) {
+        throw new Error(`${route} did not include site-wide head content: ${expectedHeadContent}`);
+      }
     }
 
     console.log(`ok ${route}`);
