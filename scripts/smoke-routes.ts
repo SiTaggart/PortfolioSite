@@ -50,7 +50,7 @@ const server = Bun.spawn(
   },
 );
 
-const previewReadyText = `http://127.0.0.1:${port}/`;
+const previewReadyPattern = new RegExp(`https?://[^\\s]+:${port}/`);
 const decoder = new TextDecoder();
 let previewExitedCode: number | null = null;
 let previewOutput = '';
@@ -84,7 +84,7 @@ async function collectProcessOutput(stream: ReadableStream<Uint8Array> | null): 
     const chunk = decoder.decode(value, { stream: true });
     previewOutput += chunk;
 
-    if (chunk.includes(previewReadyText)) {
+    if (previewReadyPattern.test(previewOutput)) {
       previewReady = true;
     }
   }
