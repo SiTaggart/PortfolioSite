@@ -1,7 +1,8 @@
-import type React from 'react';
 import { Text } from '@twilio-paste/core/text';
-import { MetaDataShape } from '../types';
+import type React from 'react';
+
 import { formatPostDate } from '../src/content/formatPostDate';
+import { MetaDataShape } from '../types';
 
 interface PostLayoutProps {
   children: React.ReactNode;

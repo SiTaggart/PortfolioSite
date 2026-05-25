@@ -1,4 +1,5 @@
 import { createRouter as createTanStackRouter } from '@tanstack/react-router';
+
 import { routeTree } from './routeTree.gen';
 
 type AppRouter = ReturnType<typeof createTanStackRouter<typeof routeTree>>;

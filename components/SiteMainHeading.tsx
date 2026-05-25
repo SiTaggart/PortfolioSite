@@ -1,5 +1,5 @@
-import type React from 'react';
 import { Text } from '@twilio-paste/core/text';
+import type React from 'react';
 
 export function SiteMainHeading(props: React.PropsWithChildren): React.ReactElement {
   return (

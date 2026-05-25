@@ -1,5 +1,6 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
 import type React from 'react';
+
 import { getPostBySlug, postSlugs } from '../../content/posts';
 import { postMeta } from '../../seo';
 

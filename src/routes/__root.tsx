@@ -5,10 +5,11 @@ import { CustomizationProvider } from '@twilio-paste/core/customization';
 import { StylingGlobals, css } from '@twilio-paste/core/styling-library';
 import type { GenericThemeShape } from '@twilio-paste/core/theme';
 import type React from 'react';
+
 import { ComponentProvider } from '../../components/ComponentProvider';
 import { SiteFooter } from '../../components/SiteFooter';
-import PortfolioTheme from '../../theme/theme.json';
 import { getPrismStyles } from '../../theme/prism';
+import PortfolioTheme from '../../theme/theme.json';
 import { defaultMeta } from '../seo';
 
 interface GlobalStylesProps {

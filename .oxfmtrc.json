@@ -8,5 +8,7 @@
     "pages/**/*.mdx",
     "src/routeTree.gen.ts"
   ],
-  "singleQuote": true
+  "singleQuote": true,
+  "sortImports": true,
+  "sortTailwindcss": true
 }

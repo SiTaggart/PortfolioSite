@@ -1,8 +1,9 @@
-import type React from 'react';
-import { Box } from '@twilio-paste/core/box';
-import { Text } from '@twilio-paste/core/text';
 import { Anchor } from '@twilio-paste/core/anchor';
+import { Box } from '@twilio-paste/core/box';
 import { ScreenReaderOnly } from '@twilio-paste/core/screen-reader-only';
+import { Text } from '@twilio-paste/core/text';
+import type React from 'react';
+
 import { AppLink } from './AppLink';
 
 interface SiteFooterIconDefinition {

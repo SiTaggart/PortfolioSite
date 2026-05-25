@@ -1,6 +1,7 @@
-import type React from 'react';
 import { Box } from '@twilio-paste/core/box';
 import { Text } from '@twilio-paste/core/text';
+import type React from 'react';
+
 import { formatPostDate } from '../src/content/formatPostDate';
 import { AppLink } from './AppLink';
 

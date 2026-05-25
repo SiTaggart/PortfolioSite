@@ -1,6 +1,7 @@
 import reverse from 'lodash.reverse';
 import sortBy from 'lodash.sortby';
 import type React from 'react';
+
 import type { MetaDataShape } from '../../types';
 
 interface PostModule {

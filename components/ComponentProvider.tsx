@@ -8,6 +8,7 @@ import { Separator } from '@twilio-paste/core/separator';
 import { Table as PasteTable, TBody, Td, TFoot, Th, THead, Tr } from '@twilio-paste/core/table';
 import type { MDXComponents } from 'mdx/types';
 import type React from 'react';
+
 import { Blockquote } from './Blockquote';
 import { CodeBlock, InlineCode as InlineCodeSnippet } from './CodeBlocks';
 

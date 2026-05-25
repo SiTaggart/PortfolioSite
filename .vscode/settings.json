@@ -1,4 +1,24 @@
 {
+  "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
-  "typescript.experimental.useTsgo": true
+  "editor.formatOnSaveMode": "file",
+  "js/ts.experimental.useTsgo": true,
+  "oxc.configPath": "./oxlint.config.ts",
+  "oxc.enable.oxfmt": true,
+  "oxc.enable.oxlint": true,
+  "oxc.fmt.configPath": "./.oxfmtrc.json",
+  "oxc.path.oxfmt": "./node_modules/.bin/oxfmt",
+  "oxc.path.oxlint": "./node_modules/.bin/oxlint",
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  }
 }
