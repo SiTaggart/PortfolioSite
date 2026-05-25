@@ -8,6 +8,9 @@ describe('Homepage', () => {
     it('should load posts', () => {
       cy.visit('http://localhost:3000/posts');
       cy.document().should('have.property', 'title').and('eq', 'Posts | Simon Taggart');
+      cy.get('footer a[href="https://www.twitter.com/SiTaggart"] svg').should('be.visible');
+      cy.get('footer a[href="https://www.github.com/SiTaggart"] svg').should('be.visible');
+      cy.get('footer a[href="https://www.linkedin.com/in/SiTaggart"] svg').should('be.visible');
       cy.contains('h2 > a', '2020 - Year in review').click();
       cy.document()
         .should('have.property', 'title')
