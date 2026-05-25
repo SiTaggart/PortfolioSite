@@ -28,8 +28,6 @@ export const posts: Array<BlogPost> = reverse(
   ),
 );
 
-export const postSlugs = posts.map(({ meta }) => meta.slug);
-
 export function getPostBySlug(slug: string): BlogPost | undefined {
   const normalizedSlug = slug.startsWith('/posts/') ? slug : `/posts/${slug}`;
 

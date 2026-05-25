@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
 import type React from 'react';
 
-import { getPostBySlug, postSlugs } from '../../content/posts';
+import { getPostBySlug } from '../../content/posts';
 import { postMeta } from '../../seo';
 
 export const Route = createFileRoute('/posts/$slug')({
@@ -45,8 +45,4 @@ function PostRoute(): React.ReactElement {
   const { Component } = post;
 
   return <Component />;
-}
-
-export function getStaticPaths(): Array<string> {
-  return postSlugs;
 }

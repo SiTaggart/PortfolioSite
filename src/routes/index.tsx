@@ -24,7 +24,7 @@ export const Route = createFileRoute('/')({
 });
 
 function Index(): React.ReactElement {
-  const latestPost = posts[0].meta;
+  const latestPost = posts.at(0)?.meta;
 
   return (
     <>
@@ -61,16 +61,18 @@ function Index(): React.ReactElement {
         <Anchor href="https://www.abacusemedia.com/">Abacus e-media</Anchor>.
       </Paragraph>
 
-      <Box marginBottom="space140" marginTop="space140">
-        <Heading as="h2" variant="heading30">
-          Latest post
-        </Heading>
-        <FeaturePost post={latestPost} />
+      {latestPost ? (
+        <Box marginBottom="space140" marginTop="space140">
+          <Heading as="h2" variant="heading30">
+            Latest post
+          </Heading>
+          <FeaturePost post={latestPost} />
 
-        <Text as="div" marginTop="space30" textAlign="center">
-          <AppLink to="/posts">All posts</AppLink>
-        </Text>
-      </Box>
+          <Text as="div" marginTop="space30" textAlign="center">
+            <AppLink to="/posts">All posts</AppLink>
+          </Text>
+        </Box>
+      ) : null}
     </>
   );
 }

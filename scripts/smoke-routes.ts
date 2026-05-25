@@ -5,6 +5,7 @@ const routes = [
   '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
   '/posts/2016-03-04-the-living-styleguide-pattern-lab',
   '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
+  '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-%40-me',
   '/posts/2021-01-01-2020-year-in-review',
 ];
 
@@ -21,6 +22,10 @@ const expectedContentByRoute = new Map<string, string>([
     '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
     'I’m super good at CSS',
   ],
+  [
+    '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-%40-me',
+    'I’m super good at CSS',
+  ],
   ['/posts/2021-01-01-2020-year-in-review', '2020 - Year in review'],
 ]);
 
@@ -30,6 +35,8 @@ const expectedSiteWideHeadContent = [
   'https://static.cloudflareinsights.com/beacon.min.js',
   'data-cf-beacon',
   '511d2ddb672f42599f188f248a7bc403',
+  'profile:first_name',
+  'profile:last_name',
 ];
 
 const port = 4173;
@@ -53,9 +60,13 @@ async function waitForServer(): Promise<void> {
       if (response.ok) {
         return;
       }
-    } catch {
-      await Bun.sleep(250);
+    } catch (error: unknown) {
+      if (!(error instanceof Error)) {
+        throw error;
+      }
     }
+
+    await Bun.sleep(250);
   }
 
   throw new Error(`Preview server did not start at ${baseUrl}`);

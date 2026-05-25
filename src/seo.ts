@@ -34,6 +34,8 @@ export function defaultMeta(
     { content: defaultSeoConfig.openGraph.site_name, property: 'og:site_name' },
     { content: resolvedTitle, property: 'og:title' },
     { content: description, property: 'og:description' },
+    { content: defaultSeoConfig.openGraph.profile.firstName, property: 'profile:first_name' },
+    { content: defaultSeoConfig.openGraph.profile.lastName, property: 'profile:last_name' },
     { content: defaultSeoConfig.twitter.cardType, name: 'twitter:card' },
     { content: defaultSeoConfig.twitter.site, name: 'twitter:site' },
     { content: defaultSeoConfig.twitter.handle, name: 'twitter:creator' },
