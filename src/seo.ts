@@ -1,7 +1,25 @@
-import defaultSeoConfig from '../next-seo.json';
 import type { MetaDataShape } from '../types';
 
 const siteUrl = 'https://www.simontaggart.com';
+const defaultSeoConfig = {
+  description: 'UX Engineer, Design Systems Builder, Accessibility Specialist.',
+  openGraph: {
+    locale: 'en_US',
+    profile: {
+      firstName: 'Simon',
+      lastName: 'Taggart',
+    },
+    siteName: 'Simon Taggart',
+    type: 'website',
+  },
+  title: 'Simon Taggart',
+  titleTemplate: '%s | Simon Taggart',
+  twitter: {
+    cardType: 'summary_large_image',
+    handle: 'SiTaggart',
+    site: 'SiTaggart',
+  },
+} as const;
 
 interface MetaDescriptor {
   charSet?: string;
@@ -21,7 +39,7 @@ export function pageTitle(title?: string): string {
 
 export function defaultMeta(
   title?: string,
-  description = defaultSeoConfig.description,
+  description: string = defaultSeoConfig.description,
 ): Array<MetaDescriptor> {
   const resolvedTitle = pageTitle(title);
 
@@ -31,7 +49,7 @@ export function defaultMeta(
     { content: 'Simon Taggart', property: 'author' },
     { content: defaultSeoConfig.openGraph.type, property: 'og:type' },
     { content: defaultSeoConfig.openGraph.locale, property: 'og:locale' },
-    { content: defaultSeoConfig.openGraph.site_name, property: 'og:site_name' },
+    { content: defaultSeoConfig.openGraph.siteName, property: 'og:site_name' },
     { content: resolvedTitle, property: 'og:title' },
     { content: description, property: 'og:description' },
     { content: defaultSeoConfig.openGraph.profile.firstName, property: 'profile:first_name' },
