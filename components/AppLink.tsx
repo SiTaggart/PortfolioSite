@@ -1,70 +1,49 @@
+import { createLink } from '@tanstack/react-router';
+import { Anchor, type AnchorProps } from '@twilio-paste/core/anchor';
 import {
-  createElement,
+  forwardRef,
   type AnchorHTMLAttributes,
-  type MouseEvent,
+  type CSSProperties,
   type ReactElement,
   type ReactNode,
 } from 'react';
 
-type AppLinkTarget = '/' | '/posts' | '/posts/$slug';
+interface StyledAnchorProps extends Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  'children' | 'className' | 'style' | 'tabIndex' | 'target'
+> {
+  children?: ReactNode;
+  className?: string;
+  disabled?: boolean;
+  style?: CSSProperties;
+  tabIndex?: AnchorProps['tabIndex'];
+  target?: AnchorProps['target'];
+}
 
-type AppLinkProps = {
-  children: ReactNode;
-} & AnchorHTMLAttributes<HTMLAnchorElement> &
-  (
-    | {
-        params?: never;
-        to: Exclude<AppLinkTarget, '/posts/$slug'>;
-      }
-    | {
-        params: {
-          slug: string;
-        };
-        to: '/posts/$slug';
-      }
+const StyledAnchor = forwardRef<HTMLAnchorElement, StyledAnchorProps>(function StyledAnchor(
+  {
+    children,
+    className: _className,
+    disabled: _disabled,
+    style: _style,
+    tabIndex,
+    target,
+    ...props
+  },
+  ref,
+): ReactElement {
+  return (
+    <Anchor
+      {...props}
+      href={props.href ?? ''}
+      ref={ref}
+      tabIndex={tabIndex}
+      target={target}
+      variant="inverse"
+    >
+      {children ?? ''}
+    </Anchor>
   );
+});
 
-function hrefForRoute(to: AppLinkTarget, params?: { slug: string }): string {
-  if (to === '/posts/$slug') {
-    return `/posts/${encodeURIComponent(params?.slug ?? '')}`;
-  }
-
-  return to;
-}
-
-export function AppLink({ params, to, ...props }: AppLinkProps): ReactElement {
-  const href = hrefForRoute(to, params);
-  const style = {
-    color: '#fffffe',
-    fontSize: 'inherit',
-    fontWeight: 'inherit',
-    lineHeight: 'inherit',
-    textDecoration: 'underline',
-    ...props.style,
-  };
-
-  function handleClick(event: MouseEvent<HTMLAnchorElement>): void {
-    props.onClick?.(event);
-
-    if (
-      event.defaultPrevented ||
-      event.button !== 0 ||
-      event.altKey ||
-      event.ctrlKey ||
-      event.metaKey ||
-      event.shiftKey
-    ) {
-      return;
-    }
-
-    event.preventDefault();
-    window.location.assign(href);
-  }
-
-  return createElement('a', {
-    ...props,
-    href,
-    onClick: handleClick,
-    style,
-  });
-}
+export const AppLink = createLink(StyledAnchor);
