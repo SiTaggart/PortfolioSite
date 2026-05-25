@@ -50,94 +50,25 @@ const server = Bun.spawn(
   },
 );
 
-const previewReadyPattern = new RegExp(`https?://[^\\s]+:${port}/`);
-const decoder = new TextDecoder();
-let previewExitedCode: number | null = null;
-let previewOutput = '';
-let previewReady = false;
-
-async function waitForPreviewExit(): Promise<number> {
-  const exitCode = await server.exited;
-  previewExitedCode = exitCode;
-  return exitCode;
-}
-
-// Keep this unawaited so preview startup can race against an early process exit.
-// oxlint-disable-next-line unicorn/prefer-top-level-await
-const previewExited = waitForPreviewExit();
-
-async function collectProcessOutput(stream: ReadableStream<Uint8Array> | null): Promise<void> {
-  if (!stream) {
-    return;
-  }
-
-  const reader = stream.getReader();
-
-  while (true) {
-    const { done, value } = await reader.read();
-
-    if (done) {
-      previewOutput += decoder.decode();
-      return;
-    }
-
-    const chunk = decoder.decode(value, { stream: true });
-    previewOutput += chunk;
-
-    if (previewReadyPattern.test(previewOutput)) {
-      previewReady = true;
-    }
-  }
-}
-
-const outputCollected = Promise.all([
-  collectProcessOutput(server.stdout),
-  collectProcessOutput(server.stderr),
-]);
-
-async function previewExitError(exitCode: number): Promise<Error> {
-  await outputCollected;
-
-  const output = previewOutput.trim();
-
-  return new Error(
-    output
-      ? `Preview server exited with code ${exitCode} before ${baseUrl} was ready:\n${output}`
-      : `Preview server exited with code ${exitCode} before ${baseUrl} was ready`,
-  );
-}
-
-async function assertPreviewRunning(): Promise<void> {
-  if (previewExitedCode !== null) {
-    throw await previewExitError(previewExitedCode);
-  }
-}
-
 async function waitForServer(): Promise<void> {
   const deadline = Date.now() + 15_000;
 
   while (Date.now() < deadline) {
-    await assertPreviewRunning();
+    try {
+      const response = await fetch(baseUrl);
 
-    if (previewReady) {
-      try {
-        const response = await fetch(baseUrl);
-
-        if (response.ok) {
-          await assertPreviewRunning();
-          return;
-        }
-      } catch (error: unknown) {
-        if (!(error instanceof Error)) {
-          throw error;
-        }
+      if (response.ok) {
+        return;
+      }
+    } catch (error: unknown) {
+      if (!(error instanceof Error)) {
+        throw error;
       }
     }
 
     await Bun.sleep(250);
   }
 
-  await assertPreviewRunning();
   throw new Error(`Preview server did not start at ${baseUrl}`);
 }
 
@@ -167,8 +98,7 @@ try {
   }
 } finally {
   server.kill();
-  await previewExited;
-  await outputCollected;
+  await server.exited;
 }
 
 export {};
