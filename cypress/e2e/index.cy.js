@@ -4,20 +4,23 @@ describe('Homepage', () => {
     it('should load', () => {
       cy.visit('http://localhost:3000');
       cy.document().should('have.property', 'title').and('eq', 'Hi | Simon Taggart');
-      cy.percySnapshot('Homepage snapshot');
     });
     it('should load posts', () => {
       cy.visit('http://localhost:3000/posts');
       cy.document().should('have.property', 'title').and('eq', 'Posts | Simon Taggart');
-      cy.percySnapshot('Posts snapshot');
-      cy.get('li:nth-child(1) h2 > a').click();
-      cy.percySnapshot('Post snapshot');
+      cy.get('footer a[href="https://www.twitter.com/SiTaggart"] svg').should('be.visible');
+      cy.get('footer a[href="https://www.github.com/SiTaggart"] svg').should('be.visible');
+      cy.get('footer a[href="https://www.linkedin.com/in/SiTaggart"] svg').should('be.visible');
+      cy.contains('h2 > a', '2020 - Year in review').click();
+      cy.document()
+        .should('have.property', 'title')
+        .and('eq', '2020 - Year in review | Simon Taggart');
     });
     it('should load a post', () => {
       cy.visit('http://localhost:3000/');
       cy.get('a[href="/posts"]').click();
-      cy.get('li:nth-child(3) h2 > a').click();
-      cy.percySnapshot('Post detailed snapshot');
+      cy.contains('h2 > a', 'The Living Style Guide Pattern Lab').click();
+      cy.contains('h1', 'The Living Style Guide Pattern Lab');
     });
   });
 });

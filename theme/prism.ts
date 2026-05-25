@@ -6,7 +6,7 @@ interface PrismStylesProps {
 }
 
 // inspiratiopn from https://github.com/SaraVieira/prism-theme-night-owl
-export const getPrismStyles = (props: PrismStylesProps): any =>
+export const getPrismStyles = (props: PrismStylesProps): ReturnType<ReturnType<typeof css>> =>
   css({
     'code[class*="language-"], pre[class*="language-"]': {
       color: '#d6deeb',

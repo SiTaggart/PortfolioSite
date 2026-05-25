@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    ".cache/",
+    ".vinxi/",
+    ".wrangler/",
+    "dist/",
+    "pages/**/*.mdx",
+    "src/routeTree.gen.ts"
+  ],
+  "singleQuote": true,
+  "sortImports": true,
+  "sortTailwindcss": true
+}

@@ -1,7 +1,6 @@
 export interface MetaDataShape {
-  title: string;
-  url: string;
-  date: Date;
+  date: string;
   description: string;
-  path: string;
+  slug: string;
+  title: string;
 }

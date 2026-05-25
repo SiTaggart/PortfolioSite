@@ -1,30 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "typeRoots": ["types", "node_modules/@types"],
-    "incremental": true,
-    "jsx": "preserve"
+    "jsx": "react-jsx",
+    "types": ["vite/client", "bun"]
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "dist", ".wrangler", ".vinxi"],
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
     "**/*.mjs",
-    ".eslintrc.js",
+    "**/*.mdx",
     "**/*.svg",
-    "next.config.mjs"
+    "oxlint.config.ts",
+    "vite.config.ts"
   ]
 }
