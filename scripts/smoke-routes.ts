@@ -43,7 +43,7 @@ const port = 4173;
 const baseUrl = `http://127.0.0.1:${port}`;
 
 const server = Bun.spawn(
-  ['bun', 'run', 'preview', '--', '--host', '127.0.0.1', '--port', String(port)],
+  ['bun', 'run', 'preview', '--', '--host', '127.0.0.1', '--port', String(port), '--strictPort'],
   {
     stderr: 'pipe',
     stdout: 'pipe',
