@@ -2,30 +2,29 @@ node_modules/
 .DS_Store
 
 # TanStack Start / Vite
-/.vinxi/
 /.nitro/
 /.output/
+/.tanstack/
 /dist/
-/out/
-
-# production
-/build
 
 # debug
 npm-debug.log*
 bun-error.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-.mdx-data
-
-.env
-cypress/videos
+# cypress
+cypress/videos/
 cypress/screenshots/
 
+# cloudflare
 .wrangler/
 worker-configuration.d.ts
+
+# agent artifacts
+.ai/

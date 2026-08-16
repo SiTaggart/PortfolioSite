@@ -1,33 +1,17 @@
-const routes = [
-  '/',
-  '/posts',
-  '/posts/2016-02-01-how-we-css-at-bigcommerce',
-  '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
-  '/posts/2016-03-04-the-living-styleguide-pattern-lab',
-  '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
-  '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-%40-me',
-  '/posts/2021-01-01-2020-year-in-review',
-];
+interface RouteCheck {
+  content?: ReadonlyArray<string>;
+  path: string;
+  status: number;
+}
 
-const expectedContentByRoute = new Map<string, string>([
-  ['/', 'Simon'],
-  ['/posts', '2020 - Year in review'],
-  ['/posts/2016-02-01-how-we-css-at-bigcommerce', 'CSS is hard'],
-  [
-    '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
-    'How we use Sass Maps for Design Tokens and Developer Happiness',
-  ],
-  ['/posts/2016-03-04-the-living-styleguide-pattern-lab', 'Pattern-Lab'],
-  [
-    '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
-    'I’m super good at CSS',
-  ],
-  [
-    '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-%40-me',
-    'I’m super good at CSS',
-  ],
-  ['/posts/2021-01-01-2020-year-in-review', '2020 - Year in review'],
-]);
+const routeChecks: Array<RouteCheck> = [
+  {
+    content: ['Simon Taggart', 'SESCO', 'Twilio', 'Are My Colors Accessible'],
+    path: '/',
+    status: 200,
+  },
+  { content: ['Nothing here.'], path: '/posts', status: 404 },
+];
 
 const expectedSiteWideHeadContent = [
   'type="application/ld+json"',
@@ -39,14 +23,14 @@ const expectedSiteWideHeadContent = [
   'profile:last_name',
 ];
 
-const port = 4173;
+const port = 4174;
 const baseUrl = `http://127.0.0.1:${port}`;
 
 const server = Bun.spawn(
   ['bun', 'run', 'preview', '--', '--host', '127.0.0.1', '--port', String(port), '--strictPort'],
   {
-    stderr: 'pipe',
-    stdout: 'pipe',
+    stderr: 'inherit',
+    stdout: 'inherit',
   },
 );
 
@@ -75,26 +59,27 @@ async function waitForServer(): Promise<void> {
 try {
   await waitForServer();
 
-  for (const route of routes) {
-    const response = await fetch(`${baseUrl}${route}`);
+  for (const { content, path, status } of routeChecks) {
+    const response = await fetch(`${baseUrl}${path}`);
     const body = await response.text();
-    const expectedContent = expectedContentByRoute.get(route);
 
-    if (response.status !== 200) {
-      throw new Error(`${route} returned ${response.status}`);
+    if (response.status !== status) {
+      throw new Error(`${path} returned ${response.status}, expected ${status}`);
     }
 
-    if (!expectedContent || !body.includes(expectedContent)) {
-      throw new Error(`${route} did not include expected content: ${expectedContent}`);
+    for (const expectedContent of content ?? []) {
+      if (!body.includes(expectedContent)) {
+        throw new Error(`${path} did not include expected content: ${expectedContent}`);
+      }
     }
 
     for (const expectedHeadContent of expectedSiteWideHeadContent) {
       if (!body.includes(expectedHeadContent)) {
-        throw new Error(`${route} did not include site-wide head content: ${expectedHeadContent}`);
+        throw new Error(`${path} did not include site-wide head content: ${expectedHeadContent}`);
       }
     }
 
-    console.log(`ok ${route}`);
+    console.log(`ok ${path}`);
   }
 } finally {
   server.kill();

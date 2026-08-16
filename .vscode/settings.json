@@ -9,6 +9,15 @@
   "oxc.fmt.configPath": "./.oxfmtrc.json",
   "oxc.path.oxfmt": "./node_modules/.bin/oxfmt",
   "oxc.path.oxlint": "./node_modules/.bin/oxlint",
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
   "[javascript]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },

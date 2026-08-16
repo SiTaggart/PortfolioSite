@@ -26,7 +26,7 @@ jobs:
       - name: Format
         run: bun run format:check
       - name: Route smoke
-        run: bun run smoke
+        run: bun run smoke:routes
       - name: Cypress
         run: bun run cypress:ci
       - name: Wrangler config validation

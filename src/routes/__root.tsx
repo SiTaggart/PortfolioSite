@@ -1,31 +1,20 @@
-/// <reference types="vite/client" />
-import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router';
-import { Box } from '@twilio-paste/core/box';
-import { CustomizationProvider } from '@twilio-paste/core/customization';
-import { StylingGlobals, css } from '@twilio-paste/core/styling-library';
-import type { GenericThemeShape } from '@twilio-paste/core/theme';
-import type React from 'react';
+import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import instrumentSerifWoff2 from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
+import { HeadContent, Link, Outlet, Scripts, createRootRoute } from '@tanstack/react-router';
+import type { ReactElement, ReactNode } from 'react';
 
-import { ComponentProvider } from '../../components/ComponentProvider';
-import { SiteFooter } from '../../components/SiteFooter';
-import { getPrismStyles } from '../../theme/prism';
-import PortfolioTheme from '../../theme/theme.json';
-import { defaultMeta, socialProfileJsonLd } from '../seo';
+import { PageFrame } from '../components/resume/PageFrame';
+import { Row } from '../components/resume/Row';
+import { SkipLink } from '../components/resume/SkipLink';
+import { canonicalLink, defaultMeta, socialProfileJsonLd } from '../seo';
 
-interface GlobalStylesProps {
-  theme: Partial<GenericThemeShape>;
-}
+import appCss from '../styles.css?url';
 
-const globalStyles = (props: GlobalStylesProps): ReturnType<ReturnType<typeof css>> =>
-  css({
-    body: {
-      backgroundColor: '#232946',
-    },
-  })(props);
-
-const cloudflareBeaconToken = '511d2ddb672f42599f188f248a7bc403';
-const cloudflareBeaconConfig = JSON.stringify({ token: cloudflareBeaconToken });
-const socialProfileJsonLdScript = JSON.stringify(socialProfileJsonLd);
+const cloudflareBeaconConfig = JSON.stringify({ token: '511d2ddb672f42599f188f248a7bc403' });
+const socialProfileJsonLdScript = JSON.stringify(socialProfileJsonLd).replaceAll(
+  '<',
+  String.raw`\u003c`,
+);
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -35,33 +24,29 @@ export const Route = createRootRoute({
         href: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>',
         rel: 'icon',
       },
+      canonicalLink,
       {
-        crossOrigin: '',
-        href: 'https://fonts.gstatic.com',
-        rel: 'preconnect',
-      },
-      {
-        href: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Mono&display=swap',
+        href: appCss,
         rel: 'stylesheet',
       },
     ],
     meta: [
       {
-        charSet: 'utf8',
+        // oxlint-disable-next-line text-encoding-identifier-case -- the HTML spec label is utf-8
+        charSet: 'utf-8',
       },
       {
         content: 'width=device-width, initial-scale=1',
         name: 'viewport',
       },
+      {
+        content: 'light dark',
+        name: 'color-scheme',
+      },
       ...defaultMeta(),
     ],
-    scripts: [
-      {
-        children: socialProfileJsonLdScript,
-        type: 'application/ld+json',
-      },
-    ],
   }),
+  notFoundComponent: NotFound,
   scripts: () => [
     {
       'data-cf-beacon': cloudflareBeaconConfig,
@@ -72,39 +57,51 @@ export const Route = createRootRoute({
   shellComponent: RootDocument,
 });
 
-function RootComponent(): React.ReactElement {
+function RootComponent(): ReactElement {
+  return <Outlet />;
+}
+
+function NotFound(): ReactElement {
   return (
-    <ComponentProvider>
-      <CustomizationProvider baseTheme="default" theme={PortfolioTheme}>
-        <StylingGlobals styles={getPrismStyles({ theme: PortfolioTheme })} />
-        <StylingGlobals styles={globalStyles({ theme: PortfolioTheme })} />
-        <Box
-          as="main"
-          maxWidth="size90"
-          paddingLeft={['space50', 'space70', 'space0']}
-          paddingRight={['space50', 'space70', 'space0']}
-          paddingTop={['space50', 'space70', 'space170']}
-          style={{
-            marginLeft: 'auto',
-            marginRight: 'auto',
-          }}
-        >
-          <Outlet />
-          <SiteFooter />
-        </Box>
-      </CustomizationProvider>
-    </ComponentProvider>
+    <>
+      <SkipLink />
+      <PageFrame>
+        <main className="outline-none" id="main" tabIndex={-1}>
+          <h1 className="font-serif text-display">Nothing here.</h1>
+          <Row>
+            <p className="mt-8">
+              That page does not exist, or it did once and does not any more.{' '}
+              <Link to="/">Back to the front page</Link>.
+            </p>
+          </Row>
+        </main>
+      </PageFrame>
+    </>
   );
 }
 
-function RootDocument({ children }: { children: React.ReactNode }): React.ReactElement {
+function RootDocument({ children }: { children: ReactNode }): ReactElement {
   return (
     <html lang="en">
       <head>
+        <meta content="#fbfaf6" media="(prefers-color-scheme: light)" name="theme-color" />
+        <meta content="#130e0b" media="(prefers-color-scheme: dark)" name="theme-color" />
+        <link
+          as="font"
+          crossOrigin="anonymous"
+          href={instrumentSerifWoff2}
+          rel="preload"
+          type="font/woff2"
+        />
+        <link as="font" crossOrigin="anonymous" href={interWoff2} rel="preload" type="font/woff2" />
         <HeadContent />
       </head>
       <body>
         {children}
+        <script
+          dangerouslySetInnerHTML={{ __html: socialProfileJsonLdScript }}
+          type="application/ld+json"
+        />
         <Scripts />
       </body>
     </html>

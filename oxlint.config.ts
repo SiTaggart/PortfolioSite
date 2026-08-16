@@ -4,8 +4,9 @@ import { defineConfig } from 'oxlint';
 export default defineConfig({
   extends: [nkzw],
   ignorePatterns: [
-    '.cache/',
-    '.vinxi/',
+    '.ai/',
+    '.output/',
+    '.tanstack/',
     '.wrangler/',
     'dist/',
     'node_modules/',
@@ -19,7 +20,7 @@ export default defineConfig({
       env: {
         browser: true,
       },
-      files: ['cypress/**/*.js', 'cypress.config.ts'],
+      files: ['cypress/**/*.ts', 'cypress.config.ts'],
       globals: {
         cy: 'readonly',
         Cypress: 'readonly',
@@ -33,11 +34,11 @@ export default defineConfig({
         'no-console': 'off',
       },
     },
-    {
-      files: ['theme/prism.ts'],
-      rules: {
-        'perfectionist/sort-objects': 'off',
-      },
-    },
   ],
+  rules: {
+    'typescript/await-thenable': 'error',
+    'typescript/no-floating-promises': 'error',
+    'typescript/no-misused-promises': 'error',
+    'typescript/no-unnecessary-condition': 'error',
+  },
 });
