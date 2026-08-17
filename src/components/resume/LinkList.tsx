@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react';
 
-import type { ElsewhereLink } from '../../content/resume';
+import type { ContactLink } from '../../content/resume';
 
-export function LinkList({ links }: { links: ReadonlyArray<ElsewhereLink> }): ReactElement {
+export function LinkList({ links }: { links: ReadonlyArray<ContactLink> }): ReactElement {
   return (
     <ul className="space-y-3">
       {links.map((link) => (
@@ -10,7 +10,9 @@ export function LinkList({ links }: { links: ReadonlyArray<ElsewhereLink> }): Re
           <span className="font-mono text-label tracking-[0.2em] text-muted-foreground uppercase sm:w-24 sm:shrink-0">
             {link.label}
           </span>
-          <a href={link.href}>{link.display}</a>
+          <a className="tap-target" href={link.href}>
+            {link.display}
+          </a>
         </li>
       ))}
     </ul>

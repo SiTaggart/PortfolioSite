@@ -13,11 +13,12 @@ export function Row({ children, label, labelId }: RowProps): ReactElement {
         <h2
           className="font-mono text-label font-medium tracking-[0.2em] text-muted-foreground uppercase lg:pt-2.5 lg:text-right"
           id={labelId}
+          tabIndex={-1}
         >
           {label}
         </h2>
       )}
-      <div className="lg:col-start-2">{children}</div>
+      <div className="min-w-0 lg:col-start-2">{children}</div>
     </div>
   );
 }

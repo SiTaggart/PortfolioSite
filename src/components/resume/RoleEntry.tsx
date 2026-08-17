@@ -14,6 +14,9 @@ export function RoleEntry({ role }: { role: Role }): ReactElement {
         </p>
       </div>
       {meta ? <p className="mt-1 text-muted-foreground">{meta}</p> : null}
+      {role.progression ? (
+        <p className="mt-1 font-mono text-meta text-muted-foreground">{role.progression}</p>
+      ) : null}
       {role.summary ? <p className="mt-4">{role.summary}</p> : null}
       {role.bullets ? (
         <ul className="bullet-list mt-4 space-y-2">

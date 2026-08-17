@@ -1,33 +1,42 @@
 import { createFileRoute } from '@tanstack/react-router';
 import type { ReactElement } from 'react';
 
-import { Footer } from '../components/resume/Footer';
-import { Header } from '../components/resume/Header';
+import { Hero } from '../components/resume/Hero';
 import { LinkList } from '../components/resume/LinkList';
-import { PageFrame } from '../components/resume/PageFrame';
-import { ProjectEntry } from '../components/resume/ProjectEntry';
+import { PageShell } from '../components/resume/PageShell';
 import { RoleEntry } from '../components/resume/RoleEntry';
 import { Section } from '../components/resume/Section';
-import { SkipLink } from '../components/resume/SkipLink';
+import { WorkEntry } from '../components/resume/WorkEntry';
+import { WritingList } from '../components/resume/WritingList';
 import { resume } from '../content/resume';
-import { defaultMeta } from '../seo';
+import { caseStudies } from '../content/work';
+import { featuredWriting } from '../content/writing';
+import { buildHead, personJsonLd } from '../seo';
+import { currentSite } from '../site';
 
 export const Route = createFileRoute('/')({
   component: Index,
-  head: () => ({
-    meta: defaultMeta('Product Engineer'),
-  }),
+  head: () =>
+    buildHead({
+      description:
+        'Simon Taggart designs and builds data-heavy products, then turns the patterns that work into systems other teams can ship with. Product Engineer at SESCO; previously Twilio, Meta and Salesforce.',
+      path: '/',
+      site: currentSite(),
+      title: 'Product Engineer',
+    }),
 });
 
 function Index(): ReactElement {
   return (
     <>
-      <SkipLink />
-      <PageFrame>
-        <Header />
-        <main className="mt-16 flex flex-col gap-18 outline-none lg:mt-24" id="main" tabIndex={-1}>
-          <Section id="now" label="Now">
-            <RoleEntry role={resume.now} />
+      <PageShell header={<Hero />}>
+        <div className="mt-16 flex flex-col gap-18 lg:mt-24">
+          <Section id="work" label="Selected work">
+            <div className="flex flex-col gap-12">
+              {caseStudies.map((study) => (
+                <WorkEntry key={study.to} study={study} />
+              ))}
+            </div>
           </Section>
           <Section id="experience" label="Experience">
             <div className="flex flex-col gap-12">
@@ -37,12 +46,8 @@ function Index(): ReactElement {
               <RoleEntry role={resume.earlier} />
             </div>
           </Section>
-          <Section id="selected-work" label="Selected work">
-            <div className="flex flex-col gap-8">
-              {resume.projects.map((project) => (
-                <ProjectEntry key={project.name} project={project} />
-              ))}
-            </div>
+          <Section id="writing" label="Writing">
+            <WritingList rows={featuredWriting} />
           </Section>
           <Section id="about" label="About">
             <div className="space-y-5">
@@ -51,12 +56,17 @@ function Index(): ReactElement {
               ))}
             </div>
           </Section>
-          <Section id="elsewhere" label="Elsewhere">
-            <LinkList links={resume.elsewhere} />
+          <Section id="contact" label="Contact">
+            <LinkList links={resume.contact} />
           </Section>
-        </main>
-        <Footer />
-      </PageFrame>
+        </div>
+      </PageShell>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personJsonLd(currentSite())).replaceAll('<', String.raw`\u003c`),
+        }}
+        type="application/ld+json"
+      />
     </>
   );
 }

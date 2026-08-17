@@ -1,20 +1,23 @@
 import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 import instrumentSerifWoff2 from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
-import { HeadContent, Link, Outlet, Scripts, createRootRoute } from '@tanstack/react-router';
-import type { ReactElement, ReactNode } from 'react';
+import {
+  HeadContent,
+  Link,
+  Outlet,
+  Scripts,
+  createRootRoute,
+  useRouter,
+} from '@tanstack/react-router';
+import { type ReactElement, type ReactNode, useEffect } from 'react';
 
-import { PageFrame } from '../components/resume/PageFrame';
+import { PageShell } from '../components/resume/PageShell';
 import { Row } from '../components/resume/Row';
-import { SkipLink } from '../components/resume/SkipLink';
-import { canonicalLink, defaultMeta, socialProfileJsonLd } from '../seo';
+import { pageTitle } from '../seo';
+import { currentSite } from '../site';
 
 import appCss from '../styles.css?url';
 
 const cloudflareBeaconConfig = JSON.stringify({ token: '511d2ddb672f42599f188f248a7bc403' });
-const socialProfileJsonLdScript = JSON.stringify(socialProfileJsonLd).replaceAll(
-  '<',
-  String.raw`\u003c`,
-);
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -24,7 +27,6 @@ export const Route = createRootRoute({
         href: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>',
         rel: 'icon',
       },
-      canonicalLink,
       {
         href: appCss,
         rel: 'stylesheet',
@@ -43,7 +45,8 @@ export const Route = createRootRoute({
         content: 'light dark',
         name: 'color-scheme',
       },
-      ...defaultMeta(),
+      { title: pageTitle() },
+      ...(currentSite().isProduction ? [] : [{ content: 'noindex, nofollow', name: 'robots' }]),
     ],
   }),
   notFoundComponent: NotFound,
@@ -58,25 +61,53 @@ export const Route = createRootRoute({
 });
 
 function RootComponent(): ReactElement {
-  return <Outlet />;
+  return (
+    <>
+      <RouteFocus />
+      <Outlet />
+    </>
+  );
+}
+
+function RouteFocus(): null {
+  const router = useRouter();
+
+  useEffect(
+    () =>
+      router.subscribe('onResolved', ({ fromLocation, toLocation }) => {
+        if (fromLocation?.pathname === toLocation.pathname) {
+          return;
+        }
+
+        const anchor = document.getElementById(toLocation.hash.replace('#', ''));
+
+        if (anchor) {
+          anchor.focus();
+
+          return;
+        }
+
+        globalThis.scrollTo({ behavior: 'instant', left: 0, top: 0 });
+        document.querySelector('main')?.focus({ preventScroll: true });
+      }),
+    [router],
+  );
+
+  return null;
 }
 
 function NotFound(): ReactElement {
   return (
-    <>
-      <SkipLink />
-      <PageFrame>
-        <main className="outline-none" id="main" tabIndex={-1}>
-          <h1 className="font-serif text-display">Nothing here.</h1>
-          <Row>
-            <p className="mt-8">
-              That page does not exist, or it did once and does not any more.{' '}
-              <Link to="/">Back to the front page</Link>.
-            </p>
-          </Row>
-        </main>
-      </PageFrame>
-    </>
+    <PageShell>
+      <h1 className="font-serif text-title">Nothing here.</h1>
+      <Row>
+        <p className="mt-8">
+          That page does not exist, or it did once and does not any more.{' '}
+          <Link to="/">Back to the front page</Link>. There is also{' '}
+          <Link to="/posts">the writing index</Link>.
+        </p>
+      </Row>
+    </PageShell>
   );
 }
 
@@ -98,10 +129,6 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
       </head>
       <body>
         {children}
-        <script
-          dangerouslySetInnerHTML={{ __html: socialProfileJsonLdScript }}
-          type="application/ld+json"
-        />
         <Scripts />
       </body>
     </html>

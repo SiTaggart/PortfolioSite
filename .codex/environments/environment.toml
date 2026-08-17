@@ -19,7 +19,7 @@ command = "bun run build && bun run preview -- --host 127.0.0.1 --port 3000"
 [[actions]]
 name = "CI checks"
 icon = "run"
-command = "bun run ci:checks"
+command = "bun run check && bun run build && bun run smoke:routes"
 
 [[actions]]
 name = "Fast check"
@@ -39,4 +39,4 @@ command = "bun run build && bunx wrangler deploy --dry-run"
 [[actions]]
 name = "Full verification"
 icon = "run"
-command = "bun run ci:checks && bun run cypress:ci && bunx wrangler deploy --dry-run"
+command = "bun run check && bun run build && bun run smoke:routes && bun run cypress:ci && bunx wrangler deploy --dry-run"

@@ -9,38 +9,127 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PostsIndexRouteImport } from './routes/posts/index'
+import { Route as WorkSescoRouteImport } from './routes/work/sesco'
+import { Route as WorkPasteRouteImport } from './routes/work/paste'
+import { Route as WorkAccessibleSystemsRouteImport } from './routes/work/accessible-systems'
+import { Route as PostsSlugRouteImport } from './routes/posts/$slug'
 
+const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
+  id: '/robots.txt',
+  path: '/robots.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PostsIndexRoute = PostsIndexRouteImport.update({
+  id: '/posts/',
+  path: '/posts/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkSescoRoute = WorkSescoRouteImport.update({
+  id: '/work/sesco',
+  path: '/work/sesco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkPasteRoute = WorkPasteRouteImport.update({
+  id: '/work/paste',
+  path: '/work/paste',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WorkAccessibleSystemsRoute = WorkAccessibleSystemsRouteImport.update({
+  id: '/work/accessible-systems',
+  path: '/work/accessible-systems',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PostsSlugRoute = PostsSlugRouteImport.update({
+  id: '/posts/$slug',
+  path: '/posts/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/robots.txt': typeof RobotsDottxtRoute
+  '/posts/$slug': typeof PostsSlugRoute
+  '/work/accessible-systems': typeof WorkAccessibleSystemsRoute
+  '/work/paste': typeof WorkPasteRoute
+  '/work/sesco': typeof WorkSescoRoute
+  '/posts/': typeof PostsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/robots.txt': typeof RobotsDottxtRoute
+  '/posts/$slug': typeof PostsSlugRoute
+  '/work/accessible-systems': typeof WorkAccessibleSystemsRoute
+  '/work/paste': typeof WorkPasteRoute
+  '/work/sesco': typeof WorkSescoRoute
+  '/posts': typeof PostsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/robots.txt': typeof RobotsDottxtRoute
+  '/posts/$slug': typeof PostsSlugRoute
+  '/work/accessible-systems': typeof WorkAccessibleSystemsRoute
+  '/work/paste': typeof WorkPasteRoute
+  '/work/sesco': typeof WorkSescoRoute
+  '/posts/': typeof PostsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/robots.txt'
+    | '/posts/$slug'
+    | '/work/accessible-systems'
+    | '/work/paste'
+    | '/work/sesco'
+    | '/posts/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/robots.txt'
+    | '/posts/$slug'
+    | '/work/accessible-systems'
+    | '/work/paste'
+    | '/work/sesco'
+    | '/posts'
+  id:
+    | '__root__'
+    | '/'
+    | '/robots.txt'
+    | '/posts/$slug'
+    | '/work/accessible-systems'
+    | '/work/paste'
+    | '/work/sesco'
+    | '/posts/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  RobotsDottxtRoute: typeof RobotsDottxtRoute
+  PostsSlugRoute: typeof PostsSlugRoute
+  WorkAccessibleSystemsRoute: typeof WorkAccessibleSystemsRoute
+  WorkPasteRoute: typeof WorkPasteRoute
+  WorkSescoRoute: typeof WorkSescoRoute
+  PostsIndexRoute: typeof PostsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/robots.txt': {
+      id: '/robots.txt'
+      path: '/robots.txt'
+      fullPath: '/robots.txt'
+      preLoaderRoute: typeof RobotsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +137,52 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/posts/': {
+      id: '/posts/'
+      path: '/posts'
+      fullPath: '/posts/'
+      preLoaderRoute: typeof PostsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/sesco': {
+      id: '/work/sesco'
+      path: '/work/sesco'
+      fullPath: '/work/sesco'
+      preLoaderRoute: typeof WorkSescoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/paste': {
+      id: '/work/paste'
+      path: '/work/paste'
+      fullPath: '/work/paste'
+      preLoaderRoute: typeof WorkPasteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/work/accessible-systems': {
+      id: '/work/accessible-systems'
+      path: '/work/accessible-systems'
+      fullPath: '/work/accessible-systems'
+      preLoaderRoute: typeof WorkAccessibleSystemsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/posts/$slug': {
+      id: '/posts/$slug'
+      path: '/posts/$slug'
+      fullPath: '/posts/$slug'
+      preLoaderRoute: typeof PostsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  RobotsDottxtRoute: RobotsDottxtRoute,
+  PostsSlugRoute: PostsSlugRoute,
+  WorkAccessibleSystemsRoute: WorkAccessibleSystemsRoute,
+  WorkPasteRoute: WorkPasteRoute,
+  WorkSescoRoute: WorkSescoRoute,
+  PostsIndexRoute: PostsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
