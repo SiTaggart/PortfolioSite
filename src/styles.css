@@ -87,33 +87,14 @@
   }
 
   .reading-frame {
-    position: relative;
-  }
-
-  .reading-frost {
-    background: color-mix(in oklab, var(--background) 70%, transparent);
-    inset: -1rem -0.25rem;
-    pointer-events: none;
-    position: absolute;
+    background: color-mix(in oklab, var(--background) 62%, transparent);
     -webkit-backdrop-filter: blur(16px) saturate(1.2);
     backdrop-filter: blur(16px) saturate(1.2);
-    z-index: 0;
-  }
-
-  .reading-copy {
-    position: relative;
-    z-index: 1;
-  }
-
-  @media (min-width: 64rem) {
-    .reading-frost {
-      inset: -2rem -2.5rem;
-    }
   }
 
   @media (prefers-reduced-transparency: reduce) {
-    .reading-frost {
-      background: color-mix(in oklab, var(--background) 92%, transparent);
+    .reading-frame {
+      background: var(--background);
       -webkit-backdrop-filter: none;
       backdrop-filter: none;
     }
@@ -335,8 +316,10 @@
     display: none;
   }
 
-  .reading-frost {
-    display: none;
+  .reading-frame {
+    background: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   a {

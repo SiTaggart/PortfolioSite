@@ -45,7 +45,7 @@ float hash(vec2 p) {
 
 void main() {
   vec2 p = (gl_FragCoord.xy - 0.5 * u_res) / min(u_res.x, u_res.y);
-  float column = smoothstep(0.24, 0.82, abs(p.x));
+  float column = mix(0.32, 1.0, smoothstep(0.24, 0.82, abs(p.x)));
   float cell = max(10.0, min(u_res.x, u_res.y) / 70.0);
   vec2 coord = gl_FragCoord.xy / cell;
   vec2 grid = floor(coord);
