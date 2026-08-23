@@ -87,9 +87,9 @@
   }
 
   .reading-frame {
-    -webkit-backdrop-filter: blur(16px) saturate(1.2);
-    backdrop-filter: blur(16px) saturate(1.2);
-    background: color-mix(in oklab, var(--background) 40%, transparent);
+    -webkit-backdrop-filter: blur(6px) saturate(1.2);
+    backdrop-filter: blur(6px) saturate(1.2);
+    background: color-mix(in oklab, var(--background) 60%, transparent);
   }
 
   @media (prefers-reduced-transparency: reduce) {
