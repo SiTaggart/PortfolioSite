@@ -6,17 +6,14 @@ export const paste: CaseStudy = {
   evidence: [
     {
       href: 'https://github.com/twilio-labs/paste',
-      kind: 'external',
       label: 'twilio-labs/paste on GitHub',
     },
     {
       href: 'https://www.twilio.com/en-us/blog/developers/bringing-cohesion-to-the-twilio-product-suite-part-ii',
-      kind: 'external',
       label: 'Bringing Cohesion to the Twilio Product Suite: Part II — Loreina Chew, Twilio',
     },
     {
       href: 'https://github.com/twilio-labs/paste/blob/main/packages/paste-website/src/pages/blog/2024-02-06-paste-2023-year-in-review.mdx',
-      kind: 'external',
       label: 'Paste 2023 – A year in review, source on GitHub',
     },
   ],
@@ -40,8 +37,8 @@ export const paste: CaseStudy = {
       heading: 'What I owned',
       id: 'what-i-owned',
       paragraphs: [
-        'I was product owner and architect from inception: what the system was for, what went into it, how it was built, and how teams got onto it. Alongside that I led the UX Infrastructure organisation — four teams, sixteen people, across UX engineering, product design, content design and design ops.',
-        'Owning both the product and the organisation was the point. A design system fails on adoption far more often than it fails on components, and adoption is a people problem before it is a technical one.',
+        'I was Twilio’s first principal-level front-end engineer, and the first engineer hired onto Paste. The architecture was mine from the start: what went into the system, how it was built, and how teams got onto it. I took over product ownership later, after Aayush Iyer left Twilio. Alongside that I led the UX Infrastructure organisation: four teams, sixteen people, across UX engineering, product design, content design and design ops.',
+        'A design system fails on adoption far more often than it fails on components, and adoption is a people problem before it is a technical one.',
       ],
     },
     {

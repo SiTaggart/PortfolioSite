@@ -1,6 +1,5 @@
 import type { ReactElement, ReactNode } from 'react';
 
-import { Footer } from './Footer';
 import { PageFrame } from './PageFrame';
 import { SkipLink } from './SkipLink';
 
@@ -18,7 +17,6 @@ export function PageShell({ children, header }: PageShellProps): ReactElement {
         <main className="outline-none" id="main" tabIndex={-1}>
           {children}
         </main>
-        <Footer />
       </PageFrame>
     </>
   );

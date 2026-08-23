@@ -6,7 +6,6 @@
     ".tanstack/",
     ".wrangler/",
     "dist/",
-    "src/content/posts/",
     "src/routeTree.gen.ts"
   ],
   "singleQuote": true,

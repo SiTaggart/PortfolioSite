@@ -103,8 +103,7 @@ function NotFound(): ReactElement {
       <Row>
         <p className="mt-8">
           That page does not exist, or it did once and does not any more.{' '}
-          <Link to="/">Back to the front page</Link>. There is also{' '}
-          <Link to="/posts">the writing index</Link>.
+          <Link to="/">Back to the front page</Link>.
         </p>
       </Row>
     </PageShell>

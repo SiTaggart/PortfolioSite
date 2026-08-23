@@ -13,13 +13,12 @@ const routeChecks: Array<RouteCheck> = [
     content: [
       'Simon Taggart',
       'Product Engineer · Redwood City, California',
+      'the components, patterns and systems the screens are built from',
       'Selected work',
-      'SESCO trading platform',
       'Paste and Twilio product unification',
-      'Accessible product systems',
-      'Built for traders, quantitative analysts, meteorologists and researchers.',
       'Experience',
-      'Writing',
+      'About',
+      'sim racing, video games and watch collecting',
       'Contact',
       'Simon Taggart — Product Engineer',
       'application/ld+json',
@@ -30,20 +29,10 @@ const routeChecks: Array<RouteCheck> = [
   },
   {
     content: [
-      'SESCO trading platform',
-      'proprietary commodities trading firm specialising in U.S. electricity markets',
-      'This case study describes the product and design approach',
-      'the expert users are colleagues',
-      'Back to selected work',
-      'Simon Taggart — SESCO trading platform',
-    ],
-    path: '/work/sesco',
-    status: 200,
-  },
-  {
-    content: [
       'Paste and Twilio product unification',
       '35+ teams',
+      'first principal-level front-end engineer',
+      'Aayush Iyer',
       'twilio-labs/paste',
       'Loreina Chew',
       'Back to selected work',
@@ -52,52 +41,11 @@ const routeChecks: Array<RouteCheck> = [
     path: '/work/paste',
     status: 200,
   },
-  {
-    content: [
-      'Accessible product systems',
-      'Lightning Web Components',
-      'Are My Colors Accessible',
-      'color-combos',
-      'Back to selected work',
-      'Simon Taggart — Accessible product systems',
-    ],
-    path: '/work/accessible-systems',
-    status: 200,
-  },
-  {
-    content: [
-      'Writing',
-      'at BigCommerce',
-      'The Living Style Guide Pattern Lab',
-      'Sass Maps for Design Tokens',
-      'Bringing Cohesion to the Twilio Product Suite',
-      'Simon Taggart — Writing',
-    ],
-    path: '/posts',
-    status: 200,
-  },
-  {
-    content: ['at BigCommerce', 'sass-style-guide', 'All writing'],
-    path: '/posts/2016-02-01-how-we-css-at-bigcommerce',
-    status: 200,
-  },
-  {
-    content: ['Sass Maps for Design Tokens', '/panel.png'],
-    path: '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
-    status: 200,
-  },
-  {
-    content: ['The Living Style Guide Pattern Lab', '/switch.png'],
-    path: '/posts/2016-03-04-the-living-styleguide-pattern-lab',
-    status: 200,
-  },
-  {
-    content: ['don’t @ me', '/cascade-css.png'],
-    path: '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
-    status: 200,
-  },
+  { content: ['Nothing here.', 'Back to the front page'], path: '/posts', status: 404 },
   { content: ['Nothing here.'], path: '/posts/2021-01-01-2020-year-in-review', status: 404 },
   { content: ['Nothing here.'], path: '/posts/some-nonsense', status: 404 },
+  { content: ['Nothing here.'], path: '/work/sesco', status: 404 },
+  { content: ['Nothing here.'], path: '/work/accessible-systems', status: 404 },
   { content: ['Nothing here.'], path: '/work/nope', status: 404 },
 ];
 
@@ -107,6 +55,13 @@ const retiredClaims = [
   'sit close by',
   'It is a small team',
   'nobody to hand off to',
+  'Download CV',
+  'I do not recommend the cascade',
+  'meme generator',
+  'the writing index',
+  'I was product owner and architect from inception',
+  'SESCO trading platform',
+  'Accessible product systems',
 ];
 
 const expectedSiteWideHeadContent = [

@@ -7,40 +7,9 @@ interface RouteCase {
 const routes: Array<RouteCase> = [
   { heading: 'Simon Taggart', path: '/', title: 'Simon Taggart — Product Engineer' },
   {
-    heading: 'SESCO trading platform',
-    path: '/work/sesco',
-    title: 'Simon Taggart — SESCO trading platform',
-  },
-  {
     heading: 'Paste and Twilio product unification',
     path: '/work/paste',
     title: 'Simon Taggart — Paste and Twilio product unification',
-  },
-  {
-    heading: 'Accessible product systems',
-    path: '/work/accessible-systems',
-    title: 'Simon Taggart — Accessible product systems',
-  },
-  { heading: 'Writing', path: '/posts', title: 'Simon Taggart — Writing' },
-  {
-    heading: 'How we "CSS" at BigCommerce',
-    path: '/posts/2016-02-01-how-we-css-at-bigcommerce',
-    title: 'Simon Taggart — How we "CSS" at BigCommerce',
-  },
-  {
-    heading: 'How we use Sass Maps for Design Tokens and Developer Happiness',
-    path: '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
-    title: 'Simon Taggart — How we use Sass Maps for Design Tokens and Developer Happiness',
-  },
-  {
-    heading: 'The Living Style Guide Pattern Lab',
-    path: '/posts/2016-03-04-the-living-styleguide-pattern-lab',
-    title: 'Simon Taggart — The Living Style Guide Pattern Lab',
-  },
-  {
-    heading: 'I’m super good at CSS and I don’t recommend the cascade, don’t @ me',
-    path: '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
-    title: 'Simon Taggart — I’m super good at CSS and I don’t recommend the cascade, don’t @ me',
   },
 ];
 
@@ -52,7 +21,6 @@ describe('Every route', () => {
       cy.get('main#main').should('have.length', 1).and('have.attr', 'tabindex', '-1');
       cy.title().should('equal', title);
       cy.get('a[href="#main"]').should('exist');
-      cy.get('footer a[href*="github.com/SiTaggart"]').should('exist');
     });
 
     it(`fits a 320px viewport at ${path}`, () => {
@@ -95,7 +63,7 @@ describe('Homepage', () => {
   });
 
   it('lists the sections in the planned order', () => {
-    const sections = ['Selected work', 'Experience', 'Writing', 'About', 'Contact'];
+    const sections = ['Selected work', 'Experience', 'About', 'Contact'];
 
     cy.get('main section h2').should('have.length', sections.length);
     cy.get('main section h2').each((element, index) => {
@@ -103,19 +71,15 @@ describe('Homepage', () => {
     });
   });
 
-  it('links each case study from selected work', () => {
+  it('links the Paste case study from selected work', () => {
     cy.get('#work')
       .parents('section')
       .within(() => {
-        cy.get('a[href="/work/sesco"]').should('exist');
         cy.get('a[href="/work/paste"]').should('exist');
-        cy.get('a[href="/work/accessible-systems"]').should('exist');
-        cy.contains('a', 'Read case study').should('have.length.at.least', 1);
+        cy.get('a[href="/work/sesco"]').should('not.exist');
+        cy.get('a[href="/work/accessible-systems"]').should('not.exist');
+        cy.contains('a', 'Read case study').should('have.length', 1);
       });
-  });
-
-  it('lists four pieces of writing', () => {
-    cy.get('#writing').parents('section').find('li').should('have.length', 4);
   });
 
   it('hydrates without console errors', () => {
@@ -168,7 +132,7 @@ function expectStayedClientSide(): void {
 }
 
 describe('Client-side navigation', () => {
-  it('reaches the first case study link by keyboard and activates it', () => {
+  it('reaches the case study link by keyboard and activates it', () => {
     visitHydrated('/');
     cy.get('body').then(([body]) => {
       const focusable = [
@@ -180,18 +144,18 @@ describe('Client-side navigation', () => {
       expect(focusable[0], 'skip link comes first in the tab order').to.have.attr('href', '#main');
       expect(
         focusable.findIndex((element) => element.textContent.trim().startsWith('Read case study')),
-        'the first case study link is in the tab order',
+        'the case study link is in the tab order',
       ).to.be.greaterThan(0);
     });
 
     cy.contains('a', 'Read case study').first().focus().should('have.focus');
-    cy.focused().should('have.attr', 'href', '/work/sesco');
+    cy.focused().should('have.attr', 'href', '/work/paste');
     cy.focused().click();
-    expectPath('/work/sesco');
+    expectPath('/work/paste');
     expectStayedClientSide();
     cy.focused().should('match', 'main#main');
     cy.window().its('scrollY').should('equal', 0);
-    cy.contains('h1', 'SESCO trading platform');
+    cy.contains('h1', 'Paste and Twilio product unification');
   });
 
   it('moves focus to main and scrolls to the top after a link navigation', () => {
@@ -204,12 +168,8 @@ describe('Client-side navigation', () => {
     cy.window().its('scrollY').should('equal', 0);
   });
 
-  it('walks prev and next between case studies and back to selected work', () => {
+  it('returns to selected work from the case study', () => {
     visitHydrated('/work/paste');
-    cy.contains('nav a', 'SESCO trading platform').click();
-    expectPath('/work/sesco');
-    cy.contains('nav a', 'Paste and Twilio product unification').click();
-    expectPath('/work/paste');
     cy.contains('nav a', 'Back to selected work').click();
     expectPath('/', '#work');
     cy.focused().should('have.attr', 'id', 'work');
@@ -221,8 +181,8 @@ describe('Client-side navigation', () => {
 
   it('restores the previous page on browser back', () => {
     visitHydrated('/');
-    cy.get('a[href="/work/accessible-systems"]').first().click();
-    cy.contains('h1', 'Accessible product systems');
+    cy.get('a[href="/work/paste"]').first().click();
+    cy.contains('h1', 'Paste and Twilio product unification');
     cy.go('back');
     expectPath('/');
     cy.contains('h1', 'Simon Taggart');
