@@ -28,46 +28,30 @@ float hash(vec2 p) {
   return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
 }
 
-float valueNoise(vec2 p) {
-  vec2 i = floor(p);
-  vec2 f = fract(p);
-  float a = hash(i);
-  float b = hash(i + vec2(1.0, 0.0));
-  float c = hash(i + vec2(0.0, 1.0));
-  float d = hash(i + vec2(1.0, 1.0));
-  vec2 u = f * f * (3.0 - 2.0 * f);
-  return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
-}
-
-float fbm(vec2 p) {
-  float value = 0.0;
-  float amplitude = 0.5;
-  for (int i = 0; i < 5; i++) {
-    value += amplitude * valueNoise(p);
-    p = p * 2.03 + vec2(17.2, 9.4);
-    amplitude *= 0.5;
-  }
-  return value;
-}
-
 void main() {
   vec2 p = (gl_FragCoord.xy - 0.5 * u_res) / min(u_res.x, u_res.y);
-  float time = u_time * 0.012;
-  float column = smoothstep(0.2, 0.7, abs(p.x));
+  float column = smoothstep(0.24, 0.82, abs(p.x));
+  float cell = max(10.0, min(u_res.x, u_res.y) / 70.0);
+  vec2 coord = gl_FragCoord.xy / cell;
+  vec2 grid = floor(coord);
+  vec2 local = fract(coord);
+  float pixel = step(0.2, local.x) * step(0.2, local.y) * step(local.x, 0.8) * step(local.y, 0.8);
 
-  vec2 q = p * 1.15;
-  q += 0.16 * vec2(fbm(q + time), fbm(q + 4.2 - time));
+  vec2 block3 = floor(grid / 3.0);
+  vec2 block5 = floor(grid / 5.0);
+  float square = step(0.86, hash(block3 + 11.0));
+  float slab = step(0.92, hash(block5 + 29.0));
+  float shape = max(square, slab);
 
-  float field = fbm(q * 1.55 + vec2(time * 0.28, -time * 0.18));
-  float band = abs(fract(field * 3.6 + time * 0.05) - 0.5);
-  float contour = smoothstep(0.14, 0.05, band);
+  float travel = grid.x * 0.2 + grid.y * 0.12 - u_time * 1.7;
+  float wave = pow(0.5 + 0.5 * sin(travel), 2.4);
+  float breath = 0.5 + 0.5 * sin(u_time * 0.7 + hash(block3) * 6.2832);
+  float idle = 0.03 + 0.05 * hash(grid);
+  float pulse = mix(idle, 0.62, wave);
+  pulse = mix(pulse, max(pulse, 0.2 + 0.55 * breath), shape);
 
-  vec3 color = u_paper;
-  color = mix(color, u_wash, (0.05 + 0.16 * field) * column);
-  color = mix(color, u_ink, contour * 0.05 * column);
-
-  float grain = hash(gl_FragCoord.xy + vec2(u_time * 40.0, 3.1)) - 0.5;
-  color += grain * 0.012 * mix(0.2, 1.0, column);
+  vec3 glow = mix(u_wash, u_ink, shape);
+  vec3 color = mix(u_paper, glow, pixel * pulse * column);
 
   gl_FragColor = vec4(color, 1.0);
 }
