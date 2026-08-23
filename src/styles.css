@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/dm-sans';
 @import '@fontsource-variable/jetbrains-mono';
-@import '@fontsource/dm-serif-display/400.css';
+@import '@fontsource/instrument-serif/400.css';
 
 :root {
   --background: oklch(0.13 0.032 270);
@@ -24,17 +24,17 @@
   --color-border: var(--border);
   --color-ring: var(--primary);
   --font-sans: 'DM Sans Variable', ui-sans-serif, system-ui, sans-serif;
-  --font-serif: 'DM Serif Display', ui-serif, Georgia, serif;
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
   --text-display: clamp(2.75rem, 7vw, 4.5rem);
   --text-display--line-height: 0.95;
-  --text-display--letter-spacing: -0.025em;
+  --text-display--letter-spacing: -0.015em;
   --text-title: clamp(2rem, 4vw + 0.75rem, 3rem);
   --text-title--line-height: 1.05;
-  --text-title--letter-spacing: -0.02em;
+  --text-title--letter-spacing: -0.012em;
   --text-lead: clamp(1.125rem, 0.55vw + 1rem, 1.3125rem);
   --text-lead--line-height: 1.5;
   --text-heading: clamp(1.25rem, 0.4vw + 1.15rem, 1.35rem);
@@ -115,6 +115,11 @@
     text-wrap: balance;
   }
 
+  .font-serif {
+    font-synthesis: none;
+    font-weight: 400;
+  }
+
   a {
     color: var(--primary);
     text-decoration-line: underline;
@@ -155,6 +160,8 @@
   .prose h3,
   .prose h4 {
     font-family: var(--font-serif);
+    font-synthesis: none;
+    font-weight: 400;
     letter-spacing: -0.005em;
     line-height: 1.25;
     margin-top: 2.5em;
