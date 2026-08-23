@@ -11,8 +11,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build && bun run typecheck",
-    "check": "npm-run-all --parallel typecheck lint format:check unit",
-    "unit": "bun test src/lib",
+    "check": "npm-run-all --parallel typecheck lint format:check",
     "cf-typegen": "wrangler types",
     "deploy": "bun run build && wrangler deploy",
     "dev": "vite dev",

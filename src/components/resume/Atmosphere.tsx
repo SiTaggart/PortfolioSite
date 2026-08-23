@@ -1,6 +1,27 @@
+import { clampGamut, converter, formatHex, parse } from 'culori';
 import { type ReactElement, useEffect, useRef } from 'react';
 
-import { readCssRgb, syncThemeColor } from '../../lib/css-rgb';
+const toRgb = converter('rgb');
+const clampSrgb = clampGamut('rgb');
+
+function readThemeRgb(token: '--background' | '--primary' | '--wash') {
+  const probe = document.createElement('span');
+
+  probe.style.color = `var(${token})`;
+  document.body.append(probe);
+
+  const parsed = parse(getComputedStyle(probe).color);
+
+  probe.remove();
+
+  if (parsed === undefined) {
+    return undefined;
+  }
+
+  const rgb = toRgb(clampSrgb(parsed) ?? parsed);
+
+  return [rgb.r, rgb.g, rgb.b] as const;
+}
 
 const vertexSource = `
 attribute vec2 a_pos;
@@ -142,13 +163,21 @@ export function Atmosphere(): ReactElement {
     gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
 
     const applyPalette = (): void => {
-      const paperRgb = readCssRgb('--background');
-      const inkRgb = readCssRgb('--primary');
-      const washRgb = readCssRgb('--wash');
+      const paperRgb = readThemeRgb('--background');
+      const inkRgb = readThemeRgb('--primary');
+      const washRgb = readThemeRgb('--wash');
 
       if (paperRgb !== undefined) {
         gl.uniform3f(paper, paperRgb[0], paperRgb[1], paperRgb[2]);
-        syncThemeColor(paperRgb);
+
+        const theme = document.querySelector('meta[name="theme-color"]');
+
+        if (theme !== null) {
+          theme.setAttribute(
+            'content',
+            formatHex({ b: paperRgb[2], g: paperRgb[1], mode: 'rgb', r: paperRgb[0] }),
+          );
+        }
       }
 
       if (inkRgb !== undefined) {
