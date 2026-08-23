@@ -34,7 +34,6 @@ const fragmentSource = `
 precision highp float;
 
 uniform vec2 u_res;
-uniform vec2 u_column;
 uniform float u_time;
 uniform vec3 u_paper;
 uniform vec3 u_ink;
@@ -44,7 +43,12 @@ float hash(vec2 p) {
   return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
 }
 
-float pulseAt(vec2 grid) {
+void main() {
+  float cell = max(10.0, min(u_res.x, u_res.y) / 70.0);
+  vec2 coord = gl_FragCoord.xy / cell;
+  vec2 grid = floor(coord);
+  vec2 local = fract(coord);
+  float pixel = step(0.2, local.x) * step(0.2, local.y) * step(local.x, 0.8) * step(local.y, 0.8);
   vec2 block3 = floor(grid / 3.0);
   vec2 block5 = floor(grid / 5.0);
   float square = step(0.86, hash(block3 + 11.0));
@@ -55,45 +59,9 @@ float pulseAt(vec2 grid) {
   float breath = 0.5 + 0.5 * sin(u_time * 0.7 + hash(block3) * 6.2832);
   float idle = 0.03 + 0.05 * hash(grid);
   float pulse = mix(idle, 0.62, wave);
-
-  return mix(pulse, max(pulse, 0.2 + 0.55 * breath), shape);
-}
-
-float fieldAt(vec2 frag, float cell) {
-  vec2 coord = frag / cell;
-  vec2 grid = floor(coord);
-  vec2 local = fract(coord);
-  float pixel = step(0.2, local.x) * step(0.2, local.y) * step(local.x, 0.8) * step(local.y, 0.8);
-
-  return pixel * pulseAt(grid);
-}
-
-void main() {
-  float cell = max(10.0, min(u_res.x, u_res.y) / 70.0);
-  vec2 grid = floor(gl_FragCoord.xy / cell);
-  vec2 block3 = floor(grid / 3.0);
-  vec2 block5 = floor(grid / 5.0);
-  float shape = max(step(0.86, hash(block3 + 11.0)), step(0.92, hash(block5 + 29.0)));
-  float frost = smoothstep(u_column.x, u_column.x + 72.0, gl_FragCoord.x) *
-    (1.0 - smoothstep(u_column.y - 72.0, u_column.y, gl_FragCoord.x));
-  float sharp = fieldAt(gl_FragCoord.xy, cell);
-  float halo = 0.0;
-
-  for (int y = -2; y <= 2; y++) {
-    for (int x = -2; x <= 2; x++) {
-      if (x == 0 && y == 0) {
-        continue;
-      }
-
-      halo += fieldAt(gl_FragCoord.xy + vec2(float(x), float(y)) * cell * 0.55, cell);
-    }
-  }
-
-  halo /= 24.0;
-  float lit = min(1.0, sharp + halo * frost * 0.55);
+  pulse = mix(pulse, max(pulse, 0.2 + 0.55 * breath), shape);
   vec3 glow = mix(u_wash, u_ink, shape);
-  vec3 field = mix(u_paper, glow, lit);
-  vec3 color = mix(field, u_paper, frost * 0.16);
+  vec3 color = mix(u_paper, glow, pixel * pulse);
 
   gl_FragColor = vec4(color, 1.0);
 }
@@ -173,7 +141,6 @@ export function Atmosphere(): ReactElement {
 
     const position = gl.getAttribLocation(program, 'a_pos');
     const resolution = gl.getUniformLocation(program, 'u_res');
-    const column = gl.getUniformLocation(program, 'u_column');
     const time = gl.getUniformLocation(program, 'u_time');
     const paper = gl.getUniformLocation(program, 'u_paper');
     const ink = gl.getUniformLocation(program, 'u_ink');
@@ -217,25 +184,6 @@ export function Atmosphere(): ReactElement {
       }
     };
 
-    const syncColumn = (): void => {
-      if (column === null) {
-        return;
-      }
-
-      const frame = document.querySelector('.reading-frame');
-      const scale = canvas.width / Math.max(1, canvas.clientWidth);
-
-      if (frame === null) {
-        gl.uniform2f(column, 0, canvas.width);
-
-        return;
-      }
-
-      const rect = frame.getBoundingClientRect();
-
-      gl.uniform2f(column, rect.left * scale, rect.right * scale);
-    };
-
     const resize = (): void => {
       const ratio = Math.min(globalThis.devicePixelRatio, 1.75);
       const width = Math.max(1, Math.floor(canvas.clientWidth * ratio));
@@ -248,7 +196,6 @@ export function Atmosphere(): ReactElement {
 
       gl.viewport(0, 0, width, height);
       gl.uniform2f(resolution, width, height);
-      syncColumn();
     };
 
     const draw = (elapsed: number): void => {
