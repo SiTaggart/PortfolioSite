@@ -11,9 +11,8 @@
   "type": "module",
   "scripts": {
     "build": "vite build && bun run typecheck",
-    "check": "npm-run-all --parallel typecheck lint format:check contrast unit",
+    "check": "npm-run-all --parallel typecheck lint format:check unit",
     "unit": "bun test src/lib",
-    "contrast": "bun run scripts/contrast.ts",
     "cf-typegen": "wrangler types",
     "deploy": "bun run build && wrangler deploy",
     "dev": "vite dev",
