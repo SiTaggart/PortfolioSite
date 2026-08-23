@@ -30,7 +30,7 @@ const routeChecks: Array<RouteCheck> = [
   {
     content: [
       'Paste and Twilio product unification',
-      '35+ teams',
+      'every Twilio team was on Paste or adopting it',
       'first principal-level front-end engineer',
       'Aayush Iyer',
       'twilio-labs/paste',

@@ -2,7 +2,7 @@ import type { CaseStudy } from './types';
 
 export const paste: CaseStudy = {
   description:
-    'From first commit to an open-source system adopted across Twilio products and more than 35 teams: architecture, contribution, adoption and unification.',
+    'From first commit to an open-source system adopted across Twilio: architecture, contribution, adoption and unification.',
   evidence: [
     {
       href: 'https://github.com/twilio-labs/paste',
@@ -20,7 +20,7 @@ export const paste: CaseStudy = {
   name: 'Paste and Twilio product unification',
   organisation: 'Twilio',
   outcomes: [
-    'Adopted by 35+ teams across Twilio, including Console and Flex.',
+    'By the time I left, every Twilio team was on Paste or adopting it, including Console and Flex.',
     'Developed in the open as twilio-labs/paste.',
   ],
   role: 'Product owner, architect and UX Infrastructure leader.',
@@ -61,7 +61,7 @@ export const paste: CaseStudy = {
       heading: 'Adoption',
       id: 'adoption',
       paragraphs: [
-        'Paste reached 35+ teams across Twilio, including Console and Flex. Once the component layer was shared, the harder problem came into view: Twilio had acquired Segment and SendGrid, and the combined portfolio did not read as one company’s software. The work that followed, One Twilio, was to unify the design language across those products.',
+        'Adoption did not stop at a handful of early teams. By the time I left, every Twilio team was on Paste or adopting it, including Console and Flex. Once the component layer was shared, the harder problem came into view: Twilio had acquired Segment and SendGrid, and the combined portfolio did not read as one company’s software. The work that followed, One Twilio, was to unify the design language across those products.',
         'The team put numbers on the gap. Product cohesion was rated 2.47 out of 5, and 61.22% of surveyed respondents disagreed that the products looked cohesive. The unified navigation the team proposed was then rated 5 out of 5, unanimously, by around twenty stakeholders. Loreina Chew wrote that research up for the Twilio blog; the work behind it was done by the UX Infrastructure team I led.',
       ],
     },
@@ -74,9 +74,9 @@ export const paste: CaseStudy = {
     },
   ],
   standfirst:
-    'An open source design system for Twilio, from the first commit to adoption across 35+ teams.',
+    'An open source design system for Twilio, from the first commit to adoption across the company.',
   summary:
-    'From first commit to an open-source system adopted across Twilio products and more than 35 teams. Architecture, contribution, adoption and cross-product unification.',
+    'From first commit to an open-source system adopted across Twilio. Architecture, contribution, adoption and cross-product unification.',
   title: 'Paste and Twilio product unification',
   to: '/work/paste',
   years: '2019–2024',
