@@ -123,7 +123,13 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
           rel="preload"
           type="font/woff2"
         />
-        <link as="font" crossOrigin="anonymous" href={dmSansWoff2} rel="preload" type="font/woff2" />
+        <link
+          as="font"
+          crossOrigin="anonymous"
+          href={dmSansWoff2}
+          rel="preload"
+          type="font/woff2"
+        />
         <HeadContent />
       </head>
       <body>
