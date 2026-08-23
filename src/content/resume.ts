@@ -57,7 +57,7 @@ export const resume = {
       end: 'present',
       start: '2025',
       summary:
-        'Own the front end of the trading platform end to end: product decisions, interface design, and the React and TypeScript that ships.',
+        'Own the UI of the trading platform: the components, patterns and systems the screens are built from.',
       title: 'Product Engineer',
     },
     {
