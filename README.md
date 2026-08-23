@@ -41,7 +41,6 @@ bun run dev
 bun run check
 bun run build
 bun run smoke
-bun run cypress:ci
 bunx wrangler deploy --dry-run
 ```
 

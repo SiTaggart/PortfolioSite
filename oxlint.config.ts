@@ -17,18 +17,6 @@ export default defineConfig({
   },
   overrides: [
     {
-      env: {
-        browser: true,
-      },
-      files: ['cypress/**/*.ts', 'cypress.config.ts'],
-      globals: {
-        cy: 'readonly',
-        Cypress: 'readonly',
-        describe: 'readonly',
-        it: 'readonly',
-      },
-    },
-    {
       files: ['scripts/**/*.ts'],
       rules: {
         'no-console': 'off',

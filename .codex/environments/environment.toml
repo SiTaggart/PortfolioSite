@@ -27,11 +27,6 @@ icon = "run"
 command = "bun run check"
 
 [[actions]]
-name = "Cypress CI"
-icon = "run"
-command = "bun run cypress:ci"
-
-[[actions]]
 name = "Cloudflare dry run"
 icon = "run"
 command = "bun run build && bunx wrangler deploy --dry-run"
@@ -39,4 +34,4 @@ command = "bun run build && bunx wrangler deploy --dry-run"
 [[actions]]
 name = "Full verification"
 icon = "run"
-command = "bun run check && bun run build && bun run smoke:routes && bun run cypress:ci && bunx wrangler deploy --dry-run"
+command = "bun run check && bun run build && bun run smoke:routes && bunx wrangler deploy --dry-run"
