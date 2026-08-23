@@ -91,16 +91,27 @@
   }
 
   .reading-frame::before {
-    background: color-mix(in oklab, var(--background) 88%, transparent);
+    background: color-mix(in oklab, var(--background) 78%, transparent);
     content: '';
     inset: -1rem -0.25rem;
+    pointer-events: none;
     position: absolute;
+    -webkit-backdrop-filter: blur(8px) saturate(1.15);
+    backdrop-filter: blur(8px) saturate(1.15);
     z-index: -1;
   }
 
   @media (min-width: 64rem) {
     .reading-frame::before {
       inset: -2rem -2.5rem;
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    .reading-frame::before {
+      background: color-mix(in oklab, var(--background) 92%, transparent);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
     }
   }
 
