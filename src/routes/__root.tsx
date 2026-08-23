@@ -115,8 +115,7 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
   return (
     <html lang="en">
       <head>
-        <meta content="#f3ead8" media="(prefers-color-scheme: light)" name="theme-color" />
-        <meta content="#10161f" media="(prefers-color-scheme: dark)" name="theme-color" />
+        <meta content="#0a0e18" name="theme-color" />
         <link
           as="font"
           crossOrigin="anonymous"

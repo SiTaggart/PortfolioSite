@@ -2,22 +2,10 @@ import { type ReactElement, useEffect, useRef } from 'react';
 
 type Rgb = readonly [number, number, number];
 
-interface Palette {
-  ink: Rgb;
-  paper: Rgb;
-  wash: Rgb;
-}
-
-const lightPalette: Palette = {
-  ink: [0.106, 0.141, 0.2],
-  paper: [0.953, 0.918, 0.847],
-  wash: [0.239, 0.427, 0.416],
-};
-
-const darkPalette: Palette = {
-  ink: [0.847, 0.812, 0.706],
-  paper: [0.063, 0.086, 0.122],
-  wash: [0.369, 0.659, 0.627],
+const palette = {
+  ink: [0.45, 0.96, 1] satisfies Rgb,
+  paper: [0.039, 0.055, 0.094] satisfies Rgb,
+  wash: [0.05, 0.72, 0.82] satisfies Rgb,
 };
 
 const vertexSource = `
@@ -64,23 +52,22 @@ float fbm(vec2 p) {
 
 void main() {
   vec2 p = (gl_FragCoord.xy - 0.5 * u_res) / min(u_res.x, u_res.y);
-  float time = u_time * 0.016;
+  float time = u_time * 0.012;
+  float column = smoothstep(0.2, 0.7, abs(p.x));
 
-  vec2 q = p * 1.25;
-  q += 0.22 * vec2(fbm(q + time), fbm(q + 4.2 - time));
+  vec2 q = p * 1.15;
+  q += 0.16 * vec2(fbm(q + time), fbm(q + 4.2 - time));
 
-  float field = fbm(q * 1.7 + vec2(time * 0.35, -time * 0.22));
-  float band = abs(fract(field * 4.2 + time * 0.08) - 0.5);
-  float contour = smoothstep(0.18, 0.07, band);
+  float field = fbm(q * 1.55 + vec2(time * 0.28, -time * 0.18));
+  float band = abs(fract(field * 3.6 + time * 0.05) - 0.5);
+  float contour = smoothstep(0.14, 0.05, band);
 
-  vec3 color = mix(u_paper, u_wash, 0.16 + 0.32 * field);
-  color = mix(color, u_ink, contour * 0.1);
+  vec3 color = u_paper;
+  color = mix(color, u_wash, (0.05 + 0.16 * field) * column);
+  color = mix(color, u_ink, contour * 0.05 * column);
 
-  float falloff = smoothstep(0.2, 1.2, length(p * vec2(0.72, 1.05)));
-  color = mix(color, u_paper, falloff * 0.42);
-
-  float grain = hash(gl_FragCoord.xy + vec2(u_time * 60.0, 3.1)) - 0.5;
-  color += grain * 0.03;
+  float grain = hash(gl_FragCoord.xy + vec2(u_time * 40.0, 3.1)) - 0.5;
+  color += grain * 0.012 * mix(0.2, 1.0, column);
 
   gl_FragColor = vec4(color, 1.0);
 }
@@ -132,10 +119,6 @@ function createProgram(gl: WebGLRenderingContext): WebGLProgram | undefined {
   return program;
 }
 
-function currentPalette(): Palette {
-  return globalThis.matchMedia('(prefers-color-scheme: dark)').matches ? darkPalette : lightPalette;
-}
-
 function prefersReducedMotion(): boolean {
   return globalThis.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
@@ -181,7 +164,6 @@ export function Atmosphere(): ReactElement {
     gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
 
     const applyPalette = (): void => {
-      const palette = currentPalette();
       gl.uniform3f(paper, palette.paper[0], palette.paper[1], palette.paper[2]);
       gl.uniform3f(ink, palette.ink[0], palette.ink[1], palette.ink[2]);
       gl.uniform3f(wash, palette.wash[0], palette.wash[1], palette.wash[2]);
@@ -210,15 +192,9 @@ export function Atmosphere(): ReactElement {
     resize();
     draw(0);
 
-    const colorScheme = globalThis.matchMedia('(prefers-color-scheme: dark)');
     const motion = globalThis.matchMedia('(prefers-reduced-motion: reduce)');
     const started = performance.now();
     let frame = 0;
-
-    const onColorScheme = (): void => {
-      applyPalette();
-      draw((performance.now() - started) / 1000);
-    };
 
     const tick = (now: number): void => {
       if (document.hidden || prefersReducedMotion()) {
@@ -252,7 +228,6 @@ export function Atmosphere(): ReactElement {
       startLoop();
     };
 
-    colorScheme.addEventListener('change', onColorScheme);
     motion.addEventListener('change', onMotion);
     globalThis.addEventListener('resize', resize);
     document.addEventListener('visibilitychange', onVisibility);
@@ -260,7 +235,6 @@ export function Atmosphere(): ReactElement {
 
     return () => {
       stopLoop();
-      colorScheme.removeEventListener('change', onColorScheme);
       motion.removeEventListener('change', onMotion);
       globalThis.removeEventListener('resize', resize);
       document.removeEventListener('visibilitychange', onVisibility);

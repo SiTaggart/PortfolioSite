@@ -4,28 +4,15 @@
 @import '@fontsource/instrument-serif/400.css';
 
 :root {
-  --background: oklch(0.955 0.028 85);
-  --foreground: oklch(0.2 0.032 265);
-  --muted: oklch(0.92 0.022 85);
-  --muted-foreground: oklch(0.4 0.028 255);
-  --primary: oklch(0.42 0.08 200);
-  --primary-foreground: oklch(0.97 0.02 85);
-  --border: oklch(0.82 0.03 80);
-  --ring: oklch(0.42 0.08 200);
+  --background: oklch(0.13 0.032 270);
+  --foreground: oklch(0.94 0.02 230);
+  --muted: oklch(0.2 0.03 270);
+  --muted-foreground: oklch(0.76 0.04 230);
+  --primary: oklch(0.84 0.18 195);
+  --primary-foreground: oklch(0.13 0.032 270);
+  --border: oklch(0.32 0.06 270);
+  --ring: oklch(0.84 0.18 195);
   --radius: 0.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: oklch(0.155 0.022 260);
-    --foreground: oklch(0.93 0.022 85);
-    --muted: oklch(0.22 0.02 260);
-    --muted-foreground: oklch(0.74 0.028 220);
-    --primary: oklch(0.8 0.09 185);
-    --primary-foreground: oklch(0.155 0.022 260);
-    --border: oklch(0.3 0.024 255);
-    --ring: oklch(0.8 0.09 185);
-  }
 }
 
 @theme inline {
@@ -64,21 +51,21 @@
 
 @layer base {
   html {
-    color-scheme: light dark;
+    color-scheme: dark;
   }
 
   body {
     background-color: var(--background);
     background-image:
       radial-gradient(
-        ellipse 90% 55% at 0% 0%,
-        color-mix(in oklab, var(--primary) 18%, transparent),
+        ellipse 50% 40% at 0% 0%,
+        color-mix(in oklab, var(--primary) 10%, transparent),
         transparent 70%
       ),
       radial-gradient(
-        ellipse 70% 50% at 100% 100%,
-        color-mix(in oklab, var(--foreground) 7%, transparent),
-        transparent 65%
+        ellipse 45% 35% at 100% 100%,
+        color-mix(in oklab, var(--primary) 7%, transparent),
+        transparent 70%
       );
     background-attachment: fixed;
     color: var(--foreground);
@@ -97,6 +84,25 @@
     position: fixed;
     width: 100%;
     z-index: -1;
+  }
+
+  .reading-frame {
+    isolation: isolate;
+    position: relative;
+  }
+
+  .reading-frame::before {
+    background: color-mix(in oklab, var(--background) 88%, transparent);
+    content: '';
+    inset: -1rem -0.25rem;
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media (min-width: 64rem) {
+    .reading-frame::before {
+      inset: -2rem -2.5rem;
+    }
   }
 
   p,
@@ -287,6 +293,10 @@
 }
 
 @media print {
+  html {
+    color-scheme: light;
+  }
+
   :root {
     --background: #ffffff;
     --foreground: #000000;
@@ -303,6 +313,10 @@
 
   .atmosphere {
     display: none;
+  }
+
+  .reading-frame::before {
+    content: none;
   }
 
   a {
