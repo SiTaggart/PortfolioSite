@@ -4,27 +4,27 @@
 @import '@fontsource/instrument-serif/400.css';
 
 :root {
-  --background: oklch(0.985 0.005 90);
-  --foreground: oklch(0.2 0.01 60);
-  --muted: oklch(0.95 0.006 85);
-  --muted-foreground: oklch(0.5 0.01 60);
-  --primary: oklch(0.55 0.16 40);
-  --primary-foreground: oklch(0.99 0.005 90);
-  --border: oklch(0.88 0.008 70);
-  --ring: oklch(0.55 0.16 40);
+  --background: oklch(0.955 0.028 85);
+  --foreground: oklch(0.2 0.032 265);
+  --muted: oklch(0.92 0.022 85);
+  --muted-foreground: oklch(0.4 0.028 255);
+  --primary: oklch(0.42 0.08 200);
+  --primary-foreground: oklch(0.97 0.02 85);
+  --border: oklch(0.82 0.03 80);
+  --ring: oklch(0.42 0.08 200);
   --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: oklch(0.17 0.01 60);
-    --foreground: oklch(0.93 0.005 90);
-    --muted: oklch(0.24 0.01 60);
-    --muted-foreground: oklch(0.65 0.01 60);
-    --primary: oklch(0.75 0.14 45);
-    --primary-foreground: oklch(0.17 0.01 60);
-    --border: oklch(0.3 0.01 60);
-    --ring: oklch(0.75 0.14 45);
+    --background: oklch(0.155 0.022 260);
+    --foreground: oklch(0.93 0.022 85);
+    --muted: oklch(0.22 0.02 260);
+    --muted-foreground: oklch(0.74 0.028 220);
+    --primary: oklch(0.8 0.09 185);
+    --primary-foreground: oklch(0.155 0.022 260);
+    --border: oklch(0.3 0.024 255);
+    --ring: oklch(0.8 0.09 185);
   }
 }
 
@@ -69,12 +69,34 @@
 
   body {
     background-color: var(--background);
+    background-image:
+      radial-gradient(
+        ellipse 90% 55% at 0% 0%,
+        color-mix(in oklab, var(--primary) 18%, transparent),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 70% 50% at 100% 100%,
+        color-mix(in oklab, var(--foreground) 7%, transparent),
+        transparent 65%
+      );
+    background-attachment: fixed;
     color: var(--foreground);
     font-family: var(--font-sans);
     font-size: clamp(1rem, 0.25vw + 0.95rem, 1.0625rem);
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+  }
+
+  .atmosphere {
+    display: block;
+    height: 100%;
+    inset: 0;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
   }
 
   p,
@@ -274,8 +296,13 @@
   }
 
   body {
+    background-image: none;
     font-size: 10.5pt;
     line-height: 1.5;
+  }
+
+  .atmosphere {
+    display: none;
   }
 
   a {

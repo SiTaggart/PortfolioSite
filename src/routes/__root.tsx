@@ -10,6 +10,7 @@ import {
 } from '@tanstack/react-router';
 import { type ReactElement, type ReactNode, useEffect } from 'react';
 
+import { Atmosphere } from '../components/resume/Atmosphere';
 import { PageShell } from '../components/resume/PageShell';
 import { Row } from '../components/resume/Row';
 import { pageTitle } from '../seo';
@@ -114,8 +115,8 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
   return (
     <html lang="en">
       <head>
-        <meta content="#fbfaf6" media="(prefers-color-scheme: light)" name="theme-color" />
-        <meta content="#130e0b" media="(prefers-color-scheme: dark)" name="theme-color" />
+        <meta content="#f3ead8" media="(prefers-color-scheme: light)" name="theme-color" />
+        <meta content="#10161f" media="(prefers-color-scheme: dark)" name="theme-color" />
         <link
           as="font"
           crossOrigin="anonymous"
@@ -127,6 +128,7 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
         <HeadContent />
       </head>
       <body>
+        <Atmosphere />
         {children}
         <Scripts />
       </body>
