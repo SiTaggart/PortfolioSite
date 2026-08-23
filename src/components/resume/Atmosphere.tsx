@@ -3,9 +3,9 @@ import { type ReactElement, useEffect, useRef } from 'react';
 type Rgb = readonly [number, number, number];
 
 const palette = {
-  ink: [0.45, 0.96, 1] satisfies Rgb,
+  ink: [1, 0.32, 0.82] satisfies Rgb,
   paper: [0.039, 0.055, 0.094] satisfies Rgb,
-  wash: [0.05, 0.72, 0.82] satisfies Rgb,
+  wash: [0.62, 0.18, 0.72] satisfies Rgb,
 };
 
 const vertexSource = `

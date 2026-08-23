@@ -5,13 +5,13 @@
 
 :root {
   --background: oklch(0.13 0.032 270);
-  --foreground: oklch(0.94 0.02 230);
-  --muted: oklch(0.2 0.03 270);
-  --muted-foreground: oklch(0.76 0.04 230);
-  --primary: oklch(0.84 0.18 195);
+  --foreground: oklch(0.94 0.018 310);
+  --muted: oklch(0.2 0.03 300);
+  --muted-foreground: oklch(0.76 0.035 310);
+  --primary: oklch(0.78 0.22 335);
   --primary-foreground: oklch(0.13 0.032 270);
-  --border: oklch(0.32 0.06 270);
-  --ring: oklch(0.84 0.18 195);
+  --border: oklch(0.32 0.06 310);
+  --ring: oklch(0.78 0.22 335);
   --radius: 0.5rem;
 }
 
