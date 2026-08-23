@@ -11,7 +11,8 @@
   "type": "module",
   "scripts": {
     "build": "vite build && bun run typecheck",
-    "check": "npm-run-all --parallel typecheck lint format:check contrast",
+    "check": "npm-run-all --parallel typecheck lint format:check contrast unit",
+    "unit": "bun test src/lib",
     "contrast": "bun run scripts/contrast.ts",
     "cf-typegen": "wrangler types",
     "cypress": "start-server-and-test 'bun run preview -- --host 127.0.0.1 --port 4173 --strictPort' http://127.0.0.1:4173 'bun run cypress:open'",
