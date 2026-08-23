@@ -6,12 +6,11 @@
 :root {
   --background: oklch(0.13 0.032 270);
   --foreground: oklch(0.94 0.018 310);
-  --muted: oklch(0.2 0.03 300);
   --muted-foreground: oklch(0.76 0.035 310);
   --primary: oklch(0.78 0.22 335);
-  --primary-foreground: oklch(0.13 0.032 270);
-  --border: oklch(0.32 0.06 310);
-  --ring: oklch(0.78 0.22 335);
+  --muted: color-mix(in oklab, var(--foreground) 9%, var(--background));
+  --border: color-mix(in oklab, var(--foreground) 24%, var(--background));
+  --wash: color-mix(in oklab, var(--primary) 42%, var(--background));
   --radius: 0.5rem;
 }
 
@@ -21,9 +20,9 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-foreground: var(--background);
   --color-border: var(--border);
-  --color-ring: var(--ring);
+  --color-ring: var(--primary);
   --font-sans: 'DM Sans Variable', ui-sans-serif, system-ui, sans-serif;
   --font-serif: 'DM Serif Display', ui-serif, Georgia, serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
@@ -133,13 +132,13 @@
 
   :focus-visible {
     border-radius: 1px;
-    outline: 2px solid var(--ring);
+    outline: 2px solid var(--primary);
     outline-offset: 2px;
   }
 
   ::selection {
     background-color: var(--primary);
-    color: var(--primary-foreground);
+    color: var(--background);
   }
 }
 
@@ -302,7 +301,6 @@
     --foreground: #000000;
     --muted-foreground: #3a3a3a;
     --primary: #000000;
-    --border: #cccccc;
   }
 
   body {

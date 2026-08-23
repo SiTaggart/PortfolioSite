@@ -1,12 +1,6 @@
 import { type ReactElement, useEffect, useRef } from 'react';
 
-type Rgb = readonly [number, number, number];
-
-const palette = {
-  ink: [1, 0.32, 0.82] satisfies Rgb,
-  paper: [0.039, 0.055, 0.094] satisfies Rgb,
-  wash: [0.62, 0.18, 0.72] satisfies Rgb,
-};
+import { readCssRgb, syncThemeColor } from '../../lib/css-rgb';
 
 const vertexSource = `
 attribute vec2 a_pos;
@@ -148,9 +142,18 @@ export function Atmosphere(): ReactElement {
     gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
 
     const applyPalette = (): void => {
-      gl.uniform3f(paper, palette.paper[0], palette.paper[1], palette.paper[2]);
-      gl.uniform3f(ink, palette.ink[0], palette.ink[1], palette.ink[2]);
-      gl.uniform3f(wash, palette.wash[0], palette.wash[1], palette.wash[2]);
+      const paperRgb = readCssRgb('--background');
+      const inkRgb = readCssRgb('--primary');
+      const washRgb = readCssRgb('--wash');
+
+      if (paperRgb === undefined || inkRgb === undefined || washRgb === undefined) {
+        return;
+      }
+
+      gl.uniform3f(paper, paperRgb[0], paperRgb[1], paperRgb[2]);
+      gl.uniform3f(ink, inkRgb[0], inkRgb[1], inkRgb[2]);
+      gl.uniform3f(wash, washRgb[0], washRgb[1], washRgb[2]);
+      syncThemeColor(paperRgb);
     };
 
     const resize = (): void => {
