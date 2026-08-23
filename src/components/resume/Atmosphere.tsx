@@ -146,14 +146,18 @@ export function Atmosphere(): ReactElement {
       const inkRgb = readCssRgb('--primary');
       const washRgb = readCssRgb('--wash');
 
-      if (paperRgb === undefined || inkRgb === undefined || washRgb === undefined) {
-        return;
+      if (paperRgb !== undefined) {
+        gl.uniform3f(paper, paperRgb[0], paperRgb[1], paperRgb[2]);
+        syncThemeColor(paperRgb);
       }
 
-      gl.uniform3f(paper, paperRgb[0], paperRgb[1], paperRgb[2]);
-      gl.uniform3f(ink, inkRgb[0], inkRgb[1], inkRgb[2]);
-      gl.uniform3f(wash, washRgb[0], washRgb[1], washRgb[2]);
-      syncThemeColor(paperRgb);
+      if (inkRgb !== undefined) {
+        gl.uniform3f(ink, inkRgb[0], inkRgb[1], inkRgb[2]);
+      }
+
+      if (washRgb !== undefined) {
+        gl.uniform3f(wash, washRgb[0], washRgb[1], washRgb[2]);
+      }
     };
 
     const resize = (): void => {

@@ -22,3 +22,11 @@ test('parses oklch with deg and alpha, which some engines serialize', () => {
 test('parses rgb used values', () => {
   expect(parseCssRgb('rgb(4, 6, 20)')).toEqual([4 / 255, 6 / 255, 20 / 255]);
 });
+
+test('parses the oklab form Chrome returns for color-mix wash', () => {
+  const wash = parseCssRgb('oklab(0.403 0.0837428 -0.0576099)');
+
+  expect(wash).toBeDefined();
+  expect(wash?.[0]).toBeGreaterThan(0.2);
+  expect(wash?.[2]).toBeGreaterThan(wash?.[1] ?? 1);
+});

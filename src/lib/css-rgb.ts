@@ -68,10 +68,7 @@ function hueToDegrees(value: number, unit: string | undefined): number {
   return value;
 }
 
-function oklchToSrgb(lightness: number, chroma: number, hue: number): Rgb {
-  const radians = (hue * Math.PI) / 180;
-  const a = chroma * Math.cos(radians);
-  const b = chroma * Math.sin(radians);
+function oklabToSrgb(lightness: number, a: number, b: number): Rgb {
   const l_ = lightness + 0.396_337_777_4 * a + 0.215_803_757_3 * b;
   const m_ = lightness - 0.105_561_345_8 * a - 0.063_854_172_8 * b;
   const s_ = lightness - 0.089_484_177_5 * a - 1.291_485_548 * b;
@@ -90,6 +87,32 @@ function oklchToSrgb(lightness: number, chroma: number, hue: number): Rgb {
       linearToEncoded(clamp01(-0.004_196_086_3 * l - 0.703_418_614_7 * m + 1.707_614_701 * s)),
     ),
   ];
+}
+
+function oklchToSrgb(lightness: number, chroma: number, hue: number): Rgb {
+  const radians = (hue * Math.PI) / 180;
+
+  return oklabToSrgb(lightness, chroma * Math.cos(radians), chroma * Math.sin(radians));
+}
+
+function parseOklab(value: string): Rgb | undefined {
+  const match = /^oklab\(\s*([\d.]+)(%?)\s+(-?[\d.]+)\s+(-?[\d.]+)(?:\s*\/\s*[\d.]+%?)?\s*\)$/.exec(
+    value,
+  );
+
+  if (match === null) {
+    return undefined;
+  }
+
+  const lightness = Number(match[1]);
+  const a = Number(match[3]);
+  const b = Number(match[4]);
+
+  if (![lightness, a, b].every(Number.isFinite)) {
+    return undefined;
+  }
+
+  return oklabToSrgb(match[2] === '%' ? lightness / 100 : lightness, a, b);
 }
 
 function parseOklch(value: string): Rgb | undefined {
@@ -131,7 +154,7 @@ export function parseCssRgb(value: string): Rgb | undefined {
     return rgb(parseUnit(srgbMatch[1]), parseUnit(srgbMatch[2]), parseUnit(srgbMatch[3]));
   }
 
-  return parseOklch(source);
+  return parseOklch(source) ?? parseOklab(source);
 }
 
 function rasterizeCssColor(value: string): Rgb | undefined {
