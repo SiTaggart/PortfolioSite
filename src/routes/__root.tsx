@@ -1,5 +1,5 @@
-import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
-import instrumentSerifWoff2 from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
+import dmSansWoff2 from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url';
+import dmSerifDisplayWoff2 from '@fontsource/dm-serif-display/files/dm-serif-display-latin-400-normal.woff2?url';
 import {
   HeadContent,
   Link,
@@ -119,11 +119,11 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
         <link
           as="font"
           crossOrigin="anonymous"
-          href={instrumentSerifWoff2}
+          href={dmSerifDisplayWoff2}
           rel="preload"
           type="font/woff2"
         />
-        <link as="font" crossOrigin="anonymous" href={interWoff2} rel="preload" type="font/woff2" />
+        <link as="font" crossOrigin="anonymous" href={dmSansWoff2} rel="preload" type="font/woff2" />
         <HeadContent />
       </head>
       <body>
