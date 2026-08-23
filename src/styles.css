@@ -87,16 +87,12 @@
   }
 
   .reading-frame {
-    background: color-mix(in oklab, var(--background) 62%, transparent);
-    -webkit-backdrop-filter: blur(16px) saturate(1.2);
-    backdrop-filter: blur(16px) saturate(1.2);
+    background: color-mix(in oklab, var(--background) 36%, transparent);
   }
 
   @media (prefers-reduced-transparency: reduce) {
     .reading-frame {
       background: var(--background);
-      -webkit-backdrop-filter: none;
-      backdrop-filter: none;
     }
   }
 
@@ -318,8 +314,6 @@
 
   .reading-frame {
     background: none;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
   }
 
   a {
