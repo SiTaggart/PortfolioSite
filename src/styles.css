@@ -50,11 +50,12 @@
 
 @layer base {
   html {
+    background-color: var(--background);
     color-scheme: dark;
   }
 
   body {
-    background-color: var(--background);
+    background-color: transparent;
     background-image:
       radial-gradient(
         ellipse 50% 40% at 0% 0%,
@@ -86,29 +87,32 @@
   }
 
   .reading-frame {
-    isolation: isolate;
     position: relative;
   }
 
-  .reading-frame::before {
-    background: color-mix(in oklab, var(--background) 78%, transparent);
-    content: '';
+  .reading-frost {
+    background: color-mix(in oklab, var(--background) 70%, transparent);
     inset: -1rem -0.25rem;
     pointer-events: none;
     position: absolute;
-    -webkit-backdrop-filter: blur(8px) saturate(1.15);
-    backdrop-filter: blur(8px) saturate(1.15);
-    z-index: -1;
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    backdrop-filter: blur(16px) saturate(1.2);
+    z-index: 0;
+  }
+
+  .reading-copy {
+    position: relative;
+    z-index: 1;
   }
 
   @media (min-width: 64rem) {
-    .reading-frame::before {
+    .reading-frost {
       inset: -2rem -2.5rem;
     }
   }
 
   @media (prefers-reduced-transparency: reduce) {
-    .reading-frame::before {
+    .reading-frost {
       background: color-mix(in oklab, var(--background) 92%, transparent);
       -webkit-backdrop-filter: none;
       backdrop-filter: none;
@@ -331,8 +335,8 @@
     display: none;
   }
 
-  .reading-frame::before {
-    content: none;
+  .reading-frost {
+    display: none;
   }
 
   a {
