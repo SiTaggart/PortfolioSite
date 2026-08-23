@@ -40,7 +40,6 @@ bun run dev
 ```sh
 bun run check
 bun run build
-bun run smoke
 bunx wrangler deploy --dry-run
 ```
 

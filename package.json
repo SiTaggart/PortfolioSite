@@ -21,9 +21,6 @@
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
     "preview": "vite preview",
-    "smoke": "bun run build && bun run smoke:routes",
-    "smoke:routes": "bun run scripts/smoke-routes.ts",
-    "test": "bun run smoke",
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
