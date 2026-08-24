@@ -6,14 +6,16 @@ with oxlint and oxfmt, type-checked with tsgo.
 
 ## Routes
 
-| Route         | Content                                                   |
-| ------------- | --------------------------------------------------------- |
-| `/`           | Hero, selected work, experience, about and contact        |
-| `/work/paste` | Paste and Twilio product unification case study           |
-| `/robots.txt` | Server route: allows crawling on the production host only |
+| Route          | Content                                                   |
+| -------------- | --------------------------------------------------------- |
+| `/`            | Hero, selected work, experience, about and contact        |
+| `/work/paste`  | Paste and Twilio product unification case study           |
+| `/robots.txt`  | Server route: allows crawling on the production host only |
+| `/sitemap.xml` | Server route: the case studies plus the front page        |
 
-`public/sitemap.xml` lists the production URLs. Metadata, canonical URLs and
-`robots.txt` are environment aware; see `src/seo.ts` and `src/site.ts`.
+Metadata, canonical URLs, `robots.txt` and `sitemap.xml` are all environment
+aware, so preview deployments never advertise themselves or point at
+production. See `src/seo.ts` and `src/site.ts`.
 
 ## Content
 
