@@ -11,7 +11,7 @@ import { FeaturePost } from '../components/FeaturedPost';
 import { SiteMainHeading } from '../components/SiteMainHeading';
 import { SiteSubHeading } from '../components/SiteSubHeading';
 import { posts } from '../content/posts';
-import { defaultMeta } from '../seo';
+import { canonicalUrl, defaultMeta } from '../seo';
 
 const employmentStartYear = 2004;
 const yearsOfExperience = new Date().getFullYear() - employmentStartYear;
@@ -19,12 +19,13 @@ const yearsOfExperience = new Date().getFullYear() - employmentStartYear;
 export const Route = createFileRoute('/')({
   component: Index,
   head: () => ({
+    links: [{ href: canonicalUrl('/'), rel: 'canonical' }],
     meta: defaultMeta('Hi'),
   }),
 });
 
 function Index(): React.ReactElement {
-  const latestPost = posts.at(0)?.meta;
+  const latestPost = posts.at(0);
 
   return (
     <>

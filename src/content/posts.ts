@@ -1,30 +1,41 @@
 import type React from 'react';
 
-import type { MetaDataShape } from '../types';
+import type { PostMeta } from '../types';
 
 interface PostModule {
   default: React.ComponentType;
-  meta: MetaDataShape;
+  meta: PostMeta;
 }
 
 export interface BlogPost {
   Component: React.ComponentType;
-  meta: MetaDataShape;
+  meta: PostMeta;
+  slug: string;
 }
 
 const postModules = import.meta.glob<PostModule>('./posts/*/index.mdx', {
   eager: true,
 });
 
-export const posts: Array<BlogPost> = Object.values(postModules)
-  .map((module) => ({
+// A post's directory name is its published URL, so it is the only slug.
+function slugFromModulePath(path: string): string {
+  return path.replace('./posts/', '').replace('/index.mdx', '');
+}
+
+export const posts: Array<BlogPost> = Object.entries(postModules)
+  .map(([path, module]) => ({
     Component: module.default,
     meta: module.meta,
+    slug: slugFromModulePath(path),
   }))
   .sort((a, b) => b.meta.date.localeCompare(a.meta.date));
 
-export function getPostBySlug(slug: string): BlogPost | undefined {
-  const normalizedSlug = slug.startsWith('/posts/') ? slug : `/posts/${slug}`;
+const postsBySlug = new Map(posts.map((post) => [post.slug, post]));
 
-  return posts.find(({ meta }) => meta.slug === normalizedSlug);
+export function getPostBySlug(slug: string): BlogPost | undefined {
+  return postsBySlug.get(slug);
+}
+
+export function postPath(slug: string): string {
+  return `/posts/${slug}`;
 }

@@ -3,25 +3,21 @@ import { Text } from '@twilio-paste/core/text';
 import type React from 'react';
 
 import { formatPostDate } from '../content/formatPostDate';
+import type { PostMeta } from '../types';
 import { AppLink } from './AppLink';
 
 interface FeaturedPostProps {
   headingLevel?: 'h2' | 'h3';
   post: {
-    date: string;
-    description: string;
+    meta: PostMeta;
     slug: string;
-    title: string;
   };
 }
 
-function routeSlug(slug: string): string {
-  const postsPrefix = '/posts/';
-
-  return slug.startsWith(postsPrefix) ? slug.slice(postsPrefix.length) : slug;
-}
-
-export function FeaturePost({ headingLevel = 'h2', post }: FeaturedPostProps): React.ReactElement {
+export function FeaturePost({
+  headingLevel = 'h2',
+  post: { meta, slug },
+}: FeaturedPostProps): React.ReactElement {
   return (
     <Box
       borderColor="colorBorder"
@@ -36,8 +32,8 @@ export function FeaturePost({ headingLevel = 'h2', post }: FeaturedPostProps): R
         fontWeight="fontWeightNormal"
         lineHeight="lineHeight50"
       >
-        <AppLink params={{ slug: routeSlug(post.slug) }} to="/posts/$slug">
-          {post.title}
+        <AppLink params={{ slug }} to="/posts/$slug">
+          {meta.title}
         </AppLink>
       </Text>
       <Text
@@ -47,10 +43,10 @@ export function FeaturePost({ headingLevel = 'h2', post }: FeaturedPostProps): R
         lineHeight="lineHeight30"
         marginBottom="space20"
       >
-        {formatPostDate(post.date)}
+        {formatPostDate(meta.date)}
       </Text>
       <Text as="p" fontSize="fontSize30" lineHeight="lineHeight30">
-        {post.description}
+        {meta.description}
       </Text>
     </Box>
   );

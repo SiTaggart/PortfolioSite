@@ -1,4 +1,4 @@
-import type { MetaDataShape } from './types';
+import type { PostMeta } from './types';
 
 const siteUrl = 'https://www.simontaggart.com';
 const defaultSeoConfig = {
@@ -29,7 +29,11 @@ interface MetaDescriptor {
   title?: string;
 }
 
-export function pageTitle(title?: string): string {
+export function canonicalUrl(path: string): string {
+  return `${siteUrl}${path}`;
+}
+
+function pageTitle(title?: string): string {
   if (!title) {
     return defaultSeoConfig.title;
   }
@@ -60,13 +64,11 @@ export function defaultMeta(
   ];
 }
 
-export function postMeta(post: MetaDataShape): Array<MetaDescriptor> {
-  const url = `${siteUrl}${post.slug}`;
-
+export function postMeta(post: PostMeta, path: string): Array<MetaDescriptor> {
   return [
     ...defaultMeta(post.title, post.description),
     { content: 'article', property: 'og:type' },
-    { content: url, property: 'og:url' },
+    { content: canonicalUrl(path), property: 'og:url' },
     { content: new Date(post.date).toISOString().slice(0, 10), property: 'article:published_time' },
   ];
 }

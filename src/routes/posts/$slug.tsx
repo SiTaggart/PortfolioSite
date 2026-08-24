@@ -1,8 +1,8 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
 import type React from 'react';
 
-import { getPostBySlug } from '../../content/posts';
-import { postMeta } from '../../seo';
+import { getPostBySlug, postPath } from '../../content/posts';
+import { canonicalUrl, postMeta } from '../../seo';
 
 export const Route = createFileRoute('/posts/$slug')({
   component: PostRoute,
@@ -13,24 +13,19 @@ export const Route = createFileRoute('/posts/$slug')({
       return {};
     }
 
+    const path = postPath(post.slug);
+
     return {
-      links: [
-        {
-          href: `https://www.simontaggart.com${post.meta.slug}`,
-          rel: 'canonical',
-        },
-      ],
-      meta: postMeta(post.meta),
+      links: [{ href: canonicalUrl(path), rel: 'canonical' }],
+      meta: postMeta(post.meta, path),
     };
   },
+  // Only a rejection from the loader makes the server respond 404; throwing
+  // from the component alone still renders the not-found page with a 200.
   loader: ({ params }) => {
-    const post = getPostBySlug(params.slug);
-
-    if (!post) {
+    if (!getPostBySlug(params.slug)) {
       throw notFound();
     }
-
-    return post.meta;
   },
 });
 
@@ -42,7 +37,5 @@ function PostRoute(): React.ReactElement {
     throw notFound();
   }
 
-  const { Component } = post;
-
-  return <Component />;
+  return <post.Component />;
 }
