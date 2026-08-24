@@ -50,7 +50,7 @@ export function defaultMeta(
   return [
     { title: resolvedTitle },
     { content: description, name: 'description' },
-    { content: 'Simon Taggart', property: 'author' },
+    { content: 'Simon Taggart', name: 'author' },
     { content: defaultSeoConfig.openGraph.type, property: 'og:type' },
     { content: defaultSeoConfig.openGraph.locale, property: 'og:locale' },
     { content: defaultSeoConfig.openGraph.siteName, property: 'og:site_name' },
