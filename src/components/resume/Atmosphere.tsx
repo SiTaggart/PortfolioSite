@@ -4,7 +4,9 @@ import { type ReactElement, useEffect, useRef } from 'react';
 const toRgb = converter('rgb');
 const clampSrgb = clampGamut('rgb');
 
-function readThemeRgb(token: '--background' | '--primary' | '--wash') {
+function readThemeRgb(
+  token: '--background' | '--primary' | '--wash',
+): readonly [number, number, number] | undefined {
   const probe = document.createElement('span');
 
   probe.style.color = `var(${token})`;
@@ -95,6 +97,14 @@ function createProgram(gl: WebGLRenderingContext): WebGLProgram | undefined {
   const fragment = compileShader(gl, gl.FRAGMENT_SHADER, fragmentSource);
 
   if (vertex === undefined || fragment === undefined) {
+    if (vertex !== undefined) {
+      gl.deleteShader(vertex);
+    }
+
+    if (fragment !== undefined) {
+      gl.deleteShader(fragment);
+    }
+
     return undefined;
   }
 
@@ -103,6 +113,8 @@ function createProgram(gl: WebGLRenderingContext): WebGLProgram | undefined {
   gl.attachShader(program, vertex);
   gl.attachShader(program, fragment);
   gl.linkProgram(program);
+  gl.deleteShader(vertex);
+  gl.deleteShader(fragment);
 
   if (gl.getProgramParameter(program, gl.LINK_STATUS) !== true) {
     gl.deleteProgram(program);
@@ -140,16 +152,19 @@ export function Atmosphere(): ReactElement {
     }
 
     const position = gl.getAttribLocation(program, 'a_pos');
+
+    if (position < 0) {
+      gl.deleteProgram(program);
+
+      return;
+    }
+
     const resolution = gl.getUniformLocation(program, 'u_res');
     const time = gl.getUniformLocation(program, 'u_time');
     const paper = gl.getUniformLocation(program, 'u_paper');
     const ink = gl.getUniformLocation(program, 'u_ink');
     const wash = gl.getUniformLocation(program, 'u_wash');
     const buffer = gl.createBuffer();
-
-    if (position < 0) {
-      return;
-    }
 
     gl.useProgram(program);
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);

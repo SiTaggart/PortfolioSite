@@ -56,7 +56,6 @@ export function buildHead({
       { title: resolvedTitle },
       { content: description, name: 'description' },
       { content: siteName, name: 'author' },
-      ...(site.isProduction ? [] : [{ content: 'noindex, nofollow', name: 'robots' }]),
       { content: ogType, property: 'og:type' },
       { content: 'en_US', property: 'og:locale' },
       { content: siteName, property: 'og:site_name' },
