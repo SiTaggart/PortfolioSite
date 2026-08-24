@@ -1,8 +1,9 @@
-export type CaseStudyPath = '/work/accessible-systems' | '/work/paste' | '/work/sesco';
+export type CaseStudyPath = '/work/paste';
 
-export type EvidenceLink =
-  | { href: string; kind: 'external'; label: string }
-  | { kind: 'post'; label: string; slug: string };
+export interface EvidenceLink {
+  href: string;
+  label: string;
+}
 
 export interface CaseStudySection {
   heading: string;

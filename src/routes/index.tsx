@@ -7,10 +7,8 @@ import { PageShell } from '../components/resume/PageShell';
 import { RoleEntry } from '../components/resume/RoleEntry';
 import { Section } from '../components/resume/Section';
 import { WorkEntry } from '../components/resume/WorkEntry';
-import { WritingList } from '../components/resume/WritingList';
 import { resume } from '../content/resume';
 import { caseStudies } from '../content/work';
-import { featuredWriting } from '../content/writing';
 import { buildHead, personJsonLd } from '../seo';
 import { currentSite } from '../site';
 
@@ -45,9 +43,6 @@ function Index(): ReactElement {
               ))}
               <RoleEntry role={resume.earlier} />
             </div>
-          </Section>
-          <Section id="writing" label="Writing">
-            <WritingList rows={featuredWriting} />
           </Section>
           <Section id="about" label="About">
             <div className="space-y-5">

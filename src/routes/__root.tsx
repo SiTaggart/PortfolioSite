@@ -1,4 +1,4 @@
-import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import dmSansWoff2 from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url';
 import instrumentSerifWoff2 from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
 import {
   HeadContent,
@@ -10,6 +10,7 @@ import {
 } from '@tanstack/react-router';
 import { type ReactElement, type ReactNode, useEffect } from 'react';
 
+import { Atmosphere } from '../components/resume/Atmosphere';
 import { PageShell } from '../components/resume/PageShell';
 import { Row } from '../components/resume/Row';
 import { pageTitle } from '../seo';
@@ -24,8 +25,20 @@ export const Route = createRootRoute({
   head: () => ({
     links: [
       {
-        href: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>',
+        href: '/favicon.svg',
         rel: 'icon',
+        type: 'image/svg+xml',
+      },
+      {
+        href: '/favicon-32.png',
+        rel: 'icon',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+      {
+        href: '/apple-touch-icon.png',
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
       },
       {
         href: appCss,
@@ -103,8 +116,7 @@ function NotFound(): ReactElement {
       <Row>
         <p className="mt-8">
           That page does not exist, or it did once and does not any more.{' '}
-          <Link to="/">Back to the front page</Link>. There is also{' '}
-          <Link to="/posts">the writing index</Link>.
+          <Link to="/">Back to the front page</Link>.
         </p>
       </Row>
     </PageShell>
@@ -115,8 +127,7 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
   return (
     <html lang="en">
       <head>
-        <meta content="#fbfaf6" media="(prefers-color-scheme: light)" name="theme-color" />
-        <meta content="#130e0b" media="(prefers-color-scheme: dark)" name="theme-color" />
+        <meta content="#040614" name="theme-color" />
         <link
           as="font"
           crossOrigin="anonymous"
@@ -124,10 +135,17 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
           rel="preload"
           type="font/woff2"
         />
-        <link as="font" crossOrigin="anonymous" href={interWoff2} rel="preload" type="font/woff2" />
+        <link
+          as="font"
+          crossOrigin="anonymous"
+          href={dmSansWoff2}
+          rel="preload"
+          type="font/woff2"
+        />
         <HeadContent />
       </head>
       <body>
+        <Atmosphere />
         {children}
         <Scripts />
       </body>

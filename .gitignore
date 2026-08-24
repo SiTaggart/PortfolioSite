@@ -18,10 +18,6 @@ bun-error.log*
 .env.test.local
 .env.production.local
 
-# cypress
-cypress/videos/
-cypress/screenshots/
-
 # cloudflare
 .wrangler/
 worker-configuration.d.ts

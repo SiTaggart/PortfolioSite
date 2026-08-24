@@ -18,7 +18,6 @@ export interface ContactLink {
 export interface Resume {
   about: ReadonlyArray<string>;
   contact: ReadonlyArray<ContactLink>;
-  cvUrl: string;
   descriptor: string;
   earlier: Role;
   experience: ReadonlyArray<Role>;
@@ -26,12 +25,10 @@ export interface Resume {
   name: string;
 }
 
-const cvUrl = 'https://drive.google.com/file/d/10wZqDNx7ge4lqm9b07_f7PGH7oWYBdK9/view';
-
 export const resume = {
   about: [
     'Originally from the south coast of England, by way of Sydney and San Francisco. Art and design background, then a degree in Business Information Technology from Southampton Solent University, then the web platform ever since. I still believe in it.',
-    'I like small teams, lean process, rapid prototyping and talking to the people who use the thing. Off the clock: sim racing, and building an AI meme generator for my racing league because someone had to.',
+    'I like small teams, lean process, rapid prototyping and talking to the people who use the thing. Off the clock: sim racing, video games and watch collecting.',
   ],
   contact: [
     { display: 'me@simontaggart.com', href: 'mailto:me@simontaggart.com', label: 'Email' },
@@ -41,16 +38,14 @@ export const resume = {
       href: 'https://www.linkedin.com/in/SiTaggart',
       label: 'LinkedIn',
     },
-    { display: 'Download CV', href: cvUrl, label: 'CV' },
   ],
-  cvUrl,
   descriptor: 'Product Engineer · Redwood City, California',
   earlier: {
     company: 'Earlier',
     end: '2016',
     start: '2006',
     summary:
-      'Front-end engineering and UI roles at BigCommerce, Flippa, SitePoint, Orchard and Abacus e-Media, in the UK, Australia and the US. Responsive design before it had a name, web standards, accessibility, and a lot of CSS. I still like CSS. I do not recommend the cascade.',
+      'Front-end engineering and UI roles at BigCommerce, Flippa, SitePoint, Orchard and Abacus e-Media, in the UK, Australia and the US. Responsive design before it had a name, web standards, accessibility, and a lot of CSS.',
   },
   experience: [
     {
@@ -62,7 +57,7 @@ export const resume = {
       end: 'present',
       start: '2025',
       summary:
-        'Own the front end of the trading platform end to end: product decisions, interface design, and the React and TypeScript that ships.',
+        'Own the UI of the trading platform: the components, patterns and systems the screens are built from.',
       title: 'Product Engineer',
     },
     {
@@ -111,7 +106,7 @@ export const resume = {
   ],
   intro: [
     'I design and build data-heavy products, then turn the patterns that work into systems other teams can ship with.',
-    'At SESCO, I own the front end of a trading platform for U.S. electricity markets, from product decisions and interface design through React and TypeScript implementation. Previously I led Paste at Twilio, enterprise patterns at Meta, and accessibility and design-system architecture at Salesforce.',
+    'At SESCO I own the UI of a trading platform for U.S. electricity markets: the components, patterns and systems the screens are built from. Previously I led Paste at Twilio, enterprise patterns at Meta, and accessibility and design-system architecture at Salesforce.',
   ],
   name: 'Simon Taggart',
 } as const satisfies Resume;

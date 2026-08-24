@@ -15,26 +15,6 @@ export default defineConfig({
   options: {
     typeAware: true,
   },
-  overrides: [
-    {
-      env: {
-        browser: true,
-      },
-      files: ['cypress/**/*.ts', 'cypress.config.ts'],
-      globals: {
-        cy: 'readonly',
-        Cypress: 'readonly',
-        describe: 'readonly',
-        it: 'readonly',
-      },
-    },
-    {
-      files: ['scripts/**/*.ts'],
-      rules: {
-        'no-console': 'off',
-      },
-    },
-  ],
   rules: {
     'typescript/await-thenable': 'error',
     'typescript/no-floating-promises': 'error',
