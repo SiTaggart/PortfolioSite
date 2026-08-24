@@ -1,12 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": [
-    ".ai/",
-    ".tanstack/",
-    ".wrangler/",
-    "dist/",
-    "src/routeTree.gen.ts"
-  ],
+  "ignorePatterns": [".ai/", ".tanstack/", ".wrangler/", "dist/", "src/routeTree.gen.ts"],
   "singleQuote": true,
   "sortImports": true,
   "sortTailwindcss": {
