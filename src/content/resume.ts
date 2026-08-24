@@ -18,6 +18,7 @@ export interface ContactLink {
 interface Resume {
   about: ReadonlyArray<string>;
   contact: ReadonlyArray<ContactLink>;
+  description: string;
   descriptor: string;
   earlier: Role;
   experience: ReadonlyArray<Role>;
@@ -39,6 +40,8 @@ export const resume = {
       label: 'LinkedIn',
     },
   ],
+  description:
+    'Simon Taggart designs and builds data-heavy products, then turns the patterns that work into systems other teams can ship with. Product Engineer at SESCO; previously Twilio, Meta and Salesforce.',
   descriptor: 'Product Engineer · Redwood City, California',
   earlier: {
     company: 'Earlier',
