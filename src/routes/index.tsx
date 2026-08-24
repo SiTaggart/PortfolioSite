@@ -27,7 +27,8 @@ export const Route = createFileRoute('/')({
 function Index(): ReactElement {
   return (
     <>
-      <PageShell header={<Hero />}>
+      <PageShell>
+        <Hero />
         <div className="mt-16 flex flex-col gap-18 lg:mt-24">
           <Section id="work" label="Selected work">
             <div className="flex flex-col gap-12">
