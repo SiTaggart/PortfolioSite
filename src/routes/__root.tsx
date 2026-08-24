@@ -22,6 +22,7 @@ const cloudflareBeaconConfig = JSON.stringify({ token: '511d2ddb672f42599f188f24
 
 export const Route = createRootRoute({
   component: RootComponent,
+  errorComponent: ErrorPage,
   head: () => ({
     links: [
       {
@@ -117,6 +118,20 @@ function NotFound(): ReactElement {
         <p className="mt-8">
           That page does not exist, or it did once and does not any more.{' '}
           <Link to="/">Back to the front page</Link>.
+        </p>
+      </Row>
+    </PageShell>
+  );
+}
+
+function ErrorPage(): ReactElement {
+  return (
+    <PageShell>
+      <h1 className="font-serif text-title">Something went wrong.</h1>
+      <Row>
+        <p className="mt-8">
+          That one is on me, not you. Reload the page, or start again from the{' '}
+          <Link to="/">front page</Link>.
         </p>
       </Row>
     </PageShell>
