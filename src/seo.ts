@@ -5,12 +5,12 @@ export interface Site {
   origin: string;
 }
 
-export interface Head {
+interface Head {
   links: Array<JSX.IntrinsicElements['link']>;
   meta: Array<JSX.IntrinsicElements['meta']>;
 }
 
-export interface HeadOptions {
+interface HeadOptions {
   description: string;
   image?: string;
   ogType?: 'article' | 'website';

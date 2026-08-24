@@ -1,11 +1,11 @@
-export type CaseStudyPath = '/work/paste';
+type CaseStudyPath = '/work/paste';
 
 export interface EvidenceLink {
   href: string;
   label: string;
 }
 
-export interface CaseStudySection {
+interface CaseStudySection {
   heading: string;
   id: string;
   paragraphs: ReadonlyArray<string>;
