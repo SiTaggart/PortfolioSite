@@ -6,6 +6,7 @@ import { formatPostDate } from '../content/formatPostDate';
 import { AppLink } from './AppLink';
 
 interface FeaturedPostProps {
+  headingLevel?: 'h2' | 'h3';
   post: {
     date: string;
     description: string;
@@ -20,7 +21,7 @@ function routeSlug(slug: string): string {
   return slug.startsWith(postsPrefix) ? slug.slice(postsPrefix.length) : slug;
 }
 
-export function FeaturePost({ post }: FeaturedPostProps): React.ReactElement {
+export function FeaturePost({ headingLevel = 'h2', post }: FeaturedPostProps): React.ReactElement {
   return (
     <Box
       borderColor="colorBorder"
@@ -29,7 +30,12 @@ export function FeaturePost({ post }: FeaturedPostProps): React.ReactElement {
       borderWidth="borderWidth20"
       padding="space40"
     >
-      <Text as="h2" fontSize="fontSize50" fontWeight="fontWeightNormal" lineHeight="lineHeight50">
+      <Text
+        as={headingLevel}
+        fontSize="fontSize50"
+        fontWeight="fontWeightNormal"
+        lineHeight="lineHeight50"
+      >
         <AppLink params={{ slug: routeSlug(post.slug) }} to="/posts/$slug">
           {post.title}
         </AppLink>

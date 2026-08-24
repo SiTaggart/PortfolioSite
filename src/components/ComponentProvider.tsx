@@ -10,11 +10,11 @@ import type { MDXComponents } from 'mdx/types';
 import type React from 'react';
 
 import { Blockquote } from './Blockquote';
-import { CodeBlock, InlineCode as InlineCodeSnippet } from './CodeBlocks';
+import { Code, CodeBlock } from './CodeBlocks';
 
 type MDXElementProps = React.PropsWithChildren<Record<string, unknown>>;
 
-export function Image(props: MDXElementProps): React.ReactElement {
+function Image(props: MDXElementProps): React.ReactElement {
   return (
     <Box as="img" display="block" marginLeft="auto" marginRight="auto" maxWidth="100%" {...props} />
   );
@@ -44,62 +44,27 @@ function H6(props: MDXElementProps): React.ReactElement {
   return <Heading {...props} as="h6" variant="heading60" />;
 }
 
-function InlineCode(props: MDXElementProps): React.ReactElement {
-  return <InlineCodeSnippet {...props} />;
-}
-
-function Em(props: MDXElementProps): React.ReactElement {
-  return <em {...props} />;
-}
-
-function Strong(props: MDXElementProps): React.ReactElement {
-  return <strong {...props} />;
-}
-
-function Del(props: MDXElementProps): React.ReactElement {
-  return <del {...props} />;
-}
-
 function Hr(): React.ReactElement {
   return <Separator orientation="horizontal" verticalSpacing="space70" />;
 }
 
-function A({ children, href, ...props }: React.PropsWithChildren<AnchorProps>): React.ReactElement {
-  return (
-    <Anchor href={href} {...props}>
-      {children}
-    </Anchor>
-  );
-}
-
-function Sup(props: MDXElementProps): React.ReactElement {
-  return <sup {...props} />;
+function A(props: React.PropsWithChildren<AnchorProps>): React.ReactElement {
+  return <Anchor {...props} />;
 }
 
 function Table({ children, ...props }: MDXElementProps): React.ReactElement {
   return (
     <Box marginBottom="space120">
+      {/* Paste's Table requires non-nullable children; MDX types them as optional. */}
       <PasteTable {...props}>{children ?? ''}</PasteTable>
     </Box>
   );
 }
 
-function Content(props: MDXElementProps): React.ReactElement {
-  return <div {...props} />;
-}
-
-function ContentWrapper(props: MDXElementProps): React.ReactElement {
-  return <div {...props} />;
-}
-
 const components: MDXComponents = {
   a: A,
   blockquote: Blockquote,
-  code: InlineCode,
-  content: Content,
-  contentwrapper: ContentWrapper,
-  del: Del,
-  em: Em,
+  code: Code,
   h1: H1,
   h2: H2,
   h3: H3,
@@ -108,13 +73,10 @@ const components: MDXComponents = {
   h6: H6,
   hr: Hr,
   img: Image,
-  inlineCode: InlineCode,
   li: ListItem,
   ol: OrderedList,
   p: Paragraph,
   pre: CodeBlock,
-  strong: Strong,
-  sup: Sup,
   table: Table,
   tbody: TBody,
   td: Td,

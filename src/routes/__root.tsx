@@ -79,7 +79,6 @@ function RootComponent(): React.ReactElement {
         <StylingGlobals styles={getPrismStyles({ theme: PortfolioTheme })} />
         <StylingGlobals styles={globalStyles({ theme: PortfolioTheme })} />
         <Box
-          as="main"
           maxWidth="size90"
           paddingLeft={['space50', 'space70', 'space0']}
           paddingRight={['space50', 'space70', 'space0']}
@@ -89,7 +88,9 @@ function RootComponent(): React.ReactElement {
             marginRight: 'auto',
           }}
         >
-          <Outlet />
+          <Box as="main">
+            <Outlet />
+          </Box>
           <SiteFooter />
         </Box>
       </CustomizationProvider>

@@ -66,7 +66,7 @@ function Index(): React.ReactElement {
           <Heading as="h2" variant="heading30">
             Latest post
           </Heading>
-          <FeaturePost post={latestPost} />
+          <FeaturePost headingLevel="h3" post={latestPost} />
 
           <Text as="div" marginTop="space30" textAlign="center">
             <AppLink to="/posts">All posts</AppLink>
