@@ -199,6 +199,20 @@ export function Atmosphere(): ReactElement {
       }
     };
 
+    const draw = (elapsed: number): void => {
+      gl.uniform1f(time, elapsed);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+    };
+
+    const started = performance.now();
+
+    // Resizing the canvas clears its drawing buffer, so anything that changes
+    // the size has to put a frame back. Reduced motion runs no animation loop,
+    // which would otherwise leave the canvas empty until the setting changed.
+    const drawCurrentFrame = (): void => {
+      draw(prefersReducedMotion() ? 0 : (performance.now() - started) / 1000);
+    };
+
     const resize = (): void => {
       const ratio = Math.min(globalThis.devicePixelRatio, 1.75);
       const width = Math.max(1, Math.floor(canvas.clientWidth * ratio));
@@ -211,19 +225,13 @@ export function Atmosphere(): ReactElement {
 
       gl.viewport(0, 0, width, height);
       gl.uniform2f(resolution, width, height);
-    };
-
-    const draw = (elapsed: number): void => {
-      gl.uniform1f(time, elapsed);
-      gl.drawArrays(gl.TRIANGLES, 0, 3);
+      drawCurrentFrame();
     };
 
     applyPalette();
     resize();
-    draw(0);
 
     const motion = globalThis.matchMedia('(prefers-reduced-motion: reduce)');
-    const started = performance.now();
     let frame = 0;
 
     const tick = (now: number): void => {
@@ -249,7 +257,7 @@ export function Atmosphere(): ReactElement {
 
     const onMotion = (): void => {
       stopLoop();
-      draw(0);
+      drawCurrentFrame();
       startLoop();
     };
 
