@@ -52,11 +52,14 @@ function A(props: React.PropsWithChildren<AnchorProps>): React.ReactElement {
   return <Anchor {...props} />;
 }
 
-function Table({ children, ...props }: MDXElementProps): React.ReactElement {
+interface TableProps extends Record<string, unknown> {
+  children: NonNullable<React.ReactNode>;
+}
+
+function Table({ children, ...props }: TableProps): React.ReactElement {
   return (
     <Box marginBottom="space120">
-      {/* Paste's Table requires non-nullable children; MDX types them as optional. */}
-      <PasteTable {...props}>{children ?? ''}</PasteTable>
+      <PasteTable {...props}>{children}</PasteTable>
     </Box>
   );
 }

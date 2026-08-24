@@ -1,8 +1,4 @@
-declare module '*.svg' {
-  const content: string;
-  export default content;
-}
-
+// Plain `*.svg` imports are typed by vite/client.
 declare module '*.svg?react' {
   import type { FunctionComponent, SVGProps } from 'react';
 

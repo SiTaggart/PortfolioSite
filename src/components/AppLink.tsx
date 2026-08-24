@@ -8,13 +8,21 @@ import {
   type ReactNode,
 } from 'react';
 
+/**
+ * Paste's Anchor deliberately refuses `className` and `style` so that styling
+ * only comes from the design system, but createLink passes both (and
+ * `disabled`) through. They are accepted and dropped here so router links type
+ * check; as a consequence `activeProps`/`inactiveProps` styling will not apply
+ * to AppLink.
+ */
 interface StyledAnchorProps extends Omit<
   AnchorHTMLAttributes<HTMLAnchorElement>,
-  'children' | 'className' | 'style' | 'tabIndex' | 'target'
+  'children' | 'className' | 'href' | 'style' | 'tabIndex' | 'target'
 > {
-  children?: ReactNode;
+  children: NonNullable<ReactNode>;
   className?: string;
   disabled?: boolean;
+  href?: string;
   style?: CSSProperties;
   tabIndex?: AnchorProps['tabIndex'];
   target?: AnchorProps['target'];
@@ -25,6 +33,7 @@ const StyledAnchor = forwardRef<HTMLAnchorElement, StyledAnchorProps>(function S
     children,
     className: _className,
     disabled: _disabled,
+    href,
     style: _style,
     tabIndex,
     target,
@@ -35,13 +44,14 @@ const StyledAnchor = forwardRef<HTMLAnchorElement, StyledAnchorProps>(function S
   return (
     <Anchor
       {...props}
-      href={props.href ?? ''}
+      // createLink always supplies href; Paste types it as required.
+      href={href ?? ''}
       ref={ref}
       tabIndex={tabIndex}
       target={target}
       variant="inverse"
     >
-      {children ?? ''}
+      {children}
     </Anchor>
   );
 });

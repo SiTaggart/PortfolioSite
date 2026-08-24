@@ -20,7 +20,7 @@ interface GlobalStylesProps {
 const globalStyles = (props: GlobalStylesProps): ReturnType<ReturnType<typeof css>> =>
   css({
     body: {
-      backgroundColor: '#232946',
+      backgroundColor: 'colorBackgroundBody',
     },
   })(props);
 

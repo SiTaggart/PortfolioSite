@@ -17,7 +17,7 @@ const siteFooterIcons = {
   twitter: TwitterIcon,
 } satisfies Record<SiteFooterIconName, React.FunctionComponent<React.SVGProps<SVGSVGElement>>>;
 
-export function StyledSiteFooter(props: React.PropsWithChildren): React.ReactElement {
+function StyledSiteFooter(props: React.PropsWithChildren): React.ReactElement {
   return (
     <Box
       as="footer"
@@ -31,7 +31,7 @@ export function StyledSiteFooter(props: React.PropsWithChildren): React.ReactEle
   );
 }
 
-export function SiteFooterList(props: React.PropsWithChildren): React.ReactElement {
+function SiteFooterList(props: React.PropsWithChildren): React.ReactElement {
   return (
     <Box
       alignItems="center"
@@ -45,11 +45,11 @@ export function SiteFooterList(props: React.PropsWithChildren): React.ReactEleme
   );
 }
 
-export function SiteFooterListItem(props: React.PropsWithChildren): React.ReactElement {
+function SiteFooterListItem(props: React.PropsWithChildren): React.ReactElement {
   return <Box as="li" listStyleType="none" {...props} />;
 }
 
-export function SiteFooterIconWrapper(props: React.PropsWithChildren): React.ReactElement {
+function SiteFooterIconWrapper(props: React.PropsWithChildren): React.ReactElement {
   return (
     <Text
       _hover={{
