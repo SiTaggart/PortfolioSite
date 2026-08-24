@@ -41,9 +41,14 @@ bun run dev
 
 ```sh
 bun run check
-bun run build
+bun run test
 bunx wrangler deploy --dry-run
 ```
+
+`check` is type-checking, linting and formatting. `test` builds and then runs
+`scripts/smoke.ts`, which serves the build and asserts what static analysis
+cannot see: that every route responds, that unknown paths 404, and that
+canonical URLs, `robots.txt` and `sitemap.xml` switch on the request host.
 
 ## Cloudflare Workers
 

@@ -15,6 +15,14 @@ export default defineConfig({
   options: {
     typeAware: true,
   },
+  overrides: [
+    {
+      files: ['scripts/**'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
+  ],
   rules: {
     'typescript/await-thenable': 'error',
     'typescript/no-floating-promises': 'error',
