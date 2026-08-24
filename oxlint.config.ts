@@ -5,7 +5,6 @@ export default defineConfig({
   extends: [nkzw],
   ignorePatterns: [
     '.ai/',
-    '.output/',
     '.tanstack/',
     '.wrangler/',
     'dist/',
