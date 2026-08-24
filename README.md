@@ -13,9 +13,10 @@ with oxlint and oxfmt, type-checked with tsgo.
 | `/robots.txt`  | Server route: allows crawling on the production host only |
 | `/sitemap.xml` | Server route: the front page plus the case studies        |
 
-Metadata, canonical URLs, `robots.txt` and `sitemap.xml` are all environment
-aware, so preview deployments never advertise themselves or point at
-production. See `src/seo.ts` and `src/site.ts`.
+Metadata, canonical URLs, `robots.txt`, `sitemap.xml` and the analytics beacon
+are all environment aware, so preview deployments never advertise themselves,
+point at production, or report into its analytics. See `src/seo.ts` and
+`src/site.ts`.
 
 ## Content
 
@@ -62,3 +63,9 @@ curl -sH 'Host: www.simontaggart.com' http://localhost:4173/robots.txt
 The Worker config lives in `wrangler.jsonc` and uses TanStack Start's Cloudflare
 entrypoint. Run `bun run cf-typegen` after bindings or environment variables
 change, then `bun run deploy`.
+
+Response headers are set in two places, because `public/_headers` only applies
+to responses served from the assets directory. Asset caching belongs there;
+headers for the rendered pages go in the request middleware in `src/start.ts`,
+which also re-registers Start's CSRF middleware since declaring a start instance
+opts out of the built-in one.
