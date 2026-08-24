@@ -11,7 +11,7 @@ with oxlint and oxfmt, type-checked with tsgo.
 | `/`            | Hero, selected work, experience, about and contact        |
 | `/work/paste`  | Paste and Twilio product unification case study           |
 | `/robots.txt`  | Server route: allows crawling on the production host only |
-| `/sitemap.xml` | Server route: the case studies plus the front page        |
+| `/sitemap.xml` | Server route: the front page plus the case studies        |
 
 Metadata, canonical URLs, `robots.txt` and `sitemap.xml` are all environment
 aware, so preview deployments never advertise themselves or point at
@@ -46,6 +46,16 @@ bun run check
 `check` is type-checking, linting and formatting, and is all CI runs. The
 Cloudflare preview deployment builds every pull request, so a broken build or an
 invalid Worker config shows up there rather than being duplicated here.
+
+To exercise the production branch of the host-dependent metadata locally, build,
+serve, and send the production host:
+
+```sh
+bun run build && bun run preview
+curl -sH 'Host: www.simontaggart.com' http://localhost:4173/robots.txt
+```
+
+`vite.config.ts` allows that host in `preview.allowedHosts`.
 
 ## Cloudflare Workers
 
