@@ -1,4 +1,5 @@
 import dmSansWoff2 from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url';
+import jetBrainsMonoWoff2 from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url';
 import instrumentSerifWoff2 from '@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2?url';
 import {
   HeadContent,
@@ -64,13 +65,16 @@ export const Route = createRootRoute({
     ],
   }),
   notFoundComponent: NotFound,
-  scripts: () => [
-    {
-      'data-cf-beacon': cloudflareBeaconConfig,
-      defer: true,
-      src: 'https://static.cloudflareinsights.com/beacon.min.js',
-    },
-  ],
+  scripts: () =>
+    currentSite().isProduction
+      ? [
+          {
+            'data-cf-beacon': cloudflareBeaconConfig,
+            defer: true,
+            src: 'https://static.cloudflareinsights.com/beacon.min.js',
+          },
+        ]
+      : [],
   shellComponent: RootDocument,
 });
 
@@ -154,6 +158,13 @@ function RootDocument({ children }: { children: ReactNode }): ReactElement {
           as="font"
           crossOrigin="anonymous"
           href={dmSansWoff2}
+          rel="preload"
+          type="font/woff2"
+        />
+        <link
+          as="font"
+          crossOrigin="anonymous"
+          href={jetBrainsMonoWoff2}
           rel="preload"
           type="font/woff2"
         />
