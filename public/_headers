@@ -1,2 +1,7 @@
+# Only applies to responses served from the assets directory. Rendered HTML
+# comes from the Worker, so its headers are set in src/start.ts instead.
+/*
+  X-Content-Type-Options: nosniff
+
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
