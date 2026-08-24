@@ -12,5 +12,4 @@ export default defineConfig({
     react(),
   ],
   preview: { allowedHosts: ['simontaggart.com', 'www.simontaggart.com'] },
-  resolve: { tsconfigPaths: true },
 });
