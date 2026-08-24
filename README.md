@@ -41,14 +41,11 @@ bun run dev
 
 ```sh
 bun run check
-bun run test
-bunx wrangler deploy --dry-run
 ```
 
-`check` is type-checking, linting and formatting. `test` builds and then runs
-`scripts/smoke.ts`, which serves the build and asserts what static analysis
-cannot see: that every route responds, that unknown paths 404, and that
-canonical URLs, `robots.txt` and `sitemap.xml` switch on the request host.
+`check` is type-checking, linting and formatting, and is all CI runs. The
+Cloudflare preview deployment builds every pull request, so a broken build or an
+invalid Worker config shows up there rather than being duplicated here.
 
 ## Cloudflare Workers
 
