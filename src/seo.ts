@@ -104,6 +104,12 @@ export function personJsonLd(site: Site): Record<string, unknown> {
 
 export function robotsTxt(site: Site): string {
   return site.isProduction
-    ? `User-agent: *\nAllow: /\nSitemap: ${productionOrigin}/sitemap.xml\n`
+    ? `User-agent: *\nAllow: /\nSitemap: ${site.origin}/sitemap.xml\n`
     : 'User-agent: *\nDisallow: /\n';
+}
+
+export function sitemapXml(site: Site, paths: ReadonlyArray<string>): string {
+  const entries = paths.map((path) => `  <url>\n    <loc>${site.origin}${path}</loc>\n  </url>`);
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
 }
