@@ -1,4 +1,4 @@
-import Post from '../../../layouts/post';
+import { PostLayout } from '../../../components/PostLayout';
 
 export const meta = {
   title: 'How we use Sass Maps for Design Tokens and Developer Happiness',
@@ -8,7 +8,7 @@ export const meta = {
   slug: '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
 };
 
-export default ({ children }) => <Post meta={meta}>{children}</Post>;
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>;
 
 When building a design system there is always a set of global, shared properties that become the basis of everything that gets built. This is part of the atom level of the "Atomic Design" principle – the font sizes, weights, line heights, colours, borders, background, spacing, sizing and z-indexes that are the very core of every single piece of Interface in your UI library.
 

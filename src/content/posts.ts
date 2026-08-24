@@ -1,6 +1,6 @@
 import type React from 'react';
 
-import type { MetaDataShape } from '../../types';
+import type { MetaDataShape } from '../types';
 
 interface PostModule {
   default: React.ComponentType;
@@ -12,7 +12,7 @@ export interface BlogPost {
   meta: MetaDataShape;
 }
 
-const postModules = import.meta.glob<PostModule>('../../pages/posts/*/index.mdx', {
+const postModules = import.meta.glob<PostModule>('./posts/*/index.mdx', {
   eager: true,
 });
 

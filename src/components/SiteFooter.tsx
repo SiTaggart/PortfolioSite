@@ -4,9 +4,9 @@ import { ScreenReaderOnly } from '@twilio-paste/core/screen-reader-only';
 import { Text } from '@twilio-paste/core/text';
 import type React from 'react';
 
-import GithubIcon from '../svg/icons/ic-github.svg?react';
-import LinkedInIcon from '../svg/icons/ic-linkedin.svg?react';
-import TwitterIcon from '../svg/icons/ic-twitter.svg?react';
+import GithubIcon from '../icons/ic-github.svg?react';
+import LinkedInIcon from '../icons/ic-linkedin.svg?react';
+import TwitterIcon from '../icons/ic-twitter.svg?react';
 import { AppLink } from './AppLink';
 
 type SiteFooterIconName = 'github' | 'linkedin' | 'twitter';

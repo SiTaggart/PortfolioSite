@@ -1,4 +1,4 @@
-import Post from '../../../layouts/post';
+import { PostLayout } from '../../../components/PostLayout';
 
 export const meta = {
   title: '2020 - Year in review',
@@ -7,6 +7,6 @@ export const meta = {
   slug: '/posts/2021-01-01-2020-year-in-review',
 };
 
-export default ({ children }) => <Post meta={meta}>{children}</Post>;
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>;
 
 What a fucking shitshow.

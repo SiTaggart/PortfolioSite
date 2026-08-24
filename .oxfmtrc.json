@@ -5,7 +5,7 @@
     ".vinxi/",
     ".wrangler/",
     "dist/",
-    "pages/**/*.mdx",
+    "src/content/posts/**/*.mdx",
     "src/routeTree.gen.ts"
   ],
   "singleQuote": true,

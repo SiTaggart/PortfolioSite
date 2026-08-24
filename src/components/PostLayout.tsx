@@ -1,15 +1,15 @@
 import { Text } from '@twilio-paste/core/text';
 import type React from 'react';
 
-import { formatPostDate } from '../src/content/formatPostDate';
-import { MetaDataShape } from '../types';
+import { formatPostDate } from '../content/formatPostDate';
+import type { MetaDataShape } from '../types';
 
 interface PostLayoutProps {
   children: React.ReactNode;
   meta: MetaDataShape;
 }
 
-export default function Post({
+export function PostLayout({
   children,
   meta: { date, title },
 }: PostLayoutProps): React.ReactElement {

@@ -1,4 +1,4 @@
-import type { MetaDataShape } from '../types';
+import type { MetaDataShape } from './types';
 
 const siteUrl = 'https://www.simontaggart.com';
 const defaultSeoConfig = {

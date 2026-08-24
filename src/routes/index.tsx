@@ -6,10 +6,10 @@ import { Paragraph } from '@twilio-paste/core/paragraph';
 import { Text } from '@twilio-paste/core/text';
 import type React from 'react';
 
-import { AppLink } from '../../components/AppLink';
-import { FeaturePost } from '../../components/FeaturedPost';
-import { SiteMainHeading } from '../../components/SiteMainHeading';
-import { SiteSubHeading } from '../../components/SiteSubHeading';
+import { AppLink } from '../components/AppLink';
+import { FeaturePost } from '../components/FeaturedPost';
+import { SiteMainHeading } from '../components/SiteMainHeading';
+import { SiteSubHeading } from '../components/SiteSubHeading';
 import { posts } from '../content/posts';
 import { defaultMeta } from '../seo';
 

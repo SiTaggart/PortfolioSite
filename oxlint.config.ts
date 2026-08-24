@@ -34,7 +34,7 @@ export default defineConfig({
       },
     },
     {
-      files: ['theme/prism.ts'],
+      files: ['src/theme/prism.ts'],
       rules: {
         'perfectionist/sort-objects': 'off',
       },

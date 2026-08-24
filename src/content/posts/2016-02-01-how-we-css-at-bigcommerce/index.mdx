@@ -1,4 +1,4 @@
-import Post from '../../../layouts/post';
+import { PostLayout } from '../../../components/PostLayout';
 
 export const meta = {
   title: 'How we "CSS" at BigCommerce',
@@ -8,7 +8,7 @@ export const meta = {
   slug: '/posts/2016-02-01-how-we-css-at-bigcommerce',
 };
 
-export default ({ children }) => <Post meta={meta}>{children}</Post>;
+export default ({ children }) => <PostLayout meta={meta}>{children}</PostLayout>;
 
 TL;DR [Our SASS Style Guide is available on GitHub](https://github.com/SiTaggart/sass-style-guide).
 

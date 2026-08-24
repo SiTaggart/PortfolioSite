@@ -6,11 +6,11 @@ import { StylingGlobals, css } from '@twilio-paste/core/styling-library';
 import type { GenericThemeShape } from '@twilio-paste/core/theme';
 import type React from 'react';
 
-import { ComponentProvider } from '../../components/ComponentProvider';
-import { SiteFooter } from '../../components/SiteFooter';
-import { getPrismStyles } from '../../theme/prism';
-import PortfolioTheme from '../../theme/theme.json';
+import { ComponentProvider } from '../components/ComponentProvider';
+import { SiteFooter } from '../components/SiteFooter';
 import { defaultMeta, socialProfileJsonLd } from '../seo';
+import { getPrismStyles } from '../theme/prism';
+import PortfolioTheme from '../theme/theme.json';
 
 interface GlobalStylesProps {
   theme: Partial<GenericThemeShape>;
