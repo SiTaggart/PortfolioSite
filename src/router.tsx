@@ -4,16 +4,8 @@ import { routeTree } from './routeTree.gen';
 
 type AppRouter = ReturnType<typeof createTanStackRouter<typeof routeTree>>;
 
-export function createRouter(): AppRouter {
-  return createTanStackRouter({
-    defaultPreload: 'intent',
-    routeTree,
-    scrollRestoration: true,
-  });
-}
-
 export function getRouter(): AppRouter {
-  return createRouter();
+  return createTanStackRouter({ routeTree });
 }
 
 declare module '@tanstack/react-router' {

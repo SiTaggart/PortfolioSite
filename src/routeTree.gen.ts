@@ -9,58 +9,65 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as PostsIndexRouteImport } from './routes/posts/index'
-import { Route as PostsSlugRouteImport } from './routes/posts/$slug'
+import { Route as WorkPasteRouteImport } from './routes/work/paste'
 
+const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
+  id: '/robots.txt',
+  path: '/robots.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PostsIndexRoute = PostsIndexRouteImport.update({
-  id: '/posts/',
-  path: '/posts/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PostsSlugRoute = PostsSlugRouteImport.update({
-  id: '/posts/$slug',
-  path: '/posts/$slug',
+const WorkPasteRoute = WorkPasteRouteImport.update({
+  id: '/work/paste',
+  path: '/work/paste',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/posts/$slug': typeof PostsSlugRoute
-  '/posts/': typeof PostsIndexRoute
+  '/robots.txt': typeof RobotsDottxtRoute
+  '/work/paste': typeof WorkPasteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/posts/$slug': typeof PostsSlugRoute
-  '/posts': typeof PostsIndexRoute
+  '/robots.txt': typeof RobotsDottxtRoute
+  '/work/paste': typeof WorkPasteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/posts/$slug': typeof PostsSlugRoute
-  '/posts/': typeof PostsIndexRoute
+  '/robots.txt': typeof RobotsDottxtRoute
+  '/work/paste': typeof WorkPasteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/posts/$slug' | '/posts/'
+  fullPaths: '/' | '/robots.txt' | '/work/paste'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/posts/$slug' | '/posts'
-  id: '__root__' | '/' | '/posts/$slug' | '/posts/'
+  to: '/' | '/robots.txt' | '/work/paste'
+  id: '__root__' | '/' | '/robots.txt' | '/work/paste'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  PostsSlugRoute: typeof PostsSlugRoute
-  PostsIndexRoute: typeof PostsIndexRoute
+  RobotsDottxtRoute: typeof RobotsDottxtRoute
+  WorkPasteRoute: typeof WorkPasteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/robots.txt': {
+      id: '/robots.txt'
+      path: '/robots.txt'
+      fullPath: '/robots.txt'
+      preLoaderRoute: typeof RobotsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -68,18 +75,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/posts/': {
-      id: '/posts/'
-      path: '/posts'
-      fullPath: '/posts/'
-      preLoaderRoute: typeof PostsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/posts/$slug': {
-      id: '/posts/$slug'
-      path: '/posts/$slug'
-      fullPath: '/posts/$slug'
-      preLoaderRoute: typeof PostsSlugRouteImport
+    '/work/paste': {
+      id: '/work/paste'
+      path: '/work/paste'
+      fullPath: '/work/paste'
+      preLoaderRoute: typeof WorkPasteRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -87,8 +87,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  PostsSlugRoute: PostsSlugRoute,
-  PostsIndexRoute: PostsIndexRoute,
+  RobotsDottxtRoute: RobotsDottxtRoute,
+  WorkPasteRoute: WorkPasteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

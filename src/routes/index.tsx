@@ -1,78 +1,67 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { Anchor } from '@twilio-paste/core/anchor';
-import { Box } from '@twilio-paste/core/box';
-import { Heading } from '@twilio-paste/core/heading';
-import { Paragraph } from '@twilio-paste/core/paragraph';
-import { Text } from '@twilio-paste/core/text';
-import type React from 'react';
+import type { ReactElement } from 'react';
 
-import { AppLink } from '../../components/AppLink';
-import { FeaturePost } from '../../components/FeaturedPost';
-import { SiteMainHeading } from '../../components/SiteMainHeading';
-import { SiteSubHeading } from '../../components/SiteSubHeading';
-import { posts } from '../content/posts';
-import { defaultMeta } from '../seo';
-
-const employmentStartYear = 2004;
-const yearsOfExperience = new Date().getFullYear() - employmentStartYear;
+import { Hero } from '../components/resume/Hero';
+import { LinkList } from '../components/resume/LinkList';
+import { PageShell } from '../components/resume/PageShell';
+import { RoleEntry } from '../components/resume/RoleEntry';
+import { Section } from '../components/resume/Section';
+import { WorkEntry } from '../components/resume/WorkEntry';
+import { resume } from '../content/resume';
+import { caseStudies } from '../content/work';
+import { buildHead, personJsonLd } from '../seo';
+import { currentSite } from '../site';
 
 export const Route = createFileRoute('/')({
   component: Index,
-  head: () => ({
-    meta: defaultMeta('Hi'),
-  }),
+  head: () =>
+    buildHead({
+      description:
+        'Simon Taggart designs and builds data-heavy products, then turns the patterns that work into systems other teams can ship with. Product Engineer at SESCO; previously Twilio, Meta and Salesforce.',
+      path: '/',
+      site: currentSite(),
+      title: 'Product Engineer',
+    }),
 });
 
-function Index(): React.ReactElement {
-  const latestPost = posts.at(0)?.meta;
-
+function Index(): ReactElement {
   return (
     <>
-      <SiteMainHeading>
-        Simon <br /> Taggart
-      </SiteMainHeading>
-
-      <SiteSubHeading>Design Systems &amp; Accessibility</SiteSubHeading>
-
-      <Paragraph>
-        A UX Engineer currently working as an Architect / Director at{' '}
-        <Anchor href="https://www.twilio.com">Twilio</Anchor>, on{' '}
-        <Anchor href="https://paste.twilio.design">Design Systems</Anchor>. I have over{' '}
-        {yearsOfExperience} years experience in Web Development and Front-End Engineering,
-        specialising in building user interfaces for web sites and web applications.
-      </Paragraph>
-
-      <Paragraph>
-        Expert in Rapid Prototyping and Semantic and Accessible interfaces, I lead and work with
-        engineering and design teams.
-      </Paragraph>
-
-      <Paragraph>
-        Maker of accessibility colour contrast checker:{' '}
-        <Anchor href="https://www.aremycolorsaccessible.com">Are My Colours Accessible</Anchor>
-      </Paragraph>
-
-      <Paragraph>
-        Previously <Anchor href="https://lightningdesignsystem.com">Salesforce</Anchor>,{' '}
-        <Anchor href="https://www.bigcommerce.com">BigCommerce</Anchor>,{' '}
-        <Anchor href="https://www.flippa.com">Flippa</Anchor>,{' '}
-        <Anchor href="https://www.sitepoint.com">SitePoint</Anchor>,{' '}
-        <Anchor href="https://www.orchard.com.au">Orchard</Anchor> and{' '}
-        <Anchor href="https://www.abacusemedia.com/">Abacus e-media</Anchor>.
-      </Paragraph>
-
-      {latestPost ? (
-        <Box marginBottom="space140" marginTop="space140">
-          <Heading as="h2" variant="heading30">
-            Latest post
-          </Heading>
-          <FeaturePost post={latestPost} />
-
-          <Text as="div" marginTop="space30" textAlign="center">
-            <AppLink to="/posts">All posts</AppLink>
-          </Text>
-        </Box>
-      ) : null}
+      <PageShell header={<Hero />}>
+        <div className="mt-16 flex flex-col gap-18 lg:mt-24">
+          <Section id="work" label="Selected work">
+            <div className="flex flex-col gap-12">
+              {caseStudies.map((study) => (
+                <WorkEntry key={study.to} study={study} />
+              ))}
+            </div>
+          </Section>
+          <Section id="experience" label="Experience">
+            <div className="flex flex-col gap-12">
+              {resume.experience.map((role) => (
+                <RoleEntry key={role.company} role={role} />
+              ))}
+              <RoleEntry role={resume.earlier} />
+            </div>
+          </Section>
+          <Section id="about" label="About">
+            <div className="space-y-5">
+              {resume.about.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </Section>
+          <Section id="contact" label="Contact">
+            <LinkList links={resume.contact} />
+          </Section>
+        </div>
+      </PageShell>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personJsonLd(currentSite())).replaceAll('<', String.raw`\u003c`),
+        }}
+        type="application/ld+json"
+      />
     </>
   );
 }
