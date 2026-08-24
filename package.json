@@ -20,6 +20,8 @@
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
     "preview": "vite preview",
+    "smoke": "bun run scripts/smoke.ts",
+    "test": "bun run build && bun run smoke",
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
