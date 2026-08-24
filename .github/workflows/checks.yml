@@ -11,21 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6.0.3
-      - uses: actions/setup-node@v6.4.0
-        with:
-          node-version-file: .nvmrc
       - uses: oven-sh/setup-bun@v2.2.0
         with:
           bun-version-file: package.json
       - name: Install dependencies
         run: bun install --frozen-lockfile
-      - name: Build and type-check
-        run: bun run build
-      - name: Lint
-        run: bun run lint
-      - name: Format
-        run: bun run format:check
-      - name: Smoke
-        run: bun run smoke
-      - name: Wrangler config validation
-        run: bunx wrangler deploy --dry-run
+      - name: Check
+        run: bun run check
