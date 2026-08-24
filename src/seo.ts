@@ -29,7 +29,8 @@ const imageAlt = 'Simon Taggart — Product Engineer, Redwood City, California';
 const twitterHandle = 'SiTaggart';
 
 export function resolveSite(protocol: string, host: string): Site {
-  const isProduction = productionHosts.has(host.split(':')[0].toLowerCase());
+  const hostname = host.split(':')[0] ?? host;
+  const isProduction = productionHosts.has(hostname.toLowerCase());
 
   return { isProduction, origin: isProduction ? productionOrigin : `${protocol}://${host}` };
 }

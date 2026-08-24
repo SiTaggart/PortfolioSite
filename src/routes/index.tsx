@@ -16,8 +16,7 @@ export const Route = createFileRoute('/')({
   component: Index,
   head: () =>
     buildHead({
-      description:
-        'Simon Taggart designs and builds data-heavy products, then turns the patterns that work into systems other teams can ship with. Product Engineer at SESCO; previously Twilio, Meta and Salesforce.',
+      description: resume.description,
       path: '/',
       site: currentSite(),
       title: 'Product Engineer',
