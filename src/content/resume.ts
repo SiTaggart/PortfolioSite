@@ -15,7 +15,7 @@ export interface ContactLink {
   label: string;
 }
 
-export interface Resume {
+interface Resume {
   about: ReadonlyArray<string>;
   contact: ReadonlyArray<ContactLink>;
   descriptor: string;
