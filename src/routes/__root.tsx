@@ -6,6 +6,7 @@ import { StylingGlobals, css } from '@twilio-paste/core/styling-library';
 import type { GenericThemeShape } from '@twilio-paste/core/theme';
 import type React from 'react';
 
+import { cloudflareBeaconToken } from '../analytics';
 import { ComponentProvider } from '../components/ComponentProvider';
 import { SiteFooter } from '../components/SiteFooter';
 import { defaultMeta, socialProfileJsonLd } from '../seo';
@@ -23,7 +24,6 @@ const globalStyles = (props: GlobalStylesProps): ReturnType<ReturnType<typeof cs
     },
   })(props);
 
-const cloudflareBeaconToken = '511d2ddb672f42599f188f248a7bc403';
 const cloudflareBeaconConfig = JSON.stringify({ token: cloudflareBeaconToken });
 const socialProfileJsonLdScript = JSON.stringify(socialProfileJsonLd);
 

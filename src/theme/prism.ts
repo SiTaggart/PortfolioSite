@@ -1,5 +1,5 @@
 import { css } from '@twilio-paste/core/styling-library';
-import { GenericThemeShape } from '@twilio-paste/core/theme';
+import type { GenericThemeShape } from '@twilio-paste/core/theme';
 
 interface PrismStylesProps {
   theme: Partial<GenericThemeShape>;

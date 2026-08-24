@@ -1,46 +1,58 @@
-const routes = [
-  '/',
-  '/posts',
-  '/posts/2016-02-01-how-we-css-at-bigcommerce',
-  '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
-  '/posts/2016-03-04-the-living-styleguide-pattern-lab',
-  '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
-  '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-%40-me',
-  '/posts/2021-01-01-2020-year-in-review',
+import { readdirSync } from 'node:fs';
+
+import { cloudflareBeaconToken } from '../src/analytics';
+
+const siteUrl = 'https://www.simontaggart.com';
+const port = 4173;
+const baseUrl = `http://127.0.0.1:${port}`;
+
+const postSlugs = readdirSync(new URL('../src/content/posts', import.meta.url), {
+  withFileTypes: true,
+})
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name);
+
+if (postSlugs.length === 0) {
+  throw new Error('No posts found to smoke test');
+}
+
+interface RouteCheck {
+  expected: Array<string>;
+  url: string;
+}
+
+const checks: Array<RouteCheck> = [
+  { expected: ['Simon'], url: '/' },
+  {
+    // The router percent-encodes slugs when it builds hrefs.
+    expected: postSlugs.map((slug) => `href="/posts/${encodeURIComponent(slug)}"`),
+    url: '/posts',
+  },
 ];
 
-const expectedContentByRoute = new Map<string, string>([
-  ['/', 'Simon'],
-  ['/posts', '2020 - Year in review'],
-  ['/posts/2016-02-01-how-we-css-at-bigcommerce', 'CSS is hard'],
-  [
-    '/posts/2016-02-20-how-we-use-sass-maps-for-design-tokens-and-developer-happiness',
-    'How we use Sass Maps for Design Tokens and Developer Happiness',
-  ],
-  ['/posts/2016-03-04-the-living-styleguide-pattern-lab', 'Pattern-Lab'],
-  [
-    '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-@-me',
-    'I’m super good at CSS',
-  ],
-  [
-    '/posts/2019-01-11-im-super-good-at-css-and-i-dont-recommend-the-cascade-dont-%40-me',
-    'I’m super good at CSS',
-  ],
-  ['/posts/2021-01-01-2020-year-in-review', '2020 - Year in review'],
-]);
+for (const slug of postSlugs) {
+  // A post's canonical URL is built from its directory name, so requesting the
+  // percent-encoded form must resolve to the same page and the same canonical.
+  const canonical = `href="${siteUrl}/posts/${slug}" rel="canonical"`;
 
-const expectedSiteWideHeadContent = [
+  checks.push({ expected: [canonical, '<h1'], url: `/posts/${slug}` });
+
+  const encodedSlug = encodeURIComponent(slug);
+
+  if (encodedSlug !== slug) {
+    checks.push({ expected: [canonical, '<h1'], url: `/posts/${encodedSlug}` });
+  }
+}
+
+const expectedSiteWideContent = [
   'type="application/ld+json"',
   'https://schema.org',
   'https://static.cloudflareinsights.com/beacon.min.js',
   'data-cf-beacon',
-  '511d2ddb672f42599f188f248a7bc403',
+  cloudflareBeaconToken,
   'profile:first_name',
   'profile:last_name',
 ];
-
-const port = 4173;
-const baseUrl = `http://127.0.0.1:${port}`;
 
 const server = Bun.spawn(
   ['bun', 'run', 'preview', '--', '--host', '127.0.0.1', '--port', String(port), '--strictPort'],
@@ -75,27 +87,30 @@ async function waitForServer(): Promise<void> {
 try {
   await waitForServer();
 
-  for (const route of routes) {
-    const response = await fetch(`${baseUrl}${route}`);
+  for (const { expected, url } of checks) {
+    const response = await fetch(`${baseUrl}${url}`);
     const body = await response.text();
-    const expectedContent = expectedContentByRoute.get(route);
 
     if (response.status !== 200) {
-      throw new Error(`${route} returned ${response.status}`);
+      throw new Error(`${url} returned ${response.status}`);
     }
 
-    if (!expectedContent || !body.includes(expectedContent)) {
-      throw new Error(`${route} did not include expected content: ${expectedContent}`);
-    }
-
-    for (const expectedHeadContent of expectedSiteWideHeadContent) {
-      if (!body.includes(expectedHeadContent)) {
-        throw new Error(`${route} did not include site-wide head content: ${expectedHeadContent}`);
+    for (const content of [...expected, ...expectedSiteWideContent]) {
+      if (!body.includes(content)) {
+        throw new Error(`${url} did not include expected content: ${content}`);
       }
     }
 
-    console.log(`ok ${route}`);
+    console.log(`ok ${url}`);
   }
+
+  const notFound = await fetch(`${baseUrl}/posts/this-post-does-not-exist`);
+
+  if (notFound.status !== 404) {
+    throw new Error(`Unknown post returned ${notFound.status}, expected 404`);
+  }
+
+  console.log('ok 404 for unknown post');
 } finally {
   server.kill();
   await server.exited;

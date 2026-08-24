@@ -6,6 +6,11 @@
     "skipLibCheck": true,
     "strict": true,
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -17,14 +22,5 @@
     "types": ["vite/client", "bun"]
   },
   "exclude": ["node_modules", "dist", ".wrangler", ".vinxi"],
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "**/*.mjs",
-    "**/*.mdx",
-    "**/*.svg",
-    "oxlint.config.ts",
-    "vite.config.ts"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
 }
