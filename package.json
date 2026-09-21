@@ -26,14 +26,14 @@
     "@fontsource-variable/dm-sans": "5.3.0",
     "@fontsource-variable/jetbrains-mono": "5.3.0",
     "@fontsource/instrument-serif": "5.3.0",
-    "@tanstack/react-router": "1.170.36",
-    "@tanstack/react-start": "1.168.54",
+    "@tanstack/react-router": "1.170.38",
+    "@tanstack/react-start": "1.168.56",
     "culori": "4.0.2",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.54.9",
+    "@cloudflare/vite-plugin": "1.56.0",
     "@nkzw/oxlint-config": "2.0.1",
     "@tailwindcss/vite": "4.3.3",
     "@types/culori": "4.0.1",
@@ -44,11 +44,11 @@
     "npm-run-all2": "9.0.3",
     "oxfmt": "0.68.0",
     "oxlint": "1.83.0",
-    "oxlint-tsgolint": "7.0.2001",
+    "oxlint-tsgolint": "7.0.2002",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
     "vite": "8.3.0",
-    "wrangler": "4.131.2"
+    "wrangler": "4.135.0"
   },
   "packageManager": "bun@1.4.2"
 }
