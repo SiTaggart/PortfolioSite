@@ -26,29 +26,29 @@
     "@fontsource-variable/dm-sans": "5.3.0",
     "@fontsource-variable/jetbrains-mono": "5.3.0",
     "@fontsource/instrument-serif": "5.3.0",
-    "@tanstack/react-router": "1.170.40",
-    "@tanstack/react-start": "1.168.59",
+    "@tanstack/react-router": "1.170.41",
+    "@tanstack/react-start": "1.168.60",
     "culori": "4.0.2",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.61.0",
+    "@cloudflare/vite-plugin": "1.62.5",
     "@nkzw/oxlint-config": "2.0.1",
     "@tailwindcss/vite": "4.3.3",
     "@types/culori": "4.0.1",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "@typescript/native-preview": "7.0.0-dev.20260707.2",
-    "@vitejs/plugin-react": "6.1.1",
+    "@vitejs/plugin-react": "6.1.2",
     "npm-run-all2": "9.0.3",
-    "oxfmt": "0.70.0",
-    "oxlint": "1.85.0",
+    "oxfmt": "0.72.0",
+    "oxlint": "1.87.0",
     "oxlint-tsgolint": "7.0.2003",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
-    "vite": "8.3.1",
-    "wrangler": "4.142.0"
+    "vite": "8.3.2",
+    "wrangler": "4.147.0"
   },
   "packageManager": "bun@1.4.2"
 }
