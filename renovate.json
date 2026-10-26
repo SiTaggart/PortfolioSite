@@ -9,7 +9,8 @@
   "packageRules": [
     {
       "groupName": "oxlint",
-      "matchPackageNames": ["@nkzw/oxlint-config", "oxlint"]
+      "matchPackageNames": ["@nkzw/oxlint-config", "oxlint"],
+      "separateMajorMinor": false
     }
   ]
 }
