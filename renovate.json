@@ -5,5 +5,12 @@
     ":pinVersions",
     "group:allNonMajor",
     "schedule:earlyMondays"
+  ],
+  "packageRules": [
+    {
+      "groupName": "oxlint",
+      "matchPackageNames": ["@nkzw/oxlint-config", "oxlint"],
+      "separateMajorMinor": false
+    }
   ]
 }
