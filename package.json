@@ -43,7 +43,7 @@
     "@vitejs/plugin-react": "6.2.1",
     "npm-run-all2": "9.0.4",
     "oxfmt": "0.77.0",
-    "oxlint": "1.90.0",
+    "oxlint": "1.93.0",
     "oxlint-tsgolint": "7.0.2006",
     "tailwindcss": "4.3.5",
     "typescript": "7.0.2",
