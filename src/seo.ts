@@ -79,7 +79,7 @@ export function buildHead({
   };
 }
 
-export function personJsonLd(site: Site): Record<string, unknown> {
+export function personJsonLd(site: Site) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
